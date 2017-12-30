@@ -1,11 +1,11 @@
 {
   "weather": {
-    "description": "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.\n", 
+    "description": "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country and summarizes it at the weekly level for all of 2016.\n", 
     "dicts": {
       "count": 6, 
       "levels": {
         "1": {
-          "lengths": 4, 
+          "lengths": 3, 
           "key lengths": 6
         }, 
         "2": {
@@ -13,7 +13,7 @@
           "key lengths": 5
         }, 
         "3": {
-          "lengths": 3, 
+          "lengths": 2, 
           "key lengths": 7
         }
       }, 
@@ -27,21 +27,24 @@
       "sleet", 
       "fog", 
       "temperature", 
-      "wind"
+      "wind", 
+      "climate", 
+      "environment", 
+      "geology"
     ], 
     "atomics": {
-      "count": 16, 
+      "count": 14, 
       "nones": 0, 
-      "ints": 3, 
+      "ints": 7, 
       "booleans": 0, 
       "longs": 0, 
       "unknown": 0, 
-      "strings": 6, 
-      "floats": 7
+      "strings": 5, 
+      "floats": 2
     }, 
     "lists": {
-      "count": 2, 
-      "lengths": 7903, 
+      "count": 1, 
+      "lengths": 16631, 
       "complex": 1
     }, 
     "heights": 4, 
@@ -50,11 +53,11 @@
       "keys": {}, 
       "sizes": 0
     }, 
-    "length": 7903, 
+    "length": 16631, 
     "indexes": [
       2
     ], 
     "locals": 0, 
-    "size": 2970373
+    "size": 5156383
   }
 }

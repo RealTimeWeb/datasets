@@ -16,6 +16,16 @@ blockpy:
 	python builder/builder.py -l blockpy specs/$(target).corgis ./datasets
 python:
 	python builder/builder.py -l python specs/$(target).corgis ./datasets
+all_builders:
+	python builder/builder.py -l python specs/$(target).corgis ./datasets
+	python builder/builder.py -l blockpy specs/$(target).corgis ./datasets
+	python builder/builder.py -l visualizer specs/$(target).corgis ./datasets
+	python builder/builder.py -l csv specs/$(target).corgis ./datasets
+	python builder/builder.py -l racket specs/$(target).corgis ./datasets
+	python builder/builder.py -l json specs/$(target).corgis ./datasets
+	python builder/builder.py -l sql specs/$(target).corgis ./datasets
+	python builder/builder.py -l metrics specs/$(target).corgis ./datasets
+	python builder/builder.py -l java specs/$(target).corgis ./datasets
 all:
 	python builder/builder.py -l python -a specs/ ./datasets
 all_java:

@@ -66,6 +66,7 @@ public class Data {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Data(JSONObject json_data) {
+        System.out.println(json_data);
         try {// Precipitation
             this.precipitation = ((Number)json_data.get("Precipitation")).doubleValue();// Temperature
             this.temperature = new Temperature((JSONObject)json_data.get("Temperature"));// Wind

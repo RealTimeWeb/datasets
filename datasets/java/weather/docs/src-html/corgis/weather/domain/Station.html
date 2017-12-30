@@ -85,20 +85,21 @@
 <span class="sourceLineNo">077</span>         * @param json_data The raw json data that will be parsed.<a name="line.77"></a>
 <span class="sourceLineNo">078</span>         */<a name="line.78"></a>
 <span class="sourceLineNo">079</span>    public Station(JSONObject json_data) {<a name="line.79"></a>
-<span class="sourceLineNo">080</span>        try {// City<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.city = (String)json_data.get("City");// State<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.state = (String)json_data.get("State");// Code<a name="line.82"></a>
-<span class="sourceLineNo">083</span>            this.code = (String)json_data.get("Code");// Location<a name="line.83"></a>
-<span class="sourceLineNo">084</span>            this.location = (String)json_data.get("Location");<a name="line.84"></a>
-<span class="sourceLineNo">085</span>        } catch (NullPointerException e) {<a name="line.85"></a>
-<span class="sourceLineNo">086</span>                System.err.println("Could not convert the response to a Station; a field was missing.");<a name="line.86"></a>
-<span class="sourceLineNo">087</span>                e.printStackTrace();<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        } catch (ClassCastException e) {<a name="line.88"></a>
-<span class="sourceLineNo">089</span>                System.err.println("Could not convert the response to a Station; a field had the wrong structure.");<a name="line.89"></a>
-<span class="sourceLineNo">090</span>                e.printStackTrace();<a name="line.90"></a>
-<span class="sourceLineNo">091</span>        }<a name="line.91"></a>
-<span class="sourceLineNo">092</span>        }       <a name="line.92"></a>
-<span class="sourceLineNo">093</span>}<a name="line.93"></a>
+<span class="sourceLineNo">080</span>        System.out.println(json_data);<a name="line.80"></a>
+<span class="sourceLineNo">081</span>        try {// City<a name="line.81"></a>
+<span class="sourceLineNo">082</span>            this.city = (String)json_data.get("City");// State<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            this.state = (String)json_data.get("State");// Code<a name="line.83"></a>
+<span class="sourceLineNo">084</span>            this.code = (String)json_data.get("Code");// Location<a name="line.84"></a>
+<span class="sourceLineNo">085</span>            this.location = (String)json_data.get("Location");<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        } catch (NullPointerException e) {<a name="line.86"></a>
+<span class="sourceLineNo">087</span>                System.err.println("Could not convert the response to a Station; a field was missing.");<a name="line.87"></a>
+<span class="sourceLineNo">088</span>                e.printStackTrace();<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        } catch (ClassCastException e) {<a name="line.89"></a>
+<span class="sourceLineNo">090</span>                System.err.println("Could not convert the response to a Station; a field had the wrong structure.");<a name="line.90"></a>
+<span class="sourceLineNo">091</span>                e.printStackTrace();<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        }<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        }       <a name="line.93"></a>
+<span class="sourceLineNo">094</span>}<a name="line.94"></a>
 
 
 

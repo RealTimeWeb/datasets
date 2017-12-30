@@ -154,12 +154,16 @@ var COLOR_SCHEMES = [
         {'name': 'Black', 'stroke': 'black', 'fill': 'black'},
         {'name': 'Grey', 'stroke': 'darkgray', 'fill': 'lightgray'},
         {'name': 'Yellow', 'stroke': 'goldenrod', 'fill': 'LightGoldenRodYellow '},
-        {'name': 'Purple', 'stroke': 'purple', 'fill': 'plum '}
+        {'name': 'Purple', 'stroke': 'purple', 'fill': 'plum '},
+        {'name': 'Alpha Blue', 'stroke': 'rgba(0, 0, 255, .1)', 'fill': 'rgba(0, 0, 255, .1)'},
+        {'name': 'Alpha Red', 'stroke': 'rgba(255, 0, 0, .1)', 'fill': 'rgba(255, 0, 0, .1)'},
+        {'name': 'Alpha Green', 'stroke': 'rgba(0, 255, 0, .1)', 'fill': 'rgba(0, 255, 0, .1)'}
     ];
     
 mainModel = {
     'aggregators': ko.observableArray([
         {'name': 'Average', 'id': 'average'},
+        {'name': 'Average w/o Zero', 'id': 'average w/o zero'},
         {'name': 'Count', 'id': 'count'},
         {'name': 'Sum', 'id': 'sum'}
     ]),
@@ -277,7 +281,7 @@ ko.bindingHandlers.fadeVisible = {
 
     ko.applyBindings(mainModel);
     
-    mainModel.settings.sampling(Math.min(100, mainModel.structures()[0].data.length))
+    mainModel.settings.sampling(Math.min(300, mainModel.structures()[0].data[0].data.length))
     
     function changeCategory() {
         $('#select-bar-keys').empty().multiSelect('refresh');
@@ -676,16 +680,22 @@ ko.bindingHandlers.fadeVisible = {
                 for (var j = 0; j < indexes.length; j = j+1) {
                     var an_index = indexes[j],
                         value = an_index.data[i];
+                    if (typeof value === 'string') {
+                        key_value = value.replace(',', '')
+                    } else {
+                        key_value = value;
+                    }
                     if (an_index.name != filter_index) {
                         a_tick.push(value);
-                    } else if (value != filter_value) {
+                    } else if (key_value != filter_value) {
                         keep = false;
                     }
                 }
                 if (keep) {
-                    all_ticks.push(a_tick.join(", "));
+                    all_ticks.push(""+a_tick.join(", "));
                 }
             }
+            console.log(all_ticks);
             xAxis.tickFormat(function(value, index) {
                 return all_ticks[value];
             });

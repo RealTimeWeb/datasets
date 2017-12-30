@@ -26,19 +26,19 @@
 
 ; Define the structs
 (define-struct date
-    (full day month year))
+    (week-of full year month))
 
 (define-struct data
     (precipitation temperature wind))
 
 (define-struct wind
-    (high-gust avg-wind high-wind))
+    (direction speed))
 
 (define-struct report
-    (weather-conditions date station data))
+    (date station data))
 
 (define-struct temperature
-    (max-temp avg-temp min-temp))
+    (average minimum maximum))
 
 (define-struct station
     (city state code location))
@@ -48,10 +48,10 @@
 ; Define the JSON->Struct mappers
 (define (json->date jdata)
     (make-date
-        (hash-ref jdata (string->symbol "Full"))
-            (hash-ref jdata (string->symbol "Day"))
-            (hash-ref jdata (string->symbol "Month"))
+        (hash-ref jdata (string->symbol "Week of"))
+            (hash-ref jdata (string->symbol "Full"))
             (hash-ref jdata (string->symbol "Year"))
+            (hash-ref jdata (string->symbol "Month"))
             ))
 
 (define (json->data jdata)
@@ -63,24 +63,22 @@
 
 (define (json->wind jdata)
     (make-wind
-        (hash-ref jdata (string->symbol "High Gust"))
-            (hash-ref jdata (string->symbol "Avg Wind"))
-            (hash-ref jdata (string->symbol "High Wind"))
+        (hash-ref jdata (string->symbol "Direction"))
+            (hash-ref jdata (string->symbol "Speed"))
             ))
 
 (define (json->report jdata)
     (make-report
-        (hash-ref jdata (string->symbol "Weather Conditions"))
-                    (json->date (hash-ref jdata (string->symbol "Date")))
+        (json->date (hash-ref jdata (string->symbol "Date")))
                 (json->station (hash-ref jdata (string->symbol "Station")))
                 (json->data (hash-ref jdata (string->symbol "Data")))
                 ))
 
 (define (json->temperature jdata)
     (make-temperature
-        (hash-ref jdata (string->symbol "Max Temp"))
-            (hash-ref jdata (string->symbol "Avg Temp"))
-            (hash-ref jdata (string->symbol "Min Temp"))
+        (hash-ref jdata (string->symbol "Average"))
+            (hash-ref jdata (string->symbol "Minimum"))
+            (hash-ref jdata (string->symbol "Maximum"))
             ))
 
 (define (json->station jdata)

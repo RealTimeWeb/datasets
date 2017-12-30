@@ -16,19 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class Wind {
 	
-    // A gust is a sudden burst of wind (less than 20 seconds long), which is often much stronger than the average windspeed. This is reported in Miles per Hour.
-    private Double highGust;
-    // The average windspeed for that day, in Miles per Hour.
-    private Double avgWind;
-    // The highest windspeed for that day, in Miles per Hour.
-    private Double highWind;
+    // The average wind direction for that week, in degrees.
+    private Integer direction;
+    // The average windspeed for that week, in Miles per Hour.
+    private Double speed;
     
     
     /*
      * @return 
      */
-    public Double getHighGust() {
-        return this.highGust;
+    public Integer getDirection() {
+        return this.direction;
     }
     
     
@@ -36,17 +34,8 @@ public class Wind {
     /*
      * @return 
      */
-    public Double getAvgWind() {
-        return this.avgWind;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getHighWind() {
-        return this.highWind;
+    public Double getSpeed() {
+        return this.speed;
     }
     
     
@@ -58,7 +47,7 @@ public class Wind {
 	 * @return String
 	 */
 	public String toString() {
-		return "Wind[" +highGust+", "+avgWind+", "+highWind+"]";
+		return "Wind[" +direction+", "+speed+"]";
 	}
 	
 	/**
@@ -66,10 +55,10 @@ public class Wind {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Wind(JSONObject json_data) {
-        try {// High Gust
-            this.highGust = ((Number)json_data.get("High Gust")).doubleValue();// Avg Wind
-            this.avgWind = ((Number)json_data.get("Avg Wind")).doubleValue();// High Wind
-            this.highWind = ((Number)json_data.get("High Wind")).doubleValue();
+        System.out.println(json_data);
+        try {// Direction
+            this.direction = ((Number)json_data.get("Direction")).intValue();// Speed
+            this.speed = ((Number)json_data.get("Speed")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Wind; a field was missing.");
     		e.printStackTrace();

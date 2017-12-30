@@ -8,7 +8,7 @@
 	<property name="bin" location="bin"/>
 	<property name="dist" location="dist"/>
 	<property name="docs" location="docs"/>
-	<property name="ver" value="1"/>
+	<property name="ver" value="3"/>
 	<!-- <propertyfile file=".properties">
 		<entry key="docs" value="docs/" />
 	</propertyfile>-->

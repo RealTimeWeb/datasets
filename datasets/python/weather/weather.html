@@ -146,9 +146,9 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
     
     <h1>Weather Python Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
-    <span class="text-muted">By Ryan Whitcomb</span><br>
-    <span class="text-muted">Version 1, created 6/13/2016</span><br>
-    <span class="text-muted">Tags: weather, rain, snow, sleet, fog, temperature, wind</span><br>
+    <span class="text-muted">By Austin Cory Bart Ryan Whitcomb</span><br>
+    <span class="text-muted">Version 3, created 6/13/2016</span><br>
+    <span class="text-muted">Tags: weather, rain, snow, sleet, fog, temperature, wind, climate, environment, geology</span><br>
 </div>
     
     <!--
@@ -167,7 +167,7 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
     
     <h3 id="overview">Overview</h3>
 <p>
-Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.
+Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country and summarizes it at the weekly level for all of 2016.
 
 </p>
 
@@ -220,60 +220,30 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-weather-__0__-Weather-Conditions' title='List'>
-        
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
-            <tr> <td>0</td> <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"RAIN"</code></td></tr>
-            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-weather-__0__-Weather-Conditions" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        $("#btn-explore-weather-__0__-Weather-Conditions-__0__").click(function() {
-            $( "#explore-weather-__0__-Weather-Conditions-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
-            $('.ui-dialog :button').blur();
-        });
-    });
-    </script>
-
 
 
     <div id='explore-weather-__0__-Date' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
+            <tr> <td><code>"Week of"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>3</code>
+                    
+                 </td> 
+                 <td>The first day of the week that this report was made.</td> </tr>
+            
             <tr> <td><code>"Full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <code>"04-10-2016"</code>
+                    <code>"2016-01-03"</code>
                     
                     <a class='dialog-opener' id='btn-explore-weather-__0__-Date-Full'><br>
                     <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
                     
                  </td> 
                  <td>A full string representation of the date this report was made.</td> </tr>
-            
-            <tr> <td><code>"Day"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>10</code>
-                    
-                 </td> 
-                 <td>The day of the month that this report was made.</td> </tr>
-            
-            <tr> <td><code>"Month"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>4</code>
-                    
-                 </td> 
-                 <td>The month of the year that this report was made.</td> </tr>
             
             <tr> <td><code>"Year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -283,8 +253,18 @@ $(document).ready(function() {
                  </td> 
                  <td>The year that this report was made.</td> </tr>
             
+            <tr> <td><code>"Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
+                 <td>The month of the year that this report was made.</td> </tr>
+            
         </table>
     </div>
+    
+        
     
         
         <div id='explore-weather-__0__-Date-Full' title='Previewing Values'>
@@ -292,315 +272,273 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"05-23-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-10-02"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-04-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-10-09"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-11-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-10-23"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-29-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-12-25"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-09-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-10-16"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-15-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-12-04"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-17-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-09-04"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-30-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-05-22"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-27-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-10-30"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-10-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-05-01"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-15-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-08-07"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-18-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-05-29"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-28-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2017-01-01"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-16-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-03-06"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"06-06-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-06-05"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-31-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-12-18"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-22-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-04-03"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-29-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-05-15"</code></td>
+                    <td>315</td>
                 </tr>
             
                 <tr>
-                    <td><code>"06-04-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-02-07"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-24-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-02-28"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-21-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-02-21"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"06-07-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-09-25"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-30-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-08-21"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"06-02-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-08-28"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-17-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-07-03"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-25-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-02-14"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-12-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-04-10"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-08-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-04-17"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-03-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-05-08"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-11-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-04-24"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-14-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-09-18"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-01-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-12-11"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-13-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-09-11"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-19-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-08-14"</code></td>
+                    <td>314</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-26-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-03-13"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-28-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-06-12"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-02-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-06-19"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-22-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-01-17"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-13-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-01-10"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-12-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-01-31"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-07-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-11-06"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"06-05-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-03-27"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-20-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-03-20"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-25-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-01-24"</code></td>
+                    <td>313</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-20-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-07-31"</code></td>
+                    <td>312</td>
                 </tr>
             
                 <tr>
-                    <td><code>"05-27-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-11-13"</code></td>
+                    <td>312</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-23-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-07-24"</code></td>
+                    <td>312</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-18-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-11-27"</code></td>
+                    <td>312</td>
                 </tr>
             
                 <tr>
-                    <td><code>"06-03-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-01-03"</code></td>
+                    <td>312</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-26-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-06-26"</code></td>
+                    <td>312</td>
                 </tr>
             
                 <tr>
-                    <td><code>"06-01-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-07-17"</code></td>
+                    <td>312</td>
                 </tr>
             
                 <tr>
-                    <td><code>"06-09-2016"</code></td>
-                    <td>130</td>
+                    <td><code>"2016-07-10"</code></td>
+                    <td>312</td>
                 </tr>
             
                 <tr>
-                    <td><code>"04-19-2016"</code></td>
-                    <td>130</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"05-05-2016"</code></td>
-                    <td>130</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"05-14-2016"</code></td>
-                    <td>130</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"06-08-2016"</code></td>
-                    <td>130</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"05-06-2016"</code></td>
-                    <td>130</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"04-21-2016"</code></td>
-                    <td>130</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"05-16-2016"</code></td>
-                    <td>130</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"04-24-2016"</code></td>
-                    <td>128</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"04-10-2016"</code></td>
-                    <td>105</td>
+                    <td><code>"2016-11-20"</code></td>
+                    <td>311</td>
                 </tr>
             
             
         </table>
         </div>
-        
-    
         
     
         
@@ -613,6 +551,12 @@ $(document).ready(function() {
           autoOpen: false,
           width: 600
         });
+        
+        $("#btn-explore-weather-__0__-Date-Week-of").click(function() {
+            $( "#explore-weather-__0__-Date-Week-of" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         
         $("#btn-explore-weather-__0__-Date-Full").click(function() {
             $( "#explore-weather-__0__-Date-Full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -629,20 +573,14 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-weather-__0__-Date-Day").click(function() {
-            $( "#explore-weather-__0__-Date-Day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Date-Year").click(function() {
+            $( "#explore-weather-__0__-Date-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
         $("#btn-explore-weather-__0__-Date-Month").click(function() {
             $( "#explore-weather-__0__-Date-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-weather-__0__-Date-Year").click(function() {
-            $( "#explore-weather-__0__-Date-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -657,7 +595,7 @@ $(document).ready(function() {
             <tr> <td><code>"Precipitation"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0.19</code>
+                    <code>0.0</code>
                     
                  </td> 
                  <td>The average amount of rain, in inches.</td> </tr>
@@ -715,38 +653,28 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-weather-__0__-Data-Wind' title='Dictionary (3 keys)'>
+    <div id='explore-weather-__0__-Data-Wind' title='Dictionary (2 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"High Gust"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Direction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>31.0</code>
+                    <code>33</code>
                     
                  </td> 
-                 <td>A gust is a sudden burst of wind (less than 20 seconds long), which is often much stronger than the average windspeed. This is reported in Miles per Hour.</td> </tr>
+                 <td>The average wind direction for that week, in degrees.</td> </tr>
             
-            <tr> <td><code>"Avg Wind"</code></td> 
+            <tr> <td><code>"Speed"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>8.0</code>
+                    <code>4.33</code>
                     
                  </td> 
-                 <td>The average windspeed for that day, in Miles per Hour.</td> </tr>
-            
-            <tr> <td><code>"High Wind"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>22.0</code>
-                    
-                 </td> 
-                 <td>The highest windspeed for that day, in Miles per Hour.</td> </tr>
+                 <td>The average windspeed for that week, in Miles per Hour.</td> </tr>
             
         </table>
     </div>
-    
-        
     
         
     
@@ -759,20 +687,14 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-weather-__0__-Data-Wind-High-Gust").click(function() {
-            $( "#explore-weather-__0__-Data-Wind-High-Gust" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Data-Wind-Direction").click(function() {
+            $( "#explore-weather-__0__-Data-Wind-Direction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-weather-__0__-Data-Wind-Avg-Wind").click(function() {
-            $( "#explore-weather-__0__-Data-Wind-Avg-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-weather-__0__-Data-Wind-High-Wind").click(function() {
-            $( "#explore-weather-__0__-Data-Wind-High-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Data-Wind-Speed").click(function() {
+            $( "#explore-weather-__0__-Data-Wind-Speed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -780,17 +702,9 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-weather-__0__' title='Dictionary (4 keys)'>
+    <div id='explore-weather-__0__' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Weather Conditions"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-weather-__0__-Weather-Conditions'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
-                    
-                 </td> 
-                 <td>This is a list of strings. An empty list represents no significant weather to report for that day.</td> </tr>
             
             <tr> <td><code>"Date"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -825,20 +739,12 @@ $(document).ready(function() {
     
         
     
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-weather-__0__" ).dialog({
           autoOpen: false,
           width: 600
         });
-        
-        $("#btn-explore-weather-__0__-Weather-Conditions").click(function() {
-            $( "#explore-weather-__0__-Weather-Conditions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
         
         $("#btn-explore-weather-__0__-Date").click(function() {
             $( "#explore-weather-__0__-Date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -865,29 +771,29 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Max Temp"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Average"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>40.0</code>
+                    <code>39</code>
                     
                  </td> 
-                 <td>The highest recorded temperature on this day, in degrees Farenheit.</td> </tr>
+                 <td>The average recorded temperature on this week, in degrees Farenheit.</td> </tr>
             
-            <tr> <td><code>"Avg Temp"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Minimum"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>34.0</code>
+                    <code>32</code>
                     
                  </td> 
-                 <td>The average recorded temperature on this day, in degrees Farenheit.</td> </tr>
+                 <td>The lowest recorded temperature on this week, in degrees Farenheit.</td> </tr>
             
-            <tr> <td><code>"Min Temp"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Maximum"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>27.0</code>
+                    <code>46</code>
                     
                  </td> 
-                 <td>The lowest recorded temperature on this day, in degrees Farenheit.</td> </tr>
+                 <td>The highest recorded temperature on this week, in degrees Farenheit.</td> </tr>
             
         </table>
     </div>
@@ -905,20 +811,20 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-weather-__0__-Data-Temperature-Max-Temp").click(function() {
-            $( "#explore-weather-__0__-Data-Temperature-Max-Temp" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Data-Temperature-Average").click(function() {
+            $( "#explore-weather-__0__-Data-Temperature-Average" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-weather-__0__-Data-Temperature-Avg-Temp").click(function() {
-            $( "#explore-weather-__0__-Data-Temperature-Avg-Temp" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Data-Temperature-Minimum").click(function() {
+            $( "#explore-weather-__0__-Data-Temperature-Minimum" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-weather-__0__-Data-Temperature-Min-Temp").click(function() {
-            $( "#explore-weather-__0__-Data-Temperature-Min-Temp" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Data-Temperature-Maximum").click(function() {
+            $( "#explore-weather-__0__-Data-Temperature-Maximum" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -933,7 +839,7 @@ $(document).ready(function() {
             <tr> <td><code>"City"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <code>"Mount Holly/Philadelphia"</code>
+                    <code>"Birmingham"</code>
                     
                     <a class='dialog-opener' id='btn-explore-weather-__0__-Station-City'><br>
                     <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
@@ -944,7 +850,7 @@ $(document).ready(function() {
             <tr> <td><code>"State"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <code>"New Jersey"</code>
+                    <code>"Alabama"</code>
                     
                     <a class='dialog-opener' id='btn-explore-weather-__0__-Station-State'><br>
                     <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
@@ -955,7 +861,7 @@ $(document).ready(function() {
             <tr> <td><code>"Code"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <code>"ABE"</code>
+                    <code>"BHM"</code>
                     
                     <a class='dialog-opener' id='btn-explore-weather-__0__-Station-Code'><br>
                     <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
@@ -966,7 +872,7 @@ $(document).ready(function() {
             <tr> <td><code>"Location"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <code>"Mount Holly/Philadelphia, NJ"</code>
+                    <code>"Birmingham, AL"</code>
                     
                     <a class='dialog-opener' id='btn-explore-weather-__0__-Station-Location'><br>
                     <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
@@ -983,503 +889,503 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"Sioux Falls"</code></td>
-                    <td>183</td>
+                    <td><code>"Springfield"</code></td>
+                    <td>106</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Minneapolis/Twin Cities"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Marquette"</code></td>
-                    <td>122</td>
+                    <td><code>"Concord"</code></td>
+                    <td>106</td>
                 </tr>
             
                 <tr>
                     <td><code>"Charleston"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"La Crosse"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grand Junction"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Green Bay"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Milwaukee/Sullivan"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wilmington"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grand Forks"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rapid City"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jackson"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sacramento"</code></td>
-                    <td>120</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Des Moines"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Davenport/Quad Cities"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Morristown/Knoxville"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"St. Louis"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gray/Portland"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Greenville-Spartanburg"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Raleigh"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Melbourne"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Peachtree City/Atlanta"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pueblo"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jacksonville"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grand Rapids"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pocatello"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Amarillo"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nashville"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Huntsville"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Phoenix"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Norman/Oklahoma City"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Springfield"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lubbock"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bismarck"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chicago"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Houston/Galveston"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Northern Indiana"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cleveland"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Birmingham"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Orleans/Baton Rouge"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Platte"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Goodland"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Midland/Odessa"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Shreveport"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lincoln"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lake Charles"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kansas City/Pleasant Hill"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Memphis"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Billings"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Great Falls"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Binghamton"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Buffalo"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Indianapolis"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Louisville"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Aberdeen"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Detroit/Pontiac"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New York/Upton"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Boston"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Brownsville"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Caribou"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Blacksburg"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mount Holly/Philadelphia"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Newport/Morehead City"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Riverton"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Omaha/Valley"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Diego"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pittsburgh"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Key West"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cheyenne"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Burlington"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tallahassee"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Juan"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mobile/Pensacola"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Salt Lake City"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Little Rock"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Corpus Christi"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Austin/San Antonio"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dodge City"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Topeka"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wakefield"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Miami"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Paducah"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tampa"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Baltimore/Washington"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"El Paso"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tulsa"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Columbia"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gaylord"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fort Worth/Dallas"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"State College"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Albany"</code></td>
-                    <td>61</td>
+                    <td>106</td>
                 </tr>
             
                 <tr>
                     <td><code>"Portland"</code></td>
-                    <td>60</td>
+                    <td>106</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Juneau"</code></td>
-                    <td>60</td>
+                    <td><code>"Rochester"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wilmington"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eureka"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Norfolk"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Columbia"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yakima"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Corpus Christi"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Milwaukee"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ely"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Worcester"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iliamna"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Key West"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Salinas"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bishop"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"Reno"</code></td>
-                    <td>60</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Elko"</code></td>
-                    <td>60</td>
+                    <td><code>"Pierre"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"San Francisco Bay Area/Monterey"</code></td>
-                    <td>60</td>
+                    <td><code>"Aberdeen"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Philadelphia"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Roanoke"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richmond"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bristol/Jhnsn Cty/Kngsprt"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Austin/City"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Houston"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Galveston"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Williston"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Augusta"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sandberg"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bangor"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Juneau"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pocatello"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"Wichita"</code></td>
-                    <td>60</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dallas"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bettles"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"Anchorage"</code></td>
-                    <td>60</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cape Girardeau"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Omaha"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rawlins"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chattanooga"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sioux Falls"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Amarillo"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"San Angelo"</code></td>
-                    <td>60</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacksonville"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kenai"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Scottsbluff"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muskegon"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hattiesburg"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dallas-Fort Worth"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grand Rapids"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clayton"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Duluth"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St Louis"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yakutat"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bethel"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Northway"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Huntsville"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Phoenix"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lander"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Evansville"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St Cloud"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Houghton Lake"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Waterloo"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gage"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"Glasgow"</code></td>
-                    <td>60</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eugene"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cordova"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Palm Beach"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tupelo"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alma"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Des Moines"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Billings"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Athens"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Providence"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pensacola"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lubbock"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bismarck"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chicago"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sault Ste Marie"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Concordia"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cheyenne"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kotzebue"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oklahoma City"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cleveland"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Casper"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Birmingham"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Helena"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beaumont/Port Arthur"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colorado Springs"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Roswell"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Craig"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Stockton"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wichita Falls"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sidney"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Salisbury"</code></td>
+                    <td>53</td>
                 </tr>
             
             
@@ -1498,228 +1404,263 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
+                    <td><code>"Alaska"</code></td>
+                    <td>1661</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Texas"</code></td>
-                    <td>609</td>
+                    <td>1272</td>
                 </tr>
             
                 <tr>
                     <td><code>"California"</code></td>
-                    <td>421</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Dakota"</code></td>
-                    <td>366</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wisconsin"</code></td>
-                    <td>366</td>
+                    <td>999</td>
                 </tr>
             
                 <tr>
                     <td><code>"Florida"</code></td>
-                    <td>366</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Michigan"</code></td>
-                    <td>305</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New York"</code></td>
-                    <td>244</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Colorado"</code></td>
-                    <td>243</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kansas"</code></td>
-                    <td>243</td>
+                    <td>636</td>
                 </tr>
             
                 <tr>
                     <td><code>"Montana"</code></td>
-                    <td>242</td>
+                    <td>583</td>
                 </tr>
             
                 <tr>
-                    <td><code>"North Carolina"</code></td>
-                    <td>183</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alabama"</code></td>
-                    <td>183</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Missouri"</code></td>
-                    <td>183</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kentucky"</code></td>
-                    <td>183</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Dakota"</code></td>
-                    <td>183</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Carolina"</code></td>
-                    <td>183</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tennessee"</code></td>
-                    <td>183</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Virginia"</code></td>
-                    <td>183</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Louisiana"</code></td>
-                    <td>183</td>
+                    <td><code>"Michigan"</code></td>
+                    <td>477</td>
                 </tr>
             
                 <tr>
                     <td><code>"Nebraska"</code></td>
-                    <td>182</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arizona"</code></td>
-                    <td>181</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nevada"</code></td>
-                    <td>180</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alaska"</code></td>
-                    <td>180</td>
+                    <td>424</td>
                 </tr>
             
                 <tr>
                     <td><code>"Oregon"</code></td>
-                    <td>180</td>
+                    <td>424</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Maine"</code></td>
-                    <td>122</td>
+                    <td><code>"New York"</code></td>
+                    <td>424</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Pennsylvania"</code></td>
-                    <td>122</td>
+                    <td><code>"Tennessee"</code></td>
+                    <td>420</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iowa"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Indiana"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ohio"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Illinois"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Minnesota"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wyoming"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Oklahoma"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Idaho"</code></td>
-                    <td>121</td>
+                    <td><code>"North Carolina"</code></td>
+                    <td>371</td>
                 </tr>
             
                 <tr>
                     <td><code>"Washington"</code></td>
-                    <td>120</td>
+                    <td>371</td>
                 </tr>
             
                 <tr>
-                    <td><code>"New Jersey"</code></td>
-                    <td>61</td>
+                    <td><code>"Missouri"</code></td>
+                    <td>371</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Puerto Rico"</code></td>
-                    <td>61</td>
+                    <td><code>"Pennsylvania"</code></td>
+                    <td>371</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Georgia"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vermont"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Massachusetts"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"West Virginia"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Utah"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arkansas"</code></td>
-                    <td>61</td>
+                    <td><code>"Ohio"</code></td>
+                    <td>371</td>
                 </tr>
             
                 <tr>
                     <td><code>"Mississippi"</code></td>
-                    <td>61</td>
+                    <td>371</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nevada"</code></td>
+                    <td>318</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colorado"</code></td>
+                    <td>318</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virginia"</code></td>
+                    <td>318</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kansas"</code></td>
+                    <td>318</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Georgia"</code></td>
+                    <td>318</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Illinois"</code></td>
+                    <td>318</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Dakota"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hawaii"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kentucky"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Dakota"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iowa"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arizona"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minnesota"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wyoming"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louisiana"</code></td>
+                    <td>261</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alabama"</code></td>
+                    <td>212</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wisconsin"</code></td>
+                    <td>212</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Virginia"</code></td>
+                    <td>212</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Carolina"</code></td>
+                    <td>212</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Indiana"</code></td>
+                    <td>212</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oklahoma"</code></td>
+                    <td>212</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maine"</code></td>
+                    <td>159</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Idaho"</code></td>
+                    <td>159</td>
                 </tr>
             
                 <tr>
                     <td><code>"New Mexico"</code></td>
-                    <td>60</td>
+                    <td>159</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arkansas"</code></td>
+                    <td>159</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Massachusetts"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Jersey"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Connecticut"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maryland"</code></td>
+                    <td>106</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Hampshire"</code></td>
+                    <td>100</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rhode Island"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Delaware"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vermont"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"VA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Puerto Rico"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Utah"</code></td>
+                    <td>53</td>
                 </tr>
             
             
@@ -1733,503 +1674,503 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"FSD"</code></td>
-                    <td>183</td>
+                    <td><code>"PWM"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PNC"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"RST"</code></td>
-                    <td>122</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ORD"</code></td>
-                    <td>122</td>
+                    <td><code>"GFL"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"UNR"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"INL"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ANJ"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DEN"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"FGF"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MQT"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"RDD"</code></td>
-                    <td>120</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PWM"</code></td>
-                    <td>61</td>
+                    <td><code>"RWL"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"SDF"</code></td>
-                    <td>61</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"FAR"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CID"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TKA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PNS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"P68"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MCG"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DUG"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"MCI"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARR"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CNK"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"HOU"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ABR"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"STL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ABE"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SGF"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BIS"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"LZK"</code></td>
-                    <td>61</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"DAB"</code></td>
-                    <td>61</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"BIL"</code></td>
-                    <td>61</td>
+                    <td><code>"BHM"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"CYS"</code></td>
-                    <td>61</td>
+                    <td><code>"MLS"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"CAE"</code></td>
-                    <td>61</td>
+                    <td><code>"MCN"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"CVG"</code></td>
-                    <td>61</td>
+                    <td><code>"MCO"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"LOZ"</code></td>
-                    <td>61</td>
+                    <td><code>"SLC"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"TOL"</code></td>
-                    <td>61</td>
+                    <td><code>"TUP"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"LOT"</code></td>
-                    <td>61</td>
+                    <td><code>"CNK"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"GNV"</code></td>
-                    <td>61</td>
+                    <td><code>"DHT"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ALS"</code></td>
-                    <td>61</td>
+                    <td><code>"GWO"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"TUL"</code></td>
-                    <td>61</td>
+                    <td><code>"SLE"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"BRO"</code></td>
-                    <td>61</td>
+                    <td><code>"VCT"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"PUB"</code></td>
-                    <td>61</td>
+                    <td><code>"HOU"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ALB"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BTR"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MEM"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"OMA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"TLH"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ELP"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BBW"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CUB"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AUS"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SJU"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DFW"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CZZ"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"RDU"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MDT"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"JKL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CGI"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BZN"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ILM"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ATL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"LCH"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MOB"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"IND"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"OKC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MTH"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ANB"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BTV"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"RNK"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DSM"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DGC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GRR"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BUF"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AMA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DTW"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GJT"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CRP"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MAF"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"APN"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PHX"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BNA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BYI"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CHS"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"JAN"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BGM"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"JAX"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CHA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"RIC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PIT"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"LBF"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"HSV"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"LBB"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DCA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PIA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"HSE"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"NYC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BGR"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"LIT"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"FWA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BOS"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MIA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BUR"</code></td>
-                    <td>60</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"STS"</code></td>
-                    <td>60</td>
+                    <td><code>"ABR"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"ABQ"</code></td>
-                    <td>60</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RDM"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"STJ"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MLI"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"ABI"</code></td>
-                    <td>60</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"CNU"</code></td>
-                    <td>60</td>
+                    <td><code>"HON"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"STC"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ABE"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AKN"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CYS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SGF"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BIS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DRT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TYS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HTS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GAG"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"EVV"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HNL"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"FAI"</code></td>
-                    <td>60</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"FAT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LZK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"EKN"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PDX"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BIG"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DAL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GFK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BIH"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"JAX"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BIL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AVL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SGY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BFF"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CAE"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ERI"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CAG"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CVG"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TOL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BPT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CAO"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MSN"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CAK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MSP"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MEM"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MKK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"YNG"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TOP"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CAR"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MSY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GNV"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HTL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MKE"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CLL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MKG"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ALS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DFW"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HVR"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ORD"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ORF"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CDS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ORH"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TUL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SBA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CDV"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LGB"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BRO"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RIC"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PUB"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ALB"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SBY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ORT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LYH"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BRW"</code></td>
+                    <td>53</td>
                 </tr>
             
             
@@ -2248,503 +2189,503 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"Sioux Falls, SD"</code></td>
-                    <td>183</td>
+                    <td><code>"Covington, KY"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"Grand Forks, ND"</code></td>
-                    <td>122</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Green Bay, WI"</code></td>
-                    <td>122</td>
+                    <td><code>"Fargo, ND"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"La Crosse, WI"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Milwaukee/Sullivan, WI"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grand Junction, CO"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Minneapolis/Twin Cities, MN"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Marquette, MI"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rapid City, SD"</code></td>
-                    <td>122</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sacramento, CA"</code></td>
-                    <td>120</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jacksonville, FL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Omaha/Valley, NE"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New York/Upton, NY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chicago, IL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Charleston, SC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pueblo, CO"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Norman/Oklahoma City, OK"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Topeka, KS"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Miami, FL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nashville, TN"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grand Rapids, MI"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Salt Lake City, UT"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Binghamton, NY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tampa, FL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"St. Louis, MO"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Detroit/Pontiac, MI"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Albany, NY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Austin/San Antonio, TX"</code></td>
-                    <td>61</td>
+                    <td><code>"Santa Barbara, CA"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"Lubbock, TX"</code></td>
-                    <td>61</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Springfield, MO"</code></td>
-                    <td>61</td>
+                    <td><code>"Greensboro, NC"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Houston/Galveston, TX"</code></td>
-                    <td>61</td>
+                    <td><code>"Concordia, KS"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Raleigh, NC"</code></td>
-                    <td>61</td>
+                    <td><code>"Waterloo, IA"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Midland/Odessa, TX"</code></td>
-                    <td>61</td>
+                    <td><code>"Roswell, NM"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Cleveland, OH"</code></td>
-                    <td>61</td>
+                    <td><code>"Syracuse, NY"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Burlington, VT"</code></td>
-                    <td>61</td>
+                    <td><code>"Jacksonville, FL"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Lake Charles, LA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cheyenne, WY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mount Holly/Philadelphia, NJ"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Little Rock, AR"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Buffalo, NY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Davenport/Quad Cities, IA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Key West, FL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Phoenix, AZ"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Newport/Morehead City, NC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Louisville, KY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Corpus Christi, TX"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gaylord, MI"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pittsburgh, PA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Diego, CA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Columbia, SC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fort Worth/Dallas, TX"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wilmington, NC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Peachtree City/Atlanta, GA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Northern Indiana, IN"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jackson, MS"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Birmingham, AL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Juan, PR"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lincoln, IL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Melbourne, FL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"State College, PA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Memphis, TN"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Billings, MT"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Charleston, WV"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Boston, MD"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gray/Portland, ME"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kansas City/Pleasant Hill, MO"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mobile/Pensacola, AL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Indianapolis, IN"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Huntsville, AL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Goodland, KS"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Blacksburg, VA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Riverton, WY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pocatello, ID"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wilmington, OH"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Shreveport, LA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Greenville-Spartanburg, SC"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Platte, NE"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dodge City, KS"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Orleans/Baton Rouge, LA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jackson, KY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Morristown/Knoxville, TN"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wakefield, VA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Brownsville, TX"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Great Falls, MT"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Baltimore/Washington, VA"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tallahassee, FL"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Amarillo, TX"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Paducah, KY"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Caribou, ME"</code></td>
-                    <td>61</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bismarck, ND"</code></td>
-                    <td>61</td>
+                    <td><code>"Allentown, PA"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"El Paso, TX"</code></td>
-                    <td>61</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Aberdeen, SD"</code></td>
-                    <td>61</td>
+                    <td><code>"Great Falls, MT"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Tulsa, OK"</code></td>
-                    <td>61</td>
+                    <td><code>"Williamsport, PA"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Des Moines, IA"</code></td>
-                    <td>61</td>
+                    <td><code>"Portland, ME"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Elko, NV"</code></td>
-                    <td>60</td>
+                    <td><code>"Spokane, WA"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Denver/Boulder, CO"</code></td>
-                    <td>60</td>
+                    <td><code>"Red Bluff, CA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alpena, MI"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charleston, SC"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pueblo, CO"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"Albuquerque, NM"</code></td>
-                    <td>60</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrisburg, PA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Honolulu, HI"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Asheville, NC"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Topeka, KS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muskegon, MI"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anderson, SC"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Orleans, LA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Akron, OH"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Elkins, WV"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mansfield, OH"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Greenwood, MS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Boston, MA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cedar Rapids, IA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Columbia, MO"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Birmingham, AL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pittsburgh, PA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nashville, TN"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eugene, OR"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Raleigh/Durham, NC"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grand Rapids, MI"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cut Bank, MT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Palm Beach, FL"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"Anchorage, AK"</code></td>
-                    <td>60</td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Las Vegas, NV"</code></td>
-                    <td>60</td>
+                    <td><code>"Los Angeles, CA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Norfolk, VA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wichita Falls, TX"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rockford, IL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Duluth, MN"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Binghamton, NY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Salinas, CA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Roanoke, VA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fort Worth, TX"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Windsor Locks, CT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tampa, FL"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Winnemucca, NV"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fresno, CA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Quillayute, WA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Concord, NH"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richmond, VA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Islip, NY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Albany, NY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Santa Maria, CA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kaunakakai, HI"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cape Girardeau, MO"</code></td>
+                    <td>53</td>
                 </tr>
             
                 <tr>
                     <td><code>"San Angelo, TX"</code></td>
-                    <td>60</td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Williston, ND"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wilmington, DE"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York, NY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Casper, WY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St Louis, MO"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mercury, NV"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Palmer, AK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wichita, KS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Homer, AK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gulfport, MS"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Salisbury, MD"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nome, AK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madison, WI"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tucson, AZ"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Glasgow, MT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dallas-Fort Worth, TX"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Del Rio, TX"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gage, OK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Burlington, VT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lake Charles, LA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Concord, CA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dayton, OH"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cheyenne, WY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dubuque, IA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lansing, MI"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Little Rock, AR"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Reno, NV"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Juneau, AK"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Buffalo, NY"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charlotte, NC"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Portland, OR"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dillon, MT"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Springfield, MO"</code></td>
+                    <td>53</td>
                 </tr>
             
             

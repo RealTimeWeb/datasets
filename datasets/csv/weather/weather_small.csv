@@ -1,1001 +1,1001 @@
-Avg Temp,Avg Wind,City,Code,Day,Full,High Gust,High Wind,Location,Max Temp,Min Temp,Month,Precipitation,State,Year
-34.0,8.0,Mount Holly/Philadelphia,ABE,10,04-10-2016,31.0,22.0,"Mount Holly/Philadelphia, NJ",40.0,27.0,4,0.19,New Jersey,2016
-37.0,18.0,Aberdeen,ABR,10,04-10-2016,50.0,38.0,"Aberdeen, SD",59.0,15.0,4,0.0,South Dakota,2016
-37.0,7.0,Albany,ALB,10,04-10-2016,27.0,21.0,"Albany, NY",46.0,27.0,4,0.0,New York,2016
-48.0,10.0,Pueblo,ALS,10,04-10-2016,40.0,32.0,"Pueblo, CO",65.0,31.0,4,0.0,Colorado,2016
-63.0,16.0,Amarillo,AMA,10,04-10-2016,39.0,32.0,"Amarillo, TX",79.0,47.0,4,0.0,Texas,2016
-51.0,7.0,Birmingham,ANB,10,04-10-2016,27.0,17.0,"Birmingham, AL",64.0,37.0,4,0.0,Alabama,2016
-19.0,7.0,Marquette,ANJ,10,04-10-2016,23.0,18.0,"Marquette, MI",25.0,12.0,4,0.0,Michigan,2016
-19.0,7.0,Marquette,ANJ,10,04-10-2016,23.0,18.0,"Marquette, MI",25.0,12.0,4,0.0,Michigan,2016
-20.0,10.0,Gaylord,APN,10,04-10-2016,26.0,18.0,"Gaylord, MI",27.0,12.0,4,1.34,Michigan,2016
-32.0,10.0,Chicago,ARR,10,04-10-2016,29.0,24.0,"Chicago, IL",40.0,23.0,4,1.67,Illinois,2016
-54.0,12.0,Peachtree City/Atlanta,ATL,10,04-10-2016,36.0,29.0,"Peachtree City/Atlanta, GA",62.0,45.0,4,0.0,Georgia,2016
-66.0,7.0,Austin/San Antonio,AUS,10,04-10-2016,26.0,22.0,"Austin/San Antonio, TX",79.0,53.0,4,1.13,Texas,2016
-47.0,14.0,North Platte,BBW,10,04-10-2016,40.0,29.0,"North Platte, NE",69.0,24.0,4,0.0,Nebraska,2016
-28.0,9.0,Binghamton,BGM,10,04-10-2016,28.0,21.0,"Binghamton, NY",33.0,22.0,4,0.06,New York,2016
-35.0,8.0,Caribou,BGR,10,04-10-2016,26.0,20.0,"Caribou, ME",43.0,27.0,4,0.83,Maine,2016
-63.0,15.0,Billings,BIL,10,04-10-2016,42.0,33.0,"Billings, MT",78.0,47.0,4,0.0,Montana,2016
-50.0,19.0,Bismarck,BIS,10,04-10-2016,48.0,37.0,"Bismarck, ND",75.0,25.0,4,0.0,North Dakota,2016
-46.0,7.0,Nashville,BNA,10,04-10-2016,22.0,16.0,"Nashville, TN",55.0,37.0,4,0.0,Tennessee,2016
-39.0,9.0,Boston,BOS,10,04-10-2016,25.0,22.0,"Boston, MD",46.0,32.0,4,0.0,Massachusetts,2016
-73.0,12.0,Brownsville,BRO,10,04-10-2016,30.0,24.0,"Brownsville, TX",81.0,65.0,4,0.0,Texas,2016
-62.0,4.0,New Orleans/Baton Rouge,BTR,10,04-10-2016,21.0,16.0,"New Orleans/Baton Rouge, LA",78.0,46.0,4,0.0,Louisiana,2016
-30.0,9.0,Burlington,BTV,10,04-10-2016,27.0,21.0,"Burlington, VT",36.0,24.0,4,0.01,Vermont,2016
-29.0,11.0,Buffalo,BUF,10,04-10-2016,27.0,21.0,"Buffalo, NY",34.0,24.0,4,1.14,New York,2016
-57.0,9.0,Pocatello,BYI,10,04-10-2016,31.0,25.0,"Pocatello, ID",74.0,40.0,4,0.1,Idaho,2016
-53.0,5.0,Great Falls,BZN,10,04-10-2016,29.0,24.0,"Great Falls, MT",75.0,31.0,4,0.0,Montana,2016
-55.0,9.0,Greenville-Spartanburg,CAE,10,04-10-2016,37.0,31.0,"Greenville-Spartanburg, SC",67.0,42.0,4,0.0,South Carolina,2016
-43.0,7.0,Paducah,CGI,10,04-10-2016,21.0,15.0,"Paducah, KY",52.0,33.0,4,0.0,Kentucky,2016
-48.0,8.0,Morristown/Knoxville,CHA,10,04-10-2016,27.0,20.0,"Morristown/Knoxville, TN",58.0,38.0,4,0.0,Tennessee,2016
-59.0,11.0,Charleston,CHS,10,04-10-2016,37.0,26.0,"Charleston, SC",71.0,47.0,4,0.0,South Carolina,2016
-50.0,17.0,Topeka,CNK,10,04-10-2016,40.0,30.0,"Topeka, KS",71.0,29.0,4,0.0,Kansas,2016
-73.0,16.0,Corpus Christi,CRP,10,04-10-2016,40.0,33.0,"Corpus Christi, TX",82.0,63.0,4,0.08,Texas,2016
-56.0,7.0,Columbia,CUB,10,04-10-2016,34.0,24.0,"Columbia, SC",68.0,43.0,4,0.0,South Carolina,2016
-36.0,13.0,Wilmington,CVG,10,04-10-2016,35.0,26.0,"Wilmington, OH",41.0,30.0,4,2.02,Ohio,2016
-53.0,16.0,Riverton,CYS,10,04-10-2016,45.0,37.0,"Riverton, WY",72.0,33.0,4,0.0,Wyoming,2016
-52.0,4.0,San Diego,CZZ,10,04-10-2016,19.0,15.0,"San Diego, CA",59.0,44.0,4,0.02,California,2016
-63.0,6.0,Melbourne,DAB,10,04-10-2016,22.0,16.0,"Melbourne, FL",72.0,53.0,4,0.0,Florida,2016
-42.0,15.0,Baltimore/Washington,DCA,10,04-10-2016,41.0,35.0,"Baltimore/Washington, VA",50.0,34.0,4,0.17,Virginia,2016
-56.0,8.0,Grand Junction,DEN,10,04-10-2016,40.0,32.0,"Grand Junction, CO",72.0,39.0,4,0.86,Colorado,2016
-56.0,8.0,Grand Junction,DEN,10,04-10-2016,40.0,32.0,"Grand Junction, CO",72.0,39.0,4,0.86,Colorado,2016
-63.0,8.0,Fort Worth/Dallas,DFW,10,04-10-2016,30.0,26.0,"Fort Worth/Dallas, TX",71.0,55.0,4,0.04,Texas,2016
-58.0,19.0,Dodge City,DGC,10,04-10-2016,46.0,35.0,"Dodge City, KS",75.0,41.0,4,0.0,Kansas,2016
-38.0,12.0,Des Moines,DSM,10,04-10-2016,31.0,25.0,"Des Moines, IA",51.0,25.0,4,0.0,Iowa,2016
-31.0,11.0,Detroit/Pontiac,DTW,10,04-10-2016,29.0,23.0,"Detroit/Pontiac, MI",36.0,26.0,4,0.01,Michigan,2016
-67.0,7.0,El Paso,ELP,10,04-10-2016,25.0,21.0,"El Paso, TX",81.0,53.0,4,0.0,Texas,2016
-32.0,12.112903225806452,Grand Forks,FGF,10,04-10-2016,28.370967741935484,22.2741935483871,"Grand Forks, ND",47.0,16.0,4,0.0,North Dakota,2016
-32.0,4.129032258064516,Grand Forks,FGF,10,04-10-2016,16.2741935483871,12.225806451612904,"Grand Forks, ND",47.0,16.0,4,0.0,North Dakota,2016
-36.0,16.0,Sioux Falls,FSD,10,04-10-2016,42.0,33.0,"Sioux Falls, SD",53.0,19.0,4,0.0,South Dakota,2016
-36.0,16.0,Sioux Falls,FSD,10,04-10-2016,42.0,33.0,"Sioux Falls, SD",53.0,19.0,4,0.0,South Dakota,2016
-36.0,16.0,Sioux Falls,FSD,10,04-10-2016,42.0,33.0,"Sioux Falls, SD",53.0,19.0,4,0.0,South Dakota,2016
-31.0,11.0,Northern Indiana,FWA,10,04-10-2016,37.0,28.0,"Northern Indiana, IN",37.0,25.0,4,0.03,Indiana,2016
-54.0,5.0,Salt Lake City,GJT,10,04-10-2016,33.0,25.0,"Salt Lake City, UT",62.0,46.0,4,0.27,Utah,2016
-63.0,6.0,Jacksonville,GNV,10,04-10-2016,26.0,17.0,"Jacksonville, FL",75.0,50.0,4,0.0,Florida,2016
-54.0,8.0,Missoula,GPI,10,04-10-2016,35.0,25.0,"Missoula, MT",76.0,32.0,4,0.0,Montana,2016
-29.0,9.0,Grand Rapids,GRR,10,04-10-2016,24.0,20.0,"Grand Rapids, MI",36.0,21.0,4,0.01,Michigan,2016
-66.0,7.0,Houston/Galveston,HOU,10,04-10-2016,32.0,24.0,"Houston/Galveston, TX",78.0,54.0,4,2.68,Texas,2016
-53.0,14.0,Newport/Morehead City,HSE,10,04-10-2016,42.0,28.0,"Newport/Morehead City, NC",61.0,44.0,4,0.0,North Carolina,2016
-50.0,6.0,Huntsville,HSV,10,04-10-2016,23.0,17.0,"Huntsville, AL",60.0,40.0,4,0.0,Alabama,2016
-56.0,14.0,Wilmington,ILM,10,04-10-2016,43.0,33.0,"Wilmington, NC",68.0,44.0,4,0.0,North Carolina,2016
-34.0,12.0,Indianapolis,IND,10,04-10-2016,35.0,25.0,"Indianapolis, IN",41.0,27.0,4,1.26,Indiana,2016
-19.0,9.0,Minneapolis/Twin Cities,INL,10,04-10-2016,32.0,24.0,"Minneapolis/Twin Cities, MN",32.0,6.0,4,0.33,Minnesota,2016
-19.0,9.0,Minneapolis/Twin Cities,INL,10,04-10-2016,32.0,24.0,"Minneapolis/Twin Cities, MN",32.0,6.0,4,0.33,Minnesota,2016
-59.0,3.0,Jackson,JAN,10,04-10-2016,14.0,10.0,"Jackson, MS",77.0,41.0,4,0.0,Mississippi,2016
-62.0,8.0,Tampa,JAX,10,04-10-2016,33.0,21.0,"Tampa, FL",75.0,48.0,4,0.0,Florida,2016
-37.0,8.0,Charleston,JKL,10,04-10-2016,28.0,20.0,"Charleston, WV",44.0,30.0,4,0.01,West Virginia,2016
-62.0,14.0,Lubbock,LBB,10,04-10-2016,32.0,25.0,"Lubbock, TX",76.0,47.0,4,0.12,Texas,2016
-50.0,11.0,Cheyenne,LBF,10,04-10-2016,30.0,23.0,"Cheyenne, WY",74.0,26.0,4,0.0,Wyoming,2016
-64.0,6.0,Lake Charles,LCH,10,04-10-2016,22.0,20.0,"Lake Charles, LA",78.0,50.0,4,0.0,Louisiana,2016
-56.0,7.0,North Little Rock,LIT,10,04-10-2016,22.0,16.0,"North Little Rock, AR",67.0,44.0,4,0.06,Arkansas,2016
-31.0,12.0,Davenport/Quad Cities,LOT,10,04-10-2016,39.0,25.0,"Davenport/Quad Cities, IA",40.0,22.0,4,1.09,Iowa,2016
-38.0,9.0,Jackson,LOZ,10,04-10-2016,28.0,21.0,"Jackson, KY",45.0,31.0,4,0.0,Kentucky,2016
-57.0,5.055555555555555,Shreveport,LZK,10,04-10-2016,16.22222222222222,11.833333333333332,"Shreveport, LA",65.0,49.0,4,0.04,Louisiana,2016
-67.0,9.0,Midland/Odessa,MAF,10,04-10-2016,23.0,18.0,"Midland/Odessa, TX",80.0,54.0,4,0.46,Texas,2016
-46.0,14.0,Kansas City/Pleasant Hill,MCI,10,04-10-2016,30.0,24.0,"Kansas City/Pleasant Hill, MO",61.0,31.0,4,0.0,Missouri,2016
-38.0,9.0,State College,MDT,10,04-10-2016,28.0,22.0,"State College, PA",43.0,32.0,4,0.23,Pennsylvania,2016
-55.0,6.0,Memphis,MEM,10,04-10-2016,23.0,18.0,"Memphis, TN",64.0,46.0,4,0.0,Tennessee,2016
-74.0,7.0,Miami,MIA,10,04-10-2016,23.0,17.0,"Miami, FL",81.0,67.0,4,0.0,Florida,2016
-59.0,3.0,Mobile/Pensacola,MOB,10,04-10-2016,18.0,15.0,"Mobile/Pensacola, AL",78.0,40.0,4,0.0,Alabama,2016
-21.0,5.112903225806452,Green Bay,MQT,10,04-10-2016,22.0,14.193548387096774,"Green Bay, WI",28.0,14.0,4,0.23,Wisconsin,2016
-21.0,11.967741935483872,Green Bay,MQT,10,04-10-2016,22.0,23.967741935483872,"Green Bay, WI",28.0,14.0,4,0.23,Wisconsin,2016
-56.0,5.0,Spokane,MSO,10,04-10-2016,27.0,22.0,"Spokane, WA",77.0,34.0,4,0.0,Washington,2016
-77.0,8.0,Key West,MTH,10,04-10-2016,19.0,14.0,"Key West, FL",80.0,73.0,4,0.0,Florida,2016
-40.0,11.0,New York/Upton,NYC,10,04-10-2016,0.0,0.0,"New York/Upton, NY",43.0,36.0,4,0.11,New York,2016
-60.0,15.0,Norman/Oklahoma City,OKC,10,04-10-2016,41.0,32.0,"Norman/Oklahoma City, OK",75.0,45.0,4,2.91,Oklahoma,2016
-41.0,15.0,Omaha/Valley,OMA,10,04-10-2016,36.0,30.0,"Omaha/Valley, NE",58.0,24.0,4,0.0,Nebraska,2016
-30.0,12.0,Milwaukee/Sullivan,ORD,10,04-10-2016,27.0,22.0,"Milwaukee/Sullivan, WI",38.0,22.0,4,1.49,Wisconsin,2016
-30.0,12.0,Milwaukee/Sullivan,ORD,10,04-10-2016,27.0,22.0,"Milwaukee/Sullivan, WI",38.0,22.0,4,1.49,Wisconsin,2016
-73.0,7.0,Phoenix,PHX,10,04-10-2016,22.0,17.0,"Phoenix, AZ",83.0,63.0,4,0.0,Arizona,2016
-35.0,8.0,Lincoln,PIA,10,04-10-2016,28.0,20.0,"Lincoln, IL",44.0,25.0,4,0.01,Illinois,2016
-30.0,14.0,Pittsburgh,PIT,10,04-10-2016,40.0,30.0,"Pittsburgh, PA",35.0,24.0,4,0.18,Pennsylvania,2016
-58.0,11.0,Goodland,PUB,10,04-10-2016,41.0,36.0,"Goodland, KS",81.0,35.0,4,0.0,Kansas,2016
-37.0,9.0,Gray/Portland,PWM,10,04-10-2016,31.0,24.0,"Gray/Portland, ME",47.0,26.0,4,0.0,Maine,2016
-45.0,10.0,Raleigh,RDU,10,04-10-2016,43.0,25.0,"Raleigh, NC",52.0,38.0,4,0.0,North Carolina,2016
-43.0,15.0,Wakefield,RIC,10,04-10-2016,45.0,32.0,"Wakefield, VA",52.0,33.0,4,0.01,Virginia,2016
-31.0,12.0,Blacksburg,RNK,10,04-10-2016,41.0,25.0,"Blacksburg, VA",37.0,25.0,4,0.05,Virginia,2016
-30.0,14.0,La Crosse,RST,10,04-10-2016,32.0,25.0,"La Crosse, WI",41.0,18.0,4,0.0,Wisconsin,2016
-30.0,14.0,La Crosse,RST,10,04-10-2016,32.0,25.0,"La Crosse, WI",41.0,18.0,4,0.0,Wisconsin,2016
-41.0,10.0,Louisville,SDF,10,04-10-2016,24.0,18.0,"Louisville, KY",49.0,33.0,4,0.0,Kentucky,2016
-51.0,10.0,Springfield,SGF,10,04-10-2016,26.0,20.0,"Springfield, MO",66.0,36.0,4,0.0,Missouri,2016
-81.0,10.0,San Juan,SJU,10,04-10-2016,28.0,23.0,"San Juan, PR",87.0,74.0,4,0.0,Puerto Rico,2016
-41.0,9.0,St. Louis,STL,10,04-10-2016,28.0,21.0,"St. Louis, MO",51.0,30.0,4,0.0,Missouri,2016
-61.0,6.0,Tallahassee,TLH,10,04-10-2016,26.0,20.0,"Tallahassee, FL",78.0,43.0,4,0.0,Florida,2016
-26.0,8.0,Cleveland,TOL,10,04-10-2016,24.0,17.0,"Cleveland, OH",32.0,20.0,4,0.29,Ohio,2016
-61.0,13.0,Tulsa,TUL,10,04-10-2016,41.0,31.0,"Tulsa, OK",76.0,46.0,4,0.0,Oklahoma,2016
-57.0,15.0,Rapid City,UNR,10,04-10-2016,39.0,26.0,"Rapid City, SD",80.0,34.0,4,0.0,South Dakota,2016
-57.0,16.0,Rapid City,UNR,10,04-10-2016,39.0,33.0,"Rapid City, SD",80.0,34.0,4,0.0,South Dakota,2016
-55.0,5.0,Medford,AAT,11,04-11-2016,27.0,22.0,"Medford, OR",66.0,43.0,4,0.61,Oregon,2016
-37.0,7.0,Mount Holly/Philadelphia,ABE,11,04-11-2016,23.0,15.0,"Mount Holly/Philadelphia, NJ",48.0,26.0,4,0.0,New Jersey,2016
-72.0,18.0,San Angelo,ABI,11,04-11-2016,43.0,31.0,"San Angelo, TX",82.0,62.0,4,0.33,Texas,2016
-59.0,7.0,Albuquerque,ABQ,11,04-11-2016,45.0,33.0,"Albuquerque, NM",71.0,46.0,4,0.01,New Mexico,2016
-43.0,17.0,Aberdeen,ABR,11,04-11-2016,44.0,37.0,"Aberdeen, SD",56.0,29.0,4,0.0,South Dakota,2016
-53.0,8.0,Denver/Boulder,AKO,11,04-11-2016,35.0,30.0,"Denver/Boulder, CO",66.0,40.0,4,0.0,Colorado,2016
-35.0,7.0,Albany,ALB,11,04-11-2016,24.0,17.0,"Albany, NY",47.0,23.0,4,0.0,New York,2016
-48.0,7.0,Pueblo,ALS,11,04-11-2016,34.0,26.0,"Pueblo, CO",66.0,30.0,4,0.0,Colorado,2016
-68.0,15.0,Amarillo,AMA,11,04-11-2016,68.0,48.0,"Amarillo, TX",85.0,50.0,4,0.79,Texas,2016
-57.0,7.0,Birmingham,ANB,11,04-11-2016,21.0,15.0,"Birmingham, AL",71.0,42.0,4,0.0,Alabama,2016
-44.0,12.0,Anchorage,ANC,11,04-11-2016,39.0,23.0,"Anchorage, AK",51.0,36.0,4,0.0,Alaska,2016
-26.0,11.0,Marquette,ANJ,11,04-11-2016,30.0,22.0,"Marquette, MI",33.0,18.0,4,0.22,Michigan,2016
-26.0,11.0,Marquette,ANJ,11,04-11-2016,30.0,22.0,"Marquette, MI",33.0,18.0,4,0.22,Michigan,2016
-23.0,10.0,Gaylord,APN,11,04-11-2016,32.0,24.0,"Gaylord, MI",33.0,12.0,4,0.23,Michigan,2016
-43.0,13.0,Chicago,ARR,11,04-11-2016,33.0,26.0,"Chicago, IL",51.0,34.0,4,0.14,Illinois,2016
-52.0,8.0,Peachtree City/Atlanta,ATL,11,04-11-2016,22.0,17.0,"Peachtree City/Atlanta, GA",63.0,40.0,4,0.0,Georgia,2016
-73.0,14.0,Austin/San Antonio,AUS,11,04-11-2016,36.0,29.0,"Austin/San Antonio, TX",81.0,65.0,4,1.21,Texas,2016
-52.0,15.0,North Platte,BBW,11,04-11-2016,39.0,32.0,"North Platte, NE",60.0,43.0,4,1.15,Nebraska,2016
-28.0,6.0,Binghamton,BGM,11,04-11-2016,21.0,16.0,"Binghamton, NY",37.0,19.0,4,2.57,New York,2016
-33.0,8.0,Caribou,BGR,11,04-11-2016,30.0,23.0,"Caribou, ME",43.0,22.0,4,0.0,Maine,2016
-44.0,6.0,Billings,BIL,11,04-11-2016,28.0,20.0,"Billings, MT",54.0,34.0,4,0.54,Montana,2016
-36.0,15.0,Bismarck,BIS,11,04-11-2016,45.0,33.0,"Bismarck, ND",45.0,26.0,4,0.0,North Dakota,2016
-53.0,7.0,Boise,BKE,11,04-11-2016,23.0,17.0,"Boise, ID",73.0,32.0,4,0.0,Idaho,2016
-54.0,11.0,Nashville,BNA,11,04-11-2016,37.0,29.0,"Nashville, TN",71.0,37.0,4,0.04,Tennessee,2016
-40.0,11.0,Boston,BOS,11,04-11-2016,32.0,23.0,"Boston, MD",49.0,31.0,4,0.0,Massachusetts,2016
-76.0,16.0,Brownsville,BRO,11,04-11-2016,42.0,33.0,"Brownsville, TX",85.0,67.0,4,0.09,Texas,2016
-67.0,9.0,New Orleans/Baton Rouge,BTR,11,04-11-2016,31.0,24.0,"New Orleans/Baton Rouge, LA",81.0,52.0,4,0.0,Louisiana,2016
-32.0,6.0,Burlington,BTV,11,04-11-2016,24.0,18.0,"Burlington, VT",41.0,23.0,4,0.0,Vermont,2016
-30.0,6.0,Buffalo,BUF,11,04-11-2016,25.0,20.0,"Buffalo, NY",37.0,22.0,4,0.24,New York,2016
-60.0,4.0,Los Angeles/Oxnard,BUR,11,04-11-2016,17.0,14.0,"Los Angeles/Oxnard, CA",67.0,52.0,4,0.0,California,2016
-58.0,8.0,Pocatello,BYI,11,04-11-2016,25.0,20.0,"Pocatello, ID",67.0,49.0,4,0.01,Idaho,2016
-47.0,5.0,Great Falls,BZN,11,04-11-2016,16.0,14.0,"Great Falls, MT",58.0,35.0,4,0.0,Montana,2016
-50.0,6.0,Greenville-Spartanburg,CAE,11,04-11-2016,20.0,16.0,"Greenville-Spartanburg, SC",62.0,38.0,4,0.0,South Carolina,2016
-55.0,9.0,Eureka,CEC,11,04-11-2016,24.0,20.0,"Eureka, CA",58.0,51.0,4,1.03,California,2016
-60.0,15.0,Paducah,CGI,11,04-11-2016,46.0,32.0,"Paducah, KY",76.0,43.0,4,0.06,Kentucky,2016
-50.0,5.0,Morristown/Knoxville,CHA,11,04-11-2016,21.0,16.0,"Morristown/Knoxville, TN",63.0,36.0,4,3.07,Tennessee,2016
-51.0,9.0,Charleston,CHS,11,04-11-2016,25.0,17.0,"Charleston, SC",61.0,41.0,4,0.0,South Carolina,2016
-60.0,12.0,Topeka,CNK,11,04-11-2016,36.0,26.0,"Topeka, KS",70.0,49.0,4,0.0,Kansas,2016
-72.0,18.0,Wichita,CNU,11,04-11-2016,41.0,30.0,"Wichita, KS",87.0,56.0,4,1.01,Kansas,2016
-77.0,18.0,Corpus Christi,CRP,11,04-11-2016,36.0,30.0,"Corpus Christi, TX",86.0,67.0,4,1.46,Texas,2016
-50.0,3.0,Columbia,CUB,11,04-11-2016,16.0,10.0,"Columbia, SC",62.0,37.0,4,0.0,South Carolina,2016
-45.0,13.0,Wilmington,CVG,11,04-11-2016,35.0,23.0,"Wilmington, OH",60.0,29.0,4,0.22,Ohio,2016
-45.0,12.0,Riverton,CYS,11,04-11-2016,39.0,30.0,"Riverton, WY",57.0,33.0,4,0.34,Wyoming,2016
-51.0,4.0,San Diego,CZZ,11,04-11-2016,26.0,23.0,"San Diego, CA",58.0,44.0,4,0.17,California,2016
-64.0,6.0,Melbourne,DAB,11,04-11-2016,20.0,17.0,"Melbourne, FL",77.0,50.0,4,0.0,Florida,2016
-63.0,9.0,Las Vegas,DAG,11,04-11-2016,31.0,23.0,"Las Vegas, NV",73.0,53.0,4,0.05,Nevada,2016
-42.0,9.0,Baltimore/Washington,DCA,11,04-11-2016,24.0,18.0,"Baltimore/Washington, VA",52.0,31.0,4,0.0,Virginia,2016
-53.0,10.0,Grand Junction,DEN,11,04-11-2016,30.0,26.0,"Grand Junction, CO",68.0,38.0,4,0.13,Colorado,2016
-53.0,10.0,Grand Junction,DEN,11,04-11-2016,30.0,26.0,"Grand Junction, CO",68.0,38.0,4,0.13,Colorado,2016
-70.0,18.0,Fort Worth/Dallas,DFW,11,04-11-2016,37.0,30.0,"Fort Worth/Dallas, TX",77.0,62.0,4,0.0,Texas,2016
-63.0,17.0,Dodge City,DGC,11,04-11-2016,31.0,26.0,"Dodge City, KS",75.0,50.0,4,0.0,Kansas,2016
-56.0,10.0,Des Moines,DSM,11,04-11-2016,26.0,23.0,"Des Moines, IA",67.0,45.0,4,0.02,Iowa,2016
-36.0,8.0,Detroit/Pontiac,DTW,11,04-11-2016,26.0,22.0,"Detroit/Pontiac, MI",46.0,26.0,4,0.4,Michigan,2016
-54.0,5.0,Portland,EKA,11,04-11-2016,22.0,14.0,"Portland, OR",56.0,51.0,4,0.02,Oregon,2016
-65.0,15.0,El Paso,ELP,11,04-11-2016,47.0,36.0,"El Paso, TX",80.0,50.0,4,0.0,Texas,2016
-47.0,7.0,Elko,ELY,11,04-11-2016,24.0,18.0,"Elko, NV",56.0,37.0,4,0.14,Nevada,2016
-45.0,0.0,Fairbanks,FAI,11,04-11-2016,15.0,0.0,"Fairbanks, AK",54.0,35.0,4,0.0,Alaska,2016
-64.0,7.0,San Joaquin Valley/Hanford,FAT,11,04-11-2016,21.0,17.0,"San Joaquin Valley/Hanford, CA",71.0,56.0,4,0.99,California,2016
-33.0,12.225806451612904,Grand Forks,FGF,11,04-11-2016,28.741935483870968,22.548387096774196,"Grand Forks, ND",39.0,27.0,4,0.79,North Dakota,2016
-33.0,4.258064516129032,Grand Forks,FGF,11,04-11-2016,16.548387096774196,12.451612903225806,"Grand Forks, ND",39.0,27.0,4,0.79,North Dakota,2016
-38.0,7.0,Flagstaff,FLG,11,04-11-2016,28.0,23.0,"Flagstaff, AZ",48.0,28.0,4,0.13,Arizona,2016
-48.0,13.0,Sioux Falls,FSD,11,04-11-2016,40.0,33.0,"Sioux Falls, SD",61.0,34.0,4,0.0,South Dakota,2016
-48.0,13.0,Sioux Falls,FSD,11,04-11-2016,40.0,33.0,"Sioux Falls, SD",61.0,34.0,4,0.0,South Dakota,2016
-48.0,13.0,Sioux Falls,FSD,11,04-11-2016,40.0,33.0,"Sioux Falls, SD",61.0,34.0,4,0.0,South Dakota,2016
-41.0,12.0,Northern Indiana,FWA,11,04-11-2016,30.0,25.0,"Northern Indiana, IN",52.0,29.0,4,0.22,Indiana,2016
-37.0,18.0,Glasgow,GGW,11,04-11-2016,39.0,29.0,"Glasgow, MT",48.0,25.0,4,0.0,Montana,2016
-55.0,6.0,Salt Lake City,GJT,11,04-11-2016,20.0,16.0,"Salt Lake City, UT",64.0,45.0,4,0.05,Utah,2016
-54.0,12.0,Hastings,GLD,11,04-11-2016,32.0,25.0,"Hastings, NE",66.0,41.0,4,1.24,Nebraska,2016
-64.0,6.0,Jacksonville,GNV,11,04-11-2016,21.0,16.0,"Jacksonville, FL",78.0,49.0,4,0.0,Florida,2016
-51.0,7.0,Missoula,GPI,11,04-11-2016,30.0,23.0,"Missoula, MT",63.0,39.0,4,0.0,Montana,2016
-37.0,11.0,Grand Rapids,GRR,11,04-11-2016,25.0,20.0,"Grand Rapids, MI",45.0,29.0,4,0.79,Michigan,2016
-70.0,7.0,Houston/Galveston,HOU,11,04-11-2016,35.0,28.0,"Houston/Galveston, TX",80.0,60.0,4,0.02,Texas,2016
-46.0,6.0,Newport/Morehead City,HSE,11,04-11-2016,29.0,17.0,"Newport/Morehead City, NC",51.0,41.0,4,0.0,North Carolina,2016
-59.0,12.0,Huntsville,HSV,11,04-11-2016,32.0,25.0,"Huntsville, AL",75.0,42.0,4,0.02,Alabama,2016
-46.0,5.0,Wilmington,ILM,11,04-11-2016,20.0,16.0,"Wilmington, NC",56.0,35.0,4,0.0,North Carolina,2016
-47.0,14.0,Indianapolis,IND,11,04-11-2016,42.0,35.0,"Indianapolis, IN",63.0,30.0,4,0.53,Indiana,2016
-31.0,12.0,Minneapolis/Twin Cities,INL,11,04-11-2016,28.0,22.0,"Minneapolis/Twin Cities, MN",36.0,26.0,4,0.03,Minnesota,2016
-31.0,12.0,Minneapolis/Twin Cities,INL,11,04-11-2016,28.0,22.0,"Minneapolis/Twin Cities, MN",36.0,26.0,4,0.03,Minnesota,2016
-70.0,13.0,Jackson,JAN,11,04-11-2016,34.0,26.0,"Jackson, MS",82.0,57.0,4,0.0,Mississippi,2016
-58.0,8.0,Tampa,JAX,11,04-11-2016,28.0,22.0,"Tampa, FL",73.0,42.0,4,3.83,Florida,2016
-47.0,4.0,Charleston,JKL,11,04-11-2016,19.0,12.0,"Charleston, WV",64.0,29.0,4,0.71,West Virginia,2016
-0.0,0.0,Juneau,JNU,11,04-11-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
-66.0,14.0,Lubbock,LBB,11,04-11-2016,32.0,25.0,"Lubbock, TX",78.0,53.0,4,0.01,Texas,2016
-53.0,12.0,Cheyenne,LBF,11,04-11-2016,33.0,25.0,"Cheyenne, WY",62.0,43.0,4,0.05,Wyoming,2016
-65.0,11.0,Lake Charles,LCH,11,04-11-2016,31.0,24.0,"Lake Charles, LA",77.0,53.0,4,0.0,Louisiana,2016
-69.0,13.0,North Little Rock,LIT,11,04-11-2016,37.0,28.0,"North Little Rock, AR",82.0,56.0,4,2.53,Arkansas,2016
-41.0,12.0,Davenport/Quad Cities,LOT,11,04-11-2016,39.0,25.0,"Davenport/Quad Cities, IA",50.0,32.0,4,0.19,Iowa,2016
-45.0,6.0,Jackson,LOZ,11,04-11-2016,23.0,16.0,"Jackson, KY",62.0,27.0,4,1.27,Kentucky,2016
-67.0,5.111111111111111,Shreveport,LZK,11,04-11-2016,16.444444444444443,11.666666666666666,"Shreveport, LA",80.0,54.0,4,1.56,Louisiana,2016
-75.0,16.0,Midland/Odessa,MAF,11,04-11-2016,37.0,29.0,"Midland/Odessa, TX",87.0,62.0,4,0.38,Texas,2016
-61.0,11.0,Kansas City/Pleasant Hill,MCI,11,04-11-2016,39.0,29.0,"Kansas City/Pleasant Hill, MO",70.0,52.0,4,0.03,Missouri,2016
-39.0,7.0,State College,MDT,11,04-11-2016,23.0,20.0,"State College, PA",48.0,29.0,4,0.0,Pennsylvania,2016
-67.0,15.0,Memphis,MEM,11,04-11-2016,41.0,32.0,"Memphis, TN",81.0,53.0,4,0.01,Tennessee,2016
-73.0,11.0,Miami,MIA,11,04-11-2016,30.0,24.0,"Miami, FL",80.0,65.0,4,0.0,Florida,2016
-66.0,10.0,Mobile/Pensacola,MOB,11,04-11-2016,29.0,22.0,"Mobile/Pensacola, AL",76.0,55.0,4,0.0,Alabama,2016
-27.0,5.225806451612903,Green Bay,MQT,11,04-11-2016,31.0,14.387096774193548,"Green Bay, WI",32.0,21.0,4,0.03,Wisconsin,2016
-27.0,11.935483870967742,Green Bay,MQT,11,04-11-2016,31.0,23.935483870967744,"Green Bay, WI",32.0,21.0,4,0.03,Wisconsin,2016
-55.0,7.0,Spokane,MSO,11,04-11-2016,31.0,24.0,"Spokane, WA",66.0,43.0,4,0.0,Washington,2016
-77.0,14.0,Key West,MTH,11,04-11-2016,26.0,20.0,"Key West, FL",81.0,72.0,4,0.0,Florida,2016
-41.0,8.5,New York/Upton,NYC,11,04-11-2016,24.0,13.0,"New York/Upton, NY",50.0,31.0,4,0.0,New York,2016
-71.0,19.0,Norman/Oklahoma City,OKC,11,04-11-2016,41.0,32.0,"Norman/Oklahoma City, OK",86.0,56.0,4,1.28,Oklahoma,2016
-57.0,11.0,Omaha/Valley,OMA,11,04-11-2016,30.0,25.0,"Omaha/Valley, NE",69.0,45.0,4,1.38,Nebraska,2016
-42.0,14.0,Milwaukee/Sullivan,ORD,11,04-11-2016,37.0,25.0,"Milwaukee/Sullivan, WI",50.0,33.0,4,0.1,Wisconsin,2016
-42.0,14.0,Milwaukee/Sullivan,ORD,11,04-11-2016,37.0,25.0,"Milwaukee/Sullivan, WI",50.0,33.0,4,0.1,Wisconsin,2016
-65.0,8.0,Phoenix,PHX,11,04-11-2016,34.0,28.0,"Phoenix, AZ",73.0,56.0,4,0.26,Arizona,2016
-45.0,11.0,Lincoln,PIA,11,04-11-2016,32.0,23.0,"Lincoln, IL",52.0,38.0,4,0.17,Illinois,2016
-35.0,6.0,Pittsburgh,PIT,11,04-11-2016,19.0,15.0,"Pittsburgh, PA",51.0,19.0,4,0.01,Pennsylvania,2016
-58.0,5.0,Pendleton,PSC,11,04-11-2016,13.0,10.0,"Pendleton, OR",76.0,40.0,4,0.0,Oregon,2016
-63.0,13.0,Goodland,PUB,11,04-11-2016,37.0,30.0,"Goodland, KS",78.0,47.0,4,0.23,Kansas,2016
-37.0,9.0,Gray/Portland,PWM,11,04-11-2016,28.0,22.0,"Gray/Portland, ME",47.0,27.0,4,0.0,Maine,2016
-63.0,0.0,Sacramento,RDD,11,04-11-2016,10.0,8.0,"Sacramento, CA",67.0,58.0,4,1.11,California,2016
-63.0,0.0,Sacramento,RDD,11,04-11-2016,10.0,8.0,"Sacramento, CA",67.0,58.0,4,1.11,California,2016
-45.0,5.0,Raleigh,RDU,11,04-11-2016,18.0,12.0,"Raleigh, NC",60.0,29.0,4,0.0,North Carolina,2016
-41.0,7.0,Wakefield,RIC,11,04-11-2016,20.0,15.0,"Wakefield, VA",55.0,27.0,4,0.0,Virginia,2016
-39.0,3.0,Blacksburg,RNK,11,04-11-2016,33.0,10.0,"Blacksburg, VA",59.0,19.0,4,1.77,Virginia,2016
-52.0,5.0,Reno,RNO,11,04-11-2016,24.0,17.0,"Reno, NV",59.0,45.0,4,0.09,Nevada,2016
-46.0,17.0,La Crosse,RST,11,04-11-2016,41.0,31.0,"La Crosse, WI",56.0,35.0,4,0.0,Wisconsin,2016
-46.0,17.0,La Crosse,RST,11,04-11-2016,41.0,31.0,"La Crosse, WI",56.0,35.0,4,0.0,Wisconsin,2016
-50.0,12.0,Louisville,SDF,11,04-11-2016,30.0,22.0,"Louisville, KY",64.0,36.0,4,0.02,Kentucky,2016
-52.0,7.0,Seattle,SEA,11,04-11-2016,17.0,13.0,"Seattle, WA",58.0,46.0,4,0.0,Washington,2016
-62.0,20.0,Springfield,SGF,11,04-11-2016,44.0,36.0,"Springfield, MO",71.0,53.0,4,0.06,Missouri,2016
-81.0,10.0,San Juan,SJU,11,04-11-2016,28.0,23.0,"San Juan, PR",86.0,75.0,4,0.09,Puerto Rico,2016
-55.0,9.0,St. Louis,STL,11,04-11-2016,25.0,21.0,"St. Louis, MO",65.0,45.0,4,0.18,Missouri,2016
-57.0,2.0,San Francisco Bay Area/Monterey,STS,11,04-11-2016,12.0,9.0,"San Francisco Bay Area/Monterey, CA",61.0,53.0,4,0.04,California,2016
-62.0,5.0,Tallahassee,TLH,11,04-11-2016,19.0,15.0,"Tallahassee, FL",78.0,45.0,4,0.0,Florida,2016
-36.0,7.0,Cleveland,TOL,11,04-11-2016,29.0,18.0,"Cleveland, OH",50.0,21.0,4,0.2,Ohio,2016
-71.0,18.0,Tulsa,TUL,11,04-11-2016,42.0,32.0,"Tulsa, OK",83.0,59.0,4,0.1,Oklahoma,2016
-61.0,8.0,Tucson,TUS,11,04-11-2016,48.0,36.0,"Tucson, AZ",69.0,53.0,4,0.45,Arizona,2016
-45.0,15.0,Rapid City,UNR,11,04-11-2016,33.0,26.0,"Rapid City, SD",55.0,35.0,4,0.01,South Dakota,2016
-45.0,16.0,Rapid City,UNR,11,04-11-2016,33.0,33.0,"Rapid City, SD",55.0,35.0,4,0.01,South Dakota,2016
-52.0,5.0,Medford,AAT,12,04-12-2016,23.0,20.0,"Medford, OR",66.0,38.0,4,0.0,Oregon,2016
-52.0,7.0,Mount Holly/Philadelphia,ABE,12,04-12-2016,22.0,16.0,"Mount Holly/Philadelphia, NJ",61.0,42.0,4,0.02,New Jersey,2016
-71.0,14.0,San Angelo,ABI,12,04-12-2016,40.0,31.0,"San Angelo, TX",83.0,58.0,4,1.55,Texas,2016
-54.0,7.0,Albuquerque,ABQ,12,04-12-2016,36.0,31.0,"Albuquerque, NM",67.0,41.0,4,0.0,New Mexico,2016
-33.0,11.0,Aberdeen,ABR,12,04-12-2016,27.0,21.0,"Aberdeen, SD",45.0,20.0,4,0.0,South Dakota,2016
-48.0,8.0,Denver/Boulder,AKO,12,04-12-2016,26.0,21.0,"Denver/Boulder, CO",56.0,39.0,4,0.0,Colorado,2016
-46.0,14.0,Albany,ALB,12,04-12-2016,38.0,28.0,"Albany, NY",52.0,40.0,4,0.08,New York,2016
-47.0,7.0,Pueblo,ALS,12,04-12-2016,27.0,21.0,"Pueblo, CO",60.0,33.0,4,0.22,Colorado,2016
-48.0,12.0,Amarillo,AMA,12,04-12-2016,29.0,24.0,"Amarillo, TX",54.0,42.0,4,0.02,Texas,2016
-60.0,5.0,Birmingham,ANB,12,04-12-2016,19.0,14.0,"Birmingham, AL",71.0,48.0,4,1.31,Alabama,2016
-41.0,6.0,Anchorage,ANC,12,04-12-2016,22.0,15.0,"Anchorage, AK",50.0,32.0,4,0.0,Alaska,2016
-34.0,9.0,Marquette,ANJ,12,04-12-2016,22.0,16.0,"Marquette, MI",36.0,32.0,4,0.16,Michigan,2016
-34.0,9.0,Marquette,ANJ,12,04-12-2016,22.0,16.0,"Marquette, MI",36.0,32.0,4,0.16,Michigan,2016
-38.0,7.0,Gaylord,APN,12,04-12-2016,28.0,18.0,"Gaylord, MI",44.0,32.0,4,1.15,Michigan,2016
-40.0,13.0,Chicago,ARR,12,04-12-2016,34.0,26.0,"Chicago, IL",51.0,29.0,4,0.0,Illinois,2016
-60.0,6.0,Peachtree City/Atlanta,ATL,12,04-12-2016,20.0,15.0,"Peachtree City/Atlanta, GA",72.0,48.0,4,0.59,Georgia,2016
-75.0,10.0,Austin/San Antonio,AUS,12,04-12-2016,32.0,24.0,"Austin/San Antonio, TX",86.0,63.0,4,1.45,Texas,2016
-42.0,7.0,North Platte,BBW,12,04-12-2016,21.0,15.0,"North Platte, NE",57.0,27.0,4,0.0,Nebraska,2016
-42.0,10.0,Binghamton,BGM,12,04-12-2016,28.0,21.0,"Binghamton, NY",49.0,34.0,4,0.24,New York,2016
-34.0,8.0,Caribou,BGR,12,04-12-2016,31.0,23.0,"Caribou, ME",46.0,22.0,4,0.05,Maine,2016
-48.0,5.0,Billings,BIL,12,04-12-2016,16.0,12.0,"Billings, MT",67.0,29.0,4,0.0,Montana,2016
-32.0,7.0,Bismarck,BIS,12,04-12-2016,19.0,15.0,"Bismarck, ND",45.0,19.0,4,0.0,North Dakota,2016
-52.0,3.0,Boise,BKE,12,04-12-2016,13.0,10.0,"Boise, ID",74.0,30.0,4,0.0,Idaho,2016
-62.0,15.0,Nashville,BNA,12,04-12-2016,49.0,36.0,"Nashville, TN",71.0,52.0,4,0.01,Tennessee,2016
-51.0,16.0,Boston,BOS,12,04-12-2016,41.0,31.0,"Boston, MD",60.0,42.0,4,0.01,Massachusetts,2016
-80.0,14.0,Brownsville,BRO,12,04-12-2016,35.0,28.0,"Brownsville, TX",85.0,74.0,4,0.0,Texas,2016
-73.0,11.0,New Orleans/Baton Rouge,BTR,12,04-12-2016,32.0,26.0,"New Orleans/Baton Rouge, LA",83.0,62.0,4,5.57,Louisiana,2016
-41.0,16.0,Burlington,BTV,12,04-12-2016,38.0,28.0,"Burlington, VT",50.0,32.0,4,0.01,Vermont,2016
-45.0,15.0,Buffalo,BUF,12,04-12-2016,32.0,24.0,"Buffalo, NY",53.0,37.0,4,0.39,New York,2016
-65.0,3.0,Los Angeles/Oxnard,BUR,12,04-12-2016,16.0,12.0,"Los Angeles/Oxnard, CA",72.0,57.0,4,0.91,California,2016
-57.0,8.0,Pocatello,BYI,12,04-12-2016,25.0,20.0,"Pocatello, ID",71.0,43.0,4,0.0,Idaho,2016
-49.0,4.0,Great Falls,BZN,12,04-12-2016,24.0,18.0,"Great Falls, MT",69.0,29.0,4,0.0,Montana,2016
-62.0,8.0,Greenville-Spartanburg,CAE,12,04-12-2016,22.0,17.0,"Greenville-Spartanburg, SC",78.0,45.0,4,3.03,South Carolina,2016
-55.0,6.0,Eureka,CEC,12,04-12-2016,14.0,12.0,"Eureka, CA",58.0,51.0,4,0.0,California,2016
-55.0,11.0,Paducah,CGI,12,04-12-2016,32.0,26.0,"Paducah, KY",67.0,43.0,4,0.25,Kentucky,2016
-55.0,6.0,Morristown/Knoxville,CHA,12,04-12-2016,25.0,18.0,"Morristown/Knoxville, TN",69.0,41.0,4,0.17,Tennessee,2016
-60.0,8.0,Charleston,CHS,12,04-12-2016,24.0,20.0,"Charleston, SC",74.0,46.0,4,0.0,South Carolina,2016
-49.0,10.0,Topeka,CNK,12,04-12-2016,27.0,21.0,"Topeka, KS",61.0,37.0,4,0.0,Kansas,2016
-52.0,9.0,Wichita,CNU,12,04-12-2016,36.0,29.0,"Wichita, KS",61.0,42.0,4,0.16,Kansas,2016
-78.0,17.0,Corpus Christi,CRP,12,04-12-2016,37.0,30.0,"Corpus Christi, TX",84.0,72.0,4,1.24,Texas,2016
-62.0,5.0,Columbia,CUB,12,04-12-2016,21.0,15.0,"Columbia, SC",77.0,46.0,4,0.0,South Carolina,2016
-51.0,11.0,Wilmington,CVG,12,04-12-2016,32.0,23.0,"Wilmington, OH",61.0,41.0,4,1.13,Ohio,2016
-42.0,9.0,Riverton,CYS,12,04-12-2016,26.0,21.0,"Riverton, WY",50.0,33.0,4,0.77,Wyoming,2016
-51.0,2.0,San Diego,CZZ,12,04-12-2016,29.0,24.0,"San Diego, CA",63.0,39.0,4,1.16,California,2016
-69.0,5.0,Melbourne,DAB,12,04-12-2016,23.0,18.0,"Melbourne, FL",78.0,60.0,4,1.9,Florida,2016
-62.0,5.0,Las Vegas,DAG,12,04-12-2016,30.0,25.0,"Las Vegas, NV",72.0,51.0,4,0.0,Nevada,2016
-60.0,16.0,Baltimore/Washington,DCA,12,04-12-2016,36.0,28.0,"Baltimore/Washington, VA",73.0,47.0,4,0.01,Virginia,2016
-49.0,5.0,Grand Junction,DEN,12,04-12-2016,22.0,17.0,"Grand Junction, CO",60.0,38.0,4,0.0,Colorado,2016
-49.0,5.0,Grand Junction,DEN,12,04-12-2016,22.0,17.0,"Grand Junction, CO",60.0,38.0,4,0.0,Colorado,2016
-75.0,11.0,Fort Worth/Dallas,DFW,12,04-12-2016,33.0,25.0,"Fort Worth/Dallas, TX",89.0,61.0,4,0.04,Texas,2016
-46.0,11.0,Dodge City,DGC,12,04-12-2016,46.0,40.0,"Dodge City, KS",54.0,37.0,4,0.49,Kansas,2016
-44.0,13.0,Des Moines,DSM,12,04-12-2016,36.0,29.0,"Des Moines, IA",52.0,36.0,4,0.0,Iowa,2016
-48.0,13.0,Detroit/Pontiac,DTW,12,04-12-2016,33.0,25.0,"Detroit/Pontiac, MI",60.0,36.0,4,0.05,Michigan,2016
-54.0,6.0,Portland,EKA,12,04-12-2016,13.0,12.0,"Portland, OR",58.0,50.0,4,0.0,Oregon,2016
-64.0,8.0,El Paso,ELP,12,04-12-2016,33.0,25.0,"El Paso, TX",74.0,54.0,4,0.0,Texas,2016
-46.0,7.0,Elko,ELY,12,04-12-2016,24.0,21.0,"Elko, NV",59.0,32.0,4,0.01,Nevada,2016
-44.0,0.0,Fairbanks,FAI,12,04-12-2016,19.0,0.0,"Fairbanks, AK",55.0,32.0,4,0.13,Alaska,2016
-64.0,5.0,San Joaquin Valley/Hanford,FAT,12,04-12-2016,15.0,13.0,"San Joaquin Valley/Hanford, CA",74.0,54.0,4,0.0,California,2016
-28.0,12.338709677419356,Grand Forks,FGF,12,04-12-2016,29.112903225806452,22.822580645161292,"Grand Forks, ND",35.0,20.0,4,0.88,North Dakota,2016
-28.0,4.387096774193549,Grand Forks,FGF,12,04-12-2016,16.822580645161292,12.67741935483871,"Grand Forks, ND",35.0,20.0,4,0.88,North Dakota,2016
-43.0,3.0,Flagstaff,FLG,12,04-12-2016,15.0,14.0,"Flagstaff, AZ",52.0,33.0,4,0.0,Arizona,2016
-35.0,11.0,Sioux Falls,FSD,12,04-12-2016,30.0,23.0,"Sioux Falls, SD",46.0,24.0,4,0.0,South Dakota,2016
-35.0,11.0,Sioux Falls,FSD,12,04-12-2016,30.0,23.0,"Sioux Falls, SD",46.0,24.0,4,0.0,South Dakota,2016
-35.0,11.0,Sioux Falls,FSD,12,04-12-2016,30.0,23.0,"Sioux Falls, SD",46.0,24.0,4,0.0,South Dakota,2016
-45.0,11.0,Northern Indiana,FWA,12,04-12-2016,28.0,23.0,"Northern Indiana, IN",55.0,35.0,4,0.1,Indiana,2016
-37.0,14.0,Glasgow,GGW,12,04-12-2016,28.0,22.0,"Glasgow, MT",55.0,19.0,4,0.0,Montana,2016
-53.0,5.0,Salt Lake City,GJT,12,04-12-2016,24.0,20.0,"Salt Lake City, UT",68.0,38.0,4,0.0,Utah,2016
-49.0,8.0,Hastings,GLD,12,04-12-2016,21.0,16.0,"Hastings, NE",56.0,41.0,4,0.11,Nebraska,2016
-66.0,5.0,Jacksonville,GNV,12,04-12-2016,22.0,18.0,"Jacksonville, FL",81.0,51.0,4,0.0,Florida,2016
-51.0,7.0,Missoula,GPI,12,04-12-2016,27.0,20.0,"Missoula, MT",71.0,30.0,4,0.0,Montana,2016
-42.0,13.0,Grand Rapids,GRR,12,04-12-2016,36.0,28.0,"Grand Rapids, MI",49.0,35.0,4,0.04,Michigan,2016
-73.0,7.0,Houston/Galveston,HOU,12,04-12-2016,41.0,35.0,"Houston/Galveston, TX",79.0,67.0,4,0.01,Texas,2016
-56.0,7.0,Newport/Morehead City,HSE,12,04-12-2016,28.0,14.0,"Newport/Morehead City, NC",68.0,44.0,4,0.0,North Carolina,2016
-60.0,8.0,Huntsville,HSV,12,04-12-2016,34.0,28.0,"Huntsville, AL",69.0,50.0,4,1.1,Alabama,2016
-58.0,7.0,Wilmington,ILM,12,04-12-2016,25.0,18.0,"Wilmington, NC",73.0,43.0,4,0.0,North Carolina,2016
-46.0,11.0,Indianapolis,IND,12,04-12-2016,25.0,21.0,"Indianapolis, IN",55.0,36.0,4,1.07,Indiana,2016
-27.0,13.0,Minneapolis/Twin Cities,INL,12,04-12-2016,32.0,25.0,"Minneapolis/Twin Cities, MN",35.0,19.0,4,0.01,Minnesota,2016
-27.0,13.0,Minneapolis/Twin Cities,INL,12,04-12-2016,32.0,25.0,"Minneapolis/Twin Cities, MN",35.0,19.0,4,0.01,Minnesota,2016
-67.0,10.0,Jackson,JAN,12,04-12-2016,49.0,41.0,"Jackson, MS",74.0,59.0,4,4.82,Mississippi,2016
-68.0,9.0,Tampa,JAX,12,04-12-2016,28.0,23.0,"Tampa, FL",79.0,57.0,4,0.0,Florida,2016
-64.0,7.0,Charleston,JKL,12,04-12-2016,29.0,17.0,"Charleston, WV",74.0,53.0,4,0.07,West Virginia,2016
-0.0,0.0,Juneau,JNU,12,04-12-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
-61.0,13.0,Lubbock,LBB,12,04-12-2016,37.0,31.0,"Lubbock, TX",74.0,47.0,4,1.11,Texas,2016
-46.0,5.0,Cheyenne,LBF,12,04-12-2016,19.0,14.0,"Cheyenne, WY",60.0,32.0,4,0.0,Wyoming,2016
-73.0,9.0,Lake Charles,LCH,12,04-12-2016,31.0,22.0,"Lake Charles, LA",78.0,67.0,4,0.04,Louisiana,2016
-62.0,8.0,North Little Rock,LIT,12,04-12-2016,30.0,21.0,"North Little Rock, AR",70.0,54.0,4,0.94,Arkansas,2016
-43.0,12.0,Davenport/Quad Cities,LOT,12,04-12-2016,39.0,25.0,"Davenport/Quad Cities, IA",51.0,35.0,4,1.48,Iowa,2016
-62.0,13.0,Jackson,LOZ,12,04-12-2016,42.0,28.0,"Jackson, KY",71.0,52.0,4,0.07,Kentucky,2016
-61.0,5.166666666666667,Shreveport,LZK,12,04-12-2016,16.666666666666668,11.5,"Shreveport, LA",68.0,53.0,4,1.2,Louisiana,2016
-67.0,16.0,Midland/Odessa,MAF,12,04-12-2016,46.0,37.0,"Midland/Odessa, TX",80.0,54.0,4,0.0,Texas,2016
-48.0,12.0,Kansas City/Pleasant Hill,MCI,12,04-12-2016,30.0,23.0,"Kansas City/Pleasant Hill, MO",59.0,36.0,4,0.0,Missouri,2016
-54.0,7.0,State College,MDT,12,04-12-2016,18.0,14.0,"State College, PA",65.0,43.0,4,0.02,Pennsylvania,2016
-62.0,12.0,Memphis,MEM,12,04-12-2016,30.0,23.0,"Memphis, TN",70.0,54.0,4,1.18,Tennessee,2016
-77.0,13.0,Miami,MIA,12,04-12-2016,31.0,22.0,"Miami, FL",82.0,71.0,4,0.0,Florida,2016
-67.0,11.0,Mobile/Pensacola,MOB,12,04-12-2016,30.0,24.0,"Mobile/Pensacola, AL",77.0,57.0,4,0.16,Alabama,2016
-29.0,5.338709677419355,Green Bay,MQT,12,04-12-2016,37.0,14.580645161290322,"Green Bay, WI",32.0,25.0,4,0.04,Wisconsin,2016
-29.0,11.903225806451612,Green Bay,MQT,12,04-12-2016,37.0,23.903225806451612,"Green Bay, WI",32.0,25.0,4,0.04,Wisconsin,2016
-52.0,2.0,Spokane,MSO,12,04-12-2016,19.0,15.0,"Spokane, WA",71.0,33.0,4,0.0,Washington,2016
-78.0,10.0,Key West,MTH,12,04-12-2016,23.0,18.0,"Key West, FL",83.0,73.0,4,0.0,Florida,2016
-54.0,6.0,New York/Upton,NYC,12,04-12-2016,22.0,13.0,"New York/Upton, NY",65.0,43.0,4,0.01,New York,2016
-60.0,13.0,Norman/Oklahoma City,OKC,12,04-12-2016,39.0,31.0,"Norman/Oklahoma City, OK",69.0,51.0,4,0.02,Oklahoma,2016
-41.0,12.0,Omaha/Valley,OMA,12,04-12-2016,37.0,30.0,"Omaha/Valley, NE",54.0,27.0,4,0.0,Nebraska,2016
-44.0,12.0,Milwaukee/Sullivan,ORD,12,04-12-2016,35.0,24.0,"Milwaukee/Sullivan, WI",51.0,36.0,4,0.0,Wisconsin,2016
-44.0,12.0,Milwaukee/Sullivan,ORD,12,04-12-2016,35.0,24.0,"Milwaukee/Sullivan, WI",51.0,36.0,4,0.0,Wisconsin,2016
-66.0,5.0,Phoenix,PHX,12,04-12-2016,15.0,12.0,"Phoenix, AZ",77.0,55.0,4,0.0,Arizona,2016
-45.0,9.0,Lincoln,PIA,12,04-12-2016,26.0,20.0,"Lincoln, IL",53.0,37.0,4,2.05,Illinois,2016
-57.0,11.0,Pittsburgh,PIT,12,04-12-2016,34.0,24.0,"Pittsburgh, PA",65.0,48.0,4,0.7,Pennsylvania,2016
-64.0,5.0,Pendleton,PSC,12,04-12-2016,23.0,17.0,"Pendleton, OR",77.0,50.0,4,0.0,Oregon,2016
-47.0,6.0,Goodland,PUB,12,04-12-2016,20.0,17.0,"Goodland, KS",55.0,39.0,4,0.31,Kansas,2016
-41.0,8.0,Gray/Portland,PWM,12,04-12-2016,27.0,20.0,"Gray/Portland, ME",50.0,32.0,4,0.01,Maine,2016
-65.0,0.0,Sacramento,RDD,12,04-12-2016,17.0,13.0,"Sacramento, CA",71.0,59.0,4,0.0,California,2016
-65.0,0.0,Sacramento,RDD,12,04-12-2016,17.0,13.0,"Sacramento, CA",71.0,59.0,4,0.0,California,2016
-62.0,11.0,Raleigh,RDU,12,04-12-2016,31.0,24.0,"Raleigh, NC",76.0,47.0,4,0.0,North Carolina,2016
-60.0,16.0,Wakefield,RIC,12,04-12-2016,35.0,28.0,"Wakefield, VA",74.0,46.0,4,1.07,Virginia,2016
-54.0,4.0,Blacksburg,RNK,12,04-12-2016,25.0,18.0,"Blacksburg, VA",67.0,41.0,4,0.84,Virginia,2016
-59.0,4.0,Reno,RNO,12,04-12-2016,23.0,16.0,"Reno, NV",69.0,49.0,4,0.01,Nevada,2016
-35.0,18.0,La Crosse,RST,12,04-12-2016,39.0,32.0,"La Crosse, WI",44.0,26.0,4,0.0,Wisconsin,2016
-35.0,18.0,La Crosse,RST,12,04-12-2016,39.0,32.0,"La Crosse, WI",44.0,26.0,4,0.0,Wisconsin,2016
-57.0,12.0,Louisville,SDF,12,04-12-2016,40.0,30.0,"Louisville, KY",67.0,46.0,4,0.82,Kentucky,2016
-53.0,7.0,Seattle,SEA,12,04-12-2016,18.0,14.0,"Seattle, WA",58.0,48.0,4,0.0,Washington,2016
-52.0,10.0,Springfield,SGF,12,04-12-2016,35.0,29.0,"Springfield, MO",62.0,42.0,4,0.63,Missouri,2016
-80.0,6.0,San Juan,SJU,12,04-12-2016,24.0,18.0,"San Juan, PR",85.0,75.0,4,0.14,Puerto Rico,2016
-51.0,8.0,St. Louis,STL,12,04-12-2016,24.0,18.0,"St. Louis, MO",59.0,43.0,4,0.99,Missouri,2016
-59.0,2.0,San Francisco Bay Area/Monterey,STS,12,04-12-2016,16.0,13.0,"San Francisco Bay Area/Monterey, CA",65.0,52.0,4,0.0,California,2016
-65.0,6.0,Tallahassee,TLH,12,04-12-2016,27.0,20.0,"Tallahassee, FL",82.0,48.0,4,0.0,Florida,2016
-47.0,12.0,Cleveland,TOL,12,04-12-2016,32.0,23.0,"Cleveland, OH",57.0,36.0,4,0.11,Ohio,2016
-58.0,12.0,Tulsa,TUL,12,04-12-2016,39.0,30.0,"Tulsa, OK",65.0,50.0,4,0.84,Oklahoma,2016
-62.0,5.0,Tucson,TUS,12,04-12-2016,15.0,12.0,"Tucson, AZ",75.0,49.0,4,0.0,Arizona,2016
-41.0,15.0,Rapid City,UNR,12,04-12-2016,29.0,26.0,"Rapid City, SD",53.0,28.0,4,0.0,South Dakota,2016
-41.0,16.0,Rapid City,UNR,12,04-12-2016,29.0,33.0,"Rapid City, SD",53.0,28.0,4,0.0,South Dakota,2016
-50.0,9.0,Medford,AAT,13,04-13-2016,26.0,20.0,"Medford, OR",56.0,43.0,4,0.1,Oregon,2016
-48.0,9.0,Mount Holly/Philadelphia,ABE,13,04-13-2016,29.0,22.0,"Mount Holly/Philadelphia, NJ",60.0,35.0,4,0.28,New Jersey,2016
-58.0,9.0,San Angelo,ABI,13,04-13-2016,30.0,24.0,"San Angelo, TX",63.0,52.0,4,0.71,Texas,2016
-52.0,7.0,Albuquerque,ABQ,13,04-13-2016,28.0,25.0,"Albuquerque, NM",59.0,44.0,4,0.49,New Mexico,2016
-42.0,13.0,Aberdeen,ABR,13,04-13-2016,35.0,28.0,"Aberdeen, SD",66.0,17.0,4,0.0,South Dakota,2016
-55.0,8.0,Denver/Boulder,AKO,13,04-13-2016,38.0,28.0,"Denver/Boulder, CO",73.0,36.0,4,0.04,Colorado,2016
-44.0,12.0,Albany,ALB,13,04-13-2016,33.0,26.0,"Albany, NY",51.0,36.0,4,0.07,New York,2016
-43.0,7.0,Pueblo,ALS,13,04-13-2016,34.0,29.0,"Pueblo, CO",60.0,26.0,4,0.66,Colorado,2016
-50.0,8.0,Amarillo,AMA,13,04-13-2016,26.0,20.0,"Amarillo, TX",61.0,38.0,4,0.0,Texas,2016
-59.0,5.0,Birmingham,ANB,13,04-13-2016,25.0,17.0,"Birmingham, AL",69.0,49.0,4,0.02,Alabama,2016
-43.0,4.0,Anchorage,ANC,13,04-13-2016,31.0,8.0,"Anchorage, AK",55.0,30.0,4,0.0,Alaska,2016
-30.0,9.0,Marquette,ANJ,13,04-13-2016,26.0,17.0,"Marquette, MI",34.0,25.0,4,0.01,Michigan,2016
-30.0,9.0,Marquette,ANJ,13,04-13-2016,26.0,17.0,"Marquette, MI",34.0,25.0,4,0.01,Michigan,2016
-32.0,9.0,Gaylord,APN,13,04-13-2016,29.0,21.0,"Gaylord, MI",40.0,24.0,4,1.27,Michigan,2016
-38.0,5.0,Chicago,ARR,13,04-13-2016,19.0,16.0,"Chicago, IL",52.0,24.0,4,0.0,Illinois,2016
-63.0,9.0,Peachtree City/Atlanta,ATL,13,04-13-2016,28.0,23.0,"Peachtree City/Atlanta, GA",72.0,54.0,4,0.08,Georgia,2016
-67.0,13.0,Austin/San Antonio,AUS,13,04-13-2016,34.0,25.0,"Austin/San Antonio, TX",70.0,63.0,4,1.68,Texas,2016
-52.0,15.0,North Platte,BBW,13,04-13-2016,45.0,32.0,"North Platte, NE",72.0,31.0,4,0.0,Nebraska,2016
-39.0,10.0,Binghamton,BGM,13,04-13-2016,31.0,24.0,"Binghamton, NY",47.0,31.0,4,0.24,New York,2016
-41.0,8.0,Caribou,BGR,13,04-13-2016,28.0,22.0,"Caribou, ME",50.0,31.0,4,0.58,Maine,2016
-63.0,9.0,Billings,BIL,13,04-13-2016,25.0,20.0,"Billings, MT",78.0,47.0,4,0.61,Montana,2016
-44.0,11.0,Bismarck,BIS,13,04-13-2016,24.0,21.0,"Bismarck, ND",62.0,25.0,4,0.0,North Dakota,2016
-48.0,6.0,Boise,BKE,13,04-13-2016,24.0,18.0,"Boise, ID",53.0,42.0,4,0.2,Idaho,2016
-55.0,11.0,Nashville,BNA,13,04-13-2016,25.0,22.0,"Nashville, TN",65.0,45.0,4,0.01,Tennessee,2016
-52.0,15.0,Boston,BOS,13,04-13-2016,38.0,30.0,"Boston, MD",60.0,43.0,4,0.22,Massachusetts,2016
-79.0,8.0,Brownsville,BRO,13,04-13-2016,22.0,20.0,"Brownsville, TX",84.0,73.0,4,1.11,Texas,2016
-70.0,8.0,New Orleans/Baton Rouge,BTR,13,04-13-2016,21.0,17.0,"New Orleans/Baton Rouge, LA",77.0,63.0,4,0.11,Louisiana,2016
-45.0,10.0,Burlington,BTV,13,04-13-2016,29.0,24.0,"Burlington, VT",51.0,39.0,4,0.2,Vermont,2016
-38.0,11.0,Buffalo,BUF,13,04-13-2016,26.0,21.0,"Buffalo, NY",43.0,32.0,4,1.11,New York,2016
-64.0,5.0,Los Angeles/Oxnard,BUR,13,04-13-2016,18.0,13.0,"Los Angeles/Oxnard, CA",73.0,54.0,4,0.0,California,2016
-56.0,7.0,Pocatello,BYI,13,04-13-2016,28.0,21.0,"Pocatello, ID",70.0,42.0,4,0.07,Idaho,2016
-52.0,4.0,Great Falls,BZN,13,04-13-2016,33.0,26.0,"Great Falls, MT",74.0,30.0,4,0.68,Montana,2016
-68.0,4.0,Greenville-Spartanburg,CAE,13,04-13-2016,18.0,14.0,"Greenville-Spartanburg, SC",74.0,61.0,4,0.15,South Carolina,2016
-51.0,5.0,Eureka,CEC,13,04-13-2016,17.0,14.0,"Eureka, CA",58.0,44.0,4,0.13,California,2016
-48.0,8.0,Paducah,CGI,13,04-13-2016,22.0,16.0,"Paducah, KY",61.0,35.0,4,0.0,Kentucky,2016
-58.0,6.0,Morristown/Knoxville,CHA,13,04-13-2016,23.0,18.0,"Morristown/Knoxville, TN",69.0,47.0,4,0.04,Tennessee,2016
-66.0,3.0,Charleston,CHS,13,04-13-2016,13.0,10.0,"Charleston, SC",72.0,59.0,4,0.03,South Carolina,2016
-48.0,11.0,Topeka,CNK,13,04-13-2016,27.0,22.0,"Topeka, KS",66.0,30.0,4,0.0,Kansas,2016
-52.0,6.0,Wichita,CNU,13,04-13-2016,17.0,14.0,"Wichita, KS",64.0,39.0,4,0.0,Kansas,2016
-77.0,10.0,Corpus Christi,CRP,13,04-13-2016,25.0,21.0,"Corpus Christi, TX",81.0,73.0,4,0.04,Texas,2016
-67.0,3.0,Columbia,CUB,13,04-13-2016,17.0,12.0,"Columbia, SC",72.0,61.0,4,0.23,South Carolina,2016
-43.0,7.0,Wilmington,CVG,13,04-13-2016,18.0,15.0,"Wilmington, OH",53.0,33.0,4,0.0,Ohio,2016
-51.0,11.0,Riverton,CYS,13,04-13-2016,31.0,23.0,"Riverton, WY",66.0,35.0,4,0.74,Wyoming,2016
-53.0,6.0,San Diego,CZZ,13,04-13-2016,24.0,20.0,"San Diego, CA",68.0,37.0,4,0.0,California,2016
-71.0,4.0,Melbourne,DAB,13,04-13-2016,18.0,14.0,"Melbourne, FL",85.0,57.0,4,0.0,Florida,2016
-67.0,11.0,Las Vegas,DAG,13,04-13-2016,26.0,20.0,"Las Vegas, NV",81.0,52.0,4,0.0,Nevada,2016
-58.0,15.0,Baltimore/Washington,DCA,13,04-13-2016,33.0,26.0,"Baltimore/Washington, VA",68.0,48.0,4,0.05,Virginia,2016
-54.0,8.0,Grand Junction,DEN,13,04-13-2016,44.0,35.0,"Grand Junction, CO",71.0,36.0,4,0.01,Colorado,2016
-54.0,8.0,Grand Junction,DEN,13,04-13-2016,44.0,35.0,"Grand Junction, CO",71.0,36.0,4,0.01,Colorado,2016
-65.0,10.0,Fort Worth/Dallas,DFW,13,04-13-2016,24.0,18.0,"Fort Worth/Dallas, TX",71.0,58.0,4,0.02,Texas,2016
-50.0,11.0,Dodge City,DGC,13,04-13-2016,27.0,22.0,"Dodge City, KS",63.0,36.0,4,0.0,Kansas,2016
-46.0,7.0,Des Moines,DSM,13,04-13-2016,22.0,18.0,"Des Moines, IA",61.0,30.0,4,0.0,Iowa,2016
-41.0,8.0,Detroit/Pontiac,DTW,13,04-13-2016,23.0,17.0,"Detroit/Pontiac, MI",50.0,32.0,4,0.0,Michigan,2016
-56.0,4.0,Portland,EKA,13,04-13-2016,13.0,12.0,"Portland, OR",61.0,50.0,4,0.01,Oregon,2016
-58.0,8.0,El Paso,ELP,13,04-13-2016,30.0,21.0,"El Paso, TX",67.0,49.0,4,0.38,Texas,2016
-48.0,8.0,Elko,ELY,13,04-13-2016,25.0,20.0,"Elko, NV",65.0,31.0,4,0.0,Nevada,2016
-41.0,0.0,Fairbanks,FAI,13,04-13-2016,23.0,0.0,"Fairbanks, AK",50.0,31.0,4,0.0,Alaska,2016
-64.0,8.0,San Joaquin Valley/Hanford,FAT,13,04-13-2016,21.0,17.0,"San Joaquin Valley/Hanford, CA",75.0,53.0,4,0.0,California,2016
-34.0,12.451612903225808,Grand Forks,FGF,13,04-13-2016,29.483870967741936,23.096774193548388,"Grand Forks, ND",48.0,20.0,4,0.0,North Dakota,2016
-34.0,4.516129032258065,Grand Forks,FGF,13,04-13-2016,17.096774193548388,12.903225806451614,"Grand Forks, ND",48.0,20.0,4,0.0,North Dakota,2016
-42.0,3.0,Flagstaff,FLG,13,04-13-2016,20.0,17.0,"Flagstaff, AZ",55.0,29.0,4,0.02,Arizona,2016
-45.0,16.0,Sioux Falls,FSD,13,04-13-2016,43.0,32.0,"Sioux Falls, SD",68.0,21.0,4,0.0,South Dakota,2016
-45.0,16.0,Sioux Falls,FSD,13,04-13-2016,43.0,32.0,"Sioux Falls, SD",68.0,21.0,4,0.0,South Dakota,2016
-45.0,16.0,Sioux Falls,FSD,13,04-13-2016,43.0,32.0,"Sioux Falls, SD",68.0,21.0,4,0.0,South Dakota,2016
-41.0,5.0,Northern Indiana,FWA,13,04-13-2016,24.0,15.0,"Northern Indiana, IN",51.0,31.0,4,0.0,Indiana,2016
-54.0,10.0,Glasgow,GGW,13,04-13-2016,28.0,21.0,"Glasgow, MT",72.0,35.0,4,0.0,Montana,2016
-56.0,9.0,Salt Lake City,GJT,13,04-13-2016,27.0,22.0,"Salt Lake City, UT",69.0,43.0,4,0.0,Utah,2016
-51.0,17.0,Hastings,GLD,13,04-13-2016,35.0,29.0,"Hastings, NE",65.0,37.0,4,0.0,Nebraska,2016
-70.0,6.0,Jacksonville,GNV,13,04-13-2016,24.0,20.0,"Jacksonville, FL",84.0,56.0,4,0.02,Florida,2016
-43.0,5.0,Missoula,GPI,13,04-13-2016,24.0,20.0,"Missoula, MT",53.0,33.0,4,0.02,Montana,2016
-39.0,7.0,Grand Rapids,GRR,13,04-13-2016,28.0,16.0,"Grand Rapids, MI",48.0,30.0,4,0.0,Michigan,2016
-71.0,7.0,Houston/Galveston,HOU,13,04-13-2016,23.0,20.0,"Houston/Galveston, TX",76.0,66.0,4,0.01,Texas,2016
-61.0,6.0,Newport/Morehead City,HSE,13,04-13-2016,27.0,17.0,"Newport/Morehead City, NC",67.0,55.0,4,0.16,North Carolina,2016
-59.0,8.0,Huntsville,HSV,13,04-13-2016,20.0,17.0,"Huntsville, AL",68.0,49.0,4,3.57,Alabama,2016
-65.0,4.0,Wilmington,ILM,13,04-13-2016,13.0,10.0,"Wilmington, NC",70.0,59.0,4,0.13,North Carolina,2016
-43.0,7.0,Indianapolis,IND,13,04-13-2016,22.0,17.0,"Indianapolis, IN",53.0,32.0,4,0.0,Indiana,2016
-28.0,3.0,Minneapolis/Twin Cities,INL,13,04-13-2016,19.0,13.0,"Minneapolis/Twin Cities, MN",47.0,9.0,4,0.0,Minnesota,2016
-28.0,3.0,Minneapolis/Twin Cities,INL,13,04-13-2016,19.0,13.0,"Minneapolis/Twin Cities, MN",47.0,9.0,4,0.0,Minnesota,2016
-63.0,6.0,Jackson,JAN,13,04-13-2016,18.0,14.0,"Jackson, MS",69.0,57.0,4,0.15,Mississippi,2016
-71.0,5.0,Tampa,JAX,13,04-13-2016,22.0,17.0,"Tampa, FL",83.0,58.0,4,1.7,Florida,2016
-51.0,3.0,Charleston,JKL,13,04-13-2016,22.0,15.0,"Charleston, WV",60.0,42.0,4,0.09,West Virginia,2016
-0.0,0.0,Juneau,JNU,13,04-13-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
-48.0,7.0,Lubbock,LBB,13,04-13-2016,17.0,14.0,"Lubbock, TX",53.0,43.0,4,0.31,Texas,2016
-53.0,13.0,Cheyenne,LBF,13,04-13-2016,37.0,28.0,"Cheyenne, WY",72.0,34.0,4,0.0,Wyoming,2016
-73.0,8.0,Lake Charles,LCH,13,04-13-2016,23.0,18.0,"Lake Charles, LA",79.0,66.0,4,0.02,Louisiana,2016
-58.0,10.0,North Little Rock,LIT,13,04-13-2016,27.0,22.0,"North Little Rock, AR",65.0,50.0,4,0.0,Arkansas,2016
-41.0,12.0,Davenport/Quad Cities,LOT,13,04-13-2016,39.0,25.0,"Davenport/Quad Cities, IA",51.0,30.0,4,0.0,Iowa,2016
-52.0,8.0,Jackson,LOZ,13,04-13-2016,20.0,15.0,"Jackson, KY",61.0,42.0,4,0.12,Kentucky,2016
-57.0,5.222222222222222,Shreveport,LZK,13,04-13-2016,16.88888888888889,11.333333333333332,"Shreveport, LA",65.0,49.0,4,0.0,Louisiana,2016
-53.0,11.0,Midland/Odessa,MAF,13,04-13-2016,27.0,24.0,"Midland/Odessa, TX",55.0,50.0,4,0.14,Texas,2016
-48.0,7.0,Kansas City/Pleasant Hill,MCI,13,04-13-2016,20.0,17.0,"Kansas City/Pleasant Hill, MO",62.0,33.0,4,0.0,Missouri,2016
-53.0,11.0,State College,MDT,13,04-13-2016,35.0,24.0,"State College, PA",67.0,38.0,4,0.05,Pennsylvania,2016
-58.0,11.0,Memphis,MEM,13,04-13-2016,30.0,23.0,"Memphis, TN",67.0,49.0,4,0.0,Tennessee,2016
-76.0,7.0,Miami,MIA,13,04-13-2016,22.0,14.0,"Miami, FL",84.0,68.0,4,0.0,Florida,2016
-66.0,5.0,Mobile/Pensacola,MOB,13,04-13-2016,22.0,16.0,"Mobile/Pensacola, AL",70.0,62.0,4,0.13,Alabama,2016
-29.0,5.451612903225807,Green Bay,MQT,13,04-13-2016,18.0,14.774193548387098,"Green Bay, WI",36.0,22.0,4,1.21,Wisconsin,2016
-29.0,11.870967741935484,Green Bay,MQT,13,04-13-2016,18.0,23.870967741935484,"Green Bay, WI",36.0,22.0,4,1.21,Wisconsin,2016
-50.0,6.0,Spokane,MSO,13,04-13-2016,33.0,25.0,"Spokane, WA",61.0,38.0,4,0.5,Washington,2016
-79.0,6.0,Key West,MTH,13,04-13-2016,19.0,12.0,"Key West, FL",83.0,74.0,4,0.0,Florida,2016
-52.0,5.0,New York/Upton,NYC,13,04-13-2016,30.0,21.0,"New York/Upton, NY",59.0,45.0,4,0.2,New York,2016
-57.0,7.0,Norman/Oklahoma City,OKC,13,04-13-2016,21.0,17.0,"Norman/Oklahoma City, OK",68.0,45.0,4,0.0,Oklahoma,2016
-47.0,13.0,Omaha/Valley,OMA,13,04-13-2016,29.0,24.0,"Omaha/Valley, NE",67.0,26.0,4,0.0,Nebraska,2016
-39.0,8.0,Milwaukee/Sullivan,ORD,13,04-13-2016,19.0,15.0,"Milwaukee/Sullivan, WI",47.0,30.0,4,0.0,Wisconsin,2016
-39.0,8.0,Milwaukee/Sullivan,ORD,13,04-13-2016,19.0,15.0,"Milwaukee/Sullivan, WI",47.0,30.0,4,0.0,Wisconsin,2016
-71.0,3.0,Phoenix,PHX,13,04-13-2016,22.0,16.0,"Phoenix, AZ",82.0,59.0,4,0.0,Arizona,2016
-44.0,4.0,Lincoln,PIA,13,04-13-2016,19.0,10.0,"Lincoln, IL",56.0,31.0,4,0.0,Illinois,2016
-43.0,11.0,Pittsburgh,PIT,13,04-13-2016,26.0,22.0,"Pittsburgh, PA",50.0,36.0,4,0.02,Pennsylvania,2016
-62.0,5.0,Pendleton,PSC,13,04-13-2016,28.0,23.0,"Pendleton, OR",71.0,53.0,4,0.05,Oregon,2016
-54.0,6.0,Goodland,PUB,13,04-13-2016,23.0,20.0,"Goodland, KS",71.0,37.0,4,0.0,Kansas,2016
-42.0,7.0,Gray/Portland,PWM,13,04-13-2016,26.0,21.0,"Gray/Portland, ME",52.0,32.0,4,0.25,Maine,2016
-61.0,0.0,Sacramento,RDD,13,04-13-2016,16.0,13.0,"Sacramento, CA",69.0,53.0,4,0.02,California,2016
-61.0,0.0,Sacramento,RDD,13,04-13-2016,16.0,13.0,"Sacramento, CA",69.0,53.0,4,0.02,California,2016
-60.0,8.0,Raleigh,RDU,13,04-13-2016,28.0,18.0,"Raleigh, NC",64.0,55.0,4,0.85,North Carolina,2016
-56.0,10.0,Wakefield,RIC,13,04-13-2016,25.0,21.0,"Wakefield, VA",64.0,47.0,4,0.19,Virginia,2016
-49.0,5.0,Blacksburg,RNK,13,04-13-2016,21.0,14.0,"Blacksburg, VA",61.0,36.0,4,0.01,Virginia,2016
-55.0,7.0,Reno,RNO,13,04-13-2016,32.0,25.0,"Reno, NV",66.0,44.0,4,0.26,Nevada,2016
-37.0,9.0,La Crosse,RST,13,04-13-2016,24.0,18.0,"La Crosse, WI",52.0,21.0,4,0.0,Wisconsin,2016
-37.0,9.0,La Crosse,RST,13,04-13-2016,24.0,18.0,"La Crosse, WI",52.0,21.0,4,0.0,Wisconsin,2016
-48.0,7.0,Louisville,SDF,13,04-13-2016,23.0,17.0,"Louisville, KY",58.0,37.0,4,0.0,Kentucky,2016
-51.0,9.0,Seattle,SEA,13,04-13-2016,28.0,21.0,"Seattle, WA",57.0,44.0,4,0.32,Washington,2016
-50.0,6.0,Springfield,SGF,13,04-13-2016,20.0,15.0,"Springfield, MO",63.0,36.0,4,0.0,Missouri,2016
-80.0,3.0,San Juan,SJU,13,04-13-2016,18.0,15.0,"San Juan, PR",85.0,75.0,4,0.31,Puerto Rico,2016
-48.0,5.0,St. Louis,STL,13,04-13-2016,17.0,14.0,"St. Louis, MO",58.0,37.0,4,0.0,Missouri,2016
-59.0,4.0,San Francisco Bay Area/Monterey,STS,13,04-13-2016,20.0,15.0,"San Francisco Bay Area/Monterey, CA",69.0,48.0,4,0.0,California,2016
-73.0,6.0,Tallahassee,TLH,13,04-13-2016,24.0,18.0,"Tallahassee, FL",84.0,61.0,4,0.02,Florida,2016
-41.0,8.0,Cleveland,TOL,13,04-13-2016,24.0,18.0,"Cleveland, OH",50.0,31.0,4,0.0,Ohio,2016
-57.0,5.0,Tulsa,TUL,13,04-13-2016,16.0,12.0,"Tulsa, OK",70.0,43.0,4,0.0,Oklahoma,2016
-67.0,5.0,Tucson,TUS,13,04-13-2016,19.0,15.0,"Tucson, AZ",77.0,57.0,4,0.01,Arizona,2016
-54.0,15.0,Rapid City,UNR,13,04-13-2016,29.0,26.0,"Rapid City, SD",76.0,32.0,4,0.0,South Dakota,2016
-54.0,16.0,Rapid City,UNR,13,04-13-2016,29.0,33.0,"Rapid City, SD",76.0,32.0,4,0.0,South Dakota,2016
-45.0,11.0,Medford,AAT,14,04-14-2016,35.0,29.0,"Medford, OR",54.0,36.0,4,0.03,Oregon,2016
-44.0,3.0,Mount Holly/Philadelphia,ABE,14,04-14-2016,22.0,14.0,"Mount Holly/Philadelphia, NJ",58.0,30.0,4,0.0,New Jersey,2016
-61.0,5.0,San Angelo,ABI,14,04-14-2016,13.0,12.0,"San Angelo, TX",68.0,53.0,4,0.01,Texas,2016
-56.0,4.0,Albuquerque,ABQ,14,04-14-2016,18.0,15.0,"Albuquerque, NM",71.0,40.0,4,0.0,New Mexico,2016
-50.0,9.0,Aberdeen,ABR,14,04-14-2016,20.0,15.0,"Aberdeen, SD",73.0,27.0,4,0.0,South Dakota,2016
-59.0,8.0,Denver/Boulder,AKO,14,04-14-2016,25.0,21.0,"Denver/Boulder, CO",74.0,43.0,4,0.0,Colorado,2016
-42.0,7.0,Albany,ALB,14,04-14-2016,26.0,16.0,"Albany, NY",53.0,31.0,4,0.0,New York,2016
-45.0,5.0,Pueblo,ALS,14,04-14-2016,34.0,25.0,"Pueblo, CO",65.0,25.0,4,0.0,Colorado,2016
-56.0,11.0,Amarillo,AMA,14,04-14-2016,24.0,18.0,"Amarillo, TX",72.0,40.0,4,0.0,Texas,2016
-58.0,4.0,Birmingham,ANB,14,04-14-2016,15.0,12.0,"Birmingham, AL",69.0,47.0,4,0.2,Alabama,2016
-46.0,8.0,Anchorage,ANC,14,04-14-2016,40.0,14.0,"Anchorage, AK",53.0,39.0,4,0.23,Alaska,2016
-35.0,5.0,Marquette,ANJ,14,04-14-2016,17.0,13.0,"Marquette, MI",45.0,24.0,4,0.0,Michigan,2016
-35.0,5.0,Marquette,ANJ,14,04-14-2016,17.0,13.0,"Marquette, MI",45.0,24.0,4,0.0,Michigan,2016
-32.0,5.0,Gaylord,APN,14,04-14-2016,18.0,16.0,"Gaylord, MI",41.0,22.0,4,0.0,Michigan,2016
-47.0,8.0,Chicago,ARR,14,04-14-2016,28.0,17.0,"Chicago, IL",61.0,32.0,4,0.0,Illinois,2016
-58.0,10.0,Peachtree City/Atlanta,ATL,14,04-14-2016,26.0,22.0,"Peachtree City/Atlanta, GA",64.0,52.0,4,4.44,Georgia,2016
-65.0,8.0,Austin/San Antonio,AUS,14,04-14-2016,20.0,16.0,"Austin/San Antonio, TX",72.0,57.0,4,0.4,Texas,2016
-59.0,9.0,North Platte,BBW,14,04-14-2016,28.0,23.0,"North Platte, NE",80.0,38.0,4,0.0,Nebraska,2016
-37.0,6.0,Binghamton,BGM,14,04-14-2016,19.0,15.0,"Binghamton, NY",47.0,27.0,4,0.0,New York,2016
-39.0,8.0,Caribou,BGR,14,04-14-2016,26.0,21.0,"Caribou, ME",50.0,27.0,4,0.0,Maine,2016
-57.0,11.0,Billings,BIL,14,04-14-2016,45.0,36.0,"Billings, MT",70.0,43.0,4,0.49,Montana,2016
-48.0,10.0,Bismarck,BIS,14,04-14-2016,31.0,26.0,"Bismarck, ND",74.0,22.0,4,0.01,North Dakota,2016
-46.0,7.0,Boise,BKE,14,04-14-2016,23.0,18.0,"Boise, ID",56.0,35.0,4,0.09,Idaho,2016
-56.0,3.0,Nashville,BNA,14,04-14-2016,14.0,10.0,"Nashville, TN",70.0,41.0,4,0.0,Tennessee,2016
-44.0,10.0,Boston,BOS,14,04-14-2016,22.0,17.0,"Boston, MD",50.0,38.0,4,0.0,Massachusetts,2016
-73.0,6.0,Brownsville,BRO,14,04-14-2016,22.0,17.0,"Brownsville, TX",78.0,68.0,4,0.1,Texas,2016
-70.0,6.0,New Orleans/Baton Rouge,BTR,14,04-14-2016,26.0,23.0,"New Orleans/Baton Rouge, LA",76.0,63.0,4,1.54,Louisiana,2016
-40.0,8.0,Burlington,BTV,14,04-14-2016,19.0,16.0,"Burlington, VT",47.0,32.0,4,0.0,Vermont,2016
-38.0,5.0,Buffalo,BUF,14,04-14-2016,19.0,16.0,"Buffalo, NY",48.0,27.0,4,0.0,New York,2016
-64.0,5.0,Los Angeles/Oxnard,BUR,14,04-14-2016,26.5,13.0,"Los Angeles/Oxnard, CA",72.0,55.0,4,0.0,California,2016
-51.0,8.0,Pocatello,BYI,14,04-14-2016,34.0,24.0,"Pocatello, ID",59.0,42.0,4,0.02,Idaho,2016
-47.0,6.0,Great Falls,BZN,14,04-14-2016,44.0,37.0,"Great Falls, MT",56.0,38.0,4,0.19,Montana,2016
-64.0,8.0,Greenville-Spartanburg,CAE,14,04-14-2016,26.0,20.0,"Greenville-Spartanburg, SC",72.0,56.0,4,0.0,South Carolina,2016
-51.0,12.0,Eureka,CEC,14,04-14-2016,56.0,46.0,"Eureka, CA",58.0,44.0,4,0.41,California,2016
-53.0,5.0,Paducah,CGI,14,04-14-2016,16.0,12.0,"Paducah, KY",68.0,37.0,4,0.0,Kentucky,2016
-58.0,5.0,Morristown/Knoxville,CHA,14,04-14-2016,18.0,13.0,"Morristown/Knoxville, TN",70.0,45.0,4,0.02,Tennessee,2016
-65.0,8.0,Charleston,CHS,14,04-14-2016,21.0,18.0,"Charleston, SC",72.0,58.0,4,0.01,South Carolina,2016
-59.0,12.0,Topeka,CNK,14,04-14-2016,26.0,21.0,"Topeka, KS",74.0,44.0,4,0.0,Kansas,2016
-52.0,6.0,Wichita,CNU,14,04-14-2016,21.0,15.0,"Wichita, KS",65.0,39.0,4,0.0,Kansas,2016
-75.0,11.0,Corpus Christi,CRP,14,04-14-2016,28.0,18.0,"Corpus Christi, TX",81.0,68.0,4,0.24,Texas,2016
-64.0,3.0,Columbia,CUB,14,04-14-2016,24.0,13.0,"Columbia, SC",72.0,55.0,4,0.0,South Carolina,2016
-49.0,8.0,Wilmington,CVG,14,04-14-2016,28.0,18.0,"Wilmington, OH",60.0,37.0,4,0.0,Ohio,2016
-54.0,9.0,Riverton,CYS,14,04-14-2016,27.0,23.0,"Riverton, WY",68.0,40.0,4,1.62,Wyoming,2016
-58.0,6.0,San Diego,CZZ,14,04-14-2016,23.0,18.0,"San Diego, CA",72.0,43.0,4,0.0,California,2016
-72.0,8.0,Melbourne,DAB,14,04-14-2016,24.0,20.0,"Melbourne, FL",81.0,63.0,4,0.54,Florida,2016
-73.0,18.0,Las Vegas,DAG,14,04-14-2016,43.0,36.0,"Las Vegas, NV",84.0,61.0,4,0.0,Nevada,2016
-51.0,6.0,Baltimore/Washington,DCA,14,04-14-2016,22.0,17.0,"Baltimore/Washington, VA",59.0,43.0,4,0.0,Virginia,2016
-57.0,9.0,Grand Junction,DEN,14,04-14-2016,28.0,23.0,"Grand Junction, CO",72.0,41.0,4,0.0,Colorado,2016
-57.0,9.0,Grand Junction,DEN,14,04-14-2016,28.0,23.0,"Grand Junction, CO",72.0,41.0,4,0.0,Colorado,2016
-58.0,8.0,Fort Worth/Dallas,DFW,14,04-14-2016,19.0,16.0,"Fort Worth/Dallas, TX",62.0,54.0,4,0.01,Texas,2016
-56.0,12.0,Dodge City,DGC,14,04-14-2016,27.0,23.0,"Dodge City, KS",71.0,40.0,4,0.0,Kansas,2016
-56.0,12.0,Des Moines,DSM,14,04-14-2016,26.0,20.0,"Des Moines, IA",72.0,40.0,4,0.0,Iowa,2016
-42.0,5.0,Detroit/Pontiac,DTW,14,04-14-2016,18.0,14.0,"Detroit/Pontiac, MI",50.0,34.0,4,0.0,Michigan,2016
-56.0,6.0,Portland,EKA,14,04-14-2016,38.0,23.0,"Portland, OR",67.0,44.0,4,0.48,Oregon,2016
-60.0,3.0,El Paso,ELP,14,04-14-2016,16.0,13.0,"El Paso, TX",78.0,42.0,4,0.0,Texas,2016
-49.0,7.0,Elko,ELY,14,04-14-2016,33.0,26.0,"Elko, NV",58.0,39.0,4,0.02,Nevada,2016
-36.0,0.0,Fairbanks,FAI,14,04-14-2016,20.0,0.0,"Fairbanks, AK",45.0,27.0,4,0.0,Alaska,2016
-62.0,8.0,San Joaquin Valley/Hanford,FAT,14,04-14-2016,20.0,15.0,"San Joaquin Valley/Hanford, CA",73.0,51.0,4,0.0,California,2016
-48.0,12.564516129032258,Grand Forks,FGF,14,04-14-2016,29.85483870967742,23.370967741935488,"Grand Forks, ND",67.0,28.0,4,0.0,North Dakota,2016
-48.0,4.645161290322581,Grand Forks,FGF,14,04-14-2016,17.370967741935488,13.129032258064516,"Grand Forks, ND",67.0,28.0,4,0.0,North Dakota,2016
-46.0,5.0,Flagstaff,FLG,14,04-14-2016,25.0,20.0,"Flagstaff, AZ",62.0,30.0,4,0.0,Arizona,2016
-62.0,9.0,Sioux Falls,FSD,14,04-14-2016,29.0,22.0,"Sioux Falls, SD",76.0,47.0,4,0.0,South Dakota,2016
-62.0,9.0,Sioux Falls,FSD,14,04-14-2016,29.0,22.0,"Sioux Falls, SD",76.0,47.0,4,0.0,South Dakota,2016
-62.0,9.0,Sioux Falls,FSD,14,04-14-2016,29.0,22.0,"Sioux Falls, SD",76.0,47.0,4,0.0,South Dakota,2016
-43.0,8.0,Northern Indiana,FWA,14,04-14-2016,24.0,17.0,"Northern Indiana, IN",56.0,30.0,4,0.0,Indiana,2016
-51.0,10.0,Glasgow,GGW,14,04-14-2016,35.0,29.0,"Glasgow, MT",63.0,39.0,4,0.9,Montana,2016
-56.0,7.0,Salt Lake City,GJT,14,04-14-2016,18.0,15.0,"Salt Lake City, UT",71.0,41.0,4,0.0,Utah,2016
-54.0,8.0,Hastings,GLD,14,04-14-2016,22.0,16.0,"Hastings, NE",74.0,33.0,4,0.0,Nebraska,2016
-70.0,6.0,Jacksonville,GNV,14,04-14-2016,24.0,18.0,"Jacksonville, FL",80.0,59.0,4,0.33,Florida,2016
-43.0,5.0,Missoula,GPI,14,04-14-2016,21.0,17.0,"Missoula, MT",53.0,33.0,4,0.06,Montana,2016
-43.0,4.0,Grand Rapids,GRR,14,04-14-2016,20.0,17.0,"Grand Rapids, MI",54.0,32.0,4,1.09,Michigan,2016
-67.0,7.0,Houston/Galveston,HOU,14,04-14-2016,23.0,21.0,"Houston/Galveston, TX",72.0,62.0,4,0.63,Texas,2016
-55.0,13.0,Newport/Morehead City,HSE,14,04-14-2016,33.0,20.0,"Newport/Morehead City, NC",59.0,50.0,4,0.0,North Carolina,2016
-56.0,5.0,Huntsville,HSV,14,04-14-2016,22.0,17.0,"Huntsville, AL",70.0,42.0,4,0.2,Alabama,2016
-62.0,11.0,Wilmington,ILM,14,04-14-2016,24.0,17.0,"Wilmington, NC",72.0,51.0,4,0.01,North Carolina,2016
-48.0,9.0,Indianapolis,IND,14,04-14-2016,18.0,16.0,"Indianapolis, IN",59.0,37.0,4,0.0,Indiana,2016
-41.0,6.0,Minneapolis/Twin Cities,INL,14,04-14-2016,17.0,14.0,"Minneapolis/Twin Cities, MN",58.0,24.0,4,0.0,Minnesota,2016
-41.0,6.0,Minneapolis/Twin Cities,INL,14,04-14-2016,17.0,14.0,"Minneapolis/Twin Cities, MN",58.0,24.0,4,0.0,Minnesota,2016
-63.0,5.0,Jackson,JAN,14,04-14-2016,20.0,16.0,"Jackson, MS",70.0,55.0,4,0.24,Mississippi,2016
-68.0,10.0,Tampa,JAX,14,04-14-2016,27.0,20.0,"Tampa, FL",74.0,61.0,4,0.0,Florida,2016
-54.0,4.0,Charleston,JKL,14,04-14-2016,14.0,10.0,"Charleston, WV",71.0,37.0,4,0.0,West Virginia,2016
-0.0,0.0,Juneau,JNU,14,04-14-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
-61.0,5.0,Lubbock,LBB,14,04-14-2016,15.0,13.0,"Lubbock, TX",71.0,50.0,4,0.05,Texas,2016
-57.0,7.0,Cheyenne,LBF,14,04-14-2016,26.0,21.0,"Cheyenne, WY",79.0,35.0,4,0.0,Wyoming,2016
-70.0,7.0,Lake Charles,LCH,14,04-14-2016,34.0,26.0,"Lake Charles, LA",77.0,63.0,4,1.58,Louisiana,2016
-57.0,5.0,North Little Rock,LIT,14,04-14-2016,18.0,16.0,"North Little Rock, AR",64.0,49.0,4,0.03,Arkansas,2016
-47.0,12.0,Davenport/Quad Cities,LOT,14,04-14-2016,39.0,25.0,"Davenport/Quad Cities, IA",59.0,34.0,4,0.0,Iowa,2016
-0.0,0.0,Jackson,LOZ,14,04-14-2016,0.0,0.0,"Jackson, KY",0.0,0.0,4,0.0,Kentucky,2016
-57.0,5.277777777777778,Shreveport,LZK,14,04-14-2016,17.11111111111111,11.166666666666666,"Shreveport, LA",64.0,49.0,4,0.06,Louisiana,2016
-63.0,5.0,Midland/Odessa,MAF,14,04-14-2016,17.0,14.0,"Midland/Odessa, TX",75.0,51.0,4,0.0,Texas,2016
-55.0,8.0,Kansas City/Pleasant Hill,MCI,14,04-14-2016,22.0,17.0,"Kansas City/Pleasant Hill, MO",72.0,38.0,4,0.0,Missouri,2016
-46.0,4.0,State College,MDT,14,04-14-2016,13.0,9.0,"State College, PA",57.0,34.0,4,0.0,Pennsylvania,2016
-58.0,5.0,Memphis,MEM,14,04-14-2016,17.0,13.0,"Memphis, TN",65.0,50.0,4,0.02,Tennessee,2016
-77.0,6.0,Miami,MIA,14,04-14-2016,22.0,15.0,"Miami, FL",84.0,69.0,4,0.0,Florida,2016
-64.0,5.0,Mobile/Pensacola,MOB,14,04-14-2016,18.0,15.0,"Mobile/Pensacola, AL",67.0,60.0,4,0.66,Alabama,2016
-33.0,5.564516129032258,Green Bay,MQT,14,04-14-2016,20.0,14.967741935483872,"Green Bay, WI",38.0,27.0,4,0.02,Wisconsin,2016
-33.0,11.838709677419354,Green Bay,MQT,14,04-14-2016,20.0,23.838709677419356,"Green Bay, WI",38.0,27.0,4,0.02,Wisconsin,2016
-48.0,8.0,Spokane,MSO,14,04-14-2016,27.0,21.0,"Spokane, WA",58.0,38.0,4,0.02,Washington,2016
-79.0,5.0,Key West,MTH,14,04-14-2016,14.0,10.0,"Key West, FL",84.0,73.0,4,0.0,Florida,2016
-49.0,5.0,New York/Upton,NYC,14,04-14-2016,25.0,16.0,"New York/Upton, NY",58.0,40.0,4,0.0,New York,2016
-58.0,6.0,Norman/Oklahoma City,OKC,14,04-14-2016,20.0,17.0,"Norman/Oklahoma City, OK",64.0,51.0,4,0.31,Oklahoma,2016
-61.0,13.0,Omaha/Valley,OMA,14,04-14-2016,28.0,23.0,"Omaha/Valley, NE",77.0,45.0,4,0.0,Nebraska,2016
-45.0,7.0,Milwaukee/Sullivan,ORD,14,04-14-2016,21.0,17.0,"Milwaukee/Sullivan, WI",56.0,34.0,4,0.0,Wisconsin,2016
-45.0,7.0,Milwaukee/Sullivan,ORD,14,04-14-2016,21.0,17.0,"Milwaukee/Sullivan, WI",56.0,34.0,4,0.0,Wisconsin,2016
-74.0,4.0,Phoenix,PHX,14,04-14-2016,18.0,14.0,"Phoenix, AZ",86.0,62.0,4,0.0,Arizona,2016
-50.0,6.0,Lincoln,PIA,14,04-14-2016,22.0,16.0,"Lincoln, IL",63.0,36.0,4,0.0,Illinois,2016
-43.0,5.0,Pittsburgh,PIT,14,04-14-2016,20.0,13.0,"Pittsburgh, PA",56.0,29.0,4,0.0,Pennsylvania,2016
-55.0,5.0,Pendleton,PSC,14,04-14-2016,30.0,25.0,"Pendleton, OR",65.0,44.0,4,0.36,Oregon,2016
-59.0,6.0,Goodland,PUB,14,04-14-2016,16.0,13.0,"Goodland, KS",76.0,41.0,4,0.0,Kansas,2016
-41.0,6.0,Gray/Portland,PWM,14,04-14-2016,22.0,16.0,"Gray/Portland, ME",54.0,28.0,4,0.0,Maine,2016
-59.0,0.0,Sacramento,RDD,14,04-14-2016,41.0,28.0,"Sacramento, CA",70.0,47.0,4,0.09,California,2016
-59.0,0.0,Sacramento,RDD,14,04-14-2016,41.0,28.0,"Sacramento, CA",70.0,47.0,4,0.09,California,2016
-55.0,9.0,Raleigh,RDU,14,04-14-2016,23.0,20.0,"Raleigh, NC",64.0,45.0,4,0.0,North Carolina,2016
-50.0,7.0,Wakefield,RIC,14,04-14-2016,23.0,18.0,"Wakefield, VA",60.0,40.0,4,0.0,Virginia,2016
-47.0,3.0,Blacksburg,RNK,14,04-14-2016,9.0,12.0,"Blacksburg, VA",62.0,31.0,4,0.0,Virginia,2016
-56.0,12.0,Reno,RNO,14,04-14-2016,47.0,38.0,"Reno, NV",66.0,46.0,4,0.0,Nevada,2016
-56.0,18.0,La Crosse,RST,14,04-14-2016,33.0,28.0,"La Crosse, WI",70.0,42.0,4,0.85,Wisconsin,2016
-56.0,18.0,La Crosse,RST,14,04-14-2016,33.0,28.0,"La Crosse, WI",70.0,42.0,4,0.85,Wisconsin,2016
-54.0,8.0,Louisville,SDF,14,04-14-2016,29.0,14.0,"Louisville, KY",67.0,41.0,4,0.0,Kentucky,2016
-51.0,6.0,Seattle,SEA,14,04-14-2016,39.0,30.0,"Seattle, WA",58.0,44.0,4,0.1,Washington,2016
-54.0,7.0,Springfield,SGF,14,04-14-2016,22.0,18.0,"Springfield, MO",63.0,45.0,4,0.0,Missouri,2016
-79.0,5.0,San Juan,SJU,14,04-14-2016,20.0,13.0,"San Juan, PR",84.0,73.0,4,1.48,Puerto Rico,2016
-53.0,6.0,St. Louis,STL,14,04-14-2016,20.0,14.0,"St. Louis, MO",65.0,40.0,4,0.0,Missouri,2016
-56.0,6.0,San Francisco Bay Area/Monterey,STS,14,04-14-2016,22.0,18.0,"San Francisco Bay Area/Monterey, CA",67.0,45.0,4,0.2,California,2016
-70.0,5.0,Tallahassee,TLH,14,04-14-2016,19.0,16.0,"Tallahassee, FL",79.0,60.0,4,1.86,Florida,2016
-40.0,7.0,Cleveland,TOL,14,04-14-2016,22.0,18.0,"Cleveland, OH",51.0,28.0,4,0.0,Ohio,2016
-56.0,6.0,Tulsa,TUL,14,04-14-2016,18.0,15.0,"Tulsa, OK",63.0,49.0,4,0.26,Oklahoma,2016
-69.0,4.0,Tucson,TUS,14,04-14-2016,16.0,12.0,"Tucson, AZ",84.0,53.0,4,0.0,Arizona,2016
-65.0,15.0,Rapid City,UNR,14,04-14-2016,39.0,26.0,"Rapid City, SD",80.0,50.0,4,0.01,South Dakota,2016
-65.0,16.0,Rapid City,UNR,14,04-14-2016,39.0,33.0,"Rapid City, SD",80.0,50.0,4,0.01,South Dakota,2016
-40.0,11.0,Medford,AAT,15,04-15-2016,40.0,32.0,"Medford, OR",49.0,30.0,4,0.09,Oregon,2016
-49.0,2.0,Mount Holly/Philadelphia,ABE,15,04-15-2016,16.0,14.0,"Mount Holly/Philadelphia, NJ",63.0,34.0,4,0.0,New Jersey,2016
-60.0,5.0,San Angelo,ABI,15,04-15-2016,21.0,16.0,"San Angelo, TX",75.0,45.0,4,0.0,Texas,2016
-62.0,11.0,Albuquerque,ABQ,15,04-15-2016,40.0,33.0,"Albuquerque, NM",77.0,46.0,4,0.54,New Mexico,2016
-66.0,18.0,Aberdeen,ABR,15,04-15-2016,39.0,31.0,"Aberdeen, SD",86.0,45.0,4,0.0,South Dakota,2016
-64.0,8.0,Denver/Boulder,AKO,15,04-15-2016,43.0,33.0,"Denver/Boulder, CO",79.0,49.0,4,0.0,Colorado,2016
-45.0,7.0,Albany,ALB,15,04-15-2016,22.0,15.0,"Albany, NY",58.0,31.0,4,0.0,New York,2016
-48.0,12.0,Pueblo,ALS,15,04-15-2016,45.0,33.0,"Pueblo, CO",68.0,28.0,4,0.0,Colorado,2016
-64.0,19.0,Amarillo,AMA,15,04-15-2016,36.0,29.0,"Amarillo, TX",80.0,47.0,4,0.0,Texas,2016
-66.0,7.0,Birmingham,ANB,15,04-15-2016,22.0,16.0,"Birmingham, AL",73.0,58.0,4,0.17,Alabama,2016
-44.0,3.0,Anchorage,ANC,15,04-15-2016,36.0,9.0,"Anchorage, AK",54.0,33.0,4,0.0,Alaska,2016
-42.0,8.0,Marquette,ANJ,15,04-15-2016,22.0,17.0,"Marquette, MI",53.0,30.0,4,0.0,Michigan,2016
-42.0,8.0,Marquette,ANJ,15,04-15-2016,22.0,17.0,"Marquette, MI",53.0,30.0,4,0.0,Michigan,2016
-40.0,6.0,Gaylord,APN,15,04-15-2016,21.0,17.0,"Gaylord, MI",52.0,27.0,4,0.0,Michigan,2016
-52.0,8.0,Chicago,ARR,15,04-15-2016,21.0,16.0,"Chicago, IL",67.0,37.0,4,0.0,Illinois,2016
-63.0,10.0,Peachtree City/Atlanta,ATL,15,04-15-2016,26.0,21.0,"Peachtree City/Atlanta, GA",69.0,56.0,4,0.01,Georgia,2016
-64.0,6.0,Austin/San Antonio,AUS,15,04-15-2016,22.0,16.0,"Austin/San Antonio, TX",75.0,52.0,4,0.0,Texas,2016
-61.0,17.0,North Platte,BBW,15,04-15-2016,37.0,29.0,"North Platte, NE",73.0,48.0,4,0.0,Nebraska,2016
-42.0,5.0,Binghamton,BGM,15,04-15-2016,20.0,13.0,"Binghamton, NY",55.0,29.0,4,0.0,New York,2016
-41.0,8.0,Caribou,BGR,15,04-15-2016,26.0,21.0,"Caribou, ME",53.0,29.0,4,0.0,Maine,2016
-48.0,8.0,Billings,BIL,15,04-15-2016,30.0,24.0,"Billings, MT",56.0,39.0,4,0.38,Montana,2016
-59.0,10.0,Bismarck,BIS,15,04-15-2016,29.0,24.0,"Bismarck, ND",70.0,48.0,4,0.01,North Dakota,2016
-42.0,11.0,Boise,BKE,15,04-15-2016,37.0,26.0,"Boise, ID",52.0,31.0,4,0.02,Idaho,2016
-65.0,4.0,Nashville,BNA,15,04-15-2016,14.0,12.0,"Nashville, TN",74.0,55.0,4,0.01,Tennessee,2016
-44.0,10.0,Boston,BOS,15,04-15-2016,28.0,23.0,"Boston, MD",49.0,38.0,4,0.0,Massachusetts,2016
-74.0,8.0,Brownsville,BRO,15,04-15-2016,23.0,17.0,"Brownsville, TX",83.0,64.0,4,0.0,Texas,2016
-73.0,8.0,New Orleans/Baton Rouge,BTR,15,04-15-2016,22.0,17.0,"New Orleans/Baton Rouge, LA",81.0,65.0,4,0.14,Louisiana,2016
-40.0,5.0,Burlington,BTV,15,04-15-2016,24.0,20.0,"Burlington, VT",52.0,27.0,4,0.0,Vermont,2016
-42.0,10.0,Buffalo,BUF,15,04-15-2016,22.0,17.0,"Buffalo, NY",54.0,29.0,4,0.0,New York,2016
-62.0,7.0,Los Angeles/Oxnard,BUR,15,04-15-2016,35.0,28.0,"Los Angeles/Oxnard, CA",71.0,53.0,4,0.0,California,2016
-46.0,14.0,Pocatello,BYI,15,04-15-2016,40.0,29.0,"Pocatello, ID",54.0,38.0,4,0.11,Idaho,2016
-41.0,6.0,Great Falls,BZN,15,04-15-2016,33.0,26.0,"Great Falls, MT",51.0,31.0,4,0.04,Montana,2016
-64.0,10.0,Greenville-Spartanburg,CAE,15,04-15-2016,25.0,18.0,"Greenville-Spartanburg, SC",72.0,55.0,4,0.0,South Carolina,2016
-51.0,15.0,Eureka,CEC,15,04-15-2016,38.0,29.0,"Eureka, CA",56.0,46.0,4,0.56,California,2016
-62.0,5.0,Paducah,CGI,15,04-15-2016,25.0,14.0,"Paducah, KY",75.0,48.0,4,1.8,Kentucky,2016
-64.0,2.0,Morristown/Knoxville,CHA,15,04-15-2016,13.0,10.0,"Morristown/Knoxville, TN",73.0,55.0,4,0.16,Tennessee,2016
-62.0,11.0,Charleston,CHS,15,04-15-2016,23.0,18.0,"Charleston, SC",70.0,53.0,4,2.74,South Carolina,2016
-60.0,14.0,Topeka,CNK,15,04-15-2016,29.0,24.0,"Topeka, KS",74.0,46.0,4,0.0,Kansas,2016
-56.0,5.0,Wichita,CNU,15,04-15-2016,21.0,15.0,"Wichita, KS",72.0,39.0,4,0.0,Kansas,2016
-73.0,8.0,Corpus Christi,CRP,15,04-15-2016,22.0,17.0,"Corpus Christi, TX",86.0,60.0,4,0.0,Texas,2016
-63.0,5.0,Columbia,CUB,15,04-15-2016,20.0,13.0,"Columbia, SC",71.0,54.0,4,0.0,South Carolina,2016
-54.0,8.0,Wilmington,CVG,15,04-15-2016,18.0,14.0,"Wilmington, OH",68.0,39.0,4,0.0,Ohio,2016
-56.0,12.0,Riverton,CYS,15,04-15-2016,41.0,30.0,"Riverton, WY",70.0,41.0,4,0.0,Wyoming,2016
-55.0,8.0,San Diego,CZZ,15,04-15-2016,27.0,21.0,"San Diego, CA",69.0,41.0,4,0.0,California,2016
-75.0,7.0,Melbourne,DAB,15,04-15-2016,21.0,18.0,"Melbourne, FL",81.0,68.0,4,0.5,Florida,2016
-68.0,29.0,Las Vegas,DAG,15,04-15-2016,57.0,48.0,"Las Vegas, NV",77.0,58.0,4,0.0,Nevada,2016
-52.0,4.0,Baltimore/Washington,DCA,15,04-15-2016,18.0,15.0,"Baltimore/Washington, VA",64.0,40.0,4,0.0,Virginia,2016
-62.0,12.0,Grand Junction,DEN,15,04-15-2016,50.0,30.0,"Grand Junction, CO",77.0,47.0,4,0.0,Colorado,2016
-62.0,12.0,Grand Junction,DEN,15,04-15-2016,50.0,30.0,"Grand Junction, CO",77.0,47.0,4,0.0,Colorado,2016
-67.0,5.0,Fort Worth/Dallas,DFW,15,04-15-2016,14.0,12.0,"Fort Worth/Dallas, TX",76.0,57.0,4,0.0,Texas,2016
-62.0,22.0,Dodge City,DGC,15,04-15-2016,39.0,30.0,"Dodge City, KS",73.0,50.0,4,0.0,Kansas,2016
-61.0,11.0,Des Moines,DSM,15,04-15-2016,26.0,22.0,"Des Moines, IA",74.0,47.0,4,0.0,Iowa,2016
-45.0,5.0,Detroit/Pontiac,DTW,15,04-15-2016,20.0,15.0,"Detroit/Pontiac, MI",56.0,33.0,4,0.0,Michigan,2016
-52.0,6.0,Portland,EKA,15,04-15-2016,23.0,13.0,"Portland, OR",57.0,47.0,4,0.51,Oregon,2016
-69.0,5.0,El Paso,ELP,15,04-15-2016,29.0,20.0,"El Paso, TX",87.0,50.0,4,0.0,Texas,2016
-42.0,13.0,Elko,ELY,15,04-15-2016,36.0,26.0,"Elko, NV",55.0,28.0,4,0.9,Nevada,2016
-39.0,0.0,Fairbanks,FAI,15,04-15-2016,23.0,0.0,"Fairbanks, AK",47.0,31.0,4,0.0,Alaska,2016
-61.0,14.0,San Joaquin Valley/Hanford,FAT,15,04-15-2016,35.0,28.0,"San Joaquin Valley/Hanford, CA",70.0,51.0,4,0.0,California,2016
-54.0,12.67741935483871,Grand Forks,FGF,15,04-15-2016,30.225806451612904,23.645161290322584,"Grand Forks, ND",63.0,44.0,4,0.01,North Dakota,2016
-54.0,4.774193548387097,Grand Forks,FGF,15,04-15-2016,17.645161290322584,13.35483870967742,"Grand Forks, ND",63.0,44.0,4,0.01,North Dakota,2016
-46.0,12.0,Flagstaff,FLG,15,04-15-2016,37.0,28.0,"Flagstaff, AZ",62.0,30.0,4,0.0,Arizona,2016
-64.0,18.0,Sioux Falls,FSD,15,04-15-2016,35.0,30.0,"Sioux Falls, SD",76.0,52.0,4,0.0,South Dakota,2016
-64.0,18.0,Sioux Falls,FSD,15,04-15-2016,35.0,30.0,"Sioux Falls, SD",76.0,52.0,4,0.0,South Dakota,2016
-64.0,18.0,Sioux Falls,FSD,15,04-15-2016,35.0,30.0,"Sioux Falls, SD",76.0,52.0,4,0.0,South Dakota,2016
-46.0,11.0,Northern Indiana,FWA,15,04-15-2016,23.0,18.0,"Northern Indiana, IN",61.0,31.0,4,0.0,Indiana,2016
-49.0,13.0,Glasgow,GGW,15,04-15-2016,39.0,30.0,"Glasgow, MT",66.0,32.0,4,0.18,Montana,2016
-58.0,12.0,Salt Lake City,GJT,15,04-15-2016,51.0,44.0,"Salt Lake City, UT",71.0,44.0,4,0.01,Utah,2016
-59.0,22.0,Hastings,GLD,15,04-15-2016,44.0,35.0,"Hastings, NE",77.0,40.0,4,0.0,Nebraska,2016
-70.0,8.0,Jacksonville,GNV,15,04-15-2016,23.0,20.0,"Jacksonville, FL",77.0,62.0,4,0.01,Florida,2016
-38.0,7.0,Missoula,GPI,15,04-15-2016,24.0,20.0,"Missoula, MT",48.0,28.0,4,0.51,Montana,2016
-48.0,9.0,Grand Rapids,GRR,15,04-15-2016,22.0,18.0,"Grand Rapids, MI",62.0,33.0,4,0.0,Michigan,2016
-68.0,7.0,Houston/Galveston,HOU,15,04-15-2016,23.0,16.0,"Houston/Galveston, TX",76.0,60.0,4,0.0,Texas,2016
-55.0,13.0,Newport/Morehead City,HSE,15,04-15-2016,32.0,18.0,"Newport/Morehead City, NC",59.0,50.0,4,0.0,North Carolina,2016
-64.0,8.0,Huntsville,HSV,15,04-15-2016,22.0,18.0,"Huntsville, AL",69.0,58.0,4,0.07,Alabama,2016
-57.0,11.0,Wilmington,ILM,15,04-15-2016,27.0,21.0,"Wilmington, NC",69.0,45.0,4,0.0,North Carolina,2016
-53.0,11.0,Indianapolis,IND,15,04-15-2016,26.0,18.0,"Indianapolis, IN",67.0,39.0,4,0.0,Indiana,2016
-50.0,6.0,Minneapolis/Twin Cities,INL,15,04-15-2016,22.0,15.0,"Minneapolis/Twin Cities, MN",69.0,31.0,4,0.01,Minnesota,2016
-50.0,6.0,Minneapolis/Twin Cities,INL,15,04-15-2016,22.0,15.0,"Minneapolis/Twin Cities, MN",69.0,31.0,4,0.01,Minnesota,2016
-64.0,4.0,Jackson,JAN,15,04-15-2016,22.0,17.0,"Jackson, MS",69.0,59.0,4,0.04,Mississippi,2016
-65.0,12.0,Tampa,JAX,15,04-15-2016,31.0,23.0,"Tampa, FL",67.0,62.0,4,0.62,Florida,2016
-60.0,3.0,Charleston,JKL,15,04-15-2016,14.0,8.0,"Charleston, WV",75.0,45.0,4,0.0,West Virginia,2016
-0.0,0.0,Juneau,JNU,15,04-15-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
-63.0,12.0,Lubbock,LBB,15,04-15-2016,30.0,23.0,"Lubbock, TX",81.0,44.0,4,0.0,Texas,2016
-62.0,15.0,Cheyenne,LBF,15,04-15-2016,38.0,28.0,"Cheyenne, WY",75.0,48.0,4,0.0,Wyoming,2016
-73.0,7.0,Lake Charles,LCH,15,04-15-2016,29.0,21.0,"Lake Charles, LA",80.0,65.0,4,0.12,Louisiana,2016
-60.0,6.0,North Little Rock,LIT,15,04-15-2016,19.0,14.0,"North Little Rock, AR",68.0,51.0,4,0.11,Arkansas,2016
-52.0,12.0,Davenport/Quad Cities,LOT,15,04-15-2016,39.0,25.0,"Davenport/Quad Cities, IA",65.0,39.0,4,0.0,Iowa,2016
-59.0,3.0,Jackson,LOZ,15,04-15-2016,15.0,10.0,"Jackson, KY",74.0,44.0,4,1.37,Kentucky,2016
-60.0,5.333333333333333,Shreveport,LZK,15,04-15-2016,17.333333333333332,11.0,"Shreveport, LA",70.0,49.0,4,0.07,Louisiana,2016
-67.0,10.0,Midland/Odessa,MAF,15,04-15-2016,29.0,18.0,"Midland/Odessa, TX",83.0,51.0,4,0.0,Texas,2016
-59.0,8.0,Kansas City/Pleasant Hill,MCI,15,04-15-2016,24.0,17.0,"Kansas City/Pleasant Hill, MO",73.0,44.0,4,0.0,Missouri,2016
-49.0,3.0,State College,MDT,15,04-15-2016,12.0,12.0,"State College, PA",63.0,34.0,4,0.0,Pennsylvania,2016
-60.0,5.0,Memphis,MEM,15,04-15-2016,23.0,20.0,"Memphis, TN",71.0,49.0,4,0.5,Tennessee,2016
-78.0,5.0,Miami,MIA,15,04-15-2016,23.0,14.0,"Miami, FL",85.0,71.0,4,0.0,Florida,2016
-68.0,6.0,Mobile/Pensacola,MOB,15,04-15-2016,21.0,17.0,"Mobile/Pensacola, AL",72.0,63.0,4,0.44,Alabama,2016
-44.0,5.67741935483871,Green Bay,MQT,15,04-15-2016,30.0,15.161290322580646,"Green Bay, WI",57.0,30.0,4,0.0,Wisconsin,2016
-44.0,11.806451612903226,Green Bay,MQT,15,04-15-2016,30.0,23.806451612903224,"Green Bay, WI",57.0,30.0,4,0.0,Wisconsin,2016
-44.0,4.0,Spokane,MSO,15,04-15-2016,37.0,31.0,"Spokane, WA",50.0,38.0,4,0.14,Washington,2016
-79.0,4.0,Key West,MTH,15,04-15-2016,14.0,10.0,"Key West, FL",86.0,71.0,4,0.0,Florida,2016
-53.0,6.0,New York/Upton,NYC,15,04-15-2016,20.0,12.0,"New York/Upton, NY",62.0,43.0,4,0.0,New York,2016
-58.0,5.0,Norman/Oklahoma City,OKC,15,04-15-2016,16.0,14.0,"Norman/Oklahoma City, OK",69.0,47.0,4,0.0,Oklahoma,2016
-63.0,14.0,Omaha/Valley,OMA,15,04-15-2016,30.0,24.0,"Omaha/Valley, NE",76.0,49.0,4,0.0,Nebraska,2016
-49.0,8.0,Milwaukee/Sullivan,ORD,15,04-15-2016,19.0,16.0,"Milwaukee/Sullivan, WI",61.0,37.0,4,0.0,Wisconsin,2016
-49.0,8.0,Milwaukee/Sullivan,ORD,15,04-15-2016,19.0,16.0,"Milwaukee/Sullivan, WI",61.0,37.0,4,0.0,Wisconsin,2016
-77.0,8.0,Phoenix,PHX,15,04-15-2016,26.0,21.0,"Phoenix, AZ",89.0,64.0,4,0.0,Arizona,2016
-56.0,8.0,Lincoln,PIA,15,04-15-2016,22.0,16.0,"Lincoln, IL",70.0,42.0,4,0.0,Illinois,2016
-52.0,6.0,Pittsburgh,PIT,15,04-15-2016,19.0,15.0,"Pittsburgh, PA",67.0,37.0,4,0.0,Pennsylvania,2016
-53.0,5.0,Pendleton,PSC,15,04-15-2016,37.0,30.0,"Pendleton, OR",64.0,42.0,4,0.21,Oregon,2016
-64.0,8.0,Goodland,PUB,15,04-15-2016,29.0,24.0,"Goodland, KS",83.0,44.0,4,0.0,Kansas,2016
-46.0,9.0,Gray/Portland,PWM,15,04-15-2016,33.0,18.0,"Gray/Portland, ME",56.0,35.0,4,0.0,Maine,2016
-54.0,0.0,Sacramento,RDD,15,04-15-2016,25.0,20.0,"Sacramento, CA",65.0,42.0,4,0.05,California,2016
-54.0,0.0,Sacramento,RDD,15,04-15-2016,25.0,20.0,"Sacramento, CA",65.0,42.0,4,0.05,California,2016
-52.0,8.0,Raleigh,RDU,15,04-15-2016,21.0,16.0,"Raleigh, NC",66.0,38.0,4,0.0,North Carolina,2016
-49.0,6.0,Wakefield,RIC,15,04-15-2016,19.0,15.0,"Wakefield, VA",62.0,35.0,4,0.0,Virginia,2016
-48.0,3.0,Blacksburg,RNK,15,04-15-2016,14.5,10.0,"Blacksburg, VA",64.0,32.0,4,0.0,Virginia,2016
-46.0,14.0,Reno,RNO,15,04-15-2016,39.0,30.0,"Reno, NV",55.0,36.0,4,0.0,Nevada,2016
-60.0,17.0,La Crosse,RST,15,04-15-2016,34.0,26.0,"La Crosse, WI",73.0,47.0,4,0.0,Wisconsin,2016
-60.0,17.0,La Crosse,RST,15,04-15-2016,34.0,26.0,"La Crosse, WI",73.0,47.0,4,0.0,Wisconsin,2016
-60.0,6.0,Louisville,SDF,15,04-15-2016,17.0,13.0,"Louisville, KY",75.0,44.0,4,0.0,Kentucky,2016
-52.0,7.0,Seattle,SEA,15,04-15-2016,20.0,16.0,"Seattle, WA",59.0,44.0,4,0.15,Washington,2016
-56.0,5.0,Springfield,SGF,15,04-15-2016,20.0,14.0,"Springfield, MO",71.0,41.0,4,0.0,Missouri,2016
-80.0,5.0,San Juan,SJU,15,04-15-2016,23.0,14.0,"San Juan, PR",84.0,76.0,4,0.0,Puerto Rico,2016
-57.0,6.0,St. Louis,STL,15,04-15-2016,20.0,16.0,"St. Louis, MO",71.0,43.0,4,0.0,Missouri,2016
-53.0,6.0,San Francisco Bay Area/Monterey,STS,15,04-15-2016,25.0,20.0,"San Francisco Bay Area/Monterey, CA",64.0,42.0,4,0.01,California,2016
-62.0,7.0,Tallahassee,TLH,15,04-15-2016,22.0,15.0,"Tallahassee, FL",66.0,58.0,4,0.05,Florida,2016
-43.0,9.0,Cleveland,TOL,15,04-15-2016,31.0,18.0,"Cleveland, OH",54.0,32.0,4,0.0,Ohio,2016
-61.0,4.0,Tulsa,TUL,15,04-15-2016,16.0,12.0,"Tulsa, OK",73.0,48.0,4,0.0,Oklahoma,2016
-73.0,8.0,Tucson,TUS,15,04-15-2016,23.0,17.0,"Tucson, AZ",89.0,57.0,4,0.0,Arizona,2016
-63.0,15.0,Rapid City,UNR,15,04-15-2016,38.0,26.0,"Rapid City, SD",76.0,50.0,4,0.11,South Dakota,2016
-63.0,16.0,Rapid City,UNR,15,04-15-2016,38.0,33.0,"Rapid City, SD",76.0,50.0,4,0.11,South Dakota,2016
-44.0,5.0,Medford,AAT,16,04-16-2016,20.0,15.0,"Medford, OR",56.0,31.0,4,0.0,Oregon,2016
-50.0,1.0,Mount Holly/Philadelphia,ABE,16,04-16-2016,12.0,9.0,"Mount Holly/Philadelphia, NJ",66.0,33.0,4,0.0,New Jersey,2016
-67.0,19.0,San Angelo,ABI,16,04-16-2016,36.0,31.0,"San Angelo, TX",78.0,55.0,4,1.58,Texas,2016
-59.0,9.0,Albuquerque,ABQ,16,04-16-2016,39.0,33.0,"Albuquerque, NM",69.0,49.0,4,0.05,New Mexico,2016
-58.0,16.0,Aberdeen,ABR,16,04-16-2016,44.0,35.0,"Aberdeen, SD",63.0,52.0,4,0.41,South Dakota,2016
-46.0,8.0,Denver/Boulder,AKO,16,04-16-2016,40.0,35.0,"Denver/Boulder, CO",55.0,37.0,4,0.43,Colorado,2016
-48.0,5.0,Albany,ALB,16,04-16-2016,23.0,16.0,"Albany, NY",64.0,32.0,4,0.0,New York,2016
-49.0,13.0,Pueblo,ALS,16,04-16-2016,50.0,41.0,"Pueblo, CO",62.0,35.0,4,0.02,Colorado,2016
-63.0,24.0,Amarillo,AMA,16,04-16-2016,46.0,38.0,"Amarillo, TX",75.0,50.0,4,1.46,Texas,2016
-63.0,9.0,Birmingham,ANB,16,04-16-2016,26.0,18.0,"Birmingham, AL",70.0,56.0,4,0.01,Alabama,2016
-43.0,6.0,Anchorage,ANC,16,04-16-2016,32.0,15.0,"Anchorage, AK",50.0,35.0,4,0.0,Alaska,2016
-46.0,7.0,Marquette,ANJ,16,04-16-2016,22.0,16.0,"Marquette, MI",56.0,35.0,4,0.0,Michigan,2016
-46.0,7.0,Marquette,ANJ,16,04-16-2016,22.0,16.0,"Marquette, MI",56.0,35.0,4,0.0,Michigan,2016
-40.0,5.0,Gaylord,APN,16,04-16-2016,19.0,15.0,"Gaylord, MI",53.0,26.0,4,0.0,Michigan,2016
-57.0,9.0,Chicago,ARR,16,04-16-2016,21.0,16.0,"Chicago, IL",74.0,40.0,4,0.0,Illinois,2016
-60.0,13.0,Peachtree City/Atlanta,ATL,16,04-16-2016,35.0,29.0,"Peachtree City/Atlanta, GA",67.0,53.0,4,1.81,Georgia,2016
-65.0,4.0,Austin/San Antonio,AUS,16,04-16-2016,17.0,14.0,"Austin/San Antonio, TX",79.0,50.0,4,0.0,Texas,2016
-62.0,17.0,North Platte,BBW,16,04-16-2016,38.0,29.0,"North Platte, NE",69.0,54.0,4,1.12,Nebraska,2016
-47.0,4.0,Binghamton,BGM,16,04-16-2016,14.0,10.0,"Binghamton, NY",62.0,31.0,4,0.0,New York,2016
-43.0,8.0,Caribou,BGR,16,04-16-2016,37.0,29.0,"Caribou, ME",55.0,30.0,4,0.0,Maine,2016
-44.0,18.0,Billings,BIL,16,04-16-2016,40.0,29.0,"Billings, MT",52.0,36.0,4,0.01,Montana,2016
-55.0,14.0,Bismarck,BIS,16,04-16-2016,30.0,24.0,"Bismarck, ND",68.0,42.0,4,0.13,North Dakota,2016
-42.0,11.0,Boise,BKE,16,04-16-2016,33.0,26.0,"Boise, ID",54.0,29.0,4,0.0,Idaho,2016
-68.0,6.0,Nashville,BNA,16,04-16-2016,22.0,16.0,"Nashville, TN",79.0,56.0,4,0.0,Tennessee,2016
-46.0,11.0,Boston,BOS,16,04-16-2016,33.0,22.0,"Boston, MD",54.0,38.0,4,0.0,Massachusetts,2016
-71.0,7.0,Brownsville,BRO,16,04-16-2016,19.0,15.0,"Brownsville, TX",82.0,59.0,4,0.0,Texas,2016
-71.0,11.0,New Orleans/Baton Rouge,BTR,16,04-16-2016,27.0,22.0,"New Orleans/Baton Rouge, LA",76.0,65.0,4,4.8,Louisiana,2016
-44.0,6.0,Burlington,BTV,16,04-16-2016,26.0,22.0,"Burlington, VT",59.0,28.0,4,0.0,Vermont,2016
-51.0,7.0,Buffalo,BUF,16,04-16-2016,22.0,18.0,"Buffalo, NY",66.0,36.0,4,0.0,New York,2016
-68.0,15.0,Los Angeles/Oxnard,BUR,16,04-16-2016,43.0,33.0,"Los Angeles/Oxnard, CA",80.0,56.0,4,0.0,California,2016
-44.0,11.0,Pocatello,BYI,16,04-16-2016,28.0,21.0,"Pocatello, ID",54.0,34.0,4,0.05,Idaho,2016
-36.0,12.0,Great Falls,BZN,16,04-16-2016,28.0,24.0,"Great Falls, MT",43.0,29.0,4,0.01,Montana,2016
-62.0,10.0,Greenville-Spartanburg,CAE,16,04-16-2016,26.0,18.0,"Greenville-Spartanburg, SC",70.0,53.0,4,0.0,South Carolina,2016
-49.0,8.0,Eureka,CEC,16,04-16-2016,24.0,18.0,"Eureka, CA",57.0,41.0,4,0.0,California,2016
-64.0,7.0,Paducah,CGI,16,04-16-2016,24.0,17.0,"Paducah, KY",75.0,53.0,4,0.0,Kentucky,2016
-63.0,3.0,Morristown/Knoxville,CHA,16,04-16-2016,19.0,14.0,"Morristown/Knoxville, TN",75.0,50.0,4,0.0,Tennessee,2016
-55.0,12.0,Charleston,CHS,16,04-16-2016,25.0,21.0,"Charleston, SC",61.0,49.0,4,0.22,South Carolina,2016
-65.0,18.0,Topeka,CNK,16,04-16-2016,42.0,35.0,"Topeka, KS",77.0,52.0,4,0.0,Kansas,2016
-61.0,11.0,Wichita,CNU,16,04-16-2016,32.0,20.0,"Wichita, KS",74.0,48.0,4,0.0,Kansas,2016
-71.0,10.0,Corpus Christi,CRP,16,04-16-2016,26.0,22.0,"Corpus Christi, TX",82.0,60.0,4,0.0,Texas,2016
-61.0,4.0,Columbia,CUB,16,04-16-2016,18.0,10.0,"Columbia, SC",70.0,52.0,4,0.0,South Carolina,2016
-61.0,6.0,Wilmington,CVG,16,04-16-2016,16.0,14.0,"Wilmington, OH",77.0,45.0,4,0.0,Ohio,2016
-40.0,16.0,Riverton,CYS,16,04-16-2016,35.0,26.0,"Riverton, WY",47.0,33.0,4,0.15,Wyoming,2016
-56.0,9.0,San Diego,CZZ,16,04-16-2016,31.0,21.0,"San Diego, CA",68.0,44.0,4,0.0,California,2016
-73.0,12.0,Melbourne,DAB,16,04-16-2016,34.0,28.0,"Melbourne, FL",79.0,66.0,4,0.11,Florida,2016
-61.0,16.0,Las Vegas,DAG,16,04-16-2016,36.0,31.0,"Las Vegas, NV",73.0,49.0,4,0.0,Nevada,2016
-53.0,4.0,Baltimore/Washington,DCA,16,04-16-2016,15.0,13.0,"Baltimore/Washington, VA",64.0,42.0,4,0.0,Virginia,2016
-44.0,13.0,Grand Junction,DEN,16,04-16-2016,38.0,32.0,"Grand Junction, CO",54.0,34.0,4,0.14,Colorado,2016
-44.0,13.0,Grand Junction,DEN,16,04-16-2016,38.0,32.0,"Grand Junction, CO",54.0,34.0,4,0.14,Colorado,2016
-65.0,7.0,Fort Worth/Dallas,DFW,16,04-16-2016,20.0,17.0,"Fort Worth/Dallas, TX",75.0,54.0,4,0.0,Texas,2016
-62.0,25.0,Dodge City,DGC,16,04-16-2016,49.0,37.0,"Dodge City, KS",73.0,51.0,4,0.0,Kansas,2016
-65.0,14.0,Des Moines,DSM,16,04-16-2016,32.0,25.0,"Des Moines, IA",78.0,51.0,4,0.0,Iowa,2016
-52.0,6.0,Detroit/Pontiac,DTW,16,04-16-2016,21.0,15.0,"Detroit/Pontiac, MI",68.0,35.0,4,0.0,Michigan,2016
-51.0,6.0,Portland,EKA,16,04-16-2016,20.0,16.0,"Portland, OR",58.0,43.0,4,1.56,Oregon,2016
-76.0,19.0,El Paso,ELP,16,04-16-2016,45.0,36.0,"El Paso, TX",86.0,66.0,4,0.0,Texas,2016
-37.0,12.0,Elko,ELY,16,04-16-2016,36.0,29.0,"Elko, NV",45.0,28.0,4,0.14,Nevada,2016
-40.0,0.0,Fairbanks,FAI,16,04-16-2016,18.0,0.0,"Fairbanks, AK",53.0,27.0,4,0.0,Alaska,2016
-59.0,12.0,San Joaquin Valley/Hanford,FAT,16,04-16-2016,34.0,25.0,"San Joaquin Valley/Hanford, CA",72.0,46.0,4,0.0,California,2016
-54.0,12.79032258064516,Grand Forks,FGF,16,04-16-2016,30.596774193548388,23.91935483870968,"Grand Forks, ND",67.0,40.0,4,0.06,North Dakota,2016
-54.0,4.903225806451613,Grand Forks,FGF,16,04-16-2016,17.91935483870968,13.580645161290322,"Grand Forks, ND",67.0,40.0,4,0.06,North Dakota,2016
-41.0,10.0,Flagstaff,FLG,16,04-16-2016,34.0,28.0,"Flagstaff, AZ",52.0,30.0,4,0.15,Arizona,2016
-63.0,17.0,Sioux Falls,FSD,16,04-16-2016,38.0,29.0,"Sioux Falls, SD",73.0,53.0,4,1.28,South Dakota,2016
-63.0,17.0,Sioux Falls,FSD,16,04-16-2016,38.0,29.0,"Sioux Falls, SD",73.0,53.0,4,1.28,South Dakota,2016
-63.0,17.0,Sioux Falls,FSD,16,04-16-2016,38.0,29.0,"Sioux Falls, SD",73.0,53.0,4,1.28,South Dakota,2016
-53.0,9.0,Northern Indiana,FWA,16,04-16-2016,19.0,16.0,"Northern Indiana, IN",71.0,35.0,4,0.0,Indiana,2016
-41.0,19.0,Glasgow,GGW,16,04-16-2016,41.0,33.0,"Glasgow, MT",45.0,36.0,4,0.32,Montana,2016
-42.0,6.0,Salt Lake City,GJT,16,04-16-2016,20.0,15.0,"Salt Lake City, UT",46.0,38.0,4,0.23,Utah,2016
-58.0,20.0,Hastings,GLD,16,04-16-2016,46.0,37.0,"Hastings, NE",68.0,48.0,4,0.94,Nebraska,2016
-69.0,9.0,Jacksonville,GNV,16,04-16-2016,29.0,22.0,"Jacksonville, FL",77.0,61.0,4,0.01,Florida,2016
-44.0,3.0,Missoula,GPI,16,04-16-2016,17.0,14.0,"Missoula, MT",55.0,33.0,4,0.62,Montana,2016
-53.0,8.0,Grand Rapids,GRR,16,04-16-2016,20.0,16.0,"Grand Rapids, MI",71.0,35.0,4,0.0,Michigan,2016
-69.0,7.0,Houston/Galveston,HOU,16,04-16-2016,17.0,14.0,"Houston/Galveston, TX",79.0,58.0,4,0.0,Texas,2016
-58.0,13.0,Newport/Morehead City,HSE,16,04-16-2016,32.0,20.0,"Newport/Morehead City, NC",62.0,53.0,4,0.0,North Carolina,2016
-64.0,12.0,Huntsville,HSV,16,04-16-2016,33.0,25.0,"Huntsville, AL",73.0,54.0,4,0.0,Alabama,2016
-58.0,11.0,Wilmington,ILM,16,04-16-2016,26.0,20.0,"Wilmington, NC",68.0,48.0,4,0.0,North Carolina,2016
-59.0,6.0,Indianapolis,IND,16,04-16-2016,26.0,13.0,"Indianapolis, IN",75.0,42.0,4,0.0,Indiana,2016
-62.0,8.0,Minneapolis/Twin Cities,INL,16,04-16-2016,31.0,20.0,"Minneapolis/Twin Cities, MN",73.0,50.0,4,0.01,Minnesota,2016
-62.0,8.0,Minneapolis/Twin Cities,INL,16,04-16-2016,31.0,20.0,"Minneapolis/Twin Cities, MN",73.0,50.0,4,0.01,Minnesota,2016
-62.0,7.0,Jackson,JAN,16,04-16-2016,20.0,14.0,"Jackson, MS",64.0,60.0,4,1.14,Mississippi,2016
-70.0,16.0,Tampa,JAX,16,04-16-2016,36.0,28.0,"Tampa, FL",75.0,65.0,4,0.06,Florida,2016
-67.0,4.0,Charleston,JKL,16,04-16-2016,13.0,9.0,"Charleston, WV",78.0,55.0,4,0.0,West Virginia,2016
-0.0,0.0,Juneau,JNU,16,04-16-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
-65.0,22.0,Lubbock,LBB,16,04-16-2016,41.0,35.0,"Lubbock, TX",77.0,53.0,4,0.0,Texas,2016
-59.0,13.0,Cheyenne,LBF,16,04-16-2016,49.0,35.0,"Cheyenne, WY",65.0,52.0,4,1.51,Wyoming,2016
-72.0,6.0,Lake Charles,LCH,16,04-16-2016,18.0,15.0,"Lake Charles, LA",80.0,64.0,4,0.0,Louisiana,2016
-63.0,9.0,North Little Rock,LIT,16,04-16-2016,23.0,17.0,"North Little Rock, AR",66.0,59.0,4,0.03,Arkansas,2016
-59.0,12.0,Davenport/Quad Cities,LOT,16,04-16-2016,39.0,25.0,"Davenport/Quad Cities, IA",73.0,44.0,4,0.0,Iowa,2016
-66.0,3.0,Jackson,LOZ,16,04-16-2016,15.0,12.0,"Jackson, KY",79.0,52.0,4,0.0,Kentucky,2016
-61.0,5.388888888888889,Shreveport,LZK,16,04-16-2016,17.555555555555557,10.833333333333334,"Shreveport, LA",64.0,58.0,4,0.02,Louisiana,2016
-71.0,19.0,Midland/Odessa,MAF,16,04-16-2016,37.0,30.0,"Midland/Odessa, TX",85.0,57.0,4,0.0,Texas,2016
-63.0,13.0,Kansas City/Pleasant Hill,MCI,16,04-16-2016,29.0,23.0,"Kansas City/Pleasant Hill, MO",75.0,50.0,4,0.0,Missouri,2016
-52.0,4.0,State College,MDT,16,04-16-2016,12.0,8.0,"State College, PA",65.0,38.0,4,0.0,Pennsylvania,2016
-63.0,10.0,Memphis,MEM,16,04-16-2016,23.0,17.0,"Memphis, TN",66.0,60.0,4,4.09,Tennessee,2016
-79.0,7.0,Miami,MIA,16,04-16-2016,26.0,22.0,"Miami, FL",87.0,70.0,4,0.9,Florida,2016
-65.0,10.0,Mobile/Pensacola,MOB,16,04-16-2016,21.0,16.0,"Mobile/Pensacola, AL",71.0,59.0,4,0.0,Alabama,2016
-53.0,5.790322580645161,Green Bay,MQT,16,04-16-2016,24.0,15.35483870967742,"Green Bay, WI",65.0,41.0,4,0.0,Wisconsin,2016
-53.0,11.774193548387096,Green Bay,MQT,16,04-16-2016,24.0,23.774193548387096,"Green Bay, WI",65.0,41.0,4,0.0,Wisconsin,2016
-44.0,8.0,Spokane,MSO,16,04-16-2016,25.0,20.0,"Spokane, WA",52.0,35.0,4,0.14,Washington,2016
-79.0,5.0,Key West,MTH,16,04-16-2016,24.0,18.0,"Key West, FL",84.0,74.0,4,0.07,Florida,2016
-54.0,3.0,New York/Upton,NYC,16,04-16-2016,16.0,12.0,"New York/Upton, NY",65.0,42.0,4,0.0,New York,2016
-62.0,13.0,Norman/Oklahoma City,OKC,16,04-16-2016,30.0,23.0,"Norman/Oklahoma City, OK",74.0,49.0,4,0.0,Oklahoma,2016
-65.0,18.0,Omaha/Valley,OMA,16,04-16-2016,37.0,30.0,"Omaha/Valley, NE",78.0,52.0,4,0.0,Nebraska,2016
-55.0,7.0,Milwaukee/Sullivan,ORD,16,04-16-2016,16.0,14.0,"Milwaukee/Sullivan, WI",68.0,42.0,4,0.0,Wisconsin,2016
-55.0,7.0,Milwaukee/Sullivan,ORD,16,04-16-2016,16.0,14.0,"Milwaukee/Sullivan, WI",68.0,42.0,4,0.0,Wisconsin,2016
-74.0,16.0,Phoenix,PHX,16,04-16-2016,46.0,38.0,"Phoenix, AZ",83.0,64.0,4,0.0,Arizona,2016
-62.0,8.0,Lincoln,PIA,16,04-16-2016,23.0,17.0,"Lincoln, IL",77.0,46.0,4,0.0,Illinois,2016
-58.0,6.0,Pittsburgh,PIT,16,04-16-2016,20.0,14.0,"Pittsburgh, PA",71.0,44.0,4,0.0,Pennsylvania,2016
-52.0,5.0,Pendleton,PSC,16,04-16-2016,17.0,10.0,"Pendleton, OR",66.0,37.0,4,0.0,Oregon,2016
-57.0,18.0,Goodland,PUB,16,04-16-2016,49.0,41.0,"Goodland, KS",70.0,44.0,4,0.2,Kansas,2016
-47.0,12.0,Gray/Portland,PWM,16,04-16-2016,39.0,23.0,"Gray/Portland, ME",59.0,35.0,4,0.0,Maine,2016
-58.0,0.0,Sacramento,RDD,16,04-16-2016,25.0,17.0,"Sacramento, CA",75.0,40.0,4,0.0,California,2016
-58.0,0.0,Sacramento,RDD,16,04-16-2016,25.0,17.0,"Sacramento, CA",75.0,40.0,4,0.0,California,2016
-54.0,9.0,Raleigh,RDU,16,04-16-2016,29.0,22.0,"Raleigh, NC",67.0,40.0,4,0.0,North Carolina,2016
-51.0,6.0,Wakefield,RIC,16,04-16-2016,23.0,17.0,"Wakefield, VA",64.0,37.0,4,0.0,Virginia,2016
-49.0,5.0,Blacksburg,RNK,16,04-16-2016,20.0,13.0,"Blacksburg, VA",63.0,34.0,4,0.0,Virginia,2016
-47.0,8.0,Reno,RNO,16,04-16-2016,27.0,21.0,"Reno, NV",57.0,37.0,4,0.0,Nevada,2016
-61.0,16.0,La Crosse,RST,16,04-16-2016,38.0,28.0,"La Crosse, WI",75.0,46.0,4,0.0,Wisconsin,2016
-61.0,16.0,La Crosse,RST,16,04-16-2016,38.0,28.0,"La Crosse, WI",75.0,46.0,4,0.0,Wisconsin,2016
-66.0,4.0,Louisville,SDF,16,04-16-2016,14.0,12.0,"Louisville, KY",79.0,52.0,4,0.0,Kentucky,2016
-53.0,7.0,Seattle,SEA,16,04-16-2016,20.0,16.0,"Seattle, WA",59.0,47.0,4,0.0,Washington,2016
-61.0,13.0,Springfield,SGF,16,04-16-2016,28.0,21.0,"Springfield, MO",70.0,51.0,4,0.0,Missouri,2016
-81.0,5.0,San Juan,SJU,16,04-16-2016,20.0,14.0,"San Juan, PR",85.0,76.0,4,0.0,Puerto Rico,2016
-66.0,9.0,St. Louis,STL,16,04-16-2016,26.0,22.0,"St. Louis, MO",78.0,54.0,4,0.0,Missouri,2016
-61.0,8.0,San Francisco Bay Area/Monterey,STS,16,04-16-2016,23.0,15.0,"San Francisco Bay Area/Monterey, CA",75.0,46.0,4,0.0,California,2016
-65.0,9.0,Tallahassee,TLH,16,04-16-2016,25.0,18.0,"Tallahassee, FL",72.0,58.0,4,4.42,Florida,2016
-50.0,8.0,Cleveland,TOL,16,04-16-2016,22.0,17.0,"Cleveland, OH",65.0,35.0,4,0.0,Ohio,2016
-63.0,11.0,Tulsa,TUL,16,04-16-2016,26.0,20.0,"Tulsa, OK",75.0,51.0,4,0.0,Oklahoma,2016
-71.0,15.0,Tucson,TUS,16,04-16-2016,43.0,29.0,"Tucson, AZ",83.0,58.0,4,0.0,Arizona,2016
-50.0,15.0,Rapid City,UNR,16,04-16-2016,36.0,26.0,"Rapid City, SD",58.0,42.0,4,0.01,South Dakota,2016
-50.0,16.0,Rapid City,UNR,16,04-16-2016,36.0,33.0,"Rapid City, SD",58.0,42.0,4,0.01,South Dakota,2016
-47.0,1.0,Medford,AAT,17,04-17-2016,19.0,12.0,"Medford, OR",68.0,25.0,4,0.0,Oregon,2016
-52.0,3.0,Mount Holly/Philadelphia,ABE,17,04-17-2016,16.0,14.0,"Mount Holly/Philadelphia, NJ",70.0,34.0,4,0.0,New Jersey,2016
-66.0,20.0,San Angelo,ABI,17,04-17-2016,39.0,32.0,"San Angelo, TX",74.0,57.0,4,0.93,Texas,2016
-45.0,7.0,Albuquerque,ABQ,17,04-17-2016,30.0,24.0,"Albuquerque, NM",50.0,40.0,4,0.02,New Mexico,2016
-50.0,11.0,Aberdeen,ABR,17,04-17-2016,20.0,17.0,"Aberdeen, SD",58.0,42.0,4,0.23,South Dakota,2016
-35.0,8.0,Denver/Boulder,AKO,17,04-17-2016,43.0,36.0,"Denver/Boulder, CO",38.0,32.0,4,0.79,Colorado,2016
-51.0,5.0,Albany,ALB,17,04-17-2016,18.0,14.0,"Albany, NY",66.0,35.0,4,0.0,New York,2016
-29.0,12.0,Pueblo,ALS,17,04-17-2016,34.0,24.0,"Pueblo, CO",37.0,21.0,4,0.65,Colorado,2016
-57.0,18.0,Amarillo,AMA,17,04-17-2016,39.0,31.0,"Amarillo, TX",71.0,43.0,4,0.4,Texas,2016
-64.0,7.0,Birmingham,ANB,17,04-17-2016,24.0,16.0,"Birmingham, AL",74.0,54.0,4,0.01,Alabama,2016
-44.0,10.0,Anchorage,ANC,17,04-17-2016,33.0,20.0,"Anchorage, AK",52.0,36.0,4,0.02,Alaska,2016
-52.0,6.0,Marquette,ANJ,17,04-17-2016,21.0,15.0,"Marquette, MI",68.0,36.0,4,0.0,Michigan,2016
-52.0,6.0,Marquette,ANJ,17,04-17-2016,21.0,15.0,"Marquette, MI",68.0,36.0,4,0.0,Michigan,2016
-47.0,4.0,Gaylord,APN,17,04-17-2016,18.0,15.0,"Gaylord, MI",65.0,29.0,4,0.0,Michigan,2016
-62.0,8.0,Chicago,ARR,17,04-17-2016,22.0,17.0,"Chicago, IL",80.0,44.0,4,0.0,Illinois,2016
-63.0,13.0,Peachtree City/Atlanta,ATL,17,04-17-2016,27.0,23.0,"Peachtree City/Atlanta, GA",72.0,54.0,4,2.1,Georgia,2016
-70.0,10.0,Austin/San Antonio,AUS,17,04-17-2016,28.0,20.0,"Austin/San Antonio, TX",75.0,64.0,4,0.2,Texas,2016
-51.0,17.0,North Platte,BBW,17,04-17-2016,38.0,32.0,"North Platte, NE",62.0,39.0,4,1.57,Nebraska,2016
-53.0,5.0,Binghamton,BGM,17,04-17-2016,19.0,16.0,"Binghamton, NY",67.0,39.0,4,0.0,New York,2016
-46.0,8.0,Caribou,BGR,17,04-17-2016,26.0,21.0,"Caribou, ME",59.0,32.0,4,0.0,Maine,2016
-44.0,6.0,Billings,BIL,17,04-17-2016,17.0,14.0,"Billings, MT",52.0,35.0,4,0.57,Montana,2016
-39.0,11.0,Bismarck,BIS,17,04-17-2016,22.0,18.0,"Bismarck, ND",42.0,35.0,4,0.64,North Dakota,2016
-42.0,3.0,Boise,BKE,17,04-17-2016,14.0,10.0,"Boise, ID",63.0,20.0,4,0.0,Idaho,2016
-64.0,4.0,Nashville,BNA,17,04-17-2016,26.0,14.0,"Nashville, TN",79.0,49.0,4,0.0,Tennessee,2016
-48.0,13.0,Boston,BOS,17,04-17-2016,35.0,28.0,"Boston, MD",54.0,41.0,4,0.0,Massachusetts,2016
-77.0,11.0,Brownsville,BRO,17,04-17-2016,21.0,16.0,"Brownsville, TX",81.0,72.0,4,5.2,Texas,2016
-68.0,11.0,New Orleans/Baton Rouge,BTR,17,04-17-2016,23.0,18.0,"New Orleans/Baton Rouge, LA",71.0,64.0,4,0.01,Louisiana,2016
-46.0,5.0,Burlington,BTV,17,04-17-2016,22.0,17.0,"Burlington, VT",61.0,31.0,4,0.0,Vermont,2016
-57.0,6.0,Buffalo,BUF,17,04-17-2016,20.0,17.0,"Buffalo, NY",72.0,41.0,4,0.0,New York,2016
-72.0,4.0,Los Angeles/Oxnard,BUR,17,04-17-2016,29.0,20.0,"Los Angeles/Oxnard, CA",87.0,56.0,4,0.0,California,2016
-45.0,3.0,Pocatello,BYI,17,04-17-2016,20.0,14.0,"Pocatello, ID",59.0,30.0,4,0.0,Idaho,2016
-38.0,3.0,Great Falls,BZN,17,04-17-2016,20.0,14.0,"Great Falls, MT",52.0,23.0,4,0.0,Montana,2016
-61.0,7.0,Greenville-Spartanburg,CAE,17,04-17-2016,23.0,16.0,"Greenville-Spartanburg, SC",74.0,48.0,4,0.0,South Carolina,2016
-55.0,4.0,Eureka,CEC,17,04-17-2016,19.0,15.0,"Eureka, CA",68.0,41.0,4,0.0,California,2016
-62.0,6.0,Paducah,CGI,17,04-17-2016,20.0,15.0,"Paducah, KY",76.0,47.0,4,0.0,Kentucky,2016
-68.0,3.0,Morristown/Knoxville,CHA,17,04-17-2016,15.0,12.0,"Morristown/Knoxville, TN",78.0,57.0,4,0.0,Tennessee,2016
-63.0,11.0,Charleston,CHS,17,04-17-2016,23.0,18.0,"Charleston, SC",76.0,50.0,4,0.0,South Carolina,2016
-66.0,18.0,Topeka,CNK,17,04-17-2016,35.0,28.0,"Topeka, KS",73.0,58.0,4,0.0,Kansas,2016
-65.0,12.0,Wichita,CNU,17,04-17-2016,31.0,23.0,"Wichita, KS",75.0,55.0,4,0.0,Kansas,2016
-76.0,15.0,Corpus Christi,CRP,17,04-17-2016,38.0,23.0,"Corpus Christi, TX",78.0,73.0,4,0.08,Texas,2016
-62.0,3.0,Columbia,CUB,17,04-17-2016,16.0,12.0,"Columbia, SC",74.0,50.0,4,0.0,South Carolina,2016
-65.0,5.0,Wilmington,CVG,17,04-17-2016,17.0,13.0,"Wilmington, OH",78.0,52.0,4,0.0,Ohio,2016
-31.0,25.0,Riverton,CYS,17,04-17-2016,48.0,36.0,"Riverton, WY",33.0,29.0,4,0.25,Wyoming,2016
-56.0,7.0,San Diego,CZZ,17,04-17-2016,31.0,26.0,"San Diego, CA",75.0,36.0,4,0.0,California,2016
-73.0,16.0,Melbourne,DAB,17,04-17-2016,34.0,29.0,"Melbourne, FL",78.0,68.0,4,1.04,Florida,2016
-68.0,13.0,Las Vegas,DAG,17,04-17-2016,37.0,29.0,"Las Vegas, NV",80.0,56.0,4,0.0,Nevada,2016
-59.0,6.0,Baltimore/Washington,DCA,17,04-17-2016,19.0,15.0,"Baltimore/Washington, VA",72.0,45.0,4,0.0,Virginia,2016
-33.0,19.0,Grand Junction,DEN,17,04-17-2016,40.0,33.0,"Grand Junction, CO",34.0,31.0,4,1.19,Colorado,2016
-33.0,19.0,Grand Junction,DEN,17,04-17-2016,40.0,33.0,"Grand Junction, CO",34.0,31.0,4,1.19,Colorado,2016
-73.0,17.0,Fort Worth/Dallas,DFW,17,04-17-2016,35.0,25.0,"Fort Worth/Dallas, TX",81.0,64.0,4,1.71,Texas,2016
-55.0,18.0,Dodge City,DGC,17,04-17-2016,49.0,39.0,"Dodge City, KS",58.0,51.0,4,4.35,Kansas,2016
-69.0,15.0,Des Moines,DSM,17,04-17-2016,37.0,29.0,"Des Moines, IA",80.0,58.0,4,0.0,Iowa,2016
-59.0,5.0,Detroit/Pontiac,DTW,17,04-17-2016,21.0,15.0,"Detroit/Pontiac, MI",74.0,43.0,4,0.0,Michigan,2016
-53.0,3.0,Portland,EKA,17,04-17-2016,13.0,6.0,"Portland, OR",63.0,42.0,4,0.0,Oregon,2016
-62.0,17.0,El Paso,ELP,17,04-17-2016,41.0,32.0,"El Paso, TX",71.0,53.0,4,0.0,Texas,2016
-42.0,17.0,Elko,ELY,17,04-17-2016,40.0,31.0,"Elko, NV",55.0,29.0,4,0.0,Nevada,2016
-36.0,0.0,Fairbanks,FAI,17,04-17-2016,14.0,0.0,"Fairbanks, AK",49.0,23.0,4,0.0,Alaska,2016
-64.0,4.0,San Joaquin Valley/Hanford,FAT,17,04-17-2016,15.0,12.0,"San Joaquin Valley/Hanford, CA",79.0,49.0,4,0.0,California,2016
-43.0,12.903225806451612,Grand Forks,FGF,17,04-17-2016,30.967741935483872,24.193548387096776,"Grand Forks, ND",48.0,38.0,4,0.86,North Dakota,2016
-43.0,5.032258064516129,Grand Forks,FGF,17,04-17-2016,18.193548387096776,13.806451612903226,"Grand Forks, ND",48.0,38.0,4,0.86,North Dakota,2016
-39.0,6.0,Flagstaff,FLG,17,04-17-2016,33.0,20.0,"Flagstaff, AZ",49.0,28.0,4,0.01,Arizona,2016
-63.0,13.0,Sioux Falls,FSD,17,04-17-2016,30.0,24.0,"Sioux Falls, SD",72.0,54.0,4,0.0,South Dakota,2016
-63.0,13.0,Sioux Falls,FSD,17,04-17-2016,30.0,24.0,"Sioux Falls, SD",72.0,54.0,4,0.0,South Dakota,2016
-63.0,13.0,Sioux Falls,FSD,17,04-17-2016,30.0,24.0,"Sioux Falls, SD",72.0,54.0,4,0.0,South Dakota,2016
-58.0,8.0,Northern Indiana,FWA,17,04-17-2016,19.0,15.0,"Northern Indiana, IN",76.0,40.0,4,0.0,Indiana,2016
-44.0,7.0,Glasgow,GGW,17,04-17-2016,18.0,15.0,"Glasgow, MT",54.0,33.0,4,0.03,Montana,2016
-43.0,10.0,Salt Lake City,GJT,17,04-17-2016,34.0,28.0,"Salt Lake City, UT",47.0,38.0,4,0.45,Utah,2016
-45.0,18.0,Hastings,GLD,17,04-17-2016,44.0,36.0,"Hastings, NE",50.0,39.0,4,1.52,Nebraska,2016
-71.0,11.0,Jacksonville,GNV,17,04-17-2016,32.0,24.0,"Jacksonville, FL",78.0,63.0,4,2.53,Florida,2016
-45.0,3.0,Missoula,GPI,17,04-17-2016,27.0,13.0,"Missoula, MT",61.0,28.0,4,0.0,Montana,2016
-61.0,7.0,Grand Rapids,GRR,17,04-17-2016,20.0,16.0,"Grand Rapids, MI",79.0,42.0,4,0.0,Michigan,2016
-69.0,7.0,Houston/Galveston,HOU,17,04-17-2016,35.0,26.0,"Houston/Galveston, TX",79.0,59.0,4,0.01,Texas,2016
-55.0,13.0,Newport/Morehead City,HSE,17,04-17-2016,35.0,21.0,"Newport/Morehead City, NC",60.0,49.0,4,0.0,North Carolina,2016
-67.0,11.0,Huntsville,HSV,17,04-17-2016,32.0,25.0,"Huntsville, AL",76.0,57.0,4,2.8,Alabama,2016
-56.0,10.0,Wilmington,ILM,17,04-17-2016,23.0,18.0,"Wilmington, NC",69.0,43.0,4,0.0,North Carolina,2016
-64.0,6.0,Indianapolis,IND,17,04-17-2016,19.0,15.0,"Indianapolis, IN",77.0,51.0,4,0.0,Indiana,2016
-63.0,6.0,Minneapolis/Twin Cities,INL,17,04-17-2016,24.0,16.0,"Minneapolis/Twin Cities, MN",77.0,48.0,4,0.98,Minnesota,2016
-63.0,6.0,Minneapolis/Twin Cities,INL,17,04-17-2016,24.0,16.0,"Minneapolis/Twin Cities, MN",77.0,48.0,4,0.98,Minnesota,2016
-64.0,8.0,Jackson,JAN,17,04-17-2016,19.0,14.0,"Jackson, MS",68.0,59.0,4,0.0,Mississippi,2016
-68.0,14.0,Tampa,JAX,17,04-17-2016,32.0,26.0,"Tampa, FL",72.0,63.0,4,0.91,Florida,2016
-64.0,3.0,Charleston,JKL,17,04-17-2016,16.0,9.0,"Charleston, WV",76.0,52.0,4,0.0,West Virginia,2016
-0.0,0.0,Juneau,JNU,17,04-17-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
-70.0,17.0,Lubbock,LBB,17,04-17-2016,35.0,26.0,"Lubbock, TX",83.0,56.0,4,2.54,Texas,2016
-45.0,18.0,Cheyenne,LBF,17,04-17-2016,48.0,39.0,"Cheyenne, WY",52.0,38.0,4,1.49,Wyoming,2016
-73.0,14.0,Lake Charles,LCH,17,04-17-2016,30.0,22.0,"Lake Charles, LA",79.0,67.0,4,4.06,Louisiana,2016
-64.0,10.0,North Little Rock,LIT,17,04-17-2016,23.0,20.0,"North Little Rock, AR",68.0,60.0,4,0.02,Arkansas,2016
-65.0,12.0,Davenport/Quad Cities,LOT,17,04-17-2016,39.0,25.0,"Davenport/Quad Cities, IA",80.0,49.0,4,0.0,Iowa,2016
-60.0,3.0,Jackson,LOZ,17,04-17-2016,23.0,18.0,"Jackson, KY",77.0,43.0,4,0.0,Kentucky,2016
-62.0,5.444444444444445,Shreveport,LZK,17,04-17-2016,17.77777777777778,10.666666666666666,"Shreveport, LA",65.0,58.0,4,0.07,Louisiana,2016
-70.0,13.0,Midland/Odessa,MAF,17,04-17-2016,32.0,28.0,"Midland/Odessa, TX",84.0,55.0,4,0.0,Texas,2016
-67.0,15.0,Kansas City/Pleasant Hill,MCI,17,04-17-2016,30.0,23.0,"Kansas City/Pleasant Hill, MO",76.0,57.0,4,0.0,Missouri,2016
-55.0,2.0,State College,MDT,17,04-17-2016,13.0,10.0,"State College, PA",70.0,40.0,4,0.0,Pennsylvania,2016
-68.0,9.0,Memphis,MEM,17,04-17-2016,22.0,17.0,"Memphis, TN",75.0,61.0,4,0.0,Tennessee,2016
-76.0,8.0,Miami,MIA,17,04-17-2016,26.0,20.0,"Miami, FL",83.0,69.0,4,12.58,Florida,2016
-67.0,11.0,Mobile/Pensacola,MOB,17,04-17-2016,25.0,18.0,"Mobile/Pensacola, AL",73.0,61.0,4,1.61,Alabama,2016
-59.0,5.903225806451613,Green Bay,MQT,17,04-17-2016,18.0,15.548387096774194,"Green Bay, WI",76.0,41.0,4,0.0,Wisconsin,2016
-59.0,11.741935483870968,Green Bay,MQT,17,04-17-2016,18.0,23.741935483870968,"Green Bay, WI",76.0,41.0,4,0.0,Wisconsin,2016
-47.0,3.0,Spokane,MSO,17,04-17-2016,17.0,14.0,"Spokane, WA",62.0,32.0,4,0.0,Washington,2016
-79.0,9.0,Key West,MTH,17,04-17-2016,26.0,20.0,"Key West, FL",85.0,73.0,4,0.0,Florida,2016
-56.0,4.0,New York/Upton,NYC,17,04-17-2016,20.0,16.0,"New York/Upton, NY",68.0,43.0,4,0.0,New York,2016
-69.0,22.0,Norman/Oklahoma City,OKC,17,04-17-2016,43.0,33.0,"Norman/Oklahoma City, OK",76.0,61.0,4,0.0,Oklahoma,2016
-67.0,16.0,Omaha/Valley,OMA,17,04-17-2016,37.0,26.0,"Omaha/Valley, NE",75.0,59.0,4,0.0,Nebraska,2016
-59.0,6.0,Milwaukee/Sullivan,ORD,17,04-17-2016,19.0,15.0,"Milwaukee/Sullivan, WI",76.0,41.0,4,0.0,Wisconsin,2016
-59.0,6.0,Milwaukee/Sullivan,ORD,17,04-17-2016,19.0,15.0,"Milwaukee/Sullivan, WI",76.0,41.0,4,0.0,Wisconsin,2016
-69.0,8.0,Phoenix,PHX,17,04-17-2016,23.0,18.0,"Phoenix, AZ",81.0,57.0,4,0.0,Arizona,2016
-67.0,7.0,Lincoln,PIA,17,04-17-2016,24.0,17.0,"Lincoln, IL",81.0,52.0,4,0.0,Illinois,2016
-58.0,3.0,Pittsburgh,PIT,17,04-17-2016,15.0,10.0,"Pittsburgh, PA",74.0,42.0,4,0.0,Pennsylvania,2016
-53.0,5.0,Pendleton,PSC,17,04-17-2016,13.0,9.0,"Pendleton, OR",71.0,35.0,4,0.0,Oregon,2016
-40.0,23.0,Goodland,PUB,17,04-17-2016,63.0,55.0,"Goodland, KS",45.0,35.0,4,0.74,Kansas,2016
-48.0,8.0,Gray/Portland,PWM,17,04-17-2016,32.0,18.0,"Gray/Portland, ME",60.0,35.0,4,0.0,Maine,2016
-68.0,0.0,Sacramento,RDD,17,04-17-2016,20.0,15.0,"Sacramento, CA",86.0,49.0,4,0.0,California,2016
-68.0,0.0,Sacramento,RDD,17,04-17-2016,20.0,15.0,"Sacramento, CA",86.0,49.0,4,0.0,California,2016
-53.0,4.0,Raleigh,RDU,17,04-17-2016,21.0,16.0,"Raleigh, NC",70.0,35.0,4,0.0,North Carolina,2016
-53.0,5.0,Wakefield,RIC,17,04-17-2016,21.0,17.0,"Wakefield, VA",71.0,35.0,4,0.0,Virginia,2016
-49.0,2.0,Blacksburg,RNK,17,04-17-2016,20.5,10.0,"Blacksburg, VA",67.0,31.0,4,0.0,Virginia,2016
+Average,City,Code,Direction,Full,Location,Maximum,Minimum,Month,Precipitation,Speed,State,Week of,Year
+39,Birmingham,BHM,33,2016-01-03,"Birmingham, AL",46,32,1,0.0,4.33,Alabama,3,2016
+39,Huntsville,HSV,32,2016-01-03,"Huntsville, AL",47,31,1,0.0,3.86,Alabama,3,2016
+46,Mobile,MOB,35,2016-01-03,"Mobile, AL",51,41,1,0.16,9.73,Alabama,3,2016
+45,Montgomery,MGM,32,2016-01-03,"Montgomery, AL",52,38,1,0.0,6.86,Alabama,3,2016
+34,Anchorage,ANC,19,2016-01-03,"Anchorage, AK",38,29,1,0.01,7.8,Alaska,3,2016
+38,Annette,ANN,9,2016-01-03,"Annette, AK",44,31,1,0.09,8.7,Alaska,3,2016
+30,Bethel,BET,9,2016-01-03,"Bethel, AK",36,24,1,0.05,16.46,Alaska,3,2016
+22,Bettles,BTT,2,2016-01-03,"Bettles, AK",32,9,1,0.15,3.1,Alaska,3,2016
+34,Cold Bay,CDB,20,2016-01-03,"Cold Bay, AK",36,31,1,0.6,9.1,Alaska,3,2016
+38,Cordova,CDV,9,2016-01-03,"Cordova, AK",43,33,1,2.15,9.76,Alaska,3,2016
+31,Delta Junction/Ft Greely,BIG,14,2016-01-03,"Delta Junction/Ft Greely, AK",39,23,1,0.0,17.9,Alaska,3,2016
+14,Fairbanks,FAI,2,2016-01-03,"Fairbanks, AK",30,4,1,0.0,2.2,Alaska,3,2016
+27,Gulkana,GKN,14,2016-01-03,"Gulkana, AK",34,19,1,0.02,8.23,Alaska,3,2016
+39,Homer,HOM,9,2016-01-03,"Homer, AK",42,35,1,1.22,11.26,Alaska,3,2016
+40,Iliamna,ILI,9,2016-01-03,"Iliamna, AK",42,37,1,0.0,19.76,Alaska,3,2016
+36,Juneau,JNU,10,2016-01-03,"Juneau, AK",40,31,1,0.7,9.23,Alaska,3,2016
+34,Kenai,ENA,6,2016-01-03,"Kenai, AK",37,30,1,0.14,11.2,Alaska,3,2016
+37,Ketchikan,KTN,15,2016-01-03,"Ketchikan, AK",41,33,1,0.17,6.16,Alaska,3,2016
+39,King Salmon,AKN,10,2016-01-03,"King Salmon, AK",42,35,1,0.05,18.83,Alaska,3,2016
+40,Kodiak,ADQ,11,2016-01-03,"Kodiak, AK",42,36,1,1.3,21.8,Alaska,3,2016
+27,Kotzebue,OTZ,11,2016-01-03,"Kotzebue, AK",33,20,1,0.1,11.76,Alaska,3,2016
+30,Mc Grath,MCG,15,2016-01-03,"Mc Grath, AK",39,20,1,0.01,3.7,Alaska,3,2016
+29,Nome,OME,6,2016-01-03,"Nome, AK",32,25,1,0.08,12.86,Alaska,3,2016
+0,Northway,ORT,20,2016-01-03,"Northway, AK",8,-9,1,0.0,0.36,Alaska,3,2016
+37,Palmer,PAQ,8,2016-01-03,"Palmer, AK",42,32,1,0.4,10.5,Alaska,3,2016
+60,Petersburg,PSG,18,2016-01-03,"Petersburg, AK",60,60,1,0.0,1.83,Alaska,3,2016
+43,Sitka,SIT,19,2016-01-03,"Sitka, AK",46,39,1,0.37,11.26,Alaska,3,2016
+38,Skagway,SGY,14,2016-01-03,"Skagway, AK",42,33,1,0.55,5.2,Alaska,3,2016
+32,St Paul Island,SNP,22,2016-01-03,"St Paul Island, AK",35,29,1,0.15,9.03,Alaska,3,2016
+32,Talkeetna,TKA,2,2016-01-03,"Talkeetna, AK",39,23,1,0.04,4.93,Alaska,3,2016
+21,Tanana,TAL,8,2016-01-03,"Tanana, AK",29,13,1,0.0,3.83,Alaska,3,2016
+6,Utqiagvik (Barrow),BRW,6,2016-01-03,"Utqiagvik (Barrow), AK",9,2,1,0.05,13.76,Alaska,3,2016
+36,Yakutat,YAK,11,2016-01-03,"Yakutat, AK",40,32,1,2.42,5.93,Alaska,3,2016
+41,Douglas Bisbee,DUG,6,2016-01-03,"Douglas Bisbee, AZ",57,24,1,0.0,4.2,Arizona,3,2016
+40,Kingman,IGM,4,2016-01-03,"Kingman, AZ",54,25,1,0.0,4.2,Arizona,3,2016
+58,Phoenix,PHX,13,2016-01-03,"Phoenix, AZ",69,45,1,0.0,5.8,Arizona,3,2016
+56,Tucson,TUS,12,2016-01-03,"Tucson, AZ",69,43,1,0.0,12.93,Arizona,3,2016
+29,Winslow,INW,27,2016-01-03,"Winslow, AZ",42,15,1,0.0,2.7,Arizona,3,2016
+39,Fort Smith,FSM,27,2016-01-03,"Fort Smith, AR",51,27,1,0.0,5.16,Arkansas,3,2016
+38,Harrison,HRO,29,2016-01-03,"Harrison, AR",48,27,1,0.0,7.4,Arkansas,3,2016
+42,North Little Rock,LZK,0,2016-01-03,"North Little Rock, AR",49,34,1,0.0,0.0,Arkansas,3,2016
+47,Bakersfield,BFL,34,2016-01-03,"Bakersfield, CA",60,33,1,0.0,2.2,California,3,2016
+27,Bishop,BIH,32,2016-01-03,"Bishop, CA",42,12,1,0.0,3.06,California,3,2016
+35,China Lake,NID,21,2016-01-03,"China Lake, CA",49,21,1,0.0,1.56,California,3,2016
+44,Concord,CCR,6,2016-01-03,"Concord, CA",51,37,1,0.0,4.06,California,3,2016
+44,Eureka,EKA,0,2016-01-03,"Eureka, CA",53,33,1,0.06,0.0,California,3,2016
+46,Fresno,FAT,25,2016-01-03,"Fresno, CA",55,36,1,0.0,0.86,California,3,2016
+47,Hayward,HWD,6,2016-01-03,"Hayward, CA",53,41,1,0.0,6.56,California,3,2016
+54,Long Beach,LGB,24,2016-01-03,"Long Beach, CA",65,43,1,0.0,2.13,California,3,2016
+55,Los Angeles,LAX,15,2016-01-03,"Los Angeles, CA",63,45,1,0.0,2.76,California,3,2016
+44,Red Bluff,RBL,33,2016-01-03,"Red Bluff, CA",50,36,1,0.0,7.73,California,3,2016
+45,Redding,RDD,34,2016-01-03,"Redding, CA",51,38,1,0.0,6.16,California,3,2016
+44,Sacramento,SAC,34,2016-01-03,"Sacramento, CA",52,34,1,0.0,3.63,California,3,2016
+49,Salinas,SNS,8,2016-01-03,"Salinas, CA",57,41,1,0.0,6.46,California,3,2016
+55,San Diego,SAN,24,2016-01-03,"San Diego, CA",64,45,1,0.0,1.83,California,3,2016
+46,San Francisco,SFO,10,2016-01-03,"San Francisco, CA",51,41,1,0.04,4.43,California,3,2016
+39,Sandberg,SDB,8,2016-01-03,"Sandberg, CA",44,33,1,0.0,18.8,California,3,2016
+51,Santa Barbara,SBA,12,2016-01-03,"Santa Barbara, CA",62,39,1,0.0,4.9,California,3,2016
+51,Santa Maria,SMX,21,2016-01-03,"Santa Maria, CA",63,37,1,0.0,3.86,California,3,2016
+42,Stockton,SCK,26,2016-01-03,"Stockton, CA",51,33,1,0.0,1.86,California,3,2016
+14,Alamosa,ALS,32,2016-01-03,"Alamosa, CO",33,-5,1,0.0,1.4,Colorado,3,2016
+28,Colorado Springs,COS,15,2016-01-03,"Colorado Springs, CO",45,9,1,0.0,3.13,Colorado,3,2016
+-10,Craig,CAG,12,2016-01-03,"Craig, CO",3,-23,1,0.0,0.4,Colorado,3,2016
+27,Denver,DEN,20,2016-01-03,"Denver, CO",40,12,1,0.0,7.2,Colorado,3,2016
+14,Grand Junction,GJT,8,2016-01-03,"Grand Junction, CO",24,4,1,0.0,4.46,Colorado,3,2016
+26,Pueblo,PUB,27,2016-01-03,"Pueblo, CO",47,4,1,0.0,1.93,Colorado,3,2016
+38,Bridgeport,BDR,27,2016-01-03,"Bridgeport, CT",43,32,1,0.0,8.86,Connecticut,3,2016
+34,Windsor Locks,BDL,24,2016-01-03,"Windsor Locks, CT",40,27,1,0.0,6.2,Connecticut,3,2016
+37,Wilmington,ILG,28,2016-01-03,"Wilmington, DE",46,27,1,0.0,6.43,Delaware,3,2016
+63,Daytona Beach,DAB,32,2016-01-03,"Daytona Beach, FL",68,58,1,0.75,6.23,Florida,3,2016
+76,Fort Lauderdale,FLL,28,2016-01-03,"Fort Lauderdale, FL",82,70,1,0.49,5.16,Florida,3,2016
+56,Gainesville,GNV,33,2016-01-03,"Gainesville, FL",62,51,1,0.62,4.6,Florida,3,2016
+56,Jacksonville,JAX,31,2016-01-03,"Jacksonville, FL",61,50,1,0.49,4.83,Florida,3,2016
+79,Key West,EYW,17,2016-01-03,"Key West, FL",82,74,1,0.5,4.53,Florida,3,2016
+76,Miami,MIA,17,2016-01-03,"Miami, FL",82,70,1,1.13,3.33,Florida,3,2016
+65,Orlando,MCO,31,2016-01-03,"Orlando, FL",72,57,1,0.14,6.93,Florida,3,2016
+48,Pensacola,PNS,35,2016-01-03,"Pensacola, FL",52,44,1,0.12,9.33,Florida,3,2016
+53,Tallahassee,TLH,34,2016-01-03,"Tallahassee, FL",57,48,1,0.46,6.16,Florida,3,2016
+66,Tampa,TPA,8,2016-01-03,"Tampa, FL",71,59,1,0.18,5.73,Florida,3,2016
+69,Vero Beach,VRB,28,2016-01-03,"Vero Beach, FL",74,62,1,0.97,6.9,Florida,3,2016
+74,West Palm Beach,PBI,27,2016-01-03,"West Palm Beach, FL",80,67,1,0.24,6.83,Florida,3,2016
+51,Alma,AMG,32,2016-01-03,"Alma, GA",58,47,1,0.66,5.06,Georgia,3,2016
+45,Athens,AHN,29,2016-01-03,"Athens, GA",54,36,1,0.0,5.1,Georgia,3,2016
+42,Atlanta,ATL,31,2016-01-03,"Atlanta, GA",48,36,1,0.0,10.93,Georgia,3,2016
+48,Augusta,AGS,31,2016-01-03,"Augusta, GA",56,41,1,0.0,3.06,Georgia,3,2016
+47,Macon,MCN,31,2016-01-03,"Macon, GA",53,40,1,0.01,5.46,Georgia,3,2016
+56,Savannah,SAV,31,2016-01-03,"Savannah, GA",62,49,1,0.41,5.0,Georgia,3,2016
+73,Hilo,ITO,20,2016-01-03,"Hilo, HI",81,65,1,0.11,3.33,Hawaii,3,2016
+73,Honolulu,HNL,24,2016-01-03,"Honolulu, HI",81,64,1,0.0,5.13,Hawaii,3,2016
+71,Kahului,OGG,3,2016-01-03,"Kahului, HI",80,60,1,0.04,8.4,Hawaii,3,2016
+72,Kaunakakai,MKK,14,2016-01-03,"Kaunakakai, HI",79,64,1,0.04,8.86,Hawaii,3,2016
+70,Lihue,LIH,23,2016-01-03,"Lihue, HI",79,60,1,0.0,6.06,Hawaii,3,2016
+15,Boise,BOI,16,2016-01-03,"Boise, ID",23,7,1,0.0,3.0,Idaho,3,2016
+21,Lewiston,LWS,9,2016-01-03,"Lewiston, ID",29,12,1,0.0,2.56,Idaho,3,2016
+8,Pocatello,PIH,2,2016-01-03,"Pocatello, ID",21,-4,1,0.0,2.66,Idaho,3,2016
+25,Chicago,ORD,28,2016-01-03,"Chicago, IL",30,20,1,0.0,12.16,Illinois,3,2016
+25,Moline,MLI,28,2016-01-03,"Moline, IL",31,19,1,0.0,10.9,Illinois,3,2016
+29,Peoria,PIA,28,2016-01-03,"Peoria, IL",35,22,1,0.0,8.2,Illinois,3,2016
+29,Quincy,UIN,28,2016-01-03,"Quincy, IL",35,22,1,0.0,10.53,Illinois,3,2016
+24,Rockford,RFD,28,2016-01-03,"Rockford, IL",30,18,1,0.0,9.73,Illinois,3,2016
+31,Springfield,SPI,27,2016-01-03,"Springfield, IL",37,24,1,0.0,9.96,Illinois,3,2016
+35,Evansville,EVV,27,2016-01-03,"Evansville, IN",43,27,1,0.0,6.06,Indiana,3,2016
+29,Fort Wayne,FWA,26,2016-01-03,"Fort Wayne, IN",31,25,1,0.0,13.2,Indiana,3,2016
+29,Indianapolis,IND,26,2016-01-03,"Indianapolis, IN",34,24,1,0.0,10.73,Indiana,3,2016
+27,South Bend,SBN,26,2016-01-03,"South Bend, IN",30,23,1,0.03,11.83,Indiana,3,2016
+22,Cedar Rapids,CID,28,2016-01-03,"Cedar Rapids, IA",28,15,1,0.0,11.46,Iowa,3,2016
+24,Des Moines,DSM,30,2016-01-03,"Des Moines, IA",32,16,1,0.0,10.0,Iowa,3,2016
+21,Dubuque,DBQ,28,2016-01-03,"Dubuque, IA",27,14,1,0.0,11.86,Iowa,3,2016
+21,Sioux City,SUX,30,2016-01-03,"Sioux City, IA",31,11,1,0.0,8.63,Iowa,3,2016
+22,Waterloo,ALO,28,2016-01-03,"Waterloo, IA",29,13,1,0.0,11.06,Iowa,3,2016
+31,Concordia,CNK,29,2016-01-03,"Concordia, KS",43,18,1,0.0,8.96,Kansas,3,2016
+31,Dodge City,DDC,31,2016-01-03,"Dodge City, KS",46,16,1,0.0,8.36,Kansas,3,2016
+30,Goodland,GLD,28,2016-01-03,"Goodland, KS",46,13,1,0.0,8.1,Kansas,3,2016
+34,Medicine Lodge,P28,32,2016-01-03,"Medicine Lodge, KS",49,19,1,0.0,4.9,Kansas,3,2016
+32,Topeka,TOP,29,2016-01-03,"Topeka, KS",43,22,1,0.0,5.96,Kansas,3,2016
+33,Wichita,ICT,29,2016-01-03,"Wichita, KS",45,21,1,0.0,5.96,Kansas,3,2016
+33,Covington,CVG,26,2016-01-03,"Covington, KY",39,27,1,0.0,7.73,Kentucky,3,2016
+37,Jackson,JKL,24,2016-01-03,"Jackson, KY",45,28,1,0.0,2.93,Kentucky,3,2016
+35,Lexington,LEX,25,2016-01-03,"Lexington, KY",42,27,1,0.0,7.93,Kentucky,3,2016
+38,Louisville,SDF,27,2016-01-03,"Louisville, KY",45,31,1,0.0,6.7,Kentucky,3,2016
+36,Paducah,PAH,27,2016-01-03,"Paducah, KY",47,25,1,0.0,5.6,Kentucky,3,2016
+47,Baton Rouge,BTR,23,2016-01-03,"Baton Rouge, LA",53,40,1,0.09,3.43,Louisiana,3,2016
+47,Lake Charles,LCH,12,2016-01-03,"Lake Charles, LA",52,43,1,0.08,8.33,Louisiana,3,2016
+50,New Orleans,MSY,13,2016-01-03,"New Orleans, LA",54,46,1,0.59,11.93,Louisiana,3,2016
+46,Shreveport,SHV,21,2016-01-03,"Shreveport, LA",53,39,1,0.0,5.36,Louisiana,3,2016
+47,Slidell,ASD,23,2016-01-03,"Slidell, LA",53,42,1,0.22,6.66,Louisiana,3,2016
+29,Bangor,BGR,24,2016-01-03,"Bangor, ME",35,22,1,0.0,4.6,Maine,3,2016
+23,Caribou,CAR,25,2016-01-03,"Caribou, ME",29,17,1,0.1,5.66,Maine,3,2016
+34,Portland,PWM,24,2016-01-03,"Portland, ME",39,28,1,0.01,7.53,Maine,3,2016
+37,Baltimore,BWI,27,2016-01-03,"Baltimore, MD",48,26,1,0.0,5.36,Maryland,3,2016
+38,Salisbury,SBY,27,2016-01-03,"Salisbury, MD",48,28,1,0.0,3.46,Maryland,3,2016
+37,Boston,BOS,25,2016-01-03,"Boston, MA",41,31,1,0.0,11.83,Massachusetts,3,2016
+60,Milton,MQE,25,2016-01-03,"Milton, MA",60,60,1,0.0,11.6,Massachusetts,3,2016
+31,Worcester,ORH,25,2016-01-03,"Worcester, MA",35,26,1,0.0,11.56,Massachusetts,3,2016
+27,Alpena,APN,26,2016-01-03,"Alpena, MI",32,21,1,0.01,8.96,Michigan,3,2016
+32,Detroit,DTW,24,2016-01-03,"Detroit, MI",36,27,1,0.0,12.96,Michigan,3,2016
+31,Flint,FNT,27,2016-01-03,"Flint, MI",34,27,1,0.05,11.13,Michigan,3,2016
+30,Grand Rapids,GRR,27,2016-01-03,"Grand Rapids, MI",33,26,1,0.04,13.3,Michigan,3,2016
+26,Houghton Lake,HTL,27,2016-01-03,"Houghton Lake, MI",30,21,1,0.08,11.16,Michigan,3,2016
+29,Lansing,LAN,26,2016-01-03,"Lansing, MI",32,25,1,0.04,12.5,Michigan,3,2016
+23,Marquette,MQT,0,2016-01-03,"Marquette, MI",27,18,1,0.21,0.0,Michigan,3,2016
+31,Muskegon,MKG,28,2016-01-03,"Muskegon, MI",35,27,1,0.0,13.23,Michigan,3,2016
+24,Sault Ste Marie,ANJ,28,2016-01-03,"Sault Ste Marie, MI",31,17,1,0.04,9.56,Michigan,3,2016
+22,Duluth,DLH,30,2016-01-03,"Duluth, MN",27,17,1,0.0,11.56,Minnesota,3,2016
+21,International Falls,INL,29,2016-01-03,"International Falls, MN",25,15,1,0.0,7.76,Minnesota,3,2016
+23,Minneapolis,MSP,28,2016-01-03,"Minneapolis, MN",30,16,1,0.0,9.36,Minnesota,3,2016
+19,Rochester,RST,29,2016-01-03,"Rochester, MN",26,13,1,0.0,13.73,Minnesota,3,2016
+20,St Cloud,STC,29,2016-01-03,"St Cloud, MN",29,10,1,0.0,9.03,Minnesota,3,2016
+42,Greenville,GLH,30,2016-01-03,"Greenville, MS",48,35,1,0.0,4.56,Mississippi,3,2016
+40,Greenwood,GWO,23,2016-01-03,"Greenwood, MS",48,32,1,0.0,2.36,Mississippi,3,2016
+47,Gulfport,GPT,35,2016-01-03,"Gulfport, MS",52,42,1,0.38,9.76,Mississippi,3,2016
+46,Hattiesburg,HBG,34,2016-01-03,"Hattiesburg, MS",51,40,1,0.02,5.76,Mississippi,3,2016
+44,Jackson,JAN,33,2016-01-03,"Jackson, MS",50,38,1,0.0,5.43,Mississippi,3,2016
+43,Meridian,MEI,34,2016-01-03,"Meridian, MS",49,36,1,0.01,5.56,Mississippi,3,2016
+40,Tupelo,TUP,23,2016-01-03,"Tupelo, MS",50,31,1,0.0,4.13,Mississippi,3,2016
+37,Cape Girardeau,CGI,29,2016-01-03,"Cape Girardeau, MO",46,27,1,0.0,5.96,Missouri,3,2016
+33,Columbia,COU,28,2016-01-03,"Columbia, MO",41,24,1,0.0,9.26,Missouri,3,2016
+29,Kansas City,MCI,28,2016-01-03,"Kansas City, MO",38,20,1,0.0,8.13,Missouri,3,2016
+33,Rolla/Vichy,VIH,27,2016-01-03,"Rolla/Vichy, MO",41,24,1,0.0,8.63,Missouri,3,2016
+35,Springfield,SGF,28,2016-01-03,"Springfield, MO",45,23,1,0.0,7.5,Missouri,3,2016
+26,St Joseph,STJ,28,2016-01-03,"St Joseph, MO",36,16,1,0.0,5.5,Missouri,3,2016
+36,St Louis,STL,28,2016-01-03,"St Louis, MO",43,29,1,0.0,9.03,Missouri,3,2016
+23,Billings,BIL,22,2016-01-03,"Billings, MT",29,16,1,0.0,18.86,Montana,3,2016
+0,Butte,BTM,15,2016-01-03,"Butte, MT",13,-12,1,0.0,1.8,Montana,3,2016
+8,Cut Bank,CTB,21,2016-01-03,"Cut Bank, MT",22,-6,1,0.0,4.83,Montana,3,2016
+7,Dillon,DLN,19,2016-01-03,"Dillon, MT",16,-2,1,0.0,6.4,Montana,3,2016
+8,Glasgow,GGW,23,2016-01-03,"Glasgow, MT",18,-1,1,0.0,6.16,Montana,3,2016
+17,Great Falls,GTF,22,2016-01-03,"Great Falls, MT",27,7,1,0.0,11.0,Montana,3,2016
+10,Havre,HVR,18,2016-01-03,"Havre, MT",20,0,1,0.0,9.0,Montana,3,2016
+3,Helena,HLN,23,2016-01-03,"Helena, MT",12,-5,1,0.0,0.53,Montana,3,2016
+6,Kalispell,GPI,31,2016-01-03,"Kalispell, MT",16,-3,1,0.01,1.6,Montana,3,2016
+19,Miles City,MLS,21,2016-01-03,"Miles City, MT",31,6,1,0.0,6.26,Montana,3,2016
+7,Missoula,MSO,12,2016-01-03,"Missoula, MT",16,-2,1,0.0,2.33,Montana,3,2016
+26,Grand Island,GRI,30,2016-01-03,"Grand Island, NE",37,15,1,0.0,9.03,Nebraska,3,2016
+26,Lincoln,LNK,18,2016-01-03,"Lincoln, NE",36,16,1,0.0,5.7,Nebraska,3,2016
+22,Norfolk,OFK,29,2016-01-03,"Norfolk, NE",32,12,1,0.0,9.43,Nebraska,3,2016
+26,North Platte,LBF,30,2016-01-03,"North Platte, NE",43,8,1,0.0,6.7,Nebraska,3,2016
+22,Omaha,OMA,31,2016-01-03,"Omaha, NE",31,12,1,0.0,6.83,Nebraska,3,2016
+18,Scottsbluff,BFF,21,2016-01-03,"Scottsbluff, NE",31,5,1,0.0,6.36,Nebraska,3,2016
+21,Sidney,SNY,28,2016-01-03,"Sidney, NE",33,8,1,0.0,10.86,Nebraska,3,2016
+20,Valentine,VTN,26,2016-01-03,"Valentine, NE",34,7,1,0.0,7.8,Nebraska,3,2016
+7,Ely,ELY,26,2016-01-03,"Ely, NV",22,-8,1,0.0,3.46,Nevada,3,2016
+12,Eureka,P68,12,2016-01-03,"Eureka, NV",24,-7,1,0.0,3.4,Nevada,3,2016
+44,Las Vegas,LAS,24,2016-01-03,"Las Vegas, NV",52,35,1,0.0,1.03,Nevada,3,2016
+39,Mercury,DRA,9,2016-01-03,"Mercury, NV",47,30,1,0.0,7.96,Nevada,3,2016
+22,Reno,RNO,18,2016-01-03,"Reno, NV",29,15,1,0.0,2.96,Nevada,3,2016
+12,Winnemucca,WMC,8,2016-01-03,"Winnemucca, NV",25,-1,1,0.0,6.6,Nevada,3,2016
+34,Concord,CON,24,2016-01-03,"Concord, NH",39,29,1,0.0,6.16,New Hampshire,3,2016
+60,Mt. Washington,MWN,27,2016-01-03,"Mt. Washington, NH",60,60,1,0.0,52.6,New Hampshire,3,2016
+36,Atlantic City,ACY,28,2016-01-03,"Atlantic City, NJ",46,26,1,0.0,6.26,New Jersey,3,2016
+37,Newark,EWR,25,2016-01-03,"Newark, NJ",44,30,1,0.0,10.1,New Jersey,3,2016
+31,Albuquerque,ABQ,27,2016-01-03,"Albuquerque, NM",38,23,1,0.0,4.63,New Mexico,3,2016
+31,Clayton,CAO,27,2016-01-03,"Clayton, NM",46,15,1,0.0,5.06,New Mexico,3,2016
+27,Roswell,ROW,17,2016-01-03,"Roswell, NM",36,17,1,0.02,1.8,New Mexico,3,2016
+33,Albany,ALB,25,2016-01-03,"Albany, NY",38,28,1,0.01,6.23,New York,3,2016
+25,Binghamton,BGM,26,2016-01-03,"Binghamton, NY",30,21,1,0.01,8.86,New York,3,2016
+29,Buffalo,BUF,26,2016-01-03,"Buffalo, NY",34,23,1,0.13,13.73,New York,3,2016
+33,Glens Falls,GFL,21,2016-01-03,"Glens Falls, NY",37,29,1,0.01,7.3,New York,3,2016
+37,Islip,ISP,27,2016-01-03,"Islip, NY",44,30,1,0.0,8.63,New York,3,2016
+40,New York,LGA,27,2016-01-03,"New York, NY",43,35,1,0.0,11.7,New York,3,2016
+28,Rochester,ROC,26,2016-01-03,"Rochester, NY",34,22,1,0.05,11.23,New York,3,2016
+29,Syracuse,SYR,24,2016-01-03,"Syracuse, NY",34,23,1,0.19,11.5,New York,3,2016
+39,Asheville,AVL,34,2016-01-03,"Asheville, NC",46,30,1,0.0,10.16,North Carolina,3,2016
+50,Cape Hatteras,HSE,21,2016-01-03,"Cape Hatteras, NC",56,44,1,0.16,4.43,North Carolina,3,2016
+43,Charlotte,CLT,18,2016-01-03,"Charlotte, NC",53,33,1,0.0,2.3,North Carolina,3,2016
+41,Greensboro,GSO,30,2016-01-03,"Greensboro, NC",51,31,1,0.0,4.2,North Carolina,3,2016
+43,Hickory,HKY,31,2016-01-03,"Hickory, NC",53,32,1,0.0,2.36,North Carolina,3,2016
+43,Raleigh/Durham,RDU,27,2016-01-03,"Raleigh/Durham, NC",52,35,1,0.0,1.86,North Carolina,3,2016
+48,Wilmington,ILM,32,2016-01-03,"Wilmington, NC",56,40,1,0.63,5.03,North Carolina,3,2016
+21,Bismarck,BIS,25,2016-01-03,"Bismarck, ND",30,12,1,0.0,7.9,North Dakota,3,2016
+20,Dickinson,DIK,25,2016-01-03,"Dickinson, ND",30,9,1,0.0,10.76,North Dakota,3,2016
+20,Fargo,FAR,27,2016-01-03,"Fargo, ND",28,12,1,0.0,7.8,North Dakota,3,2016
+19,Grand Forks,GFK,28,2016-01-03,"Grand Forks, ND",28,10,1,0.0,9.46,North Dakota,3,2016
+21,Williston,ISN,24,2016-01-03,"Williston, ND",26,9,1,0.0,8.1,North Dakota,3,2016
+29,Akron,CAK,26,2016-01-03,"Akron, OH",32,25,1,0.05,11.4,Ohio,3,2016
+29,Cleveland,CLE,25,2016-01-03,"Cleveland, OH",32,26,1,0.02,12.43,Ohio,3,2016
+31,Columbus,CMH,26,2016-01-03,"Columbus, OH",35,26,1,0.0,8.53,Ohio,3,2016
+30,Dayton,DAY,26,2016-01-03,"Dayton, OH",35,24,1,0.0,11.93,Ohio,3,2016
+27,Mansfield,MFD,24,2016-01-03,"Mansfield, OH",31,23,1,0.0,11.46,Ohio,3,2016
+29,Toledo,TOL,26,2016-01-03,"Toledo, OH",31,25,1,0.0,12.7,Ohio,3,2016
+28,Youngstown/Warren,YNG,25,2016-01-03,"Youngstown/Warren, OH",32,24,1,0.03,11.23,Ohio,3,2016
+33,Gage,GAG,28,2016-01-03,"Gage, OK",47,18,1,0.0,5.46,Oklahoma,3,2016
+35,Oklahoma City,OKC,30,2016-01-03,"Oklahoma City, OK",46,24,1,0.0,7.16,Oklahoma,3,2016
+33,Ponca City,PNC,28,2016-01-03,"Ponca City, OK",47,20,1,0.0,3.96,Oklahoma,3,2016
+36,Tulsa,TUL,29,2016-01-03,"Tulsa, OK",48,24,1,0.0,5.1,Oklahoma,3,2016
+36,Astoria,AST,9,2016-01-03,"Astoria, OR",42,30,1,0.21,9.46,Oregon,3,2016
+7,Burns,BNO,11,2016-01-03,"Burns, OR",21,-6,1,0.06,3.5,Oregon,3,2016
+30,Eugene,EUG,1,2016-01-03,"Eugene, OR",36,23,1,0.06,7.86,Oregon,3,2016
+34,Medford,MFR,9,2016-01-03,"Medford, OR",43,24,1,0.01,3.4,Oregon,3,2016
+19,Pendleton,PDT,12,2016-01-03,"Pendleton, OR",20,17,1,0.01,4.0,Oregon,3,2016
+32,Portland,PDX,9,2016-01-03,"Portland, OR",35,29,1,0.31,19.93,Oregon,3,2016
+15,Redmond,RDM,32,2016-01-03,"Redmond, OR",24,6,1,0.0,2.8,Oregon,3,2016
+32,Salem,SLE,34,2016-01-03,"Salem, OR",38,25,1,0.29,7.13,Oregon,3,2016
+34,Allentown,ABE,27,2016-01-03,"Allentown, PA",41,25,1,0.0,8.3,Pennsylvania,3,2016
+29,Erie,ERI,24,2016-01-03,"Erie, PA",33,26,1,0.31,13.96,Pennsylvania,3,2016
+36,Harrisburg,MDT,30,2016-01-03,"Harrisburg, PA",43,29,1,0.0,8.8,Pennsylvania,3,2016
+39,Philadelphia,PHL,27,2016-01-03,"Philadelphia, PA",45,31,1,0.0,8.3,Pennsylvania,3,2016
+31,Pittsburgh,PIT,25,2016-01-03,"Pittsburgh, PA",35,27,1,0.01,9.53,Pennsylvania,3,2016
+32,Wilkes-Barre/Scranton,AVP,25,2016-01-03,"Wilkes-Barre/Scranton, PA",35,28,1,0.0,9.13,Pennsylvania,3,2016
+31,Williamsport,IPT,26,2016-01-03,"Williamsport, PA",35,25,1,0.01,7.83,Pennsylvania,3,2016
+77,San Juan,SJU,10,2016-01-03,"San Juan, PR",83,71,1,0.05,5.9,Puerto Rico,3,2016
+36,Providence,PVD,26,2016-01-03,"Providence, RI",43,28,1,0.0,7.36,Rhode Island,3,2016
+45,Anderson,AND,30,2016-01-03,"Anderson, SC",54,35,1,0.0,1.13,South Carolina,3,2016
+53,Charleston,CHS,22,2016-01-03,"Charleston, SC",61,45,1,0.55,3.86,South Carolina,3,2016
+49,Columbia,CAE,21,2016-01-03,"Columbia, SC",57,40,1,0.0,2.3,South Carolina,3,2016
+45,Greer,GSP,19,2016-01-03,"Greer, SC",55,35,1,0.0,2.53,South Carolina,3,2016
+18,Aberdeen,ABR,26,2016-01-03,"Aberdeen, SD",29,7,1,0.0,6.16,South Dakota,3,2016
+18,Huron,HON,29,2016-01-03,"Huron, SD",26,9,1,0.0,8.4,South Dakota,3,2016
+22,Pierre,PIR,27,2016-01-03,"Pierre, SD",29,15,1,0.0,10.5,South Dakota,3,2016
+24,Rapid City,RAP,26,2016-01-03,"Rapid City, SD",37,11,1,0.0,3.26,South Dakota,3,2016
+18,Sioux Falls,FSD,30,2016-01-03,"Sioux Falls, SD",26,9,1,0.0,7.2,South Dakota,3,2016
+34,Bristol/Jhnsn Cty/Kngsprt,TRI,23,2016-01-03,"Bristol/Jhnsn Cty/Kngsprt, TN",44,24,1,0.0,3.93,Tennessee,3,2016
+40,Chattanooga,CHA,35,2016-01-03,"Chattanooga, TN",48,31,1,0.0,3.6,Tennessee,3,2016
+37,Clarksville,CKV,28,2016-01-03,"Clarksville, TN",47,27,1,0.0,5.66,Tennessee,3,2016
+34,Crossville,CSV,29,2016-01-03,"Crossville, TN",44,24,1,0.0,4.23,Tennessee,3,2016
+36,Knoxville,TYS,26,2016-01-03,"Knoxville, TN",45,27,1,0.0,2.5,Tennessee,3,2016
+40,Memphis,MEM,30,2016-01-03,"Memphis, TN",51,29,1,0.0,3.53,Tennessee,3,2016
+39,Nashville,BNA,29,2016-01-03,"Nashville, TN",50,28,1,0.0,3.73,Tennessee,3,2016
+37,Oak Ridge,OQT,18,2016-01-03,"Oak Ridge, TN",47,27,1,0.0,0.5,Tennessee,3,2016
+41,Abilene,ABI,20,2016-01-03,"Abilene, TX",47,34,1,0.0,5.76,Texas,3,2016
+34,Amarillo,AMA,29,2016-01-03,"Amarillo, TX",45,22,1,0.0,4.73,Texas,3,2016
+46,Austin/Bergstrom,AUS,22,2016-01-03,"Austin/Bergstrom, TX",53,40,1,0.22,8.0,Texas,3,2016
+47,Austin/City,ATT,22,2016-01-03,"Austin/City, TX",52,42,1,0.2,4.1,Texas,3,2016
+48,Beaumont/Port Arthur,BPT,11,2016-01-03,"Beaumont/Port Arthur, TX",53,43,1,0.02,9.56,Texas,3,2016
+47,Brownsville,BRO,32,2016-01-03,"Brownsville, TX",50,42,1,1.54,13.2,Texas,3,2016
+38,Childress,CDS,30,2016-01-03,"Childress, TX",47,29,1,0.0,4.63,Texas,3,2016
+48,College Station,CLL,33,2016-01-03,"College Station, TX",53,43,1,0.01,7.73,Texas,3,2016
+47,Corpus Christi,CRP,35,2016-01-03,"Corpus Christi, TX",51,42,1,1.81,13.03,Texas,3,2016
+35,Dalhart,DHT,29,2016-01-03,"Dalhart, TX",50,19,1,0.0,4.23,Texas,3,2016
+44,Dallas,DAL,33,2016-01-03,"Dallas, TX",51,36,1,0.0,4.9,Texas,3,2016
+46,Dallas-Fort Worth,DFW,32,2016-01-03,"Dallas-Fort Worth, TX",53,38,1,0.0,6.73,Texas,3,2016
+47,Del Rio,DRT,22,2016-01-03,"Del Rio, TX",51,42,1,0.57,3.16,Texas,3,2016
+37,El Paso,ELP,4,2016-01-03,"El Paso, TX",44,31,1,0.0,5.0,Texas,3,2016
+44,Fort Worth,FTW,31,2016-01-03,"Fort Worth, TX",52,36,1,0.0,5.93,Texas,3,2016
+49,Galveston,GLS,12,2016-01-03,"Galveston, TX",52,44,1,0.23,13.9,Texas,3,2016
+50,Houston,HOU,11,2016-01-03,"Houston, TX",54,45,1,0.09,9.56,Texas,3,2016
+34,Lubbock,LBB,21,2016-01-03,"Lubbock, TX",43,25,1,0.0,5.1,Texas,3,2016
+37,Midland,MAF,21,2016-01-03,"Midland, TX",43,31,1,0.04,6.4,Texas,3,2016
+42,San Angelo,SJT,19,2016-01-03,"San Angelo, TX",48,35,1,0.0,4.93,Texas,3,2016
+47,San Antonio,SAT,22,2016-01-03,"San Antonio, TX",52,41,1,1.04,6.2,Texas,3,2016
+47,Victoria,VCT,22,2016-01-03,"Victoria, TX",52,42,1,1.29,8.46,Texas,3,2016
+45,Waco,ACT,33,2016-01-03,"Waco, TX",51,39,1,0.0,6.26,Texas,3,2016
+40,Wichita Falls,SPS,31,2016-01-03,"Wichita Falls, TX",48,31,1,0.0,8.06,Texas,3,2016
+15,Salt Lake City,SLC,32,2016-01-03,"Salt Lake City, UT",24,7,1,0.0,1.6,Utah,3,2016
+41,Blacksburg,BCB,28,2016-01-03,"Blacksburg, VA",49,33,1,0.0,9.33,VA,3,2016
+31,Burlington,BTV,23,2016-01-03,"Burlington, VT",35,26,1,0.03,6.5,Vermont,3,2016
+39,Lynchburg,LYH,25,2016-01-03,"Lynchburg, VA",49,29,1,0.0,3.6,Virginia,3,2016
+45,Norfolk,ORF,16,2016-01-03,"Norfolk, VA",51,39,1,0.0,4.7,Virginia,3,2016
+41,Richmond,RIC,27,2016-01-03,"Richmond, VA",51,30,1,0.0,3.6,Virginia,3,2016
+41,Roanoke,ROA,28,2016-01-03,"Roanoke, VA",49,33,1,0.0,9.33,Virginia,3,2016
+41,Wallops Island,WAL,28,2016-01-03,"Wallops Island, VA",49,33,1,0.0,4.26,Virginia,3,2016
+41,Washington,DCA,29,2016-01-03,"Washington, VA",49,33,1,0.0,4.83,Virginia,3,2016
+10,Deer Park,DEW,24,2016-01-03,"Deer Park, WA",22,-2,1,0.07,6.2,Washington,3,2016
+12,Ephrata,EPH,34,2016-01-03,"Ephrata, WA",20,3,1,0.07,7.2,Washington,3,2016
+26,Olympia,OLM,11,2016-01-03,"Olympia, WA",37,14,1,0.02,0.5,Washington,3,2016
+34,Quillayute,UIL,6,2016-01-03,"Quillayute, WA",46,22,1,0.0,2.53,Washington,3,2016
+35,Seattle,SEA,6,2016-01-03,"Seattle, WA",42,28,1,0.02,4.96,Washington,3,2016
+12,Spokane,GEG,2,2016-01-03,"Spokane, WA",20,3,1,0.09,5.2,Washington,3,2016
+16,Yakima,YKM,30,2016-01-03,"Yakima, WA",24,8,1,0.26,3.2,Washington,3,2016
+33,Beckley,BKW,27,2016-01-03,"Beckley, WV",40,26,1,0.0,7.6,West Virginia,3,2016
+37,Charleston,CRW,24,2016-01-03,"Charleston, WV",43,31,1,0.0,7.23,West Virginia,3,2016
+32,Elkins,EKN,24,2016-01-03,"Elkins, WV",38,27,1,0.0,5.26,West Virginia,3,2016
+36,Huntington,HTS,24,2016-01-03,"Huntington, WV",43,28,1,0.0,6.23,West Virginia,3,2016
+23,Green Bay,GRB,27,2016-01-03,"Green Bay, WI",28,17,1,0.0,9.4,Wisconsin,3,2016
+25,La Crosse,LSE,27,2016-01-03,"La Crosse, WI",32,17,1,0.0,8.16,Wisconsin,3,2016
+24,Madison,MSN,28,2016-01-03,"Madison, WI",29,18,1,0.0,5.6,Wisconsin,3,2016
+26,Milwaukee,MKE,28,2016-01-03,"Milwaukee, WI",30,21,1,0.0,10.96,Wisconsin,3,2016
+21,Casper,CPR,22,2016-01-03,"Casper, WY",28,13,1,0.0,16.13,Wyoming,3,2016
+23,Cheyenne,CYS,27,2016-01-03,"Cheyenne, WY",38,7,1,0.0,8.33,Wyoming,3,2016
+11,Lander,LND,27,2016-01-03,"Lander, WY",21,0,1,0.0,0.43,Wyoming,3,2016
+3,Rawlins,RWL,16,2016-01-03,"Rawlins, WY",19,-13,1,0.0,1.9,Wyoming,3,2016
+22,Sheridan,SHR,21,2016-01-03,"Sheridan, WY",36,7,1,0.0,0.8,Wyoming,3,2016
+44,Birmingham,BHM,12,2016-01-10,"Birmingham, AL",52,36,1,0.52,6.55,Alabama,10,2016
+43,Huntsville,HSV,13,2016-01-10,"Huntsville, AL",50,34,1,0.43,8.34,Alabama,10,2016
+49,Mobile,MOB,14,2016-01-10,"Mobile, AL",57,39,1,0.13,6.58,Alabama,10,2016
+47,Montgomery,MGM,15,2016-01-10,"Montgomery, AL",55,38,1,0.11,7.55,Alabama,10,2016
+28,Anchorage,ANC,12,2016-01-10,"Anchorage, AK",33,22,1,0.0,4.02,Alaska,10,2016
+36,Annette,ANN,24,2016-01-10,"Annette, AK",43,27,1,0.48,5.42,Alaska,10,2016
+28,Bethel,BET,7,2016-01-10,"Bethel, AK",35,21,1,0.03,18.0,Alaska,10,2016
+6,Bettles,BTT,29,2016-01-10,"Bettles, AK",19,-2,1,0.0,3.98,Alaska,10,2016
+32,Cold Bay,CDB,22,2016-01-10,"Cold Bay, AK",35,29,1,2.35,14.3,Alaska,10,2016
+35,Cordova,CDV,12,2016-01-10,"Cordova, AK",42,29,1,0.81,5.88,Alaska,10,2016
+13,Delta Junction/Ft Greely,BIG,11,2016-01-10,"Delta Junction/Ft Greely, AK",17,9,1,0.0,18.5,Alaska,10,2016
+2,Fairbanks,FAI,7,2016-01-10,"Fairbanks, AK",12,-7,1,0.0,1.58,Alaska,10,2016
+0,Gulkana,GKN,33,2016-01-10,"Gulkana, AK",7,-6,1,0.0,1.35,Alaska,10,2016
+37,Homer,HOM,7,2016-01-10,"Homer, AK",42,31,1,1.75,9.45,Alaska,10,2016
+37,Iliamna,ILI,11,2016-01-10,"Iliamna, AK",41,33,1,0.0,14.15,Alaska,10,2016
+27,Juneau,JNU,13,2016-01-10,"Juneau, AK",31,22,1,0.33,1.81,Alaska,10,2016
+30,Kenai,ENA,3,2016-01-10,"Kenai, AK",35,25,1,0.03,13.51,Alaska,10,2016
+34,Ketchikan,KTN,23,2016-01-10,"Ketchikan, AK",39,28,1,1.33,5.17,Alaska,10,2016
+35,King Salmon,AKN,8,2016-01-10,"King Salmon, AK",41,29,1,0.04,14.55,Alaska,10,2016
+37,Kodiak,ADQ,11,2016-01-10,"Kodiak, AK",41,33,1,2.66,16.28,Alaska,10,2016
+23,Kotzebue,OTZ,10,2016-01-10,"Kotzebue, AK",27,18,1,0.03,18.08,Alaska,10,2016
+14,Mc Grath,MCG,21,2016-01-10,"Mc Grath, AK",24,4,1,0.0,1.72,Alaska,10,2016
+29,Nome,OME,7,2016-01-10,"Nome, AK",32,24,1,0.09,16.57,Alaska,10,2016
+-13,Northway,ORT,18,2016-01-10,"Northway, AK",-8,-19,1,0.0,0.32,Alaska,10,2016
+27,Palmer,PAQ,21,2016-01-10,"Palmer, AK",36,21,1,0.0,8.87,Alaska,10,2016
+60,Petersburg,PSG,20,2016-01-10,"Petersburg, AK",60,60,1,0.0,2.34,Alaska,10,2016
+60,Shemya,SYA,32,2016-01-10,"Shemya, AK",60,60,1,0.0,14.0,Alaska,10,2016
+39,Sitka,SIT,16,2016-01-10,"Sitka, AK",43,33,1,0.13,6.31,Alaska,10,2016
+33,Skagway,SGY,9,2016-01-10,"Skagway, AK",36,29,1,0.12,18.64,Alaska,10,2016
+32,St Paul Island,SNP,23,2016-01-10,"St Paul Island, AK",36,29,1,0.77,18.52,Alaska,10,2016
+24,Talkeetna,TKA,6,2016-01-10,"Talkeetna, AK",32,16,1,0.0,5.15,Alaska,10,2016
+9,Tanana,TAL,9,2016-01-10,"Tanana, AK",16,1,1,0.0,4.65,Alaska,10,2016
+8,Utqiagvik (Barrow),BRW,10,2016-01-10,"Utqiagvik (Barrow), AK",16,0,1,0.05,12.25,Alaska,10,2016
+33,Yakutat,YAK,7,2016-01-10,"Yakutat, AK",39,25,1,1.26,2.42,Alaska,10,2016
+41,Douglas Bisbee,DUG,25,2016-01-10,"Douglas Bisbee, AZ",52,30,1,1.16,4.5,Arizona,10,2016
+42,Kingman,IGM,18,2016-01-10,"Kingman, AZ",49,34,1,0.61,5.17,Arizona,10,2016
+52,Phoenix,PHX,14,2016-01-10,"Phoenix, AZ",57,47,1,1.13,3.64,Arizona,10,2016
+48,Tucson,TUS,17,2016-01-10,"Tucson, AZ",56,41,1,1.53,4.98,Arizona,10,2016
+35,Winslow,INW,19,2016-01-10,"Winslow, AZ",45,25,1,0.12,3.81,Arizona,10,2016
+38,Fort Smith,FSM,17,2016-01-10,"Fort Smith, AR",44,30,1,0.37,7.5,Arkansas,10,2016
+34,Harrison,HRO,19,2016-01-10,"Harrison, AR",42,26,1,0.79,7.78,Arkansas,10,2016
+40,North Little Rock,LZK,0,2016-01-10,"North Little Rock, AR",47,32,1,1.63,0.0,Arkansas,10,2016
+51,Bakersfield,BFL,13,2016-01-10,"Bakersfield, CA",58,43,1,0.69,1.75,California,10,2016
+36,Bishop,BIH,24,2016-01-10,"Bishop, CA",48,24,1,0.16,5.4,California,10,2016
+43,China Lake,NID,19,2016-01-10,"China Lake, CA",52,34,1,0.0,3.8,California,10,2016
+49,Concord,CCR,18,2016-01-10,"Concord, CA",54,44,1,1.83,2.94,California,10,2016
+49,Eureka,EKA,0,2016-01-10,"Eureka, CA",55,42,1,2.49,0.0,California,10,2016
+47,Fresno,FAT,17,2016-01-10,"Fresno, CA",54,41,1,1.28,3.42,California,10,2016
+51,Hayward,HWD,11,2016-01-10,"Hayward, CA",56,46,1,1.15,5.81,California,10,2016
+55,Long Beach,LGB,23,2016-01-10,"Long Beach, CA",62,48,1,1.96,1.58,California,10,2016
+55,Los Angeles,LAX,23,2016-01-10,"Los Angeles, CA",60,49,1,2.73,3.04,California,10,2016
+46,Red Bluff,RBL,26,2016-01-10,"Red Bluff, CA",51,42,1,3.59,5.14,California,10,2016
+45,Redding,RDD,18,2016-01-10,"Redding, CA",51,40,1,4.71,2.5,California,10,2016
+48,Sacramento,SAC,19,2016-01-10,"Sacramento, CA",53,41,1,2.27,4.04,California,10,2016
+51,Salinas,SNS,12,2016-01-10,"Salinas, CA",56,45,1,1.09,8.04,California,10,2016
+57,San Diego,SAN,19,2016-01-10,"San Diego, CA",61,53,1,2.98,3.62,California,10,2016
+51,San Francisco,SFO,10,2016-01-10,"San Francisco, CA",54,47,1,2.17,4.45,California,10,2016
+39,Sandberg,SDB,19,2016-01-10,"Sandberg, CA",43,34,1,1.89,9.58,California,10,2016
+54,Santa Barbara,SBA,17,2016-01-10,"Santa Barbara, CA",60,47,1,4.15,2.22,California,10,2016
+53,Santa Maria,SMX,23,2016-01-10,"Santa Maria, CA",60,45,1,1.59,3.6,California,10,2016
+47,Stockton,SCK,14,2016-01-10,"Stockton, CA",53,40,1,1.43,5.4,California,10,2016
+14,Alamosa,ALS,23,2016-01-10,"Alamosa, CO",27,1,1,0.55,0.92,Colorado,10,2016
+29,Colorado Springs,COS,19,2016-01-10,"Colorado Springs, CO",39,18,1,0.18,2.92,Colorado,10,2016
+15,Craig,CAG,18,2016-01-10,"Craig, CO",26,5,1,0.34,0.8,Colorado,10,2016
+27,Denver,DEN,18,2016-01-10,"Denver, CO",37,16,1,0.38,4.31,Colorado,10,2016
+26,Grand Junction,GJT,13,2016-01-10,"Grand Junction, CO",33,18,1,0.31,1.48,Colorado,10,2016
+28,Pueblo,PUB,12,2016-01-10,"Pueblo, CO",42,14,1,0.41,2.14,Colorado,10,2016
+33,Bridgeport,BDR,21,2016-01-10,"Bridgeport, CT",43,23,1,1.23,7.78,Connecticut,10,2016
+29,Windsor Locks,BDL,21,2016-01-10,"Windsor Locks, CT",41,17,1,1.46,5.05,Connecticut,10,2016
+35,Wilmington,ILG,22,2016-01-10,"Wilmington, DE",45,25,1,0.68,6.18,Delaware,10,2016
+63,Daytona Beach,DAB,15,2016-01-10,"Daytona Beach, FL",70,56,1,0.05,8.45,Florida,10,2016
+70,Fort Lauderdale,FLL,20,2016-01-10,"Fort Lauderdale, FL",77,62,1,0.94,6.9,Florida,10,2016
+56,Gainesville,GNV,12,2016-01-10,"Gainesville, FL",64,47,1,0.16,7.41,Florida,10,2016
+53,Jacksonville,JAX,15,2016-01-10,"Jacksonville, FL",59,46,1,0.21,8.52,Florida,10,2016
+72,Key West,EYW,16,2016-01-10,"Key West, FL",76,68,1,0.46,8.34,Florida,10,2016
+70,Miami,MIA,19,2016-01-10,"Miami, FL",77,63,1,0.84,5.75,Florida,10,2016
+63,Orlando,MCO,17,2016-01-10,"Orlando, FL",70,54,1,0.55,7.37,Florida,10,2016
+51,Pensacola,PNS,13,2016-01-10,"Pensacola, FL",58,42,1,0.69,6.24,Florida,10,2016
+54,Tallahassee,TLH,13,2016-01-10,"Tallahassee, FL",62,45,1,0.92,7.4,Florida,10,2016
+63,Tampa,TPA,14,2016-01-10,"Tampa, FL",71,55,1,1.19,6.28,Florida,10,2016
+65,Vero Beach,VRB,19,2016-01-10,"Vero Beach, FL",73,57,1,1.59,6.87,Florida,10,2016
+68,West Palm Beach,PBI,21,2016-01-10,"West Palm Beach, FL",75,60,1,0.99,7.2,Florida,10,2016
+49,Alma,AMG,12,2016-01-10,"Alma, GA",58,40,1,0.69,4.17,Georgia,10,2016
+42,Athens,AHN,14,2016-01-10,"Athens, GA",50,33,1,0.47,6.84,Georgia,10,2016
+43,Atlanta,ATL,15,2016-01-10,"Atlanta, GA",50,35,1,0.64,10.48,Georgia,10,2016
+45,Augusta,AGS,7,2016-01-10,"Augusta, GA",54,36,1,0.16,7.4,Georgia,10,2016
+46,Macon,MCN,13,2016-01-10,"Macon, GA",53,37,1,0.26,7.84,Georgia,10,2016
+49,Savannah,SAV,10,2016-01-10,"Savannah, GA",57,41,1,0.14,8.22,Georgia,10,2016
+73,Hilo,ITO,20,2016-01-10,"Hilo, HI",83,63,1,0.33,1.98,Hawaii,10,2016
+74,Honolulu,HNL,12,2016-01-10,"Honolulu, HI",81,67,1,0.0,5.08,Hawaii,10,2016
+72,Kahului,OGG,8,2016-01-10,"Kahului, HI",82,62,1,0.44,6.47,Hawaii,10,2016
+72,Kaunakakai,MKK,16,2016-01-10,"Kaunakakai, HI",80,64,1,0.16,5.25,Hawaii,10,2016
+73,Lihue,LIH,24,2016-01-10,"Lihue, HI",80,66,1,0.08,5.11,Hawaii,10,2016
+33,Boise,BOI,19,2016-01-10,"Boise, ID",39,27,1,0.04,1.9,Idaho,10,2016
+36,Lewiston,LWS,14,2016-01-10,"Lewiston, ID",40,30,1,0.01,2.08,Idaho,10,2016
+30,Pocatello,PIH,16,2016-01-10,"Pocatello, ID",35,24,1,0.09,3.94,Idaho,10,2016
+29,Chicago,ORD,23,2016-01-10,"Chicago, IL",35,22,1,0.47,8.92,Illinois,10,2016
+26,Moline,MLI,21,2016-01-10,"Moline, IL",33,19,1,0.22,7.71,Illinois,10,2016
+30,Peoria,PIA,23,2016-01-10,"Peoria, IL",36,22,1,0.51,7.97,Illinois,10,2016
+28,Quincy,UIN,18,2016-01-10,"Quincy, IL",36,20,1,0.21,9.07,Illinois,10,2016
+26,Rockford,RFD,23,2016-01-10,"Rockford, IL",32,20,1,0.65,8.62,Illinois,10,2016
+35,Springfield,SPI,23,2016-01-10,"Springfield, IL",38,23,1,0.59,10.2,Illinois,10,2016
+36,Evansville,EVV,21,2016-01-10,"Evansville, IN",45,26,1,12.65,4.52,Indiana,10,2016
+31,Fort Wayne,FWA,20,2016-01-10,"Fort Wayne, IN",40,21,1,1.15,6.75,Indiana,10,2016
+34,Indianapolis,IND,19,2016-01-10,"Indianapolis, IN",42,25,1,1.08,8.75,Indiana,10,2016
+27,South Bend,SBN,17,2016-01-10,"South Bend, IN",36,18,1,0.87,7.35,Indiana,10,2016
+22,Cedar Rapids,CID,20,2016-01-10,"Cedar Rapids, IA",28,15,1,0.17,9.8,Iowa,10,2016
+23,Des Moines,DSM,22,2016-01-10,"Des Moines, IA",29,16,1,0.44,8.8,Iowa,10,2016
+22,Dubuque,DBQ,18,2016-01-10,"Dubuque, IA",28,16,1,0.23,10.0,Iowa,10,2016
+21,Sioux City,SUX,19,2016-01-10,"Sioux City, IA",28,15,1,0.48,9.77,Iowa,10,2016
+20,Waterloo,ALO,23,2016-01-10,"Waterloo, IA",26,14,1,0.52,9.67,Iowa,10,2016
+26,Concordia,CNK,20,2016-01-10,"Concordia, KS",33,17,1,0.42,10.24,Kansas,10,2016
+31,Dodge City,DDC,21,2016-01-10,"Dodge City, KS",39,22,1,0.25,12.0,Kansas,10,2016
+28,Goodland,GLD,22,2016-01-10,"Goodland, KS",39,15,1,0.02,9.98,Kansas,10,2016
+31,Medicine Lodge,P28,20,2016-01-10,"Medicine Lodge, KS",37,23,1,0.5,7.94,Kansas,10,2016
+28,Topeka,TOP,20,2016-01-10,"Topeka, KS",35,21,1,0.73,7.47,Kansas,10,2016
+30,Wichita,ICT,22,2016-01-10,"Wichita, KS",37,23,1,0.18,10.34,Kansas,10,2016
+35,Covington,CVG,19,2016-01-10,"Covington, KY",45,25,1,0.79,6.97,Kentucky,10,2016
+38,Jackson,JKL,18,2016-01-10,"Jackson, KY",48,28,1,0.83,2.14,Kentucky,10,2016
+36,Lexington,LEX,18,2016-01-10,"Lexington, KY",46,26,1,0.47,7.82,Kentucky,10,2016
+39,Louisville,SDF,18,2016-01-10,"Louisville, KY",48,29,1,0.4,6.91,Kentucky,10,2016
+36,Paducah,PAH,18,2016-01-10,"Paducah, KY",45,26,1,2.13,5.31,Kentucky,10,2016
+51,Baton Rouge,BTR,13,2016-01-10,"Baton Rouge, LA",60,41,1,1.84,6.15,Louisiana,10,2016
+51,Lake Charles,LCH,15,2016-01-10,"Lake Charles, LA",61,41,1,2.1,8.01,Louisiana,10,2016
+54,New Orleans,MSY,14,2016-01-10,"New Orleans, LA",61,47,1,0.75,8.84,Louisiana,10,2016
+46,Shreveport,SHV,16,2016-01-10,"Shreveport, LA",54,37,1,1.5,6.58,Louisiana,10,2016
+51,Slidell,ASD,11,2016-01-10,"Slidell, LA",61,40,1,0.27,4.03,Louisiana,10,2016
+22,Bangor,BGR,21,2016-01-10,"Bangor, ME",34,9,1,1.99,5.52,Maine,10,2016
+18,Caribou,CAR,19,2016-01-10,"Caribou, ME",26,9,1,0.52,6.44,Maine,10,2016
+27,Portland,PWM,19,2016-01-10,"Portland, ME",37,16,1,2.11,5.88,Maine,10,2016
+35,Baltimore,BWI,18,2016-01-10,"Baltimore, MD",44,26,1,1.05,4.67,Maryland,10,2016
+39,Salisbury,SBY,15,2016-01-10,"Salisbury, MD",49,27,1,0.28,6.34,Maryland,10,2016
+33,Boston,BOS,19,2016-01-10,"Boston, MA",41,25,1,1.39,7.51,Massachusetts,10,2016
+60,Milton,MQE,21,2016-01-10,"Milton, MA",60,60,1,0.0,9.51,Massachusetts,10,2016
+28,Worcester,ORH,20,2016-01-10,"Worcester, MA",36,19,1,1.12,6.7,Massachusetts,10,2016
+24,Alpena,APN,19,2016-01-10,"Alpena, MI",33,14,1,0.69,6.1,Michigan,10,2016
+31,Detroit,DTW,20,2016-01-10,"Detroit, MI",39,22,1,0.66,5.87,Michigan,10,2016
+30,Flint,FNT,17,2016-01-10,"Flint, MI",39,21,1,0.71,7.12,Michigan,10,2016
+29,Grand Rapids,GRR,17,2016-01-10,"Grand Rapids, MI",36,22,1,0.82,7.62,Michigan,10,2016
+24,Houghton Lake,HTL,18,2016-01-10,"Houghton Lake, MI",32,16,1,0.78,6.77,Michigan,10,2016
+28,Lansing,LAN,17,2016-01-10,"Lansing, MI",36,21,1,0.86,7.34,Michigan,10,2016
+21,Marquette,MQT,0,2016-01-10,"Marquette, MI",27,16,1,0.61,0.0,Michigan,10,2016
+30,Muskegon,MKG,18,2016-01-10,"Muskegon, MI",37,22,1,0.95,8.38,Michigan,10,2016
+25,Sault Ste Marie,ANJ,19,2016-01-10,"Sault Ste Marie, MI",31,18,1,0.61,6.61,Michigan,10,2016
+16,Duluth,DLH,23,2016-01-10,"Duluth, MN",23,8,1,0.18,8.68,Minnesota,10,2016
+14,International Falls,INL,20,2016-01-10,"International Falls, MN",20,7,1,0.1,5.78,Minnesota,10,2016
+19,Minneapolis,MSP,21,2016-01-10,"Minneapolis, MN",25,12,1,0.17,8.74,Minnesota,10,2016
+17,Rochester,RST,23,2016-01-10,"Rochester, MN",23,11,1,0.44,12.62,Minnesota,10,2016
+17,St Cloud,STC,22,2016-01-10,"St Cloud, MN",22,8,1,0.13,8.54,Minnesota,10,2016
+42,Greenville,GLH,15,2016-01-10,"Greenville, MS",50,35,1,1.23,8.21,Mississippi,10,2016
+43,Greenwood,GWO,15,2016-01-10,"Greenwood, MS",53,32,1,0.35,5.12,Mississippi,10,2016
+51,Gulfport,GPT,19,2016-01-10,"Gulfport, MS",59,41,1,0.32,6.52,Mississippi,10,2016
+47,Hattiesburg,HBG,19,2016-01-10,"Hattiesburg, MS",58,35,1,0.11,3.94,Mississippi,10,2016
+46,Jackson,JAN,14,2016-01-10,"Jackson, MS",55,36,1,1.15,5.95,Mississippi,10,2016
+45,Meridian,MEI,13,2016-01-10,"Meridian, MS",53,33,1,0.1,5.37,Mississippi,10,2016
+40,Tupelo,TUP,17,2016-01-10,"Tupelo, MS",49,30,1,0.4,6.15,Mississippi,10,2016
+35,Cape Girardeau,CGI,18,2016-01-10,"Cape Girardeau, MO",43,27,1,1.4,8.58,Missouri,10,2016
+31,Columbia,COU,18,2016-01-10,"Columbia, MO",38,23,1,0.69,9.42,Missouri,10,2016
+28,Kansas City,MCI,21,2016-01-10,"Kansas City, MO",35,21,1,0.6,9.34,Missouri,10,2016
+31,Rolla/Vichy,VIH,19,2016-01-10,"Rolla/Vichy, MO",38,23,1,0.67,9.72,Missouri,10,2016
+32,Springfield,SGF,19,2016-01-10,"Springfield, MO",39,25,1,0.69,10.97,Missouri,10,2016
+26,St Joseph,STJ,21,2016-01-10,"St Joseph, MO",32,19,1,0.54,8.41,Missouri,10,2016
+34,St Louis,STL,23,2016-01-10,"St Louis, MO",42,26,1,0.52,9.15,Missouri,10,2016
+23,Billings,BIL,18,2016-01-10,"Billings, MT",29,15,1,0.09,7.54,Montana,10,2016
+18,Butte,BTM,26,2016-01-10,"Butte, MT",27,9,1,0.13,1.32,Montana,10,2016
+10,Cut Bank,CTB,28,2016-01-10,"Cut Bank, MT",21,2,1,0.07,7.65,Montana,10,2016
+19,Dillon,DLN,14,2016-01-10,"Dillon, MT",27,13,1,0.05,4.71,Montana,10,2016
+11,Glasgow,GGW,21,2016-01-10,"Glasgow, MT",17,3,1,0.11,6.74,Montana,10,2016
+15,Great Falls,GTF,15,2016-01-10,"Great Falls, MT",23,7,1,0.14,5.25,Montana,10,2016
+9,Havre,HVR,25,2016-01-10,"Havre, MT",18,0,1,0.12,4.65,Montana,10,2016
+16,Helena,HLN,21,2016-01-10,"Helena, MT",23,7,1,0.15,1.94,Montana,10,2016
+22,Kalispell,GPI,15,2016-01-10,"Kalispell, MT",27,17,1,0.02,2.08,Montana,10,2016
+13,Miles City,MLS,21,2016-01-10,"Miles City, MT",25,0,1,0.0,5.21,Montana,10,2016
+21,Missoula,MSO,12,2016-01-10,"Missoula, MT",26,15,1,0.01,1.88,Montana,10,2016
+22,Grand Island,GRI,20,2016-01-10,"Grand Island, NE",30,14,1,0.09,11.48,Nebraska,10,2016
+24,Lincoln,LNK,21,2016-01-10,"Lincoln, NE",31,17,1,0.51,10.65,Nebraska,10,2016
+20,Norfolk,OFK,20,2016-01-10,"Norfolk, NE",28,12,1,0.25,11.07,Nebraska,10,2016
+25,North Platte,LBF,20,2016-01-10,"North Platte, NE",35,15,1,0.04,7.1,Nebraska,10,2016
+23,Omaha,OMA,20,2016-01-10,"Omaha, NE",29,16,1,0.71,11.07,Nebraska,10,2016
+21,Scottsbluff,BFF,26,2016-01-10,"Scottsbluff, NE",31,9,1,0.04,4.11,Nebraska,10,2016
+20,Sidney,SNY,29,2016-01-10,"Sidney, NE",31,9,1,0.0,7.52,Nebraska,10,2016
+17,Valentine,VTN,27,2016-01-10,"Valentine, NE",27,7,1,0.01,8.7,Nebraska,10,2016
+22,Ely,ELY,23,2016-01-10,"Ely, NV",30,12,1,1.12,7.84,Nevada,10,2016
+25,Eureka,P68,19,2016-01-10,"Eureka, NV",34,17,1,0.08,5.28,Nevada,10,2016
+48,Las Vegas,LAS,16,2016-01-10,"Las Vegas, NV",54,43,1,0.26,3.02,Nevada,10,2016
+42,Mercury,DRA,9,2016-01-10,"Mercury, NV",48,36,1,0.88,5.17,Nevada,10,2016
+33,Reno,RNO,16,2016-01-10,"Reno, NV",40,26,1,0.25,1.4,Nevada,10,2016
+30,Winnemucca,WMC,13,2016-01-10,"Winnemucca, NV",36,23,1,0.67,3.48,Nevada,10,2016
+25,Concord,CON,21,2016-01-10,"Concord, NH",38,13,1,0.82,3.65,New Hampshire,10,2016
+60,Mt. Washington,MWN,24,2016-01-10,"Mt. Washington, NH",60,60,1,0.0,31.11,New Hampshire,10,2016
+35,Atlantic City,ACY,17,2016-01-10,"Atlantic City, NJ",46,23,1,0.8,6.57,New Jersey,10,2016
+34,Newark,EWR,20,2016-01-10,"Newark, NJ",44,24,1,1.78,7.24,New Jersey,10,2016
+35,Albuquerque,ABQ,22,2016-01-10,"Albuquerque, NM",40,28,1,0.37,2.61,New Mexico,10,2016
+31,Clayton,CAO,17,2016-01-10,"Clayton, NM",41,21,1,0.27,9.2,New Mexico,10,2016
+31,Roswell,ROW,24,2016-01-10,"Roswell, NM",39,23,1,0.11,1.67,New Mexico,10,2016
+27,Albany,ALB,24,2016-01-10,"Albany, NY",38,16,1,0.9,4.08,New York,10,2016
+25,Binghamton,BGM,21,2016-01-10,"Binghamton, NY",34,15,1,0.74,7.14,New York,10,2016
+29,Buffalo,BUF,15,2016-01-10,"Buffalo, NY",37,20,1,0.64,7.87,New York,10,2016
+24,Glens Falls,GFL,14,2016-01-10,"Glens Falls, NY",34,14,1,0.77,2.61,New York,10,2016
+34,Islip,ISP,21,2016-01-10,"Islip, NY",44,24,1,1.72,7.87,New York,10,2016
+37,New York,LGA,21,2016-01-10,"New York, NY",44,29,1,1.42,8.44,New York,10,2016
+29,Rochester,ROC,22,2016-01-10,"Rochester, NY",37,20,1,0.63,7.14,New York,10,2016
+27,Syracuse,SYR,14,2016-01-10,"Syracuse, NY",37,15,1,0.68,5.07,New York,10,2016
+37,Asheville,AVL,24,2016-01-10,"Asheville, NC",46,27,1,0.48,5.41,North Carolina,10,2016
+51,Cape Hatteras,HSE,15,2016-01-10,"Cape Hatteras, NC",56,45,1,1.47,9.17,North Carolina,10,2016
+40,Charlotte,CLT,11,2016-01-10,"Charlotte, NC",49,30,1,0.42,6.12,North Carolina,10,2016
+37,Greensboro,GSO,12,2016-01-10,"Greensboro, NC",45,30,1,0.39,6.38,North Carolina,10,2016
+37,Hickory,HKY,11,2016-01-10,"Hickory, NC",46,28,1,0.66,3.71,North Carolina,10,2016
+40,Raleigh/Durham,RDU,6,2016-01-10,"Raleigh/Durham, NC",47,33,1,0.27,4.97,North Carolina,10,2016
+47,Wilmington,ILM,14,2016-01-10,"Wilmington, NC",54,39,1,0.34,9.6,North Carolina,10,2016
+10,Bismarck,BIS,15,2016-01-10,"Bismarck, ND",19,0,1,0.0,4.98,North Dakota,10,2016
+11,Dickinson,DIK,25,2016-01-10,"Dickinson, ND",19,2,1,0.0,7.02,North Dakota,10,2016
+12,Fargo,FAR,23,2016-01-10,"Fargo, ND",19,4,1,0.32,10.47,North Dakota,10,2016
+8,Grand Forks,GFK,27,2016-01-10,"Grand Forks, ND",15,1,1,0.0,10.82,North Dakota,10,2016
+10,Williston,ISN,21,2016-01-10,"Williston, ND",20,3,1,0.05,4.0,North Dakota,10,2016
+31,Akron,CAK,20,2016-01-10,"Akron, OH",40,21,1,0.74,7.15,Ohio,10,2016
+32,Cleveland,CLE,15,2016-01-10,"Cleveland, OH",41,22,1,0.81,7.94,Ohio,10,2016
+31,Columbus,CMH,20,2016-01-10,"Columbus, OH",41,21,1,0.78,5.6,Ohio,10,2016
+32,Dayton,DAY,19,2016-01-10,"Dayton, OH",42,22,1,1.03,8.08,Ohio,10,2016
+31,Mansfield,MFD,20,2016-01-10,"Mansfield, OH",41,20,1,1.03,8.05,Ohio,10,2016
+29,Toledo,TOL,16,2016-01-10,"Toledo, OH",39,19,1,0.85,5.31,Ohio,10,2016
+29,Youngstown/Warren,YNG,18,2016-01-10,"Youngstown/Warren, OH",39,18,1,0.73,6.97,Ohio,10,2016
+33,Gage,GAG,18,2016-01-10,"Gage, OK",40,24,1,0.17,10.01,Oklahoma,10,2016
+35,Oklahoma City,OKC,22,2016-01-10,"Oklahoma City, OK",42,27,1,0.11,10.87,Oklahoma,10,2016
+36,Ponca City,PNC,20,2016-01-10,"Ponca City, OK",40,28,1,0.16,8.5,Oklahoma,10,2016
+34,Tulsa,TUL,26,2016-01-10,"Tulsa, OK",40,26,1,0.58,8.75,Oklahoma,10,2016
+43,Astoria,AST,8,2016-01-10,"Astoria, OR",49,37,1,0.41,5.88,Oregon,10,2016
+18,Burns,BNO,23,2016-01-10,"Burns, OR",28,9,1,0.2,2.02,Oregon,10,2016
+38,Eugene,EUG,11,2016-01-10,"Eugene, OR",41,34,1,0.43,2.27,Oregon,10,2016
+42,Medford,MFR,18,2016-01-10,"Medford, OR",51,31,1,0.15,2.35,Oregon,10,2016
+28,Pendleton,PDT,17,2016-01-10,"Pendleton, OR",31,24,1,0.05,2.11,Oregon,10,2016
+38,Portland,PDX,10,2016-01-10,"Portland, OR",44,31,1,0.21,4.9,Oregon,10,2016
+29,Redmond,RDM,21,2016-01-10,"Redmond, OR",38,20,1,0.07,2.47,Oregon,10,2016
+37,Salem,SLE,12,2016-01-10,"Salem, OR",42,32,1,0.27,1.0,Oregon,10,2016
+32,Allentown,ABE,21,2016-01-10,"Allentown, PA",43,20,1,1.07,4.77,Pennsylvania,10,2016
+31,Erie,ERI,15,2016-01-10,"Erie, PA",40,22,1,0.58,9.12,Pennsylvania,10,2016
+32,Harrisburg,MDT,20,2016-01-10,"Harrisburg, PA",41,22,1,1.48,3.91,Pennsylvania,10,2016
+36,Philadelphia,PHL,21,2016-01-10,"Philadelphia, PA",45,27,1,0.63,6.92,Pennsylvania,10,2016
+29,Pittsburgh,PIT,18,2016-01-10,"Pittsburgh, PA",40,17,1,0.85,5.15,Pennsylvania,10,2016
+29,Wilkes-Barre/Scranton,AVP,14,2016-01-10,"Wilkes-Barre/Scranton, PA",40,17,1,1.26,4.54,Pennsylvania,10,2016
+28,Williamsport,IPT,18,2016-01-10,"Williamsport, PA",38,17,1,1.78,3.98,Pennsylvania,10,2016
+79,San Juan,SJU,8,2016-01-10,"San Juan, PR",84,73,1,0.34,2.77,Puerto Rico,10,2016
+32,Providence,PVD,19,2016-01-10,"Providence, RI",42,22,1,1.41,6.75,Rhode Island,10,2016
+42,Anderson,AND,8,2016-01-10,"Anderson, SC",50,33,1,0.34,7.34,South Carolina,10,2016
+48,Charleston,CHS,5,2016-01-10,"Charleston, SC",57,39,1,0.0,9.28,South Carolina,10,2016
+45,Columbia,CAE,6,2016-01-10,"Columbia, SC",52,37,1,0.27,6.35,South Carolina,10,2016
+40,Greer,GSP,11,2016-01-10,"Greer, SC",49,31,1,0.5,6.34,South Carolina,10,2016
+15,Aberdeen,ABR,18,2016-01-10,"Aberdeen, SD",23,6,1,0.04,9.91,South Dakota,10,2016
+13,Huron,HON,26,2016-01-10,"Huron, SD",21,5,1,0.04,9.48,South Dakota,10,2016
+14,Pierre,PIR,28,2016-01-10,"Pierre, SD",22,6,1,0.0,7.0,South Dakota,10,2016
+17,Rapid City,RAP,22,2016-01-10,"Rapid City, SD",27,7,1,0.0,6.81,South Dakota,10,2016
+16,Sioux Falls,FSD,22,2016-01-10,"Sioux Falls, SD",23,9,1,0.31,9.35,South Dakota,10,2016
+37,Bristol/Jhnsn Cty/Kngsprt,TRI,13,2016-01-10,"Bristol/Jhnsn Cty/Kngsprt, TN",49,25,1,0.67,3.52,Tennessee,10,2016
+41,Chattanooga,CHA,19,2016-01-10,"Chattanooga, TN",49,32,1,0.61,4.82,Tennessee,10,2016
+36,Clarksville,CKV,19,2016-01-10,"Clarksville, TN",46,26,1,0.85,5.98,Tennessee,10,2016
+37,Crossville,CSV,14,2016-01-10,"Crossville, TN",46,28,1,0.94,5.44,Tennessee,10,2016
+38,Knoxville,TYS,10,2016-01-10,"Knoxville, TN",48,27,1,0.32,5.0,Tennessee,10,2016
+41,Memphis,MEM,16,2016-01-10,"Memphis, TN",48,32,1,1.42,7.35,Tennessee,10,2016
+41,Nashville,BNA,19,2016-01-10,"Nashville, TN",50,30,1,0.3,5.84,Tennessee,10,2016
+39,Oak Ridge,OQT,11,2016-01-10,"Oak Ridge, TN",49,28,1,0.51,1.45,Tennessee,10,2016
+42,Abilene,ABI,18,2016-01-10,"Abilene, TX",51,33,1,0.04,7.08,Texas,10,2016
+32,Amarillo,AMA,19,2016-01-10,"Amarillo, TX",41,23,1,0.08,10.62,Texas,10,2016
+48,Austin/Bergstrom,AUS,12,2016-01-10,"Austin/Bergstrom, TX",59,37,1,0.64,5.1,Texas,10,2016
+50,Austin/City,ATT,19,2016-01-10,"Austin/City, TX",59,40,1,0.13,2.2,Texas,10,2016
+53,Beaumont/Port Arthur,BPT,15,2016-01-10,"Beaumont/Port Arthur, TX",62,43,1,2.19,8.84,Texas,10,2016
+59,Brownsville,BRO,20,2016-01-10,"Brownsville, TX",69,49,1,0.1,6.04,Texas,10,2016
+37,Childress,CDS,16,2016-01-10,"Childress, TX",44,30,1,0.34,6.71,Texas,10,2016
+49,College Station,CLL,17,2016-01-10,"College Station, TX",57,40,1,1.21,6.65,Texas,10,2016
+55,Corpus Christi,CRP,14,2016-01-10,"Corpus Christi, TX",64,45,1,0.25,7.11,Texas,10,2016
+32,Dalhart,DHT,21,2016-01-10,"Dalhart, TX",43,22,1,0.11,9.04,Texas,10,2016
+44,Dallas,DAL,16,2016-01-10,"Dallas, TX",51,36,1,1.23,7.37,Texas,10,2016
+44,Dallas-Fort Worth,DFW,16,2016-01-10,"Dallas-Fort Worth, TX",51,37,1,0.84,7.87,Texas,10,2016
+53,Del Rio,DRT,18,2016-01-10,"Del Rio, TX",61,41,1,0.0,4.8,Texas,10,2016
+42,El Paso,ELP,24,2016-01-10,"El Paso, TX",50,34,1,0.46,8.15,Texas,10,2016
+44,Fort Worth,FTW,20,2016-01-10,"Fort Worth, TX",52,36,1,0.49,7.34,Texas,10,2016
+54,Galveston,GLS,15,2016-01-10,"Galveston, TX",60,47,1,0.55,10.08,Texas,10,2016
+53,Houston,HOU,15,2016-01-10,"Houston, TX",62,44,1,1.62,6.64,Texas,10,2016
+36,Lubbock,LBB,22,2016-01-10,"Lubbock, TX",44,27,1,0.29,8.08,Texas,10,2016
+42,Midland,MAF,19,2016-01-10,"Midland, TX",53,32,1,0.05,8.64,Texas,10,2016
+43,San Angelo,SJT,18,2016-01-10,"San Angelo, TX",55,31,1,0.0,6.71,Texas,10,2016
+51,San Antonio,SAT,19,2016-01-10,"San Antonio, TX",60,40,1,0.06,4.42,Texas,10,2016
+52,Victoria,VCT,18,2016-01-10,"Victoria, TX",63,41,1,1.5,6.75,Texas,10,2016
+45,Waco,ACT,23,2016-01-10,"Waco, TX",54,36,1,0.22,5.95,Texas,10,2016
+39,Wichita Falls,SPS,12,2016-01-10,"Wichita Falls, TX",48,30,1,0.11,9.68,Texas,10,2016
+31,Salt Lake City,SLC,26,2016-01-10,"Salt Lake City, UT",35,26,1,0.29,2.1,Utah,10,2016
+34,Blacksburg,BCB,20,2016-01-10,"Blacksburg, VA",43,24,1,0.9,4.11,VA,10,2016
+25,Burlington,BTV,14,2016-01-10,"Burlington, VT",33,16,1,0.52,5.81,Vermont,10,2016
+35,Lynchburg,LYH,13,2016-01-10,"Lynchburg, VA",43,27,1,0.71,3.3,Virginia,10,2016
+44,Norfolk,ORF,10,2016-01-10,"Norfolk, VA",50,38,1,0.11,11.3,Virginia,10,2016
+39,Richmond,RIC,19,2016-01-10,"Richmond, VA",47,30,1,0.68,7.08,Virginia,10,2016
+34,Roanoke,ROA,20,2016-01-10,"Roanoke, VA",43,24,1,0.9,4.11,Virginia,10,2016
+40,Wallops Island,WAL,14,2016-01-10,"Wallops Island, VA",49,31,1,0.27,7.78,Virginia,10,2016
+37,Washington,DCA,17,2016-01-10,"Washington, VA",44,29,1,0.79,6.91,Virginia,10,2016
+31,Deer Park,DEW,9,2016-01-10,"Deer Park, WA",34,28,1,0.09,3.01,Washington,10,2016
+32,Ephrata,EPH,21,2016-01-10,"Ephrata, WA",35,29,1,0.16,2.58,Washington,10,2016
+36,Olympia,OLM,9,2016-01-10,"Olympia, WA",41,30,1,0.34,0.92,Washington,10,2016
+41,Quillayute,UIL,7,2016-01-10,"Quillayute, WA",49,32,1,0.38,4.31,Washington,10,2016
+41,Seattle,SEA,5,2016-01-10,"Seattle, WA",47,35,1,0.26,3.92,Washington,10,2016
+31,Spokane,GEG,13,2016-01-10,"Spokane, WA",34,27,1,0.02,4.82,Washington,10,2016
+33,Yakima,YKM,27,2016-01-10,"Yakima, WA",36,29,1,0.21,1.44,Washington,10,2016
+33,Beckley,BKW,17,2016-01-10,"Beckley, WV",42,23,1,0.53,7.3,West Virginia,10,2016
+35,Charleston,CRW,18,2016-01-10,"Charleston, WV",47,22,1,0.23,3.77,West Virginia,10,2016
+29,Elkins,EKN,26,2016-01-10,"Elkins, WV",44,14,1,0.47,3.06,West Virginia,10,2016
+34,Huntington,HTS,16,2016-01-10,"Huntington, WV",45,23,1,0.52,4.12,West Virginia,10,2016
+23,Green Bay,GRB,18,2016-01-10,"Green Bay, WI",30,15,1,0.72,7.77,Wisconsin,10,2016
+23,La Crosse,LSE,20,2016-01-10,"La Crosse, WI",29,16,1,0.56,8.21,Wisconsin,10,2016
+24,Madison,MSN,18,2016-01-10,"Madison, WI",29,16,1,0.52,7.25,Wisconsin,10,2016
+27,Milwaukee,MKE,24,2016-01-10,"Milwaukee, WI",33,20,1,0.27,8.01,Wisconsin,10,2016
+22,Casper,CPR,25,2016-01-10,"Casper, WY",30,14,1,0.3,9.98,Wyoming,10,2016
+25,Cheyenne,CYS,29,2016-01-10,"Cheyenne, WY",37,14,1,0.29,4.95,Wyoming,10,2016
+15,Lander,LND,28,2016-01-10,"Lander, WY",23,6,1,0.36,0.7,Wyoming,10,2016
+18,Rawlins,RWL,11,2016-01-10,"Rawlins, WY",27,9,1,0.3,5.52,Wyoming,10,2016
+22,Sheridan,SHR,28,2016-01-10,"Sheridan, WY",32,11,1,0.01,2.97,Wyoming,10,2016
+42,Birmingham,BHM,28,2016-01-17,"Birmingham, AL",52,31,1,0.34,3.94,Alabama,17,2016
+39,Huntsville,HSV,22,2016-01-17,"Huntsville, AL",49,29,1,0.16,4.57,Alabama,17,2016
+48,Mobile,MOB,16,2016-01-17,"Mobile, AL",60,35,1,2.24,4.37,Alabama,17,2016
+45,Montgomery,MGM,26,2016-01-17,"Montgomery, AL",56,32,1,1.48,3.92,Alabama,17,2016
+24,Anchorage,ANC,7,2016-01-17,"Anchorage, AK",28,19,1,0.15,3.78,Alaska,17,2016
+43,Annette,ANN,10,2016-01-17,"Annette, AK",46,38,1,2.59,8.68,Alaska,17,2016
+16,Bethel,BET,7,2016-01-17,"Bethel, AK",20,11,1,0.06,20.24,Alaska,17,2016
+2,Bettles,BTT,34,2016-01-17,"Bettles, AK",10,-7,1,0.17,4.45,Alaska,17,2016
+32,Cold Bay,CDB,10,2016-01-17,"Cold Bay, AK",36,28,1,0.15,13.8,Alaska,17,2016
+31,Cordova,CDV,8,2016-01-17,"Cordova, AK",39,22,1,1.17,1.84,Alaska,17,2016
+10,Delta Junction/Ft Greely,BIG,19,2016-01-17,"Delta Junction/Ft Greely, AK",16,6,1,0.04,9.87,Alaska,17,2016
+-1,Fairbanks,FAI,16,2016-01-17,"Fairbanks, AK",7,-10,1,0.0,1.84,Alaska,17,2016
+9,Gulkana,GKN,18,2016-01-17,"Gulkana, AK",14,3,1,0.2,1.0,Alaska,17,2016
+29,Homer,HOM,4,2016-01-17,"Homer, AK",34,24,1,0.46,2.5,Alaska,17,2016
+26,Iliamna,ILI,10,2016-01-17,"Iliamna, AK",32,20,1,0.0,8.08,Alaska,17,2016
+36,Juneau,JNU,12,2016-01-17,"Juneau, AK",40,32,1,1.74,3.87,Alaska,17,2016
+24,Kenai,ENA,7,2016-01-17,"Kenai, AK",29,19,1,0.26,8.41,Alaska,17,2016
+42,Ketchikan,KTN,14,2016-01-17,"Ketchikan, AK",45,38,1,4.97,10.3,Alaska,17,2016
+29,King Salmon,AKN,6,2016-01-17,"King Salmon, AK",36,22,1,0.11,8.61,Alaska,17,2016
+35,Kodiak,ADQ,11,2016-01-17,"Kodiak, AK",38,30,1,0.35,11.8,Alaska,17,2016
+15,Kotzebue,OTZ,6,2016-01-17,"Kotzebue, AK",18,9,1,0.03,12.82,Alaska,17,2016
+1,Mc Grath,MCG,23,2016-01-17,"Mc Grath, AK",8,-6,1,0.03,1.24,Alaska,17,2016
+18,Nome,OME,5,2016-01-17,"Nome, AK",24,10,1,0.06,9.64,Alaska,17,2016
+7,Northway,ORT,13,2016-01-17,"Northway, AK",12,2,1,0.0,0.41,Alaska,17,2016
+23,Palmer,PAQ,31,2016-01-17,"Palmer, AK",29,16,1,0.01,3.81,Alaska,17,2016
+60,Petersburg,PSG,15,2016-01-17,"Petersburg, AK",60,60,1,0.0,3.61,Alaska,17,2016
+60,Shemya,SYA,6,2016-01-17,"Shemya, AK",60,60,1,0.0,10.63,Alaska,17,2016
+44,Sitka,SIT,11,2016-01-17,"Sitka, AK",47,41,1,1.66,12.07,Alaska,17,2016
+37,Skagway,SGY,5,2016-01-17,"Skagway, AK",41,34,1,0.42,6.3,Alaska,17,2016
+29,St Paul Island,SNP,11,2016-01-17,"St Paul Island, AK",35,22,1,0.17,16.75,Alaska,17,2016
+18,Talkeetna,TKA,7,2016-01-17,"Talkeetna, AK",28,8,1,0.1,3.24,Alaska,17,2016
+1,Tanana,TAL,8,2016-01-17,"Tanana, AK",8,-6,1,0.0,5.85,Alaska,17,2016
+-4,Utqiagvik (Barrow),BRW,5,2016-01-17,"Utqiagvik (Barrow), AK",0,-9,1,0.03,15.85,Alaska,17,2016
+34,Yakutat,YAK,7,2016-01-17,"Yakutat, AK",40,29,1,1.62,2.44,Alaska,17,2016
+41,Douglas Bisbee,DUG,28,2016-01-17,"Douglas Bisbee, AZ",60,21,1,0.0,4.02,Arizona,17,2016
+41,Kingman,IGM,8,2016-01-17,"Kingman, AZ",55,26,1,0.0,2.62,Arizona,17,2016
+52,Phoenix,PHX,12,2016-01-17,"Phoenix, AZ",63,40,1,0.0,1.67,Arizona,17,2016
+49,Tucson,TUS,18,2016-01-17,"Tucson, AZ",64,34,1,0.0,1.95,Arizona,17,2016
+31,Winslow,INW,17,2016-01-17,"Winslow, AZ",47,15,1,0.06,1.84,Arizona,17,2016
+39,Fort Smith,FSM,23,2016-01-17,"Fort Smith, AR",52,26,1,0.0,4.67,Arkansas,17,2016
+36,Harrison,HRO,26,2016-01-17,"Harrison, AR",48,24,1,0.0,7.31,Arkansas,17,2016
+42,North Little Rock,LZK,0,2016-01-17,"North Little Rock, AR",52,32,1,0.03,0.0,Arkansas,17,2016
+53,Bakersfield,BFL,6,2016-01-17,"Bakersfield, CA",63,42,1,0.01,1.52,California,17,2016
+38,Bishop,BIH,26,2016-01-17,"Bishop, CA",56,20,1,0.0,3.05,California,17,2016
+43,China Lake,NID,21,2016-01-17,"China Lake, CA",58,28,1,0.0,2.4,California,17,2016
+52,Concord,CCR,14,2016-01-17,"Concord, CA",57,45,1,1.22,4.11,California,17,2016
+53,Eureka,EKA,0,2016-01-17,"Eureka, CA",59,46,1,4.93,0.0,California,17,2016
+51,Fresno,FAT,9,2016-01-17,"Fresno, CA",59,42,1,0.13,2.27,California,17,2016
+54,Hayward,HWD,13,2016-01-17,"Hayward, CA",60,48,1,1.04,4.65,California,17,2016
+57,Long Beach,LGB,25,2016-01-17,"Long Beach, CA",65,47,1,0.0,2.27,California,17,2016
+56,Los Angeles,LAX,24,2016-01-17,"Los Angeles, CA",63,49,1,0.0,2.31,California,17,2016
+49,Red Bluff,RBL,20,2016-01-17,"Red Bluff, CA",53,43,1,2.58,7.35,California,17,2016
+47,Redding,RDD,23,2016-01-17,"Redding, CA",53,41,1,4.13,4.5,California,17,2016
+50,Sacramento,SAC,19,2016-01-17,"Sacramento, CA",57,42,1,1.09,4.94,California,17,2016
+54,Salinas,SNS,11,2016-01-17,"Salinas, CA",61,46,1,0.21,6.24,California,17,2016
+57,San Diego,SAN,29,2016-01-17,"San Diego, CA",65,49,1,0.04,2.18,California,17,2016
+54,San Francisco,SFO,16,2016-01-17,"San Francisco, CA",58,49,1,1.39,5.37,California,17,2016
+46,Sandberg,SDB,21,2016-01-17,"Sandberg, CA",52,38,1,0.0,11.37,California,17,2016
+55,Santa Barbara,SBA,20,2016-01-17,"Santa Barbara, CA",66,44,1,0.0,1.54,California,17,2016
+56,Santa Maria,SMX,26,2016-01-17,"Santa Maria, CA",65,46,1,0.05,1.5,California,17,2016
+50,Stockton,SCK,16,2016-01-17,"Stockton, CA",59,42,1,0.86,5.32,California,17,2016
+3,Alamosa,ALS,25,2016-01-17,"Alamosa, CO",23,-17,1,0.0,1.72,Colorado,17,2016
+29,Colorado Springs,COS,19,2016-01-17,"Colorado Springs, CO",41,17,1,0.02,3.48,Colorado,17,2016
+6,Craig,CAG,22,2016-01-17,"Craig, CO",21,-8,1,0.33,1.78,Colorado,17,2016
+29,Denver,DEN,20,2016-01-17,"Denver, CO",41,17,1,0.01,6.7,Colorado,17,2016
+21,Grand Junction,GJT,9,2016-01-17,"Grand Junction, CO",30,10,1,0.03,2.45,Colorado,17,2016
+28,Pueblo,PUB,17,2016-01-17,"Pueblo, CO",42,13,1,0.0,3.47,Colorado,17,2016
+34,Bridgeport,BDR,25,2016-01-17,"Bridgeport, CT",42,27,1,0.32,8.78,Connecticut,17,2016
+30,Windsor Locks,BDL,23,2016-01-17,"Windsor Locks, CT",37,21,1,0.4,7.04,Connecticut,17,2016
+34,Wilmington,ILG,26,2016-01-17,"Wilmington, DE",43,25,1,0.45,7.75,Delaware,17,2016
+56,Daytona Beach,DAB,24,2016-01-17,"Daytona Beach, FL",66,45,1,2.39,4.51,Florida,17,2016
+67,Fort Lauderdale,FLL,24,2016-01-17,"Fort Lauderdale, FL",74,60,1,1.55,7.05,Florida,17,2016
+50,Gainesville,GNV,24,2016-01-17,"Gainesville, FL",62,37,1,1.37,3.34,Florida,17,2016
+49,Jacksonville,JAX,23,2016-01-17,"Jacksonville, FL",62,36,1,1.66,4.31,Florida,17,2016
+69,Key West,EYW,10,2016-01-17,"Key West, FL",74,65,1,1.18,9.78,Florida,17,2016
+67,Miami,MIA,23,2016-01-17,"Miami, FL",73,60,1,1.97,5.85,Florida,17,2016
+58,Orlando,MCO,25,2016-01-17,"Orlando, FL",69,47,1,2.22,6.45,Florida,17,2016
+50,Pensacola,PNS,25,2016-01-17,"Pensacola, FL",60,39,1,0.49,4.84,Florida,17,2016
+51,Tallahassee,TLH,27,2016-01-17,"Tallahassee, FL",63,38,1,1.69,3.68,Florida,17,2016
+59,Tampa,TPA,16,2016-01-17,"Tampa, FL",67,51,1,1.6,6.1,Florida,17,2016
+61,Vero Beach,VRB,24,2016-01-17,"Vero Beach, FL",70,51,1,2.32,6.1,Florida,17,2016
+66,West Palm Beach,PBI,23,2016-01-17,"West Palm Beach, FL",74,57,1,1.58,7.77,Florida,17,2016
+48,Alma,AMG,25,2016-01-17,"Alma, GA",60,35,1,1.87,3.54,Georgia,17,2016
+42,Athens,AHN,23,2016-01-17,"Athens, GA",54,30,1,1.1,4.77,Georgia,17,2016
+42,Atlanta,ATL,29,2016-01-17,"Atlanta, GA",52,32,1,1.58,6.9,Georgia,17,2016
+44,Augusta,AGS,26,2016-01-17,"Augusta, GA",57,31,1,0.73,4.91,Georgia,17,2016
+45,Macon,MCN,27,2016-01-17,"Macon, GA",57,32,1,0.9,4.85,Georgia,17,2016
+48,Savannah,SAV,26,2016-01-17,"Savannah, GA",60,35,1,1.82,5.1,Georgia,17,2016
+73,Hilo,ITO,19,2016-01-17,"Hilo, HI",84,62,1,0.05,2.62,Hawaii,17,2016
+73,Honolulu,HNL,20,2016-01-17,"Honolulu, HI",80,65,1,0.0,1.54,Hawaii,17,2016
+71,Kahului,OGG,7,2016-01-17,"Kahului, HI",83,59,1,0.0,3.07,Hawaii,17,2016
+70,Kaunakakai,MKK,6,2016-01-17,"Kaunakakai, HI",81,58,1,0.0,2.6,Hawaii,17,2016
+71,Lihue,LIH,27,2016-01-17,"Lihue, HI",79,62,1,0.0,4.65,Hawaii,17,2016
+32,Boise,BOI,13,2016-01-17,"Boise, ID",39,26,1,0.24,6.02,Idaho,17,2016
+36,Lewiston,LWS,12,2016-01-17,"Lewiston, ID",42,30,1,0.39,5.28,Idaho,17,2016
+26,Pocatello,PIH,17,2016-01-17,"Pocatello, ID",33,19,1,0.2,6.27,Idaho,17,2016
+21,Chicago,ORD,25,2016-01-17,"Chicago, IL",27,8,1,0.13,11.2,Illinois,17,2016
+20,Moline,MLI,25,2016-01-17,"Moline, IL",30,10,1,0.01,11.21,Illinois,17,2016
+21,Peoria,PIA,25,2016-01-17,"Peoria, IL",32,10,1,0.03,9.38,Illinois,17,2016
+24,Quincy,UIN,26,2016-01-17,"Quincy, IL",35,13,1,0.0,11.27,Illinois,17,2016
+16,Rockford,RFD,25,2016-01-17,"Rockford, IL",24,6,1,0.06,9.47,Illinois,17,2016
+26,Springfield,SPI,25,2016-01-17,"Springfield, IL",37,14,1,0.14,11.17,Illinois,17,2016
+31,Evansville,EVV,24,2016-01-17,"Evansville, IN",41,20,1,0.13,7.32,Indiana,17,2016
+22,Fort Wayne,FWA,24,2016-01-17,"Fort Wayne, IN",31,13,1,0.36,12.71,Indiana,17,2016
+24,Indianapolis,IND,23,2016-01-17,"Indianapolis, IN",34,13,1,0.19,11.1,Indiana,17,2016
+22,South Bend,SBN,24,2016-01-17,"South Bend, IN",29,12,1,0.4,11.74,Indiana,17,2016
+16,Cedar Rapids,CID,26,2016-01-17,"Cedar Rapids, IA",25,6,1,0.0,12.57,Iowa,17,2016
+20,Des Moines,DSM,29,2016-01-17,"Des Moines, IA",29,9,1,0.04,10.51,Iowa,17,2016
+16,Dubuque,DBQ,25,2016-01-17,"Dubuque, IA",22,4,1,0.05,11.17,Iowa,17,2016
+16,Sioux City,SUX,25,2016-01-17,"Sioux City, IA",26,4,1,0.01,7.7,Iowa,17,2016
+11,Waterloo,ALO,25,2016-01-17,"Waterloo, IA",21,1,1,0.02,9.1,Iowa,17,2016
+29,Concordia,CNK,22,2016-01-17,"Concordia, KS",39,20,1,0.0,7.45,Kansas,17,2016
+34,Dodge City,DDC,24,2016-01-17,"Dodge City, KS",47,21,1,0.03,6.07,Kansas,17,2016
+30,Goodland,GLD,26,2016-01-17,"Goodland, KS",45,15,1,0.0,9.48,Kansas,17,2016
+35,Medicine Lodge,P28,16,2016-01-17,"Medicine Lodge, KS",47,22,1,0.0,4.01,Kansas,17,2016
+30,Topeka,TOP,28,2016-01-17,"Topeka, KS",40,19,1,0.0,6.17,Kansas,17,2016
+34,Wichita,ICT,24,2016-01-17,"Wichita, KS",45,22,1,0.0,6.2,Kansas,17,2016
+29,Covington,CVG,23,2016-01-17,"Covington, KY",37,17,1,0.32,9.3,Kentucky,17,2016
+32,Jackson,JKL,24,2016-01-17,"Jackson, KY",41,23,1,0.17,3.6,Kentucky,17,2016
+31,Lexington,LEX,23,2016-01-17,"Lexington, KY",41,20,1,0.12,9.88,Kentucky,17,2016
+31,Louisville,SDF,23,2016-01-17,"Louisville, KY",41,21,1,0.15,9.22,Kentucky,17,2016
+34,Paducah,PAH,25,2016-01-17,"Paducah, KY",44,23,1,0.05,6.31,Kentucky,17,2016
+49,Baton Rouge,BTR,15,2016-01-17,"Baton Rouge, LA",62,37,1,1.15,3.87,Louisiana,17,2016
+49,Lake Charles,LCH,18,2016-01-17,"Lake Charles, LA",60,37,1,0.3,3.52,Louisiana,17,2016
+53,New Orleans,MSY,16,2016-01-17,"New Orleans, LA",62,44,1,1.4,6.21,Louisiana,17,2016
+46,Shreveport,SHV,20,2016-01-17,"Shreveport, LA",59,33,1,0.03,4.24,Louisiana,17,2016
+49,Slidell,ASD,16,2016-01-17,"Slidell, LA",63,36,1,1.22,2.48,Louisiana,17,2016
+21,Bangor,BGR,22,2016-01-17,"Bangor, ME",30,10,1,0.32,5.27,Maine,17,2016
+14,Caribou,CAR,22,2016-01-17,"Caribou, ME",22,5,1,0.65,6.17,Maine,17,2016
+26,Portland,PWM,29,2016-01-17,"Portland, ME",33,19,1,1.13,7.44,Maine,17,2016
+34,Baltimore,BWI,25,2016-01-17,"Baltimore, MD",43,24,1,0.29,6.44,Maryland,17,2016
+36,Salisbury,SBY,26,2016-01-17,"Salisbury, MD",47,25,1,1.53,6.84,Maryland,17,2016
+32,Boston,BOS,25,2016-01-17,"Boston, MA",39,25,1,1.4,10.74,Massachusetts,17,2016
+60,Milton,MQE,25,2016-01-17,"Milton, MA",60,60,1,0.0,10.58,Massachusetts,17,2016
+26,Worcester,ORH,25,2016-01-17,"Worcester, MA",32,19,1,0.82,9.22,Massachusetts,17,2016
+18,Alpena,APN,21,2016-01-17,"Alpena, MI",24,12,1,0.54,6.11,Michigan,17,2016
+23,Detroit,DTW,22,2016-01-17,"Detroit, MI",29,16,1,0.51,11.27,Michigan,17,2016
+24,Flint,FNT,23,2016-01-17,"Flint, MI",29,17,1,0.3,10.68,Michigan,17,2016
+21,Grand Rapids,GRR,23,2016-01-17,"Grand Rapids, MI",26,16,1,0.51,9.8,Michigan,17,2016
+17,Houghton Lake,HTL,22,2016-01-17,"Houghton Lake, MI",21,12,1,0.3,7.62,Michigan,17,2016
+21,Lansing,LAN,23,2016-01-17,"Lansing, MI",27,15,1,0.24,10.92,Michigan,17,2016
+7,Marquette,MQT,0,2016-01-17,"Marquette, MI",12,1,1,0.37,0.0,Michigan,17,2016
+22,Muskegon,MKG,24,2016-01-17,"Muskegon, MI",27,16,1,0.87,9.25,Michigan,17,2016
+9,Sault Ste Marie,ANJ,16,2016-01-17,"Sault Ste Marie, MI",15,3,1,0.46,4.85,Michigan,17,2016
+-1,Duluth,DLH,27,2016-01-17,"Duluth, MN",7,-9,1,0.31,9.84,Minnesota,17,2016
+-7,International Falls,INL,23,2016-01-17,"International Falls, MN",0,-16,1,0.1,5.2,Minnesota,17,2016
+5,Minneapolis,MSP,24,2016-01-17,"Minneapolis, MN",13,-2,1,0.03,8.41,Minnesota,17,2016
+3,Rochester,RST,25,2016-01-17,"Rochester, MN",12,-6,1,0.02,11.48,Minnesota,17,2016
+2,St Cloud,STC,24,2016-01-17,"St Cloud, MN",10,-7,1,0.04,7.98,Minnesota,17,2016
+43,Greenville,GLH,19,2016-01-17,"Greenville, MS",54,32,1,0.0,5.97,Mississippi,17,2016
+42,Greenwood,GWO,23,2016-01-17,"Greenwood, MS",55,29,1,0.02,3.5,Mississippi,17,2016
+49,Gulfport,GPT,16,2016-01-17,"Gulfport, MS",60,37,1,1.33,3.67,Mississippi,17,2016
+47,Hattiesburg,HBG,21,2016-01-17,"Hattiesburg, MS",61,33,1,0.71,3.25,Mississippi,17,2016
+45,Jackson,JAN,22,2016-01-17,"Jackson, MS",58,32,1,0.01,4.22,Mississippi,17,2016
+44,Meridian,MEI,22,2016-01-17,"Meridian, MS",58,29,1,0.1,3.55,Mississippi,17,2016
+41,Tupelo,TUP,16,2016-01-17,"Tupelo, MS",53,29,1,0.18,5.01,Mississippi,17,2016
+33,Cape Girardeau,CGI,26,2016-01-17,"Cape Girardeau, MO",43,22,1,0.12,7.55,Missouri,17,2016
+28,Columbia,COU,26,2016-01-17,"Columbia, MO",40,16,1,0.03,9.5,Missouri,17,2016
+28,Kansas City,MCI,28,2016-01-17,"Kansas City, MO",39,16,1,0.06,8.87,Missouri,17,2016
+29,Rolla/Vichy,VIH,26,2016-01-17,"Rolla/Vichy, MO",40,17,1,0.04,10.21,Missouri,17,2016
+33,Springfield,SGF,26,2016-01-17,"Springfield, MO",44,20,1,0.12,9.04,Missouri,17,2016
+26,St Joseph,STJ,28,2016-01-17,"St Joseph, MO",38,14,1,0.0,8.68,Missouri,17,2016
+32,St Louis,STL,26,2016-01-17,"St Louis, MO",44,20,1,0.1,9.24,Missouri,17,2016
+26,Billings,BIL,19,2016-01-17,"Billings, MT",33,20,1,0.2,12.5,Montana,17,2016
+16,Butte,BTM,15,2016-01-17,"Butte, MT",28,3,1,0.09,1.27,Montana,17,2016
+22,Cut Bank,CTB,24,2016-01-17,"Cut Bank, MT",27,16,1,0.33,12.58,Montana,17,2016
+21,Dillon,DLN,21,2016-01-17,"Dillon, MT",29,14,1,0.0,11.6,Montana,17,2016
+11,Glasgow,GGW,19,2016-01-17,"Glasgow, MT",20,2,1,0.03,5.87,Montana,17,2016
+25,Great Falls,GTF,19,2016-01-17,"Great Falls, MT",32,18,1,0.34,10.37,Montana,17,2016
+17,Havre,HVR,16,2016-01-17,"Havre, MT",26,7,1,0.21,9.31,Montana,17,2016
+25,Helena,HLN,27,2016-01-17,"Helena, MT",33,17,1,0.11,3.1,Montana,17,2016
+30,Kalispell,GPI,18,2016-01-17,"Kalispell, MT",34,25,1,0.45,3.08,Montana,17,2016
+20,Miles City,MLS,26,2016-01-17,"Miles City, MT",29,11,1,0.13,6.2,Montana,17,2016
+23,Missoula,MSO,25,2016-01-17,"Missoula, MT",28,17,1,0.26,0.77,Montana,17,2016
+26,Grand Island,GRI,29,2016-01-17,"Grand Island, NE",35,16,1,0.04,8.32,Nebraska,17,2016
+25,Lincoln,LNK,25,2016-01-17,"Lincoln, NE",36,12,1,0.04,7.34,Nebraska,17,2016
+21,Norfolk,OFK,30,2016-01-17,"Norfolk, NE",30,9,1,0.02,9.01,Nebraska,17,2016
+27,North Platte,LBF,21,2016-01-17,"North Platte, NE",41,13,1,0.03,7.05,Nebraska,17,2016
+22,Omaha,OMA,28,2016-01-17,"Omaha, NE",32,10,1,0.04,8.28,Nebraska,17,2016
+26,Scottsbluff,BFF,27,2016-01-17,"Scottsbluff, NE",37,15,1,0.02,9.05,Nebraska,17,2016
+26,Sidney,SNY,27,2016-01-17,"Sidney, NE",35,16,1,0.01,11.85,Nebraska,17,2016
+22,Valentine,VTN,29,2016-01-17,"Valentine, NE",30,12,1,0.07,8.32,Nebraska,17,2016
+17,Ely,ELY,19,2016-01-17,"Ely, NV",32,3,1,0.21,8.45,Nevada,17,2016
+21,Eureka,P68,22,2016-01-17,"Eureka, NV",34,7,1,0.48,3.54,Nevada,17,2016
+45,Las Vegas,LAS,19,2016-01-17,"Las Vegas, NV",54,36,1,0.0,1.44,Nevada,17,2016
+41,Mercury,DRA,7,2016-01-17,"Mercury, NV",53,28,1,0.0,3.42,Nevada,17,2016
+38,Reno,RNO,25,2016-01-17,"Reno, NV",48,28,1,0.13,4.6,Nevada,17,2016
+31,Winnemucca,WMC,14,2016-01-17,"Winnemucca, NV",39,23,1,0.39,5.87,Nevada,17,2016
+25,Concord,CON,22,2016-01-17,"Concord, NH",33,17,1,0.45,5.57,New Hampshire,17,2016
+60,Mt. Washington,MWN,26,2016-01-17,"Mt. Washington, NH",60,60,1,0.0,43.85,New Hampshire,17,2016
+33,Atlantic City,ACY,26,2016-01-17,"Atlantic City, NJ",44,24,1,0.83,8.05,New Jersey,17,2016
+35,Newark,EWR,24,2016-01-17,"Newark, NJ",42,27,1,0.34,9.38,New Jersey,17,2016
+34,Albuquerque,ABQ,30,2016-01-17,"Albuquerque, NM",45,22,1,0.0,6.34,New Mexico,17,2016
+35,Clayton,CAO,26,2016-01-17,"Clayton, NM",48,21,1,0.0,4.98,New Mexico,17,2016
+38,Roswell,ROW,30,2016-01-17,"Roswell, NM",53,23,1,0.0,4.51,New Mexico,17,2016
+27,Albany,ALB,22,2016-01-17,"Albany, NY",34,19,1,0.31,6.57,New York,17,2016
+23,Binghamton,BGM,24,2016-01-17,"Binghamton, NY",29,17,1,0.52,7.28,New York,17,2016
+24,Buffalo,BUF,23,2016-01-17,"Buffalo, NY",31,17,1,0.77,10.52,New York,17,2016
+24,Glens Falls,GFL,22,2016-01-17,"Glens Falls, NY",32,15,1,0.24,4.47,New York,17,2016
+35,Islip,ISP,26,2016-01-17,"Islip, NY",42,27,1,0.59,9.08,New York,17,2016
+37,New York,LGA,25,2016-01-17,"New York, NY",43,29,1,0.31,10.01,New York,17,2016
+26,Rochester,ROC,23,2016-01-17,"Rochester, NY",33,18,1,0.35,10.5,New York,17,2016
+25,Syracuse,SYR,21,2016-01-17,"Syracuse, NY",31,18,1,0.52,10.32,New York,17,2016
+34,Asheville,AVL,31,2016-01-17,"Asheville, NC",45,23,1,1.21,6.58,North Carolina,17,2016
+47,Cape Hatteras,HSE,28,2016-01-17,"Cape Hatteras, NC",57,36,1,1.33,8.34,North Carolina,17,2016
+41,Charlotte,CLT,22,2016-01-17,"Charlotte, NC",51,30,1,0.97,4.27,North Carolina,17,2016
+39,Greensboro,GSO,24,2016-01-17,"Greensboro, NC",48,28,1,0.61,5.6,North Carolina,17,2016
+38,Hickory,HKY,28,2016-01-17,"Hickory, NC",50,27,1,1.4,2.88,North Carolina,17,2016
+41,Raleigh/Durham,RDU,25,2016-01-17,"Raleigh/Durham, NC",50,30,1,0.5,3.85,North Carolina,17,2016
+45,Wilmington,ILM,27,2016-01-17,"Wilmington, NC",56,32,1,1.45,5.88,North Carolina,17,2016
+9,Bismarck,BIS,18,2016-01-17,"Bismarck, ND",19,-2,1,0.12,6.18,North Dakota,17,2016
+11,Dickinson,DIK,29,2016-01-17,"Dickinson, ND",22,1,1,0.04,9.95,North Dakota,17,2016
+-3,Fargo,FAR,23,2016-01-17,"Fargo, ND",7,-10,1,0.27,6.81,North Dakota,17,2016
+-6,Grand Forks,GFK,27,2016-01-17,"Grand Forks, ND",3,-13,1,0.28,7.31,North Dakota,17,2016
+8,Williston,ISN,29,2016-01-17,"Williston, ND",19,-2,1,0.15,5.81,North Dakota,17,2016
+24,Akron,CAK,23,2016-01-17,"Akron, OH",32,16,1,0.33,11.85,Ohio,17,2016
+25,Cleveland,CLE,22,2016-01-17,"Cleveland, OH",32,17,1,0.4,13.27,Ohio,17,2016
+26,Columbus,CMH,23,2016-01-17,"Columbus, OH",35,16,1,0.23,9.61,Ohio,17,2016
+23,Dayton,DAY,23,2016-01-17,"Dayton, OH",33,13,1,0.32,12.37,Ohio,17,2016
+23,Mansfield,MFD,22,2016-01-17,"Mansfield, OH",32,14,1,0.39,11.87,Ohio,17,2016
+23,Toledo,TOL,24,2016-01-17,"Toledo, OH",30,16,1,0.53,11.81,Ohio,17,2016
+24,Youngstown/Warren,YNG,22,2016-01-17,"Youngstown/Warren, OH",32,16,1,0.41,10.61,Ohio,17,2016
+36,Gage,GAG,21,2016-01-17,"Gage, OK",50,21,1,0.01,3.9,Oklahoma,17,2016
+39,Oklahoma City,OKC,16,2016-01-17,"Oklahoma City, OK",52,27,1,0.0,6.74,Oklahoma,17,2016
+37,Ponca City,PNC,16,2016-01-17,"Ponca City, OK",50,25,1,0.0,3.47,Oklahoma,17,2016
+38,Tulsa,TUL,23,2016-01-17,"Tulsa, OK",49,26,1,0.0,7.0,Oklahoma,17,2016
+48,Astoria,AST,14,2016-01-17,"Astoria, OR",53,42,1,4.01,6.82,Oregon,17,2016
+25,Burns,BNO,17,2016-01-17,"Burns, OR",33,13,1,0.45,1.78,Oregon,17,2016
+45,Eugene,EUG,19,2016-01-17,"Eugene, OR",51,38,1,2.94,5.82,Oregon,17,2016
+43,Medford,MFR,18,2016-01-17,"Medford, OR",51,34,1,2.3,2.91,Oregon,17,2016
+38,Pendleton,PDT,15,2016-01-17,"Pendleton, OR",45,29,1,0.88,3.1,Oregon,17,2016
+43,Portland,PDX,12,2016-01-17,"Portland, OR",46,40,1,3.68,10.4,Oregon,17,2016
+37,Redmond,RDM,16,2016-01-17,"Redmond, OR",46,28,1,0.5,5.97,Oregon,17,2016
+44,Salem,SLE,17,2016-01-17,"Salem, OR",50,38,1,3.38,4.98,Oregon,17,2016
+31,Allentown,ABE,23,2016-01-17,"Allentown, PA",39,22,1,0.35,6.05,Pennsylvania,17,2016
+27,Erie,ERI,22,2016-01-17,"Erie, PA",34,20,1,0.94,12.41,Pennsylvania,17,2016
+32,Harrisburg,MDT,25,2016-01-17,"Harrisburg, PA",40,24,1,0.37,6.42,Pennsylvania,17,2016
+36,Philadelphia,PHL,26,2016-01-17,"Philadelphia, PA",44,28,1,0.4,8.68,Pennsylvania,17,2016
+25,Pittsburgh,PIT,23,2016-01-17,"Pittsburgh, PA",33,17,1,0.44,8.61,Pennsylvania,17,2016
+27,Wilkes-Barre/Scranton,AVP,22,2016-01-17,"Wilkes-Barre/Scranton, PA",33,20,1,0.33,5.02,Pennsylvania,17,2016
+27,Williamsport,IPT,22,2016-01-17,"Williamsport, PA",33,21,1,0.27,5.91,Pennsylvania,17,2016
+78,San Juan,SJU,8,2016-01-17,"San Juan, PR",83,73,1,0.11,4.28,Puerto Rico,17,2016
+32,Providence,PVD,25,2016-01-17,"Providence, RI",40,24,1,1.17,7.8,Rhode Island,17,2016
+42,Anderson,AND,26,2016-01-17,"Anderson, SC",53,30,1,1.0,6.0,South Carolina,17,2016
+48,Charleston,CHS,27,2016-01-17,"Charleston, SC",60,36,1,1.69,5.04,South Carolina,17,2016
+44,Columbia,CAE,26,2016-01-17,"Columbia, SC",57,31,1,0.81,4.88,South Carolina,17,2016
+41,Greer,GSP,22,2016-01-17,"Greer, SC",52,30,1,1.49,5.17,South Carolina,17,2016
+7,Aberdeen,ABR,24,2016-01-17,"Aberdeen, SD",17,-3,1,0.05,7.18,South Dakota,17,2016
+8,Huron,HON,29,2016-01-17,"Huron, SD",20,-4,1,0.04,7.28,South Dakota,17,2016
+16,Pierre,PIR,28,2016-01-17,"Pierre, SD",26,5,1,0.12,7.71,South Dakota,17,2016
+23,Rapid City,RAP,24,2016-01-17,"Rapid City, SD",33,13,1,0.09,6.98,South Dakota,17,2016
+9,Sioux Falls,FSD,30,2016-01-17,"Sioux Falls, SD",20,-2,1,0.02,6.31,South Dakota,17,2016
+32,Bristol/Jhnsn Cty/Kngsprt,TRI,25,2016-01-17,"Bristol/Jhnsn Cty/Kngsprt, TN",41,22,1,0.5,5.47,Tennessee,17,2016
+38,Chattanooga,CHA,30,2016-01-17,"Chattanooga, TN",48,28,1,0.28,3.3,Tennessee,17,2016
+35,Clarksville,CKV,25,2016-01-17,"Clarksville, TN",45,25,1,0.35,7.61,Tennessee,17,2016
+33,Crossville,CSV,25,2016-01-17,"Crossville, TN",42,24,1,0.07,4.94,Tennessee,17,2016
+35,Knoxville,TYS,25,2016-01-17,"Knoxville, TN",44,26,1,0.44,5.48,Tennessee,17,2016
+42,Memphis,MEM,25,2016-01-17,"Memphis, TN",53,30,1,0.05,5.65,Tennessee,17,2016
+37,Nashville,BNA,24,2016-01-17,"Nashville, TN",47,26,1,0.37,5.78,Tennessee,17,2016
+35,Oak Ridge,OQT,23,2016-01-17,"Oak Ridge, TN",44,26,1,0.43,1.32,Tennessee,17,2016
+46,Abilene,ABI,18,2016-01-17,"Abilene, TX",59,32,1,0.0,6.12,Texas,17,2016
+37,Amarillo,AMA,21,2016-01-17,"Amarillo, TX",51,23,1,0.11,3.88,Texas,17,2016
+48,Austin/Bergstrom,AUS,21,2016-01-17,"Austin/Bergstrom, TX",64,32,1,0.01,3.55,Texas,17,2016
+52,Austin/City,ATT,25,2016-01-17,"Austin/City, TX",64,39,1,0.0,1.52,Texas,17,2016
+51,Beaumont/Port Arthur,BPT,17,2016-01-17,"Beaumont/Port Arthur, TX",62,39,1,0.32,4.55,Texas,17,2016
+59,Brownsville,BRO,25,2016-01-17,"Brownsville, TX",70,48,1,0.17,5.07,Texas,17,2016
+41,Childress,CDS,16,2016-01-17,"Childress, TX",54,28,1,0.17,3.61,Texas,17,2016
+49,College Station,CLL,13,2016-01-17,"College Station, TX",61,37,1,0.05,3.78,Texas,17,2016
+55,Corpus Christi,CRP,14,2016-01-17,"Corpus Christi, TX",66,44,1,0.02,5.81,Texas,17,2016
+33,Dalhart,DHT,22,2016-01-17,"Dalhart, TX",49,17,1,0.0,3.47,Texas,17,2016
+47,Dallas,DAL,17,2016-01-17,"Dallas, TX",58,36,1,0.01,5.41,Texas,17,2016
+47,Dallas-Fort Worth,DFW,23,2016-01-17,"Dallas-Fort Worth, TX",59,35,1,0.01,7.51,Texas,17,2016
+52,Del Rio,DRT,17,2016-01-17,"Del Rio, TX",66,36,1,0.0,5.07,Texas,17,2016
+44,El Paso,ELP,25,2016-01-17,"El Paso, TX",57,31,1,0.0,5.45,Texas,17,2016
+48,Fort Worth,FTW,16,2016-01-17,"Fort Worth, TX",59,36,1,0.01,6.54,Texas,17,2016
+53,Galveston,GLS,12,2016-01-17,"Galveston, TX",60,46,1,0.82,6.61,Texas,17,2016
+52,Houston,HOU,10,2016-01-17,"Houston, TX",62,42,1,0.25,3.57,Texas,17,2016
+40,Lubbock,LBB,23,2016-01-17,"Lubbock, TX",55,24,1,0.01,5.74,Texas,17,2016
+45,Midland,MAF,26,2016-01-17,"Midland, TX",61,29,1,0.0,6.05,Texas,17,2016
+47,San Angelo,SJT,24,2016-01-17,"San Angelo, TX",63,31,1,0.0,6.61,Texas,17,2016
+52,San Antonio,SAT,21,2016-01-17,"San Antonio, TX",64,38,1,0.0,3.6,Texas,17,2016
+51,Victoria,VCT,8,2016-01-17,"Victoria, TX",64,39,1,0.29,4.17,Texas,17,2016
+46,Waco,ACT,22,2016-01-17,"Waco, TX",60,32,1,0.0,5.64,Texas,17,2016
+44,Wichita Falls,SPS,18,2016-01-17,"Wichita Falls, TX",57,30,1,0.3,6.84,Texas,17,2016
+30,Salt Lake City,SLC,15,2016-01-17,"Salt Lake City, UT",36,24,1,0.11,3.11,Utah,17,2016
+35,Blacksburg,BCB,28,2016-01-17,"Blacksburg, VA",44,26,1,0.5,8.55,VA,17,2016
+24,Burlington,BTV,25,2016-01-17,"Burlington, VT",31,17,1,0.2,6.12,Vermont,17,2016
+34,Lynchburg,LYH,22,2016-01-17,"Lynchburg, VA",45,22,1,0.75,3.8,Virginia,17,2016
+42,Norfolk,ORF,26,2016-01-17,"Norfolk, VA",52,31,1,1.59,6.84,Virginia,17,2016
+38,Richmond,RIC,19,2016-01-17,"Richmond, VA",48,28,1,0.85,7.11,Virginia,17,2016
+35,Roanoke,ROA,28,2016-01-17,"Roanoke, VA",44,26,1,0.5,8.55,Virginia,17,2016
+38,Wallops Island,WAL,26,2016-01-17,"Wallops Island, VA",47,28,1,1.18,6.98,Virginia,17,2016
+37,Washington,DCA,26,2016-01-17,"Washington, VA",44,29,1,0.38,6.21,Virginia,17,2016
+30,Deer Park,DEW,9,2016-01-17,"Deer Park, WA",34,27,1,1.22,2.87,Washington,17,2016
+32,Ephrata,EPH,28,2016-01-17,"Ephrata, WA",35,28,1,0.6,4.7,Washington,17,2016
+42,Olympia,OLM,21,2016-01-17,"Olympia, WA",49,35,1,2.22,3.62,Washington,17,2016
+46,Quillayute,UIL,15,2016-01-17,"Quillayute, WA",51,40,1,4.67,5.54,Washington,17,2016
+44,Seattle,SEA,12,2016-01-17,"Seattle, WA",49,38,1,2.2,6.77,Washington,17,2016
+31,Spokane,GEG,12,2016-01-17,"Spokane, WA",34,26,1,1.05,4.6,Washington,17,2016
+34,Yakima,YKM,26,2016-01-17,"Yakima, WA",39,29,1,0.66,1.72,Washington,17,2016
+28,Beckley,BKW,25,2016-01-17,"Beckley, WV",36,19,1,0.32,8.2,West Virginia,17,2016
+29,Charleston,CRW,24,2016-01-17,"Charleston, WV",40,21,1,0.22,6.02,West Virginia,17,2016
+25,Elkins,EKN,24,2016-01-17,"Elkins, WV",36,16,1,0.36,5.71,West Virginia,17,2016
+30,Huntington,HTS,22,2016-01-17,"Huntington, WV",40,20,1,0.19,6.24,West Virginia,17,2016
+10,Green Bay,GRB,24,2016-01-17,"Green Bay, WI",18,1,1,0.09,10.78,Wisconsin,17,2016
+9,La Crosse,LSE,24,2016-01-17,"La Crosse, WI",17,0,1,0.02,8.84,Wisconsin,17,2016
+11,Madison,MSN,24,2016-01-17,"Madison, WI",19,3,1,0.04,6.34,Wisconsin,17,2016
+14,Milwaukee,MKE,25,2016-01-17,"Milwaukee, WI",21,6,1,0.09,9.31,Wisconsin,17,2016
+23,Casper,CPR,22,2016-01-17,"Casper, WY",30,16,1,0.07,16.27,Wyoming,17,2016
+27,Cheyenne,CYS,29,2016-01-17,"Cheyenne, WY",36,19,1,0.12,12.52,Wyoming,17,2016
+19,Lander,LND,23,2016-01-17,"Lander, WY",31,5,1,0.0,1.22,Wyoming,17,2016
+21,Rawlins,RWL,24,2016-01-17,"Rawlins, WY",28,14,1,0.1,18.21,Wyoming,17,2016
+24,Sheridan,SHR,30,2016-01-17,"Sheridan, WY",37,14,1,0.33,5.85,Wyoming,17,2016
+36,Birmingham,BHM,21,2016-01-24,"Birmingham, AL",45,27,1,1.55,6.01,Alabama,24,2016
+33,Huntsville,HSV,19,2016-01-24,"Huntsville, AL",40,25,1,2.38,6.44,Alabama,24,2016
+47,Mobile,MOB,21,2016-01-24,"Mobile, AL",58,35,1,2.53,6.6,Alabama,24,2016
+42,Montgomery,MGM,25,2016-01-24,"Montgomery, AL",53,31,1,2.77,4.62,Alabama,24,2016
+23,Anchorage,ANC,6,2016-01-24,"Anchorage, AK",28,19,1,0.0,3.64,Alaska,24,2016
+43,Annette,ANN,12,2016-01-24,"Annette, AK",45,40,1,1.95,12.18,Alaska,24,2016
+8,Bethel,BET,4,2016-01-24,"Bethel, AK",11,4,1,0.04,19.64,Alaska,24,2016
+-9,Bettles,BTT,21,2016-01-24,"Bettles, AK",0,-19,1,0.0,5.27,Alaska,24,2016
+31,Cold Bay,CDB,23,2016-01-24,"Cold Bay, AK",35,27,1,0.19,4.81,Alaska,24,2016
+37,Cordova,CDV,8,2016-01-24,"Cordova, AK",43,30,1,1.05,4.77,Alaska,24,2016
+9,Delta Junction/Ft Greely,BIG,13,2016-01-24,"Delta Junction/Ft Greely, AK",14,3,1,0.0,10.57,Alaska,24,2016
+-3,Fairbanks,FAI,7,2016-01-24,"Fairbanks, AK",4,-10,1,0.0,6.34,Alaska,24,2016
+-5,Gulkana,GKN,29,2016-01-24,"Gulkana, AK",2,-14,1,0.0,0.57,Alaska,24,2016
+32,Homer,HOM,6,2016-01-24,"Homer, AK",36,27,1,0.22,3.67,Alaska,24,2016
+25,Iliamna,ILI,17,2016-01-24,"Iliamna, AK",31,19,1,0.0,11.24,Alaska,24,2016
+37,Juneau,JNU,12,2016-01-24,"Juneau, AK",40,34,1,1.05,7.6,Alaska,24,2016
+25,Kenai,ENA,3,2016-01-24,"Kenai, AK",30,20,1,0.0,9.8,Alaska,24,2016
+43,Ketchikan,KTN,14,2016-01-24,"Ketchikan, AK",45,40,1,2.71,13.33,Alaska,24,2016
+27,King Salmon,AKN,27,2016-01-24,"King Salmon, AK",33,18,1,0.0,11.1,Alaska,24,2016
+36,Kodiak,ADQ,13,2016-01-24,"Kodiak, AK",38,33,1,4.22,13.55,Alaska,24,2016
+-2,Kotzebue,OTZ,4,2016-01-24,"Kotzebue, AK",2,-7,1,0.03,5.92,Alaska,24,2016
+-4,Mc Grath,MCG,21,2016-01-24,"Mc Grath, AK",3,-12,1,0.0,2.44,Alaska,24,2016
+6,Nome,OME,16,2016-01-24,"Nome, AK",13,-1,1,0.01,7.08,Alaska,24,2016
+3,Northway,ORT,17,2016-01-24,"Northway, AK",6,0,1,0.0,0.48,Alaska,24,2016
+23,Palmer,PAQ,21,2016-01-24,"Palmer, AK",30,15,1,0.0,5.52,Alaska,24,2016
+60,Petersburg,PSG,14,2016-01-24,"Petersburg, AK",60,60,1,0.0,3.57,Alaska,24,2016
+60,Shemya,SYA,8,2016-01-24,"Shemya, AK",60,60,1,0.0,12.17,Alaska,24,2016
+43,Sitka,SIT,11,2016-01-24,"Sitka, AK",46,40,1,1.94,12.14,Alaska,24,2016
+35,Skagway,SGY,8,2016-01-24,"Skagway, AK",38,32,1,0.54,11.22,Alaska,24,2016
+30,St Paul Island,SNP,4,2016-01-24,"St Paul Island, AK",32,27,1,0.2,13.24,Alaska,24,2016
+24,Talkeetna,TKA,1,2016-01-24,"Talkeetna, AK",31,17,1,0.04,7.8,Alaska,24,2016
+0,Tanana,TAL,8,2016-01-24,"Tanana, AK",3,-5,1,0.0,9.07,Alaska,24,2016
+-8,Utqiagvik (Barrow),BRW,9,2016-01-24,"Utqiagvik (Barrow), AK",-3,-14,1,0.1,12.58,Alaska,24,2016
+37,Yakutat,YAK,8,2016-01-24,"Yakutat, AK",41,33,1,4.25,7.81,Alaska,24,2016
+47,Douglas Bisbee,DUG,17,2016-01-24,"Douglas Bisbee, AZ",67,26,1,0.0,3.18,Arizona,24,2016
+47,Kingman,IGM,16,2016-01-24,"Kingman, AZ",60,34,1,0.06,4.24,Arizona,24,2016
+58,Phoenix,PHX,12,2016-01-24,"Phoenix, AZ",70,45,1,0.0,1.84,Arizona,24,2016
+56,Tucson,TUS,15,2016-01-24,"Tucson, AZ",72,39,1,0.0,3.54,Arizona,24,2016
+39,Winslow,INW,21,2016-01-24,"Winslow, AZ",56,21,1,0.01,3.48,Arizona,24,2016
+35,Fort Smith,FSM,9,2016-01-24,"Fort Smith, AR",42,28,1,0.02,6.25,Arkansas,24,2016
+28,Harrison,HRO,11,2016-01-24,"Harrison, AR",34,21,1,0.16,6.4,Arkansas,24,2016
+31,North Little Rock,LZK,0,2016-01-24,"North Little Rock, AR",35,26,1,1.57,0.0,Arkansas,24,2016
+54,Bakersfield,BFL,18,2016-01-24,"Bakersfield, CA",62,45,1,0.32,2.35,California,24,2016
+39,Bishop,BIH,31,2016-01-24,"Bishop, CA",52,26,1,0.19,2.6,California,24,2016
+46,China Lake,NID,20,2016-01-24,"China Lake, CA",60,31,1,0.0,3.81,California,24,2016
+55,Concord,CCR,17,2016-01-24,"Concord, CA",61,48,1,1.54,3.75,California,24,2016
+53,Eureka,EKA,0,2016-01-24,"Eureka, CA",60,46,1,2.53,0.0,California,24,2016
+53,Fresno,FAT,19,2016-01-24,"Fresno, CA",60,45,1,1.96,3.72,California,24,2016
+55,Hayward,HWD,18,2016-01-24,"Hayward, CA",61,48,1,1.15,3.75,California,24,2016
+59,Long Beach,LGB,28,2016-01-24,"Long Beach, CA",67,51,1,0.06,1.72,California,24,2016
+58,Los Angeles,LAX,27,2016-01-24,"Los Angeles, CA",65,52,1,0.07,3.11,California,24,2016
+52,Red Bluff,RBL,19,2016-01-24,"Red Bluff, CA",56,48,1,2.06,10.51,California,24,2016
+52,Redding,RDD,20,2016-01-24,"Redding, CA",57,47,1,1.98,7.9,California,24,2016
+54,Sacramento,SAC,17,2016-01-24,"Sacramento, CA",60,47,1,1.84,5.17,California,24,2016
+56,Salinas,SNS,17,2016-01-24,"Salinas, CA",62,49,1,2.29,6.72,California,24,2016
+61,San Diego,SAN,30,2016-01-24,"San Diego, CA",67,54,1,0.01,3.21,California,24,2016
+55,San Francisco,SFO,19,2016-01-24,"San Francisco, CA",59,50,1,1.91,5.95,California,24,2016
+47,Sandberg,SDB,19,2016-01-24,"Sandberg, CA",53,40,1,0.24,9.14,California,24,2016
+57,Santa Barbara,SBA,24,2016-01-24,"Santa Barbara, CA",64,51,1,0.61,2.08,California,24,2016
+57,Santa Maria,SMX,23,2016-01-24,"Santa Maria, CA",65,49,1,0.44,3.62,California,24,2016
+53,Stockton,SCK,18,2016-01-24,"Stockton, CA",60,47,1,2.21,7.48,California,24,2016
+15,Alamosa,ALS,25,2016-01-24,"Alamosa, CO",34,-3,1,0.03,1.92,Colorado,24,2016

@@ -77,6 +77,7 @@ public class Station {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Station(JSONObject json_data) {
+        System.out.println(json_data);
         try {// City
             this.city = (String)json_data.get("City");// State
             this.state = (String)json_data.get("State");// Code

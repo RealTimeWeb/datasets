@@ -19,20 +19,9 @@ import corgis.weather.domain.Data;
  */
 public class Report {
 	
-    // This is a list of strings. An empty list represents no significant weather to report for that day.
-    private ArrayList<String> weatherConditions;
     private Date date;
     private Station station;
     private Data data;
-    
-    
-    /*
-     * @return 
-     */
-    public ArrayList<String> getWeatherConditions() {
-        return this.weatherConditions;
-    }
-    
     
     
     /*
@@ -69,7 +58,7 @@ public class Report {
 	 * @return String
 	 */
 	public String toString() {
-		return "Report[" +weatherConditions+", "+date+", "+station+", "+data+"]";
+		return "Report[" +date+", "+station+", "+data+"]";
 	}
 	
 	/**
@@ -77,12 +66,8 @@ public class Report {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
-        try {// Weather Conditions
-            this.weatherConditions = new ArrayList<String>();
-            Iterator<Object> weatherConditionsIter = ((List<Object>)json_data.get("Weather Conditions")).iterator();
-            while (weatherConditionsIter.hasNext()) {
-                this.weatherConditions.add(new String((String)weatherConditionsIter.next()));
-            }// Date
+        System.out.println(json_data);
+        try {// Date
             this.date = new Date((JSONObject)json_data.get("Date"));// Station
             this.station = new Station((JSONObject)json_data.get("Station"));// Data
             this.data = new Data((JSONObject)json_data.get("Data"));

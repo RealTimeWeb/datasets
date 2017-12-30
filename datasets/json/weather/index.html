@@ -17,6 +17,9 @@ Weather JSON Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ Weather JSON Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -57,20 +65,25 @@ Weather JSON Library (CORGIS Datasets Project)
 <div class="container">
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Weather');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="weather.png" alt="Weather" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="weather_splash.png" alt="weather_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Weather JSON Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
-    <span class="text-muted">By Ryan Whitcomb</span><br>
-    <span class="text-muted">Version 1, created 6/13/2016</span><br>
-    <span class="text-muted">Tags: weather, rain, snow, sleet, fog, temperature, wind</span><br>
+    <span class="text-muted">By Austin Cory Bart Ryan Whitcomb</span><br>
+    <span class="text-muted">Version 3, created 6/13/2016</span><br>
+    <span class="text-muted">Tags: weather, rain, snow, sleet, fog, temperature, wind, climate, environment, geology</span><br>
 </div>
     
     <h3 id="overview">Overview</h3>
 <p>
-Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.
+Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country and summarizes it at the weekly level for all of 2016.
 
 </p>
 
@@ -113,31 +126,31 @@ Under the National Oceanic and Atmpospheric Administration, the National Weather
     
     
     <tr>
+        <td>[0].Date.Week of</td>
+        <td>int</td> 
+        <td>The first day of the week that this report was made.</td>
+        <td>3</td>
+    </tr>
+    
+    <tr>
         <td>[0].Date.Full</td>
         <td>unicode</td> 
-        <td></td>
-        <td>04-13-2016</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Date.Day</td>
-        <td>int</td> 
-        <td></td>
-        <td>13</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Date.Month</td>
-        <td>int</td> 
-        <td></td>
-        <td>4</td>
+        <td>A full string representation of the date this report was made.</td>
+        <td>2016-01-03</td>
     </tr>
     
     <tr>
         <td>[0].Date.Year</td>
         <td>int</td> 
-        <td></td>
+        <td>The year that this report was made.</td>
         <td>2016</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Date.Month</td>
+        <td>int</td> 
+        <td>The month of the year that this report was made.</td>
+        <td>1</td>
     </tr>
     
     
@@ -145,98 +158,84 @@ Under the National Oceanic and Atmpospheric Administration, the National Weather
     <tr>
         <td>[0].Data.Precipitation</td>
         <td>float</td> 
-        <td>Inches</td>
-        <td>0.32</td>
+        <td>The average amount of rain, in inches.</td>
+        <td>0.0</td>
     </tr>
     
     <tr>
         <td>[0].Data.Temperature</td>
         <td>dict</td> 
-        <td>Degrees Farenheit</td>
-        <td>{u'Max Temp': 57.0, u'Avg Temp': 51.0, u'Min Temp': 44.0}</td>
+        <td></td>
+        <td>{u'Average': 39, u'Minimum': 32, u'Maximum': 46}</td>
     </tr>
     
     <tr>
         <td>[0].Data.Wind</td>
         <td>dict</td> 
         <td></td>
-        <td>{u'High Gust': 28.0, u'Avg Wind': 9.0, u'High Wind': 21.0}</td>
+        <td>{u'Direction': 33, u'Speed': 4.33}</td>
     </tr>
     
     
     
     <tr>
-        <td>[0].Data.Wind.High Gust</td>
+        <td>[0].Data.Wind.Direction</td>
+        <td>int</td> 
+        <td>The average wind direction for that week, in degrees.</td>
+        <td>33</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Wind.Speed</td>
         <td>float</td> 
-        <td></td>
-        <td>28.0</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Data.Wind.Avg Wind</td>
-        <td>float</td> 
-        <td></td>
-        <td>9.0</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Data.Wind.High Wind</td>
-        <td>float</td> 
-        <td></td>
-        <td>21.0</td>
+        <td>The average windspeed for that week, in Miles per Hour.</td>
+        <td>4.33</td>
     </tr>
     
     
-    
-    <tr>
-        <td>[0].Weather Conditions</td>
-        <td>list[unicode]</td> 
-        <td>This is a list of strings. An empty list represents no significant weather to report for that day</td>
-        <td>[u'RAIN', u'FOG']</td>
-    </tr>
     
     <tr>
         <td>[0].Date</td>
         <td>dict</td> 
         <td></td>
-        <td>{u'Year': 2016, u'Full': u'04-13-2016', u'Day': 13, u'Month': 4}</td>
+        <td>{u'Week of': 3, u'Full': u'2016-01-03', u'Month': 1, u'Year': 2016}</td>
     </tr>
     
     <tr>
         <td>[0].Station</td>
         <td>dict</td> 
         <td></td>
-        <td>{u'City': u'Seattle', u'State': u'Washington', u'Code': u'SEA', u'Location': u'Seattle, WA'}</td>
+        <td>{u'City': u'Birmingham', u'State': u'Alabama', u'Code': u'BHM', u'Location': u'Birmingham, AL'}</td>
     </tr>
     
     <tr>
         <td>[0].Data</td>
         <td>dict</td> 
         <td></td>
-        <td>{u'Precipitation': 0.32, u'Temperature': {u'Max Temp': 57.0, u'Avg Temp': 51.0, u'Min Temp': 44.0}, u'Wind': {u'High Gust': 28.0, u'Avg Wind': 9.0, u'High Wind': 21.0}}</td>
+        <td>{u'Precipitation': 0.0, u'Temperature': {u'Average': 39, u'Minimum': 32, u'Maximum': 46}, u'Wind': {u'Direction': 33, u'Speed': 4.33}}</td>
     </tr>
     
     
     
     <tr>
-        <td>[0].Data.Temperature.Max Temp</td>
-        <td>float</td> 
-        <td></td>
-        <td>57.0</td>
+        <td>[0].Data.Temperature.Average</td>
+        <td>int</td> 
+        <td>The average recorded temperature on this week, in degrees Farenheit.</td>
+        <td>39</td>
     </tr>
     
     <tr>
-        <td>[0].Data.Temperature.Avg Temp</td>
-        <td>float</td> 
-        <td></td>
-        <td>51.0</td>
+        <td>[0].Data.Temperature.Minimum</td>
+        <td>int</td> 
+        <td>The lowest recorded temperature on this week, in degrees Farenheit.</td>
+        <td>32</td>
     </tr>
     
     <tr>
-        <td>[0].Data.Temperature.Min Temp</td>
-        <td>float</td> 
-        <td></td>
-        <td>44.0</td>
+        <td>[0].Data.Temperature.Maximum</td>
+        <td>int</td> 
+        <td>The highest recorded temperature on this week, in degrees Farenheit.</td>
+        <td>46</td>
     </tr>
     
     
@@ -244,29 +243,29 @@ Under the National Oceanic and Atmpospheric Administration, the National Weather
     <tr>
         <td>[0].Station.City</td>
         <td>unicode</td> 
-        <td></td>
-        <td>Seattle</td>
+        <td>The city that the reporting station sends its data to. Note that the recording station itself might actually be in a different city.</td>
+        <td>Birmingham</td>
     </tr>
     
     <tr>
         <td>[0].Station.State</td>
         <td>unicode</td> 
-        <td></td>
-        <td>Washington</td>
+        <td>The state that the reporting station sends its data to. Note that the recording station itself might actually be in a different state.</td>
+        <td>Alabama</td>
     </tr>
     
     <tr>
         <td>[0].Station.Code</td>
         <td>unicode</td> 
-        <td></td>
-        <td>SEA</td>
+        <td>The unique code representing this station.</td>
+        <td>BHM</td>
     </tr>
     
     <tr>
         <td>[0].Station.Location</td>
         <td>unicode</td> 
-        <td></td>
-        <td>Seattle, WA</td>
+        <td>The exact location of this recording station. Note that the recording station itself might be in a different location than where it sends its data.</td>
+        <td>Birmingham, AL</td>
     </tr>
     
     
