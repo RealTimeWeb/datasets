@@ -1,14 +1,14 @@
 metadata:
-    version: 1
+    version: 3
     name: Weather
     builder: 2
-    author: Ryan Whitcomb
+    author: Austin Cory Bart, Ryan Whitcomb
     datetime: 6/13/2016
-    tags: [weather, rain, snow, sleet, fog, temperature, wind]
+    tags: [weather, rain, snow, sleet, fog, temperature, wind, climate, environment, geology]
     description:
-        short: Weather records through the months of April and June of 2016 across the U.S.
+        short: Weekly weather records in 2016 across the U.S.
         overview: >
-            Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.
+            Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country and summarizes it at the weekly level for all of 2016.
 
         citation: http://w2.weather.gov/climate/
 local:
@@ -30,50 +30,19 @@ interfaces:
     test:
         sql: SELECT data FROM weather LIMIT {hardware}
         post: json()
-#- name: get weather by day
-    # description: Given a day, returns all the weather reports for that day in the database.
-    # args:
-      # - name: day
-        # default: '6-1-16'
-        # type: str
-        # matches: SELECT DISTINCT report FROM weather
-        # description: The day to get reports.
-    # production:
-        # sql: SELECT data FROM weather WHERE year=?
-        # post: json()
-    # test:
-        # sql: SELECT data FROM weather WHERE year=? LIMIT {hardware}
-        # post: json()
-    # returns: list[report]
-  # - name: get weather by city
-    # description: Given a city, returns all the weather reports for that city in the database.
-    # args:
-      # - name: city
-        # default: 'Blacksburg'
-        # type: str
-        # matches: SELECT DISTINCT report FROM weather
-        # description: The city to get reports.
-    # production:
-        # sql: SELECT data FROM weather WHERE year=?
-        # post: json()
-    # test:
-        # sql: SELECT data FROM weather WHERE year=? LIMIT {hardware}
-        # post: json()
-    # returns: list[report]
 comments:
     Data:
         Temperature:
-            Avg Temp: The average recorded temperature on this day, in degrees Farenheit.
-            Min Temp: The lowest recorded temperature on this day, in degrees Farenheit.
-            Max Temp: The highest recorded temperature on this day, in degrees Farenheit.
+            Average: The average recorded temperature on this week, in degrees Farenheit.
+            Minimum: The lowest recorded temperature on this week, in degrees Farenheit.
+            Maximum: The highest recorded temperature on this week, in degrees Farenheit.
         Wind:
-            Avg Wind: The average windspeed for that day, in Miles per Hour.
-            High Gust: A gust is a sudden burst of wind (less than 20 seconds long), which is often much stronger than the average windspeed. This is reported in Miles per Hour.
-            High Wind: The highest windspeed for that day, in Miles per Hour.
+            Speed: The average windspeed for that week, in Miles per Hour.
+            Direction: The average wind direction for that week, in degrees.
         Precipitation: The average amount of rain, in inches.
-    Weather Conditions: This is a list of strings. An empty list represents no significant weather to report for that day.
+    #Weather Conditions: This is a list of strings. An empty list represents no significant weather to report for that week.
     Date:
-        Day: The day of the month that this report was made.
+        Week of: The first day of the week that this report was made.
         Full: A full string representation of the date this report was made.
         Month: The month of the year that this report was made.
         Year: The year that this report was made.
