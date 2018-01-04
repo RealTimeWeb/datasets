@@ -1,0 +1,310 @@
+
+
+
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Video Games');
+});*/
+</script>
+<div class="page-header">
+    
+    <img class="img-rounded pull-right" src="video_games_splash.png" alt="video_games_splash.png" style="max-width: 256px; max-height: 256px;">
+    
+    <h1>Video Games SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 4/13/2017</span><br>
+    <span class="text-muted">Tags: video games, games, publishers, console, gaming</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+<i>This dataset requires special permission to use.</i><br><br>
+Originally collected by Dr. Joe Cox, this dataset has information about the sales and playtime of over a thousand video games released between 2004 and 2010. The playtime information was collected from crowd-sourced data on "How Long to Beat".<br><br>
+Some more information can be found <a href="https://researchportal.port.ac.uk/portal/en/publications/what-makes-a-blockbuster-video-game(a6d848fe-38ae-4584-8c95-a0f735ec9b4c).html">here</a>.
+
+</p>
+
+<p>
+<i>Cox, Joe. "What makes a blockbuster video game? An empirical analysis of US sales data." Managerial and Decision Economics 35.3 (2014): 189-198.
+</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="video_games.sql?forcedownload=1" download="video_games.sql" target="_blank">
+        <strong>video_games.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>All PlayStyles.Average</td>
+        <td><code>Real number</code></td> 
+        <td>The mean time that players reported completing the game in any way, in hours. This is the average over all the other categories.</td>
+        <td><code>22.7166666667</code></td>
+    </tr>
+    
+    <tr>
+        <td>All PlayStyles.Leisure</td>
+        <td><code>Real number</code></td> 
+        <td>The slowest time that players reported completing the game in any way, in hours. This is the minimum over all the other categories.</td>
+        <td><code>31.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>All PlayStyles.Median</td>
+        <td><code>Real number</code></td> 
+        <td>The median time that players reported completing the game in any way, in hours. This is the median over all the other categories.</td>
+        <td><code>24.4833333333</code></td>
+    </tr>
+    
+    <tr>
+        <td>All PlayStyles.Polled</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of players that reported completing the game in any way. This is the count over all the other categories.</td>
+        <td><code>57</code></td>
+    </tr>
+    
+    <tr>
+        <td>All PlayStyles.Rushed</td>
+        <td><code>Real number</code></td> 
+        <td>The fastest time that players reported completing the game in any way, in hours. This is the maximum over all the other categories.</td>
+        <td><code>14.3</code></td>
+    </tr>
+    
+    <tr>
+        <td>Completionists.Average</td>
+        <td><code>Real number</code></td> 
+        <td>The mean time that players reported completing everything in the game, in hours.</td>
+        <td><code>29.7666666667</code></td>
+    </tr>
+    
+    <tr>
+        <td>Completionists.Leisure</td>
+        <td><code>Real number</code></td> 
+        <td>The slowest time that players reported completing everything in the game, in hours.</td>
+        <td><code>35.0333333333</code></td>
+    </tr>
+    
+    <tr>
+        <td>Completionists.Median</td>
+        <td><code>Real number</code></td> 
+        <td>The median time that players reported completing everything in the game, in hours.</td>
+        <td><code>30.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Completionists.Polled</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of players that reported completing everything in the game.</td>
+        <td><code>20</code></td>
+    </tr>
+    
+    <tr>
+        <td>Completionists.Rushed</td>
+        <td><code>Real number</code></td> 
+        <td>The fastest time that players reported completing everything in the game, in hours.</td>
+        <td><code>22.0166666667</code></td>
+    </tr>
+    
+    <tr>
+        <td>Console</td>
+        <td><code>String</code></td> 
+        <td>The name of the console that this particular game was released for. Note that the dataset contains multiple copies of the same game, released for different consoles.</td>
+        <td><code>"Nintendo DS"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Handheld?</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether this is a hand-held game.</td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>Licensed?</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether this game was based off a previously licensed entity.</td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main + Extras.Average</td>
+        <td><code>Real number</code></td> 
+        <td>The mean time that players reported completing the main game and major extra parts of the game, in hours.</td>
+        <td><code>24.9166666667</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main + Extras.Leisure</td>
+        <td><code>Real number</code></td> 
+        <td>The slowest time that players reported completing the main game and major extra parts of the game, in hours.</td>
+        <td><code>29.9666666667</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main + Extras.Median</td>
+        <td><code>Real number</code></td> 
+        <td>The median time that players reported completing the main game and major extra parts of the game, in hours.</td>
+        <td><code>25.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main + Extras.Polled</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of players that reported completing the main game and major extra parts of the game.</td>
+        <td><code>16</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main + Extras.Rushed</td>
+        <td><code>Real number</code></td> 
+        <td>The fastest time that players reported completing the main game and major extra parts of the game, in hours.</td>
+        <td><code>18.3333333333</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main Story.Average</td>
+        <td><code>Real number</code></td> 
+        <td>The mean time that players reported completing the main game storyline, in hours.</td>
+        <td><code>14.3333333333</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main Story.Leisure</td>
+        <td><code>Real number</code></td> 
+        <td>The slowest time that players reported completing the main game storyline, in hours.</td>
+        <td><code>18.3166666667</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main Story.Median</td>
+        <td><code>Real number</code></td> 
+        <td>The median time that players reported completing the main game storyline, in hours.</td>
+        <td><code>14.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main Story.Polled</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of players that reported completing the main game storyline.</td>
+        <td><code>21</code></td>
+    </tr>
+    
+    <tr>
+        <td>Main Story.Rushed</td>
+        <td><code>Real number</code></td> 
+        <td>The fastest time that players reported completing the main game storyline, in hours.</td>
+        <td><code>9.7</code></td>
+    </tr>
+    
+    <tr>
+        <td>Max Players</td>
+        <td><code>Integer number</code></td> 
+        <td>The maximum number of players that can play this game.</td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Multiplatform?</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether this game is available on multiple platforms.</td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>Online?</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether this game supports online play.</td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rating</td>
+        <td><code>String</code></td> 
+        <td>The ESRB rating for this game, either E (for Everyone), T (for Teen), or M (for Mature).</td>
+        <td><code>"E"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Re-release?</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether this game is a re-release of an earlier one.</td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>Review Score</td>
+        <td><code>Integer number</code></td> 
+        <td>a typical review score for this game, out of 100.</td>
+        <td><code>85</code></td>
+    </tr>
+    
+    <tr>
+        <td>Sales</td>
+        <td><code>Real number</code></td> 
+        <td>The total sales made on this game, measured in millions of dollars.</td>
+        <td><code>4.69</code></td>
+    </tr>
+    
+    <tr>
+        <td>Sequel?</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether this game is a sequel to another game.</td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>Title</td>
+        <td><code>String</code></td> 
+        <td>The full title of this game.</td>
+        <td><code>"Super Mario 64 DS"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Used Price</td>
+        <td><code>Real number</code></td> 
+        <td>A typical "used" price for this game (i.e. previously returned and sold), measured in dollars. It is unclear where this number originally came from.</td>
+        <td><code>24.95</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this game was released.</td>
+        <td><code>2004</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+

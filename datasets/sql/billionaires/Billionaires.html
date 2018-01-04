@@ -1,9 +1,14 @@
 
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Billionaires');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="billionaires.png" alt="Billionaires" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="billionaires_splash.png" alt="billionaires_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Billionaires SQL Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -59,28 +64,28 @@ Researchers have compiled a multi-decade database of the super-rich. Building of
         <td>age</td>
         <td><code>Integer number</code></td> 
         <td>The current age of the billionaire. Ages that are represented as -1 stand for ages that were not available in the data that was collected.</td>
-        <td><code>-1</code></td>
+        <td><code>40</code></td>
     </tr>
     
     <tr>
         <td>category</td>
         <td><code>String</code></td> 
         <td>A category representing where their money came from.</td>
-        <td><code>"Financial"</code></td>
+        <td><code>"New Sectors"</code></td>
     </tr>
     
     <tr>
         <td>citizenship</td>
         <td><code>String</code></td> 
         <td>The name of the country that this billionaire has citizenship with.</td>
-        <td><code>"Saudi Arabia"</code></td>
+        <td><code>"United States"</code></td>
     </tr>
     
     <tr>
         <td>company.name</td>
         <td><code>String</code></td> 
         <td>The name of the company.</td>
-        <td><code>"Rolaco Trading and Contracting Company"</code></td>
+        <td><code>"Microsoft"</code></td>
     </tr>
     
     <tr>
@@ -94,14 +99,14 @@ Researchers have compiled a multi-decade database of the super-rich. Building of
         <td>country code</td>
         <td><code>String</code></td> 
         <td>the 3-letter country code of the country where this billionaire has citizenship.</td>
-        <td><code>"SAU"</code></td>
+        <td><code>"USA"</code></td>
     </tr>
     
     <tr>
         <td>founded</td>
         <td><code>Integer number</code></td> 
         <td>The year that the company was founded.</td>
-        <td><code>1968</code></td>
+        <td><code>1975</code></td>
     </tr>
     
     <tr>
@@ -115,7 +120,7 @@ Researchers have compiled a multi-decade database of the super-rich. Building of
         <td>gdp</td>
         <td><code>Real number</code></td> 
         <td>The "Gross Domestic Product" of the country where the billionaire has citizenship. This is one of the primary indicators used to gauge the health of a country's economy. It represents the total dollar value of all goods and services produced over a specific time period; you can think of it as the size of the economy.</td>
-        <td><code>1.58e+11</code></td>
+        <td><code>8.1e+12</code></td>
     </tr>
     
     <tr>
@@ -129,35 +134,35 @@ Researchers have compiled a multi-decade database of the super-rich. Building of
         <td>industry</td>
         <td><code>String</code></td> 
         <td>The specific industry this billionaire profitted from.</td>
-        <td><code>"Money Management"</code></td>
+        <td><code>"Technology-Computer"</code></td>
     </tr>
     
     <tr>
         <td>inherited</td>
-        <td><code>Integer number</code></td> 
-        <td>Whether the money was partially inherited.</td>
-        <td><code>True</code></td>
+        <td><code>String</code></td> 
+        <td>The way that this money was inherited (or not inherited). Inheritance can come from a spouse, the father, or from multiple generations within a family (either 3, 4, or 5+).</td>
+        <td><code>"not inherited"</code></td>
     </tr>
     
     <tr>
         <td>name</td>
         <td><code>String</code></td> 
         <td>The name of the billionaire.</td>
-        <td><code>"Abdul Aziz Al-Sulaiman"</code></td>
+        <td><code>"Bill Gates"</code></td>
     </tr>
     
     <tr>
         <td>rank</td>
         <td><code>Integer number</code></td> 
         <td>The rank of this billionaire compared to the rest of the billionaires reported on. A lower rank means they make more money.</td>
-        <td><code>404</code></td>
+        <td><code>1</code></td>
     </tr>
     
     <tr>
         <td>region</td>
         <td><code>String</code></td> 
         <td>The region of the world where this billionaire lives.</td>
-        <td><code>"Middle East/North Africa"</code></td>
+        <td><code>"North America"</code></td>
     </tr>
     
     <tr>
@@ -171,7 +176,7 @@ Researchers have compiled a multi-decade database of the super-rich. Building of
         <td>sector</td>
         <td><code>String</code></td> 
         <td>The sector of the business, or what segment of the economy they fit into.</td>
-        <td><code>"construction"</code></td>
+        <td><code>" Software"</code></td>
     </tr>
     
     <tr>
@@ -192,14 +197,14 @@ Researchers have compiled a multi-decade database of the super-rich. Building of
         <td>wealth.type</td>
         <td><code>String</code></td> 
         <td>The type of billionaire that they are.</td>
-        <td><code>"self-made finance"</code></td>
+        <td><code>"founder non-finance"</code></td>
     </tr>
     
     <tr>
         <td>worth in billions</td>
         <td><code>Real number</code></td> 
         <td>The number of billion of dollars that this billionaire is worth.</td>
-        <td><code>1.0</code></td>
+        <td><code>18.5</code></td>
     </tr>
     
     <tr>

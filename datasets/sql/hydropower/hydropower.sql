@@ -1,4 +1,6 @@
 CREATE TABLE hydropower (County text, Crest_Elevation real, Crest_Length real, Latitude real, Longitude real, Name text, Organization text, State text, Structural_Height real, Watercourse text, Year integer);
+CREATE INDEX State_idx ON hydropower (State);
+CREATE INDEX Year_idx ON hydropower (Year);
 INSERT INTO hydropower VALUES ('Jackson', 1520.0, 3800.0, 42.4155, -122.7723, 'Agate Dam', 'Rogue River Basin', 'Oregon', 86.0, 'Dry Creek', 1965);
 INSERT INTO hydropower VALUES ('Malheur', 3348.0, 1850.0, 43.9117446, -118.154354, 'Agency Valley Dam', 'Vale', 'Oregon', 110.0, 'North Fork of the Malheur River', 1934);
 INSERT INTO hydropower VALUES ('Natrona', 5510.0, 76300.0, 42.5483, -106.7194, 'Alcova Dam', 'Kendrick', 'Wyoming', 265.0, 'North Platte River', 1935);

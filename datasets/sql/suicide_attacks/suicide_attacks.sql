@@ -1,4 +1,6 @@
 CREATE TABLE suicide_attacks (__killed integer, __wounded integer, age integer, assassination? integer, attacker_name text, birth_location text, birth_year integer, campaign_name text, country text, day integer, education text, gender text, location text, marital text, month integer, occupation text, religion text, target_name text, type text, weapon text, year integer);
+CREATE INDEX campaign_name_idx ON suicide_attacks (campaign_name);
+CREATE INDEX country_idx ON suicide_attacks (country);
 INSERT INTO suicide_attacks VALUES (115, 28, 15, FALSE, 'Ahmad Qasiraka Haider', 'Lebanon', 1967, 'Hezbollah vs. Israel', 'Lebanon', 11, 'Primary', 'Male', 'Lebanon, TyreLiban-Sud', 'Unknown', 11, 'Unskilled', 'Secular', 'Israeli Defense Forces (IDF) headquarters', 'Security', 'Car bomb', 1982);
 INSERT INTO suicide_attacks VALUES (60, 120, -1, FALSE, 'Unknown', 'Unknown', -1, 'Hezbollah vs. U.S. & France', 'Lebanon', 18, 'Unknown', 'Unknown', 'Lebanon, BeirutBeyrouth', 'Unknown', 4, 'Unknown', 'Unknown', 'U.S. Embassy in Lebanon', 'Political', 'Car bomb', 1983);
 INSERT INTO suicide_attacks VALUES (58, 88, 24, FALSE, 'Abu Sijanaka Abu Sijaan', 'Unknown', 1959, 'Hezbollah vs. U.S. & France', 'Lebanon', 23, 'Unknown', 'Male', 'Lebanon, BeirutBeyrouth', 'Unknown', 10, 'Unknown', 'Unknown', 'Barracks for French Paratroopers', 'Security', 'Truck bomb', 1983);

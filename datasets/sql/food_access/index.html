@@ -38,10 +38,15 @@ Food Access SQL Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -60,9 +65,14 @@ Food Access SQL Library (CORGIS Datasets Project)
 <div class="container">
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Food Access');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="food_access.png" alt="Food Access" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="food_access_splash.png" alt="food_access_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Food Access SQL Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>

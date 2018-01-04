@@ -1,4 +1,6 @@
 CREATE TABLE construction_permits (Name text, Number_of_Permits_1_unit integer, Number_of_Permits_2_units integer, Number_of_Permits_3_4_units integer, Number_of_Permits_5+_units integer, Valuations_1_unit integer, Valuations_2_units integer, Valuations_3_4_units integer, Valuations_5+_units integer, full text, month integer, month_name text, year integer);
+CREATE INDEX Name_idx ON construction_permits (Name);
+CREATE INDEX year_idx ON construction_permits (year);
 INSERT INTO construction_permits VALUES ('Mississippi', 789, 0, 4, 82, 83156, 0, 146, 3169, '2003/06', 6, 'June', 2003);
 INSERT INTO construction_permits VALUES ('Oklahoma', 1056, 42, 4, 19, 145263, 2608, 173, 894, '2003/06', 6, 'June', 2003);
 INSERT INTO construction_permits VALUES ('Minnesota', 3245, 74, 77, 450, 497828, 7798, 4968, 43408, '2003/06', 6, 'June', 2003);

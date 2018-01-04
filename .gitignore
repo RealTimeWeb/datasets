@@ -2,6 +2,8 @@ playground/
 users/
 .class
 
+datasets/sql-old
+
 tools/code2uml
 
 # Byte-compiled / optimized / DLL files

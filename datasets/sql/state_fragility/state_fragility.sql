@@ -1,4 +1,6 @@
 CREATE TABLE fragility (Country text, Economic_Effectiveness integer, Economic_Legitimacy integer, Effectiveness_Score integer, Legitimacy_Score integer, Political_Effectiveness integer, Political_Legitimacy integer, Security_Effectiveness integer, Security_Legitimacy integer, Social_Effectiveness integer, Social_Legitimacy integer, State_Fragility_Index integer, Year integer);
+CREATE INDEX Country_idx ON fragility (Country);
+CREATE INDEX Year_idx ON fragility (Year);
 INSERT INTO fragility VALUES ('Afghanistan', 4, 3, 13, 12, 3, 3, 3, 3, 3, 3, 25, 1995);
 INSERT INTO fragility VALUES ('Afghanistan', 4, 3, 12, 12, 2, 3, 3, 3, 3, 3, 24, 1996);
 INSERT INTO fragility VALUES ('Afghanistan', 4, 3, 12, 12, 2, 3, 3, 3, 3, 3, 24, 1997);
