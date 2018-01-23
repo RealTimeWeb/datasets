@@ -181,9 +181,10 @@ def sample_down(dol):
 
         
 def remove_outliers(lodol, actually_keep=True):
+    actually_keep=False
     bad_indexes = set()
     bad_keys = set()
-    DEVIATIONS = 4
+    DEVIATIONS = 3
     MAX_LENGTH = 10000
     
     for data in lodol:
