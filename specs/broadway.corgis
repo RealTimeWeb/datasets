@@ -2,6 +2,7 @@ metadata:
     version: 1
     name: Broadway
     builder: 3
+    outliers: false
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 11/1/2015
     tags: [broadway, musical, theatre, tickets]
