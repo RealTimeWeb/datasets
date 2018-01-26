@@ -3,13 +3,19 @@
 var billionaires_INDEXES = [
     ["(None)", "(None)"],
     
-    ["citizenship", "citizenship"] ,
-    ["year", "year"] 
+    ["year", "year"] ,
+    ["citizenship", "citizenship"] 
 ];
 
 var billionaires_INDEX_VALUES = {
     "(None)": [],
     
+    "year": [
+        
+        ["1996", "1996"] ,
+        ["2001", "2001"] ,
+        ["2014", "2014"] 
+    ],
     "citizenship": [
         
         ["Algeria", "Algeria"] ,
@@ -85,12 +91,6 @@ var billionaires_INDEX_VALUES = {
         ["United States", "United States"] ,
         ["Venezuela", "Venezuela"] ,
         ["Vietnam", "Vietnam"] 
-    ],
-    "year": [
-        
-        ["1996", "1996"] ,
-        ["2001", "2001"] ,
-        ["2014", "2014"] 
     ]
 }
 
@@ -186,9 +186,21 @@ PythonToBlocks.KNOWN_MODULES['billionaires'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['billionaires'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['billionaires'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_billionaires': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Billionaires'] = '<category name="Data - Billionaires" colour="50">'+

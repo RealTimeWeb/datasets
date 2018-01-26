@@ -3,6 +3,11 @@ import sys
 from pprint import pprint
 from collections import Counter
 
+try:
+    unicode
+except NameError:
+    unicode = str
+
 def truncate(a_str, length, ending='...'):
     if len(a_str) > length+1+len(ending):
         return (a_str[:length] + ending)

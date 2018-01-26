@@ -3,13 +3,27 @@
 var school_scores_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Name", "Name"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["Name", "Name"] 
 ];
 
 var school_scores_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] ,
+        ["2014", "2014"] ,
+        ["2015", "2015"] 
+    ],
     "Name": [
         
         ["Alabama", "Alabama"] ,
@@ -65,20 +79,6 @@ var school_scores_INDEX_VALUES = {
         ["West Virginia", "West Virginia"] ,
         ["Wisconsin", "Wisconsin"] ,
         ["Wyoming", "Wyoming"] 
-    ],
-    "Year": [
-        
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] ,
-        ["2014", "2014"] ,
-        ["2015", "2015"] 
     ]
 }
 
@@ -251,9 +251,21 @@ PythonToBlocks.KNOWN_MODULES['school_scores'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['school_scores'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['school_scores'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_all': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - School Scores'] = '<category name="Data - School Scores" colour="50">'+

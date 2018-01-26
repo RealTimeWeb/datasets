@@ -144,6 +144,7 @@ var earthquakes_PROPERTIES = [
     ["longitude", "longitude"] ,
     ["name", "name"] ,
     ["day", "day"] ,
+    ["epoch", "epoch"] ,
     ["time.full", "time.full"] ,
     ["hour", "hour"] ,
     ["minute", "minute"] ,
@@ -219,9 +220,21 @@ PythonToBlocks.KNOWN_MODULES['earthquakes'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['earthquakes'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['earthquakes'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_earthquakes': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Earthquakes'] = '<category name="Data - Earthquakes" colour="50">'+

@@ -3,20 +3,14 @@
 var broadway_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Type", "Type"] ,
     ["Theatre", "Theatre"] ,
+    ["Type", "Type"] ,
     ["Year", "Year"] 
 ];
 
 var broadway_INDEX_VALUES = {
     "(None)": [],
     
-    "Type": [
-        
-        ["Musical", "Musical"] ,
-        ["Play", "Play"] ,
-        ["Special", "Special"] 
-    ],
     "Theatre": [
         
         ["Al Hirschfeld", "Al Hirschfeld"] ,
@@ -76,9 +70,14 @@ var broadway_INDEX_VALUES = {
         ["Walter Kerr", "Walter Kerr"] ,
         ["Winter Garden", "Winter Garden"] 
     ],
+    "Type": [
+        
+        ["Musical", "Musical"] ,
+        ["Play", "Play"] ,
+        ["Special", "Special"] 
+    ],
     "Year": [
         
-        ["1990", "1990"] ,
         ["1991", "1991"] ,
         ["1992", "1992"] ,
         ["1993", "1993"] ,
@@ -190,9 +189,21 @@ PythonToBlocks.KNOWN_MODULES['broadway'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['broadway'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['broadway'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_shows': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Broadway'] = '<category name="Data - Broadway" colour="50">'+

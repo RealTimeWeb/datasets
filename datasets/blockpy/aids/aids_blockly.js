@@ -3,13 +3,42 @@
 var aids_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Country", "Country"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["Country", "Country"] 
 ];
 
 var aids_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["1990", "1990"] ,
+        ["1991", "1991"] ,
+        ["1992", "1992"] ,
+        ["1993", "1993"] ,
+        ["1994", "1994"] ,
+        ["1995", "1995"] ,
+        ["1996", "1996"] ,
+        ["1997", "1997"] ,
+        ["1998", "1998"] ,
+        ["1999", "1999"] ,
+        ["2000", "2000"] ,
+        ["2001", "2001"] ,
+        ["2002", "2002"] ,
+        ["2003", "2003"] ,
+        ["2004", "2004"] ,
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] ,
+        ["2014", "2014"] ,
+        ["2015", "2015"] 
+    ],
     "Country": [
         
         ["Afghanistan", "Afghanistan"] ,
@@ -111,35 +140,6 @@ var aids_INDEX_VALUES = {
         ["Yemen", "Yemen"] ,
         ["Zambia", "Zambia"] ,
         ["Zimbabwe", "Zimbabwe"] 
-    ],
-    "Year": [
-        
-        ["1990", "1990"] ,
-        ["1991", "1991"] ,
-        ["1992", "1992"] ,
-        ["1993", "1993"] ,
-        ["1994", "1994"] ,
-        ["1995", "1995"] ,
-        ["1996", "1996"] ,
-        ["1997", "1997"] ,
-        ["1998", "1998"] ,
-        ["1999", "1999"] ,
-        ["2000", "2000"] ,
-        ["2001", "2001"] ,
-        ["2002", "2002"] ,
-        ["2003", "2003"] ,
-        ["2004", "2004"] ,
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] ,
-        ["2014", "2014"] ,
-        ["2015", "2015"] 
     ]
 }
 
@@ -235,9 +235,21 @@ PythonToBlocks.KNOWN_MODULES['aids'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['aids'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['aids'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_reports': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Aids'] = '<category name="Data - Aids" colour="50">'+

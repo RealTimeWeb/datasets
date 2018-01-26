@@ -229,8 +229,8 @@ var publishers_INDEX_VALUES = {
         ["Perigee", "Perigee"] ,
         ["Peterson Institute for International Economics", "Peterson Institute for International Economics"] ,
         ["Peterson's", "Peterson's"] ,
-        ["PHILOMEL", "PHILOMEL"] ,
         ["Philomel", "Philomel"] ,
+        ["PHILOMEL", "PHILOMEL"] ,
         ["Piatkus", "Piatkus"] ,
         ["Picador", "Picador"] ,
         ["Pintail", "Pintail"] ,
@@ -425,9 +425,21 @@ PythonToBlocks.KNOWN_MODULES['publishers'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['publishers'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['publishers'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_books': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Publishers'] = '<category name="Data - Publishers" colour="50">'+

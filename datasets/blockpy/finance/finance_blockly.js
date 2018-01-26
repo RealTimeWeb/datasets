@@ -3,13 +3,34 @@
 var finance_INDEXES = [
     ["(None)", "(None)"],
     
-    ["State", "State"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["State", "State"] 
 ];
 
 var finance_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["1996", "1996"] ,
+        ["1997", "1997"] ,
+        ["1998", "1998"] ,
+        ["1999", "1999"] ,
+        ["2000", "2000"] ,
+        ["2001", "2001"] ,
+        ["2002", "2002"] ,
+        ["2003", "2003"] ,
+        ["2004", "2004"] ,
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] 
+    ],
     "State": [
         
         ["Alabama", "Alabama"] ,
@@ -63,27 +84,6 @@ var finance_INDEX_VALUES = {
         ["West Virginia", "West Virginia"] ,
         ["Wisconsin", "Wisconsin"] ,
         ["Wyoming", "Wyoming"] 
-    ],
-    "Year": [
-        
-        ["1996", "1996"] ,
-        ["1997", "1997"] ,
-        ["1998", "1998"] ,
-        ["1999", "1999"] ,
-        ["2000", "2000"] ,
-        ["2001", "2001"] ,
-        ["2002", "2002"] ,
-        ["2003", "2003"] ,
-        ["2004", "2004"] ,
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] 
     ]
 }
 
@@ -308,9 +308,21 @@ PythonToBlocks.KNOWN_MODULES['finance'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['finance'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['finance'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_finances': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Finance'] = '<category name="Data - Finance" colour="50">'+

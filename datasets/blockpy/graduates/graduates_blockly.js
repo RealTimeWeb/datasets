@@ -3,13 +3,27 @@
 var graduates_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Major", "Major"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["Major", "Major"] 
 ];
 
 var graduates_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["1993", "1993"] ,
+        ["1995", "1995"] ,
+        ["1997", "1997"] ,
+        ["1999", "1999"] ,
+        ["2001", "2001"] ,
+        ["2003", "2003"] ,
+        ["2006", "2006"] ,
+        ["2008", "2008"] ,
+        ["2010", "2010"] ,
+        ["2013", "2013"] ,
+        ["2015", "2015"] 
+    ],
     "Major": [
         
         ["Agricultural Economics", "Agricultural Economics"] ,
@@ -59,20 +73,6 @@ var graduates_INDEX_VALUES = {
         ["Sociology", "Sociology"] ,
         ["Statistics", "Statistics"] ,
         ["Zoology, General", "Zoology, General"] 
-    ],
-    "Year": [
-        
-        ["1993", "1993"] ,
-        ["1995", "1995"] ,
-        ["1997", "1997"] ,
-        ["1999", "1999"] ,
-        ["2001", "2001"] ,
-        ["2003", "2003"] ,
-        ["2006", "2006"] ,
-        ["2008", "2008"] ,
-        ["2010", "2010"] ,
-        ["2013", "2013"] ,
-        ["2015", "2015"] 
     ]
 }
 
@@ -196,9 +196,21 @@ PythonToBlocks.KNOWN_MODULES['graduates'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['graduates'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['graduates'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_majors': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Graduates'] = '<category name="Data - Graduates" colour="50">'+

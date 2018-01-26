@@ -91,9 +91,21 @@ PythonToBlocks.KNOWN_MODULES['{{ library_name }}'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['{{ library_name }}'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['{{ library_name }}'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        {% for interface in interfaces %}
+        '{{ interface.name | snake_case }}': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        {% endfor %}
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - {{ metadata.name }}'] = '<category name="Data - {{ metadata.name }}" colour="50">'+

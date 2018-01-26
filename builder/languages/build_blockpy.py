@@ -222,8 +222,8 @@ def remove_outliers(lodol, actually_keep=True):
     I wish to remove K numbers from Z, without drawing from any number in J
     '''
     if reduced_indexes > MAX_LENGTH:
-        stride = total_indexes / MAX_LENGTH
-        for an_index in xrange(0, total_indexes, stride):
+        stride = int(total_indexes / MAX_LENGTH)
+        for an_index in range(0, total_indexes, stride):
             keep_index = random.randint(0, stride-1)
             for offset in xrange(0, stride):
                 if keep_index != offset:

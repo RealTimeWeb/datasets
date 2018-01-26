@@ -3,68 +3,13 @@
 var state_crime_INDEXES = [
     ["(None)", "(None)"],
     
-    ["State", "State"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["State", "State"] 
 ];
 
 var state_crime_INDEX_VALUES = {
     "(None)": [],
     
-    "State": [
-        
-        ["Alabama", "Alabama"] ,
-        ["Alaska", "Alaska"] ,
-        ["Arizona", "Arizona"] ,
-        ["Arkansas", "Arkansas"] ,
-        ["California", "California"] ,
-        ["Colorado", "Colorado"] ,
-        ["Connecticut", "Connecticut"] ,
-        ["Delaware", "Delaware"] ,
-        ["District of Columbia", "District of Columbia"] ,
-        ["Florida", "Florida"] ,
-        ["Georgia", "Georgia"] ,
-        ["Hawaii", "Hawaii"] ,
-        ["Idaho", "Idaho"] ,
-        ["Illinois", "Illinois"] ,
-        ["Indiana", "Indiana"] ,
-        ["Iowa", "Iowa"] ,
-        ["Kansas", "Kansas"] ,
-        ["Kentucky", "Kentucky"] ,
-        ["Louisiana", "Louisiana"] ,
-        ["Maine", "Maine"] ,
-        ["Maryland", "Maryland"] ,
-        ["Massachusetts", "Massachusetts"] ,
-        ["Michigan", "Michigan"] ,
-        ["Minnesota", "Minnesota"] ,
-        ["Mississippi", "Mississippi"] ,
-        ["Missouri", "Missouri"] ,
-        ["Montana", "Montana"] ,
-        ["Nebraska", "Nebraska"] ,
-        ["Nevada", "Nevada"] ,
-        ["New Hampshire", "New Hampshire"] ,
-        ["New Jersey", "New Jersey"] ,
-        ["New Mexico", "New Mexico"] ,
-        ["New York", "New York"] ,
-        ["North Carolina", "North Carolina"] ,
-        ["North Dakota", "North Dakota"] ,
-        ["Ohio", "Ohio"] ,
-        ["Oklahoma", "Oklahoma"] ,
-        ["Oregon", "Oregon"] ,
-        ["Pennsylvania", "Pennsylvania"] ,
-        ["Rhode Island", "Rhode Island"] ,
-        ["South Carolina", "South Carolina"] ,
-        ["South Dakota", "South Dakota"] ,
-        ["Tennessee", "Tennessee"] ,
-        ["Texas", "Texas"] ,
-        ["United States", "United States"] ,
-        ["Utah", "Utah"] ,
-        ["Vermont", "Vermont"] ,
-        ["Virginia", "Virginia"] ,
-        ["Washington", "Washington"] ,
-        ["West Virginia", "West Virginia"] ,
-        ["Wisconsin", "Wisconsin"] ,
-        ["Wyoming", "Wyoming"] 
-    ],
     "Year": [
         
         ["1960", "1960"] ,
@@ -120,6 +65,61 @@ var state_crime_INDEX_VALUES = {
         ["2010", "2010"] ,
         ["2011", "2011"] ,
         ["2012", "2012"] 
+    ],
+    "State": [
+        
+        ["Alabama", "Alabama"] ,
+        ["Alaska", "Alaska"] ,
+        ["Arizona", "Arizona"] ,
+        ["Arkansas", "Arkansas"] ,
+        ["California", "California"] ,
+        ["Colorado", "Colorado"] ,
+        ["Connecticut", "Connecticut"] ,
+        ["Delaware", "Delaware"] ,
+        ["District of Columbia", "District of Columbia"] ,
+        ["Florida", "Florida"] ,
+        ["Georgia", "Georgia"] ,
+        ["Hawaii", "Hawaii"] ,
+        ["Idaho", "Idaho"] ,
+        ["Illinois", "Illinois"] ,
+        ["Indiana", "Indiana"] ,
+        ["Iowa", "Iowa"] ,
+        ["Kansas", "Kansas"] ,
+        ["Kentucky", "Kentucky"] ,
+        ["Louisiana", "Louisiana"] ,
+        ["Maine", "Maine"] ,
+        ["Maryland", "Maryland"] ,
+        ["Massachusetts", "Massachusetts"] ,
+        ["Michigan", "Michigan"] ,
+        ["Minnesota", "Minnesota"] ,
+        ["Mississippi", "Mississippi"] ,
+        ["Missouri", "Missouri"] ,
+        ["Montana", "Montana"] ,
+        ["Nebraska", "Nebraska"] ,
+        ["Nevada", "Nevada"] ,
+        ["New Hampshire", "New Hampshire"] ,
+        ["New Jersey", "New Jersey"] ,
+        ["New Mexico", "New Mexico"] ,
+        ["New York", "New York"] ,
+        ["North Carolina", "North Carolina"] ,
+        ["North Dakota", "North Dakota"] ,
+        ["Ohio", "Ohio"] ,
+        ["Oklahoma", "Oklahoma"] ,
+        ["Oregon", "Oregon"] ,
+        ["Pennsylvania", "Pennsylvania"] ,
+        ["Rhode Island", "Rhode Island"] ,
+        ["South Carolina", "South Carolina"] ,
+        ["South Dakota", "South Dakota"] ,
+        ["Tennessee", "Tennessee"] ,
+        ["Texas", "Texas"] ,
+        ["United States", "United States"] ,
+        ["Utah", "Utah"] ,
+        ["Vermont", "Vermont"] ,
+        ["Virginia", "Virginia"] ,
+        ["Washington", "Washington"] ,
+        ["West Virginia", "West Virginia"] ,
+        ["Wisconsin", "Wisconsin"] ,
+        ["Wyoming", "Wyoming"] 
     ]
 }
 
@@ -214,9 +214,21 @@ PythonToBlocks.KNOWN_MODULES['state_crime'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-AbstractInterpreter.MODULES['state_crime'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
-    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
+Tifa.MODULES['state_crime'] = {
+    'name': "Module",
+    'fields': {
+        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        
+        'get_all_crimes': Tifa.simpleFunctionDefinition({
+            "name": "List", "empty": false, "subtype": {
+                "name": "Dict",
+                "empty": false,
+                "keys": Tifa._UNKNOWN_TYPE(),
+                "values": Tifa._UNKNOWN_TYPE()
+            }
+        })
+        
+    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - State Crime'] = '<category name="Data - State Crime" colour="50">'+
