@@ -190,9 +190,9 @@ PythonToBlocks.KNOWN_MODULES['state_demographics'] = {
 Tifa.MODULES['state_demographics'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_all_states': Tifa.simpleFunctionDefinition({
+        'get_all_states': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,

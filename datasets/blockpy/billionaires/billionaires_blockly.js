@@ -3,19 +3,13 @@
 var billionaires_INDEXES = [
     ["(None)", "(None)"],
     
-    ["year", "year"] ,
-    ["citizenship", "citizenship"] 
+    ["citizenship", "citizenship"] ,
+    ["year", "year"] 
 ];
 
 var billionaires_INDEX_VALUES = {
     "(None)": [],
     
-    "year": [
-        
-        ["1996", "1996"] ,
-        ["2001", "2001"] ,
-        ["2014", "2014"] 
-    ],
     "citizenship": [
         
         ["Algeria", "Algeria"] ,
@@ -91,6 +85,12 @@ var billionaires_INDEX_VALUES = {
         ["United States", "United States"] ,
         ["Venezuela", "Venezuela"] ,
         ["Vietnam", "Vietnam"] 
+    ],
+    "year": [
+        
+        ["1996", "1996"] ,
+        ["2001", "2001"] ,
+        ["2014", "2014"] 
     ]
 }
 
@@ -189,9 +189,9 @@ PythonToBlocks.KNOWN_MODULES['billionaires'] = {
 Tifa.MODULES['billionaires'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_billionaires': Tifa.simpleFunctionDefinition({
+        'get_billionaires': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,

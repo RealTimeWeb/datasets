@@ -3,31 +3,14 @@
 var publishers_INDEXES = [
     ["(None)", "(None)"],
     
-    ["genre", "genre"] ,
+    ["name", "name"] ,
     ["type", "type"] ,
-    ["name", "name"] 
+    ["genre", "genre"] 
 ];
 
 var publishers_INDEX_VALUES = {
     "(None)": [],
     
-    "genre": [
-        
-        ["children", "children"] ,
-        ["comics", "comics"] ,
-        ["fiction", "fiction"] ,
-        ["foreign language", "foreign language"] ,
-        ["genre fiction", "genre fiction"] ,
-        ["nonfiction", "nonfiction"] 
-    ],
-    "type": [
-        
-        ["amazon", "amazon"] ,
-        ["big five", "big five"] ,
-        ["indie", "indie"] ,
-        ["single author", "single author"] ,
-        ["small/medium", "small/medium"] 
-    ],
     "name": [
         
         ["(Indie Publisher)", "(Indie Publisher)"] ,
@@ -229,8 +212,8 @@ var publishers_INDEX_VALUES = {
         ["Perigee", "Perigee"] ,
         ["Peterson Institute for International Economics", "Peterson Institute for International Economics"] ,
         ["Peterson's", "Peterson's"] ,
-        ["Philomel", "Philomel"] ,
         ["PHILOMEL", "PHILOMEL"] ,
+        ["Philomel", "Philomel"] ,
         ["Piatkus", "Piatkus"] ,
         ["Picador", "Picador"] ,
         ["Pintail", "Pintail"] ,
@@ -339,6 +322,23 @@ var publishers_INDEX_VALUES = {
         ["Zonderkidz", "Zonderkidz"] ,
         ["Zondervan", "Zondervan"] ,
         ["Zondervan/Youth Specialties", "Zondervan/Youth Specialties"] 
+    ],
+    "type": [
+        
+        ["amazon", "amazon"] ,
+        ["big five", "big five"] ,
+        ["indie", "indie"] ,
+        ["single author", "single author"] ,
+        ["small/medium", "small/medium"] 
+    ],
+    "genre": [
+        
+        ["children", "children"] ,
+        ["comics", "comics"] ,
+        ["fiction", "fiction"] ,
+        ["foreign language", "foreign language"] ,
+        ["genre fiction", "genre fiction"] ,
+        ["nonfiction", "nonfiction"] 
     ]
 }
 
@@ -428,9 +428,9 @@ PythonToBlocks.KNOWN_MODULES['publishers'] = {
 Tifa.MODULES['publishers'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_books': Tifa.simpleFunctionDefinition({
+        'get_books': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,

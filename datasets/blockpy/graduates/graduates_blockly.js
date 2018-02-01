@@ -3,27 +3,13 @@
 var graduates_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Year", "Year"] ,
-    ["Major", "Major"] 
+    ["Major", "Major"] ,
+    ["Year", "Year"] 
 ];
 
 var graduates_INDEX_VALUES = {
     "(None)": [],
     
-    "Year": [
-        
-        ["1993", "1993"] ,
-        ["1995", "1995"] ,
-        ["1997", "1997"] ,
-        ["1999", "1999"] ,
-        ["2001", "2001"] ,
-        ["2003", "2003"] ,
-        ["2006", "2006"] ,
-        ["2008", "2008"] ,
-        ["2010", "2010"] ,
-        ["2013", "2013"] ,
-        ["2015", "2015"] 
-    ],
     "Major": [
         
         ["Agricultural Economics", "Agricultural Economics"] ,
@@ -73,6 +59,20 @@ var graduates_INDEX_VALUES = {
         ["Sociology", "Sociology"] ,
         ["Statistics", "Statistics"] ,
         ["Zoology, General", "Zoology, General"] 
+    ],
+    "Year": [
+        
+        ["1993", "1993"] ,
+        ["1995", "1995"] ,
+        ["1997", "1997"] ,
+        ["1999", "1999"] ,
+        ["2001", "2001"] ,
+        ["2003", "2003"] ,
+        ["2006", "2006"] ,
+        ["2008", "2008"] ,
+        ["2010", "2010"] ,
+        ["2013", "2013"] ,
+        ["2015", "2015"] 
     ]
 }
 
@@ -199,9 +199,9 @@ PythonToBlocks.KNOWN_MODULES['graduates'] = {
 Tifa.MODULES['graduates'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_majors': Tifa.simpleFunctionDefinition({
+        'get_majors': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,

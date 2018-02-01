@@ -282,9 +282,9 @@ PythonToBlocks.KNOWN_MODULES['energy'] = {
 Tifa.MODULES['energy'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_reports': Tifa.simpleFunctionDefinition({
+        'get_reports': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,

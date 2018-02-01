@@ -3,14 +3,49 @@
 var broadway_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Theatre", "Theatre"] ,
+    ["Year", "Year"] ,
     ["Type", "Type"] ,
-    ["Year", "Year"] 
+    ["Theatre", "Theatre"] 
 ];
 
 var broadway_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["1991", "1991"] ,
+        ["1992", "1992"] ,
+        ["1993", "1993"] ,
+        ["1994", "1994"] ,
+        ["1995", "1995"] ,
+        ["1996", "1996"] ,
+        ["1997", "1997"] ,
+        ["1998", "1998"] ,
+        ["1999", "1999"] ,
+        ["2000", "2000"] ,
+        ["2001", "2001"] ,
+        ["2002", "2002"] ,
+        ["2003", "2003"] ,
+        ["2004", "2004"] ,
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] ,
+        ["2014", "2014"] ,
+        ["2015", "2015"] ,
+        ["2016", "2016"] 
+    ],
+    "Type": [
+        
+        ["Musical", "Musical"] ,
+        ["Play", "Play"] ,
+        ["Special", "Special"] 
+    ],
     "Theatre": [
         
         ["Al Hirschfeld", "Al Hirschfeld"] ,
@@ -69,41 +104,6 @@ var broadway_INDEX_VALUES = {
         ["Vivian Beaumont", "Vivian Beaumont"] ,
         ["Walter Kerr", "Walter Kerr"] ,
         ["Winter Garden", "Winter Garden"] 
-    ],
-    "Type": [
-        
-        ["Musical", "Musical"] ,
-        ["Play", "Play"] ,
-        ["Special", "Special"] 
-    ],
-    "Year": [
-        
-        ["1991", "1991"] ,
-        ["1992", "1992"] ,
-        ["1993", "1993"] ,
-        ["1994", "1994"] ,
-        ["1995", "1995"] ,
-        ["1996", "1996"] ,
-        ["1997", "1997"] ,
-        ["1998", "1998"] ,
-        ["1999", "1999"] ,
-        ["2000", "2000"] ,
-        ["2001", "2001"] ,
-        ["2002", "2002"] ,
-        ["2003", "2003"] ,
-        ["2004", "2004"] ,
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] ,
-        ["2014", "2014"] ,
-        ["2015", "2015"] ,
-        ["2016", "2016"] 
     ]
 }
 
@@ -192,9 +192,9 @@ PythonToBlocks.KNOWN_MODULES['broadway'] = {
 Tifa.MODULES['broadway'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_shows': Tifa.simpleFunctionDefinition({
+        'get_shows': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,

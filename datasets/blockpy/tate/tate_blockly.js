@@ -159,9 +159,9 @@ PythonToBlocks.KNOWN_MODULES['tate'] = {
 Tifa.MODULES['tate'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_artwork': Tifa.simpleFunctionDefinition({
+        'get_artwork': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,

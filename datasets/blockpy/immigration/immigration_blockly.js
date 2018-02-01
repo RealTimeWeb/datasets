@@ -3,13 +3,26 @@
 var immigration_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Country", "Country"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["Country", "Country"] 
 ];
 
 var immigration_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] ,
+        ["2014", "2014"] 
+    ],
     "Country": [
         
         ["Afghanistan", "Afghanistan"] ,
@@ -269,19 +282,6 @@ var immigration_INDEX_VALUES = {
         ["Yugoslavia", "Yugoslavia"] ,
         ["Zambia", "Zambia"] ,
         ["Zimbabwe", "Zimbabwe"] 
-    ],
-    "Year": [
-        
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] ,
-        ["2014", "2014"] 
     ]
 }
 
@@ -372,9 +372,9 @@ PythonToBlocks.KNOWN_MODULES['immigration'] = {
 Tifa.MODULES['immigration'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_records': Tifa.simpleFunctionDefinition({
+        'get_records': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,

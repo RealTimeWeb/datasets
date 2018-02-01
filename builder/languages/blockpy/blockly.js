@@ -94,9 +94,9 @@ PythonToBlocks.KNOWN_MODULES['{{ library_name }}'] = {
 Tifa.MODULES['{{ library_name }}'] = {
     'name': "Module",
     'fields': {
-        'get': Tifa.simpleFunctionDefinition({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
+        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         {% for interface in interfaces %}
-        '{{ interface.name | snake_case }}': Tifa.simpleFunctionDefinition({
+        '{{ interface.name | snake_case }}': Tifa.defineSupplier({
             "name": "List", "empty": false, "subtype": {
                 "name": "Dict",
                 "empty": false,
