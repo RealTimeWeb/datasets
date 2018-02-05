@@ -197,9 +197,9 @@ for year in years:
             group_mean = lambda w, key: w.apply(lambda d: d.set_index('YMD').resample("W")[key].mean()).stack()
             group_sum = lambda w, key: w.apply(lambda d: d.set_index('YMD').resample("W")[key].sum()).stack()
             
-            add_key_from_df(group_mean(wbans, 'Tmax'), data, 'Data', 'Temperature', 'Maximum', mapper=int)
-            add_key_from_df(group_mean(wbans, 'Tmin'), data, 'Data', 'Temperature', 'Minimum', mapper=int)
-            add_key_from_df(group_mean(wbans, 'Tavg'), data, 'Data', 'Temperature', 'Average', mapper=int)
+            add_key_from_df(group_mean(wbans, 'Tmax'), data, 'Data', 'Temperature', 'Max Temp', mapper=int)
+            add_key_from_df(group_mean(wbans, 'Tmin'), data, 'Data', 'Temperature', 'Min Temp', mapper=int)
+            add_key_from_df(group_mean(wbans, 'Tavg'), data, 'Data', 'Temperature', 'Avg Temp', mapper=int)
             # Other viable values:
             #   Depart: Departure from normal 
             #   Sunrise
@@ -230,9 +230,9 @@ for (wban, date), values in data.items():
         continue
     values['Station'] = station_map[wban]
     ensure_value(values, 0.0, 'Data', 'Precipitation')
-    ensure_value(values, 60, 'Data', 'Temperature', 'Minimum')
-    ensure_value(values, 60, 'Data', 'Temperature', 'Maximum')
-    ensure_value(values, 60, 'Data', 'Temperature', 'Average')
+    ensure_value(values, 60, 'Data', 'Temperature', 'Min Temp')
+    ensure_value(values, 60, 'Data', 'Temperature', 'Max Temp')
+    ensure_value(values, 60, 'Data', 'Temperature', 'Avg Temp')
     #ensure_value(values, 30.0, 'Data', 'Pressure')
     ensure_value(values, 0.0, 'Data', 'Wind', 'Speed')
     ensure_value(values, 0, 'Data', 'Wind', 'Direction')

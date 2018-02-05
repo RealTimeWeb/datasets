@@ -33,9 +33,9 @@ interfaces:
 comments:
     Data:
         Temperature:
-            Average: The average recorded temperature on this week, in degrees Farenheit.
-            Minimum: The lowest recorded temperature on this week, in degrees Farenheit.
-            Maximum: The highest recorded temperature on this week, in degrees Farenheit.
+            Avg Temp: The average recorded temperature on this week, in degrees Farenheit.
+            Min Temp: The lowest recorded temperature on this week, in degrees Farenheit.
+            Max Temp: The highest recorded temperature on this week, in degrees Farenheit.
         Wind:
             Speed: The average windspeed for that week, in Miles per Hour.
             Direction: The average wind direction for that week, in degrees.
