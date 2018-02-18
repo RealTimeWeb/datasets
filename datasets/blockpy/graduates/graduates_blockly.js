@@ -3,13 +3,27 @@
 var graduates_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Major", "Major"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["Major", "Major"] 
 ];
 
 var graduates_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["1993", "1993"] ,
+        ["1995", "1995"] ,
+        ["1997", "1997"] ,
+        ["1999", "1999"] ,
+        ["2001", "2001"] ,
+        ["2003", "2003"] ,
+        ["2006", "2006"] ,
+        ["2008", "2008"] ,
+        ["2010", "2010"] ,
+        ["2013", "2013"] ,
+        ["2015", "2015"] 
+    ],
     "Major": [
         
         ["Agricultural Economics", "Agricultural Economics"] ,
@@ -59,20 +73,6 @@ var graduates_INDEX_VALUES = {
         ["Sociology", "Sociology"] ,
         ["Statistics", "Statistics"] ,
         ["Zoology, General", "Zoology, General"] 
-    ],
-    "Year": [
-        
-        ["1993", "1993"] ,
-        ["1995", "1995"] ,
-        ["1997", "1997"] ,
-        ["1999", "1999"] ,
-        ["2001", "2001"] ,
-        ["2003", "2003"] ,
-        ["2006", "2006"] ,
-        ["2008", "2008"] ,
-        ["2010", "2010"] ,
-        ["2013", "2013"] ,
-        ["2015", "2015"] 
     ]
 }
 
@@ -201,14 +201,71 @@ Tifa.MODULES['graduates'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_majors': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_majors': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Salaries'}, {"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Education'}, {"type": "Str", "value": 'Demographics'}, {"type": "Str", "value": 'Employment'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Highest'}, {"type": "Str", "value": 'Standard Deviation'}, {"type": "Str", "value": 'Median'}, {"type": "Str", "value": 'Quantity'}, {"type": "Str", "value": 'Lowest'}, {"type": "Str", "value": 'Mean'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._NUM_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Major'}, {"type": "Str", "value": 'Degrees'}], [
+					Tifa._STR_TYPE(), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Bachelors'}, {"type": "Str", "value": 'Professionals'}, {"type": "Str", "value": 'Masters'}, {"type": "Str", "value": 'Doctorates'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Total'}, {"type": "Str", "value": 'Gender'}, {"type": "Str", "value": 'Ethnicity'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Females'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Asians'}, {"type": "Str", "value": 'Whites'}, {"type": "Str", "value": 'Minorities'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Employer Type'}, {"type": "Str", "value": 'Work Activity'}, {"type": "Str", "value": 'Reason Working Outside Field'}, {"type": "Str", "value": 'Status'}, {"type": "Str", "value": 'Reason for Not Working'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Business/Industry'}, {"type": "Str", "value": 'Educational Institution'}, {"type": "Str", "value": 'Government'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Human Resources'}, {"type": "Str", "value": 'Computer Applications'}, {"type": "Str", "value": 'Teaching'}, {"type": "Str", "value": 'Development'}, {"type": "Str", "value": 'Accounting/Finance/Contracts'}, {"type": "Str", "value": 'Productions/Operations/Maintenance'}, {"type": "Str", "value": 'Managing/Supervising People/Projects'}, {"type": "Str", "value": 'Other'}, {"type": "Str", "value": 'Design'}, {"type": "Str", "value": 'Applied Research'}, {"type": "Str", "value": 'Professional Service'}, {"type": "Str", "value": 'Basic Research'}, {"type": "Str", "value": 'Sales, Purchasing, Marketing'}, {"type": "Str", "value": 'Qualitity/Productivity Management'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Family-related'}, {"type": "Str", "value": 'Job Location'}, {"type": "Str", "value": 'No Job Available'}, {"type": "Str", "value": 'Other'}, {"type": "Str", "value": 'Working Conditions'}, {"type": "Str", "value": 'Pay/Promotion'}, {"type": "Str", "value": 'Career Change'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Unemployed'}, {"type": "Str", "value": 'Not in Labor Force'}, {"type": "Str", "value": 'Employed'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'No need/want'}, {"type": "Str", "value": 'Family'}, {"type": "Str", "value": 'Student'}, {"type": "Str", "value": 'No Job Available'}, {"type": "Str", "value": 'Layoff'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])])]))),
         
     }
 };

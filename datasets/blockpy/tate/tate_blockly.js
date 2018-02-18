@@ -3,19 +3,13 @@
 var tate_INDEXES = [
     ["(None)", "(None)"],
     
-    ["gender", "gender"] ,
-    ["creation decade", "creation decade"] 
+    ["creation decade", "creation decade"] ,
+    ["gender", "gender"] 
 ];
 
 var tate_INDEX_VALUES = {
     "(None)": [],
     
-    "gender": [
-        
-        ["", ""] ,
-        ["Female", "Female"] ,
-        ["Male", "Male"] 
-    ],
     "creation decade": [
         
         ["0", "0"] ,
@@ -65,6 +59,12 @@ var tate_INDEX_VALUES = {
         ["1990", "1990"] ,
         ["2000", "2000"] ,
         ["2010", "2010"] 
+    ],
+    "gender": [
+        
+        ["", ""] ,
+        ["Female", "Female"] ,
+        ["Male", "Male"] 
     ]
 }
 
@@ -161,14 +161,33 @@ Tifa.MODULES['tate'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_artwork': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_artwork': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'artist'}, {"type": "Str", "value": 'metadata'}, {"type": "Str", "value": 'data'}, {"type": "Str", "value": 'dimensions'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'gender'}, {"type": "Str", "value": 'role'}, {"type": "Str", "value": 'name'}, {"type": "Str", "value": 'birth'}, {"type": "Str", "value": 'death'}], [
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'year'}, {"type": "Str", "value": 'location'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._STR_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'year'}, {"type": "Str", "value": 'location'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._STR_TYPE()])]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'creation decade'}, {"type": "Str", "value": 'credit'}, {"type": "Str", "value": 'acquisition date'}, {"type": "Str", "value": 'creation year'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'title'}, {"type": "Str", "value": 'thumbnail'}, {"type": "Str", "value": 'url'}, {"type": "Str", "value": 'medium'}], [
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'depth'}, {"type": "Str", "value": 'height'}, {"type": "Str", "value": 'width'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()])]))),
         
     }
 };

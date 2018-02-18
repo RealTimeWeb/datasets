@@ -240,14 +240,36 @@ Tifa.MODULES['aids'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_reports': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_reports': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Data'}, {"type": "Str", "value": 'Country'}, {"type": "Str", "value": 'Year'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'HIV Prevalence'}, {"type": "Str", "value": 'New HIV Infections'}, {"type": "Str", "value": 'People Living with HIV'}, {"type": "Str", "value": 'AIDS-Related Deaths'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Adults'}, {"type": "Str", "value": 'Young Women'}, {"type": "Str", "value": 'Young Men'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Female Adults'}, {"type": "Str", "value": 'Incidence Rate Among Adults'}, {"type": "Str", "value": 'All Ages'}, {"type": "Str", "value": 'Adults'}, {"type": "Str", "value": 'Male Adults'}, {"type": "Str", "value": 'Children'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Female Adults'}, {"type": "Str", "value": 'Total'}, {"type": "Str", "value": 'Male Adults'}, {"type": "Str", "value": 'Children'}, {"type": "Str", "value": 'Adults'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Female Adults'}, {"type": "Str", "value": 'All Ages'}, {"type": "Str", "value": 'Adults'}, {"type": "Str", "value": 'AIDS Orphans'}, {"type": "Str", "value": 'Male Adults'}, {"type": "Str", "value": 'Children'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._STR_TYPE(), 
+				Tifa._NUM_TYPE()]))),
         
     }
 };

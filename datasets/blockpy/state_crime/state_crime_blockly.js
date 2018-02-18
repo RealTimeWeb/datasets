@@ -3,13 +3,68 @@
 var state_crime_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Year", "Year"] ,
-    ["State", "State"] 
+    ["State", "State"] ,
+    ["Year", "Year"] 
 ];
 
 var state_crime_INDEX_VALUES = {
     "(None)": [],
     
+    "State": [
+        
+        ["Alabama", "Alabama"] ,
+        ["Alaska", "Alaska"] ,
+        ["Arizona", "Arizona"] ,
+        ["Arkansas", "Arkansas"] ,
+        ["California", "California"] ,
+        ["Colorado", "Colorado"] ,
+        ["Connecticut", "Connecticut"] ,
+        ["Delaware", "Delaware"] ,
+        ["District of Columbia", "District of Columbia"] ,
+        ["Florida", "Florida"] ,
+        ["Georgia", "Georgia"] ,
+        ["Hawaii", "Hawaii"] ,
+        ["Idaho", "Idaho"] ,
+        ["Illinois", "Illinois"] ,
+        ["Indiana", "Indiana"] ,
+        ["Iowa", "Iowa"] ,
+        ["Kansas", "Kansas"] ,
+        ["Kentucky", "Kentucky"] ,
+        ["Louisiana", "Louisiana"] ,
+        ["Maine", "Maine"] ,
+        ["Maryland", "Maryland"] ,
+        ["Massachusetts", "Massachusetts"] ,
+        ["Michigan", "Michigan"] ,
+        ["Minnesota", "Minnesota"] ,
+        ["Mississippi", "Mississippi"] ,
+        ["Missouri", "Missouri"] ,
+        ["Montana", "Montana"] ,
+        ["Nebraska", "Nebraska"] ,
+        ["Nevada", "Nevada"] ,
+        ["New Hampshire", "New Hampshire"] ,
+        ["New Jersey", "New Jersey"] ,
+        ["New Mexico", "New Mexico"] ,
+        ["New York", "New York"] ,
+        ["North Carolina", "North Carolina"] ,
+        ["North Dakota", "North Dakota"] ,
+        ["Ohio", "Ohio"] ,
+        ["Oklahoma", "Oklahoma"] ,
+        ["Oregon", "Oregon"] ,
+        ["Pennsylvania", "Pennsylvania"] ,
+        ["Rhode Island", "Rhode Island"] ,
+        ["South Carolina", "South Carolina"] ,
+        ["South Dakota", "South Dakota"] ,
+        ["Tennessee", "Tennessee"] ,
+        ["Texas", "Texas"] ,
+        ["United States", "United States"] ,
+        ["Utah", "Utah"] ,
+        ["Vermont", "Vermont"] ,
+        ["Virginia", "Virginia"] ,
+        ["Washington", "Washington"] ,
+        ["West Virginia", "West Virginia"] ,
+        ["Wisconsin", "Wisconsin"] ,
+        ["Wyoming", "Wyoming"] 
+    ],
     "Year": [
         
         ["1960", "1960"] ,
@@ -65,61 +120,6 @@ var state_crime_INDEX_VALUES = {
         ["2010", "2010"] ,
         ["2011", "2011"] ,
         ["2012", "2012"] 
-    ],
-    "State": [
-        
-        ["Alabama", "Alabama"] ,
-        ["Alaska", "Alaska"] ,
-        ["Arizona", "Arizona"] ,
-        ["Arkansas", "Arkansas"] ,
-        ["California", "California"] ,
-        ["Colorado", "Colorado"] ,
-        ["Connecticut", "Connecticut"] ,
-        ["Delaware", "Delaware"] ,
-        ["District of Columbia", "District of Columbia"] ,
-        ["Florida", "Florida"] ,
-        ["Georgia", "Georgia"] ,
-        ["Hawaii", "Hawaii"] ,
-        ["Idaho", "Idaho"] ,
-        ["Illinois", "Illinois"] ,
-        ["Indiana", "Indiana"] ,
-        ["Iowa", "Iowa"] ,
-        ["Kansas", "Kansas"] ,
-        ["Kentucky", "Kentucky"] ,
-        ["Louisiana", "Louisiana"] ,
-        ["Maine", "Maine"] ,
-        ["Maryland", "Maryland"] ,
-        ["Massachusetts", "Massachusetts"] ,
-        ["Michigan", "Michigan"] ,
-        ["Minnesota", "Minnesota"] ,
-        ["Mississippi", "Mississippi"] ,
-        ["Missouri", "Missouri"] ,
-        ["Montana", "Montana"] ,
-        ["Nebraska", "Nebraska"] ,
-        ["Nevada", "Nevada"] ,
-        ["New Hampshire", "New Hampshire"] ,
-        ["New Jersey", "New Jersey"] ,
-        ["New Mexico", "New Mexico"] ,
-        ["New York", "New York"] ,
-        ["North Carolina", "North Carolina"] ,
-        ["North Dakota", "North Dakota"] ,
-        ["Ohio", "Ohio"] ,
-        ["Oklahoma", "Oklahoma"] ,
-        ["Oregon", "Oregon"] ,
-        ["Pennsylvania", "Pennsylvania"] ,
-        ["Rhode Island", "Rhode Island"] ,
-        ["South Carolina", "South Carolina"] ,
-        ["South Dakota", "South Dakota"] ,
-        ["Tennessee", "Tennessee"] ,
-        ["Texas", "Texas"] ,
-        ["United States", "United States"] ,
-        ["Utah", "Utah"] ,
-        ["Vermont", "Vermont"] ,
-        ["Virginia", "Virginia"] ,
-        ["Washington", "Washington"] ,
-        ["West Virginia", "West Virginia"] ,
-        ["Wisconsin", "Wisconsin"] ,
-        ["Wyoming", "Wyoming"] 
     ]
 }
 
@@ -219,14 +219,37 @@ Tifa.MODULES['state_crime'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_all_crimes': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_all_crimes': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'State'}, {"type": "Str", "value": 'Data'}, {"type": "Str", "value": 'Year'}], [
+				Tifa._STR_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Population'}, {"type": "Str", "value": 'Totals'}, {"type": "Str", "value": 'Rates'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Property'}, {"type": "Str", "value": 'Violent'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Motor'}, {"type": "Str", "value": 'All'}, {"type": "Str", "value": 'Larceny'}, {"type": "Str", "value": 'Burglary'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Rape'}, {"type": "Str", "value": 'Murder'}, {"type": "Str", "value": 'Robbery'}, {"type": "Str", "value": 'All'}, {"type": "Str", "value": 'Assault'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Property'}, {"type": "Str", "value": 'Violent'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Motor'}, {"type": "Str", "value": 'All'}, {"type": "Str", "value": 'Larceny'}, {"type": "Str", "value": 'Burglary'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Rape'}, {"type": "Str", "value": 'Murder'}, {"type": "Str", "value": 'Robbery'}, {"type": "Str", "value": 'All'}, {"type": "Str", "value": 'Assault'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])])]), 
+				Tifa._NUM_TYPE()]))),
         
     }
 };

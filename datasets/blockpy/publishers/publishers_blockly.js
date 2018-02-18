@@ -3,14 +3,31 @@
 var publishers_INDEXES = [
     ["(None)", "(None)"],
     
-    ["name", "name"] ,
     ["type", "type"] ,
-    ["genre", "genre"] 
+    ["genre", "genre"] ,
+    ["name", "name"] 
 ];
 
 var publishers_INDEX_VALUES = {
     "(None)": [],
     
+    "type": [
+        
+        ["amazon", "amazon"] ,
+        ["big five", "big five"] ,
+        ["indie", "indie"] ,
+        ["single author", "single author"] ,
+        ["small/medium", "small/medium"] 
+    ],
+    "genre": [
+        
+        ["children", "children"] ,
+        ["comics", "comics"] ,
+        ["fiction", "fiction"] ,
+        ["foreign language", "foreign language"] ,
+        ["genre fiction", "genre fiction"] ,
+        ["nonfiction", "nonfiction"] 
+    ],
     "name": [
         
         ["(Indie Publisher)", "(Indie Publisher)"] ,
@@ -322,23 +339,6 @@ var publishers_INDEX_VALUES = {
         ["Zonderkidz", "Zonderkidz"] ,
         ["Zondervan", "Zondervan"] ,
         ["Zondervan/Youth Specialties", "Zondervan/Youth Specialties"] 
-    ],
-    "type": [
-        
-        ["amazon", "amazon"] ,
-        ["big five", "big five"] ,
-        ["indie", "indie"] ,
-        ["single author", "single author"] ,
-        ["small/medium", "small/medium"] 
-    ],
-    "genre": [
-        
-        ["children", "children"] ,
-        ["comics", "comics"] ,
-        ["fiction", "fiction"] ,
-        ["foreign language", "foreign language"] ,
-        ["genre fiction", "genre fiction"] ,
-        ["nonfiction", "nonfiction"] 
     ]
 }
 
@@ -430,14 +430,25 @@ Tifa.MODULES['publishers'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_books': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_books': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'genre'}, {"type": "Str", "value": 'daily average'}, {"type": "Str", "value": 'sold by'}, {"type": "Str", "value": 'statistics'}, {"type": "Str", "value": 'publisher'}], [
+				Tifa._STR_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'units sold'}, {"type": "Str", "value": 'gross sales'}, {"type": "Str", "value": 'amazon revenue'}, {"type": "Str", "value": 'publisher revenue'}, {"type": "Str", "value": 'author revenue'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._STR_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'total reviews'}, {"type": "Str", "value": 'sale price'}, {"type": "Str", "value": 'average rating'}, {"type": "Str", "value": 'sales rank'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'type'}, {"type": "Str", "value": 'name'}], [
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE()])]))),
         
     }
 };

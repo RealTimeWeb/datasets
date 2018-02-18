@@ -194,14 +194,24 @@ Tifa.MODULES['broadway'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_shows': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_shows': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Statistics'}, {"type": "Str", "value": 'Show'}, {"type": "Str", "value": 'Date'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Capacity'}, {"type": "Str", "value": 'Performances'}, {"type": "Str", "value": 'Attendance'}, {"type": "Str", "value": 'Gross Potential'}, {"type": "Str", "value": 'Gross'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Name'}, {"type": "Str", "value": 'Type'}, {"type": "Str", "value": 'Theatre'}], [
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Month'}, {"type": "Str", "value": 'Full'}, {"type": "Str", "value": 'Day'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._NUM_TYPE()])]))),
         
     }
 };

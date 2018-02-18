@@ -678,14 +678,60 @@ Tifa.MODULES['classics'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_books': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_books': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'bibliography'}, {"type": "Str", "value": 'metrics'}, {"type": "Str", "value": 'metadata'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'author'}, {"type": "Str", "value": 'subjects'}, {"type": "Str", "value": 'publication'}, {"type": "Str", "value": 'languages'}, {"type": "Str", "value": 'title'}, {"type": "Str", "value": 'type'}, {"type": "Str", "value": 'congress classifications'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'death'}, {"type": "Str", "value": 'name'}, {"type": "Str", "value": 'birth'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._STR_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._LIST_OF_TYPE(
+						Tifa._STR_TYPE()), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'month name'}, {"type": "Str", "value": 'day'}, {"type": "Str", "value": 'month'}, {"type": "Str", "value": 'full'}, {"type": "Str", "value": 'year'}], [
+						Tifa._STR_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._STR_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._LIST_OF_TYPE(
+						Tifa._STR_TYPE()), 
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._LIST_OF_TYPE(
+						Tifa._STR_TYPE())]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'statistics'}, {"type": "Str", "value": 'difficulty'}, {"type": "Str", "value": 'sentiments'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'characters'}, {"type": "Str", "value": 'words'}, {"type": "Str", "value": 'polysyllables'}, {"type": "Str", "value": 'sentences'}, {"type": "Str", "value": 'syllables'}, {"type": "Str", "value": 'average letter per word'}, {"type": "Str", "value": 'average sentence per word'}, {"type": "Str", "value": 'average sentence length'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'gunning fog'}, {"type": "Str", "value": 'linsear write formula'}, {"type": "Str", "value": 'smog index'}, {"type": "Str", "value": 'flesch reading ease'}, {"type": "Str", "value": 'flesch kincaid grade'}, {"type": "Str", "value": 'dale chall readability score'}, {"type": "Str", "value": 'coleman liau index'}, {"type": "Str", "value": 'automated readability index'}, {"type": "Str", "value": 'difficult words'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'polarity'}, {"type": "Str", "value": 'subjectivity'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'url'}, {"type": "Str", "value": 'downloads'}, {"type": "Str", "value": 'id'}, {"type": "Str", "value": 'rank'}, {"type": "Str", "value": 'formats'}], [
+					Tifa._STR_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'types'}, {"type": "Str", "value": 'total'}], [
+						Tifa._LIST_OF_TYPE(
+							Tifa._STR_TYPE()), 
+						Tifa._NUM_TYPE()])])]))),
         
     }
 };

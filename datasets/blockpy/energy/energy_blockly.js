@@ -284,14 +284,113 @@ Tifa.MODULES['energy'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_reports': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_reports': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'State'}, {"type": "Str", "value": 'Expenditure'}, {"type": "Str", "value": 'Production'}, {"type": "Str", "value": 'Consumption'}, {"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Price'}], [
+				Tifa._STR_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Residential'}, {"type": "Str", "value": 'Commercial'}, {"type": "Str", "value": 'Industrial'}, {"type": "Str", "value": 'Electric Power'}, {"type": "Str", "value": 'Transportation'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Wood'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}, {"type": "Str", "value": 'Kerosene'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Distillate Fuel Oil'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Kerosene'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}, {"type": "Str", "value": 'Kerosene'}, {"type": "Str", "value": 'Other Petroleum Products'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Distillate Fuel Oil'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Natural Gas'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Coal'}], [
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Electric Power'}, {"type": "Str", "value": 'Refinery'}, {"type": "Str", "value": 'Industrial'}, {"type": "Str", "value": 'Commercial'}, {"type": "Str", "value": 'Residential'}, {"type": "Str", "value": 'Transportation'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Wood'}, {"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Natural Gas'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Wood'}, {"type": "Str", "value": 'Solar'}, {"type": "Str", "value": 'Geothermal'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}, {"type": "Str", "value": 'Kerosene'}, {"type": "Str", "value": 'Other Petroleum Products'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Wind'}, {"type": "Str", "value": 'Hydropower'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Wood'}, {"type": "Str", "value": 'Solar'}, {"type": "Str", "value": 'Geothermal'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}, {"type": "Str", "value": 'Kerosene'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Wind'}, {"type": "Str", "value": 'Hydropower'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Wood'}, {"type": "Str", "value": 'Geothermal'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}, {"type": "Str", "value": 'Kerosene'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Distillate Fuel Oil'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._NUM_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Commercial'}, {"type": "Str", "value": 'Industrial'}, {"type": "Str", "value": 'Electric Power'}, {"type": "Str", "value": 'Transportation'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Kerosene'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}, {"type": "Str", "value": 'Kerosene'}, {"type": "Str", "value": 'Other Petroleum Products'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Distillate Fuel Oil'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Natural Gas'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Distillate Fuel Oil'}, {"type": "Str", "value": 'Coal'}, {"type": "Str", "value": 'Natural Gas'}, {"type": "Str", "value": 'Liquefied Petroleum Gases'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])])]))),
         
     }
 };

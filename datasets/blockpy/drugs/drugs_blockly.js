@@ -287,14 +287,192 @@ Tifa.MODULES['drugs'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_reports': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_reports': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Population'}, {"type": "Str", "value": 'State'}, {"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Totals'}, {"type": "Str", "value": 'Rates'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}, {"type": "Str", "value": '12-20'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._STR_TYPE(), 
+				Tifa._NUM_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Marijuana'}, {"type": "Str", "value": 'Illicit Drugs'}, {"type": "Str", "value": 'Alcohol'}, {"type": "Str", "value": 'Tobacco'}, {"type": "Str", "value": 'Pain Relievers Abuse Past Year'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Used Past Year'}, {"type": "Str", "value": 'Used Past Month'}, {"type": "Str", "value": 'New Users'}, {"type": "Str", "value": 'Perceptions of Risk'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'All Except Marijuana Used Past Month'}, {"type": "Str", "value": 'Abuse Past Year'}, {"type": "Str", "value": 'Dependence Past Year'}, {"type": "Str", "value": 'Need Treatment Past Year'}, {"type": "Str", "value": 'Cocaine Used Past Year'}, {"type": "Str", "value": 'Used Past Month'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Use Past Month'}, {"type": "Str", "value": 'Need Treatment Past Year'}, {"type": "Str", "value": 'In Minors'}, {"type": "Str", "value": 'Dependence Past Year'}, {"type": "Str", "value": 'Abuse Past Year'}, {"type": "Str", "value": 'Perceptions of Risk'}, {"type": "Str", "value": 'Binge Past Month'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Use'}, {"type": "Str", "value": 'Abuse'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Cigarette Past Month'}, {"type": "Str", "value": 'Use Past Month'}, {"type": "Str", "value": 'Perceptions of Risk'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Marijuana'}, {"type": "Str", "value": 'Illicit Drugs'}, {"type": "Str", "value": 'Alcohol'}, {"type": "Str", "value": 'Tobacco'}, {"type": "Str", "value": 'Pain Relievers Abuse Past Year'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Used Past Year'}, {"type": "Str", "value": 'Used Past Month'}, {"type": "Str", "value": 'New Users'}, {"type": "Str", "value": 'Perceptions of Risk'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'All Except Marijuana Used Past Month'}, {"type": "Str", "value": 'Abuse Past Year'}, {"type": "Str", "value": 'Dependence Past Year'}, {"type": "Str", "value": 'Need Treatment Past Year'}, {"type": "Str", "value": 'Cocaine Used Past Year'}, {"type": "Str", "value": 'Used Past Month'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Use Past Month'}, {"type": "Str", "value": 'Need Treatment Past Year'}, {"type": "Str", "value": 'In Minors'}, {"type": "Str", "value": 'Binge Past Month'}, {"type": "Str", "value": 'Abuse Past Year'}, {"type": "Str", "value": 'Perceptions of Risk'}, {"type": "Str", "value": 'Dependence Past Year'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Use'}, {"type": "Str", "value": 'Abuse'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Cigarette Past Month'}, {"type": "Str", "value": 'Use Past Month'}, {"type": "Str", "value": 'Perceptions of Risk'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '26+'}, {"type": "Str", "value": '12-17'}, {"type": "Str", "value": '18-25'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])])]))),
         
     }
 };

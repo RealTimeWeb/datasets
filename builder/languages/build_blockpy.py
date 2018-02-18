@@ -143,15 +143,64 @@ def json_path(path, data):
         data = data[entry]
     return data
 
-def build_metafiles(model, key_names, indexes, full_key_descriptions):
+def build_metafiles(model, key_names, indexes, full_key_descriptions, tifa_definitions):
     name = snake_case(model['metadata']['name'])
     root = 'blockpy/' + name + '/'
     return {
             root+'index.html' : env.get_template('blockpy_main.html').render(key_names=key_names, indexes=indexes, full_key_descriptions=full_key_descriptions, standalone=True, **model),
             root+name+'.html' : env.get_template('blockpy_main.html').render(key_names=key_names, indexes=indexes, full_key_descriptions=full_key_descriptions, standalone=False, **model),
             root + name + '_skulpt.js' : env.get_template('skulpt.js').render(key_names=key_names, indexes=indexes, **model),
-            root + name + '_blockly.js' : env.get_template('blockly.js').render(key_names=key_names, indexes=indexes,  **model)
+            root + name + '_blockly.js' : env.get_template('blockly.js').render(key_names=key_names, indexes=indexes,  tifa_definitions=tifa_definitions, **model)
             }
+            
+class TifaDefinition(object):
+    def __init__(self, data):
+        self.result = "Tifa.defineSupplier("
+        self.indent = 1
+        self.result += self.walk(data)
+        self.result += ")"
+    def walk(self, chunk):
+        self.indent += 1
+        start = "\n" + "\t"*self.indent
+        if isinstance(chunk, dict):
+            start+= self.walk_dict(chunk)
+        elif isinstance(chunk, list):
+            start+= self.walk_list(chunk)
+        else:
+            start+= self.walk_atomic(chunk)
+        self.indent -= 1
+        return start
+    def convert_literal(self, a_literal):
+        if isinstance(a_literal, (float, int)):
+            return '{{"type": "Num", "value": {!r}}}'.format(a_literal)
+        elif isinstance(a_literal, (str, unicode)):
+            return '{{"type": "Str", "value": {!r}}}'.format(a_literal)
+        elif isinstance(a_literal, bool):
+            return '{{"type": "Bool", "value": {!r}}}'.format(a_literal)
+    
+    def walk_dict(self, a_dict):
+        complete = 'Tifa._DICT_LITERAL_TYPE('
+        items = list(a_dict.items())
+        literals = ', '.join([self.convert_literal(l) for l, value in items])
+        values = ', '.join([self.walk(value) for key, value in items])
+        complete += '[{literals}], '.format(literals=literals)
+        complete += '[{values}]'.format(values=values)
+        complete += ')'
+        return complete
+    
+    def walk_list(self, a_list):
+        complete = 'Tifa._LIST_OF_TYPE('
+        complete += self.walk(a_list[0])
+        complete += ')'
+        return complete
+    
+    def walk_atomic(self, an_atomic):
+        if isinstance(an_atomic, (float, int)):
+            return 'Tifa._NUM_TYPE()'
+        elif isinstance(an_atomic, (str, unicode)):
+            return 'Tifa._STR_TYPE()'
+        elif isinstance(an_atomic, bool):
+            return 'Tifa._BOOL_TYPE()'
 
 class JsonLeafNodes(object):    
     def __init__(self, name, data):
@@ -271,7 +320,7 @@ def build_locals(model, js_path):
             output_file.write("_IMPORTED_DATASETS['{}'] = ".format(metadata_name))
             if row_type == "json":
                 data_list = json.load(local_file)
-                data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]                
+                data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]
                 data = lod_to_dol(data)
                 remove_outliers(data, actually_keep=model['metadata']['outliers'])
                 for row in data:
@@ -298,7 +347,7 @@ def build_locals(model, js_path):
                 json.dump(data, output_file, indent=2)
                 #model['visualized_datasets'][name] = data.keys()
             print("File sizes:", "{}mb".format(os.stat(json_path).st_size / 1024 / 1024))
-        yield json_path, complete_path, short_key_names, indexes, full_key_descriptions
+        yield json_path, complete_path, short_key_names, indexes, full_key_descriptions, data_list
 
 def build_blockpy(model, fast):
     name = snake_case(model['metadata']['name'])
@@ -321,8 +370,14 @@ def build_blockpy(model, fast):
     key_names = [k for s in results for k in s[2]]
     indexes = {k:v for s in results for k, v in s[3].items()}
     full_key_descriptions = [i[4] for i in results]
+    
+    tifa_definitions = []
+    for interface, s in zip(model['interfaces'], results): 
+        tifa_definitions.append(
+            (interface['name'], TifaDefinition(s[5]).result)
+        )
         
-    files.update(build_metafiles(model, key_names, indexes, full_key_descriptions))
+    files.update(build_metafiles(model, key_names, indexes, full_key_descriptions, tifa_definitions))
     
     return files, moves
     

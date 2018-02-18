@@ -225,14 +225,30 @@ Tifa.MODULES['earthquakes'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_earthquakes': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_earthquakes': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'impact'}, {"type": "Str", "value": 'id'}, {"type": "Str", "value": 'time'}, {"type": "Str", "value": 'location'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'magnitude'}, {"type": "Str", "value": 'significance'}, {"type": "Str", "value": 'gap'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._STR_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'month'}, {"type": "Str", "value": 'epoch'}, {"type": "Str", "value": 'second'}, {"type": "Str", "value": 'hour'}, {"type": "Str", "value": 'year'}, {"type": "Str", "value": 'day'}, {"type": "Str", "value": 'minute'}, {"type": "Str", "value": 'full'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._STR_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'name'}, {"type": "Str", "value": 'depth'}, {"type": "Str", "value": 'latitude'}, {"type": "Str", "value": 'longitude'}, {"type": "Str", "value": 'full'}, {"type": "Str", "value": 'distance'}], [
+					Tifa._STR_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._NUM_TYPE()])]))),
         
     }
 };

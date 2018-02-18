@@ -192,14 +192,70 @@ Tifa.MODULES['state_demographics'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_all_states': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_all_states': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Housing'}, {"type": "Str", "value": 'Employment'}, {"type": "Str", "value": 'Education'}, {"type": "Str", "value": 'Ethnicities'}, {"type": "Str", "value": 'Miscellaneous'}, {"type": "Str", "value": 'Population'}, {"type": "Str", "value": 'Income'}, {"type": "Str", "value": 'Sales'}, {"type": "Str", "value": 'Age'}, {"type": "Str", "value": 'State'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Homeownership Rate'}, {"type": "Str", "value": 'Median Value of Owner-Occupied Units'}, {"type": "Str", "value": 'Units in Multi-Unit Structures'}, {"type": "Str", "value": 'Persons per Household'}, {"type": "Str", "value": 'Households'}, {"type": "Str", "value": 'Housing Units'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Private Non-farm Establishments'}, {"type": "Str", "value": 'Private Non-farm Employment'}, {"type": "Str", "value": 'Private Non-farm Employment Percent Change'}, {"type": "Str", "value": 'Nonemployer Establishments'}, {"type": "Str", "value": 'Firms'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Hispanic-Owned'}, {"type": "Str", "value": 'Women-Owned'}, {"type": "Str", "value": 'Black-Owned'}, {"type": "Str", "value": 'Total'}, {"type": "Str", "value": 'American Indian-Owned'}, {"type": "Str", "value": 'Native Hawaiian and Other Pacific Islander-Owned'}, {"type": "Str", "value": 'Asian-Owned'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": "Bachelor's Degree or Higher"}, {"type": "Str", "value": 'High School or Higher'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'White Alone, not Hispanic or Latino'}, {"type": "Str", "value": 'Black Alone'}, {"type": "Str", "value": 'Asian Alone'}, {"type": "Str", "value": 'Hispanic or Latino'}, {"type": "Str", "value": 'Two or More Races'}, {"type": "Str", "value": 'White Alone'}, {"type": "Str", "value": 'American Indian and Alaska Native Alone'}, {"type": "Str", "value": 'Native Hawaiian and Other Pacific Islander Alone'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Percent Female'}, {"type": "Str", "value": 'Foreign Born'}, {"type": "Str", "value": 'Language Other than English at Home'}, {"type": "Str", "value": 'Manufacturers Shipments'}, {"type": "Str", "value": 'Land Area'}, {"type": "Str", "value": 'Veterans'}, {"type": "Str", "value": 'Mean Travel Time to Work'}, {"type": "Str", "value": 'Building Permits'}, {"type": "Str", "value": 'Living in Same House +1 Years'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Population per Square Mile'}, {"type": "Str", "value": '2010 Population'}, {"type": "Str", "value": '2014 Population'}, {"type": "Str", "value": 'Population Percent Change'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Median Houseold Income'}, {"type": "Str", "value": 'Persons Below Poverty Level'}, {"type": "Str", "value": 'Per Capita Income'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Retail Sales'}, {"type": "Str", "value": 'Accommodation and Food Services Sales'}, {"type": "Str", "value": 'Retail Sales per Capita'}, {"type": "Str", "value": 'Merchant Wholesaler Sales'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Percent Under 18 Years'}, {"type": "Str", "value": 'Percent Under 5 Years'}, {"type": "Str", "value": 'Percent 65 and Older'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._STR_TYPE()]))),
         
     }
 };

@@ -3,13 +3,34 @@
 var finance_INDEXES = [
     ["(None)", "(None)"],
     
-    ["State", "State"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["State", "State"] 
 ];
 
 var finance_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["1996", "1996"] ,
+        ["1997", "1997"] ,
+        ["1998", "1998"] ,
+        ["1999", "1999"] ,
+        ["2000", "2000"] ,
+        ["2001", "2001"] ,
+        ["2002", "2002"] ,
+        ["2003", "2003"] ,
+        ["2004", "2004"] ,
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] 
+    ],
     "State": [
         
         ["Alabama", "Alabama"] ,
@@ -63,27 +84,6 @@ var finance_INDEX_VALUES = {
         ["West Virginia", "West Virginia"] ,
         ["Wisconsin", "Wisconsin"] ,
         ["Wyoming", "Wyoming"] 
-    ],
-    "Year": [
-        
-        ["1996", "1996"] ,
-        ["1997", "1997"] ,
-        ["1998", "1998"] ,
-        ["1999", "1999"] ,
-        ["2000", "2000"] ,
-        ["2001", "2001"] ,
-        ["2002", "2002"] ,
-        ["2003", "2003"] ,
-        ["2004", "2004"] ,
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] 
     ]
 }
 
@@ -313,14 +313,184 @@ Tifa.MODULES['finance'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_finances': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_finances': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'State'}, {"type": "Str", "value": 'Totals'}, {"type": "Str", "value": 'Details'}], [
+				Tifa._NUM_TYPE(), 
+				Tifa._STR_TYPE(), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Charges'}, {"type": "Str", "value": 'Tax'}, {"type": "Str", "value": 'Expenditure'}, {"type": "Str", "value": 'State intergovernmental'}, {"type": "Str", "value": 'Equipment and land'}, {"type": "Str", "value": 'General expenditure'}, {"type": "Str", "value": 'General revenue'}, {"type": "Str", "value": 'Capital outlay'}, {"type": "Str", "value": 'Employee retirement revenue'}, {"type": "Str", "value": 'Revenue'}, {"type": "Str", "value": 'Local intergovernmental'}, {"type": "Str", "value": 'Utility revenue'}, {"type": "Str", "value": 'Unemployment comp revenue'}, {"type": "Str", "value": 'Miscellaneous'}, {"type": "Str", "value": 'Intergovernmental'}, {"type": "Str", "value": 'Sales tax'}, {"type": "Str", "value": 'Construction'}, {"type": "Str", "value": 'Insurance trust  revenue'}, {"type": "Str", "value": 'Miscellaneous commercial activity'}, {"type": "Str", "value": 'Selective sales tax'}, {"type": "Str", "value": "Worker's comp revenue"}, {"type": "Str", "value": 'Other insurance trust revenue'}, {"type": "Str", "value": 'License tax'}, {"type": "Str", "value": 'Federal intergovernmental'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._NUM_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Education'}, {"type": "Str", "value": 'Intergovernmental'}, {"type": "Str", "value": 'Health'}, {"type": "Str", "value": 'Utilities'}, {"type": "Str", "value": 'Transportation'}, {"type": "Str", "value": 'Correction'}, {"type": "Str", "value": 'Employment'}, {"type": "Str", "value": 'Public Welfare'}, {"type": "Str", "value": 'Waste'}, {"type": "Str", "value": 'Welfare'}, {"type": "Str", "value": 'Insurance Trust'}, {"type": "Str", "value": 'Natural Resources'}, {"type": "Str", "value": 'Financial Aid'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Education-NEC Intergovernmental'}, {"type": "Str", "value": 'Higher Education-NEC Intergovernmental'}, {"type": "Str", "value": 'Elementary Secondary Total Expenditure'}, {"type": "Str", "value": 'Education Intergovernmental'}, {"type": "Str", "value": 'Education Construction'}, {"type": "Str", "value": 'Education Equipment'}, {"type": "Str", "value": 'Elementary Secondary Intergovernmental'}, {"type": "Str", "value": 'Education Total'}, {"type": "Str", "value": 'Education Equipment and Land'}, {"type": "Str", "value": 'Higher Education-Auxilliary Total Expenditure'}, {"type": "Str", "value": 'Education-NEC Expenditure Total'}, {"type": "Str", "value": 'Education Other Current Operation'}, {"type": "Str", "value": 'Edcation Assistance and Subsidies'}, {"type": "Str", "value": 'Higher Education-NEC Total Expenditure'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Intergovernmental to Local'}, {"type": "Str", "value": 'Intergovernmental to Municipalities'}, {"type": "Str", "value": 'Intergovernmental to Townships'}, {"type": "Str", "value": 'Intergovernmental to Combined and Unallocable'}, {"type": "Str", "value": 'Intergovernmental to School Districts'}, {"type": "Str", "value": 'Intergovernmental Expenditure'}, {"type": "Str", "value": 'Intergovernmental to Federal'}, {"type": "Str", "value": 'Intergovernmental to State'}, {"type": "Str", "value": 'Intergovernmental to Counties'}, {"type": "Str", "value": 'Intergovernmental to Special Districts'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Hospitals'}, {"type": "Str", "value": 'Health Total Expenditure'}, {"type": "Str", "value": 'Health Intergovernmental'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Hospitals Total Construction'}, {"type": "Str", "value": 'Hospitals Total Current'}, {"type": "Str", "value": 'Hospitals Total Intergovernmental'}, {"type": "Str", "value": 'Own Hospitals Total Expenditure'}, {"type": "Str", "value": 'Hospital-Other Intergovernmental'}, {"type": "Str", "value": 'Hospital-Other Total Expenditure'}, {"type": "Str", "value": 'Hospitals Total Expenditure'}, {"type": "Str", "value": 'Hospitals Total Equipment and land'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Utilities Current Operation'}, {"type": "Str", "value": 'Electric Utility Total Expenditure'}, {"type": "Str", "value": 'Utilities Construction'}, {"type": "Str", "value": 'Utilities Equipment and Land'}, {"type": "Str", "value": 'Utilities Interest Total'}, {"type": "Str", "value": 'Gas Utility Total Expenditure'}, {"type": "Str", "value": 'Transit Utility Total Expenditure'}, {"type": "Str", "value": 'Utilities Total Expenditure'}, {"type": "Str", "value": 'Water Utility Total Expenditure'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Parking'}, {"type": "Str", "value": 'Transit Subsidy Intergovernmental'}, {"type": "Str", "value": 'Transit Subsidy Total Expenditure'}, {"type": "Str", "value": 'Highways'}, {"type": "Str", "value": 'Airports'}, {"type": "Str", "value": 'Water Transport'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Parking Total'}, {"type": "Str", "value": 'Parking Intergovernmental'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Regular Highways Intergovernmental'}, {"type": "Str", "value": 'Regular Highways Total Expenditure'}, {"type": "Str", "value": 'Highways Total Expenditure'}, {"type": "Str", "value": 'Toll Highways Total Expenditure'}, {"type": "Str", "value": 'Highways Land and Equipment'}, {"type": "Str", "value": 'Highways Direct'}, {"type": "Str", "value": 'Highways Intergovernmental'}, {"type": "Str", "value": 'Highways Construction Total'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Airports Intergovernmental'}, {"type": "Str", "value": 'Airports Total Expenditure'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Water Transport Total Expenditure'}, {"type": "Str", "value": 'Water Transport Intergovernmental'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()])]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Correction NEC Total'}, {"type": "Str", "value": 'Correction Total'}, {"type": "Str", "value": 'Correction NEC Intergovernmental'}, {"type": "Str", "value": 'Correction Institutions Total'}, {"type": "Str", "value": 'Correction Intergovernmental'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Employment Security Administration Expenditure Total'}, {"type": "Str", "value": 'Employment Security Administration Intergovernmental'}, {"type": "Str", "value": 'Unemployment Comp Total Cash and Securities'}, {"type": "Str", "value": 'Employee Retirement Total Expenditure'}, {"type": "Str", "value": 'Unemployment Comp Total Expenditure'}, {"type": "Str", "value": 'Employee Retirement Total Cash and Securities'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Public Welfare Total Expenditure'}, {"type": "Str", "value": 'Public Welfare Construction'}, {"type": "Str", "value": 'Public Welfare Assistance and Subsidies'}, {"type": "Str", "value": 'Public Welfare Equipment and Land'}, {"type": "Str", "value": 'Public Welfare Other Current Operation'}, {"type": "Str", "value": 'Public Welfare Direct Expenditure'}, {"type": "Str", "value": 'Public Welfare Intergovernmental'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Solid Waste Management Intergovernmental'}, {"type": "Str", "value": 'Sewerage Intergovernmental'}, {"type": "Str", "value": 'Sewerage Total Expenditure'}, {"type": "Str", "value": 'Solid Waste Management Total Expenditure'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Welfare NEC Total Expenditure'}, {"type": "Str", "value": 'Welfare Institution Total Expenditure'}, {"type": "Str", "value": 'Welfare NEC Intergovernmental'}, {"type": "Str", "value": 'Welfare Vendor Payments Total'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Insurance Trust Securities Total'}, {"type": "Str", "value": 'Insurance Trust Total Expenditure'}, {"type": "Str", "value": 'Insurance Trust State and Local Securities Total'}, {"type": "Str", "value": 'Insurance Trust Cash and Securities'}, {"type": "Str", "value": 'Insurance Trust Federal Agency Securities'}, {"type": "Str", "value": 'Insurance Trust Federal Securities'}, {"type": "Str", "value": 'Insurance Trust'}, {"type": "Str", "value": 'Insurance Trust Cash and Deposits'}, {"type": "Str", "value": 'Insurance Trust Other Securities'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Fish and Game'}, {"type": "Str", "value": 'Forestry'}, {"type": "Str", "value": 'Natural Resources Equipment and Land'}, {"type": "Str", "value": 'Agriculture'}, {"type": "Str", "value": 'Natural Resources Total'}, {"type": "Str", "value": 'Natural Resources Construction'}, {"type": "Str", "value": 'Natural Resources Direct'}, {"type": "Str", "value": 'Parks'}, {"type": "Str", "value": 'Natural Resources NEC Total Expenditure'}, {"type": "Str", "value": 'Natural Resources Intergovernmental'}], [
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Fish and Game Total Expenditure'}, {"type": "Str", "value": 'Fish and Game Intergovernmental'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Forestry Total Expenditure'}, {"type": "Str", "value": 'Forestry Intergovernmental'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._NUM_TYPE(), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Federal Agriculture Farm Income Total'}, {"type": "Str", "value": 'Federal Farm Credit Total'}, {"type": "Str", "value": 'Federal Farm Credit Intergovernmental'}, {"type": "Str", "value": 'Agriculture Total Expenditure'}, {"type": "Str", "value": 'Federal Agriculture Farm Income Intergovernmental'}, {"type": "Str", "value": 'Agriculture Intergovernmental'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Parks Total Expenditure'}, {"type": "Str", "value": 'Parks Intergovernmental'}], [
+							Tifa._NUM_TYPE(), 
+							Tifa._NUM_TYPE()]), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Cash Assistance Intergovernmental'}, {"type": "Str", "value": 'Assistance and Subsidies'}, {"type": "Str", "value": 'Cash Assistance Total Expenditure'}, {"type": "Str", "value": 'Securities Total'}, {"type": "Str", "value": 'Beginning Long Term Debt Total Outstanding'}, {"type": "Str", "value": 'Categorical Assistance Total Expenditure'}, {"type": "Str", "value": 'Cash and Deposits Total'}, {"type": "Str", "value": 'Federal Agency Securities Total'}, {"type": "Str", "value": 'Bond Fund Total'}, {"type": "Str", "value": 'Cash and Securities Total'}, {"type": "Str", "value": 'Sinking Fund Total'}, {"type": "Str", "value": 'Categorical Assistance Intergovernmental'}, {"type": "Str", "value": 'Borrowing Total'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])])]))),
         
     }
 };

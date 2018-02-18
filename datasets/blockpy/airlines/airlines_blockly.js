@@ -297,14 +297,41 @@ Tifa.MODULES['airlines'] = {
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
         
-        'get_reports': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        'get_reports': Tifa.defineSupplier(
+		Tifa._LIST_OF_TYPE(
+			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Time'}, {"type": "Str", "value": 'Statistics'}, {"type": "Str", "value": 'Airport'}], [
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Month'}, {"type": "Str", "value": 'Month Name'}, {"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Label'}], [
+					Tifa._NUM_TYPE(), 
+					Tifa._STR_TYPE(), 
+					Tifa._NUM_TYPE(), 
+					Tifa._STR_TYPE()]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": '# of Delays'}, {"type": "Str", "value": 'Carriers'}, {"type": "Str", "value": 'Flights'}, {"type": "Str", "value": 'Minutes Delayed'}], [
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'National Aviation System'}, {"type": "Str", "value": 'Security'}, {"type": "Str", "value": 'Carrier'}, {"type": "Str", "value": 'Weather'}, {"type": "Str", "value": 'Late Aircraft'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Total'}, {"type": "Str", "value": 'Names'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._LIST_OF_TYPE(
+							Tifa._STR_TYPE())]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Cancelled'}, {"type": "Str", "value": 'Total'}, {"type": "Str", "value": 'Delayed'}, {"type": "Str", "value": 'On Time'}, {"type": "Str", "value": 'Diverted'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()]), 
+					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'National Aviation System'}, {"type": "Str", "value": 'Total'}, {"type": "Str", "value": 'Security'}, {"type": "Str", "value": 'Late Aircraft'}, {"type": "Str", "value": 'Carrier'}, {"type": "Str", "value": 'Weather'}], [
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE(), 
+						Tifa._NUM_TYPE()])]), 
+				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Name'}, {"type": "Str", "value": 'Code'}], [
+					Tifa._STR_TYPE(), 
+					Tifa._STR_TYPE()])]))),
         
     }
 };

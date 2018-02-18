@@ -95,15 +95,8 @@ Tifa.MODULES['{{ library_name }}'] = {
     'name': "Module",
     'fields': {
         'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        {% for interface in interfaces %}
-        '{{ interface.name | snake_case }}': Tifa.defineSupplier({
-            "name": "List", "empty": false, "subtype": {
-                "name": "Dict",
-                "empty": false,
-                "keys": Tifa._UNKNOWN_TYPE(),
-                "values": Tifa._UNKNOWN_TYPE()
-            }
-        })
+        {% for tifa_definition in tifa_definitions %}
+        '{{ tifa_definition[0] | snake_case }}': {{ tifa_definition[1] }},
         {% endfor %}
     }
 };
