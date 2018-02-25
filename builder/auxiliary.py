@@ -104,8 +104,8 @@ def wrap_quotes(data):
     return pretty
 
 def kill_unicode(value):
-    if isinstance(value, unicode):
-        return value.encode('ascii', 'ignore')
+    #if isinstance(value, unicode):
+    #    return value.encode('ascii', 'ignore')
     return value
     
 def sluggify(astr):
