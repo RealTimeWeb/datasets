@@ -65,9 +65,9 @@ public class {{ dictionary.name | clean_invalid_characters | camel_case_caps }} 
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public {{ dictionary.name | clean_invalid_characters | camel_case_caps }}(JSONObject json_data) {
-        System.out.println(json_data);
+        //System.out.println(json_data);
+        {% for field in dictionary.fields %}
         try {
-            {%- for field in dictionary.fields -%}
             // {{field.key}}
             {%- if field.type | is_list %}
             this.{{ field.key | clean_invalid_characters | camel_case}} = new {{ field.type | to_java_type(field.key) }}();
@@ -86,13 +86,13 @@ public class {{ dictionary.name | clean_invalid_characters | camel_case_caps }} 
             {%- else %}
             this.{{ field.key | clean_invalid_characters | camel_case }} = {{ field.key | parse_json_path | create_json_conversion(field.type, field.key)}};
             {%- endif %}
-            {%- endfor %}
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a {{ dictionary.name | camel_case_caps }}; a field was missing.");
+    		System.err.println("Could not convert the response to a {{ dictionary.name | camel_case_caps }}; the field {{ field.key | clean_invalid_characters | camel_case }} was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a {{ dictionary.name | camel_case_caps }}; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a {{ dictionary.name | camel_case_caps }}; the field {{ field.key | clean_invalid_characters | camel_case }} had the wrong structure.");
     		e.printStackTrace();
         }
+        {% endfor %}
 	}	
 }

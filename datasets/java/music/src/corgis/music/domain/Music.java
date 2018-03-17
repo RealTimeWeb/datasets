@@ -11,8 +11,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import corgis.music.domain.Release;
-import corgis.music.domain.Artist;
 import corgis.music.domain.Song;
+import corgis.music.domain.Artist;
 
 /**
  * 
@@ -20,8 +20,8 @@ import corgis.music.domain.Song;
 public class Music {
 	
     private Release release;
-    private Artist artist;
     private Song song;
+    private Artist artist;
     
     
     /*
@@ -36,8 +36,8 @@ public class Music {
     /*
      * @return 
      */
-    public Artist getArtist() {
-        return this.artist;
+    public Song getSong() {
+        return this.song;
     }
     
     
@@ -45,8 +45,8 @@ public class Music {
     /*
      * @return 
      */
-    public Song getSong() {
-        return this.song;
+    public Artist getArtist() {
+        return this.artist;
     }
     
     
@@ -58,7 +58,7 @@ public class Music {
 	 * @return String
 	 */
 	public String toString() {
-		return "Music[" +release+", "+artist+", "+song+"]";
+		return "Music[" +release+", "+song+", "+artist+"]";
 	}
 	
 	/**
@@ -66,17 +66,40 @@ public class Music {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Music(JSONObject json_data) {
-        System.out.println(json_data);
-        try {// release
-            this.release = new Release((JSONObject)json_data.get("release"));// artist
-            this.artist = new Artist((JSONObject)json_data.get("artist"));// song
-            this.song = new Song((JSONObject)json_data.get("song"));
+        //System.out.println(json_data);
+        
+        try {
+            // release
+            this.release = new Release((JSONObject)json_data.get("release"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Music; a field was missing.");
+    		System.err.println("Could not convert the response to a Music; the field release was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Music; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Music; the field release had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // song
+            this.song = new Song((JSONObject)json_data.get("song"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Music; the field song was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Music; the field song had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // artist
+            this.artist = new Artist((JSONObject)json_data.get("artist"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Music; the field artist was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Music; the field artist had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

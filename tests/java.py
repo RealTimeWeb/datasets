@@ -24,6 +24,6 @@ for dataset in datasets:
     subprocess.call(["java", "-jar", jar_file])
     os.chdir('..')
     total_datasets += 1
-    print "\n"
+    print("\n")
 print("Total datasets: {}".format(total_datasets))
 print("Time taken: {}".format(default_timer() - start_time))
