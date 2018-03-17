@@ -826,6 +826,35 @@ $(document).ready(function() {
     
     
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="music/music.html">
+          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="music/music.html">
+        <h4 class="media-heading">Music</h4>
+        </a>
+        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
+        <i>music, songs, artists, creativity, media</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "music",
+            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
+            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
+            'tags': ["music", "songs", "artists", "creativity", "media"]
+        }
+    );
+    </script>
+    
+    
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="publishers">
       
       <div class="media-left  media-middle">

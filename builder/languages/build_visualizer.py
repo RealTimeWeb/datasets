@@ -311,7 +311,7 @@ def build_locals(model, js_path):
                         'name': index_path,
                         'indexes': [k.replace(',', '') for k in indexed_values.keys()],
                         'best_indexes': [k.replace(',', '') for k, v in sorted([(k, v['count']) 
-                                            for k, v in aggregated_values.values()[0].items()], key=lambda i: -i[1])[:10]],
+                                            for k, v in list(aggregated_values.values())[0].items()], key=lambda i: -i[1])[:10]],
                         #'pretty': category.title() + ": "+name.title()
                         'pretty': key_name_map[index_path]
                     })
