@@ -18,14 +18,15 @@ public class Dimensions {
 	
     // The width of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
     private Double width;
-    // The depth of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
-    private Double depth;
     // The height of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
     private Double height;
+    // The depth of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
+    private Double depth;
     
     
-    /*
-     * @return 
+    /**
+     * The width of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
+     * @return Double
      */
     public Double getWidth() {
         return this.width;
@@ -33,20 +34,22 @@ public class Dimensions {
     
     
     
-    /*
-     * @return 
+    /**
+     * The height of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
+     * @return Double
      */
-    public Double getDepth() {
-        return this.depth;
+    public Double getHeight() {
+        return this.height;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The depth of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
+     * @return Double
      */
-    public Double getHeight() {
-        return this.height;
+    public Double getDepth() {
+        return this.depth;
     }
     
     
@@ -58,7 +61,7 @@ public class Dimensions {
 	 * @return String
 	 */
 	public String toString() {
-		return "Dimensions[" +width+", "+depth+", "+height+"]";
+		return "Dimensions[" +width+", "+height+", "+depth+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Dimensions {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Dimensions(JSONObject json_data) {
-        try {// width
-            this.width = ((Number)json_data.get("width")).doubleValue();// depth
-            this.depth = ((Number)json_data.get("depth")).doubleValue();// height
-            this.height = ((Number)json_data.get("height")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // width
+            this.width = ((Number)json_data.get("width")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Dimensions; a field was missing.");
+    		System.err.println("Could not convert the response to a Dimensions; the field width was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Dimensions; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Dimensions; the field width had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // height
+            this.height = ((Number)json_data.get("height")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Dimensions; the field height was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Dimensions; the field height had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // depth
+            this.depth = ((Number)json_data.get("depth")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Dimensions; the field depth was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Dimensions; the field depth had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

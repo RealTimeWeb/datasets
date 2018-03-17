@@ -16,22 +16,14 @@ import org.json.simple.JSONObject;
  */
 public class NotInLaborForce {
 	
-    private Integer white;
     private Double blackOrAfricanAmerican;
+    private Integer white;
     private Integer asian;
     
     
-    /*
-     * @return 
-     */
-    public Integer getWhite() {
-        return this.white;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getBlackOrAfricanAmerican() {
         return this.blackOrAfricanAmerican;
@@ -39,8 +31,19 @@ public class NotInLaborForce {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getWhite() {
+        return this.white;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
      */
     public Integer getAsian() {
         return this.asian;
@@ -55,7 +58,7 @@ public class NotInLaborForce {
 	 * @return String
 	 */
 	public String toString() {
-		return "NotInLaborForce[" +white+", "+blackOrAfricanAmerican+", "+asian+"]";
+		return "NotInLaborForce[" +blackOrAfricanAmerican+", "+white+", "+asian+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class NotInLaborForce {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public NotInLaborForce(JSONObject json_data) {
-        try {// White
-            this.white = ((Number)json_data.get("White")).intValue();// Black or African American
-            this.blackOrAfricanAmerican = ((Number)json_data.get("Black or African American")).doubleValue();// Asian
-            this.asian = ((Number)json_data.get("Asian")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Black or African American
+            this.blackOrAfricanAmerican = ((Number)json_data.get("Black or African American")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a NotInLaborForce; a field was missing.");
+    		System.err.println("Could not convert the response to a NotInLaborForce; the field blackOrAfricanAmerican was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a NotInLaborForce; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a NotInLaborForce; the field blackOrAfricanAmerican had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // White
+            this.white = ((Number)json_data.get("White")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NotInLaborForce; the field white was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NotInLaborForce; the field white had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Asian
+            this.asian = ((Number)json_data.get("Asian")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NotInLaborForce; the field asian was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NotInLaborForce; the field asian had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

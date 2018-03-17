@@ -16,24 +16,26 @@ import org.json.simple.JSONObject;
  */
 public class Laws {
 	
-    private String type;
     private Integer id;
+    private String type;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public String getType() {
-        return this.type;
+    public Integer getId() {
+        return this.id;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Integer getId() {
-        return this.id;
+    public String getType() {
+        return this.type;
     }
     
     
@@ -45,7 +47,7 @@ public class Laws {
 	 * @return String
 	 */
 	public String toString() {
-		return "Laws[" +type+", "+id+"]";
+		return "Laws[" +id+", "+type+"]";
 	}
 	
 	/**
@@ -53,15 +55,29 @@ public class Laws {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Laws(JSONObject json_data) {
-        try {// type
-            this.type = (String)json_data.get("type");// id
+        //System.out.println(json_data);
+        
+        try {
+            // id
             this.id = ((Number)json_data.get("id")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Laws; a field was missing.");
+    		System.err.println("Could not convert the response to a Laws; the field id was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Laws; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Laws; the field id had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // type
+            this.type = (String)json_data.get("type");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Laws; the field type was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Laws; the field type had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

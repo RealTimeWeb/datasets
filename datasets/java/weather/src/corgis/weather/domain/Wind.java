@@ -16,26 +16,28 @@ import org.json.simple.JSONObject;
  */
 public class Wind {
 	
-    // The average wind direction for that week, in degrees.
-    private Integer direction;
     // The average windspeed for that week, in Miles per Hour.
     private Double speed;
+    // The average wind direction for that week, in degrees.
+    private Integer direction;
     
     
-    /*
-     * @return 
+    /**
+     * The average windspeed for that week, in Miles per Hour.
+     * @return Double
      */
-    public Integer getDirection() {
-        return this.direction;
+    public Double getSpeed() {
+        return this.speed;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The average wind direction for that week, in degrees.
+     * @return Integer
      */
-    public Double getSpeed() {
-        return this.speed;
+    public Integer getDirection() {
+        return this.direction;
     }
     
     
@@ -47,7 +49,7 @@ public class Wind {
 	 * @return String
 	 */
 	public String toString() {
-		return "Wind[" +direction+", "+speed+"]";
+		return "Wind[" +speed+", "+direction+"]";
 	}
 	
 	/**
@@ -55,16 +57,29 @@ public class Wind {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Wind(JSONObject json_data) {
-        System.out.println(json_data);
-        try {// Direction
-            this.direction = ((Number)json_data.get("Direction")).intValue();// Speed
+        //System.out.println(json_data);
+        
+        try {
+            // Speed
             this.speed = ((Number)json_data.get("Speed")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Wind; a field was missing.");
+    		System.err.println("Could not convert the response to a Wind; the field speed was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Wind; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Wind; the field speed had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Direction
+            this.direction = ((Number)json_data.get("Direction")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Wind; the field direction was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Wind; the field direction had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

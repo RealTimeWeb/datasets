@@ -19,14 +19,15 @@ import corgis.supreme_court.domain.End;
 public class NaturalCourt {
 	
     private Start start;
-    private String chief;
     private End end;
-    private Integer period;
+    private String chief;
     private Integer id;
+    private Integer period;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Start
      */
     public Start getStart() {
         return this.start;
@@ -34,17 +35,9 @@ public class NaturalCourt {
     
     
     
-    /*
-     * @return 
-     */
-    public String getChief() {
-        return this.chief;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return End
      */
     public End getEnd() {
         return this.end;
@@ -52,20 +45,32 @@ public class NaturalCourt {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Integer getPeriod() {
-        return this.period;
+    public String getChief() {
+        return this.chief;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getId() {
         return this.id;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getPeriod() {
+        return this.period;
     }
     
     
@@ -77,7 +82,7 @@ public class NaturalCourt {
 	 * @return String
 	 */
 	public String toString() {
-		return "NaturalCourt[" +start+", "+chief+", "+end+", "+period+", "+id+"]";
+		return "NaturalCourt[" +start+", "+end+", "+chief+", "+id+", "+period+"]";
 	}
 	
 	/**
@@ -85,18 +90,62 @@ public class NaturalCourt {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public NaturalCourt(JSONObject json_data) {
-        try {// start
-            this.start = new Start((JSONObject)json_data.get("start"));// chief
-            this.chief = (String)json_data.get("chief");// end
-            this.end = new End((JSONObject)json_data.get("end"));// period
-            this.period = ((Number)json_data.get("period")).intValue();// id
-            this.id = ((Number)json_data.get("id")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // start
+            this.start = new Start((JSONObject)json_data.get("start"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a NaturalCourt; a field was missing.");
+    		System.err.println("Could not convert the response to a NaturalCourt; the field start was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a NaturalCourt; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a NaturalCourt; the field start had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // end
+            this.end = new End((JSONObject)json_data.get("end"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NaturalCourt; the field end was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NaturalCourt; the field end had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // chief
+            this.chief = (String)json_data.get("chief");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NaturalCourt; the field chief was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NaturalCourt; the field chief had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // id
+            this.id = ((Number)json_data.get("id")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NaturalCourt; the field id was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NaturalCourt; the field id had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // period
+            this.period = ((Number)json_data.get("period")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NaturalCourt; the field period was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NaturalCourt; the field period had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

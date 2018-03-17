@@ -16,24 +16,16 @@ import org.json.simple.JSONObject;
  */
 public class MilitaryRecord {
 	
-    private String enteredServiceAt;
     private String company;
-    private String organization;
     private String rank;
     private String division;
+    private String organization;
+    private String enteredServiceAt;
     
     
-    /*
-     * @return 
-     */
-    public String getEnteredServiceAt() {
-        return this.enteredServiceAt;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getCompany() {
         return this.company;
@@ -41,17 +33,9 @@ public class MilitaryRecord {
     
     
     
-    /*
-     * @return 
-     */
-    public String getOrganization() {
-        return this.organization;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getRank() {
         return this.rank;
@@ -59,11 +43,32 @@ public class MilitaryRecord {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getDivision() {
         return this.division;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getOrganization() {
+        return this.organization;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getEnteredServiceAt() {
+        return this.enteredServiceAt;
     }
     
     
@@ -75,7 +80,7 @@ public class MilitaryRecord {
 	 * @return String
 	 */
 	public String toString() {
-		return "MilitaryRecord[" +enteredServiceAt+", "+company+", "+organization+", "+rank+", "+division+"]";
+		return "MilitaryRecord[" +company+", "+rank+", "+division+", "+organization+", "+enteredServiceAt+"]";
 	}
 	
 	/**
@@ -83,18 +88,62 @@ public class MilitaryRecord {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public MilitaryRecord(JSONObject json_data) {
-        try {// entered service at
-            this.enteredServiceAt = (String)json_data.get("entered service at");// company
-            this.company = (String)json_data.get("company");// organization
-            this.organization = (String)json_data.get("organization");// rank
-            this.rank = (String)json_data.get("rank");// division
-            this.division = (String)json_data.get("division");
+        //System.out.println(json_data);
+        
+        try {
+            // company
+            this.company = (String)json_data.get("company");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a MilitaryRecord; a field was missing.");
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field company was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a MilitaryRecord; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field company had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // rank
+            this.rank = (String)json_data.get("rank");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field rank was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field rank had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // division
+            this.division = (String)json_data.get("division");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field division was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field division had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // organization
+            this.organization = (String)json_data.get("organization");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field organization was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field organization had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // entered service at
+            this.enteredServiceAt = (String)json_data.get("entered service at");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field enteredServiceAt was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a MilitaryRecord; the field enteredServiceAt had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

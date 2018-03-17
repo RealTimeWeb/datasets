@@ -21,8 +21,9 @@ public class RickSantorum {
     private Double percentOfVotes;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getParty() {
         return this.party;
@@ -30,8 +31,9 @@ public class RickSantorum {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getNumberOfVotes() {
         return this.numberOfVotes;
@@ -39,8 +41,9 @@ public class RickSantorum {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getPercentOfVotes() {
         return this.percentOfVotes;
@@ -63,16 +66,40 @@ public class RickSantorum {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public RickSantorum(JSONObject json_data) {
-        try {// Party
-            this.party = (String)json_data.get("Party");// Number of Votes
-            this.numberOfVotes = ((Number)json_data.get("Number of Votes")).intValue();// Percent of Votes
-            this.percentOfVotes = ((Number)json_data.get("Percent of Votes")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Party
+            this.party = (String)json_data.get("Party");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a RickSantorum; a field was missing.");
+    		System.err.println("Could not convert the response to a RickSantorum; the field party was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a RickSantorum; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a RickSantorum; the field party had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Number of Votes
+            this.numberOfVotes = ((Number)json_data.get("Number of Votes")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a RickSantorum; the field numberOfVotes was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a RickSantorum; the field numberOfVotes had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Percent of Votes
+            this.percentOfVotes = ((Number)json_data.get("Percent of Votes")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a RickSantorum; the field percentOfVotes was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a RickSantorum; the field percentOfVotes had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

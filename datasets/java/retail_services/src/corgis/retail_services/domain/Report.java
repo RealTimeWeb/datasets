@@ -23,8 +23,9 @@ public class Report {
     private Time time;
     
     
-    /*
-     * @return 
+    /**
+     * Numbers represent millions of dollars
+     * @return Data
      */
     public Data getData() {
         return this.data;
@@ -32,8 +33,9 @@ public class Report {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Time
      */
     public Time getTime() {
         return this.time;
@@ -56,15 +58,29 @@ public class Report {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
-        try {// data
-            this.data = new Data((JSONObject)json_data.get("data"));// time
-            this.time = new Time((JSONObject)json_data.get("time"));
+        //System.out.println(json_data);
+        
+        try {
+            // data
+            this.data = new Data((JSONObject)json_data.get("data"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Report; a field was missing.");
+    		System.err.println("Could not convert the response to a Report; the field data was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Report; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Report; the field data had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // time
+            this.time = new Time((JSONObject)json_data.get("time"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field time was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field time had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -29,14 +29,8 @@ public class EducationLibrary {
         EducationLibrary educationLibrary = new EducationLibrary();
         
         
-        System.out.println("Testing production GetState");
-        StateRecord a_state_record_1_production = educationLibrary.getState("'Virginia'");
-        
-        
-        
-        
         System.out.println("Testing production GetAllStates");
-        ArrayList<StateRecord> list_of_state_record_2_production = educationLibrary.getAllStates();
+        ArrayList<StateRecord> list_of_state_record_1_production = educationLibrary.getAllStates();
         
         
         
@@ -70,68 +64,6 @@ public class EducationLibrary {
         this.connectToDatabase(this.databasePath);
 	}
     
-    
-    
-    
-    /**
-     * Returns information about one state. Enrollment data is for Pre-K through 12th grade.
-    
-     * @param state The state you are interested in.
-     * @return a state record
-     */
-	public StateRecord getState(String state) {
-        String query;
-        boolean test = false;
-        if (test) {
-            query = String.format("", this.HARDWARE);
-        } else {
-            query = "SELECT data FROM school WHERE state=? COLLATE NOCASE";
-        }
-        PreparedStatement preparedQuery = null;
-        ResultSet rs = null;
-        try {
-            preparedQuery = this.connection.prepareStatement(query);
-        } catch (SQLException e) {
-            System.err.println("Could not build SQL query for local database.");
-    		e.printStackTrace();
-        }
-        try {
-            preparedQuery.setString(1, state);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: state");
-    		e.printStackTrace();
-        }
-        try {
-            rs = preparedQuery.executeQuery();
-        } catch (SQLException e) {
-            System.err.println("Could not execute query.");
-    		e.printStackTrace();
-        }
-        
-        StateRecord result = null;
-        try {
-            while (rs.next()) {
-                String raw_result = rs.getString(1);
-                StateRecord parsed = null;
-                if (test) {
-                    
-                } else {
-                    parsed = new StateRecord((JSONObject)((JSONObject)this.parser.parse(raw_result)).get("data"));
-                    
-                }
-                
-                result = parsed;
-                
-            }
-        } catch (SQLException e) {
-            System.err.println("Could not iterate through query.");
-    		e.printStackTrace();
-        } catch (ParseException e) {
-            System.err.println("Could not convert the response from getState; a parser error occurred.");
-    		e.printStackTrace();
-        }
-        return result;
-	}
     
     
     

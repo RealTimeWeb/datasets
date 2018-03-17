@@ -21,8 +21,9 @@ public class Birth {
     private String locationName;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Date
      */
     public Date getDate() {
         return this.date;
@@ -30,8 +31,9 @@ public class Birth {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getLocationName() {
         return this.locationName;
@@ -54,15 +56,29 @@ public class Birth {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Birth(JSONObject json_data) {
-        try {// date
-            this.date = new Date((JSONObject)json_data.get("date"));// location name
-            this.locationName = (String)json_data.get("location name");
+        //System.out.println(json_data);
+        
+        try {
+            // date
+            this.date = new Date((JSONObject)json_data.get("date"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Birth; a field was missing.");
+    		System.err.println("Could not convert the response to a Birth; the field date was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Birth; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Birth; the field date had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // location name
+            this.locationName = (String)json_data.get("location name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Birth; the field locationName was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Birth; the field locationName had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

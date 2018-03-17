@@ -16,22 +16,14 @@ import org.json.simple.JSONObject;
  */
 public class CivilianNoninstitutionalPopulation {
 	
-    private Double white;
     private Double blackOrAfricanAmerican;
+    private Double white;
     private Integer asian;
     
     
-    /*
-     * @return 
-     */
-    public Double getWhite() {
-        return this.white;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getBlackOrAfricanAmerican() {
         return this.blackOrAfricanAmerican;
@@ -39,8 +31,19 @@ public class CivilianNoninstitutionalPopulation {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
+     */
+    public Double getWhite() {
+        return this.white;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
      */
     public Integer getAsian() {
         return this.asian;
@@ -55,7 +58,7 @@ public class CivilianNoninstitutionalPopulation {
 	 * @return String
 	 */
 	public String toString() {
-		return "CivilianNoninstitutionalPopulation[" +white+", "+blackOrAfricanAmerican+", "+asian+"]";
+		return "CivilianNoninstitutionalPopulation[" +blackOrAfricanAmerican+", "+white+", "+asian+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class CivilianNoninstitutionalPopulation {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public CivilianNoninstitutionalPopulation(JSONObject json_data) {
-        try {// White
-            this.white = ((Number)json_data.get("White")).doubleValue();// Black or African American
-            this.blackOrAfricanAmerican = ((Number)json_data.get("Black or African American")).doubleValue();// Asian
-            this.asian = ((Number)json_data.get("Asian")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Black or African American
+            this.blackOrAfricanAmerican = ((Number)json_data.get("Black or African American")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; a field was missing.");
+    		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; the field blackOrAfricanAmerican was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; the field blackOrAfricanAmerican had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // White
+            this.white = ((Number)json_data.get("White")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; the field white was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; the field white had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Asian
+            this.asian = ((Number)json_data.get("Asian")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; the field asian was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; the field asian had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

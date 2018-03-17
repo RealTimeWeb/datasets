@@ -16,24 +16,26 @@ import org.json.simple.JSONObject;
  */
 public class Campaign {
 	
-    private String name;
     private ArrayList<String> sides;
+    private String name;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return ArrayList<String>
      */
-    public String getName() {
-        return this.name;
+    public ArrayList<String> getSides() {
+        return this.sides;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public ArrayList<String> getSides() {
-        return this.sides;
+    public String getName() {
+        return this.name;
     }
     
     
@@ -45,7 +47,7 @@ public class Campaign {
 	 * @return String
 	 */
 	public String toString() {
-		return "Campaign[" +name+", "+sides+"]";
+		return "Campaign[" +sides+", "+name+"]";
 	}
 	
 	/**
@@ -53,19 +55,33 @@ public class Campaign {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Campaign(JSONObject json_data) {
-        try {// name
-            this.name = (String)json_data.get("name");// sides
+        //System.out.println(json_data);
+        
+        try {
+            // sides
             this.sides = new ArrayList<String>();
             Iterator<Object> sidesIter = ((List<Object>)json_data.get("sides")).iterator();
             while (sidesIter.hasNext()) {
                 this.sides.add(new String((String)sidesIter.next()));
             }
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Campaign; a field was missing.");
+    		System.err.println("Could not convert the response to a Campaign; the field sides was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Campaign; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Campaign; the field sides had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // name
+            this.name = (String)json_data.get("name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Campaign; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Campaign; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

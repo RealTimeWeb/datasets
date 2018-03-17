@@ -22,8 +22,9 @@ public class Rates {
     private Property property;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Violent
      */
     public Violent getViolent() {
         return this.violent;
@@ -31,8 +32,9 @@ public class Rates {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Property
      */
     public Property getProperty() {
         return this.property;
@@ -55,15 +57,29 @@ public class Rates {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Rates(JSONObject json_data) {
-        try {// Violent
-            this.violent = new Violent((JSONObject)json_data.get("Violent"));// Property
-            this.property = new Property((JSONObject)json_data.get("Property"));
+        //System.out.println(json_data);
+        
+        try {
+            // Violent
+            this.violent = new Violent((JSONObject)json_data.get("Violent"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Rates; a field was missing.");
+    		System.err.println("Could not convert the response to a Rates; the field violent was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Rates; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Rates; the field violent had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Property
+            this.property = new Property((JSONObject)json_data.get("Property"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Rates; the field property was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Rates; the field property had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

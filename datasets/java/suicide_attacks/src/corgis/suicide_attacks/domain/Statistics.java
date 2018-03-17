@@ -20,8 +20,9 @@ public class Statistics {
     private Integer numberKilled;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getNumberWounded() {
         return this.numberWounded;
@@ -29,8 +30,9 @@ public class Statistics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getNumberKilled() {
         return this.numberKilled;
@@ -53,15 +55,29 @@ public class Statistics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Statistics(JSONObject json_data) {
-        try {// # wounded
-            this.numberWounded = ((Number)json_data.get("# wounded")).intValue();// # killed
-            this.numberKilled = ((Number)json_data.get("# killed")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // # wounded
+            this.numberWounded = ((Number)json_data.get("# wounded")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Statistics; a field was missing.");
+    		System.err.println("Could not convert the response to a Statistics; the field numberWounded was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Statistics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Statistics; the field numberWounded had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // # killed
+            this.numberKilled = ((Number)json_data.get("# killed")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field numberKilled was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field numberKilled had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

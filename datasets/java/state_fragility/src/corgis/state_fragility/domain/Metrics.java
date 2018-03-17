@@ -10,31 +10,33 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.state_fragility.domain.Legitimacy;
 import corgis.state_fragility.domain.Effectiveness;
+import corgis.state_fragility.domain.Legitimacy;
 
 /**
  * 
  */
 public class Metrics {
 	
-    private Legitimacy legitimacy;
-    private Effectiveness effectiveness;
     // The sum of the Effectiveness Score and the Legitimacy Score
     private Integer stateFragilityIndex;
+    private Effectiveness effectiveness;
+    private Legitimacy legitimacy;
     
     
-    /*
-     * @return 
+    /**
+     * The sum of the Effectiveness Score and the Legitimacy Score
+     * @return Integer
      */
-    public Legitimacy getLegitimacy() {
-        return this.legitimacy;
+    public Integer getStateFragilityIndex() {
+        return this.stateFragilityIndex;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Effectiveness
      */
     public Effectiveness getEffectiveness() {
         return this.effectiveness;
@@ -42,11 +44,12 @@ public class Metrics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Legitimacy
      */
-    public Integer getStateFragilityIndex() {
-        return this.stateFragilityIndex;
+    public Legitimacy getLegitimacy() {
+        return this.legitimacy;
     }
     
     
@@ -58,7 +61,7 @@ public class Metrics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Metrics[" +legitimacy+", "+effectiveness+", "+stateFragilityIndex+"]";
+		return "Metrics[" +stateFragilityIndex+", "+effectiveness+", "+legitimacy+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Metrics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Metrics(JSONObject json_data) {
-        try {// Legitimacy
-            this.legitimacy = new Legitimacy((JSONObject)json_data.get("Legitimacy"));// Effectiveness
-            this.effectiveness = new Effectiveness((JSONObject)json_data.get("Effectiveness"));// State Fragility Index
+        //System.out.println(json_data);
+        
+        try {
+            // State Fragility Index
             this.stateFragilityIndex = ((Number)json_data.get("State Fragility Index")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Metrics; a field was missing.");
+    		System.err.println("Could not convert the response to a Metrics; the field stateFragilityIndex was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Metrics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Metrics; the field stateFragilityIndex had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Effectiveness
+            this.effectiveness = new Effectiveness((JSONObject)json_data.get("Effectiveness"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Metrics; the field effectiveness was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Metrics; the field effectiveness had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Legitimacy
+            this.legitimacy = new Legitimacy((JSONObject)json_data.get("Legitimacy"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Metrics; the field legitimacy was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Metrics; the field legitimacy had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

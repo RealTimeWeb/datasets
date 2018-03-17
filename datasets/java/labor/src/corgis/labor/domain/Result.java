@@ -23,8 +23,9 @@ public class Result {
     private Time time;
     
     
-    /*
-     * @return 
+    /**
+     * If the data is not a rate, then it is presented as the number in thousands
+     * @return Data
      */
     public Data getData() {
         return this.data;
@@ -32,8 +33,9 @@ public class Result {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Time
      */
     public Time getTime() {
         return this.time;
@@ -56,15 +58,29 @@ public class Result {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Result(JSONObject json_data) {
-        try {// Data
-            this.data = new Data((JSONObject)json_data.get("Data"));// Time
-            this.time = new Time((JSONObject)json_data.get("Time"));
+        //System.out.println(json_data);
+        
+        try {
+            // Data
+            this.data = new Data((JSONObject)json_data.get("Data"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Result; a field was missing.");
+    		System.err.println("Could not convert the response to a Result; the field data was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Result; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Result; the field data had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Time
+            this.time = new Time((JSONObject)json_data.get("Time"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Result; the field time was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Result; the field time had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

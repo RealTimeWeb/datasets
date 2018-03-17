@@ -24,320 +24,578 @@
 <span class="sourceLineNo">016</span> */<a name="line.16"></a>
 <span class="sourceLineNo">017</span>public class Totals {<a name="line.17"></a>
 <span class="sourceLineNo">018</span>        <a name="line.18"></a>
-<span class="sourceLineNo">019</span>    // Revenue from contributions required of employers and employees for financing social insurance programs operated by the government (see Insurance trust system, below) and earnings on assets held for such systems. Excludes any contributions by a government - either as employer contributions or for general financial support - to a social insurance system it administers. Note that tax proceeds, donations, and any forms of revenue other than those enumerated above are classified as general revenue, even though such amounts may be received specifically for insurance trust purposes.<a name="line.19"></a>
-<span class="sourceLineNo">020</span>    private Integer insuranceTrustRevenue;<a name="line.20"></a>
-<span class="sourceLineNo">021</span>    // Direct expenditure for contract or force account construction of buildings,grounds, and other improvements, and purchase of equipment, land, and existing structures. Includes amounts for additions, replacements, and major alterations to fixed works and structures. However, expenditure for repairs to such works and structures is classified as current operation expenditure.<a name="line.21"></a>
-<span class="sourceLineNo">022</span>    private Integer capitalOutlay;<a name="line.22"></a>
-<span class="sourceLineNo">023</span>    // All intergovernmental revenue received from the state government. For local governments, includes amounts originally from the federal government but channeled through the state.<a name="line.23"></a>
-<span class="sourceLineNo">024</span>    private Integer stateIntergovernmental;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>    // General expenditure for purposes and activities not falling within any standard functional category and unallocated amounts relating to two or more functions.<a name="line.25"></a>
-<span class="sourceLineNo">026</span>    private Integer miscellaneous;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>    // Charges imposed for providing current services or for the sale of products in connection with general government activities.<a name="line.27"></a>
-<span class="sourceLineNo">028</span>    private Integer charges;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>    // Production of fixed works and structures additions, replacements, and major alterations, including planning and design of specific projects, site improvements, and provision of equipment and facilities that are integral parts of a structure. Includes contract construction, undertaken on a contract basis by private contractors, and force account construction, undertaken with direct use of material and labor by the government.<a name="line.29"></a>
-<span class="sourceLineNo">030</span>    private Integer construction;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>    // All amounts of money paid out by a government--net of recoveries and other correcting transactions--other than for retirement of debt, investment in securities, extension of credit, or as agency transactions. Note that expenditure includes only external transactions of a government and excludes non-cash transactions such as the provision of perquisites or other payments in kind.<a name="line.31"></a>
-<span class="sourceLineNo">032</span>    private Integer expenditure;<a name="line.32"></a>
-<span class="sourceLineNo">033</span>    // All government revenue except Liquor stores revenue, Insurance trust revenue, and Utility revenue. The basis for distinction is not the fund or administrative unit receiving particular amounts, but rather the nature of the revenue sources concerned.<a name="line.33"></a>
-<span class="sourceLineNo">034</span>    private Integer generalRevenue;<a name="line.34"></a>
-<span class="sourceLineNo">035</span>    // Provision and operation of commercial facilities not classified under particular functions. Includes a bank (North Dakota), and cement plant, hail insurance systems, and the like.<a name="line.35"></a>
-<span class="sourceLineNo">036</span>    private Integer miscellaneousCommercialActivity;<a name="line.36"></a>
-<span class="sourceLineNo">037</span>    // Other revenue related to ITR.<a name="line.37"></a>
-<span class="sourceLineNo">038</span>    private Integer otherInsuranceTrustRevenue;<a name="line.38"></a>
-<span class="sourceLineNo">039</span>    // Revenue related to Worker's Compensation.<a name="line.39"></a>
-<span class="sourceLineNo">040</span>    private Integer workersCompRevenue;<a name="line.40"></a>
-<span class="sourceLineNo">041</span>    // Apparatus, furnishings, motor vehicles, office machines, and the like having an expected life of more than 5 years. Equipment expenditure consists only of amounts for purchase of equipment, including both additional equipment and replacements. Expenditures for facilities that are integral parts of structures are classified as expenditure for construction or for purchase of land and existing structures.<a name="line.41"></a>
-<span class="sourceLineNo">042</span>    private Integer equipmentAndLand;<a name="line.42"></a>
-<span class="sourceLineNo">043</span>    // Revenue related to Unemployment Compensation.<a name="line.43"></a>
-<span class="sourceLineNo">044</span>    private Integer unemploymentCompRevenue;<a name="line.44"></a>
-<span class="sourceLineNo">045</span>    // Sales and gross receipts taxes imposed on sales of particular commodities or services or gross receipts of particular businesses, separately and apart from the application of general sales and gross receipts taxes. Specific selective sales taxes included are alcoholic beverages, amusements, insurance, motor fuels, parimutuels, public utilities, tobacco products, and others.<a name="line.45"></a>
-<span class="sourceLineNo">046</span>    private Integer selectiveSalesTax;<a name="line.46"></a>
-<span class="sourceLineNo">047</span>    // Sales or gross receipts taxes which are applicable with only specified exceptions to all types of goods and services, or all gross income, whether at a single rate or at classified rates. Taxes imposed distinctively upon sales or gross receipts from selected commodities, services, or business are reported separately under categories one through eight below.<a name="line.47"></a>
-<span class="sourceLineNo">048</span>    private Integer salesTax;<a name="line.48"></a>
-<span class="sourceLineNo">049</span>    // Taxes exacted (either for revenue raising or for regulation) as a condition to the exercise of a business or nonbusiness privilege, at a flat rate or measured by such bases as capital stock, capital surplus, number of business units, or capacity. Excludes taxes measured directly by transactions, gross or net income, or value of property except those to which only nominal rates apply. "License" based on these latter measures, other than those at nominal rates, are classified according to the measure concerned. Includes "fees" related to licensing activities - automobile inspection, gasoline and oil inspection, professional examinations and licenses, etc. - as well as license taxes producing substantial revenue.<a name="line.49"></a>
-<span class="sourceLineNo">050</span>    private Integer licenseTax;<a name="line.50"></a>
-<span class="sourceLineNo">051</span>    // Intergovernmental revenue received by a government directly from the federal government. For local governments, excludes federal aid channeled through state governments, which is considered as Intergovernmental revenue from state government.<a name="line.51"></a>
-<span class="sourceLineNo">052</span>    private Integer federalIntergovernmental;<a name="line.52"></a>
-<span class="sourceLineNo">053</span>    // Amounts paid to other governments as fiscal aid in the form of shared revenues and grants-in-aid, as reimbursements for performance of general government activities and for specific services for the paying government, or in lieu of taxes. Excludes amounts paid to other governments for purchase of commodities, property, or utility services, any tax imposed and paid as such, and employer contributions for social insurance - e.g., contributions to the Federal Government for Old Age, Survivors', Disability, and Health Insurance for government employees.<a name="line.53"></a>
-<span class="sourceLineNo">054</span>    private Integer generalExpenditure;<a name="line.54"></a>
-<span class="sourceLineNo">055</span>    // Revenue from sale of utility commodities and services to the public and to other governments. Does not include amounts from sales to the parent government. Also excludes income from utility fund investments and from other nonoperating properties (treated as General revenue). Any monies from taxes, special assessments, and intergovernmental revenue are classified as General revenue, not Utility revenue.<a name="line.55"></a>
-<span class="sourceLineNo">056</span>    private Integer utilityRevenue;<a name="line.56"></a>
-<span class="sourceLineNo">057</span>    // All amounts of money received by a government from external sources--net of refunds and other correcting transactions--other than from issuance of debt, liquidation of investments, and as agency and private trust transactions. Note that revenue excludes noncash transactions such as receipt of services, commodities, or other "receipts in kind."<a name="line.57"></a>
-<span class="sourceLineNo">058</span>    private Integer revenue;<a name="line.58"></a>
-<span class="sourceLineNo">059</span>    // Compulsory contributions exacted by a government for public purposes except employee and employee assessments for retirement and social insurance purposes, which are classified as insurance trust revenue. All tax revenue is classified as general revenue and comprises amounts received (including interest and penalties but excluding protested amounts and refunds) from all taxes imposed by a government. Note that local government tax revenue excludes any amounts from shares of state-imposed and collected taxes, which are classified as Intergovernmental revenue.<a name="line.59"></a>
-<span class="sourceLineNo">060</span>    private Integer tax;<a name="line.60"></a>
-<span class="sourceLineNo">061</span>    // Amounts from local governments: for shares in financial support of programs administered by the state; for reimbursements of services performed or expenditures made for them by the state; for application to debt services on state debt issued for their benefit; and for repayment of advances and contingent loans extended to them. Does not include local government contributions to state-administered employee retirement or other insurance trust systems, which are classified as insurance trust revenue, or agency transactions (see Agency and private trust transactions). Excludes proceeds from interest on local government securities held by the state and proceeds from state taxes on local government facilities.<a name="line.61"></a>
-<span class="sourceLineNo">062</span>    private Integer localIntergovernmental;<a name="line.62"></a>
-<span class="sourceLineNo">063</span>    // Amounts received from other governments as fiscal aid in the form of shared revenues and grants-in -aid, as reimbursements for performance of general government functions and specific services for the paying government (e.g., care of prisoners or contractual research), or in lieu of taxes, Excludes amounts received from other governments for sale of property, commodities, and utility services. All intergovernmental revenue is classified as General revenue.<a name="line.63"></a>
-<span class="sourceLineNo">064</span>    private Integer intergovernmental;<a name="line.64"></a>
-<span class="sourceLineNo">065</span>    private Integer employeeRetirementRevenue;<a name="line.65"></a>
+<span class="sourceLineNo">019</span>    // Amounts from local governments: for shares in financial support of programs administered by the state; for reimbursements of services performed or expenditures made for them by the state; for application to debt services on state debt issued for their benefit; and for repayment of advances and contingent loans extended to them. Does not include local government contributions to state-administered employee retirement or other insurance trust systems, which are classified as insurance trust revenue, or agency transactions (see Agency and private trust transactions). Excludes proceeds from interest on local government securities held by the state and proceeds from state taxes on local government facilities.<a name="line.19"></a>
+<span class="sourceLineNo">020</span>    private Integer localIntergovernmental;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>    // Revenue from contributions required of employers and employees for financing social insurance programs operated by the government (see Insurance trust system, below) and earnings on assets held for such systems. Excludes any contributions by a government - either as employer contributions or for general financial support - to a social insurance system it administers. Note that tax proceeds, donations, and any forms of revenue other than those enumerated above are classified as general revenue, even though such amounts may be received specifically for insurance trust purposes.<a name="line.21"></a>
+<span class="sourceLineNo">022</span>    private Integer insuranceTrustRevenue;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>    // Intergovernmental revenue received by a government directly from the federal government. For local governments, excludes federal aid channeled through state governments, which is considered as Intergovernmental revenue from state government.<a name="line.23"></a>
+<span class="sourceLineNo">024</span>    private Integer federalIntergovernmental;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>    // All amounts of money received by a government from external sources--net of refunds and other correcting transactions--other than from issuance of debt, liquidation of investments, and as agency and private trust transactions. Note that revenue excludes noncash transactions such as receipt of services, commodities, or other "receipts in kind."<a name="line.25"></a>
+<span class="sourceLineNo">026</span>    private Integer revenue;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>    // Sales and gross receipts taxes imposed on sales of particular commodities or services or gross receipts of particular businesses, separately and apart from the application of general sales and gross receipts taxes. Specific selective sales taxes included are alcoholic beverages, amusements, insurance, motor fuels, parimutuels, public utilities, tobacco products, and others.<a name="line.27"></a>
+<span class="sourceLineNo">028</span>    private Integer selectiveSalesTax;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>    // Apparatus, furnishings, motor vehicles, office machines, and the like having an expected life of more than 5 years. Equipment expenditure consists only of amounts for purchase of equipment, including both additional equipment and replacements. Expenditures for facilities that are integral parts of structures are classified as expenditure for construction or for purchase of land and existing structures.<a name="line.29"></a>
+<span class="sourceLineNo">030</span>    private Integer equipmentAndLand;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>    private Integer employeeRetirementRevenue;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>    // Sales or gross receipts taxes which are applicable with only specified exceptions to all types of goods and services, or all gross income, whether at a single rate or at classified rates. Taxes imposed distinctively upon sales or gross receipts from selected commodities, services, or business are reported separately under categories one through eight below.<a name="line.32"></a>
+<span class="sourceLineNo">033</span>    private Integer salesTax;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>    // All government revenue except Liquor stores revenue, Insurance trust revenue, and Utility revenue. The basis for distinction is not the fund or administrative unit receiving particular amounts, but rather the nature of the revenue sources concerned.<a name="line.34"></a>
+<span class="sourceLineNo">035</span>    private Integer generalRevenue;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>    // Amounts received from other governments as fiscal aid in the form of shared revenues and grants-in -aid, as reimbursements for performance of general government functions and specific services for the paying government (e.g., care of prisoners or contractual research), or in lieu of taxes, Excludes amounts received from other governments for sale of property, commodities, and utility services. All intergovernmental revenue is classified as General revenue.<a name="line.36"></a>
+<span class="sourceLineNo">037</span>    private Integer intergovernmental;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>    // Provision and operation of commercial facilities not classified under particular functions. Includes a bank (North Dakota), and cement plant, hail insurance systems, and the like.<a name="line.38"></a>
+<span class="sourceLineNo">039</span>    private Integer miscellaneousCommercialActivity;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>    // Revenue from sale of utility commodities and services to the public and to other governments. Does not include amounts from sales to the parent government. Also excludes income from utility fund investments and from other nonoperating properties (treated as General revenue). Any monies from taxes, special assessments, and intergovernmental revenue are classified as General revenue, not Utility revenue.<a name="line.40"></a>
+<span class="sourceLineNo">041</span>    private Integer utilityRevenue;<a name="line.41"></a>
+<span class="sourceLineNo">042</span>    // General expenditure for purposes and activities not falling within any standard functional category and unallocated amounts relating to two or more functions.<a name="line.42"></a>
+<span class="sourceLineNo">043</span>    private Integer miscellaneous;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>    // Compulsory contributions exacted by a government for public purposes except employee and employee assessments for retirement and social insurance purposes, which are classified as insurance trust revenue. All tax revenue is classified as general revenue and comprises amounts received (including interest and penalties but excluding protested amounts and refunds) from all taxes imposed by a government. Note that local government tax revenue excludes any amounts from shares of state-imposed and collected taxes, which are classified as Intergovernmental revenue.<a name="line.44"></a>
+<span class="sourceLineNo">045</span>    private Integer tax;<a name="line.45"></a>
+<span class="sourceLineNo">046</span>    // Revenue related to Unemployment Compensation.<a name="line.46"></a>
+<span class="sourceLineNo">047</span>    private Integer unemploymentCompRevenue;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>    // Taxes exacted (either for revenue raising or for regulation) as a condition to the exercise of a business or nonbusiness privilege, at a flat rate or measured by such bases as capital stock, capital surplus, number of business units, or capacity. Excludes taxes measured directly by transactions, gross or net income, or value of property except those to which only nominal rates apply. "License" based on these latter measures, other than those at nominal rates, are classified according to the measure concerned. Includes "fees" related to licensing activities - automobile inspection, gasoline and oil inspection, professional examinations and licenses, etc. - as well as license taxes producing substantial revenue.<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    private Integer licenseTax;<a name="line.49"></a>
+<span class="sourceLineNo">050</span>    // Production of fixed works and structures additions, replacements, and major alterations, including planning and design of specific projects, site improvements, and provision of equipment and facilities that are integral parts of a structure. Includes contract construction, undertaken on a contract basis by private contractors, and force account construction, undertaken with direct use of material and labor by the government.<a name="line.50"></a>
+<span class="sourceLineNo">051</span>    private Integer construction;<a name="line.51"></a>
+<span class="sourceLineNo">052</span>    // Charges imposed for providing current services or for the sale of products in connection with general government activities.<a name="line.52"></a>
+<span class="sourceLineNo">053</span>    private Integer charges;<a name="line.53"></a>
+<span class="sourceLineNo">054</span>    // Direct expenditure for contract or force account construction of buildings,grounds, and other improvements, and purchase of equipment, land, and existing structures. Includes amounts for additions, replacements, and major alterations to fixed works and structures. However, expenditure for repairs to such works and structures is classified as current operation expenditure.<a name="line.54"></a>
+<span class="sourceLineNo">055</span>    private Integer capitalOutlay;<a name="line.55"></a>
+<span class="sourceLineNo">056</span>    // All intergovernmental revenue received from the state government. For local governments, includes amounts originally from the federal government but channeled through the state.<a name="line.56"></a>
+<span class="sourceLineNo">057</span>    private Integer stateIntergovernmental;<a name="line.57"></a>
+<span class="sourceLineNo">058</span>    // All amounts of money paid out by a government--net of recoveries and other correcting transactions--other than for retirement of debt, investment in securities, extension of credit, or as agency transactions. Note that expenditure includes only external transactions of a government and excludes non-cash transactions such as the provision of perquisites or other payments in kind.<a name="line.58"></a>
+<span class="sourceLineNo">059</span>    private Integer expenditure;<a name="line.59"></a>
+<span class="sourceLineNo">060</span>    // Revenue related to Worker's Compensation.<a name="line.60"></a>
+<span class="sourceLineNo">061</span>    private Integer workersCompRevenue;<a name="line.61"></a>
+<span class="sourceLineNo">062</span>    // Amounts paid to other governments as fiscal aid in the form of shared revenues and grants-in-aid, as reimbursements for performance of general government activities and for specific services for the paying government, or in lieu of taxes. Excludes amounts paid to other governments for purchase of commodities, property, or utility services, any tax imposed and paid as such, and employer contributions for social insurance - e.g., contributions to the Federal Government for Old Age, Survivors', Disability, and Health Insurance for government employees.<a name="line.62"></a>
+<span class="sourceLineNo">063</span>    private Integer generalExpenditure;<a name="line.63"></a>
+<span class="sourceLineNo">064</span>    // Other revenue related to ITR.<a name="line.64"></a>
+<span class="sourceLineNo">065</span>    private Integer otherInsuranceTrustRevenue;<a name="line.65"></a>
 <span class="sourceLineNo">066</span>    <a name="line.66"></a>
 <span class="sourceLineNo">067</span>    <a name="line.67"></a>
-<span class="sourceLineNo">068</span>    /*<a name="line.68"></a>
-<span class="sourceLineNo">069</span>     * @return <a name="line.69"></a>
-<span class="sourceLineNo">070</span>     */<a name="line.70"></a>
-<span class="sourceLineNo">071</span>    public Integer getInsuranceTrustRevenue() {<a name="line.71"></a>
-<span class="sourceLineNo">072</span>        return this.insuranceTrustRevenue;<a name="line.72"></a>
-<span class="sourceLineNo">073</span>    }<a name="line.73"></a>
-<span class="sourceLineNo">074</span>    <a name="line.74"></a>
+<span class="sourceLineNo">068</span>    /**<a name="line.68"></a>
+<span class="sourceLineNo">069</span>     * Amounts from local governments: for shares in financial support of programs administered by the state; for reimbursements of services performed or expenditures made for them by the state; for application to debt services on state debt issued for their benefit; and for repayment of advances and contingent loans extended to them. Does not include local government contributions to state-administered employee retirement or other insurance trust systems, which are classified as insurance trust revenue, or agency transactions (see Agency and private trust transactions). Excludes proceeds from interest on local government securities held by the state and proceeds from state taxes on local government facilities.<a name="line.69"></a>
+<span class="sourceLineNo">070</span>     * @return Integer<a name="line.70"></a>
+<span class="sourceLineNo">071</span>     */<a name="line.71"></a>
+<span class="sourceLineNo">072</span>    public Integer getLocalIntergovernmental() {<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        return this.localIntergovernmental;<a name="line.73"></a>
+<span class="sourceLineNo">074</span>    }<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    <a name="line.75"></a>
 <span class="sourceLineNo">076</span>    <a name="line.76"></a>
-<span class="sourceLineNo">077</span>    /*<a name="line.77"></a>
-<span class="sourceLineNo">078</span>     * @return <a name="line.78"></a>
-<span class="sourceLineNo">079</span>     */<a name="line.79"></a>
-<span class="sourceLineNo">080</span>    public Integer getCapitalOutlay() {<a name="line.80"></a>
-<span class="sourceLineNo">081</span>        return this.capitalOutlay;<a name="line.81"></a>
-<span class="sourceLineNo">082</span>    }<a name="line.82"></a>
-<span class="sourceLineNo">083</span>    <a name="line.83"></a>
-<span class="sourceLineNo">084</span>    <a name="line.84"></a>
+<span class="sourceLineNo">077</span>    <a name="line.77"></a>
+<span class="sourceLineNo">078</span>    /**<a name="line.78"></a>
+<span class="sourceLineNo">079</span>     * Revenue from contributions required of employers and employees for financing social insurance programs operated by the government (see Insurance trust system, below) and earnings on assets held for such systems. Excludes any contributions by a government - either as employer contributions or for general financial support - to a social insurance system it administers. Note that tax proceeds, donations, and any forms of revenue other than those enumerated above are classified as general revenue, even though such amounts may be received specifically for insurance trust purposes.<a name="line.79"></a>
+<span class="sourceLineNo">080</span>     * @return Integer<a name="line.80"></a>
+<span class="sourceLineNo">081</span>     */<a name="line.81"></a>
+<span class="sourceLineNo">082</span>    public Integer getInsuranceTrustRevenue() {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>        return this.insuranceTrustRevenue;<a name="line.83"></a>
+<span class="sourceLineNo">084</span>    }<a name="line.84"></a>
 <span class="sourceLineNo">085</span>    <a name="line.85"></a>
-<span class="sourceLineNo">086</span>    /*<a name="line.86"></a>
-<span class="sourceLineNo">087</span>     * @return <a name="line.87"></a>
-<span class="sourceLineNo">088</span>     */<a name="line.88"></a>
-<span class="sourceLineNo">089</span>    public Integer getStateIntergovernmental() {<a name="line.89"></a>
-<span class="sourceLineNo">090</span>        return this.stateIntergovernmental;<a name="line.90"></a>
-<span class="sourceLineNo">091</span>    }<a name="line.91"></a>
-<span class="sourceLineNo">092</span>    <a name="line.92"></a>
-<span class="sourceLineNo">093</span>    <a name="line.93"></a>
-<span class="sourceLineNo">094</span>    <a name="line.94"></a>
-<span class="sourceLineNo">095</span>    /*<a name="line.95"></a>
-<span class="sourceLineNo">096</span>     * @return <a name="line.96"></a>
-<span class="sourceLineNo">097</span>     */<a name="line.97"></a>
-<span class="sourceLineNo">098</span>    public Integer getMiscellaneous() {<a name="line.98"></a>
-<span class="sourceLineNo">099</span>        return this.miscellaneous;<a name="line.99"></a>
-<span class="sourceLineNo">100</span>    }<a name="line.100"></a>
-<span class="sourceLineNo">101</span>    <a name="line.101"></a>
-<span class="sourceLineNo">102</span>    <a name="line.102"></a>
-<span class="sourceLineNo">103</span>    <a name="line.103"></a>
-<span class="sourceLineNo">104</span>    /*<a name="line.104"></a>
-<span class="sourceLineNo">105</span>     * @return <a name="line.105"></a>
-<span class="sourceLineNo">106</span>     */<a name="line.106"></a>
-<span class="sourceLineNo">107</span>    public Integer getCharges() {<a name="line.107"></a>
-<span class="sourceLineNo">108</span>        return this.charges;<a name="line.108"></a>
-<span class="sourceLineNo">109</span>    }<a name="line.109"></a>
-<span class="sourceLineNo">110</span>    <a name="line.110"></a>
-<span class="sourceLineNo">111</span>    <a name="line.111"></a>
-<span class="sourceLineNo">112</span>    <a name="line.112"></a>
-<span class="sourceLineNo">113</span>    /*<a name="line.113"></a>
-<span class="sourceLineNo">114</span>     * @return <a name="line.114"></a>
-<span class="sourceLineNo">115</span>     */<a name="line.115"></a>
-<span class="sourceLineNo">116</span>    public Integer getConstruction() {<a name="line.116"></a>
-<span class="sourceLineNo">117</span>        return this.construction;<a name="line.117"></a>
-<span class="sourceLineNo">118</span>    }<a name="line.118"></a>
-<span class="sourceLineNo">119</span>    <a name="line.119"></a>
-<span class="sourceLineNo">120</span>    <a name="line.120"></a>
-<span class="sourceLineNo">121</span>    <a name="line.121"></a>
-<span class="sourceLineNo">122</span>    /*<a name="line.122"></a>
-<span class="sourceLineNo">123</span>     * @return <a name="line.123"></a>
-<span class="sourceLineNo">124</span>     */<a name="line.124"></a>
-<span class="sourceLineNo">125</span>    public Integer getExpenditure() {<a name="line.125"></a>
-<span class="sourceLineNo">126</span>        return this.expenditure;<a name="line.126"></a>
-<span class="sourceLineNo">127</span>    }<a name="line.127"></a>
-<span class="sourceLineNo">128</span>    <a name="line.128"></a>
-<span class="sourceLineNo">129</span>    <a name="line.129"></a>
-<span class="sourceLineNo">130</span>    <a name="line.130"></a>
-<span class="sourceLineNo">131</span>    /*<a name="line.131"></a>
-<span class="sourceLineNo">132</span>     * @return <a name="line.132"></a>
-<span class="sourceLineNo">133</span>     */<a name="line.133"></a>
-<span class="sourceLineNo">134</span>    public Integer getGeneralRevenue() {<a name="line.134"></a>
-<span class="sourceLineNo">135</span>        return this.generalRevenue;<a name="line.135"></a>
-<span class="sourceLineNo">136</span>    }<a name="line.136"></a>
+<span class="sourceLineNo">086</span>    <a name="line.86"></a>
+<span class="sourceLineNo">087</span>    <a name="line.87"></a>
+<span class="sourceLineNo">088</span>    /**<a name="line.88"></a>
+<span class="sourceLineNo">089</span>     * Intergovernmental revenue received by a government directly from the federal government. For local governments, excludes federal aid channeled through state governments, which is considered as Intergovernmental revenue from state government.<a name="line.89"></a>
+<span class="sourceLineNo">090</span>     * @return Integer<a name="line.90"></a>
+<span class="sourceLineNo">091</span>     */<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    public Integer getFederalIntergovernmental() {<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        return this.federalIntergovernmental;<a name="line.93"></a>
+<span class="sourceLineNo">094</span>    }<a name="line.94"></a>
+<span class="sourceLineNo">095</span>    <a name="line.95"></a>
+<span class="sourceLineNo">096</span>    <a name="line.96"></a>
+<span class="sourceLineNo">097</span>    <a name="line.97"></a>
+<span class="sourceLineNo">098</span>    /**<a name="line.98"></a>
+<span class="sourceLineNo">099</span>     * All amounts of money received by a government from external sources--net of refunds and other correcting transactions--other than from issuance of debt, liquidation of investments, and as agency and private trust transactions. Note that revenue excludes noncash transactions such as receipt of services, commodities, or other "receipts in kind."<a name="line.99"></a>
+<span class="sourceLineNo">100</span>     * @return Integer<a name="line.100"></a>
+<span class="sourceLineNo">101</span>     */<a name="line.101"></a>
+<span class="sourceLineNo">102</span>    public Integer getRevenue() {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        return this.revenue;<a name="line.103"></a>
+<span class="sourceLineNo">104</span>    }<a name="line.104"></a>
+<span class="sourceLineNo">105</span>    <a name="line.105"></a>
+<span class="sourceLineNo">106</span>    <a name="line.106"></a>
+<span class="sourceLineNo">107</span>    <a name="line.107"></a>
+<span class="sourceLineNo">108</span>    /**<a name="line.108"></a>
+<span class="sourceLineNo">109</span>     * Sales and gross receipts taxes imposed on sales of particular commodities or services or gross receipts of particular businesses, separately and apart from the application of general sales and gross receipts taxes. Specific selective sales taxes included are alcoholic beverages, amusements, insurance, motor fuels, parimutuels, public utilities, tobacco products, and others.<a name="line.109"></a>
+<span class="sourceLineNo">110</span>     * @return Integer<a name="line.110"></a>
+<span class="sourceLineNo">111</span>     */<a name="line.111"></a>
+<span class="sourceLineNo">112</span>    public Integer getSelectiveSalesTax() {<a name="line.112"></a>
+<span class="sourceLineNo">113</span>        return this.selectiveSalesTax;<a name="line.113"></a>
+<span class="sourceLineNo">114</span>    }<a name="line.114"></a>
+<span class="sourceLineNo">115</span>    <a name="line.115"></a>
+<span class="sourceLineNo">116</span>    <a name="line.116"></a>
+<span class="sourceLineNo">117</span>    <a name="line.117"></a>
+<span class="sourceLineNo">118</span>    /**<a name="line.118"></a>
+<span class="sourceLineNo">119</span>     * Apparatus, furnishings, motor vehicles, office machines, and the like having an expected life of more than 5 years. Equipment expenditure consists only of amounts for purchase of equipment, including both additional equipment and replacements. Expenditures for facilities that are integral parts of structures are classified as expenditure for construction or for purchase of land and existing structures.<a name="line.119"></a>
+<span class="sourceLineNo">120</span>     * @return Integer<a name="line.120"></a>
+<span class="sourceLineNo">121</span>     */<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    public Integer getEquipmentAndLand() {<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        return this.equipmentAndLand;<a name="line.123"></a>
+<span class="sourceLineNo">124</span>    }<a name="line.124"></a>
+<span class="sourceLineNo">125</span>    <a name="line.125"></a>
+<span class="sourceLineNo">126</span>    <a name="line.126"></a>
+<span class="sourceLineNo">127</span>    <a name="line.127"></a>
+<span class="sourceLineNo">128</span>    /**<a name="line.128"></a>
+<span class="sourceLineNo">129</span>     * <a name="line.129"></a>
+<span class="sourceLineNo">130</span>     * @return Integer<a name="line.130"></a>
+<span class="sourceLineNo">131</span>     */<a name="line.131"></a>
+<span class="sourceLineNo">132</span>    public Integer getEmployeeRetirementRevenue() {<a name="line.132"></a>
+<span class="sourceLineNo">133</span>        return this.employeeRetirementRevenue;<a name="line.133"></a>
+<span class="sourceLineNo">134</span>    }<a name="line.134"></a>
+<span class="sourceLineNo">135</span>    <a name="line.135"></a>
+<span class="sourceLineNo">136</span>    <a name="line.136"></a>
 <span class="sourceLineNo">137</span>    <a name="line.137"></a>
-<span class="sourceLineNo">138</span>    <a name="line.138"></a>
-<span class="sourceLineNo">139</span>    <a name="line.139"></a>
-<span class="sourceLineNo">140</span>    /*<a name="line.140"></a>
-<span class="sourceLineNo">141</span>     * @return <a name="line.141"></a>
-<span class="sourceLineNo">142</span>     */<a name="line.142"></a>
-<span class="sourceLineNo">143</span>    public Integer getMiscellaneousCommercialActivity() {<a name="line.143"></a>
-<span class="sourceLineNo">144</span>        return this.miscellaneousCommercialActivity;<a name="line.144"></a>
-<span class="sourceLineNo">145</span>    }<a name="line.145"></a>
+<span class="sourceLineNo">138</span>    /**<a name="line.138"></a>
+<span class="sourceLineNo">139</span>     * Sales or gross receipts taxes which are applicable with only specified exceptions to all types of goods and services, or all gross income, whether at a single rate or at classified rates. Taxes imposed distinctively upon sales or gross receipts from selected commodities, services, or business are reported separately under categories one through eight below.<a name="line.139"></a>
+<span class="sourceLineNo">140</span>     * @return Integer<a name="line.140"></a>
+<span class="sourceLineNo">141</span>     */<a name="line.141"></a>
+<span class="sourceLineNo">142</span>    public Integer getSalesTax() {<a name="line.142"></a>
+<span class="sourceLineNo">143</span>        return this.salesTax;<a name="line.143"></a>
+<span class="sourceLineNo">144</span>    }<a name="line.144"></a>
+<span class="sourceLineNo">145</span>    <a name="line.145"></a>
 <span class="sourceLineNo">146</span>    <a name="line.146"></a>
 <span class="sourceLineNo">147</span>    <a name="line.147"></a>
-<span class="sourceLineNo">148</span>    <a name="line.148"></a>
-<span class="sourceLineNo">149</span>    /*<a name="line.149"></a>
-<span class="sourceLineNo">150</span>     * @return <a name="line.150"></a>
+<span class="sourceLineNo">148</span>    /**<a name="line.148"></a>
+<span class="sourceLineNo">149</span>     * All government revenue except Liquor stores revenue, Insurance trust revenue, and Utility revenue. The basis for distinction is not the fund or administrative unit receiving particular amounts, but rather the nature of the revenue sources concerned.<a name="line.149"></a>
+<span class="sourceLineNo">150</span>     * @return Integer<a name="line.150"></a>
 <span class="sourceLineNo">151</span>     */<a name="line.151"></a>
-<span class="sourceLineNo">152</span>    public Integer getOtherInsuranceTrustRevenue() {<a name="line.152"></a>
-<span class="sourceLineNo">153</span>        return this.otherInsuranceTrustRevenue;<a name="line.153"></a>
+<span class="sourceLineNo">152</span>    public Integer getGeneralRevenue() {<a name="line.152"></a>
+<span class="sourceLineNo">153</span>        return this.generalRevenue;<a name="line.153"></a>
 <span class="sourceLineNo">154</span>    }<a name="line.154"></a>
 <span class="sourceLineNo">155</span>    <a name="line.155"></a>
 <span class="sourceLineNo">156</span>    <a name="line.156"></a>
 <span class="sourceLineNo">157</span>    <a name="line.157"></a>
-<span class="sourceLineNo">158</span>    /*<a name="line.158"></a>
-<span class="sourceLineNo">159</span>     * @return <a name="line.159"></a>
-<span class="sourceLineNo">160</span>     */<a name="line.160"></a>
-<span class="sourceLineNo">161</span>    public Integer getWorkersCompRevenue() {<a name="line.161"></a>
-<span class="sourceLineNo">162</span>        return this.workersCompRevenue;<a name="line.162"></a>
-<span class="sourceLineNo">163</span>    }<a name="line.163"></a>
-<span class="sourceLineNo">164</span>    <a name="line.164"></a>
+<span class="sourceLineNo">158</span>    /**<a name="line.158"></a>
+<span class="sourceLineNo">159</span>     * Amounts received from other governments as fiscal aid in the form of shared revenues and grants-in -aid, as reimbursements for performance of general government functions and specific services for the paying government (e.g., care of prisoners or contractual research), or in lieu of taxes, Excludes amounts received from other governments for sale of property, commodities, and utility services. All intergovernmental revenue is classified as General revenue.<a name="line.159"></a>
+<span class="sourceLineNo">160</span>     * @return Integer<a name="line.160"></a>
+<span class="sourceLineNo">161</span>     */<a name="line.161"></a>
+<span class="sourceLineNo">162</span>    public Integer getIntergovernmental() {<a name="line.162"></a>
+<span class="sourceLineNo">163</span>        return this.intergovernmental;<a name="line.163"></a>
+<span class="sourceLineNo">164</span>    }<a name="line.164"></a>
 <span class="sourceLineNo">165</span>    <a name="line.165"></a>
 <span class="sourceLineNo">166</span>    <a name="line.166"></a>
-<span class="sourceLineNo">167</span>    /*<a name="line.167"></a>
-<span class="sourceLineNo">168</span>     * @return <a name="line.168"></a>
-<span class="sourceLineNo">169</span>     */<a name="line.169"></a>
-<span class="sourceLineNo">170</span>    public Integer getEquipmentAndLand() {<a name="line.170"></a>
-<span class="sourceLineNo">171</span>        return this.equipmentAndLand;<a name="line.171"></a>
-<span class="sourceLineNo">172</span>    }<a name="line.172"></a>
-<span class="sourceLineNo">173</span>    <a name="line.173"></a>
-<span class="sourceLineNo">174</span>    <a name="line.174"></a>
+<span class="sourceLineNo">167</span>    <a name="line.167"></a>
+<span class="sourceLineNo">168</span>    /**<a name="line.168"></a>
+<span class="sourceLineNo">169</span>     * Provision and operation of commercial facilities not classified under particular functions. Includes a bank (North Dakota), and cement plant, hail insurance systems, and the like.<a name="line.169"></a>
+<span class="sourceLineNo">170</span>     * @return Integer<a name="line.170"></a>
+<span class="sourceLineNo">171</span>     */<a name="line.171"></a>
+<span class="sourceLineNo">172</span>    public Integer getMiscellaneousCommercialActivity() {<a name="line.172"></a>
+<span class="sourceLineNo">173</span>        return this.miscellaneousCommercialActivity;<a name="line.173"></a>
+<span class="sourceLineNo">174</span>    }<a name="line.174"></a>
 <span class="sourceLineNo">175</span>    <a name="line.175"></a>
-<span class="sourceLineNo">176</span>    /*<a name="line.176"></a>
-<span class="sourceLineNo">177</span>     * @return <a name="line.177"></a>
-<span class="sourceLineNo">178</span>     */<a name="line.178"></a>
-<span class="sourceLineNo">179</span>    public Integer getUnemploymentCompRevenue() {<a name="line.179"></a>
-<span class="sourceLineNo">180</span>        return this.unemploymentCompRevenue;<a name="line.180"></a>
-<span class="sourceLineNo">181</span>    }<a name="line.181"></a>
-<span class="sourceLineNo">182</span>    <a name="line.182"></a>
-<span class="sourceLineNo">183</span>    <a name="line.183"></a>
-<span class="sourceLineNo">184</span>    <a name="line.184"></a>
-<span class="sourceLineNo">185</span>    /*<a name="line.185"></a>
-<span class="sourceLineNo">186</span>     * @return <a name="line.186"></a>
-<span class="sourceLineNo">187</span>     */<a name="line.187"></a>
-<span class="sourceLineNo">188</span>    public Integer getSelectiveSalesTax() {<a name="line.188"></a>
-<span class="sourceLineNo">189</span>        return this.selectiveSalesTax;<a name="line.189"></a>
-<span class="sourceLineNo">190</span>    }<a name="line.190"></a>
-<span class="sourceLineNo">191</span>    <a name="line.191"></a>
-<span class="sourceLineNo">192</span>    <a name="line.192"></a>
-<span class="sourceLineNo">193</span>    <a name="line.193"></a>
-<span class="sourceLineNo">194</span>    /*<a name="line.194"></a>
-<span class="sourceLineNo">195</span>     * @return <a name="line.195"></a>
-<span class="sourceLineNo">196</span>     */<a name="line.196"></a>
-<span class="sourceLineNo">197</span>    public Integer getSalesTax() {<a name="line.197"></a>
-<span class="sourceLineNo">198</span>        return this.salesTax;<a name="line.198"></a>
-<span class="sourceLineNo">199</span>    }<a name="line.199"></a>
-<span class="sourceLineNo">200</span>    <a name="line.200"></a>
-<span class="sourceLineNo">201</span>    <a name="line.201"></a>
-<span class="sourceLineNo">202</span>    <a name="line.202"></a>
-<span class="sourceLineNo">203</span>    /*<a name="line.203"></a>
-<span class="sourceLineNo">204</span>     * @return <a name="line.204"></a>
-<span class="sourceLineNo">205</span>     */<a name="line.205"></a>
-<span class="sourceLineNo">206</span>    public Integer getLicenseTax() {<a name="line.206"></a>
-<span class="sourceLineNo">207</span>        return this.licenseTax;<a name="line.207"></a>
-<span class="sourceLineNo">208</span>    }<a name="line.208"></a>
-<span class="sourceLineNo">209</span>    <a name="line.209"></a>
-<span class="sourceLineNo">210</span>    <a name="line.210"></a>
-<span class="sourceLineNo">211</span>    <a name="line.211"></a>
-<span class="sourceLineNo">212</span>    /*<a name="line.212"></a>
-<span class="sourceLineNo">213</span>     * @return <a name="line.213"></a>
-<span class="sourceLineNo">214</span>     */<a name="line.214"></a>
-<span class="sourceLineNo">215</span>    public Integer getFederalIntergovernmental() {<a name="line.215"></a>
-<span class="sourceLineNo">216</span>        return this.federalIntergovernmental;<a name="line.216"></a>
-<span class="sourceLineNo">217</span>    }<a name="line.217"></a>
-<span class="sourceLineNo">218</span>    <a name="line.218"></a>
-<span class="sourceLineNo">219</span>    <a name="line.219"></a>
-<span class="sourceLineNo">220</span>    <a name="line.220"></a>
-<span class="sourceLineNo">221</span>    /*<a name="line.221"></a>
-<span class="sourceLineNo">222</span>     * @return <a name="line.222"></a>
-<span class="sourceLineNo">223</span>     */<a name="line.223"></a>
-<span class="sourceLineNo">224</span>    public Integer getGeneralExpenditure() {<a name="line.224"></a>
-<span class="sourceLineNo">225</span>        return this.generalExpenditure;<a name="line.225"></a>
-<span class="sourceLineNo">226</span>    }<a name="line.226"></a>
+<span class="sourceLineNo">176</span>    <a name="line.176"></a>
+<span class="sourceLineNo">177</span>    <a name="line.177"></a>
+<span class="sourceLineNo">178</span>    /**<a name="line.178"></a>
+<span class="sourceLineNo">179</span>     * Revenue from sale of utility commodities and services to the public and to other governments. Does not include amounts from sales to the parent government. Also excludes income from utility fund investments and from other nonoperating properties (treated as General revenue). Any monies from taxes, special assessments, and intergovernmental revenue are classified as General revenue, not Utility revenue.<a name="line.179"></a>
+<span class="sourceLineNo">180</span>     * @return Integer<a name="line.180"></a>
+<span class="sourceLineNo">181</span>     */<a name="line.181"></a>
+<span class="sourceLineNo">182</span>    public Integer getUtilityRevenue() {<a name="line.182"></a>
+<span class="sourceLineNo">183</span>        return this.utilityRevenue;<a name="line.183"></a>
+<span class="sourceLineNo">184</span>    }<a name="line.184"></a>
+<span class="sourceLineNo">185</span>    <a name="line.185"></a>
+<span class="sourceLineNo">186</span>    <a name="line.186"></a>
+<span class="sourceLineNo">187</span>    <a name="line.187"></a>
+<span class="sourceLineNo">188</span>    /**<a name="line.188"></a>
+<span class="sourceLineNo">189</span>     * General expenditure for purposes and activities not falling within any standard functional category and unallocated amounts relating to two or more functions.<a name="line.189"></a>
+<span class="sourceLineNo">190</span>     * @return Integer<a name="line.190"></a>
+<span class="sourceLineNo">191</span>     */<a name="line.191"></a>
+<span class="sourceLineNo">192</span>    public Integer getMiscellaneous() {<a name="line.192"></a>
+<span class="sourceLineNo">193</span>        return this.miscellaneous;<a name="line.193"></a>
+<span class="sourceLineNo">194</span>    }<a name="line.194"></a>
+<span class="sourceLineNo">195</span>    <a name="line.195"></a>
+<span class="sourceLineNo">196</span>    <a name="line.196"></a>
+<span class="sourceLineNo">197</span>    <a name="line.197"></a>
+<span class="sourceLineNo">198</span>    /**<a name="line.198"></a>
+<span class="sourceLineNo">199</span>     * Compulsory contributions exacted by a government for public purposes except employee and employee assessments for retirement and social insurance purposes, which are classified as insurance trust revenue. All tax revenue is classified as general revenue and comprises amounts received (including interest and penalties but excluding protested amounts and refunds) from all taxes imposed by a government. Note that local government tax revenue excludes any amounts from shares of state-imposed and collected taxes, which are classified as Intergovernmental revenue.<a name="line.199"></a>
+<span class="sourceLineNo">200</span>     * @return Integer<a name="line.200"></a>
+<span class="sourceLineNo">201</span>     */<a name="line.201"></a>
+<span class="sourceLineNo">202</span>    public Integer getTax() {<a name="line.202"></a>
+<span class="sourceLineNo">203</span>        return this.tax;<a name="line.203"></a>
+<span class="sourceLineNo">204</span>    }<a name="line.204"></a>
+<span class="sourceLineNo">205</span>    <a name="line.205"></a>
+<span class="sourceLineNo">206</span>    <a name="line.206"></a>
+<span class="sourceLineNo">207</span>    <a name="line.207"></a>
+<span class="sourceLineNo">208</span>    /**<a name="line.208"></a>
+<span class="sourceLineNo">209</span>     * Revenue related to Unemployment Compensation.<a name="line.209"></a>
+<span class="sourceLineNo">210</span>     * @return Integer<a name="line.210"></a>
+<span class="sourceLineNo">211</span>     */<a name="line.211"></a>
+<span class="sourceLineNo">212</span>    public Integer getUnemploymentCompRevenue() {<a name="line.212"></a>
+<span class="sourceLineNo">213</span>        return this.unemploymentCompRevenue;<a name="line.213"></a>
+<span class="sourceLineNo">214</span>    }<a name="line.214"></a>
+<span class="sourceLineNo">215</span>    <a name="line.215"></a>
+<span class="sourceLineNo">216</span>    <a name="line.216"></a>
+<span class="sourceLineNo">217</span>    <a name="line.217"></a>
+<span class="sourceLineNo">218</span>    /**<a name="line.218"></a>
+<span class="sourceLineNo">219</span>     * Taxes exacted (either for revenue raising or for regulation) as a condition to the exercise of a business or nonbusiness privilege, at a flat rate or measured by such bases as capital stock, capital surplus, number of business units, or capacity. Excludes taxes measured directly by transactions, gross or net income, or value of property except those to which only nominal rates apply. "License" based on these latter measures, other than those at nominal rates, are classified according to the measure concerned. Includes "fees" related to licensing activities - automobile inspection, gasoline and oil inspection, professional examinations and licenses, etc. - as well as license taxes producing substantial revenue.<a name="line.219"></a>
+<span class="sourceLineNo">220</span>     * @return Integer<a name="line.220"></a>
+<span class="sourceLineNo">221</span>     */<a name="line.221"></a>
+<span class="sourceLineNo">222</span>    public Integer getLicenseTax() {<a name="line.222"></a>
+<span class="sourceLineNo">223</span>        return this.licenseTax;<a name="line.223"></a>
+<span class="sourceLineNo">224</span>    }<a name="line.224"></a>
+<span class="sourceLineNo">225</span>    <a name="line.225"></a>
+<span class="sourceLineNo">226</span>    <a name="line.226"></a>
 <span class="sourceLineNo">227</span>    <a name="line.227"></a>
-<span class="sourceLineNo">228</span>    <a name="line.228"></a>
-<span class="sourceLineNo">229</span>    <a name="line.229"></a>
-<span class="sourceLineNo">230</span>    /*<a name="line.230"></a>
-<span class="sourceLineNo">231</span>     * @return <a name="line.231"></a>
-<span class="sourceLineNo">232</span>     */<a name="line.232"></a>
-<span class="sourceLineNo">233</span>    public Integer getUtilityRevenue() {<a name="line.233"></a>
-<span class="sourceLineNo">234</span>        return this.utilityRevenue;<a name="line.234"></a>
-<span class="sourceLineNo">235</span>    }<a name="line.235"></a>
+<span class="sourceLineNo">228</span>    /**<a name="line.228"></a>
+<span class="sourceLineNo">229</span>     * Production of fixed works and structures additions, replacements, and major alterations, including planning and design of specific projects, site improvements, and provision of equipment and facilities that are integral parts of a structure. Includes contract construction, undertaken on a contract basis by private contractors, and force account construction, undertaken with direct use of material and labor by the government.<a name="line.229"></a>
+<span class="sourceLineNo">230</span>     * @return Integer<a name="line.230"></a>
+<span class="sourceLineNo">231</span>     */<a name="line.231"></a>
+<span class="sourceLineNo">232</span>    public Integer getConstruction() {<a name="line.232"></a>
+<span class="sourceLineNo">233</span>        return this.construction;<a name="line.233"></a>
+<span class="sourceLineNo">234</span>    }<a name="line.234"></a>
+<span class="sourceLineNo">235</span>    <a name="line.235"></a>
 <span class="sourceLineNo">236</span>    <a name="line.236"></a>
 <span class="sourceLineNo">237</span>    <a name="line.237"></a>
-<span class="sourceLineNo">238</span>    <a name="line.238"></a>
-<span class="sourceLineNo">239</span>    /*<a name="line.239"></a>
-<span class="sourceLineNo">240</span>     * @return <a name="line.240"></a>
+<span class="sourceLineNo">238</span>    /**<a name="line.238"></a>
+<span class="sourceLineNo">239</span>     * Charges imposed for providing current services or for the sale of products in connection with general government activities.<a name="line.239"></a>
+<span class="sourceLineNo">240</span>     * @return Integer<a name="line.240"></a>
 <span class="sourceLineNo">241</span>     */<a name="line.241"></a>
-<span class="sourceLineNo">242</span>    public Integer getRevenue() {<a name="line.242"></a>
-<span class="sourceLineNo">243</span>        return this.revenue;<a name="line.243"></a>
+<span class="sourceLineNo">242</span>    public Integer getCharges() {<a name="line.242"></a>
+<span class="sourceLineNo">243</span>        return this.charges;<a name="line.243"></a>
 <span class="sourceLineNo">244</span>    }<a name="line.244"></a>
 <span class="sourceLineNo">245</span>    <a name="line.245"></a>
 <span class="sourceLineNo">246</span>    <a name="line.246"></a>
 <span class="sourceLineNo">247</span>    <a name="line.247"></a>
-<span class="sourceLineNo">248</span>    /*<a name="line.248"></a>
-<span class="sourceLineNo">249</span>     * @return <a name="line.249"></a>
-<span class="sourceLineNo">250</span>     */<a name="line.250"></a>
-<span class="sourceLineNo">251</span>    public Integer getTax() {<a name="line.251"></a>
-<span class="sourceLineNo">252</span>        return this.tax;<a name="line.252"></a>
-<span class="sourceLineNo">253</span>    }<a name="line.253"></a>
-<span class="sourceLineNo">254</span>    <a name="line.254"></a>
+<span class="sourceLineNo">248</span>    /**<a name="line.248"></a>
+<span class="sourceLineNo">249</span>     * Direct expenditure for contract or force account construction of buildings,grounds, and other improvements, and purchase of equipment, land, and existing structures. Includes amounts for additions, replacements, and major alterations to fixed works and structures. However, expenditure for repairs to such works and structures is classified as current operation expenditure.<a name="line.249"></a>
+<span class="sourceLineNo">250</span>     * @return Integer<a name="line.250"></a>
+<span class="sourceLineNo">251</span>     */<a name="line.251"></a>
+<span class="sourceLineNo">252</span>    public Integer getCapitalOutlay() {<a name="line.252"></a>
+<span class="sourceLineNo">253</span>        return this.capitalOutlay;<a name="line.253"></a>
+<span class="sourceLineNo">254</span>    }<a name="line.254"></a>
 <span class="sourceLineNo">255</span>    <a name="line.255"></a>
 <span class="sourceLineNo">256</span>    <a name="line.256"></a>
-<span class="sourceLineNo">257</span>    /*<a name="line.257"></a>
-<span class="sourceLineNo">258</span>     * @return <a name="line.258"></a>
-<span class="sourceLineNo">259</span>     */<a name="line.259"></a>
-<span class="sourceLineNo">260</span>    public Integer getLocalIntergovernmental() {<a name="line.260"></a>
-<span class="sourceLineNo">261</span>        return this.localIntergovernmental;<a name="line.261"></a>
-<span class="sourceLineNo">262</span>    }<a name="line.262"></a>
-<span class="sourceLineNo">263</span>    <a name="line.263"></a>
-<span class="sourceLineNo">264</span>    <a name="line.264"></a>
+<span class="sourceLineNo">257</span>    <a name="line.257"></a>
+<span class="sourceLineNo">258</span>    /**<a name="line.258"></a>
+<span class="sourceLineNo">259</span>     * All intergovernmental revenue received from the state government. For local governments, includes amounts originally from the federal government but channeled through the state.<a name="line.259"></a>
+<span class="sourceLineNo">260</span>     * @return Integer<a name="line.260"></a>
+<span class="sourceLineNo">261</span>     */<a name="line.261"></a>
+<span class="sourceLineNo">262</span>    public Integer getStateIntergovernmental() {<a name="line.262"></a>
+<span class="sourceLineNo">263</span>        return this.stateIntergovernmental;<a name="line.263"></a>
+<span class="sourceLineNo">264</span>    }<a name="line.264"></a>
 <span class="sourceLineNo">265</span>    <a name="line.265"></a>
-<span class="sourceLineNo">266</span>    /*<a name="line.266"></a>
-<span class="sourceLineNo">267</span>     * @return <a name="line.267"></a>
-<span class="sourceLineNo">268</span>     */<a name="line.268"></a>
-<span class="sourceLineNo">269</span>    public Integer getIntergovernmental() {<a name="line.269"></a>
-<span class="sourceLineNo">270</span>        return this.intergovernmental;<a name="line.270"></a>
-<span class="sourceLineNo">271</span>    }<a name="line.271"></a>
-<span class="sourceLineNo">272</span>    <a name="line.272"></a>
-<span class="sourceLineNo">273</span>    <a name="line.273"></a>
-<span class="sourceLineNo">274</span>    <a name="line.274"></a>
-<span class="sourceLineNo">275</span>    /*<a name="line.275"></a>
-<span class="sourceLineNo">276</span>     * @return <a name="line.276"></a>
-<span class="sourceLineNo">277</span>     */<a name="line.277"></a>
-<span class="sourceLineNo">278</span>    public Integer getEmployeeRetirementRevenue() {<a name="line.278"></a>
-<span class="sourceLineNo">279</span>        return this.employeeRetirementRevenue;<a name="line.279"></a>
-<span class="sourceLineNo">280</span>    }<a name="line.280"></a>
-<span class="sourceLineNo">281</span>    <a name="line.281"></a>
-<span class="sourceLineNo">282</span>    <a name="line.282"></a>
-<span class="sourceLineNo">283</span>    <a name="line.283"></a>
-<span class="sourceLineNo">284</span>        <a name="line.284"></a>
-<span class="sourceLineNo">285</span>        /**<a name="line.285"></a>
-<span class="sourceLineNo">286</span>         * Creates a string based representation of this Totals.<a name="line.286"></a>
-<span class="sourceLineNo">287</span>        <a name="line.287"></a>
-<span class="sourceLineNo">288</span>         * @return String<a name="line.288"></a>
-<span class="sourceLineNo">289</span>         */<a name="line.289"></a>
-<span class="sourceLineNo">290</span>        public String toString() {<a name="line.290"></a>
-<span class="sourceLineNo">291</span>                return "Totals[" +insuranceTrustRevenue+", "+capitalOutlay+", "+stateIntergovernmental+", "+miscellaneous+", "+charges+", "+construction+", "+expenditure+", "+generalRevenue+", "+miscellaneousCommercialActivity+", "+otherInsuranceTrustRevenue+", "+workersCompRevenue+", "+equipmentAndLand+", "+unemploymentCompRevenue+", "+selectiveSalesTax+", "+salesTax+", "+licenseTax+", "+federalIntergovernmental+", "+generalExpenditure+", "+utilityRevenue+", "+revenue+", "+tax+", "+localIntergovernmental+", "+intergovernmental+", "+employeeRetirementRevenue+"]";<a name="line.291"></a>
-<span class="sourceLineNo">292</span>        }<a name="line.292"></a>
-<span class="sourceLineNo">293</span>        <a name="line.293"></a>
-<span class="sourceLineNo">294</span>        /**<a name="line.294"></a>
-<span class="sourceLineNo">295</span>         * Internal constructor to create a Totals from a  representation.<a name="line.295"></a>
-<span class="sourceLineNo">296</span>         * @param json_data The raw json data that will be parsed.<a name="line.296"></a>
-<span class="sourceLineNo">297</span>         */<a name="line.297"></a>
-<span class="sourceLineNo">298</span>    public Totals(JSONObject json_data) {<a name="line.298"></a>
-<span class="sourceLineNo">299</span>        try {// Insurance trust  revenue<a name="line.299"></a>
-<span class="sourceLineNo">300</span>            this.insuranceTrustRevenue = ((Number)json_data.get("Insurance trust  revenue")).intValue();// Capital outlay<a name="line.300"></a>
-<span class="sourceLineNo">301</span>            this.capitalOutlay = ((Number)json_data.get("Capital outlay")).intValue();// State intergovernmental<a name="line.301"></a>
-<span class="sourceLineNo">302</span>            this.stateIntergovernmental = ((Number)json_data.get("State intergovernmental")).intValue();// Miscellaneous<a name="line.302"></a>
-<span class="sourceLineNo">303</span>            this.miscellaneous = ((Number)json_data.get("Miscellaneous")).intValue();// Charges<a name="line.303"></a>
-<span class="sourceLineNo">304</span>            this.charges = ((Number)json_data.get("Charges")).intValue();// Construction<a name="line.304"></a>
-<span class="sourceLineNo">305</span>            this.construction = ((Number)json_data.get("Construction")).intValue();// Expenditure<a name="line.305"></a>
-<span class="sourceLineNo">306</span>            this.expenditure = ((Number)json_data.get("Expenditure")).intValue();// General revenue<a name="line.306"></a>
-<span class="sourceLineNo">307</span>            this.generalRevenue = ((Number)json_data.get("General revenue")).intValue();// Miscellaneous commercial activity<a name="line.307"></a>
-<span class="sourceLineNo">308</span>            this.miscellaneousCommercialActivity = ((Number)json_data.get("Miscellaneous commercial activity")).intValue();// Other insurance trust revenue<a name="line.308"></a>
-<span class="sourceLineNo">309</span>            this.otherInsuranceTrustRevenue = ((Number)json_data.get("Other insurance trust revenue")).intValue();// Worker's comp revenue<a name="line.309"></a>
-<span class="sourceLineNo">310</span>            this.workersCompRevenue = ((Number)json_data.get("Worker's comp revenue")).intValue();// Equipment and land<a name="line.310"></a>
-<span class="sourceLineNo">311</span>            this.equipmentAndLand = ((Number)json_data.get("Equipment and land")).intValue();// Unemployment comp revenue<a name="line.311"></a>
-<span class="sourceLineNo">312</span>            this.unemploymentCompRevenue = ((Number)json_data.get("Unemployment comp revenue")).intValue();// Selective sales tax<a name="line.312"></a>
-<span class="sourceLineNo">313</span>            this.selectiveSalesTax = ((Number)json_data.get("Selective sales tax")).intValue();// Sales tax<a name="line.313"></a>
-<span class="sourceLineNo">314</span>            this.salesTax = ((Number)json_data.get("Sales tax")).intValue();// License tax<a name="line.314"></a>
-<span class="sourceLineNo">315</span>            this.licenseTax = ((Number)json_data.get("License tax")).intValue();// Federal intergovernmental<a name="line.315"></a>
-<span class="sourceLineNo">316</span>            this.federalIntergovernmental = ((Number)json_data.get("Federal intergovernmental")).intValue();// General expenditure<a name="line.316"></a>
-<span class="sourceLineNo">317</span>            this.generalExpenditure = ((Number)json_data.get("General expenditure")).intValue();// Utility revenue<a name="line.317"></a>
-<span class="sourceLineNo">318</span>            this.utilityRevenue = ((Number)json_data.get("Utility revenue")).intValue();// Revenue<a name="line.318"></a>
-<span class="sourceLineNo">319</span>            this.revenue = ((Number)json_data.get("Revenue")).intValue();// Tax<a name="line.319"></a>
-<span class="sourceLineNo">320</span>            this.tax = ((Number)json_data.get("Tax")).intValue();// Local intergovernmental<a name="line.320"></a>
-<span class="sourceLineNo">321</span>            this.localIntergovernmental = ((Number)json_data.get("Local intergovernmental")).intValue();// Intergovernmental<a name="line.321"></a>
-<span class="sourceLineNo">322</span>            this.intergovernmental = ((Number)json_data.get("Intergovernmental")).intValue();// Employee retirement revenue<a name="line.322"></a>
-<span class="sourceLineNo">323</span>            this.employeeRetirementRevenue = ((Number)json_data.get("Employee retirement revenue")).intValue();<a name="line.323"></a>
-<span class="sourceLineNo">324</span>        } catch (NullPointerException e) {<a name="line.324"></a>
-<span class="sourceLineNo">325</span>                System.err.println("Could not convert the response to a Totals; a field was missing.");<a name="line.325"></a>
-<span class="sourceLineNo">326</span>                e.printStackTrace();<a name="line.326"></a>
-<span class="sourceLineNo">327</span>        } catch (ClassCastException e) {<a name="line.327"></a>
-<span class="sourceLineNo">328</span>                System.err.println("Could not convert the response to a Totals; a field had the wrong structure.");<a name="line.328"></a>
-<span class="sourceLineNo">329</span>                e.printStackTrace();<a name="line.329"></a>
-<span class="sourceLineNo">330</span>        }<a name="line.330"></a>
-<span class="sourceLineNo">331</span>        }       <a name="line.331"></a>
-<span class="sourceLineNo">332</span>}<a name="line.332"></a>
+<span class="sourceLineNo">266</span>    <a name="line.266"></a>
+<span class="sourceLineNo">267</span>    <a name="line.267"></a>
+<span class="sourceLineNo">268</span>    /**<a name="line.268"></a>
+<span class="sourceLineNo">269</span>     * All amounts of money paid out by a government--net of recoveries and other correcting transactions--other than for retirement of debt, investment in securities, extension of credit, or as agency transactions. Note that expenditure includes only external transactions of a government and excludes non-cash transactions such as the provision of perquisites or other payments in kind.<a name="line.269"></a>
+<span class="sourceLineNo">270</span>     * @return Integer<a name="line.270"></a>
+<span class="sourceLineNo">271</span>     */<a name="line.271"></a>
+<span class="sourceLineNo">272</span>    public Integer getExpenditure() {<a name="line.272"></a>
+<span class="sourceLineNo">273</span>        return this.expenditure;<a name="line.273"></a>
+<span class="sourceLineNo">274</span>    }<a name="line.274"></a>
+<span class="sourceLineNo">275</span>    <a name="line.275"></a>
+<span class="sourceLineNo">276</span>    <a name="line.276"></a>
+<span class="sourceLineNo">277</span>    <a name="line.277"></a>
+<span class="sourceLineNo">278</span>    /**<a name="line.278"></a>
+<span class="sourceLineNo">279</span>     * Revenue related to Worker's Compensation.<a name="line.279"></a>
+<span class="sourceLineNo">280</span>     * @return Integer<a name="line.280"></a>
+<span class="sourceLineNo">281</span>     */<a name="line.281"></a>
+<span class="sourceLineNo">282</span>    public Integer getWorkersCompRevenue() {<a name="line.282"></a>
+<span class="sourceLineNo">283</span>        return this.workersCompRevenue;<a name="line.283"></a>
+<span class="sourceLineNo">284</span>    }<a name="line.284"></a>
+<span class="sourceLineNo">285</span>    <a name="line.285"></a>
+<span class="sourceLineNo">286</span>    <a name="line.286"></a>
+<span class="sourceLineNo">287</span>    <a name="line.287"></a>
+<span class="sourceLineNo">288</span>    /**<a name="line.288"></a>
+<span class="sourceLineNo">289</span>     * Amounts paid to other governments as fiscal aid in the form of shared revenues and grants-in-aid, as reimbursements for performance of general government activities and for specific services for the paying government, or in lieu of taxes. Excludes amounts paid to other governments for purchase of commodities, property, or utility services, any tax imposed and paid as such, and employer contributions for social insurance - e.g., contributions to the Federal Government for Old Age, Survivors', Disability, and Health Insurance for government employees.<a name="line.289"></a>
+<span class="sourceLineNo">290</span>     * @return Integer<a name="line.290"></a>
+<span class="sourceLineNo">291</span>     */<a name="line.291"></a>
+<span class="sourceLineNo">292</span>    public Integer getGeneralExpenditure() {<a name="line.292"></a>
+<span class="sourceLineNo">293</span>        return this.generalExpenditure;<a name="line.293"></a>
+<span class="sourceLineNo">294</span>    }<a name="line.294"></a>
+<span class="sourceLineNo">295</span>    <a name="line.295"></a>
+<span class="sourceLineNo">296</span>    <a name="line.296"></a>
+<span class="sourceLineNo">297</span>    <a name="line.297"></a>
+<span class="sourceLineNo">298</span>    /**<a name="line.298"></a>
+<span class="sourceLineNo">299</span>     * Other revenue related to ITR.<a name="line.299"></a>
+<span class="sourceLineNo">300</span>     * @return Integer<a name="line.300"></a>
+<span class="sourceLineNo">301</span>     */<a name="line.301"></a>
+<span class="sourceLineNo">302</span>    public Integer getOtherInsuranceTrustRevenue() {<a name="line.302"></a>
+<span class="sourceLineNo">303</span>        return this.otherInsuranceTrustRevenue;<a name="line.303"></a>
+<span class="sourceLineNo">304</span>    }<a name="line.304"></a>
+<span class="sourceLineNo">305</span>    <a name="line.305"></a>
+<span class="sourceLineNo">306</span>    <a name="line.306"></a>
+<span class="sourceLineNo">307</span>    <a name="line.307"></a>
+<span class="sourceLineNo">308</span>        <a name="line.308"></a>
+<span class="sourceLineNo">309</span>        /**<a name="line.309"></a>
+<span class="sourceLineNo">310</span>         * Creates a string based representation of this Totals.<a name="line.310"></a>
+<span class="sourceLineNo">311</span>        <a name="line.311"></a>
+<span class="sourceLineNo">312</span>         * @return String<a name="line.312"></a>
+<span class="sourceLineNo">313</span>         */<a name="line.313"></a>
+<span class="sourceLineNo">314</span>        public String toString() {<a name="line.314"></a>
+<span class="sourceLineNo">315</span>                return "Totals[" +localIntergovernmental+", "+insuranceTrustRevenue+", "+federalIntergovernmental+", "+revenue+", "+selectiveSalesTax+", "+equipmentAndLand+", "+employeeRetirementRevenue+", "+salesTax+", "+generalRevenue+", "+intergovernmental+", "+miscellaneousCommercialActivity+", "+utilityRevenue+", "+miscellaneous+", "+tax+", "+unemploymentCompRevenue+", "+licenseTax+", "+construction+", "+charges+", "+capitalOutlay+", "+stateIntergovernmental+", "+expenditure+", "+workersCompRevenue+", "+generalExpenditure+", "+otherInsuranceTrustRevenue+"]";<a name="line.315"></a>
+<span class="sourceLineNo">316</span>        }<a name="line.316"></a>
+<span class="sourceLineNo">317</span>        <a name="line.317"></a>
+<span class="sourceLineNo">318</span>        /**<a name="line.318"></a>
+<span class="sourceLineNo">319</span>         * Internal constructor to create a Totals from a  representation.<a name="line.319"></a>
+<span class="sourceLineNo">320</span>         * @param json_data The raw json data that will be parsed.<a name="line.320"></a>
+<span class="sourceLineNo">321</span>         */<a name="line.321"></a>
+<span class="sourceLineNo">322</span>    public Totals(JSONObject json_data) {<a name="line.322"></a>
+<span class="sourceLineNo">323</span>        //System.out.println(json_data);<a name="line.323"></a>
+<span class="sourceLineNo">324</span>        <a name="line.324"></a>
+<span class="sourceLineNo">325</span>        try {<a name="line.325"></a>
+<span class="sourceLineNo">326</span>            // Local intergovernmental<a name="line.326"></a>
+<span class="sourceLineNo">327</span>            this.localIntergovernmental = ((Number)json_data.get("Local intergovernmental")).intValue();<a name="line.327"></a>
+<span class="sourceLineNo">328</span>        } catch (NullPointerException e) {<a name="line.328"></a>
+<span class="sourceLineNo">329</span>                System.err.println("Could not convert the response to a Totals; the field localIntergovernmental was missing.");<a name="line.329"></a>
+<span class="sourceLineNo">330</span>                e.printStackTrace();<a name="line.330"></a>
+<span class="sourceLineNo">331</span>        } catch (ClassCastException e) {<a name="line.331"></a>
+<span class="sourceLineNo">332</span>                System.err.println("Could not convert the response to a Totals; the field localIntergovernmental had the wrong structure.");<a name="line.332"></a>
+<span class="sourceLineNo">333</span>                e.printStackTrace();<a name="line.333"></a>
+<span class="sourceLineNo">334</span>        }<a name="line.334"></a>
+<span class="sourceLineNo">335</span>        <a name="line.335"></a>
+<span class="sourceLineNo">336</span>        try {<a name="line.336"></a>
+<span class="sourceLineNo">337</span>            // Insurance trust  revenue<a name="line.337"></a>
+<span class="sourceLineNo">338</span>            this.insuranceTrustRevenue = ((Number)json_data.get("Insurance trust  revenue")).intValue();<a name="line.338"></a>
+<span class="sourceLineNo">339</span>        } catch (NullPointerException e) {<a name="line.339"></a>
+<span class="sourceLineNo">340</span>                System.err.println("Could not convert the response to a Totals; the field insuranceTrustRevenue was missing.");<a name="line.340"></a>
+<span class="sourceLineNo">341</span>                e.printStackTrace();<a name="line.341"></a>
+<span class="sourceLineNo">342</span>        } catch (ClassCastException e) {<a name="line.342"></a>
+<span class="sourceLineNo">343</span>                System.err.println("Could not convert the response to a Totals; the field insuranceTrustRevenue had the wrong structure.");<a name="line.343"></a>
+<span class="sourceLineNo">344</span>                e.printStackTrace();<a name="line.344"></a>
+<span class="sourceLineNo">345</span>        }<a name="line.345"></a>
+<span class="sourceLineNo">346</span>        <a name="line.346"></a>
+<span class="sourceLineNo">347</span>        try {<a name="line.347"></a>
+<span class="sourceLineNo">348</span>            // Federal intergovernmental<a name="line.348"></a>
+<span class="sourceLineNo">349</span>            this.federalIntergovernmental = ((Number)json_data.get("Federal intergovernmental")).intValue();<a name="line.349"></a>
+<span class="sourceLineNo">350</span>        } catch (NullPointerException e) {<a name="line.350"></a>
+<span class="sourceLineNo">351</span>                System.err.println("Could not convert the response to a Totals; the field federalIntergovernmental was missing.");<a name="line.351"></a>
+<span class="sourceLineNo">352</span>                e.printStackTrace();<a name="line.352"></a>
+<span class="sourceLineNo">353</span>        } catch (ClassCastException e) {<a name="line.353"></a>
+<span class="sourceLineNo">354</span>                System.err.println("Could not convert the response to a Totals; the field federalIntergovernmental had the wrong structure.");<a name="line.354"></a>
+<span class="sourceLineNo">355</span>                e.printStackTrace();<a name="line.355"></a>
+<span class="sourceLineNo">356</span>        }<a name="line.356"></a>
+<span class="sourceLineNo">357</span>        <a name="line.357"></a>
+<span class="sourceLineNo">358</span>        try {<a name="line.358"></a>
+<span class="sourceLineNo">359</span>            // Revenue<a name="line.359"></a>
+<span class="sourceLineNo">360</span>            this.revenue = ((Number)json_data.get("Revenue")).intValue();<a name="line.360"></a>
+<span class="sourceLineNo">361</span>        } catch (NullPointerException e) {<a name="line.361"></a>
+<span class="sourceLineNo">362</span>                System.err.println("Could not convert the response to a Totals; the field revenue was missing.");<a name="line.362"></a>
+<span class="sourceLineNo">363</span>                e.printStackTrace();<a name="line.363"></a>
+<span class="sourceLineNo">364</span>        } catch (ClassCastException e) {<a name="line.364"></a>
+<span class="sourceLineNo">365</span>                System.err.println("Could not convert the response to a Totals; the field revenue had the wrong structure.");<a name="line.365"></a>
+<span class="sourceLineNo">366</span>                e.printStackTrace();<a name="line.366"></a>
+<span class="sourceLineNo">367</span>        }<a name="line.367"></a>
+<span class="sourceLineNo">368</span>        <a name="line.368"></a>
+<span class="sourceLineNo">369</span>        try {<a name="line.369"></a>
+<span class="sourceLineNo">370</span>            // Selective sales tax<a name="line.370"></a>
+<span class="sourceLineNo">371</span>            this.selectiveSalesTax = ((Number)json_data.get("Selective sales tax")).intValue();<a name="line.371"></a>
+<span class="sourceLineNo">372</span>        } catch (NullPointerException e) {<a name="line.372"></a>
+<span class="sourceLineNo">373</span>                System.err.println("Could not convert the response to a Totals; the field selectiveSalesTax was missing.");<a name="line.373"></a>
+<span class="sourceLineNo">374</span>                e.printStackTrace();<a name="line.374"></a>
+<span class="sourceLineNo">375</span>        } catch (ClassCastException e) {<a name="line.375"></a>
+<span class="sourceLineNo">376</span>                System.err.println("Could not convert the response to a Totals; the field selectiveSalesTax had the wrong structure.");<a name="line.376"></a>
+<span class="sourceLineNo">377</span>                e.printStackTrace();<a name="line.377"></a>
+<span class="sourceLineNo">378</span>        }<a name="line.378"></a>
+<span class="sourceLineNo">379</span>        <a name="line.379"></a>
+<span class="sourceLineNo">380</span>        try {<a name="line.380"></a>
+<span class="sourceLineNo">381</span>            // Equipment and land<a name="line.381"></a>
+<span class="sourceLineNo">382</span>            this.equipmentAndLand = ((Number)json_data.get("Equipment and land")).intValue();<a name="line.382"></a>
+<span class="sourceLineNo">383</span>        } catch (NullPointerException e) {<a name="line.383"></a>
+<span class="sourceLineNo">384</span>                System.err.println("Could not convert the response to a Totals; the field equipmentAndLand was missing.");<a name="line.384"></a>
+<span class="sourceLineNo">385</span>                e.printStackTrace();<a name="line.385"></a>
+<span class="sourceLineNo">386</span>        } catch (ClassCastException e) {<a name="line.386"></a>
+<span class="sourceLineNo">387</span>                System.err.println("Could not convert the response to a Totals; the field equipmentAndLand had the wrong structure.");<a name="line.387"></a>
+<span class="sourceLineNo">388</span>                e.printStackTrace();<a name="line.388"></a>
+<span class="sourceLineNo">389</span>        }<a name="line.389"></a>
+<span class="sourceLineNo">390</span>        <a name="line.390"></a>
+<span class="sourceLineNo">391</span>        try {<a name="line.391"></a>
+<span class="sourceLineNo">392</span>            // Employee retirement revenue<a name="line.392"></a>
+<span class="sourceLineNo">393</span>            this.employeeRetirementRevenue = ((Number)json_data.get("Employee retirement revenue")).intValue();<a name="line.393"></a>
+<span class="sourceLineNo">394</span>        } catch (NullPointerException e) {<a name="line.394"></a>
+<span class="sourceLineNo">395</span>                System.err.println("Could not convert the response to a Totals; the field employeeRetirementRevenue was missing.");<a name="line.395"></a>
+<span class="sourceLineNo">396</span>                e.printStackTrace();<a name="line.396"></a>
+<span class="sourceLineNo">397</span>        } catch (ClassCastException e) {<a name="line.397"></a>
+<span class="sourceLineNo">398</span>                System.err.println("Could not convert the response to a Totals; the field employeeRetirementRevenue had the wrong structure.");<a name="line.398"></a>
+<span class="sourceLineNo">399</span>                e.printStackTrace();<a name="line.399"></a>
+<span class="sourceLineNo">400</span>        }<a name="line.400"></a>
+<span class="sourceLineNo">401</span>        <a name="line.401"></a>
+<span class="sourceLineNo">402</span>        try {<a name="line.402"></a>
+<span class="sourceLineNo">403</span>            // Sales tax<a name="line.403"></a>
+<span class="sourceLineNo">404</span>            this.salesTax = ((Number)json_data.get("Sales tax")).intValue();<a name="line.404"></a>
+<span class="sourceLineNo">405</span>        } catch (NullPointerException e) {<a name="line.405"></a>
+<span class="sourceLineNo">406</span>                System.err.println("Could not convert the response to a Totals; the field salesTax was missing.");<a name="line.406"></a>
+<span class="sourceLineNo">407</span>                e.printStackTrace();<a name="line.407"></a>
+<span class="sourceLineNo">408</span>        } catch (ClassCastException e) {<a name="line.408"></a>
+<span class="sourceLineNo">409</span>                System.err.println("Could not convert the response to a Totals; the field salesTax had the wrong structure.");<a name="line.409"></a>
+<span class="sourceLineNo">410</span>                e.printStackTrace();<a name="line.410"></a>
+<span class="sourceLineNo">411</span>        }<a name="line.411"></a>
+<span class="sourceLineNo">412</span>        <a name="line.412"></a>
+<span class="sourceLineNo">413</span>        try {<a name="line.413"></a>
+<span class="sourceLineNo">414</span>            // General revenue<a name="line.414"></a>
+<span class="sourceLineNo">415</span>            this.generalRevenue = ((Number)json_data.get("General revenue")).intValue();<a name="line.415"></a>
+<span class="sourceLineNo">416</span>        } catch (NullPointerException e) {<a name="line.416"></a>
+<span class="sourceLineNo">417</span>                System.err.println("Could not convert the response to a Totals; the field generalRevenue was missing.");<a name="line.417"></a>
+<span class="sourceLineNo">418</span>                e.printStackTrace();<a name="line.418"></a>
+<span class="sourceLineNo">419</span>        } catch (ClassCastException e) {<a name="line.419"></a>
+<span class="sourceLineNo">420</span>                System.err.println("Could not convert the response to a Totals; the field generalRevenue had the wrong structure.");<a name="line.420"></a>
+<span class="sourceLineNo">421</span>                e.printStackTrace();<a name="line.421"></a>
+<span class="sourceLineNo">422</span>        }<a name="line.422"></a>
+<span class="sourceLineNo">423</span>        <a name="line.423"></a>
+<span class="sourceLineNo">424</span>        try {<a name="line.424"></a>
+<span class="sourceLineNo">425</span>            // Intergovernmental<a name="line.425"></a>
+<span class="sourceLineNo">426</span>            this.intergovernmental = ((Number)json_data.get("Intergovernmental")).intValue();<a name="line.426"></a>
+<span class="sourceLineNo">427</span>        } catch (NullPointerException e) {<a name="line.427"></a>
+<span class="sourceLineNo">428</span>                System.err.println("Could not convert the response to a Totals; the field intergovernmental was missing.");<a name="line.428"></a>
+<span class="sourceLineNo">429</span>                e.printStackTrace();<a name="line.429"></a>
+<span class="sourceLineNo">430</span>        } catch (ClassCastException e) {<a name="line.430"></a>
+<span class="sourceLineNo">431</span>                System.err.println("Could not convert the response to a Totals; the field intergovernmental had the wrong structure.");<a name="line.431"></a>
+<span class="sourceLineNo">432</span>                e.printStackTrace();<a name="line.432"></a>
+<span class="sourceLineNo">433</span>        }<a name="line.433"></a>
+<span class="sourceLineNo">434</span>        <a name="line.434"></a>
+<span class="sourceLineNo">435</span>        try {<a name="line.435"></a>
+<span class="sourceLineNo">436</span>            // Miscellaneous commercial activity<a name="line.436"></a>
+<span class="sourceLineNo">437</span>            this.miscellaneousCommercialActivity = ((Number)json_data.get("Miscellaneous commercial activity")).intValue();<a name="line.437"></a>
+<span class="sourceLineNo">438</span>        } catch (NullPointerException e) {<a name="line.438"></a>
+<span class="sourceLineNo">439</span>                System.err.println("Could not convert the response to a Totals; the field miscellaneousCommercialActivity was missing.");<a name="line.439"></a>
+<span class="sourceLineNo">440</span>                e.printStackTrace();<a name="line.440"></a>
+<span class="sourceLineNo">441</span>        } catch (ClassCastException e) {<a name="line.441"></a>
+<span class="sourceLineNo">442</span>                System.err.println("Could not convert the response to a Totals; the field miscellaneousCommercialActivity had the wrong structure.");<a name="line.442"></a>
+<span class="sourceLineNo">443</span>                e.printStackTrace();<a name="line.443"></a>
+<span class="sourceLineNo">444</span>        }<a name="line.444"></a>
+<span class="sourceLineNo">445</span>        <a name="line.445"></a>
+<span class="sourceLineNo">446</span>        try {<a name="line.446"></a>
+<span class="sourceLineNo">447</span>            // Utility revenue<a name="line.447"></a>
+<span class="sourceLineNo">448</span>            this.utilityRevenue = ((Number)json_data.get("Utility revenue")).intValue();<a name="line.448"></a>
+<span class="sourceLineNo">449</span>        } catch (NullPointerException e) {<a name="line.449"></a>
+<span class="sourceLineNo">450</span>                System.err.println("Could not convert the response to a Totals; the field utilityRevenue was missing.");<a name="line.450"></a>
+<span class="sourceLineNo">451</span>                e.printStackTrace();<a name="line.451"></a>
+<span class="sourceLineNo">452</span>        } catch (ClassCastException e) {<a name="line.452"></a>
+<span class="sourceLineNo">453</span>                System.err.println("Could not convert the response to a Totals; the field utilityRevenue had the wrong structure.");<a name="line.453"></a>
+<span class="sourceLineNo">454</span>                e.printStackTrace();<a name="line.454"></a>
+<span class="sourceLineNo">455</span>        }<a name="line.455"></a>
+<span class="sourceLineNo">456</span>        <a name="line.456"></a>
+<span class="sourceLineNo">457</span>        try {<a name="line.457"></a>
+<span class="sourceLineNo">458</span>            // Miscellaneous<a name="line.458"></a>
+<span class="sourceLineNo">459</span>            this.miscellaneous = ((Number)json_data.get("Miscellaneous")).intValue();<a name="line.459"></a>
+<span class="sourceLineNo">460</span>        } catch (NullPointerException e) {<a name="line.460"></a>
+<span class="sourceLineNo">461</span>                System.err.println("Could not convert the response to a Totals; the field miscellaneous was missing.");<a name="line.461"></a>
+<span class="sourceLineNo">462</span>                e.printStackTrace();<a name="line.462"></a>
+<span class="sourceLineNo">463</span>        } catch (ClassCastException e) {<a name="line.463"></a>
+<span class="sourceLineNo">464</span>                System.err.println("Could not convert the response to a Totals; the field miscellaneous had the wrong structure.");<a name="line.464"></a>
+<span class="sourceLineNo">465</span>                e.printStackTrace();<a name="line.465"></a>
+<span class="sourceLineNo">466</span>        }<a name="line.466"></a>
+<span class="sourceLineNo">467</span>        <a name="line.467"></a>
+<span class="sourceLineNo">468</span>        try {<a name="line.468"></a>
+<span class="sourceLineNo">469</span>            // Tax<a name="line.469"></a>
+<span class="sourceLineNo">470</span>            this.tax = ((Number)json_data.get("Tax")).intValue();<a name="line.470"></a>
+<span class="sourceLineNo">471</span>        } catch (NullPointerException e) {<a name="line.471"></a>
+<span class="sourceLineNo">472</span>                System.err.println("Could not convert the response to a Totals; the field tax was missing.");<a name="line.472"></a>
+<span class="sourceLineNo">473</span>                e.printStackTrace();<a name="line.473"></a>
+<span class="sourceLineNo">474</span>        } catch (ClassCastException e) {<a name="line.474"></a>
+<span class="sourceLineNo">475</span>                System.err.println("Could not convert the response to a Totals; the field tax had the wrong structure.");<a name="line.475"></a>
+<span class="sourceLineNo">476</span>                e.printStackTrace();<a name="line.476"></a>
+<span class="sourceLineNo">477</span>        }<a name="line.477"></a>
+<span class="sourceLineNo">478</span>        <a name="line.478"></a>
+<span class="sourceLineNo">479</span>        try {<a name="line.479"></a>
+<span class="sourceLineNo">480</span>            // Unemployment comp revenue<a name="line.480"></a>
+<span class="sourceLineNo">481</span>            this.unemploymentCompRevenue = ((Number)json_data.get("Unemployment comp revenue")).intValue();<a name="line.481"></a>
+<span class="sourceLineNo">482</span>        } catch (NullPointerException e) {<a name="line.482"></a>
+<span class="sourceLineNo">483</span>                System.err.println("Could not convert the response to a Totals; the field unemploymentCompRevenue was missing.");<a name="line.483"></a>
+<span class="sourceLineNo">484</span>                e.printStackTrace();<a name="line.484"></a>
+<span class="sourceLineNo">485</span>        } catch (ClassCastException e) {<a name="line.485"></a>
+<span class="sourceLineNo">486</span>                System.err.println("Could not convert the response to a Totals; the field unemploymentCompRevenue had the wrong structure.");<a name="line.486"></a>
+<span class="sourceLineNo">487</span>                e.printStackTrace();<a name="line.487"></a>
+<span class="sourceLineNo">488</span>        }<a name="line.488"></a>
+<span class="sourceLineNo">489</span>        <a name="line.489"></a>
+<span class="sourceLineNo">490</span>        try {<a name="line.490"></a>
+<span class="sourceLineNo">491</span>            // License tax<a name="line.491"></a>
+<span class="sourceLineNo">492</span>            this.licenseTax = ((Number)json_data.get("License tax")).intValue();<a name="line.492"></a>
+<span class="sourceLineNo">493</span>        } catch (NullPointerException e) {<a name="line.493"></a>
+<span class="sourceLineNo">494</span>                System.err.println("Could not convert the response to a Totals; the field licenseTax was missing.");<a name="line.494"></a>
+<span class="sourceLineNo">495</span>                e.printStackTrace();<a name="line.495"></a>
+<span class="sourceLineNo">496</span>        } catch (ClassCastException e) {<a name="line.496"></a>
+<span class="sourceLineNo">497</span>                System.err.println("Could not convert the response to a Totals; the field licenseTax had the wrong structure.");<a name="line.497"></a>
+<span class="sourceLineNo">498</span>                e.printStackTrace();<a name="line.498"></a>
+<span class="sourceLineNo">499</span>        }<a name="line.499"></a>
+<span class="sourceLineNo">500</span>        <a name="line.500"></a>
+<span class="sourceLineNo">501</span>        try {<a name="line.501"></a>
+<span class="sourceLineNo">502</span>            // Construction<a name="line.502"></a>
+<span class="sourceLineNo">503</span>            this.construction = ((Number)json_data.get("Construction")).intValue();<a name="line.503"></a>
+<span class="sourceLineNo">504</span>        } catch (NullPointerException e) {<a name="line.504"></a>
+<span class="sourceLineNo">505</span>                System.err.println("Could not convert the response to a Totals; the field construction was missing.");<a name="line.505"></a>
+<span class="sourceLineNo">506</span>                e.printStackTrace();<a name="line.506"></a>
+<span class="sourceLineNo">507</span>        } catch (ClassCastException e) {<a name="line.507"></a>
+<span class="sourceLineNo">508</span>                System.err.println("Could not convert the response to a Totals; the field construction had the wrong structure.");<a name="line.508"></a>
+<span class="sourceLineNo">509</span>                e.printStackTrace();<a name="line.509"></a>
+<span class="sourceLineNo">510</span>        }<a name="line.510"></a>
+<span class="sourceLineNo">511</span>        <a name="line.511"></a>
+<span class="sourceLineNo">512</span>        try {<a name="line.512"></a>
+<span class="sourceLineNo">513</span>            // Charges<a name="line.513"></a>
+<span class="sourceLineNo">514</span>            this.charges = ((Number)json_data.get("Charges")).intValue();<a name="line.514"></a>
+<span class="sourceLineNo">515</span>        } catch (NullPointerException e) {<a name="line.515"></a>
+<span class="sourceLineNo">516</span>                System.err.println("Could not convert the response to a Totals; the field charges was missing.");<a name="line.516"></a>
+<span class="sourceLineNo">517</span>                e.printStackTrace();<a name="line.517"></a>
+<span class="sourceLineNo">518</span>        } catch (ClassCastException e) {<a name="line.518"></a>
+<span class="sourceLineNo">519</span>                System.err.println("Could not convert the response to a Totals; the field charges had the wrong structure.");<a name="line.519"></a>
+<span class="sourceLineNo">520</span>                e.printStackTrace();<a name="line.520"></a>
+<span class="sourceLineNo">521</span>        }<a name="line.521"></a>
+<span class="sourceLineNo">522</span>        <a name="line.522"></a>
+<span class="sourceLineNo">523</span>        try {<a name="line.523"></a>
+<span class="sourceLineNo">524</span>            // Capital outlay<a name="line.524"></a>
+<span class="sourceLineNo">525</span>            this.capitalOutlay = ((Number)json_data.get("Capital outlay")).intValue();<a name="line.525"></a>
+<span class="sourceLineNo">526</span>        } catch (NullPointerException e) {<a name="line.526"></a>
+<span class="sourceLineNo">527</span>                System.err.println("Could not convert the response to a Totals; the field capitalOutlay was missing.");<a name="line.527"></a>
+<span class="sourceLineNo">528</span>                e.printStackTrace();<a name="line.528"></a>
+<span class="sourceLineNo">529</span>        } catch (ClassCastException e) {<a name="line.529"></a>
+<span class="sourceLineNo">530</span>                System.err.println("Could not convert the response to a Totals; the field capitalOutlay had the wrong structure.");<a name="line.530"></a>
+<span class="sourceLineNo">531</span>                e.printStackTrace();<a name="line.531"></a>
+<span class="sourceLineNo">532</span>        }<a name="line.532"></a>
+<span class="sourceLineNo">533</span>        <a name="line.533"></a>
+<span class="sourceLineNo">534</span>        try {<a name="line.534"></a>
+<span class="sourceLineNo">535</span>            // State intergovernmental<a name="line.535"></a>
+<span class="sourceLineNo">536</span>            this.stateIntergovernmental = ((Number)json_data.get("State intergovernmental")).intValue();<a name="line.536"></a>
+<span class="sourceLineNo">537</span>        } catch (NullPointerException e) {<a name="line.537"></a>
+<span class="sourceLineNo">538</span>                System.err.println("Could not convert the response to a Totals; the field stateIntergovernmental was missing.");<a name="line.538"></a>
+<span class="sourceLineNo">539</span>                e.printStackTrace();<a name="line.539"></a>
+<span class="sourceLineNo">540</span>        } catch (ClassCastException e) {<a name="line.540"></a>
+<span class="sourceLineNo">541</span>                System.err.println("Could not convert the response to a Totals; the field stateIntergovernmental had the wrong structure.");<a name="line.541"></a>
+<span class="sourceLineNo">542</span>                e.printStackTrace();<a name="line.542"></a>
+<span class="sourceLineNo">543</span>        }<a name="line.543"></a>
+<span class="sourceLineNo">544</span>        <a name="line.544"></a>
+<span class="sourceLineNo">545</span>        try {<a name="line.545"></a>
+<span class="sourceLineNo">546</span>            // Expenditure<a name="line.546"></a>
+<span class="sourceLineNo">547</span>            this.expenditure = ((Number)json_data.get("Expenditure")).intValue();<a name="line.547"></a>
+<span class="sourceLineNo">548</span>        } catch (NullPointerException e) {<a name="line.548"></a>
+<span class="sourceLineNo">549</span>                System.err.println("Could not convert the response to a Totals; the field expenditure was missing.");<a name="line.549"></a>
+<span class="sourceLineNo">550</span>                e.printStackTrace();<a name="line.550"></a>
+<span class="sourceLineNo">551</span>        } catch (ClassCastException e) {<a name="line.551"></a>
+<span class="sourceLineNo">552</span>                System.err.println("Could not convert the response to a Totals; the field expenditure had the wrong structure.");<a name="line.552"></a>
+<span class="sourceLineNo">553</span>                e.printStackTrace();<a name="line.553"></a>
+<span class="sourceLineNo">554</span>        }<a name="line.554"></a>
+<span class="sourceLineNo">555</span>        <a name="line.555"></a>
+<span class="sourceLineNo">556</span>        try {<a name="line.556"></a>
+<span class="sourceLineNo">557</span>            // Worker's comp revenue<a name="line.557"></a>
+<span class="sourceLineNo">558</span>            this.workersCompRevenue = ((Number)json_data.get("Worker's comp revenue")).intValue();<a name="line.558"></a>
+<span class="sourceLineNo">559</span>        } catch (NullPointerException e) {<a name="line.559"></a>
+<span class="sourceLineNo">560</span>                System.err.println("Could not convert the response to a Totals; the field workersCompRevenue was missing.");<a name="line.560"></a>
+<span class="sourceLineNo">561</span>                e.printStackTrace();<a name="line.561"></a>
+<span class="sourceLineNo">562</span>        } catch (ClassCastException e) {<a name="line.562"></a>
+<span class="sourceLineNo">563</span>                System.err.println("Could not convert the response to a Totals; the field workersCompRevenue had the wrong structure.");<a name="line.563"></a>
+<span class="sourceLineNo">564</span>                e.printStackTrace();<a name="line.564"></a>
+<span class="sourceLineNo">565</span>        }<a name="line.565"></a>
+<span class="sourceLineNo">566</span>        <a name="line.566"></a>
+<span class="sourceLineNo">567</span>        try {<a name="line.567"></a>
+<span class="sourceLineNo">568</span>            // General expenditure<a name="line.568"></a>
+<span class="sourceLineNo">569</span>            this.generalExpenditure = ((Number)json_data.get("General expenditure")).intValue();<a name="line.569"></a>
+<span class="sourceLineNo">570</span>        } catch (NullPointerException e) {<a name="line.570"></a>
+<span class="sourceLineNo">571</span>                System.err.println("Could not convert the response to a Totals; the field generalExpenditure was missing.");<a name="line.571"></a>
+<span class="sourceLineNo">572</span>                e.printStackTrace();<a name="line.572"></a>
+<span class="sourceLineNo">573</span>        } catch (ClassCastException e) {<a name="line.573"></a>
+<span class="sourceLineNo">574</span>                System.err.println("Could not convert the response to a Totals; the field generalExpenditure had the wrong structure.");<a name="line.574"></a>
+<span class="sourceLineNo">575</span>                e.printStackTrace();<a name="line.575"></a>
+<span class="sourceLineNo">576</span>        }<a name="line.576"></a>
+<span class="sourceLineNo">577</span>        <a name="line.577"></a>
+<span class="sourceLineNo">578</span>        try {<a name="line.578"></a>
+<span class="sourceLineNo">579</span>            // Other insurance trust revenue<a name="line.579"></a>
+<span class="sourceLineNo">580</span>            this.otherInsuranceTrustRevenue = ((Number)json_data.get("Other insurance trust revenue")).intValue();<a name="line.580"></a>
+<span class="sourceLineNo">581</span>        } catch (NullPointerException e) {<a name="line.581"></a>
+<span class="sourceLineNo">582</span>                System.err.println("Could not convert the response to a Totals; the field otherInsuranceTrustRevenue was missing.");<a name="line.582"></a>
+<span class="sourceLineNo">583</span>                e.printStackTrace();<a name="line.583"></a>
+<span class="sourceLineNo">584</span>        } catch (ClassCastException e) {<a name="line.584"></a>
+<span class="sourceLineNo">585</span>                System.err.println("Could not convert the response to a Totals; the field otherInsuranceTrustRevenue had the wrong structure.");<a name="line.585"></a>
+<span class="sourceLineNo">586</span>                e.printStackTrace();<a name="line.586"></a>
+<span class="sourceLineNo">587</span>        }<a name="line.587"></a>
+<span class="sourceLineNo">588</span>        <a name="line.588"></a>
+<span class="sourceLineNo">589</span>        }       <a name="line.589"></a>
+<span class="sourceLineNo">590</span>}<a name="line.590"></a>
 
 
 

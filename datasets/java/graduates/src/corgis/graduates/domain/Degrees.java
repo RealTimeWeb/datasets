@@ -16,27 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Degrees {
 	
-    // The estimated number of doctoral degrees awarded in this for major during this year.
-    private Integer doctorates;
     // The estimated number of professional degrees awarded in this for major during this year.
     private Integer professionals;
+    // The estimated number of doctoral degrees awarded in this for major during this year.
+    private Integer doctorates;
     // The estimated number of Masters awarded in this for major during this year.
     private Integer masters;
     // The estimated number of bachelor degrees awarded in this for major during this year.
     private Integer bachelors;
     
     
-    /*
-     * @return 
-     */
-    public Integer getDoctorates() {
-        return this.doctorates;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The estimated number of professional degrees awarded in this for major during this year.
+     * @return Integer
      */
     public Integer getProfessionals() {
         return this.professionals;
@@ -44,8 +36,19 @@ public class Degrees {
     
     
     
-    /*
-     * @return 
+    /**
+     * The estimated number of doctoral degrees awarded in this for major during this year.
+     * @return Integer
+     */
+    public Integer getDoctorates() {
+        return this.doctorates;
+    }
+    
+    
+    
+    /**
+     * The estimated number of Masters awarded in this for major during this year.
+     * @return Integer
      */
     public Integer getMasters() {
         return this.masters;
@@ -53,8 +56,9 @@ public class Degrees {
     
     
     
-    /*
-     * @return 
+    /**
+     * The estimated number of bachelor degrees awarded in this for major during this year.
+     * @return Integer
      */
     public Integer getBachelors() {
         return this.bachelors;
@@ -69,7 +73,7 @@ public class Degrees {
 	 * @return String
 	 */
 	public String toString() {
-		return "Degrees[" +doctorates+", "+professionals+", "+masters+", "+bachelors+"]";
+		return "Degrees[" +professionals+", "+doctorates+", "+masters+", "+bachelors+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Degrees {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Degrees(JSONObject json_data) {
-        try {// Doctorates
-            this.doctorates = ((Number)json_data.get("Doctorates")).intValue();// Professionals
-            this.professionals = ((Number)json_data.get("Professionals")).intValue();// Masters
-            this.masters = ((Number)json_data.get("Masters")).intValue();// Bachelors
-            this.bachelors = ((Number)json_data.get("Bachelors")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Professionals
+            this.professionals = ((Number)json_data.get("Professionals")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Degrees; a field was missing.");
+    		System.err.println("Could not convert the response to a Degrees; the field professionals was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Degrees; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Degrees; the field professionals had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Doctorates
+            this.doctorates = ((Number)json_data.get("Doctorates")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Degrees; the field doctorates was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Degrees; the field doctorates had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Masters
+            this.masters = ((Number)json_data.get("Masters")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Degrees; the field masters was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Degrees; the field masters had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Bachelors
+            this.bachelors = ((Number)json_data.get("Bachelors")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Degrees; the field bachelors was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Degrees; the field bachelors had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

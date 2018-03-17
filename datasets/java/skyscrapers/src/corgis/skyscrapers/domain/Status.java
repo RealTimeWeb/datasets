@@ -10,21 +10,32 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.skyscrapers.domain.Started;
 import corgis.skyscrapers.domain.Completed;
+import corgis.skyscrapers.domain.Started;
 
 /**
  * 
  */
 public class Status {
 	
+    private Completed completed;
     private String current;
     private Started started;
-    private Completed completed;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Completed
+     */
+    public Completed getCompleted() {
+        return this.completed;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
      */
     public String getCurrent() {
         return this.current;
@@ -32,20 +43,12 @@ public class Status {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Started
      */
     public Started getStarted() {
         return this.started;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Completed getCompleted() {
-        return this.completed;
     }
     
     
@@ -57,7 +60,7 @@ public class Status {
 	 * @return String
 	 */
 	public String toString() {
-		return "Status[" +current+", "+started+", "+completed+"]";
+		return "Status[" +completed+", "+current+", "+started+"]";
 	}
 	
 	/**
@@ -65,16 +68,40 @@ public class Status {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Status(JSONObject json_data) {
-        try {// current
-            this.current = (String)json_data.get("current");// started
-            this.started = new Started((JSONObject)json_data.get("started"));// completed
+        //System.out.println(json_data);
+        
+        try {
+            // completed
             this.completed = new Completed((JSONObject)json_data.get("completed"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Status; a field was missing.");
+    		System.err.println("Could not convert the response to a Status; the field completed was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Status; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Status; the field completed had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // current
+            this.current = (String)json_data.get("current");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Status; the field current was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Status; the field current had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // started
+            this.started = new Started((JSONObject)json_data.get("started"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Status; the field started was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Status; the field started had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

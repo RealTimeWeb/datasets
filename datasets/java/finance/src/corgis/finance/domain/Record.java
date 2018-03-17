@@ -18,25 +18,17 @@ import corgis.finance.domain.Details;
  */
 public class Record {
 	
-    // The state that this report was made for (full name, not the two letter abbreviation).
-    private String state;
     private Totals totals;
-    private Details details;
     // The year that this report was made for.
     private Integer year;
+    private Details details;
+    // The state that this report was made for (full name, not the two letter abbreviation).
+    private String state;
     
     
-    /*
-     * @return 
-     */
-    public String getState() {
-        return this.state;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Totals
      */
     public Totals getTotals() {
         return this.totals;
@@ -44,8 +36,19 @@ public class Record {
     
     
     
-    /*
-     * @return 
+    /**
+     * The year that this report was made for.
+     * @return Integer
+     */
+    public Integer getYear() {
+        return this.year;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Details
      */
     public Details getDetails() {
         return this.details;
@@ -53,11 +56,12 @@ public class Record {
     
     
     
-    /*
-     * @return 
+    /**
+     * The state that this report was made for (full name, not the two letter abbreviation).
+     * @return String
      */
-    public Integer getYear() {
-        return this.year;
+    public String getState() {
+        return this.state;
     }
     
     
@@ -69,7 +73,7 @@ public class Record {
 	 * @return String
 	 */
 	public String toString() {
-		return "Record[" +state+", "+totals+", "+details+", "+year+"]";
+		return "Record[" +totals+", "+year+", "+details+", "+state+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Record {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Record(JSONObject json_data) {
-        try {// State
-            this.state = (String)json_data.get("State");// Totals
-            this.totals = new Totals((JSONObject)json_data.get("Totals"));// Details
-            this.details = new Details((JSONObject)json_data.get("Details"));// Year
-            this.year = ((Number)json_data.get("Year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Totals
+            this.totals = new Totals((JSONObject)json_data.get("Totals"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Record; a field was missing.");
+    		System.err.println("Could not convert the response to a Record; the field totals was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Record; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Record; the field totals had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Year
+            this.year = ((Number)json_data.get("Year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Record; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Record; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Details
+            this.details = new Details((JSONObject)json_data.get("Details"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Record; the field details was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Record; the field details had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // State
+            this.state = (String)json_data.get("State");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Record; the field state was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Record; the field state had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -16,34 +16,27 @@ import org.json.simple.JSONObject;
  */
 public class Race {
 	
+    private Integer nativeAmerican;
+    private Integer black;
     private Integer biracial;
     private Integer hispanic;
-    private Integer black;
     private Integer asian;
     private Integer white;
-    private Integer nativeAmerican;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Integer getBiracial() {
-        return this.biracial;
+    public Integer getNativeAmerican() {
+        return this.nativeAmerican;
     }
     
     
     
-    /*
-     * @return 
-     */
-    public Integer getHispanic() {
-        return this.hispanic;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getBlack() {
         return this.black;
@@ -51,8 +44,29 @@ public class Race {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getBiracial() {
+        return this.biracial;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getHispanic() {
+        return this.hispanic;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
      */
     public Integer getAsian() {
         return this.asian;
@@ -60,20 +74,12 @@ public class Race {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getWhite() {
         return this.white;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getNativeAmerican() {
-        return this.nativeAmerican;
     }
     
     
@@ -85,7 +91,7 @@ public class Race {
 	 * @return String
 	 */
 	public String toString() {
-		return "Race[" +biracial+", "+hispanic+", "+black+", "+asian+", "+white+", "+nativeAmerican+"]";
+		return "Race[" +nativeAmerican+", "+black+", "+biracial+", "+hispanic+", "+asian+", "+white+"]";
 	}
 	
 	/**
@@ -93,19 +99,73 @@ public class Race {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Race(JSONObject json_data) {
-        try {// biracial
-            this.biracial = ((Number)json_data.get("biracial")).intValue();// hispanic
-            this.hispanic = ((Number)json_data.get("hispanic")).intValue();// black
-            this.black = ((Number)json_data.get("black")).intValue();// asian
-            this.asian = ((Number)json_data.get("asian")).intValue();// white
-            this.white = ((Number)json_data.get("white")).intValue();// native american
+        //System.out.println(json_data);
+        
+        try {
+            // native american
             this.nativeAmerican = ((Number)json_data.get("native american")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Race; a field was missing.");
+    		System.err.println("Could not convert the response to a Race; the field nativeAmerican was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Race; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Race; the field nativeAmerican had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // black
+            this.black = ((Number)json_data.get("black")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Race; the field black was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Race; the field black had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // biracial
+            this.biracial = ((Number)json_data.get("biracial")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Race; the field biracial was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Race; the field biracial had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // hispanic
+            this.hispanic = ((Number)json_data.get("hispanic")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Race; the field hispanic was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Race; the field hispanic had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // asian
+            this.asian = ((Number)json_data.get("asian")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Race; the field asian was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Race; the field asian had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // white
+            this.white = ((Number)json_data.get("white")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Race; the field white was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Race; the field white had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

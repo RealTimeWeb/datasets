@@ -16,25 +16,27 @@ import org.json.simple.JSONObject;
  */
 public class FirmExits {
 	
-    // The number of firms that exited this year.
-    private Integer count;
-    // The number of establishments exited because of firm deaths.
-    private Integer establishmentExit;
     // The number of jobs destroyed as a result of firm deaths.
     private Integer jobDestruction;
+    // The number of establishments exited because of firm deaths.
+    private Integer establishmentExit;
+    // The number of firms that exited this year.
+    private Integer count;
     
     
-    /*
-     * @return 
+    /**
+     * The number of jobs destroyed as a result of firm deaths.
+     * @return Integer
      */
-    public Integer getCount() {
-        return this.count;
+    public Integer getJobDestruction() {
+        return this.jobDestruction;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The number of establishments exited because of firm deaths.
+     * @return Integer
      */
     public Integer getEstablishmentExit() {
         return this.establishmentExit;
@@ -42,11 +44,12 @@ public class FirmExits {
     
     
     
-    /*
-     * @return 
+    /**
+     * The number of firms that exited this year.
+     * @return Integer
      */
-    public Integer getJobDestruction() {
-        return this.jobDestruction;
+    public Integer getCount() {
+        return this.count;
     }
     
     
@@ -58,7 +61,7 @@ public class FirmExits {
 	 * @return String
 	 */
 	public String toString() {
-		return "FirmExits[" +count+", "+establishmentExit+", "+jobDestruction+"]";
+		return "FirmExits[" +jobDestruction+", "+establishmentExit+", "+count+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class FirmExits {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public FirmExits(JSONObject json_data) {
-        try {// Count
-            this.count = ((Number)json_data.get("Count")).intValue();// Establishment Exit
-            this.establishmentExit = ((Number)json_data.get("Establishment Exit")).intValue();// Job Destruction
+        //System.out.println(json_data);
+        
+        try {
+            // Job Destruction
             this.jobDestruction = ((Number)json_data.get("Job Destruction")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a FirmExits; a field was missing.");
+    		System.err.println("Could not convert the response to a FirmExits; the field jobDestruction was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a FirmExits; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a FirmExits; the field jobDestruction had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Establishment Exit
+            this.establishmentExit = ((Number)json_data.get("Establishment Exit")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a FirmExits; the field establishmentExit was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a FirmExits; the field establishmentExit had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Count
+            this.count = ((Number)json_data.get("Count")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a FirmExits; the field count was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a FirmExits; the field count had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

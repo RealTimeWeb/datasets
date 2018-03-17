@@ -11,8 +11,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import corgis.hydropower.domain.Location;
-import corgis.hydropower.domain.Identity;
 import corgis.hydropower.domain.Dimensions;
+import corgis.hydropower.domain.Identity;
 
 /**
  * 
@@ -20,12 +20,13 @@ import corgis.hydropower.domain.Dimensions;
 public class Dam {
 	
     private Location location;
-    private Identity identity;
     private Dimensions dimensions;
+    private Identity identity;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Location
      */
     public Location getLocation() {
         return this.location;
@@ -33,20 +34,22 @@ public class Dam {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Dimensions
      */
-    public Identity getIdentity() {
-        return this.identity;
+    public Dimensions getDimensions() {
+        return this.dimensions;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Identity
      */
-    public Dimensions getDimensions() {
-        return this.dimensions;
+    public Identity getIdentity() {
+        return this.identity;
     }
     
     
@@ -58,7 +61,7 @@ public class Dam {
 	 * @return String
 	 */
 	public String toString() {
-		return "Dam[" +location+", "+identity+", "+dimensions+"]";
+		return "Dam[" +location+", "+dimensions+", "+identity+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Dam {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Dam(JSONObject json_data) {
-        try {// Location
-            this.location = new Location((JSONObject)json_data.get("Location"));// Identity
-            this.identity = new Identity((JSONObject)json_data.get("Identity"));// Dimensions
-            this.dimensions = new Dimensions((JSONObject)json_data.get("Dimensions"));
+        //System.out.println(json_data);
+        
+        try {
+            // Location
+            this.location = new Location((JSONObject)json_data.get("Location"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Dam; a field was missing.");
+    		System.err.println("Could not convert the response to a Dam; the field location was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Dam; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Dam; the field location had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Dimensions
+            this.dimensions = new Dimensions((JSONObject)json_data.get("Dimensions"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Dam; the field dimensions was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Dam; the field dimensions had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Identity
+            this.identity = new Identity((JSONObject)json_data.get("Identity"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Dam; the field identity was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Dam; the field identity had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

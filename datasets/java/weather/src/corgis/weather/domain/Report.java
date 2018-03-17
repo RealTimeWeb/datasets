@@ -10,31 +10,33 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.weather.domain.Date;
-import corgis.weather.domain.Station;
 import corgis.weather.domain.Data;
+import corgis.weather.domain.Station;
+import corgis.weather.domain.Date;
 
 /**
  * 
  */
 public class Report {
 	
-    private Date date;
-    private Station station;
     private Data data;
+    private Station station;
+    private Date date;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Data
      */
-    public Date getDate() {
-        return this.date;
+    public Data getData() {
+        return this.data;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Station
      */
     public Station getStation() {
         return this.station;
@@ -42,11 +44,12 @@ public class Report {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Date
      */
-    public Data getData() {
-        return this.data;
+    public Date getDate() {
+        return this.date;
     }
     
     
@@ -58,7 +61,7 @@ public class Report {
 	 * @return String
 	 */
 	public String toString() {
-		return "Report[" +date+", "+station+", "+data+"]";
+		return "Report[" +data+", "+station+", "+date+"]";
 	}
 	
 	/**
@@ -66,17 +69,40 @@ public class Report {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
-        System.out.println(json_data);
-        try {// Date
-            this.date = new Date((JSONObject)json_data.get("Date"));// Station
-            this.station = new Station((JSONObject)json_data.get("Station"));// Data
+        //System.out.println(json_data);
+        
+        try {
+            // Data
             this.data = new Data((JSONObject)json_data.get("Data"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Report; a field was missing.");
+    		System.err.println("Could not convert the response to a Report; the field data was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Report; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Report; the field data had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Station
+            this.station = new Station((JSONObject)json_data.get("Station"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field station was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field station had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Date
+            this.date = new Date((JSONObject)json_data.get("Date"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field date was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field date had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

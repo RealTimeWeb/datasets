@@ -17,38 +17,21 @@ import corgis.county_demographics.domain.Firms;
  */
 public class Employment {
 	
-    // 2013
-    private Integer privateNonFarmEstablishments;
-    // 2012-2013
-    private Double privateNonFarmEmploymentPercentChange;
     // 2007
     private Firms firms;
+    // 2012-2013
+    private Double privateNonFarmEmploymentPercentChange;
     // 2013
-    private Integer nonemployerEstablishments;
+    private Integer privateNonFarmEstablishments;
     // 2013
     private Integer privateNonFarmEmployment;
+    // 2013
+    private Integer nonemployerEstablishments;
     
     
-    /*
-     * @return 
-     */
-    public Integer getPrivateNonFarmEstablishments() {
-        return this.privateNonFarmEstablishments;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getPrivateNonFarmEmploymentPercentChange() {
-        return this.privateNonFarmEmploymentPercentChange;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 2007
+     * @return Firms
      */
     public Firms getFirms() {
         return this.firms;
@@ -56,20 +39,42 @@ public class Employment {
     
     
     
-    /*
-     * @return 
+    /**
+     * 2012-2013
+     * @return Double
      */
-    public Integer getNonemployerEstablishments() {
-        return this.nonemployerEstablishments;
+    public Double getPrivateNonFarmEmploymentPercentChange() {
+        return this.privateNonFarmEmploymentPercentChange;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 2013
+     * @return Integer
+     */
+    public Integer getPrivateNonFarmEstablishments() {
+        return this.privateNonFarmEstablishments;
+    }
+    
+    
+    
+    /**
+     * 2013
+     * @return Integer
      */
     public Integer getPrivateNonFarmEmployment() {
         return this.privateNonFarmEmployment;
+    }
+    
+    
+    
+    /**
+     * 2013
+     * @return Integer
+     */
+    public Integer getNonemployerEstablishments() {
+        return this.nonemployerEstablishments;
     }
     
     
@@ -81,7 +86,7 @@ public class Employment {
 	 * @return String
 	 */
 	public String toString() {
-		return "Employment[" +privateNonFarmEstablishments+", "+privateNonFarmEmploymentPercentChange+", "+firms+", "+nonemployerEstablishments+", "+privateNonFarmEmployment+"]";
+		return "Employment[" +firms+", "+privateNonFarmEmploymentPercentChange+", "+privateNonFarmEstablishments+", "+privateNonFarmEmployment+", "+nonemployerEstablishments+"]";
 	}
 	
 	/**
@@ -89,18 +94,62 @@ public class Employment {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Employment(JSONObject json_data) {
-        try {// Private Non-farm Establishments
-            this.privateNonFarmEstablishments = ((Number)json_data.get("Private Non-farm Establishments")).intValue();// Private Non-farm Employment Percent Change
-            this.privateNonFarmEmploymentPercentChange = ((Number)json_data.get("Private Non-farm Employment Percent Change")).doubleValue();// Firms
-            this.firms = new Firms((JSONObject)json_data.get("Firms"));// Nonemployer Establishments
-            this.nonemployerEstablishments = ((Number)json_data.get("Nonemployer Establishments")).intValue();// Private Non-farm Employment
-            this.privateNonFarmEmployment = ((Number)json_data.get("Private Non-farm Employment")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Firms
+            this.firms = new Firms((JSONObject)json_data.get("Firms"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Employment; a field was missing.");
+    		System.err.println("Could not convert the response to a Employment; the field firms was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Employment; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Employment; the field firms had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Private Non-farm Employment Percent Change
+            this.privateNonFarmEmploymentPercentChange = ((Number)json_data.get("Private Non-farm Employment Percent Change")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field privateNonFarmEmploymentPercentChange was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field privateNonFarmEmploymentPercentChange had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Private Non-farm Establishments
+            this.privateNonFarmEstablishments = ((Number)json_data.get("Private Non-farm Establishments")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field privateNonFarmEstablishments was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field privateNonFarmEstablishments had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Private Non-farm Employment
+            this.privateNonFarmEmployment = ((Number)json_data.get("Private Non-farm Employment")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field privateNonFarmEmployment was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field privateNonFarmEmployment had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Nonemployer Establishments
+            this.nonemployerEstablishments = ((Number)json_data.get("Nonemployer Establishments")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field nonemployerEstablishments was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field nonemployerEstablishments had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

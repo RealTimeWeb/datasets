@@ -17,13 +17,14 @@ import org.json.simple.JSONObject;
 public class Data {
 	
     private String url;
+    private String title;
     private String medium;
     private String thumbnail;
-    private String title;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getUrl() {
         return this.url;
@@ -31,8 +32,19 @@ public class Data {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
+     */
+    public String getTitle() {
+        return this.title;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
      */
     public String getMedium() {
         return this.medium;
@@ -40,20 +52,12 @@ public class Data {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getThumbnail() {
         return this.thumbnail;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getTitle() {
-        return this.title;
     }
     
     
@@ -65,7 +69,7 @@ public class Data {
 	 * @return String
 	 */
 	public String toString() {
-		return "Data[" +url+", "+medium+", "+thumbnail+", "+title+"]";
+		return "Data[" +url+", "+title+", "+medium+", "+thumbnail+"]";
 	}
 	
 	/**
@@ -73,17 +77,51 @@ public class Data {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Data(JSONObject json_data) {
-        try {// url
-            this.url = (String)json_data.get("url");// medium
-            this.medium = (String)json_data.get("medium");// thumbnail
-            this.thumbnail = (String)json_data.get("thumbnail");// title
-            this.title = (String)json_data.get("title");
+        //System.out.println(json_data);
+        
+        try {
+            // url
+            this.url = (String)json_data.get("url");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Data; a field was missing.");
+    		System.err.println("Could not convert the response to a Data; the field url was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Data; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Data; the field url had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // title
+            this.title = (String)json_data.get("title");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field title was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field title had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // medium
+            this.medium = (String)json_data.get("medium");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field medium was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field medium had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // thumbnail
+            this.thumbnail = (String)json_data.get("thumbnail");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field thumbnail was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field thumbnail had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

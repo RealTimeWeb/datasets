@@ -16,23 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class Income {
 	
-    private Integer medianHouseoldIncome;
     // 2013 dollars
     private Integer perCapitaIncome;
+    private Integer medianHouseoldIncome;
     private Double personsBelowPovertyLevel;
     
     
-    /*
-     * @return 
-     */
-    public Integer getMedianHouseoldIncome() {
-        return this.medianHouseoldIncome;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 2013 dollars
+     * @return Integer
      */
     public Integer getPerCapitaIncome() {
         return this.perCapitaIncome;
@@ -40,8 +32,19 @@ public class Income {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getMedianHouseoldIncome() {
+        return this.medianHouseoldIncome;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Double
      */
     public Double getPersonsBelowPovertyLevel() {
         return this.personsBelowPovertyLevel;
@@ -56,7 +59,7 @@ public class Income {
 	 * @return String
 	 */
 	public String toString() {
-		return "Income[" +medianHouseoldIncome+", "+perCapitaIncome+", "+personsBelowPovertyLevel+"]";
+		return "Income[" +perCapitaIncome+", "+medianHouseoldIncome+", "+personsBelowPovertyLevel+"]";
 	}
 	
 	/**
@@ -64,16 +67,40 @@ public class Income {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Income(JSONObject json_data) {
-        try {// Median Houseold Income
-            this.medianHouseoldIncome = ((Number)json_data.get("Median Houseold Income")).intValue();// Per Capita Income
-            this.perCapitaIncome = ((Number)json_data.get("Per Capita Income")).intValue();// Persons Below Poverty Level
-            this.personsBelowPovertyLevel = ((Number)json_data.get("Persons Below Poverty Level")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Per Capita Income
+            this.perCapitaIncome = ((Number)json_data.get("Per Capita Income")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Income; a field was missing.");
+    		System.err.println("Could not convert the response to a Income; the field perCapitaIncome was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Income; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Income; the field perCapitaIncome had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Median Houseold Income
+            this.medianHouseoldIncome = ((Number)json_data.get("Median Houseold Income")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Income; the field medianHouseoldIncome was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Income; the field medianHouseoldIncome had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Persons Below Poverty Level
+            this.personsBelowPovertyLevel = ((Number)json_data.get("Persons Below Poverty Level")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Income; the field personsBelowPovertyLevel was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Income; the field personsBelowPovertyLevel had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

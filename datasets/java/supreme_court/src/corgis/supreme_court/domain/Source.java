@@ -16,22 +16,14 @@ import org.json.simple.JSONObject;
  */
 public class Source {
 	
-    private String state;
     private Integer id;
+    private String state;
     private String name;
     
     
-    /*
-     * @return 
-     */
-    public String getState() {
-        return this.state;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getId() {
         return this.id;
@@ -39,8 +31,19 @@ public class Source {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
+     */
+    public String getState() {
+        return this.state;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
      */
     public String getName() {
         return this.name;
@@ -55,7 +58,7 @@ public class Source {
 	 * @return String
 	 */
 	public String toString() {
-		return "Source[" +state+", "+id+", "+name+"]";
+		return "Source[" +id+", "+state+", "+name+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class Source {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Source(JSONObject json_data) {
-        try {// state
-            this.state = (String)json_data.get("state");// id
-            this.id = ((Number)json_data.get("id")).intValue();// name
-            this.name = (String)json_data.get("name");
+        //System.out.println(json_data);
+        
+        try {
+            // id
+            this.id = ((Number)json_data.get("id")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Source; a field was missing.");
+    		System.err.println("Could not convert the response to a Source; the field id was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Source; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Source; the field id had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // state
+            this.state = (String)json_data.get("state");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Source; the field state was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Source; the field state had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // name
+            this.name = (String)json_data.get("name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Source; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Source; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -16,38 +16,21 @@ import org.json.simple.JSONObject;
  */
 public class Identification {
 	
-    // The maker for this car.
-    private String make;
-    // The specific name/year for this car.
-    private String modelYear;
     // A unique ID for this particular car, using the year, make, model, and transmission type.
     private String id;
+    // The specific name/year for this car.
+    private String modelYear;
+    // The maker for this car.
+    private String make;
     // Whether this is a "Manual transmission" or an "Automatic transmission". If it is unknown, it is left blank.
     private String classification;
     // The year that this car was released.
     private Integer year;
     
     
-    /*
-     * @return 
-     */
-    public String getMake() {
-        return this.make;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getModelYear() {
-        return this.modelYear;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * A unique ID for this particular car, using the year, make, model, and transmission type.
+     * @return String
      */
     public String getId() {
         return this.id;
@@ -55,8 +38,29 @@ public class Identification {
     
     
     
-    /*
-     * @return 
+    /**
+     * The specific name/year for this car.
+     * @return String
+     */
+    public String getModelYear() {
+        return this.modelYear;
+    }
+    
+    
+    
+    /**
+     * The maker for this car.
+     * @return String
+     */
+    public String getMake() {
+        return this.make;
+    }
+    
+    
+    
+    /**
+     * Whether this is a "Manual transmission" or an "Automatic transmission". If it is unknown, it is left blank.
+     * @return String
      */
     public String getClassification() {
         return this.classification;
@@ -64,8 +68,9 @@ public class Identification {
     
     
     
-    /*
-     * @return 
+    /**
+     * The year that this car was released.
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -80,7 +85,7 @@ public class Identification {
 	 * @return String
 	 */
 	public String toString() {
-		return "Identification[" +make+", "+modelYear+", "+id+", "+classification+", "+year+"]";
+		return "Identification[" +id+", "+modelYear+", "+make+", "+classification+", "+year+"]";
 	}
 	
 	/**
@@ -88,18 +93,62 @@ public class Identification {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Identification(JSONObject json_data) {
-        try {// Make
-            this.make = (String)json_data.get("Make");// Model Year
-            this.modelYear = (String)json_data.get("Model Year");// ID
-            this.id = (String)json_data.get("ID");// Classification
-            this.classification = (String)json_data.get("Classification");// Year
-            this.year = ((Number)json_data.get("Year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // ID
+            this.id = (String)json_data.get("ID");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Identification; a field was missing.");
+    		System.err.println("Could not convert the response to a Identification; the field id was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Identification; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Identification; the field id had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Model Year
+            this.modelYear = (String)json_data.get("Model Year");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Identification; the field modelYear was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Identification; the field modelYear had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Make
+            this.make = (String)json_data.get("Make");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Identification; the field make was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Identification; the field make had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Classification
+            this.classification = (String)json_data.get("Classification");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Identification; the field classification was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Identification; the field classification had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Year
+            this.year = ((Number)json_data.get("Year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Identification; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Identification; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

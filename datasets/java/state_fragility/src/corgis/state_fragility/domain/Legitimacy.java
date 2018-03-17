@@ -19,13 +19,14 @@ public class Legitimacy {
     // The sum of the four dimensions of the Legitimacy Score
     private Integer legitimacyScore;
     private Integer politicalLegitimacy;
-    private Integer securityLegitimacy;
     private Integer economicLegitimacy;
     private Integer socialLegitimacy;
+    private Integer securityLegitimacy;
     
     
-    /*
-     * @return 
+    /**
+     * The sum of the four dimensions of the Legitimacy Score
+     * @return Integer
      */
     public Integer getLegitimacyScore() {
         return this.legitimacyScore;
@@ -33,8 +34,9 @@ public class Legitimacy {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getPoliticalLegitimacy() {
         return this.politicalLegitimacy;
@@ -42,17 +44,9 @@ public class Legitimacy {
     
     
     
-    /*
-     * @return 
-     */
-    public Integer getSecurityLegitimacy() {
-        return this.securityLegitimacy;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getEconomicLegitimacy() {
         return this.economicLegitimacy;
@@ -60,11 +54,22 @@ public class Legitimacy {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getSocialLegitimacy() {
         return this.socialLegitimacy;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getSecurityLegitimacy() {
+        return this.securityLegitimacy;
     }
     
     
@@ -76,7 +81,7 @@ public class Legitimacy {
 	 * @return String
 	 */
 	public String toString() {
-		return "Legitimacy[" +legitimacyScore+", "+politicalLegitimacy+", "+securityLegitimacy+", "+economicLegitimacy+", "+socialLegitimacy+"]";
+		return "Legitimacy[" +legitimacyScore+", "+politicalLegitimacy+", "+economicLegitimacy+", "+socialLegitimacy+", "+securityLegitimacy+"]";
 	}
 	
 	/**
@@ -84,18 +89,62 @@ public class Legitimacy {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Legitimacy(JSONObject json_data) {
-        try {// Legitimacy Score
-            this.legitimacyScore = ((Number)json_data.get("Legitimacy Score")).intValue();// Political Legitimacy
-            this.politicalLegitimacy = ((Number)json_data.get("Political Legitimacy")).intValue();// Security Legitimacy
-            this.securityLegitimacy = ((Number)json_data.get("Security Legitimacy")).intValue();// Economic Legitimacy
-            this.economicLegitimacy = ((Number)json_data.get("Economic Legitimacy")).intValue();// Social Legitimacy
-            this.socialLegitimacy = ((Number)json_data.get("Social Legitimacy")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Legitimacy Score
+            this.legitimacyScore = ((Number)json_data.get("Legitimacy Score")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Legitimacy; a field was missing.");
+    		System.err.println("Could not convert the response to a Legitimacy; the field legitimacyScore was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Legitimacy; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Legitimacy; the field legitimacyScore had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Political Legitimacy
+            this.politicalLegitimacy = ((Number)json_data.get("Political Legitimacy")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Legitimacy; the field politicalLegitimacy was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Legitimacy; the field politicalLegitimacy had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Economic Legitimacy
+            this.economicLegitimacy = ((Number)json_data.get("Economic Legitimacy")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Legitimacy; the field economicLegitimacy was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Legitimacy; the field economicLegitimacy had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Social Legitimacy
+            this.socialLegitimacy = ((Number)json_data.get("Social Legitimacy")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Legitimacy; the field socialLegitimacy was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Legitimacy; the field socialLegitimacy had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Security Legitimacy
+            this.securityLegitimacy = ((Number)json_data.get("Security Legitimacy")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Legitimacy; the field securityLegitimacy was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Legitimacy; the field securityLegitimacy had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

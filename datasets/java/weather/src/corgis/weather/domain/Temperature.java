@@ -16,37 +16,40 @@ import org.json.simple.JSONObject;
  */
 public class Temperature {
 	
-    // The average recorded temperature on this week, in degrees Farenheit.
-    private Integer average;
     // The lowest recorded temperature on this week, in degrees Farenheit.
-    private Integer minimum;
+    private Integer minTemp;
     // The highest recorded temperature on this week, in degrees Farenheit.
-    private Integer maximum;
+    private Integer maxTemp;
+    // The average recorded temperature on this week, in degrees Farenheit.
+    private Integer avgTemp;
     
     
-    /*
-     * @return 
+    /**
+     * The lowest recorded temperature on this week, in degrees Farenheit.
+     * @return Integer
      */
-    public Integer getAverage() {
-        return this.average;
+    public Integer getMinTemp() {
+        return this.minTemp;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The highest recorded temperature on this week, in degrees Farenheit.
+     * @return Integer
      */
-    public Integer getMinimum() {
-        return this.minimum;
+    public Integer getMaxTemp() {
+        return this.maxTemp;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The average recorded temperature on this week, in degrees Farenheit.
+     * @return Integer
      */
-    public Integer getMaximum() {
-        return this.maximum;
+    public Integer getAvgTemp() {
+        return this.avgTemp;
     }
     
     
@@ -58,7 +61,7 @@ public class Temperature {
 	 * @return String
 	 */
 	public String toString() {
-		return "Temperature[" +average+", "+minimum+", "+maximum+"]";
+		return "Temperature[" +minTemp+", "+maxTemp+", "+avgTemp+"]";
 	}
 	
 	/**
@@ -66,17 +69,40 @@ public class Temperature {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Temperature(JSONObject json_data) {
-        System.out.println(json_data);
-        try {// Average
-            this.average = ((Number)json_data.get("Average")).intValue();// Minimum
-            this.minimum = ((Number)json_data.get("Minimum")).intValue();// Maximum
-            this.maximum = ((Number)json_data.get("Maximum")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Min Temp
+            this.minTemp = ((Number)json_data.get("Min Temp")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Temperature; a field was missing.");
+    		System.err.println("Could not convert the response to a Temperature; the field minTemp was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Temperature; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Temperature; the field minTemp had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Max Temp
+            this.maxTemp = ((Number)json_data.get("Max Temp")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Temperature; the field maxTemp was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Temperature; the field maxTemp had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Avg Temp
+            this.avgTemp = ((Number)json_data.get("Avg Temp")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Temperature; the field avgTemp was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Temperature; the field avgTemp had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

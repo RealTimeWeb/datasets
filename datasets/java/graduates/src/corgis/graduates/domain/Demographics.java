@@ -10,31 +10,23 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.graduates.domain.Gender;
 import corgis.graduates.domain.Ethnicity;
+import corgis.graduates.domain.Gender;
 
 /**
  * 
  */
 public class Demographics {
 	
-    private Gender gender;
     // The estimated number of people awarded degrees in this major during this year.
     private Integer total;
     private Ethnicity ethnicity;
+    private Gender gender;
     
     
-    /*
-     * @return 
-     */
-    public Gender getGender() {
-        return this.gender;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The estimated number of people awarded degrees in this major during this year.
+     * @return Integer
      */
     public Integer getTotal() {
         return this.total;
@@ -42,11 +34,22 @@ public class Demographics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Ethnicity
      */
     public Ethnicity getEthnicity() {
         return this.ethnicity;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Gender
+     */
+    public Gender getGender() {
+        return this.gender;
     }
     
     
@@ -58,7 +61,7 @@ public class Demographics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Demographics[" +gender+", "+total+", "+ethnicity+"]";
+		return "Demographics[" +total+", "+ethnicity+", "+gender+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Demographics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Demographics(JSONObject json_data) {
-        try {// Gender
-            this.gender = new Gender((JSONObject)json_data.get("Gender"));// Total
-            this.total = ((Number)json_data.get("Total")).intValue();// Ethnicity
-            this.ethnicity = new Ethnicity((JSONObject)json_data.get("Ethnicity"));
+        //System.out.println(json_data);
+        
+        try {
+            // Total
+            this.total = ((Number)json_data.get("Total")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Demographics; a field was missing.");
+    		System.err.println("Could not convert the response to a Demographics; the field total was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Demographics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Demographics; the field total had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Ethnicity
+            this.ethnicity = new Ethnicity((JSONObject)json_data.get("Ethnicity"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field ethnicity was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field ethnicity had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Gender
+            this.gender = new Gender((JSONObject)json_data.get("Gender"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field gender was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field gender had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

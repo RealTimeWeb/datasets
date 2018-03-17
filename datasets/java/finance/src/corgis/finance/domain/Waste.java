@@ -16,27 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Waste {
 	
-    // Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
-    private Integer sewerageTotalExpenditure;
     // Money paid to other governments for street cleaning, solid waste collection and disposal, and provision of sanitary landfills.
     private Integer solidWasteManagementIntergovernmental;
-    // Money paid to other governments for the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
-    private Integer sewerageIntergovernmental;
     // Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
     private Integer solidWasteManagementTotalExpenditure;
+    // Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
+    private Integer sewerageTotalExpenditure;
+    // Money paid to other governments for the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
+    private Integer sewerageIntergovernmental;
     
     
-    /*
-     * @return 
-     */
-    public Integer getSewerageTotalExpenditure() {
-        return this.sewerageTotalExpenditure;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Money paid to other governments for street cleaning, solid waste collection and disposal, and provision of sanitary landfills.
+     * @return Integer
      */
     public Integer getSolidWasteManagementIntergovernmental() {
         return this.solidWasteManagementIntergovernmental;
@@ -44,20 +36,32 @@ public class Waste {
     
     
     
-    /*
-     * @return 
+    /**
+     * Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
+     * @return Integer
      */
-    public Integer getSewerageIntergovernmental() {
-        return this.sewerageIntergovernmental;
+    public Integer getSolidWasteManagementTotalExpenditure() {
+        return this.solidWasteManagementTotalExpenditure;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
+     * @return Integer
      */
-    public Integer getSolidWasteManagementTotalExpenditure() {
-        return this.solidWasteManagementTotalExpenditure;
+    public Integer getSewerageTotalExpenditure() {
+        return this.sewerageTotalExpenditure;
+    }
+    
+    
+    
+    /**
+     * Money paid to other governments for the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
+     * @return Integer
+     */
+    public Integer getSewerageIntergovernmental() {
+        return this.sewerageIntergovernmental;
     }
     
     
@@ -69,7 +73,7 @@ public class Waste {
 	 * @return String
 	 */
 	public String toString() {
-		return "Waste[" +sewerageTotalExpenditure+", "+solidWasteManagementIntergovernmental+", "+sewerageIntergovernmental+", "+solidWasteManagementTotalExpenditure+"]";
+		return "Waste[" +solidWasteManagementIntergovernmental+", "+solidWasteManagementTotalExpenditure+", "+sewerageTotalExpenditure+", "+sewerageIntergovernmental+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Waste {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Waste(JSONObject json_data) {
-        try {// Sewerage Total Expenditure
-            this.sewerageTotalExpenditure = ((Number)json_data.get("Sewerage Total Expenditure")).intValue();// Solid Waste Management Intergovernmental
-            this.solidWasteManagementIntergovernmental = ((Number)json_data.get("Solid Waste Management Intergovernmental")).intValue();// Sewerage Intergovernmental
-            this.sewerageIntergovernmental = ((Number)json_data.get("Sewerage Intergovernmental")).intValue();// Solid Waste Management Total Expenditure
-            this.solidWasteManagementTotalExpenditure = ((Number)json_data.get("Solid Waste Management Total Expenditure")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Solid Waste Management Intergovernmental
+            this.solidWasteManagementIntergovernmental = ((Number)json_data.get("Solid Waste Management Intergovernmental")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Waste; a field was missing.");
+    		System.err.println("Could not convert the response to a Waste; the field solidWasteManagementIntergovernmental was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Waste; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Waste; the field solidWasteManagementIntergovernmental had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Solid Waste Management Total Expenditure
+            this.solidWasteManagementTotalExpenditure = ((Number)json_data.get("Solid Waste Management Total Expenditure")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Waste; the field solidWasteManagementTotalExpenditure was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Waste; the field solidWasteManagementTotalExpenditure had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Sewerage Total Expenditure
+            this.sewerageTotalExpenditure = ((Number)json_data.get("Sewerage Total Expenditure")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Waste; the field sewerageTotalExpenditure was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Waste; the field sewerageTotalExpenditure had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Sewerage Intergovernmental
+            this.sewerageIntergovernmental = ((Number)json_data.get("Sewerage Intergovernmental")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Waste; the field sewerageIntergovernmental was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Waste; the field sewerageIntergovernmental had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

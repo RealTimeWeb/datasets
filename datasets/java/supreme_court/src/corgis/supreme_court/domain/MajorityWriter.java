@@ -17,12 +17,13 @@ import org.json.simple.JSONObject;
 public class MajorityWriter {
 	
     private String longName;
-    private Integer id;
     private String name;
+    private Integer id;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getLongName() {
         return this.longName;
@@ -30,20 +31,22 @@ public class MajorityWriter {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Integer getId() {
-        return this.id;
+    public String getName() {
+        return this.name;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public String getName() {
-        return this.name;
+    public Integer getId() {
+        return this.id;
     }
     
     
@@ -55,7 +58,7 @@ public class MajorityWriter {
 	 * @return String
 	 */
 	public String toString() {
-		return "MajorityWriter[" +longName+", "+id+", "+name+"]";
+		return "MajorityWriter[" +longName+", "+name+", "+id+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class MajorityWriter {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public MajorityWriter(JSONObject json_data) {
-        try {// long name
-            this.longName = (String)json_data.get("long name");// id
-            this.id = ((Number)json_data.get("id")).intValue();// name
-            this.name = (String)json_data.get("name");
+        //System.out.println(json_data);
+        
+        try {
+            // long name
+            this.longName = (String)json_data.get("long name");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a MajorityWriter; a field was missing.");
+    		System.err.println("Could not convert the response to a MajorityWriter; the field longName was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a MajorityWriter; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a MajorityWriter; the field longName had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // name
+            this.name = (String)json_data.get("name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a MajorityWriter; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a MajorityWriter; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // id
+            this.id = ((Number)json_data.get("id")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a MajorityWriter; the field id was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a MajorityWriter; the field id had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

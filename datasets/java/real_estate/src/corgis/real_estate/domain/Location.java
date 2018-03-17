@@ -18,13 +18,14 @@ import corgis.real_estate.domain.Address;
 public class Location {
 	
     private String regionId;
-    private Address address;
-    private String id;
     private String congressionalDistrict;
+    private String id;
+    private Address address;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getRegionId() {
         return this.regionId;
@@ -32,17 +33,19 @@ public class Location {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Address getAddress() {
-        return this.address;
+    public String getCongressionalDistrict() {
+        return this.congressionalDistrict;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getId() {
         return this.id;
@@ -50,11 +53,12 @@ public class Location {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Address
      */
-    public String getCongressionalDistrict() {
-        return this.congressionalDistrict;
+    public Address getAddress() {
+        return this.address;
     }
     
     
@@ -66,7 +70,7 @@ public class Location {
 	 * @return String
 	 */
 	public String toString() {
-		return "Location[" +regionId+", "+address+", "+id+", "+congressionalDistrict+"]";
+		return "Location[" +regionId+", "+congressionalDistrict+", "+id+", "+address+"]";
 	}
 	
 	/**
@@ -74,17 +78,51 @@ public class Location {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Location(JSONObject json_data) {
-        try {// region id
-            this.regionId = (String)json_data.get("region id");// address
-            this.address = new Address((JSONObject)json_data.get("address"));// id
-            this.id = (String)json_data.get("id");// congressional district
-            this.congressionalDistrict = (String)json_data.get("congressional district");
+        //System.out.println(json_data);
+        
+        try {
+            // region id
+            this.regionId = (String)json_data.get("region id");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Location; a field was missing.");
+    		System.err.println("Could not convert the response to a Location; the field regionId was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Location; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Location; the field regionId had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // congressional district
+            this.congressionalDistrict = (String)json_data.get("congressional district");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field congressionalDistrict was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field congressionalDistrict had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // id
+            this.id = (String)json_data.get("id");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field id was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field id had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // address
+            this.address = new Address((JSONObject)json_data.get("address"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field address was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field address had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

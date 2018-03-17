@@ -24,8 +24,9 @@ public class Current {
     private Public_ public_;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Combined
      */
     public Combined getCombined() {
         return this.combined;
@@ -33,8 +34,9 @@ public class Current {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Private_
      */
     public Private_ getPrivate_() {
         return this.private_;
@@ -42,8 +44,9 @@ public class Current {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Public_
      */
     public Public_ getPublic_() {
         return this.public_;
@@ -66,16 +69,40 @@ public class Current {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Current(JSONObject json_data) {
-        try {// combined
-            this.combined = new Combined((JSONObject)json_data.get("combined"));// private
-            this.private_ = new Private_((JSONObject)json_data.get("private"));// public
-            this.public_ = new Public_((JSONObject)json_data.get("public"));
+        //System.out.println(json_data);
+        
+        try {
+            // combined
+            this.combined = new Combined((JSONObject)json_data.get("combined"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Current; a field was missing.");
+    		System.err.println("Could not convert the response to a Current; the field combined was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Current; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Current; the field combined had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // private
+            this.private_ = new Private_((JSONObject)json_data.get("private"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Current; the field private_ was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Current; the field private_ had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // public
+            this.public_ = new Public_((JSONObject)json_data.get("public"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Current; the field public_ was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Current; the field public_ had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

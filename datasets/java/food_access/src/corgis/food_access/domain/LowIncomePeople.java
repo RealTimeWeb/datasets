@@ -22,8 +22,9 @@ public class LowIncomePeople {
     private Double onezeroMiles;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getTwozeroMiles() {
         return this.twozeroMiles;
@@ -31,8 +32,9 @@ public class LowIncomePeople {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getOneTwoMile() {
         return this.oneTwoMile;
@@ -40,8 +42,9 @@ public class LowIncomePeople {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getOneMile() {
         return this.oneMile;
@@ -49,8 +52,9 @@ public class LowIncomePeople {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getOnezeroMiles() {
         return this.onezeroMiles;
@@ -73,17 +77,51 @@ public class LowIncomePeople {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public LowIncomePeople(JSONObject json_data) {
-        try {// 20 Miles
-            this.twozeroMiles = ((Number)json_data.get("20 Miles")).doubleValue();// 1/2 Mile
-            this.oneTwoMile = ((Number)json_data.get("1/2 Mile")).doubleValue();// 1 Mile
-            this.oneMile = ((Number)json_data.get("1 Mile")).doubleValue();// 10 Miles
-            this.onezeroMiles = ((Number)json_data.get("10 Miles")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // 20 Miles
+            this.twozeroMiles = ((Number)json_data.get("20 Miles")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a LowIncomePeople; a field was missing.");
+    		System.err.println("Could not convert the response to a LowIncomePeople; the field twozeroMiles was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a LowIncomePeople; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a LowIncomePeople; the field twozeroMiles had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // 1/2 Mile
+            this.oneTwoMile = ((Number)json_data.get("1/2 Mile")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowIncomePeople; the field oneTwoMile was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowIncomePeople; the field oneTwoMile had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // 1 Mile
+            this.oneMile = ((Number)json_data.get("1 Mile")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowIncomePeople; the field oneMile was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowIncomePeople; the field oneMile had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // 10 Miles
+            this.onezeroMiles = ((Number)json_data.get("10 Miles")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowIncomePeople; the field onezeroMiles was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowIncomePeople; the field onezeroMiles had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -22,8 +22,9 @@ public class Education {
     private Degrees degrees;
     
     
-    /*
-     * @return 
+    /**
+     * The name of the major for these graduated students.
+     * @return String
      */
     public String getMajor() {
         return this.major;
@@ -31,8 +32,9 @@ public class Education {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Degrees
      */
     public Degrees getDegrees() {
         return this.degrees;
@@ -55,15 +57,29 @@ public class Education {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Education(JSONObject json_data) {
-        try {// Major
-            this.major = (String)json_data.get("Major");// Degrees
-            this.degrees = new Degrees((JSONObject)json_data.get("Degrees"));
+        //System.out.println(json_data);
+        
+        try {
+            // Major
+            this.major = (String)json_data.get("Major");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Education; a field was missing.");
+    		System.err.println("Could not convert the response to a Education; the field major was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Education; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Education; the field major had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Degrees
+            this.degrees = new Degrees((JSONObject)json_data.get("Degrees"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Education; the field degrees was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Education; the field degrees had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

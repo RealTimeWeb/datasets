@@ -16,29 +16,21 @@ import org.json.simple.JSONObject;
  */
 public class Flights {
 	
-    // The number of flights that were cancelled in this month.
-    private Integer cancelled;
     // The number of flights that were on time in this month.
     private Integer onTime;
-    // The total number of flights in this month.
-    private Integer total;
     // The number of flights that were delayed in this month.
     private Integer delayed;
     // The number of flights that were diverted in this month.
     private Integer diverted;
+    // The total number of flights in this month.
+    private Integer total;
+    // The number of flights that were cancelled in this month.
+    private Integer cancelled;
     
     
-    /*
-     * @return 
-     */
-    public Integer getCancelled() {
-        return this.cancelled;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The number of flights that were on time in this month.
+     * @return Integer
      */
     public Integer getOnTime() {
         return this.onTime;
@@ -46,17 +38,9 @@ public class Flights {
     
     
     
-    /*
-     * @return 
-     */
-    public Integer getTotal() {
-        return this.total;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The number of flights that were delayed in this month.
+     * @return Integer
      */
     public Integer getDelayed() {
         return this.delayed;
@@ -64,11 +48,32 @@ public class Flights {
     
     
     
-    /*
-     * @return 
+    /**
+     * The number of flights that were diverted in this month.
+     * @return Integer
      */
     public Integer getDiverted() {
         return this.diverted;
+    }
+    
+    
+    
+    /**
+     * The total number of flights in this month.
+     * @return Integer
+     */
+    public Integer getTotal() {
+        return this.total;
+    }
+    
+    
+    
+    /**
+     * The number of flights that were cancelled in this month.
+     * @return Integer
+     */
+    public Integer getCancelled() {
+        return this.cancelled;
     }
     
     
@@ -80,7 +85,7 @@ public class Flights {
 	 * @return String
 	 */
 	public String toString() {
-		return "Flights[" +cancelled+", "+onTime+", "+total+", "+delayed+", "+diverted+"]";
+		return "Flights[" +onTime+", "+delayed+", "+diverted+", "+total+", "+cancelled+"]";
 	}
 	
 	/**
@@ -88,18 +93,62 @@ public class Flights {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Flights(JSONObject json_data) {
-        try {// Cancelled
-            this.cancelled = ((Number)json_data.get("Cancelled")).intValue();// On Time
-            this.onTime = ((Number)json_data.get("On Time")).intValue();// Total
-            this.total = ((Number)json_data.get("Total")).intValue();// Delayed
-            this.delayed = ((Number)json_data.get("Delayed")).intValue();// Diverted
-            this.diverted = ((Number)json_data.get("Diverted")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // On Time
+            this.onTime = ((Number)json_data.get("On Time")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Flights; a field was missing.");
+    		System.err.println("Could not convert the response to a Flights; the field onTime was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Flights; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Flights; the field onTime had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Delayed
+            this.delayed = ((Number)json_data.get("Delayed")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Flights; the field delayed was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Flights; the field delayed had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Diverted
+            this.diverted = ((Number)json_data.get("Diverted")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Flights; the field diverted was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Flights; the field diverted had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Total
+            this.total = ((Number)json_data.get("Total")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Flights; the field total was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Flights; the field total had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Cancelled
+            this.cancelled = ((Number)json_data.get("Cancelled")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Flights; the field cancelled was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Flights; the field cancelled had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

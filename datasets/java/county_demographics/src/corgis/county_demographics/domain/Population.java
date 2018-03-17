@@ -16,25 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class Population {
 	
-    private Integer twozeroonefourPopulation;
     private Integer twozeroonezeroPopulation;
-    // 2010
-    private Double populationPerSquareMile;
     // April 1, 2010 to July 1, 2014
     private Double populationPercentChange;
+    // 2010
+    private Double populationPerSquareMile;
+    private Integer twozeroonefourPopulation;
     
     
-    /*
-     * @return 
-     */
-    public Integer getTwozeroonefourPopulation() {
-        return this.twozeroonefourPopulation;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getTwozeroonezeroPopulation() {
         return this.twozeroonezeroPopulation;
@@ -42,8 +34,19 @@ public class Population {
     
     
     
-    /*
-     * @return 
+    /**
+     * April 1, 2010 to July 1, 2014
+     * @return Double
+     */
+    public Double getPopulationPercentChange() {
+        return this.populationPercentChange;
+    }
+    
+    
+    
+    /**
+     * 2010
+     * @return Double
      */
     public Double getPopulationPerSquareMile() {
         return this.populationPerSquareMile;
@@ -51,11 +54,12 @@ public class Population {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Double getPopulationPercentChange() {
-        return this.populationPercentChange;
+    public Integer getTwozeroonefourPopulation() {
+        return this.twozeroonefourPopulation;
     }
     
     
@@ -67,7 +71,7 @@ public class Population {
 	 * @return String
 	 */
 	public String toString() {
-		return "Population[" +twozeroonefourPopulation+", "+twozeroonezeroPopulation+", "+populationPerSquareMile+", "+populationPercentChange+"]";
+		return "Population[" +twozeroonezeroPopulation+", "+populationPercentChange+", "+populationPerSquareMile+", "+twozeroonefourPopulation+"]";
 	}
 	
 	/**
@@ -75,17 +79,51 @@ public class Population {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Population(JSONObject json_data) {
-        try {// 2014 Population
-            this.twozeroonefourPopulation = ((Number)json_data.get("2014 Population")).intValue();// 2010 Population
-            this.twozeroonezeroPopulation = ((Number)json_data.get("2010 Population")).intValue();// Population per Square Mile
-            this.populationPerSquareMile = ((Number)json_data.get("Population per Square Mile")).doubleValue();// Population Percent Change
-            this.populationPercentChange = ((Number)json_data.get("Population Percent Change")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // 2010 Population
+            this.twozeroonezeroPopulation = ((Number)json_data.get("2010 Population")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Population; a field was missing.");
+    		System.err.println("Could not convert the response to a Population; the field twozeroonezeroPopulation was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Population; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Population; the field twozeroonezeroPopulation had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Population Percent Change
+            this.populationPercentChange = ((Number)json_data.get("Population Percent Change")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Population; the field populationPercentChange was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Population; the field populationPercentChange had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Population per Square Mile
+            this.populationPerSquareMile = ((Number)json_data.get("Population per Square Mile")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Population; the field populationPerSquareMile was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Population; the field populationPerSquareMile had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // 2014 Population
+            this.twozeroonefourPopulation = ((Number)json_data.get("2014 Population")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Population; the field twozeroonefourPopulation was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Population; the field twozeroonefourPopulation had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

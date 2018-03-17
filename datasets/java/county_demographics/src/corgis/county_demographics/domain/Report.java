@@ -10,77 +10,42 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import corgis.county_demographics.domain.Housing;
 import corgis.county_demographics.domain.Ethnicities;
+import corgis.county_demographics.domain.Income;
+import corgis.county_demographics.domain.Sales;
+import corgis.county_demographics.domain.Employment;
+import corgis.county_demographics.domain.Population;
 import corgis.county_demographics.domain.Age;
 import corgis.county_demographics.domain.Miscellaneous;
-import corgis.county_demographics.domain.Sales;
-import corgis.county_demographics.domain.Income;
 import corgis.county_demographics.domain.Education;
-import corgis.county_demographics.domain.Employment;
-import corgis.county_demographics.domain.Housing;
-import corgis.county_demographics.domain.Population;
 
 /**
  * 
  */
 public class Report {
 	
+    private String county;
+    private Housing housing;
     // percent, 2014
     private Ethnicities ethnicities;
-    // percent, 2014
-    private Age age;
-    private Miscellaneous miscellaneous;
-    // 2007
-    private Sales sales;
-    private String county;
-    private String state;
     // 2009-2013
     private Income income;
+    // 2007
+    private Sales sales;
+    private Employment employment;
+    private Population population;
+    // percent, 2014
+    private Age age;
+    private String state;
+    private Miscellaneous miscellaneous;
     // percent, 2009-2013
     private Education education;
-    private Employment employment;
-    private Housing housing;
-    private Population population;
     
     
-    /*
-     * @return 
-     */
-    public Ethnicities getEthnicities() {
-        return this.ethnicities;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Age getAge() {
-        return this.age;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Miscellaneous getMiscellaneous() {
-        return this.miscellaneous;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Sales getSales() {
-        return this.sales;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getCounty() {
         return this.county;
@@ -88,44 +53,9 @@ public class Report {
     
     
     
-    /*
-     * @return 
-     */
-    public String getState() {
-        return this.state;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Income getIncome() {
-        return this.income;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Education getEducation() {
-        return this.education;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Employment getEmployment() {
-        return this.employment;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Housing
      */
     public Housing getHousing() {
         return this.housing;
@@ -133,11 +63,92 @@ public class Report {
     
     
     
-    /*
-     * @return 
+    /**
+     * percent, 2014
+     * @return Ethnicities
+     */
+    public Ethnicities getEthnicities() {
+        return this.ethnicities;
+    }
+    
+    
+    
+    /**
+     * 2009-2013
+     * @return Income
+     */
+    public Income getIncome() {
+        return this.income;
+    }
+    
+    
+    
+    /**
+     * 2007
+     * @return Sales
+     */
+    public Sales getSales() {
+        return this.sales;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Employment
+     */
+    public Employment getEmployment() {
+        return this.employment;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Population
      */
     public Population getPopulation() {
         return this.population;
+    }
+    
+    
+    
+    /**
+     * percent, 2014
+     * @return Age
+     */
+    public Age getAge() {
+        return this.age;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getState() {
+        return this.state;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Miscellaneous
+     */
+    public Miscellaneous getMiscellaneous() {
+        return this.miscellaneous;
+    }
+    
+    
+    
+    /**
+     * percent, 2009-2013
+     * @return Education
+     */
+    public Education getEducation() {
+        return this.education;
     }
     
     
@@ -149,7 +160,7 @@ public class Report {
 	 * @return String
 	 */
 	public String toString() {
-		return "Report[" +ethnicities+", "+age+", "+miscellaneous+", "+sales+", "+county+", "+state+", "+income+", "+education+", "+employment+", "+housing+", "+population+"]";
+		return "Report[" +county+", "+housing+", "+ethnicities+", "+income+", "+sales+", "+employment+", "+population+", "+age+", "+state+", "+miscellaneous+", "+education+"]";
 	}
 	
 	/**
@@ -157,24 +168,128 @@ public class Report {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
-        try {// Ethnicities
-            this.ethnicities = new Ethnicities((JSONObject)json_data.get("Ethnicities"));// Age
-            this.age = new Age((JSONObject)json_data.get("Age"));// Miscellaneous
-            this.miscellaneous = new Miscellaneous((JSONObject)json_data.get("Miscellaneous"));// Sales
-            this.sales = new Sales((JSONObject)json_data.get("Sales"));// County
-            this.county = (String)json_data.get("County");// State
-            this.state = (String)json_data.get("State");// Income
-            this.income = new Income((JSONObject)json_data.get("Income"));// Education
-            this.education = new Education((JSONObject)json_data.get("Education"));// Employment
-            this.employment = new Employment((JSONObject)json_data.get("Employment"));// Housing
-            this.housing = new Housing((JSONObject)json_data.get("Housing"));// Population
-            this.population = new Population((JSONObject)json_data.get("Population"));
+        //System.out.println(json_data);
+        
+        try {
+            // County
+            this.county = (String)json_data.get("County");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Report; a field was missing.");
+    		System.err.println("Could not convert the response to a Report; the field county was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Report; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Report; the field county had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Housing
+            this.housing = new Housing((JSONObject)json_data.get("Housing"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field housing was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field housing had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Ethnicities
+            this.ethnicities = new Ethnicities((JSONObject)json_data.get("Ethnicities"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field ethnicities was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field ethnicities had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Income
+            this.income = new Income((JSONObject)json_data.get("Income"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field income was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field income had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Sales
+            this.sales = new Sales((JSONObject)json_data.get("Sales"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field sales was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field sales had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Employment
+            this.employment = new Employment((JSONObject)json_data.get("Employment"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field employment was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field employment had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Population
+            this.population = new Population((JSONObject)json_data.get("Population"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field population was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field population had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Age
+            this.age = new Age((JSONObject)json_data.get("Age"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field age was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field age had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // State
+            this.state = (String)json_data.get("State");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field state was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field state had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Miscellaneous
+            this.miscellaneous = new Miscellaneous((JSONObject)json_data.get("Miscellaneous"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field miscellaneous was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field miscellaneous had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Education
+            this.education = new Education((JSONObject)json_data.get("Education"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field education was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field education had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

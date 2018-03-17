@@ -20,8 +20,9 @@ public class Business {
     private String secondName;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getName() {
         return this.name;
@@ -29,8 +30,9 @@ public class Business {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getSecondName() {
         return this.secondName;
@@ -53,15 +55,29 @@ public class Business {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Business(JSONObject json_data) {
-        try {// name
-            this.name = (String)json_data.get("name");// second name
-            this.secondName = (String)json_data.get("second name");
+        //System.out.println(json_data);
+        
+        try {
+            // name
+            this.name = (String)json_data.get("name");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Business; a field was missing.");
+    		System.err.println("Could not convert the response to a Business; the field name was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Business; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Business; the field name had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // second name
+            this.secondName = (String)json_data.get("second name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Business; the field secondName was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Business; the field secondName had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

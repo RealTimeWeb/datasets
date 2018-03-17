@@ -28,8 +28,9 @@ public class Book {
     private DailyAverage dailyAverage;
     
     
-    /*
-     * @return 
+    /**
+     * The genre of the book, either "fiction", "nonfiction", "genre fiction", "children", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.
+     * @return String
      */
     public String getGenre() {
         return this.genre;
@@ -37,8 +38,9 @@ public class Book {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Publisher
      */
     public Publisher getPublisher() {
         return this.publisher;
@@ -46,8 +48,9 @@ public class Book {
     
     
     
-    /*
-     * @return 
+    /**
+     * The actual company that sold this book, as oppposed to the company that published it.
+     * @return String
      */
     public String getSoldBy() {
         return this.soldBy;
@@ -55,8 +58,9 @@ public class Book {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Statistics
      */
     public Statistics getStatistics() {
         return this.statistics;
@@ -64,8 +68,9 @@ public class Book {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return DailyAverage
      */
     public DailyAverage getDailyAverage() {
         return this.dailyAverage;
@@ -88,18 +93,62 @@ public class Book {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Book(JSONObject json_data) {
-        try {// genre
-            this.genre = (String)json_data.get("genre");// publisher
-            this.publisher = new Publisher((JSONObject)json_data.get("publisher"));// sold by
-            this.soldBy = (String)json_data.get("sold by");// statistics
-            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// daily average
-            this.dailyAverage = new DailyAverage((JSONObject)json_data.get("daily average"));
+        //System.out.println(json_data);
+        
+        try {
+            // genre
+            this.genre = (String)json_data.get("genre");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Book; a field was missing.");
+    		System.err.println("Could not convert the response to a Book; the field genre was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Book; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Book; the field genre had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // publisher
+            this.publisher = new Publisher((JSONObject)json_data.get("publisher"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Book; the field publisher was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Book; the field publisher had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // sold by
+            this.soldBy = (String)json_data.get("sold by");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Book; the field soldBy was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Book; the field soldBy had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // statistics
+            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Book; the field statistics was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Book; the field statistics had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // daily average
+            this.dailyAverage = new DailyAverage((JSONObject)json_data.get("daily average"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Book; the field dailyAverage was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Book; the field dailyAverage had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

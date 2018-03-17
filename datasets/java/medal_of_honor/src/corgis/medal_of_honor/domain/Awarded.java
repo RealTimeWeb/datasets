@@ -10,51 +10,25 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.medal_of_honor.domain.Location;
 import corgis.medal_of_honor.domain.Date;
+import corgis.medal_of_honor.domain.Location;
 
 /**
  * 
  */
 public class Awarded {
 	
-    private String issued;
-    private String citation;
-    private Integer generalOrderNumber;
     private String accreditedTo;
-    private Location location;
+    private Integer generalOrderNumber;
     private Date date;
+    private Location location;
+    private String citation;
+    private String issued;
     
     
-    /*
-     * @return 
-     */
-    public String getIssued() {
-        return this.issued;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getCitation() {
-        return this.citation;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getGeneralOrderNumber() {
-        return this.generalOrderNumber;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getAccreditedTo() {
         return this.accreditedTo;
@@ -62,8 +36,29 @@ public class Awarded {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getGeneralOrderNumber() {
+        return this.generalOrderNumber;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Date
+     */
+    public Date getDate() {
+        return this.date;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Location
      */
     public Location getLocation() {
         return this.location;
@@ -71,11 +66,22 @@ public class Awarded {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Date getDate() {
-        return this.date;
+    public String getCitation() {
+        return this.citation;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getIssued() {
+        return this.issued;
     }
     
     
@@ -87,7 +93,7 @@ public class Awarded {
 	 * @return String
 	 */
 	public String toString() {
-		return "Awarded[" +issued+", "+citation+", "+generalOrderNumber+", "+accreditedTo+", "+location+", "+date+"]";
+		return "Awarded[" +accreditedTo+", "+generalOrderNumber+", "+date+", "+location+", "+citation+", "+issued+"]";
 	}
 	
 	/**
@@ -95,19 +101,73 @@ public class Awarded {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Awarded(JSONObject json_data) {
-        try {// issued
-            this.issued = (String)json_data.get("issued");// citation
-            this.citation = (String)json_data.get("citation");// General Order number
-            this.generalOrderNumber = ((Number)json_data.get("General Order number")).intValue();// accredited to
-            this.accreditedTo = (String)json_data.get("accredited to");// location
-            this.location = new Location((JSONObject)json_data.get("location"));// date
-            this.date = new Date((JSONObject)json_data.get("date"));
+        //System.out.println(json_data);
+        
+        try {
+            // accredited to
+            this.accreditedTo = (String)json_data.get("accredited to");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Awarded; a field was missing.");
+    		System.err.println("Could not convert the response to a Awarded; the field accreditedTo was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Awarded; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Awarded; the field accreditedTo had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // General Order number
+            this.generalOrderNumber = ((Number)json_data.get("General Order number")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field generalOrderNumber was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field generalOrderNumber had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // date
+            this.date = new Date((JSONObject)json_data.get("date"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field date was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field date had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // location
+            this.location = new Location((JSONObject)json_data.get("location"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field location was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field location had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // citation
+            this.citation = (String)json_data.get("citation");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field citation was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field citation had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // issued
+            this.issued = (String)json_data.get("issued");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field issued was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awarded; the field issued had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

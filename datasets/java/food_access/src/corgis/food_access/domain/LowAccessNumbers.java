@@ -10,45 +10,28 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.food_access.domain.Seniors;
-import corgis.food_access.domain.LowIncomePeople;
 import corgis.food_access.domain.Children;
+import corgis.food_access.domain.LowIncomePeople;
 import corgis.food_access.domain.People;
+import corgis.food_access.domain.Seniors;
 
 /**
  * 
  */
 public class LowAccessNumbers {
 	
-    // Age 65+
-    private Seniors seniors;
-    // Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
-    private LowIncomePeople lowIncomePeople;
     // Age 0-17
     private Children children;
+    // Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
+    private LowIncomePeople lowIncomePeople;
     private People people;
+    // Age 65+
+    private Seniors seniors;
     
     
-    /*
-     * @return 
-     */
-    public Seniors getSeniors() {
-        return this.seniors;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public LowIncomePeople getLowIncomePeople() {
-        return this.lowIncomePeople;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Age 0-17
+     * @return Children
      */
     public Children getChildren() {
         return this.children;
@@ -56,11 +39,32 @@ public class LowAccessNumbers {
     
     
     
-    /*
-     * @return 
+    /**
+     * Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
+     * @return LowIncomePeople
+     */
+    public LowIncomePeople getLowIncomePeople() {
+        return this.lowIncomePeople;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return People
      */
     public People getPeople() {
         return this.people;
+    }
+    
+    
+    
+    /**
+     * Age 65+
+     * @return Seniors
+     */
+    public Seniors getSeniors() {
+        return this.seniors;
     }
     
     
@@ -72,7 +76,7 @@ public class LowAccessNumbers {
 	 * @return String
 	 */
 	public String toString() {
-		return "LowAccessNumbers[" +seniors+", "+lowIncomePeople+", "+children+", "+people+"]";
+		return "LowAccessNumbers[" +children+", "+lowIncomePeople+", "+people+", "+seniors+"]";
 	}
 	
 	/**
@@ -80,17 +84,51 @@ public class LowAccessNumbers {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public LowAccessNumbers(JSONObject json_data) {
-        try {// Seniors
-            this.seniors = new Seniors((JSONObject)json_data.get("Seniors"));// Low Income People
-            this.lowIncomePeople = new LowIncomePeople((JSONObject)json_data.get("Low Income People"));// Children
-            this.children = new Children((JSONObject)json_data.get("Children"));// People
-            this.people = new People((JSONObject)json_data.get("People"));
+        //System.out.println(json_data);
+        
+        try {
+            // Children
+            this.children = new Children((JSONObject)json_data.get("Children"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a LowAccessNumbers; a field was missing.");
+    		System.err.println("Could not convert the response to a LowAccessNumbers; the field children was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a LowAccessNumbers; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a LowAccessNumbers; the field children had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Low Income People
+            this.lowIncomePeople = new LowIncomePeople((JSONObject)json_data.get("Low Income People"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowAccessNumbers; the field lowIncomePeople was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowAccessNumbers; the field lowIncomePeople had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // People
+            this.people = new People((JSONObject)json_data.get("People"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowAccessNumbers; the field people was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowAccessNumbers; the field people had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Seniors
+            this.seniors = new Seniors((JSONObject)json_data.get("Seniors"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowAccessNumbers; the field seniors was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowAccessNumbers; the field seniors had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -21,8 +21,9 @@ public class Time {
     private Integer year;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getMonthName() {
         return this.monthName;
@@ -30,8 +31,9 @@ public class Time {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getMonth() {
         return this.month;
@@ -39,8 +41,9 @@ public class Time {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -63,16 +66,40 @@ public class Time {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Time(JSONObject json_data) {
-        try {// Month Name
-            this.monthName = (String)json_data.get("Month Name");// Month
-            this.month = ((Number)json_data.get("Month")).intValue();// Year
-            this.year = ((Number)json_data.get("Year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Month Name
+            this.monthName = (String)json_data.get("Month Name");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Time; a field was missing.");
+    		System.err.println("Could not convert the response to a Time; the field monthName was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Time; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Time; the field monthName had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Month
+            this.month = ((Number)json_data.get("Month")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Time; the field month was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Time; the field month had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Year
+            this.year = ((Number)json_data.get("Year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Time; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Time; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

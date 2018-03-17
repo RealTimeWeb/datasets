@@ -20,8 +20,9 @@ public class Disabilities {
     private String adaAccessible;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getAnsiUsable() {
         return this.ansiUsable;
@@ -29,8 +30,9 @@ public class Disabilities {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getAdaAccessible() {
         return this.adaAccessible;
@@ -53,15 +55,29 @@ public class Disabilities {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Disabilities(JSONObject json_data) {
-        try {// ansi usable
-            this.ansiUsable = (String)json_data.get("ansi usable");// ADA Accessible
-            this.adaAccessible = (String)json_data.get("ADA Accessible");
+        //System.out.println(json_data);
+        
+        try {
+            // ansi usable
+            this.ansiUsable = (String)json_data.get("ansi usable");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Disabilities; a field was missing.");
+    		System.err.println("Could not convert the response to a Disabilities; the field ansiUsable was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Disabilities; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Disabilities; the field ansiUsable had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // ADA Accessible
+            this.adaAccessible = (String)json_data.get("ADA Accessible");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Disabilities; the field adaAccessible was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Disabilities; the field adaAccessible had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

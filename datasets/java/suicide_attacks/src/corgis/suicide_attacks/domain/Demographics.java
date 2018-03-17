@@ -16,33 +16,16 @@ import org.json.simple.JSONObject;
  */
 public class Demographics {
 	
+    private String education;
+    private String religion;
     private String occupation;
     private String gender;
-    private String education;
     private String marital;
-    private String religion;
     
     
-    /*
-     * @return 
-     */
-    public String getOccupation() {
-        return this.occupation;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getGender() {
-        return this.gender;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getEducation() {
         return this.education;
@@ -50,20 +33,42 @@ public class Demographics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public String getMarital() {
-        return this.marital;
+    public String getReligion() {
+        return this.religion;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public String getReligion() {
-        return this.religion;
+    public String getOccupation() {
+        return this.occupation;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getGender() {
+        return this.gender;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getMarital() {
+        return this.marital;
     }
     
     
@@ -75,7 +80,7 @@ public class Demographics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Demographics[" +occupation+", "+gender+", "+education+", "+marital+", "+religion+"]";
+		return "Demographics[" +education+", "+religion+", "+occupation+", "+gender+", "+marital+"]";
 	}
 	
 	/**
@@ -83,18 +88,62 @@ public class Demographics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Demographics(JSONObject json_data) {
-        try {// occupation
-            this.occupation = (String)json_data.get("occupation");// gender
-            this.gender = (String)json_data.get("gender");// education
-            this.education = (String)json_data.get("education");// marital
-            this.marital = (String)json_data.get("marital");// religion
-            this.religion = (String)json_data.get("religion");
+        //System.out.println(json_data);
+        
+        try {
+            // education
+            this.education = (String)json_data.get("education");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Demographics; a field was missing.");
+    		System.err.println("Could not convert the response to a Demographics; the field education was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Demographics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Demographics; the field education had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // religion
+            this.religion = (String)json_data.get("religion");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field religion was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field religion had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // occupation
+            this.occupation = (String)json_data.get("occupation");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field occupation was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field occupation had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // gender
+            this.gender = (String)json_data.get("gender");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field gender was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field gender had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // marital
+            this.marital = (String)json_data.get("marital");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field marital was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field marital had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

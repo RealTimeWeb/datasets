@@ -10,31 +10,33 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.classics.domain.Difficulty;
-import corgis.classics.domain.Statistics;
 import corgis.classics.domain.Sentiments;
+import corgis.classics.domain.Statistics;
+import corgis.classics.domain.Difficulty;
 
 /**
  * 
  */
 public class Metrics {
 	
-    private Difficulty difficulty;
-    private Statistics statistics;
     private Sentiments sentiments;
+    private Statistics statistics;
+    private Difficulty difficulty;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Sentiments
      */
-    public Difficulty getDifficulty() {
-        return this.difficulty;
+    public Sentiments getSentiments() {
+        return this.sentiments;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Statistics
      */
     public Statistics getStatistics() {
         return this.statistics;
@@ -42,11 +44,12 @@ public class Metrics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Difficulty
      */
-    public Sentiments getSentiments() {
-        return this.sentiments;
+    public Difficulty getDifficulty() {
+        return this.difficulty;
     }
     
     
@@ -58,7 +61,7 @@ public class Metrics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Metrics[" +difficulty+", "+statistics+", "+sentiments+"]";
+		return "Metrics[" +sentiments+", "+statistics+", "+difficulty+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Metrics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Metrics(JSONObject json_data) {
-        try {// difficulty
-            this.difficulty = new Difficulty((JSONObject)json_data.get("difficulty"));// statistics
-            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// sentiments
+        //System.out.println(json_data);
+        
+        try {
+            // sentiments
             this.sentiments = new Sentiments((JSONObject)json_data.get("sentiments"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Metrics; a field was missing.");
+    		System.err.println("Could not convert the response to a Metrics; the field sentiments was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Metrics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Metrics; the field sentiments had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // statistics
+            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Metrics; the field statistics was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Metrics; the field statistics had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // difficulty
+            this.difficulty = new Difficulty((JSONObject)json_data.get("difficulty"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Metrics; the field difficulty was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Metrics; the field difficulty had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -20,8 +20,9 @@ public class Project {
     private Integer year;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getOrganization() {
         return this.organization;
@@ -29,8 +30,9 @@ public class Project {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -53,15 +55,29 @@ public class Project {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Project(JSONObject json_data) {
-        try {// Organization
-            this.organization = (String)json_data.get("Organization");// Year
-            this.year = ((Number)json_data.get("Year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Organization
+            this.organization = (String)json_data.get("Organization");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Project; a field was missing.");
+    		System.err.println("Could not convert the response to a Project; the field organization was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Project; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Project; the field organization had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Year
+            this.year = ((Number)json_data.get("Year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Project; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Project; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

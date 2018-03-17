@@ -18,14 +18,15 @@ public class Refugees {
 	
     // Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that have arrived from the associated country in this year seeking refugee status and asylum.
     private Integer arrived;
-    // Asylum status is a form of protection available to people who: (1) Meet the definition of refugee, (2) Are already in the United States, and (3) Are seeking admission at a port of entry. This is the number of people who have been granted aslyum in the USA from the associated country in this year.
-    private Integer defensiveAsylum;
     // Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that were granted refugee status from the associated country in this year.
     private Integer affirmative;
+    // Asylum status is a form of protection available to people who: (1) Meet the definition of refugee, (2) Are already in the United States, and (3) Are seeking admission at a port of entry. This is the number of people who have been granted aslyum in the USA from the associated country in this year.
+    private Integer defensiveAsylum;
     
     
-    /*
-     * @return 
+    /**
+     * Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that have arrived from the associated country in this year seeking refugee status and asylum.
+     * @return Integer
      */
     public Integer getArrived() {
         return this.arrived;
@@ -33,20 +34,22 @@ public class Refugees {
     
     
     
-    /*
-     * @return 
+    /**
+     * Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that were granted refugee status from the associated country in this year.
+     * @return Integer
      */
-    public Integer getDefensiveAsylum() {
-        return this.defensiveAsylum;
+    public Integer getAffirmative() {
+        return this.affirmative;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Asylum status is a form of protection available to people who: (1) Meet the definition of refugee, (2) Are already in the United States, and (3) Are seeking admission at a port of entry. This is the number of people who have been granted aslyum in the USA from the associated country in this year.
+     * @return Integer
      */
-    public Integer getAffirmative() {
-        return this.affirmative;
+    public Integer getDefensiveAsylum() {
+        return this.defensiveAsylum;
     }
     
     
@@ -58,7 +61,7 @@ public class Refugees {
 	 * @return String
 	 */
 	public String toString() {
-		return "Refugees[" +arrived+", "+defensiveAsylum+", "+affirmative+"]";
+		return "Refugees[" +arrived+", "+affirmative+", "+defensiveAsylum+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Refugees {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Refugees(JSONObject json_data) {
-        try {// Arrived
-            this.arrived = ((Number)json_data.get("Arrived")).intValue();// Defensive Asylum
-            this.defensiveAsylum = ((Number)json_data.get("Defensive Asylum")).intValue();// Affirmative
-            this.affirmative = ((Number)json_data.get("Affirmative")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Arrived
+            this.arrived = ((Number)json_data.get("Arrived")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Refugees; a field was missing.");
+    		System.err.println("Could not convert the response to a Refugees; the field arrived was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Refugees; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Refugees; the field arrived had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Affirmative
+            this.affirmative = ((Number)json_data.get("Affirmative")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Refugees; the field affirmative was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Refugees; the field affirmative had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Defensive Asylum
+            this.defensiveAsylum = ((Number)json_data.get("Defensive Asylum")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Refugees; the field defensiveAsylum was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Refugees; the field defensiveAsylum had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

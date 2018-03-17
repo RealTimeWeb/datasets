@@ -16,24 +16,26 @@ import org.json.simple.JSONObject;
  */
 public class LowIncomeAndLowAccess {
 	
-    private Double oneTwoAndOnezeroMiles;
     private Double oneAndTwozeroMiles;
+    private Double oneTwoAndOnezeroMiles;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getOneTwoAndOnezeroMiles() {
-        return this.oneTwoAndOnezeroMiles;
+    public Double getOneAndTwozeroMiles() {
+        return this.oneAndTwozeroMiles;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getOneAndTwozeroMiles() {
-        return this.oneAndTwozeroMiles;
+    public Double getOneTwoAndOnezeroMiles() {
+        return this.oneTwoAndOnezeroMiles;
     }
     
     
@@ -45,7 +47,7 @@ public class LowIncomeAndLowAccess {
 	 * @return String
 	 */
 	public String toString() {
-		return "LowIncomeAndLowAccess[" +oneTwoAndOnezeroMiles+", "+oneAndTwozeroMiles+"]";
+		return "LowIncomeAndLowAccess[" +oneAndTwozeroMiles+", "+oneTwoAndOnezeroMiles+"]";
 	}
 	
 	/**
@@ -53,15 +55,29 @@ public class LowIncomeAndLowAccess {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public LowIncomeAndLowAccess(JSONObject json_data) {
-        try {// 1/2 and 10 Miles
-            this.oneTwoAndOnezeroMiles = ((Number)json_data.get("1/2 and 10 Miles")).doubleValue();// 1 and 20 Miles
+        //System.out.println(json_data);
+        
+        try {
+            // 1 and 20 Miles
             this.oneAndTwozeroMiles = ((Number)json_data.get("1 and 20 Miles")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a LowIncomeAndLowAccess; a field was missing.");
+    		System.err.println("Could not convert the response to a LowIncomeAndLowAccess; the field oneAndTwozeroMiles was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a LowIncomeAndLowAccess; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a LowIncomeAndLowAccess; the field oneAndTwozeroMiles had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // 1/2 and 10 Miles
+            this.oneTwoAndOnezeroMiles = ((Number)json_data.get("1/2 and 10 Miles")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowIncomeAndLowAccess; the field oneTwoAndOnezeroMiles was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowIncomeAndLowAccess; the field oneTwoAndOnezeroMiles had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

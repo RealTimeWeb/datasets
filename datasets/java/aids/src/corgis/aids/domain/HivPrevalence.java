@@ -24,8 +24,9 @@ public class HivPrevalence {
     private Double youngWomen;
     
     
-    /*
-     * @return 
+    /**
+     * The percentage of the population of Young Men (15-24 years old) suffering from AIDS in this year.
+     * @return Double
      */
     public Double getYoungMen() {
         return this.youngMen;
@@ -33,8 +34,9 @@ public class HivPrevalence {
     
     
     
-    /*
-     * @return 
+    /**
+     * The percentage of the population of Young Men (15-49 years old) suffering from AIDS in this year.
+     * @return Double
      */
     public Double getAdults() {
         return this.adults;
@@ -42,8 +44,9 @@ public class HivPrevalence {
     
     
     
-    /*
-     * @return 
+    /**
+     * The percentage of the population of Young Women (15-24 years old) suffering from AIDS in this year.
+     * @return Double
      */
     public Double getYoungWomen() {
         return this.youngWomen;
@@ -66,16 +69,40 @@ public class HivPrevalence {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public HivPrevalence(JSONObject json_data) {
-        try {// Young Men
-            this.youngMen = ((Number)json_data.get("Young Men")).doubleValue();// Adults
-            this.adults = ((Number)json_data.get("Adults")).doubleValue();// Young Women
-            this.youngWomen = ((Number)json_data.get("Young Women")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Young Men
+            this.youngMen = ((Number)json_data.get("Young Men")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a HivPrevalence; a field was missing.");
+    		System.err.println("Could not convert the response to a HivPrevalence; the field youngMen was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a HivPrevalence; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a HivPrevalence; the field youngMen had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Adults
+            this.adults = ((Number)json_data.get("Adults")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a HivPrevalence; the field adults was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a HivPrevalence; the field adults had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Young Women
+            this.youngWomen = ((Number)json_data.get("Young Women")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a HivPrevalence; the field youngWomen was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a HivPrevalence; the field youngWomen had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

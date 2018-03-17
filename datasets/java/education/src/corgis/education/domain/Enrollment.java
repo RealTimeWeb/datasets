@@ -17,33 +17,26 @@ import corgis.education.domain.Students;
  */
 public class Enrollment {
 	
-    private Integer schools;
-    private Students students;
-    private Double studentTeacherRatio;
-    private Double teachers;
     private Double staff;
+    private Double studentTeacherRatio;
+    private Students students;
+    private Double teachers;
+    private Integer schools;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Integer getSchools() {
-        return this.schools;
+    public Double getStaff() {
+        return this.staff;
     }
     
     
     
-    /*
-     * @return 
-     */
-    public Students getStudents() {
-        return this.students;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getStudentTeacherRatio() {
         return this.studentTeacherRatio;
@@ -51,8 +44,19 @@ public class Enrollment {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Students
+     */
+    public Students getStudents() {
+        return this.students;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Double
      */
     public Double getTeachers() {
         return this.teachers;
@@ -60,11 +64,12 @@ public class Enrollment {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Double getStaff() {
-        return this.staff;
+    public Integer getSchools() {
+        return this.schools;
     }
     
     
@@ -76,7 +81,7 @@ public class Enrollment {
 	 * @return String
 	 */
 	public String toString() {
-		return "Enrollment[" +schools+", "+students+", "+studentTeacherRatio+", "+teachers+", "+staff+"]";
+		return "Enrollment[" +staff+", "+studentTeacherRatio+", "+students+", "+teachers+", "+schools+"]";
 	}
 	
 	/**
@@ -84,18 +89,62 @@ public class Enrollment {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Enrollment(JSONObject json_data) {
-        try {// schools
-            this.schools = ((Number)json_data.get("schools")).intValue();// students
-            this.students = new Students((JSONObject)json_data.get("students"));// student teacher ratio
-            this.studentTeacherRatio = ((Number)json_data.get("student teacher ratio")).doubleValue();// teachers
-            this.teachers = ((Number)json_data.get("teachers")).doubleValue();// staff
+        //System.out.println(json_data);
+        
+        try {
+            // staff
             this.staff = ((Number)json_data.get("staff")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Enrollment; a field was missing.");
+    		System.err.println("Could not convert the response to a Enrollment; the field staff was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Enrollment; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Enrollment; the field staff had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // student teacher ratio
+            this.studentTeacherRatio = ((Number)json_data.get("student teacher ratio")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Enrollment; the field studentTeacherRatio was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Enrollment; the field studentTeacherRatio had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // students
+            this.students = new Students((JSONObject)json_data.get("students"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Enrollment; the field students was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Enrollment; the field students had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // teachers
+            this.teachers = ((Number)json_data.get("teachers")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Enrollment; the field teachers was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Enrollment; the field teachers had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // schools
+            this.schools = ((Number)json_data.get("schools")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Enrollment; the field schools was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Enrollment; the field schools had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

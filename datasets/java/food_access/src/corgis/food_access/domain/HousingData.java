@@ -16,26 +16,18 @@ import org.json.simple.JSONObject;
  */
 public class HousingData {
 	
-    private Integer totalHousingUnits;
     // Percentage is number of Census Tracts classified as urban divided by total tracts for the county
     private Double urbanHousingPercentage;
+    private Integer totalHousingUnits;
     // Group Quarters are dormitories, military bases, assisted living or skilled nursing facilities, and other large institutions.
     private Double residingInGroupQuarters;
     // Percentage is number of Census Tracts classified as rural divided by total tracts for the county
     private Double ruralHousingPercentage;
     
     
-    /*
-     * @return 
-     */
-    public Integer getTotalHousingUnits() {
-        return this.totalHousingUnits;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Percentage is number of Census Tracts classified as urban divided by total tracts for the county
+     * @return Double
      */
     public Double getUrbanHousingPercentage() {
         return this.urbanHousingPercentage;
@@ -43,8 +35,19 @@ public class HousingData {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getTotalHousingUnits() {
+        return this.totalHousingUnits;
+    }
+    
+    
+    
+    /**
+     * Group Quarters are dormitories, military bases, assisted living or skilled nursing facilities, and other large institutions.
+     * @return Double
      */
     public Double getResidingInGroupQuarters() {
         return this.residingInGroupQuarters;
@@ -52,8 +55,9 @@ public class HousingData {
     
     
     
-    /*
-     * @return 
+    /**
+     * Percentage is number of Census Tracts classified as rural divided by total tracts for the county
+     * @return Double
      */
     public Double getRuralHousingPercentage() {
         return this.ruralHousingPercentage;
@@ -68,7 +72,7 @@ public class HousingData {
 	 * @return String
 	 */
 	public String toString() {
-		return "HousingData[" +totalHousingUnits+", "+urbanHousingPercentage+", "+residingInGroupQuarters+", "+ruralHousingPercentage+"]";
+		return "HousingData[" +urbanHousingPercentage+", "+totalHousingUnits+", "+residingInGroupQuarters+", "+ruralHousingPercentage+"]";
 	}
 	
 	/**
@@ -76,17 +80,51 @@ public class HousingData {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public HousingData(JSONObject json_data) {
-        try {// Total Housing Units
-            this.totalHousingUnits = ((Number)json_data.get("Total Housing Units")).intValue();// Urban Housing Percentage
-            this.urbanHousingPercentage = ((Number)json_data.get("Urban Housing Percentage")).doubleValue();// Residing in Group Quarters
-            this.residingInGroupQuarters = ((Number)json_data.get("Residing in Group Quarters")).doubleValue();// Rural Housing Percentage
-            this.ruralHousingPercentage = ((Number)json_data.get("Rural Housing Percentage")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Urban Housing Percentage
+            this.urbanHousingPercentage = ((Number)json_data.get("Urban Housing Percentage")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a HousingData; a field was missing.");
+    		System.err.println("Could not convert the response to a HousingData; the field urbanHousingPercentage was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a HousingData; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a HousingData; the field urbanHousingPercentage had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Total Housing Units
+            this.totalHousingUnits = ((Number)json_data.get("Total Housing Units")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a HousingData; the field totalHousingUnits was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a HousingData; the field totalHousingUnits had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Residing in Group Quarters
+            this.residingInGroupQuarters = ((Number)json_data.get("Residing in Group Quarters")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a HousingData; the field residingInGroupQuarters was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a HousingData; the field residingInGroupQuarters had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Rural Housing Percentage
+            this.ruralHousingPercentage = ((Number)json_data.get("Rural Housing Percentage")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a HousingData; the field ruralHousingPercentage was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a HousingData; the field ruralHousingPercentage had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

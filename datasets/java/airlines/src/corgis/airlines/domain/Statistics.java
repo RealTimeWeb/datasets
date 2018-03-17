@@ -12,8 +12,8 @@ import org.json.simple.JSONObject;
 
 import corgis.airlines.domain.Flights;
 import corgis.airlines.domain.NumberOfDelays;
-import corgis.airlines.domain.MinutesDelayed;
 import corgis.airlines.domain.Carriers;
+import corgis.airlines.domain.MinutesDelayed;
 
 /**
  * 
@@ -22,12 +22,13 @@ public class Statistics {
 	
     private Flights flights;
     private NumberOfDelays numberOfDelays;
-    private MinutesDelayed minutesDelayed;
     private Carriers carriers;
+    private MinutesDelayed minutesDelayed;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Flights
      */
     public Flights getFlights() {
         return this.flights;
@@ -35,8 +36,9 @@ public class Statistics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return NumberOfDelays
      */
     public NumberOfDelays getNumberOfDelays() {
         return this.numberOfDelays;
@@ -44,20 +46,22 @@ public class Statistics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Carriers
      */
-    public MinutesDelayed getMinutesDelayed() {
-        return this.minutesDelayed;
+    public Carriers getCarriers() {
+        return this.carriers;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return MinutesDelayed
      */
-    public Carriers getCarriers() {
-        return this.carriers;
+    public MinutesDelayed getMinutesDelayed() {
+        return this.minutesDelayed;
     }
     
     
@@ -69,7 +73,7 @@ public class Statistics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Statistics[" +flights+", "+numberOfDelays+", "+minutesDelayed+", "+carriers+"]";
+		return "Statistics[" +flights+", "+numberOfDelays+", "+carriers+", "+minutesDelayed+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Statistics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Statistics(JSONObject json_data) {
-        try {// Flights
-            this.flights = new Flights((JSONObject)json_data.get("Flights"));// # of Delays
-            this.numberOfDelays = new NumberOfDelays((JSONObject)json_data.get("# of Delays"));// Minutes Delayed
-            this.minutesDelayed = new MinutesDelayed((JSONObject)json_data.get("Minutes Delayed"));// Carriers
-            this.carriers = new Carriers((JSONObject)json_data.get("Carriers"));
+        //System.out.println(json_data);
+        
+        try {
+            // Flights
+            this.flights = new Flights((JSONObject)json_data.get("Flights"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Statistics; a field was missing.");
+    		System.err.println("Could not convert the response to a Statistics; the field flights was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Statistics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Statistics; the field flights had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // # of Delays
+            this.numberOfDelays = new NumberOfDelays((JSONObject)json_data.get("# of Delays"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field numberOfDelays was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field numberOfDelays had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Carriers
+            this.carriers = new Carriers((JSONObject)json_data.get("Carriers"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field carriers was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field carriers had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Minutes Delayed
+            this.minutesDelayed = new MinutesDelayed((JSONObject)json_data.get("Minutes Delayed"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field minutesDelayed was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field minutesDelayed had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

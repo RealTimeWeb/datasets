@@ -16,44 +16,18 @@ import org.json.simple.JSONObject;
  */
 public class Location {
 	
-    private String city;
-    private String zipCode;
-    private Double longitude;
     private String county;
+    private Double longitude;
+    private String zipCode;
+    private Double latitude;
     private String state;
     private String address;
-    private Double latitude;
+    private String city;
     
     
-    /*
-     * @return 
-     */
-    public String getCity() {
-        return this.city;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getZipCode() {
-        return this.zipCode;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getLongitude() {
-        return this.longitude;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getCounty() {
         return this.county;
@@ -61,8 +35,39 @@ public class Location {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
+     */
+    public Double getLongitude() {
+        return this.longitude;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getZipCode() {
+        return this.zipCode;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Double
+     */
+    public Double getLatitude() {
+        return this.latitude;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
      */
     public String getState() {
         return this.state;
@@ -70,8 +75,9 @@ public class Location {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getAddress() {
         return this.address;
@@ -79,11 +85,12 @@ public class Location {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Double getLatitude() {
-        return this.latitude;
+    public String getCity() {
+        return this.city;
     }
     
     
@@ -95,7 +102,7 @@ public class Location {
 	 * @return String
 	 */
 	public String toString() {
-		return "Location[" +city+", "+zipCode+", "+longitude+", "+county+", "+state+", "+address+", "+latitude+"]";
+		return "Location[" +county+", "+longitude+", "+zipCode+", "+latitude+", "+state+", "+address+", "+city+"]";
 	}
 	
 	/**
@@ -103,20 +110,84 @@ public class Location {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Location(JSONObject json_data) {
-        try {// City
-            this.city = (String)json_data.get("City");// ZIP Code
-            this.zipCode = (String)json_data.get("ZIP Code");// Longitude
-            this.longitude = ((Number)json_data.get("Longitude")).doubleValue();// County
-            this.county = (String)json_data.get("County");// State
-            this.state = (String)json_data.get("State");// Address
-            this.address = (String)json_data.get("Address");// Latitude
-            this.latitude = ((Number)json_data.get("Latitude")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // County
+            this.county = (String)json_data.get("County");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Location; a field was missing.");
+    		System.err.println("Could not convert the response to a Location; the field county was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Location; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Location; the field county had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Longitude
+            this.longitude = ((Number)json_data.get("Longitude")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field longitude was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field longitude had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // ZIP Code
+            this.zipCode = (String)json_data.get("ZIP Code");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field zipCode was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field zipCode had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Latitude
+            this.latitude = ((Number)json_data.get("Latitude")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field latitude was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field latitude had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // State
+            this.state = (String)json_data.get("State");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field state was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field state had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Address
+            this.address = (String)json_data.get("Address");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field address was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field address had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // City
+            this.city = (String)json_data.get("City");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field city was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field city had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

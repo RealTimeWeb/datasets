@@ -17,23 +17,15 @@ import corgis.global_development.domain.Data;
  */
 public class Report {
 	
-    private String country;
     // Based on the nature of the data, some of the numbers that are reported are very small.  For example a field reported as 0.15 is 0.15 %, not 15 %.
     private Data data;
+    private String country;
     private Integer year;
     
     
-    /*
-     * @return 
-     */
-    public String getCountry() {
-        return this.country;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Based on the nature of the data, some of the numbers that are reported are very small.  For example a field reported as 0.15 is 0.15 %, not 15 %.
+     * @return Data
      */
     public Data getData() {
         return this.data;
@@ -41,8 +33,19 @@ public class Report {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
+     */
+    public String getCountry() {
+        return this.country;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -57,7 +60,7 @@ public class Report {
 	 * @return String
 	 */
 	public String toString() {
-		return "Report[" +country+", "+data+", "+year+"]";
+		return "Report[" +data+", "+country+", "+year+"]";
 	}
 	
 	/**
@@ -65,16 +68,40 @@ public class Report {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
-        try {// Country
-            this.country = (String)json_data.get("Country");// Data
-            this.data = new Data((JSONObject)json_data.get("Data"));// Year
-            this.year = ((Number)json_data.get("Year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Data
+            this.data = new Data((JSONObject)json_data.get("Data"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Report; a field was missing.");
+    		System.err.println("Could not convert the response to a Report; the field data was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Report; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Report; the field data had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Country
+            this.country = (String)json_data.get("Country");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field country was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field country had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Year
+            this.year = ((Number)json_data.get("Year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

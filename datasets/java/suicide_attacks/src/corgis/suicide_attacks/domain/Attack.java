@@ -10,45 +10,28 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.suicide_attacks.domain.Statistics;
-import corgis.suicide_attacks.domain.Target;
 import corgis.suicide_attacks.domain.Campaign;
 import corgis.suicide_attacks.domain.Attacker;
 import corgis.suicide_attacks.domain.Date;
+import corgis.suicide_attacks.domain.Statistics;
+import corgis.suicide_attacks.domain.Target;
 
 /**
  * 
  */
 public class Attack {
 	
-    private Statistics statistics;
-    private Target target;
     private Campaign campaign;
     private Attacker attacker;
-    private ArrayList<String> groups;
     private Date date;
+    private ArrayList<String> groups;
+    private Statistics statistics;
+    private Target target;
     
     
-    /*
-     * @return 
-     */
-    public Statistics getStatistics() {
-        return this.statistics;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Target getTarget() {
-        return this.target;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Campaign
      */
     public Campaign getCampaign() {
         return this.campaign;
@@ -56,8 +39,9 @@ public class Attack {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Attacker
      */
     public Attacker getAttacker() {
         return this.attacker;
@@ -65,8 +49,19 @@ public class Attack {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Date
+     */
+    public Date getDate() {
+        return this.date;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return ArrayList<String>
      */
     public ArrayList<String> getGroups() {
         return this.groups;
@@ -74,11 +69,22 @@ public class Attack {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Statistics
      */
-    public Date getDate() {
-        return this.date;
+    public Statistics getStatistics() {
+        return this.statistics;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Target
+     */
+    public Target getTarget() {
+        return this.target;
     }
     
     
@@ -90,7 +96,7 @@ public class Attack {
 	 * @return String
 	 */
 	public String toString() {
-		return "Attack[" +statistics+", "+target+", "+campaign+", "+attacker+", "+groups+", "+date+"]";
+		return "Attack[" +campaign+", "+attacker+", "+date+", "+groups+", "+statistics+", "+target+"]";
 	}
 	
 	/**
@@ -98,23 +104,77 @@ public class Attack {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Attack(JSONObject json_data) {
-        try {// statistics
-            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// target
-            this.target = new Target((JSONObject)json_data.get("target"));// campaign
-            this.campaign = new Campaign((JSONObject)json_data.get("campaign"));// attacker
-            this.attacker = new Attacker((JSONObject)json_data.get("attacker"));// groups
+        //System.out.println(json_data);
+        
+        try {
+            // campaign
+            this.campaign = new Campaign((JSONObject)json_data.get("campaign"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Attack; the field campaign was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Attack; the field campaign had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // attacker
+            this.attacker = new Attacker((JSONObject)json_data.get("attacker"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Attack; the field attacker was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Attack; the field attacker had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // date
+            this.date = new Date((JSONObject)json_data.get("date"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Attack; the field date was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Attack; the field date had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // groups
             this.groups = new ArrayList<String>();
             Iterator<Object> groupsIter = ((List<Object>)json_data.get("groups")).iterator();
             while (groupsIter.hasNext()) {
                 this.groups.add(new String((String)groupsIter.next()));
-            }// date
-            this.date = new Date((JSONObject)json_data.get("date"));
+            }
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Attack; a field was missing.");
+    		System.err.println("Could not convert the response to a Attack; the field groups was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Attack; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Attack; the field groups had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // statistics
+            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Attack; the field statistics was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Attack; the field statistics had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // target
+            this.target = new Target((JSONObject)json_data.get("target"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Attack; the field target was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Attack; the field target had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

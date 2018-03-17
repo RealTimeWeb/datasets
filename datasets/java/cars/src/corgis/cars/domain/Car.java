@@ -10,33 +10,35 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.cars.domain.EngineInformation;
+import corgis.cars.domain.FuelInformation;
 import corgis.cars.domain.Identification;
 import corgis.cars.domain.Dimensions;
-import corgis.cars.domain.FuelInformation;
+import corgis.cars.domain.EngineInformation;
 
 /**
  * 
  */
 public class Car {
 	
-    private EngineInformation engineInformation;
+    private FuelInformation fuelInformation;
     private Identification identification;
     private Dimensions dimensions;
-    private FuelInformation fuelInformation;
+    private EngineInformation engineInformation;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return FuelInformation
      */
-    public EngineInformation getEngineInformation() {
-        return this.engineInformation;
+    public FuelInformation getFuelInformation() {
+        return this.fuelInformation;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Identification
      */
     public Identification getIdentification() {
         return this.identification;
@@ -44,8 +46,9 @@ public class Car {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Dimensions
      */
     public Dimensions getDimensions() {
         return this.dimensions;
@@ -53,11 +56,12 @@ public class Car {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return EngineInformation
      */
-    public FuelInformation getFuelInformation() {
-        return this.fuelInformation;
+    public EngineInformation getEngineInformation() {
+        return this.engineInformation;
     }
     
     
@@ -69,7 +73,7 @@ public class Car {
 	 * @return String
 	 */
 	public String toString() {
-		return "Car[" +engineInformation+", "+identification+", "+dimensions+", "+fuelInformation+"]";
+		return "Car[" +fuelInformation+", "+identification+", "+dimensions+", "+engineInformation+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Car {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Car(JSONObject json_data) {
-        try {// Engine Information
-            this.engineInformation = new EngineInformation((JSONObject)json_data.get("Engine Information"));// Identification
-            this.identification = new Identification((JSONObject)json_data.get("Identification"));// Dimensions
-            this.dimensions = new Dimensions((JSONObject)json_data.get("Dimensions"));// Fuel Information
+        //System.out.println(json_data);
+        
+        try {
+            // Fuel Information
             this.fuelInformation = new FuelInformation((JSONObject)json_data.get("Fuel Information"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Car; a field was missing.");
+    		System.err.println("Could not convert the response to a Car; the field fuelInformation was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Car; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Car; the field fuelInformation had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Identification
+            this.identification = new Identification((JSONObject)json_data.get("Identification"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Car; the field identification was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Car; the field identification had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Dimensions
+            this.dimensions = new Dimensions((JSONObject)json_data.get("Dimensions"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Car; the field dimensions was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Car; the field dimensions had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Engine Information
+            this.engineInformation = new EngineInformation((JSONObject)json_data.get("Engine Information"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Car; the field engineInformation was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Car; the field engineInformation had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

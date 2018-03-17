@@ -16,25 +16,27 @@ import org.json.simple.JSONObject;
  */
 public class Formats {
 	
+    private ArrayList<String> types;
     // Project Gutenberg makes books available in a wide variety of file formats, including raw text files, HTML web pages, audio books, etc. This field indicates the number of ways that this book is available.
     private Integer total;
-    private ArrayList<String> types;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return ArrayList<String>
      */
-    public Integer getTotal() {
-        return this.total;
+    public ArrayList<String> getTypes() {
+        return this.types;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Project Gutenberg makes books available in a wide variety of file formats, including raw text files, HTML web pages, audio books, etc. This field indicates the number of ways that this book is available.
+     * @return Integer
      */
-    public ArrayList<String> getTypes() {
-        return this.types;
+    public Integer getTotal() {
+        return this.total;
     }
     
     
@@ -46,7 +48,7 @@ public class Formats {
 	 * @return String
 	 */
 	public String toString() {
-		return "Formats[" +total+", "+types+"]";
+		return "Formats[" +types+", "+total+"]";
 	}
 	
 	/**
@@ -54,19 +56,33 @@ public class Formats {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Formats(JSONObject json_data) {
-        try {// total
-            this.total = ((Number)json_data.get("total")).intValue();// types
+        //System.out.println(json_data);
+        
+        try {
+            // types
             this.types = new ArrayList<String>();
             Iterator<Object> typesIter = ((List<Object>)json_data.get("types")).iterator();
             while (typesIter.hasNext()) {
                 this.types.add(new String((String)typesIter.next()));
             }
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Formats; a field was missing.");
+    		System.err.println("Could not convert the response to a Formats; the field types was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Formats; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Formats; the field types had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // total
+            this.total = ((Number)json_data.get("total")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Formats; the field total was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Formats; the field total had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

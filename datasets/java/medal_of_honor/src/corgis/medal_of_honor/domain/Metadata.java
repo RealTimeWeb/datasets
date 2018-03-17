@@ -19,8 +19,9 @@ public class Metadata {
     private String link;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getLink() {
         return this.link;
@@ -43,14 +44,18 @@ public class Metadata {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Metadata(JSONObject json_data) {
-        try {// link
+        //System.out.println(json_data);
+        
+        try {
+            // link
             this.link = (String)json_data.get("link");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Metadata; a field was missing.");
+    		System.err.println("Could not convert the response to a Metadata; the field link was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Metadata; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Metadata; the field link had the wrong structure.");
     		e.printStackTrace();
         }
+        
 	}	
 }

@@ -10,53 +10,37 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.medal_of_honor.domain.Awarded;
+import corgis.medal_of_honor.domain.Metadata;
 import corgis.medal_of_honor.domain.Birth;
 import corgis.medal_of_honor.domain.MilitaryRecord;
-import corgis.medal_of_honor.domain.Metadata;
+import corgis.medal_of_honor.domain.Awarded;
 
 /**
  * 
  */
 public class Awardee {
 	
+    private Metadata metadata;
+    private Birth birth;
     private Boolean death;
     private String name;
-    private Awarded awarded;
-    private Birth birth;
     private MilitaryRecord militaryRecord;
-    private Metadata metadata;
+    private Awarded awarded;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Metadata
      */
-    public Boolean getDeath() {
-        return this.death;
+    public Metadata getMetadata() {
+        return this.metadata;
     }
     
     
     
-    /*
-     * @return 
-     */
-    public String getName() {
-        return this.name;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Awarded getAwarded() {
-        return this.awarded;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Birth
      */
     public Birth getBirth() {
         return this.birth;
@@ -64,8 +48,29 @@ public class Awardee {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Boolean
+     */
+    public Boolean getDeath() {
+        return this.death;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getName() {
+        return this.name;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return MilitaryRecord
      */
     public MilitaryRecord getMilitaryRecord() {
         return this.militaryRecord;
@@ -73,11 +78,12 @@ public class Awardee {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Awarded
      */
-    public Metadata getMetadata() {
-        return this.metadata;
+    public Awarded getAwarded() {
+        return this.awarded;
     }
     
     
@@ -89,7 +95,7 @@ public class Awardee {
 	 * @return String
 	 */
 	public String toString() {
-		return "Awardee[" +death+", "+name+", "+awarded+", "+birth+", "+militaryRecord+", "+metadata+"]";
+		return "Awardee[" +metadata+", "+birth+", "+death+", "+name+", "+militaryRecord+", "+awarded+"]";
 	}
 	
 	/**
@@ -97,19 +103,73 @@ public class Awardee {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Awardee(JSONObject json_data) {
-        try {// death
-            this.death = (Boolean)json_data.get("death");// name
-            this.name = (String)json_data.get("name");// awarded
-            this.awarded = new Awarded((JSONObject)json_data.get("awarded"));// birth
-            this.birth = new Birth((JSONObject)json_data.get("birth"));// military record
-            this.militaryRecord = new MilitaryRecord((JSONObject)json_data.get("military record"));// metadata
+        //System.out.println(json_data);
+        
+        try {
+            // metadata
             this.metadata = new Metadata((JSONObject)json_data.get("metadata"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Awardee; a field was missing.");
+    		System.err.println("Could not convert the response to a Awardee; the field metadata was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Awardee; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Awardee; the field metadata had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // birth
+            this.birth = new Birth((JSONObject)json_data.get("birth"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field birth was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field birth had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // death
+            this.death = (Boolean)json_data.get("death");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field death was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field death had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // name
+            this.name = (String)json_data.get("name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // military record
+            this.militaryRecord = new MilitaryRecord((JSONObject)json_data.get("military record"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field militaryRecord was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field militaryRecord had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // awarded
+            this.awarded = new Awarded((JSONObject)json_data.get("awarded"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field awarded was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Awardee; the field awarded had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -18,14 +18,15 @@ public class BetweenSixzeroEightzerok {
 	
     // The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.
     private Integer verbal;
-    // The average Math score of students in this state during this year who reported that their family income was in this bracket.
-    private Integer math;
     // The number of test-takers in this state during this year who reported that their family income was in this bracket.
     private Integer testTakers;
+    // The average Math score of students in this state during this year who reported that their family income was in this bracket.
+    private Integer math;
     
     
-    /*
-     * @return 
+    /**
+     * The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.
+     * @return Integer
      */
     public Integer getVerbal() {
         return this.verbal;
@@ -33,20 +34,22 @@ public class BetweenSixzeroEightzerok {
     
     
     
-    /*
-     * @return 
+    /**
+     * The number of test-takers in this state during this year who reported that their family income was in this bracket.
+     * @return Integer
      */
-    public Integer getMath() {
-        return this.math;
+    public Integer getTestTakers() {
+        return this.testTakers;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The average Math score of students in this state during this year who reported that their family income was in this bracket.
+     * @return Integer
      */
-    public Integer getTestTakers() {
-        return this.testTakers;
+    public Integer getMath() {
+        return this.math;
     }
     
     
@@ -58,7 +61,7 @@ public class BetweenSixzeroEightzerok {
 	 * @return String
 	 */
 	public String toString() {
-		return "Between60-80K[" +verbal+", "+math+", "+testTakers+"]";
+		return "Between60-80K[" +verbal+", "+testTakers+", "+math+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class BetweenSixzeroEightzerok {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public BetweenSixzeroEightzerok(JSONObject json_data) {
-        try {// Verbal
-            this.verbal = ((Number)json_data.get("Verbal")).intValue();// Math
-            this.math = ((Number)json_data.get("Math")).intValue();// Test-takers
-            this.testTakers = ((Number)json_data.get("Test-takers")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Verbal
+            this.verbal = ((Number)json_data.get("Verbal")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Between60-80K; a field was missing.");
+    		System.err.println("Could not convert the response to a Between60-80K; the field verbal was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Between60-80K; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Between60-80K; the field verbal had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Test-takers
+            this.testTakers = ((Number)json_data.get("Test-takers")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Between60-80K; the field testTakers was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Between60-80K; the field testTakers had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Math
+            this.math = ((Number)json_data.get("Math")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Between60-80K; the field math was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Between60-80K; the field math had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

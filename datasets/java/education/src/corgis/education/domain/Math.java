@@ -20,8 +20,9 @@ public class Math {
     private Integer scaleScore;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getGrade() {
         return this.grade;
@@ -29,8 +30,9 @@ public class Math {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getScaleScore() {
         return this.scaleScore;
@@ -53,15 +55,29 @@ public class Math {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Math(JSONObject json_data) {
-        try {// grade
-            this.grade = ((Number)json_data.get("grade")).intValue();// scale score
-            this.scaleScore = ((Number)json_data.get("scale score")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // grade
+            this.grade = ((Number)json_data.get("grade")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Math; a field was missing.");
+    		System.err.println("Could not convert the response to a Math; the field grade was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Math; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Math; the field grade had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // scale score
+            this.scaleScore = ((Number)json_data.get("scale score")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Math; the field scaleScore was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Math; the field scaleScore had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

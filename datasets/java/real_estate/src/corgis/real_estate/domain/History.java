@@ -20,8 +20,9 @@ public class History {
     private String type;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getStatus() {
         return this.status;
@@ -29,8 +30,9 @@ public class History {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getType() {
         return this.type;
@@ -53,15 +55,29 @@ public class History {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public History(JSONObject json_data) {
-        try {// status
-            this.status = (String)json_data.get("status");// type
-            this.type = (String)json_data.get("type");
+        //System.out.println(json_data);
+        
+        try {
+            // status
+            this.status = (String)json_data.get("status");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a History; a field was missing.");
+    		System.err.println("Could not convert the response to a History; the field status was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a History; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a History; the field status had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // type
+            this.type = (String)json_data.get("type");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a History; the field type was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a History; the field type had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

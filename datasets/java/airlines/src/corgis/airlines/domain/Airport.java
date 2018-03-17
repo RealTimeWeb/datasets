@@ -22,8 +22,9 @@ public class Airport {
     private String name;
     
     
-    /*
-     * @return 
+    /**
+     * The 3 letter code for this airport, assigned by IATA. For more information, consult this <a href='https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code'>List of Airport Codes</a>.
+     * @return String
      */
     public String getCode() {
         return this.code;
@@ -31,8 +32,9 @@ public class Airport {
     
     
     
-    /*
-     * @return 
+    /**
+     * The full name of this airport.
+     * @return String
      */
     public String getName() {
         return this.name;
@@ -55,15 +57,29 @@ public class Airport {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Airport(JSONObject json_data) {
-        try {// Code
-            this.code = (String)json_data.get("Code");// Name
-            this.name = (String)json_data.get("Name");
+        //System.out.println(json_data);
+        
+        try {
+            // Code
+            this.code = (String)json_data.get("Code");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Airport; a field was missing.");
+    		System.err.println("Could not convert the response to a Airport; the field code was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Airport; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Airport; the field code had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Name
+            this.name = (String)json_data.get("Name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Airport; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Airport; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

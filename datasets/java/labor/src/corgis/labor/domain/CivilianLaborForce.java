@@ -10,8 +10,8 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.labor.domain.White;
 import corgis.labor.domain.BlackOrAfricanAmerican;
+import corgis.labor.domain.White;
 import corgis.labor.domain.Asian;
 
 /**
@@ -19,22 +19,14 @@ import corgis.labor.domain.Asian;
  */
 public class CivilianLaborForce {
 	
-    private White white;
     private BlackOrAfricanAmerican blackOrAfricanAmerican;
+    private White white;
     private Asian asian;
     
     
-    /*
-     * @return 
-     */
-    public White getWhite() {
-        return this.white;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return BlackOrAfricanAmerican
      */
     public BlackOrAfricanAmerican getBlackOrAfricanAmerican() {
         return this.blackOrAfricanAmerican;
@@ -42,8 +34,19 @@ public class CivilianLaborForce {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return White
+     */
+    public White getWhite() {
+        return this.white;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Asian
      */
     public Asian getAsian() {
         return this.asian;
@@ -58,7 +61,7 @@ public class CivilianLaborForce {
 	 * @return String
 	 */
 	public String toString() {
-		return "CivilianLaborForce[" +white+", "+blackOrAfricanAmerican+", "+asian+"]";
+		return "CivilianLaborForce[" +blackOrAfricanAmerican+", "+white+", "+asian+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class CivilianLaborForce {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public CivilianLaborForce(JSONObject json_data) {
-        try {// White
-            this.white = new White((JSONObject)json_data.get("White"));// Black or African American
-            this.blackOrAfricanAmerican = new BlackOrAfricanAmerican((JSONObject)json_data.get("Black or African American"));// Asian
-            this.asian = new Asian((JSONObject)json_data.get("Asian"));
+        //System.out.println(json_data);
+        
+        try {
+            // Black or African American
+            this.blackOrAfricanAmerican = new BlackOrAfricanAmerican((JSONObject)json_data.get("Black or African American"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a CivilianLaborForce; a field was missing.");
+    		System.err.println("Could not convert the response to a CivilianLaborForce; the field blackOrAfricanAmerican was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a CivilianLaborForce; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a CivilianLaborForce; the field blackOrAfricanAmerican had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // White
+            this.white = new White((JSONObject)json_data.get("White"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a CivilianLaborForce; the field white was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a CivilianLaborForce; the field white had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Asian
+            this.asian = new Asian((JSONObject)json_data.get("Asian"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a CivilianLaborForce; the field asian was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a CivilianLaborForce; the field asian had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

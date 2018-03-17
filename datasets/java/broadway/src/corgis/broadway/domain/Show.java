@@ -24,8 +24,9 @@ public class Show {
     private String theatre;
     
     
-    /*
-     * @return 
+    /**
+     * Whether it is a "Musical", "Play", or "Special".
+     * @return String
      */
     public String getType() {
         return this.type;
@@ -33,8 +34,9 @@ public class Show {
     
     
     
-    /*
-     * @return 
+    /**
+     * The name of the production.
+     * @return String
      */
     public String getName() {
         return this.name;
@@ -42,8 +44,9 @@ public class Show {
     
     
     
-    /*
-     * @return 
+    /**
+     * The name of the theatre.
+     * @return String
      */
     public String getTheatre() {
         return this.theatre;
@@ -66,17 +69,40 @@ public class Show {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Show(JSONObject json_data) {
-        System.out.println(json_data);
-        try {// Type
-            this.type = (String)json_data.get("Type");// Name
-            this.name = (String)json_data.get("Name");// Theatre
-            this.theatre = (String)json_data.get("Theatre");
+        //System.out.println(json_data);
+        
+        try {
+            // Type
+            this.type = (String)json_data.get("Type");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Show; a field was missing.");
+    		System.err.println("Could not convert the response to a Show; the field type was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Show; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Show; the field type had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Name
+            this.name = (String)json_data.get("Name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Show; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Show; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Theatre
+            this.theatre = (String)json_data.get("Theatre");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Show; the field theatre was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Show; the field theatre had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

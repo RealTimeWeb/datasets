@@ -17,26 +17,28 @@ import corgis.food.domain.Data;
  */
 public class Report {
 	
-    // The general category of food that this item belongs to.
-    private String category;
-    private Data data;
-    // A full description of this food item, including its category and some sub categories.
-    private String description;
     // A unique ID for this food item.
     private Integer nutrientDataBankNumber;
+    private Data data;
+    // The general category of food that this item belongs to.
+    private String category;
+    // A full description of this food item, including its category and some sub categories.
+    private String description;
     
     
-    /*
-     * @return 
+    /**
+     * A unique ID for this food item.
+     * @return Integer
      */
-    public String getCategory() {
-        return this.category;
+    public Integer getNutrientDataBankNumber() {
+        return this.nutrientDataBankNumber;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Data
      */
     public Data getData() {
         return this.data;
@@ -44,20 +46,22 @@ public class Report {
     
     
     
-    /*
-     * @return 
+    /**
+     * The general category of food that this item belongs to.
+     * @return String
      */
-    public String getDescription() {
-        return this.description;
+    public String getCategory() {
+        return this.category;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * A full description of this food item, including its category and some sub categories.
+     * @return String
      */
-    public Integer getNutrientDataBankNumber() {
-        return this.nutrientDataBankNumber;
+    public String getDescription() {
+        return this.description;
     }
     
     
@@ -69,7 +73,7 @@ public class Report {
 	 * @return String
 	 */
 	public String toString() {
-		return "Report[" +category+", "+data+", "+description+", "+nutrientDataBankNumber+"]";
+		return "Report[" +nutrientDataBankNumber+", "+data+", "+category+", "+description+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Report {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
-        try {// Category
-            this.category = (String)json_data.get("Category");// Data
-            this.data = new Data((JSONObject)json_data.get("Data"));// Description
-            this.description = (String)json_data.get("Description");// Nutrient Data Bank Number
+        //System.out.println(json_data);
+        
+        try {
+            // Nutrient Data Bank Number
             this.nutrientDataBankNumber = ((Number)json_data.get("Nutrient Data Bank Number")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Report; a field was missing.");
+    		System.err.println("Could not convert the response to a Report; the field nutrientDataBankNumber was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Report; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Report; the field nutrientDataBankNumber had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Data
+            this.data = new Data((JSONObject)json_data.get("Data"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field data was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field data had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Category
+            this.category = (String)json_data.get("Category");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field category was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field category had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Description
+            this.description = (String)json_data.get("Description");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field description was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field description had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

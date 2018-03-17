@@ -16,36 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Transportation {
 	
-    // Coal price in the transportation sector in dollars per million BTU.
-    private Integer coal;
-    // Distillate fuel oil price in the transportation sector in dollars per million BTU.
-    private Integer distillateFuelOil;
     // Natural gas price in the transportation sector in dollars per million BTU.
     private Integer naturalGas;
+    // Distillate fuel oil price in the transportation sector in dollars per million BTU.
+    private Integer distillateFuelOil;
     // LPG price in the transportation sector in dollars per million BTU.
     private Integer liquefiedPetroleumGases;
+    // Coal price in the transportation sector in dollars per million BTU.
+    private Integer coal;
     
     
-    /*
-     * @return 
-     */
-    public Integer getCoal() {
-        return this.coal;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getDistillateFuelOil() {
-        return this.distillateFuelOil;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Natural gas price in the transportation sector in dollars per million BTU.
+     * @return Integer
      */
     public Integer getNaturalGas() {
         return this.naturalGas;
@@ -53,11 +36,32 @@ public class Transportation {
     
     
     
-    /*
-     * @return 
+    /**
+     * Distillate fuel oil price in the transportation sector in dollars per million BTU.
+     * @return Integer
+     */
+    public Integer getDistillateFuelOil() {
+        return this.distillateFuelOil;
+    }
+    
+    
+    
+    /**
+     * LPG price in the transportation sector in dollars per million BTU.
+     * @return Integer
      */
     public Integer getLiquefiedPetroleumGases() {
         return this.liquefiedPetroleumGases;
+    }
+    
+    
+    
+    /**
+     * Coal price in the transportation sector in dollars per million BTU.
+     * @return Integer
+     */
+    public Integer getCoal() {
+        return this.coal;
     }
     
     
@@ -69,7 +73,7 @@ public class Transportation {
 	 * @return String
 	 */
 	public String toString() {
-		return "Transportation[" +coal+", "+distillateFuelOil+", "+naturalGas+", "+liquefiedPetroleumGases+"]";
+		return "Transportation[" +naturalGas+", "+distillateFuelOil+", "+liquefiedPetroleumGases+", "+coal+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Transportation {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Transportation(JSONObject json_data) {
-        try {// Coal
-            this.coal = ((Number)json_data.get("Coal")).intValue();// Distillate Fuel Oil
-            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).intValue();// Natural Gas
-            this.naturalGas = ((Number)json_data.get("Natural Gas")).intValue();// Liquefied Petroleum Gases
-            this.liquefiedPetroleumGases = ((Number)json_data.get("Liquefied Petroleum Gases")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Natural Gas
+            this.naturalGas = ((Number)json_data.get("Natural Gas")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Transportation; a field was missing.");
+    		System.err.println("Could not convert the response to a Transportation; the field naturalGas was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Transportation; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Transportation; the field naturalGas had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Distillate Fuel Oil
+            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Transportation; the field distillateFuelOil was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Transportation; the field distillateFuelOil had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Liquefied Petroleum Gases
+            this.liquefiedPetroleumGases = ((Number)json_data.get("Liquefied Petroleum Gases")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Transportation; the field liquefiedPetroleumGases was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Transportation; the field liquefiedPetroleumGases had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Coal
+            this.coal = ((Number)json_data.get("Coal")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Transportation; the field coal was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Transportation; the field coal had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

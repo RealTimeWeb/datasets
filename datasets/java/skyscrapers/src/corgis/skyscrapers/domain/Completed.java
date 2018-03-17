@@ -20,8 +20,9 @@ public class Completed {
     private Integer year;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Boolean
      */
     public Boolean getIsCompleted() {
         return this.isCompleted;
@@ -29,8 +30,9 @@ public class Completed {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -53,15 +55,29 @@ public class Completed {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Completed(JSONObject json_data) {
-        try {// is completed
-            this.isCompleted = (Boolean)json_data.get("is completed");// year
-            this.year = ((Number)json_data.get("year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // is completed
+            this.isCompleted = (Boolean)json_data.get("is completed");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Completed; a field was missing.");
+    		System.err.println("Could not convert the response to a Completed; the field isCompleted was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Completed; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Completed; the field isCompleted had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // year
+            this.year = ((Number)json_data.get("year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Completed; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Completed; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

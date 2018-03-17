@@ -22,8 +22,9 @@ public class Parking {
     private Integer parkingIntergovernmental;
     
     
-    /*
-     * @return 
+    /**
+     * Total amount spent on construction, purchase, maintenance, and operation of public-use parking lots, garages, parking meters, and other distinctive parking facilities on a commercial basis.
+     * @return Integer
      */
     public Integer getParkingTotal() {
         return this.parkingTotal;
@@ -31,8 +32,9 @@ public class Parking {
     
     
     
-    /*
-     * @return 
+    /**
+     * Money paid to other governments for the construction, purchase, maintenance, and operation of public-use parking lots, garages, parking meters, and other distinctive parking facilities on a commercial basis.
+     * @return Integer
      */
     public Integer getParkingIntergovernmental() {
         return this.parkingIntergovernmental;
@@ -55,15 +57,29 @@ public class Parking {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Parking(JSONObject json_data) {
-        try {// Parking Total
-            this.parkingTotal = ((Number)json_data.get("Parking Total")).intValue();// Parking Intergovernmental
-            this.parkingIntergovernmental = ((Number)json_data.get("Parking Intergovernmental")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Parking Total
+            this.parkingTotal = ((Number)json_data.get("Parking Total")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Parking; a field was missing.");
+    		System.err.println("Could not convert the response to a Parking; the field parkingTotal was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Parking; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Parking; the field parkingTotal had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Parking Intergovernmental
+            this.parkingIntergovernmental = ((Number)json_data.get("Parking Intergovernmental")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Parking; the field parkingIntergovernmental was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Parking; the field parkingIntergovernmental had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

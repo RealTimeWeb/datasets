@@ -23,8 +23,9 @@ public class LowAccessPercents {
     private LowAccessOnly lowAccessOnly;
     
     
-    /*
-     * @return 
+    /**
+     * Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
+     * @return LowIncomeAndLowAccess
      */
     public LowIncomeAndLowAccess getLowIncomeAndLowAccess() {
         return this.lowIncomeAndLowAccess;
@@ -32,8 +33,9 @@ public class LowAccessPercents {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return LowAccessOnly
      */
     public LowAccessOnly getLowAccessOnly() {
         return this.lowAccessOnly;
@@ -56,15 +58,29 @@ public class LowAccessPercents {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public LowAccessPercents(JSONObject json_data) {
-        try {// Low Income and Low Access
-            this.lowIncomeAndLowAccess = new LowIncomeAndLowAccess((JSONObject)json_data.get("Low Income and Low Access"));// Low Access Only
-            this.lowAccessOnly = new LowAccessOnly((JSONObject)json_data.get("Low Access Only"));
+        //System.out.println(json_data);
+        
+        try {
+            // Low Income and Low Access
+            this.lowIncomeAndLowAccess = new LowIncomeAndLowAccess((JSONObject)json_data.get("Low Income and Low Access"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a LowAccessPercents; a field was missing.");
+    		System.err.println("Could not convert the response to a LowAccessPercents; the field lowIncomeAndLowAccess was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a LowAccessPercents; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a LowAccessPercents; the field lowIncomeAndLowAccess had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Low Access Only
+            this.lowAccessOnly = new LowAccessOnly((JSONObject)json_data.get("Low Access Only"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowAccessPercents; the field lowAccessOnly was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowAccessPercents; the field lowAccessOnly had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

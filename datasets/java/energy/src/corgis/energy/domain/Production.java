@@ -20,8 +20,9 @@ public class Production {
     private Double coal;
     
     
-    /*
-     * @return 
+    /**
+     * Coal production in billion BTU. Unfortunately, the other energy sources produced by the United States (including Natural Gas and Petroleum) could not be incorporated.
+     * @return Double
      */
     public Double getCoal() {
         return this.coal;
@@ -44,14 +45,18 @@ public class Production {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Production(JSONObject json_data) {
-        try {// Coal
+        //System.out.println(json_data);
+        
+        try {
+            // Coal
             this.coal = ((Number)json_data.get("Coal")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Production; a field was missing.");
+    		System.err.println("Could not convert the response to a Production; the field coal was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Production; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Production; the field coal had the wrong structure.");
     		e.printStackTrace();
         }
+        
 	}	
 }

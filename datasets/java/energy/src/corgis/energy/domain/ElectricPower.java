@@ -16,48 +16,40 @@ import org.json.simple.JSONObject;
  */
 public class ElectricPower {
 	
-    // Coal consumed by the electric power sector in billion BTU.
-    private Double coal;
-    // Distillate fuel oil consumed by the electrical power sector in billion BTU.
-    private Double distillateFuelOil;
-    // Wood and waste consumed by the electric power sector in billion BTU.
-    private Double wood;
-    // Natural gas consumed by the electric power sector (including supplemental gaseous fuels) in billion BTU.
-    private Double naturalGas;
+    // Natural gas expenditures in the electric power sector (including supplemental gaseous fuels) in million dollars.
+    private Integer naturalGas;
+    // Distillate fuel oil expenditures in the electric power sector in million dollars.
+    private Integer distillateFuelOil;
+    // Coal expenditures in the electric power sector in million dollars.
+    private Integer coal;
     
     
-    /*
-     * @return 
+    /**
+     * Natural gas expenditures in the electric power sector (including supplemental gaseous fuels) in million dollars.
+     * @return Integer
      */
-    public Double getCoal() {
-        return this.coal;
+    public Integer getNaturalGas() {
+        return this.naturalGas;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Distillate fuel oil expenditures in the electric power sector in million dollars.
+     * @return Integer
      */
-    public Double getDistillateFuelOil() {
+    public Integer getDistillateFuelOil() {
         return this.distillateFuelOil;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Coal expenditures in the electric power sector in million dollars.
+     * @return Integer
      */
-    public Double getWood() {
-        return this.wood;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getNaturalGas() {
-        return this.naturalGas;
+    public Integer getCoal() {
+        return this.coal;
     }
     
     
@@ -69,7 +61,7 @@ public class ElectricPower {
 	 * @return String
 	 */
 	public String toString() {
-		return "ElectricPower[" +coal+", "+distillateFuelOil+", "+wood+", "+naturalGas+"]";
+		return "ElectricPower[" +naturalGas+", "+distillateFuelOil+", "+coal+"]";
 	}
 	
 	/**
@@ -77,17 +69,40 @@ public class ElectricPower {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public ElectricPower(JSONObject json_data) {
-        try {// Coal
-            this.coal = ((Number)json_data.get("Coal")).doubleValue();// Distillate Fuel Oil
-            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).doubleValue();// Wood
-            this.wood = ((Number)json_data.get("Wood")).doubleValue();// Natural Gas
-            this.naturalGas = ((Number)json_data.get("Natural Gas")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Natural Gas
+            this.naturalGas = ((Number)json_data.get("Natural Gas")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a ElectricPower; a field was missing.");
+    		System.err.println("Could not convert the response to a ElectricPower; the field naturalGas was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a ElectricPower; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a ElectricPower; the field naturalGas had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Distillate Fuel Oil
+            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a ElectricPower; the field distillateFuelOil was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a ElectricPower; the field distillateFuelOil had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Coal
+            this.coal = ((Number)json_data.get("Coal")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a ElectricPower; the field coal was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a ElectricPower; the field coal had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

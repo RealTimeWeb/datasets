@@ -16,36 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Refinery {
 	
-    // Coal consumed as refinery fuel in billion BTU.
-    private Integer coal;
-    // Distillate fuel oil consumed as refinery fuel in billion BTU.
-    private Integer distillateFuelOil;
     // Natural gas consumed as refinery fuel (including supplemental gaseous fuels) in billion BTU.
     private Integer naturalGas;
+    // Distillate fuel oil consumed as refinery fuel in billion BTU.
+    private Integer distillateFuelOil;
     // LPG consumed as refinery fuel in billion BTU.
     private Integer liquefiedPetroleumGases;
+    // Coal consumed as refinery fuel in billion BTU.
+    private Integer coal;
     
     
-    /*
-     * @return 
-     */
-    public Integer getCoal() {
-        return this.coal;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getDistillateFuelOil() {
-        return this.distillateFuelOil;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Natural gas consumed as refinery fuel (including supplemental gaseous fuels) in billion BTU.
+     * @return Integer
      */
     public Integer getNaturalGas() {
         return this.naturalGas;
@@ -53,11 +36,32 @@ public class Refinery {
     
     
     
-    /*
-     * @return 
+    /**
+     * Distillate fuel oil consumed as refinery fuel in billion BTU.
+     * @return Integer
+     */
+    public Integer getDistillateFuelOil() {
+        return this.distillateFuelOil;
+    }
+    
+    
+    
+    /**
+     * LPG consumed as refinery fuel in billion BTU.
+     * @return Integer
      */
     public Integer getLiquefiedPetroleumGases() {
         return this.liquefiedPetroleumGases;
+    }
+    
+    
+    
+    /**
+     * Coal consumed as refinery fuel in billion BTU.
+     * @return Integer
+     */
+    public Integer getCoal() {
+        return this.coal;
     }
     
     
@@ -69,7 +73,7 @@ public class Refinery {
 	 * @return String
 	 */
 	public String toString() {
-		return "Refinery[" +coal+", "+distillateFuelOil+", "+naturalGas+", "+liquefiedPetroleumGases+"]";
+		return "Refinery[" +naturalGas+", "+distillateFuelOil+", "+liquefiedPetroleumGases+", "+coal+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Refinery {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Refinery(JSONObject json_data) {
-        try {// Coal
-            this.coal = ((Number)json_data.get("Coal")).intValue();// Distillate Fuel Oil
-            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).intValue();// Natural Gas
-            this.naturalGas = ((Number)json_data.get("Natural Gas")).intValue();// Liquefied Petroleum Gases
-            this.liquefiedPetroleumGases = ((Number)json_data.get("Liquefied Petroleum Gases")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Natural Gas
+            this.naturalGas = ((Number)json_data.get("Natural Gas")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Refinery; a field was missing.");
+    		System.err.println("Could not convert the response to a Refinery; the field naturalGas was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Refinery; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Refinery; the field naturalGas had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Distillate Fuel Oil
+            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Refinery; the field distillateFuelOil was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Refinery; the field distillateFuelOil had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Liquefied Petroleum Gases
+            this.liquefiedPetroleumGases = ((Number)json_data.get("Liquefied Petroleum Gases")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Refinery; the field liquefiedPetroleumGases was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Refinery; the field liquefiedPetroleumGases had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Coal
+            this.coal = ((Number)json_data.get("Coal")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Refinery; the field coal was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Refinery; the field coal had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

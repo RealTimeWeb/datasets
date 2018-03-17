@@ -22,8 +22,9 @@ public class State {
     private String name;
     
     
-    /*
-     * @return 
+    /**
+     * The two-letter abbreviation of the state for thsi report.
+     * @return String
      */
     public String getCode() {
         return this.code;
@@ -31,8 +32,9 @@ public class State {
     
     
     
-    /*
-     * @return 
+    /**
+     * The full name of the state for this report.
+     * @return String
      */
     public String getName() {
         return this.name;
@@ -55,15 +57,29 @@ public class State {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public State(JSONObject json_data) {
-        try {// Code
-            this.code = (String)json_data.get("Code");// Name
-            this.name = (String)json_data.get("Name");
+        //System.out.println(json_data);
+        
+        try {
+            // Code
+            this.code = (String)json_data.get("Code");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a State; a field was missing.");
+    		System.err.println("Could not convert the response to a State; the field code was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a State; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a State; the field code had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Name
+            this.name = (String)json_data.get("Name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a State; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a State; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

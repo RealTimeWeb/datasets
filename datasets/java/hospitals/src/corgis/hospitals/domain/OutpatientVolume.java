@@ -16,44 +16,18 @@ import org.json.simple.JSONObject;
  */
 public class OutpatientVolume {
 	
+    private Integer musculoskeletal;
+    private Integer cardiovascular;
+    private Integer skin;
     private Integer genitourinary;
     private Integer eye;
     private Integer nervousSystem;
-    private Integer musculoskeletal;
-    private Integer skin;
     private Integer gastrointestinal;
-    private Integer cardiovascular;
     
     
-    /*
-     * @return 
-     */
-    public Integer getGenitourinary() {
-        return this.genitourinary;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getEye() {
-        return this.eye;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getNervousSystem() {
-        return this.nervousSystem;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getMusculoskeletal() {
         return this.musculoskeletal;
@@ -61,8 +35,19 @@ public class OutpatientVolume {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getCardiovascular() {
+        return this.cardiovascular;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
      */
     public Integer getSkin() {
         return this.skin;
@@ -70,20 +55,42 @@ public class OutpatientVolume {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Integer getGastrointestinal() {
-        return this.gastrointestinal;
+    public Integer getGenitourinary() {
+        return this.genitourinary;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Integer getCardiovascular() {
-        return this.cardiovascular;
+    public Integer getEye() {
+        return this.eye;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getNervousSystem() {
+        return this.nervousSystem;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getGastrointestinal() {
+        return this.gastrointestinal;
     }
     
     
@@ -95,7 +102,7 @@ public class OutpatientVolume {
 	 * @return String
 	 */
 	public String toString() {
-		return "OutpatientVolume[" +genitourinary+", "+eye+", "+nervousSystem+", "+musculoskeletal+", "+skin+", "+gastrointestinal+", "+cardiovascular+"]";
+		return "OutpatientVolume[" +musculoskeletal+", "+cardiovascular+", "+skin+", "+genitourinary+", "+eye+", "+nervousSystem+", "+gastrointestinal+"]";
 	}
 	
 	/**
@@ -103,20 +110,84 @@ public class OutpatientVolume {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public OutpatientVolume(JSONObject json_data) {
-        try {// Genitourinary
-            this.genitourinary = ((Number)json_data.get("Genitourinary")).intValue();// Eye
-            this.eye = ((Number)json_data.get("Eye")).intValue();// Nervous System
-            this.nervousSystem = ((Number)json_data.get("Nervous System")).intValue();// Musculoskeletal
-            this.musculoskeletal = ((Number)json_data.get("Musculoskeletal")).intValue();// Skin
-            this.skin = ((Number)json_data.get("Skin")).intValue();// Gastrointestinal
-            this.gastrointestinal = ((Number)json_data.get("Gastrointestinal")).intValue();// Cardiovascular
-            this.cardiovascular = ((Number)json_data.get("Cardiovascular")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Musculoskeletal
+            this.musculoskeletal = ((Number)json_data.get("Musculoskeletal")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a OutpatientVolume; a field was missing.");
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field musculoskeletal was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a OutpatientVolume; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field musculoskeletal had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Cardiovascular
+            this.cardiovascular = ((Number)json_data.get("Cardiovascular")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field cardiovascular was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field cardiovascular had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Skin
+            this.skin = ((Number)json_data.get("Skin")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field skin was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field skin had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Genitourinary
+            this.genitourinary = ((Number)json_data.get("Genitourinary")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field genitourinary was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field genitourinary had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Eye
+            this.eye = ((Number)json_data.get("Eye")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field eye was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field eye had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Nervous System
+            this.nervousSystem = ((Number)json_data.get("Nervous System")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field nervousSystem was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field nervousSystem had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Gastrointestinal
+            this.gastrointestinal = ((Number)json_data.get("Gastrointestinal")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field gastrointestinal was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a OutpatientVolume; the field gastrointestinal had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

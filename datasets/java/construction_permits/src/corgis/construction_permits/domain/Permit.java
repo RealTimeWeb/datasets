@@ -10,8 +10,8 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.construction_permits.domain.NumberOfPermits;
 import corgis.construction_permits.domain.Period;
+import corgis.construction_permits.domain.NumberOfPermits;
 import corgis.construction_permits.domain.Valuations;
 
 /**
@@ -19,24 +19,16 @@ import corgis.construction_permits.domain.Valuations;
  */
 public class Permit {
 	
-    private NumberOfPermits numberOfPermits;
     private Period period;
+    private NumberOfPermits numberOfPermits;
+    private String name;
     // In 1000's of units
     private Valuations valuations;
-    private String name;
     
     
-    /*
-     * @return 
-     */
-    public NumberOfPermits getNumberOfPermits() {
-        return this.numberOfPermits;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Period
      */
     public Period getPeriod() {
         return this.period;
@@ -44,20 +36,32 @@ public class Permit {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return NumberOfPermits
      */
-    public Valuations getValuations() {
-        return this.valuations;
+    public NumberOfPermits getNumberOfPermits() {
+        return this.numberOfPermits;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getName() {
         return this.name;
+    }
+    
+    
+    
+    /**
+     * In 1000's of units
+     * @return Valuations
+     */
+    public Valuations getValuations() {
+        return this.valuations;
     }
     
     
@@ -69,7 +73,7 @@ public class Permit {
 	 * @return String
 	 */
 	public String toString() {
-		return "Permit[" +numberOfPermits+", "+period+", "+valuations+", "+name+"]";
+		return "Permit[" +period+", "+numberOfPermits+", "+name+", "+valuations+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Permit {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Permit(JSONObject json_data) {
-        try {// Number of Permits
-            this.numberOfPermits = new NumberOfPermits((JSONObject)json_data.get("Number of Permits"));// Period
-            this.period = new Period((JSONObject)json_data.get("Period"));// Valuations
-            this.valuations = new Valuations((JSONObject)json_data.get("Valuations"));// Name
-            this.name = (String)json_data.get("Name");
+        //System.out.println(json_data);
+        
+        try {
+            // Period
+            this.period = new Period((JSONObject)json_data.get("Period"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Permit; a field was missing.");
+    		System.err.println("Could not convert the response to a Permit; the field period was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Permit; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Permit; the field period had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Number of Permits
+            this.numberOfPermits = new NumberOfPermits((JSONObject)json_data.get("Number of Permits"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Permit; the field numberOfPermits was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Permit; the field numberOfPermits had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Name
+            this.name = (String)json_data.get("Name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Permit; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Permit; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Valuations
+            this.valuations = new Valuations((JSONObject)json_data.get("Valuations"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Permit; the field valuations was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Permit; the field valuations had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

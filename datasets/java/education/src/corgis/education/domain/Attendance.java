@@ -21,8 +21,9 @@ public class Attendance {
     private Double averageMinutes;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getAverageStudentRate() {
         return this.averageStudentRate;
@@ -30,8 +31,9 @@ public class Attendance {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getAverageTeacherRate() {
         return this.averageTeacherRate;
@@ -39,8 +41,9 @@ public class Attendance {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getAverageMinutes() {
         return this.averageMinutes;
@@ -63,16 +66,40 @@ public class Attendance {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Attendance(JSONObject json_data) {
-        try {// average student rate
-            this.averageStudentRate = ((Number)json_data.get("average student rate")).intValue();// average teacher rate
-            this.averageTeacherRate = ((Number)json_data.get("average teacher rate")).doubleValue();// average minutes
-            this.averageMinutes = ((Number)json_data.get("average minutes")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // average student rate
+            this.averageStudentRate = ((Number)json_data.get("average student rate")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Attendance; a field was missing.");
+    		System.err.println("Could not convert the response to a Attendance; the field averageStudentRate was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Attendance; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Attendance; the field averageStudentRate had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // average teacher rate
+            this.averageTeacherRate = ((Number)json_data.get("average teacher rate")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Attendance; the field averageTeacherRate was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Attendance; the field averageTeacherRate had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // average minutes
+            this.averageMinutes = ((Number)json_data.get("average minutes")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Attendance; the field averageMinutes was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Attendance; the field averageMinutes had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

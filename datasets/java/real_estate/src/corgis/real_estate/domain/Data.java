@@ -10,52 +10,26 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.real_estate.domain.Disabilities;
 import corgis.real_estate.domain.History;
+import corgis.real_estate.domain.Disabilities;
 
 /**
  * 
  */
 public class Data {
 	
-    private String status;
-    private Disabilities disabilities;
-    private Integer parkingSpaces;
     private String ownedOrLeased;
     private String date;
-    private String type;
     private History history;
+    private Integer parkingSpaces;
+    private String type;
+    private String status;
+    private Disabilities disabilities;
     
     
-    /*
-     * @return 
-     */
-    public String getStatus() {
-        return this.status;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Disabilities getDisabilities() {
-        return this.disabilities;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getParkingSpaces() {
-        return this.parkingSpaces;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getOwnedOrLeased() {
         return this.ownedOrLeased;
@@ -63,8 +37,9 @@ public class Data {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getDate() {
         return this.date;
@@ -72,8 +47,29 @@ public class Data {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return History
+     */
+    public History getHistory() {
+        return this.history;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getParkingSpaces() {
+        return this.parkingSpaces;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
      */
     public String getType() {
         return this.type;
@@ -81,11 +77,22 @@ public class Data {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public History getHistory() {
-        return this.history;
+    public String getStatus() {
+        return this.status;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Disabilities
+     */
+    public Disabilities getDisabilities() {
+        return this.disabilities;
     }
     
     
@@ -97,7 +104,7 @@ public class Data {
 	 * @return String
 	 */
 	public String toString() {
-		return "Data[" +status+", "+disabilities+", "+parkingSpaces+", "+ownedOrLeased+", "+date+", "+type+", "+history+"]";
+		return "Data[" +ownedOrLeased+", "+date+", "+history+", "+parkingSpaces+", "+type+", "+status+", "+disabilities+"]";
 	}
 	
 	/**
@@ -105,20 +112,84 @@ public class Data {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Data(JSONObject json_data) {
-        try {// status
-            this.status = (String)json_data.get("status");// disabilities
-            this.disabilities = new Disabilities((JSONObject)json_data.get("disabilities"));// parking spaces
-            this.parkingSpaces = ((Number)json_data.get("parking spaces")).intValue();// owned or leased
-            this.ownedOrLeased = (String)json_data.get("owned or leased");// date
-            this.date = (String)json_data.get("date");// type
-            this.type = (String)json_data.get("type");// history
-            this.history = new History((JSONObject)json_data.get("history"));
+        //System.out.println(json_data);
+        
+        try {
+            // owned or leased
+            this.ownedOrLeased = (String)json_data.get("owned or leased");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Data; a field was missing.");
+    		System.err.println("Could not convert the response to a Data; the field ownedOrLeased was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Data; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Data; the field ownedOrLeased had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // date
+            this.date = (String)json_data.get("date");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field date was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field date had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // history
+            this.history = new History((JSONObject)json_data.get("history"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field history was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field history had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // parking spaces
+            this.parkingSpaces = ((Number)json_data.get("parking spaces")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field parkingSpaces was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field parkingSpaces had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // type
+            this.type = (String)json_data.get("type");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field type was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field type had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // status
+            this.status = (String)json_data.get("status");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field status was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field status had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // disabilities
+            this.disabilities = new Disabilities((JSONObject)json_data.get("disabilities"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field disabilities was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field disabilities had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

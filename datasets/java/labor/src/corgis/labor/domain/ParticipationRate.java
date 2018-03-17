@@ -16,22 +16,24 @@ import org.json.simple.JSONObject;
  */
 public class ParticipationRate {
 	
-    private Double all;
-    private Double men;
     private Double women;
+    private Double men;
+    private Double all;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getAll() {
-        return this.all;
+    public Double getWomen() {
+        return this.women;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getMen() {
         return this.men;
@@ -39,11 +41,12 @@ public class ParticipationRate {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getWomen() {
-        return this.women;
+    public Double getAll() {
+        return this.all;
     }
     
     
@@ -55,7 +58,7 @@ public class ParticipationRate {
 	 * @return String
 	 */
 	public String toString() {
-		return "ParticipationRate[" +all+", "+men+", "+women+"]";
+		return "ParticipationRate[" +women+", "+men+", "+all+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class ParticipationRate {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public ParticipationRate(JSONObject json_data) {
-        try {// All
-            this.all = ((Number)json_data.get("All")).doubleValue();// Men
-            this.men = ((Number)json_data.get("Men")).doubleValue();// Women
+        //System.out.println(json_data);
+        
+        try {
+            // Women
             this.women = ((Number)json_data.get("Women")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a ParticipationRate; a field was missing.");
+    		System.err.println("Could not convert the response to a ParticipationRate; the field women was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a ParticipationRate; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a ParticipationRate; the field women had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Men
+            this.men = ((Number)json_data.get("Men")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a ParticipationRate; the field men was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a ParticipationRate; the field men had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // All
+            this.all = ((Number)json_data.get("All")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a ParticipationRate; the field all was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a ParticipationRate; the field all had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

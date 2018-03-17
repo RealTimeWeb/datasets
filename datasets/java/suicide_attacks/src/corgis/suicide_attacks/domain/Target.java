@@ -18,14 +18,15 @@ public class Target {
 	
     private Boolean assassination;
     private String name;
-    private String country;
-    private String weapon;
     private String location;
+    private String weapon;
+    private String country;
     private String type;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Boolean
      */
     public Boolean getAssassination() {
         return this.assassination;
@@ -33,8 +34,9 @@ public class Target {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getName() {
         return this.name;
@@ -42,26 +44,9 @@ public class Target {
     
     
     
-    /*
-     * @return 
-     */
-    public String getCountry() {
-        return this.country;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getWeapon() {
-        return this.weapon;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getLocation() {
         return this.location;
@@ -69,8 +54,29 @@ public class Target {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
+     */
+    public String getWeapon() {
+        return this.weapon;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getCountry() {
+        return this.country;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
      */
     public String getType() {
         return this.type;
@@ -85,7 +91,7 @@ public class Target {
 	 * @return String
 	 */
 	public String toString() {
-		return "Target[" +assassination+", "+name+", "+country+", "+weapon+", "+location+", "+type+"]";
+		return "Target[" +assassination+", "+name+", "+location+", "+weapon+", "+country+", "+type+"]";
 	}
 	
 	/**
@@ -93,19 +99,73 @@ public class Target {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Target(JSONObject json_data) {
-        try {// assassination?
-            this.assassination = (Boolean)json_data.get("assassination?");// name
-            this.name = (String)json_data.get("name");// country
-            this.country = (String)json_data.get("country");// weapon
-            this.weapon = (String)json_data.get("weapon");// location
-            this.location = (String)json_data.get("location");// type
-            this.type = (String)json_data.get("type");
+        //System.out.println(json_data);
+        
+        try {
+            // assassination?
+            this.assassination = (Boolean)json_data.get("assassination?");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Target; a field was missing.");
+    		System.err.println("Could not convert the response to a Target; the field assassination was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Target; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Target; the field assassination had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // name
+            this.name = (String)json_data.get("name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Target; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Target; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // location
+            this.location = (String)json_data.get("location");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Target; the field location was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Target; the field location had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // weapon
+            this.weapon = (String)json_data.get("weapon");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Target; the field weapon was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Target; the field weapon had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // country
+            this.country = (String)json_data.get("country");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Target; the field country was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Target; the field country had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // type
+            this.type = (String)json_data.get("type");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Target; the field type was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Target; the field type had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

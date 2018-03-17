@@ -17,14 +17,15 @@ import org.json.simple.JSONObject;
 public class Information {
 	
     private String type;
+    private String ownership;
+    private String name;
     private String phoneNumber;
     private String emergencyServices;
-    private String name;
-    private String ownership;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getType() {
         return this.type;
@@ -32,26 +33,19 @@ public class Information {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public String getPhoneNumber() {
-        return this.phoneNumber;
+    public String getOwnership() {
+        return this.ownership;
     }
     
     
     
-    /*
-     * @return 
-     */
-    public String getEmergencyServices() {
-        return this.emergencyServices;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getName() {
         return this.name;
@@ -59,11 +53,22 @@ public class Information {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public String getOwnership() {
-        return this.ownership;
+    public String getPhoneNumber() {
+        return this.phoneNumber;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getEmergencyServices() {
+        return this.emergencyServices;
     }
     
     
@@ -75,7 +80,7 @@ public class Information {
 	 * @return String
 	 */
 	public String toString() {
-		return "Information[" +type+", "+phoneNumber+", "+emergencyServices+", "+name+", "+ownership+"]";
+		return "Information[" +type+", "+ownership+", "+name+", "+phoneNumber+", "+emergencyServices+"]";
 	}
 	
 	/**
@@ -83,18 +88,62 @@ public class Information {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Information(JSONObject json_data) {
-        try {// Type
-            this.type = (String)json_data.get("Type");// Phone Number
-            this.phoneNumber = (String)json_data.get("Phone Number");// Emergency Services
-            this.emergencyServices = (String)json_data.get("Emergency Services");// Name
-            this.name = (String)json_data.get("Name");// Ownership
-            this.ownership = (String)json_data.get("Ownership");
+        //System.out.println(json_data);
+        
+        try {
+            // Type
+            this.type = (String)json_data.get("Type");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Information; a field was missing.");
+    		System.err.println("Could not convert the response to a Information; the field type was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Information; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Information; the field type had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Ownership
+            this.ownership = (String)json_data.get("Ownership");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Information; the field ownership was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Information; the field ownership had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Name
+            this.name = (String)json_data.get("Name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Information; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Information; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Phone Number
+            this.phoneNumber = (String)json_data.get("Phone Number");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Information; the field phoneNumber was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Information; the field phoneNumber had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Emergency Services
+            this.emergencyServices = (String)json_data.get("Emergency Services");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Information; the field emergencyServices was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Information; the field emergencyServices had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

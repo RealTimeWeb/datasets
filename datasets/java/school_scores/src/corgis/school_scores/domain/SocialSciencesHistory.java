@@ -16,26 +16,28 @@ import org.json.simple.JSONObject;
  */
 public class SocialSciencesHistory {
 	
-    // The average GPA of all students in this state during this year in Social Sciences and History. Note that this is just the GPA within the subject, not across all academic subjects.
-    private Double averageGpa;
     // The average number of years that a student has studied Social Sciences and History when they took the exam.
     private Double averageYears;
+    // The average GPA of all students in this state during this year in Social Sciences and History. Note that this is just the GPA within the subject, not across all academic subjects.
+    private Double averageGpa;
     
     
-    /*
-     * @return 
+    /**
+     * The average number of years that a student has studied Social Sciences and History when they took the exam.
+     * @return Double
      */
-    public Double getAverageGpa() {
-        return this.averageGpa;
+    public Double getAverageYears() {
+        return this.averageYears;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The average GPA of all students in this state during this year in Social Sciences and History. Note that this is just the GPA within the subject, not across all academic subjects.
+     * @return Double
      */
-    public Double getAverageYears() {
-        return this.averageYears;
+    public Double getAverageGpa() {
+        return this.averageGpa;
     }
     
     
@@ -47,7 +49,7 @@ public class SocialSciencesHistory {
 	 * @return String
 	 */
 	public String toString() {
-		return "SocialSciences/History[" +averageGpa+", "+averageYears+"]";
+		return "SocialSciences/History[" +averageYears+", "+averageGpa+"]";
 	}
 	
 	/**
@@ -55,15 +57,29 @@ public class SocialSciencesHistory {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public SocialSciencesHistory(JSONObject json_data) {
-        try {// Average GPA
-            this.averageGpa = ((Number)json_data.get("Average GPA")).doubleValue();// Average Years
+        //System.out.println(json_data);
+        
+        try {
+            // Average Years
             this.averageYears = ((Number)json_data.get("Average Years")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a SocialSciences/History; a field was missing.");
+    		System.err.println("Could not convert the response to a SocialSciences/History; the field averageYears was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a SocialSciences/History; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a SocialSciences/History; the field averageYears had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Average GPA
+            this.averageGpa = ((Number)json_data.get("Average GPA")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a SocialSciences/History; the field averageGpa was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a SocialSciences/History; the field averageGpa had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

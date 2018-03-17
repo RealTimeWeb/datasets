@@ -20,18 +20,19 @@ public class Salaries {
     private Double lowest;
     // The average (mean) recorded salary reported for employed people with this degree during this year.
     private Double mean;
+    // The highest recorded salary reported for employed people with this degree during this year.
+    private Double highest;
     // The median recorded salary reported for employed people with this degree during this year.
     private Double median;
     // The standard deviation (which gives the amount of variance) of salaries reported for employed people with this degree during this year.
     private Double standardDeviation;
-    // The highest recorded salary reported for employed people with this degree during this year.
-    private Double highest;
     // The number of salaries reported for employed people with this degree during this year.
     private Integer quantity;
     
     
-    /*
-     * @return 
+    /**
+     * The lowest recorded salary reported for employed people with this degree during this year.
+     * @return Double
      */
     public Double getLowest() {
         return this.lowest;
@@ -39,8 +40,9 @@ public class Salaries {
     
     
     
-    /*
-     * @return 
+    /**
+     * The average (mean) recorded salary reported for employed people with this degree during this year.
+     * @return Double
      */
     public Double getMean() {
         return this.mean;
@@ -48,26 +50,9 @@ public class Salaries {
     
     
     
-    /*
-     * @return 
-     */
-    public Double getMedian() {
-        return this.median;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getStandardDeviation() {
-        return this.standardDeviation;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The highest recorded salary reported for employed people with this degree during this year.
+     * @return Double
      */
     public Double getHighest() {
         return this.highest;
@@ -75,8 +60,29 @@ public class Salaries {
     
     
     
-    /*
-     * @return 
+    /**
+     * The median recorded salary reported for employed people with this degree during this year.
+     * @return Double
+     */
+    public Double getMedian() {
+        return this.median;
+    }
+    
+    
+    
+    /**
+     * The standard deviation (which gives the amount of variance) of salaries reported for employed people with this degree during this year.
+     * @return Double
+     */
+    public Double getStandardDeviation() {
+        return this.standardDeviation;
+    }
+    
+    
+    
+    /**
+     * The number of salaries reported for employed people with this degree during this year.
+     * @return Integer
      */
     public Integer getQuantity() {
         return this.quantity;
@@ -91,7 +97,7 @@ public class Salaries {
 	 * @return String
 	 */
 	public String toString() {
-		return "Salaries[" +lowest+", "+mean+", "+median+", "+standardDeviation+", "+highest+", "+quantity+"]";
+		return "Salaries[" +lowest+", "+mean+", "+highest+", "+median+", "+standardDeviation+", "+quantity+"]";
 	}
 	
 	/**
@@ -99,19 +105,73 @@ public class Salaries {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Salaries(JSONObject json_data) {
-        try {// Lowest
-            this.lowest = ((Number)json_data.get("Lowest")).doubleValue();// Mean
-            this.mean = ((Number)json_data.get("Mean")).doubleValue();// Median
-            this.median = ((Number)json_data.get("Median")).doubleValue();// Standard Deviation
-            this.standardDeviation = ((Number)json_data.get("Standard Deviation")).doubleValue();// Highest
-            this.highest = ((Number)json_data.get("Highest")).doubleValue();// Quantity
-            this.quantity = ((Number)json_data.get("Quantity")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Lowest
+            this.lowest = ((Number)json_data.get("Lowest")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Salaries; a field was missing.");
+    		System.err.println("Could not convert the response to a Salaries; the field lowest was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Salaries; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Salaries; the field lowest had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Mean
+            this.mean = ((Number)json_data.get("Mean")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field mean was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field mean had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Highest
+            this.highest = ((Number)json_data.get("Highest")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field highest was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field highest had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Median
+            this.median = ((Number)json_data.get("Median")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field median was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field median had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Standard Deviation
+            this.standardDeviation = ((Number)json_data.get("Standard Deviation")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field standardDeviation was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field standardDeviation had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Quantity
+            this.quantity = ((Number)json_data.get("Quantity")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field quantity was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Salaries; the field quantity had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

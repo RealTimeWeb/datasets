@@ -22,8 +22,9 @@ public class Forestry {
     private Integer forestryTotalExpenditure;
     
     
-    /*
-     * @return 
+    /**
+     * Money paid to other governments for the support of forestry.
+     * @return Integer
      */
     public Integer getForestryIntergovernmental() {
         return this.forestryIntergovernmental;
@@ -31,8 +32,9 @@ public class Forestry {
     
     
     
-    /*
-     * @return 
+    /**
+     * Total amount spent on the support of foresty.
+     * @return Integer
      */
     public Integer getForestryTotalExpenditure() {
         return this.forestryTotalExpenditure;
@@ -55,15 +57,29 @@ public class Forestry {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Forestry(JSONObject json_data) {
-        try {// Forestry Intergovernmental
-            this.forestryIntergovernmental = ((Number)json_data.get("Forestry Intergovernmental")).intValue();// Forestry Total Expenditure
-            this.forestryTotalExpenditure = ((Number)json_data.get("Forestry Total Expenditure")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Forestry Intergovernmental
+            this.forestryIntergovernmental = ((Number)json_data.get("Forestry Intergovernmental")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Forestry; a field was missing.");
+    		System.err.println("Could not convert the response to a Forestry; the field forestryIntergovernmental was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Forestry; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Forestry; the field forestryIntergovernmental had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Forestry Total Expenditure
+            this.forestryTotalExpenditure = ((Number)json_data.get("Forestry Total Expenditure")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Forestry; the field forestryTotalExpenditure was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Forestry; the field forestryTotalExpenditure had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

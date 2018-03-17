@@ -16,13 +16,24 @@ import org.json.simple.JSONObject;
  */
 public class AdminAction {
 	
+    private Integer id;
     private String state;
     private String agency;
-    private Integer id;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getId() {
+        return this.id;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
      */
     public String getState() {
         return this.state;
@@ -30,20 +41,12 @@ public class AdminAction {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getAgency() {
         return this.agency;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getId() {
-        return this.id;
     }
     
     
@@ -55,7 +58,7 @@ public class AdminAction {
 	 * @return String
 	 */
 	public String toString() {
-		return "AdminAction[" +state+", "+agency+", "+id+"]";
+		return "AdminAction[" +id+", "+state+", "+agency+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class AdminAction {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public AdminAction(JSONObject json_data) {
-        try {// state
-            this.state = (String)json_data.get("state");// agency
-            this.agency = (String)json_data.get("agency");// id
+        //System.out.println(json_data);
+        
+        try {
+            // id
             this.id = ((Number)json_data.get("id")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a AdminAction; a field was missing.");
+    		System.err.println("Could not convert the response to a AdminAction; the field id was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a AdminAction; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a AdminAction; the field id had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // state
+            this.state = (String)json_data.get("state");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a AdminAction; the field state was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a AdminAction; the field state had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // agency
+            this.agency = (String)json_data.get("agency");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a AdminAction; the field agency was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a AdminAction; the field agency had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

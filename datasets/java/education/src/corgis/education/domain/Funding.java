@@ -16,23 +16,25 @@ import org.json.simple.JSONObject;
  */
 public class Funding {
 	
-    private Long expenditures;
-    private Long revenue;
+    private Integer expenditures;
+    private Integer revenue;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Long getExpenditures() {
+    public Integer getExpenditures() {
         return this.expenditures;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Long getRevenue() {
+    public Integer getRevenue() {
         return this.revenue;
     }
     
@@ -53,15 +55,29 @@ public class Funding {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Funding(JSONObject json_data) {
-        try {// expenditures
-            this.expenditures = ((Number)json_data.get("expenditures")).longValue();// revenue
-            this.revenue = ((Number)json_data.get("revenue")).longValue();
+        //System.out.println(json_data);
+        
+        try {
+            // expenditures
+            this.expenditures = ((Number)json_data.get("expenditures")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Funding; a field was missing.");
+    		System.err.println("Could not convert the response to a Funding; the field expenditures was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Funding; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Funding; the field expenditures had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // revenue
+            this.revenue = ((Number)json_data.get("revenue")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Funding; the field revenue was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Funding; the field revenue had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

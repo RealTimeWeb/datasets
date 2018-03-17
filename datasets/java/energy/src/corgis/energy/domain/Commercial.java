@@ -16,114 +16,64 @@ import org.json.simple.JSONObject;
  */
 public class Commercial {
 	
-    // Natural gas consumed by (delivered to) the commercial sector (including supplemental gaseous fuels) in billion BTU.
-    private Double naturalGas;
-    // Kerosene consumed by the commercial sector in billion BTU.
-    private Double kerosene;
-    // Hydropower consumed by the commercial sector in billion BTU.
-    private Double hydropower;
-    // Coal consumed by the commercial sector in billion BTU.
-    private Double coal;
-    // Geothermal energy consumed by the commercial sector in billion BTU.
-    private Double geothermal;
-    // Wood consumed by the commercial sector in billion BTU.
-    private Double wood;
-    // Photovoltaic and solar thermal energy consumed by the commercial sector (except portion included in SOHCB) in billion BTU.
-    private Double solar;
-    // Distillate fuel oil consumed by the commercial sector in billion BTU.
-    private Double distillateFuelOil;
-    // Wind energy consumed by the commercial sector in billion BTU.
-    private Double wind;
-    // LPG consumed by the commercial sector in billion BTU.
-    private Double liquefiedPetroleumGases;
+    // Kerosene price in the commercial sector in dollars per million BTU.
+    private Integer kerosene;
+    // Natural gas price in the commercial sector (including supplemental gaseous fuels) in dollars per million BTU.
+    private Integer naturalGas;
+    // Distillate fuel oil price in the commercial sector in dollars per million BTU.
+    private Integer distillateFuelOil;
+    // LPG price in the commercial sector in dollars per million BTU.
+    private Integer liquefiedPetroleumGases;
+    // Coal price in the commercial sector in dollars per million BTU.
+    private Integer coal;
     
     
-    /*
-     * @return 
+    /**
+     * Kerosene price in the commercial sector in dollars per million BTU.
+     * @return Integer
      */
-    public Double getNaturalGas() {
-        return this.naturalGas;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getKerosene() {
+    public Integer getKerosene() {
         return this.kerosene;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Natural gas price in the commercial sector (including supplemental gaseous fuels) in dollars per million BTU.
+     * @return Integer
      */
-    public Double getHydropower() {
-        return this.hydropower;
+    public Integer getNaturalGas() {
+        return this.naturalGas;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Distillate fuel oil price in the commercial sector in dollars per million BTU.
+     * @return Integer
      */
-    public Double getCoal() {
-        return this.coal;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getGeothermal() {
-        return this.geothermal;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getWood() {
-        return this.wood;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getSolar() {
-        return this.solar;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getDistillateFuelOil() {
+    public Integer getDistillateFuelOil() {
         return this.distillateFuelOil;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * LPG price in the commercial sector in dollars per million BTU.
+     * @return Integer
      */
-    public Double getWind() {
-        return this.wind;
+    public Integer getLiquefiedPetroleumGases() {
+        return this.liquefiedPetroleumGases;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Coal price in the commercial sector in dollars per million BTU.
+     * @return Integer
      */
-    public Double getLiquefiedPetroleumGases() {
-        return this.liquefiedPetroleumGases;
+    public Integer getCoal() {
+        return this.coal;
     }
     
     
@@ -135,7 +85,7 @@ public class Commercial {
 	 * @return String
 	 */
 	public String toString() {
-		return "Commercial[" +naturalGas+", "+kerosene+", "+hydropower+", "+coal+", "+geothermal+", "+wood+", "+solar+", "+distillateFuelOil+", "+wind+", "+liquefiedPetroleumGases+"]";
+		return "Commercial[" +kerosene+", "+naturalGas+", "+distillateFuelOil+", "+liquefiedPetroleumGases+", "+coal+"]";
 	}
 	
 	/**
@@ -143,23 +93,62 @@ public class Commercial {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Commercial(JSONObject json_data) {
-        try {// Natural Gas
-            this.naturalGas = ((Number)json_data.get("Natural Gas")).doubleValue();// Kerosene
-            this.kerosene = ((Number)json_data.get("Kerosene")).doubleValue();// Hydropower
-            this.hydropower = ((Number)json_data.get("Hydropower")).doubleValue();// Coal
-            this.coal = ((Number)json_data.get("Coal")).doubleValue();// Geothermal
-            this.geothermal = ((Number)json_data.get("Geothermal")).doubleValue();// Wood
-            this.wood = ((Number)json_data.get("Wood")).doubleValue();// Solar
-            this.solar = ((Number)json_data.get("Solar")).doubleValue();// Distillate Fuel Oil
-            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).doubleValue();// Wind
-            this.wind = ((Number)json_data.get("Wind")).doubleValue();// Liquefied Petroleum Gases
-            this.liquefiedPetroleumGases = ((Number)json_data.get("Liquefied Petroleum Gases")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Kerosene
+            this.kerosene = ((Number)json_data.get("Kerosene")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Commercial; a field was missing.");
+    		System.err.println("Could not convert the response to a Commercial; the field kerosene was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Commercial; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Commercial; the field kerosene had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Natural Gas
+            this.naturalGas = ((Number)json_data.get("Natural Gas")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Commercial; the field naturalGas was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Commercial; the field naturalGas had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Distillate Fuel Oil
+            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Commercial; the field distillateFuelOil was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Commercial; the field distillateFuelOil had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Liquefied Petroleum Gases
+            this.liquefiedPetroleumGases = ((Number)json_data.get("Liquefied Petroleum Gases")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Commercial; the field liquefiedPetroleumGases was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Commercial; the field liquefiedPetroleumGases had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Coal
+            this.coal = ((Number)json_data.get("Coal")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Commercial; the field coal was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Commercial; the field coal had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

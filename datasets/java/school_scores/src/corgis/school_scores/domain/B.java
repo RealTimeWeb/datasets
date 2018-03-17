@@ -16,25 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class B {
 	
-    // The average Math score of students in this state during this year who reported this for their high school grade point average.
-    private Integer math;
     // The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
     private Integer verbal;
     // The number of test-takers in this state during this year who reported this for their high school grade point average.
     private Integer testTakers;
+    // The average Math score of students in this state during this year who reported this for their high school grade point average.
+    private Integer math;
     
     
-    /*
-     * @return 
-     */
-    public Integer getMath() {
-        return this.math;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
+     * @return Integer
      */
     public Integer getVerbal() {
         return this.verbal;
@@ -42,11 +34,22 @@ public class B {
     
     
     
-    /*
-     * @return 
+    /**
+     * The number of test-takers in this state during this year who reported this for their high school grade point average.
+     * @return Integer
      */
     public Integer getTestTakers() {
         return this.testTakers;
+    }
+    
+    
+    
+    /**
+     * The average Math score of students in this state during this year who reported this for their high school grade point average.
+     * @return Integer
+     */
+    public Integer getMath() {
+        return this.math;
     }
     
     
@@ -58,7 +61,7 @@ public class B {
 	 * @return String
 	 */
 	public String toString() {
-		return "B[" +math+", "+verbal+", "+testTakers+"]";
+		return "B[" +verbal+", "+testTakers+", "+math+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class B {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public B(JSONObject json_data) {
-        try {// Math
-            this.math = ((Number)json_data.get("Math")).intValue();// Verbal
-            this.verbal = ((Number)json_data.get("Verbal")).intValue();// Test-takers
-            this.testTakers = ((Number)json_data.get("Test-takers")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Verbal
+            this.verbal = ((Number)json_data.get("Verbal")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a B; a field was missing.");
+    		System.err.println("Could not convert the response to a B; the field verbal was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a B; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a B; the field verbal had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Test-takers
+            this.testTakers = ((Number)json_data.get("Test-takers")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a B; the field testTakers was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a B; the field testTakers had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Math
+            this.math = ((Number)json_data.get("Math")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a B; the field math was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a B; the field math had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

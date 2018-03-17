@@ -16,24 +16,26 @@ import org.json.simple.JSONObject;
  */
 public class Location {
 	
-    private Double latitude;
     private Double longitude;
+    private Double latitude;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getLatitude() {
-        return this.latitude;
+    public Double getLongitude() {
+        return this.longitude;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getLongitude() {
-        return this.longitude;
+    public Double getLatitude() {
+        return this.latitude;
     }
     
     
@@ -45,7 +47,7 @@ public class Location {
 	 * @return String
 	 */
 	public String toString() {
-		return "Location[" +latitude+", "+longitude+"]";
+		return "Location[" +longitude+", "+latitude+"]";
 	}
 	
 	/**
@@ -53,15 +55,29 @@ public class Location {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Location(JSONObject json_data) {
-        try {// latitude
-            this.latitude = ((Number)json_data.get("latitude")).doubleValue();// longitude
+        //System.out.println(json_data);
+        
+        try {
+            // longitude
             this.longitude = ((Number)json_data.get("longitude")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Location; a field was missing.");
+    		System.err.println("Could not convert the response to a Location; the field longitude was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Location; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Location; the field longitude had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // latitude
+            this.latitude = ((Number)json_data.get("latitude")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field latitude was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field latitude had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

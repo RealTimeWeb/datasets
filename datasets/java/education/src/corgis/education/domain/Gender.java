@@ -20,8 +20,9 @@ public class Gender {
     private Integer female;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getMale() {
         return this.male;
@@ -29,8 +30,9 @@ public class Gender {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getFemale() {
         return this.female;
@@ -53,15 +55,29 @@ public class Gender {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Gender(JSONObject json_data) {
-        try {// male
-            this.male = ((Number)json_data.get("male")).intValue();// female
-            this.female = ((Number)json_data.get("female")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // male
+            this.male = ((Number)json_data.get("male")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Gender; a field was missing.");
+    		System.err.println("Could not convert the response to a Gender; the field male was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Gender; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Gender; the field male had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // female
+            this.female = ((Number)json_data.get("female")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Gender; the field female was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Gender; the field female had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

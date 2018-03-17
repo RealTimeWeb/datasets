@@ -17,12 +17,13 @@ import org.json.simple.JSONObject;
 public class MajorityAssigner {
 	
     private String longName;
-    private Integer id;
     private String name;
+    private Integer id;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getLongName() {
         return this.longName;
@@ -30,20 +31,22 @@ public class MajorityAssigner {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Integer getId() {
-        return this.id;
+    public String getName() {
+        return this.name;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public String getName() {
-        return this.name;
+    public Integer getId() {
+        return this.id;
     }
     
     
@@ -55,7 +58,7 @@ public class MajorityAssigner {
 	 * @return String
 	 */
 	public String toString() {
-		return "MajorityAssigner[" +longName+", "+id+", "+name+"]";
+		return "MajorityAssigner[" +longName+", "+name+", "+id+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class MajorityAssigner {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public MajorityAssigner(JSONObject json_data) {
-        try {// long name
-            this.longName = (String)json_data.get("long name");// id
-            this.id = ((Number)json_data.get("id")).intValue();// name
-            this.name = (String)json_data.get("name");
+        //System.out.println(json_data);
+        
+        try {
+            // long name
+            this.longName = (String)json_data.get("long name");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a MajorityAssigner; a field was missing.");
+    		System.err.println("Could not convert the response to a MajorityAssigner; the field longName was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a MajorityAssigner; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a MajorityAssigner; the field longName had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // name
+            this.name = (String)json_data.get("name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a MajorityAssigner; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a MajorityAssigner; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // id
+            this.id = ((Number)json_data.get("id")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a MajorityAssigner; the field id was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a MajorityAssigner; the field id had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

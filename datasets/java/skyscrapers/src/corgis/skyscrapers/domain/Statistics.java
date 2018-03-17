@@ -16,23 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class Statistics {
 	
-    private Integer numberOfPurposes;
     private Integer floorsAbove;
     private Integer rank;
     private Double height;
+    private Integer numberOfPurposes;
     
     
-    /*
-     * @return 
-     */
-    public Integer getNumberOfPurposes() {
-        return this.numberOfPurposes;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getFloorsAbove() {
         return this.floorsAbove;
@@ -40,8 +32,9 @@ public class Statistics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getRank() {
         return this.rank;
@@ -49,11 +42,22 @@ public class Statistics {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getHeight() {
         return this.height;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Integer
+     */
+    public Integer getNumberOfPurposes() {
+        return this.numberOfPurposes;
     }
     
     
@@ -65,7 +69,7 @@ public class Statistics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Statistics[" +numberOfPurposes+", "+floorsAbove+", "+rank+", "+height+"]";
+		return "Statistics[" +floorsAbove+", "+rank+", "+height+", "+numberOfPurposes+"]";
 	}
 	
 	/**
@@ -73,17 +77,51 @@ public class Statistics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Statistics(JSONObject json_data) {
-        try {// number of purposes
-            this.numberOfPurposes = ((Number)json_data.get("number of purposes")).intValue();// floors above
-            this.floorsAbove = ((Number)json_data.get("floors above")).intValue();// rank
-            this.rank = ((Number)json_data.get("rank")).intValue();// height
-            this.height = ((Number)json_data.get("height")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // floors above
+            this.floorsAbove = ((Number)json_data.get("floors above")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Statistics; a field was missing.");
+    		System.err.println("Could not convert the response to a Statistics; the field floorsAbove was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Statistics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Statistics; the field floorsAbove had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // rank
+            this.rank = ((Number)json_data.get("rank")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field rank was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field rank had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // height
+            this.height = ((Number)json_data.get("height")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field height was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field height had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // number of purposes
+            this.numberOfPurposes = ((Number)json_data.get("number of purposes")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field numberOfPurposes was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Statistics; the field numberOfPurposes had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -17,24 +17,16 @@ import corgis.state_crime.domain.Data;
  */
 public class Report {
 	
-    // The long name of the state that this report was made for.
-    private String state;
     private Data data;
     // The year that this report was made in.
     private Integer year;
+    // The long name of the state that this report was made for.
+    private String state;
     
     
-    /*
-     * @return 
-     */
-    public String getState() {
-        return this.state;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Data
      */
     public Data getData() {
         return this.data;
@@ -42,11 +34,22 @@ public class Report {
     
     
     
-    /*
-     * @return 
+    /**
+     * The year that this report was made in.
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
+    }
+    
+    
+    
+    /**
+     * The long name of the state that this report was made for.
+     * @return String
+     */
+    public String getState() {
+        return this.state;
     }
     
     
@@ -58,7 +61,7 @@ public class Report {
 	 * @return String
 	 */
 	public String toString() {
-		return "Report[" +state+", "+data+", "+year+"]";
+		return "Report[" +data+", "+year+", "+state+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Report {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
-        try {// State
-            this.state = (String)json_data.get("State");// Data
-            this.data = new Data((JSONObject)json_data.get("Data"));// Year
-            this.year = ((Number)json_data.get("Year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Data
+            this.data = new Data((JSONObject)json_data.get("Data"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Report; a field was missing.");
+    		System.err.println("Could not convert the response to a Report; the field data was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Report; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Report; the field data had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Year
+            this.year = ((Number)json_data.get("Year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // State
+            this.state = (String)json_data.get("State");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Report; the field state was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Report; the field state had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

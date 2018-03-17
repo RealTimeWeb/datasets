@@ -22,8 +22,9 @@ public class EngineStatistics {
     private Integer torque;
     
     
-    /*
-     * @return 
+    /**
+     * A measure of the engine's power. A unit of power equal to 550 foot-pounds per second (745.7 watts).
+     * @return Integer
      */
     public Integer getHorsepower() {
         return this.horsepower;
@@ -31,8 +32,9 @@ public class EngineStatistics {
     
     
     
-    /*
-     * @return 
+    /**
+     * The torque of the engine, measured in lb/ft. When an engine is said to make "200 lb-ft of torque", it means that 200 pounds of force on a 1-foot lever is needed to stop its motion.
+     * @return Integer
      */
     public Integer getTorque() {
         return this.torque;
@@ -55,15 +57,29 @@ public class EngineStatistics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public EngineStatistics(JSONObject json_data) {
-        try {// Horsepower
-            this.horsepower = ((Number)json_data.get("Horsepower")).intValue();// Torque
-            this.torque = ((Number)json_data.get("Torque")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Horsepower
+            this.horsepower = ((Number)json_data.get("Horsepower")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a EngineStatistics; a field was missing.");
+    		System.err.println("Could not convert the response to a EngineStatistics; the field horsepower was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a EngineStatistics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a EngineStatistics; the field horsepower had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Torque
+            this.torque = ((Number)json_data.get("Torque")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a EngineStatistics; the field torque was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a EngineStatistics; the field torque had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

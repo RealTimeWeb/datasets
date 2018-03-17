@@ -22,8 +22,9 @@ public class LegalPermanantResidences {
     private Integer birth;
     
     
-    /*
-     * @return 
+    /**
+     * Lawful permanent residents (LPRs), also known as "green card" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that had their last residence in the associated country.
+     * @return Integer
      */
     public Integer getLastResidence() {
         return this.lastResidence;
@@ -31,8 +32,9 @@ public class LegalPermanantResidences {
     
     
     
-    /*
-     * @return 
+    /**
+     * Lawful permanent residents (LPRs), also known as "green card" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that were from the associated country where they were originally born.
+     * @return Integer
      */
     public Integer getBirth() {
         return this.birth;
@@ -55,15 +57,29 @@ public class LegalPermanantResidences {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public LegalPermanantResidences(JSONObject json_data) {
-        try {// Last Residence
-            this.lastResidence = ((Number)json_data.get("Last Residence")).intValue();// Birth
-            this.birth = ((Number)json_data.get("Birth")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Last Residence
+            this.lastResidence = ((Number)json_data.get("Last Residence")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a LegalPermanantResidences; a field was missing.");
+    		System.err.println("Could not convert the response to a LegalPermanantResidences; the field lastResidence was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a LegalPermanantResidences; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a LegalPermanantResidences; the field lastResidence had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Birth
+            this.birth = ((Number)json_data.get("Birth")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LegalPermanantResidences; the field birth was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LegalPermanantResidences; the field birth had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

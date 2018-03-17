@@ -22,8 +22,9 @@ public class Gender {
     private Integer females;
     
     
-    /*
-     * @return 
+    /**
+     * The estimated number of women awarded degrees in this major during this year.
+     * @return Integer
      */
     public Integer getMales() {
         return this.males;
@@ -31,8 +32,9 @@ public class Gender {
     
     
     
-    /*
-     * @return 
+    /**
+     * The estimated number of women awarded degrees in this major during this year.
+     * @return Integer
      */
     public Integer getFemales() {
         return this.females;
@@ -55,15 +57,29 @@ public class Gender {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Gender(JSONObject json_data) {
-        try {// Males
-            this.males = ((Number)json_data.get("Males")).intValue();// Females
-            this.females = ((Number)json_data.get("Females")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Males
+            this.males = ((Number)json_data.get("Males")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Gender; a field was missing.");
+    		System.err.println("Could not convert the response to a Gender; the field males was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Gender; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Gender; the field males had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Females
+            this.females = ((Number)json_data.get("Females")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Gender; the field females was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Gender; the field females had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -16,26 +16,28 @@ import org.json.simple.JSONObject;
  */
 public class NonimmigrantAdmissions {
 	
-    // Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that were entered this year from the associated country.
-    private Integer birth;
     // Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that had their last residence in the associated country.
     private Integer lastResidence;
+    // Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that were entered this year from the associated country.
+    private Integer birth;
     
     
-    /*
-     * @return 
+    /**
+     * Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that had their last residence in the associated country.
+     * @return Integer
      */
-    public Integer getBirth() {
-        return this.birth;
+    public Integer getLastResidence() {
+        return this.lastResidence;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that were entered this year from the associated country.
+     * @return Integer
      */
-    public Integer getLastResidence() {
-        return this.lastResidence;
+    public Integer getBirth() {
+        return this.birth;
     }
     
     
@@ -47,7 +49,7 @@ public class NonimmigrantAdmissions {
 	 * @return String
 	 */
 	public String toString() {
-		return "NonimmigrantAdmissions[" +birth+", "+lastResidence+"]";
+		return "NonimmigrantAdmissions[" +lastResidence+", "+birth+"]";
 	}
 	
 	/**
@@ -55,15 +57,29 @@ public class NonimmigrantAdmissions {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public NonimmigrantAdmissions(JSONObject json_data) {
-        try {// Birth
-            this.birth = ((Number)json_data.get("Birth")).intValue();// Last Residence
+        //System.out.println(json_data);
+        
+        try {
+            // Last Residence
             this.lastResidence = ((Number)json_data.get("Last Residence")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a NonimmigrantAdmissions; a field was missing.");
+    		System.err.println("Could not convert the response to a NonimmigrantAdmissions; the field lastResidence was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a NonimmigrantAdmissions; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a NonimmigrantAdmissions; the field lastResidence had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Birth
+            this.birth = ((Number)json_data.get("Birth")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NonimmigrantAdmissions; the field birth was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NonimmigrantAdmissions; the field birth had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

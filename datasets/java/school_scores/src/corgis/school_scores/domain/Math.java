@@ -18,14 +18,15 @@ public class Math {
 	
     // The number of students in this score range for Math who identified as Male in this state during this year.
     private Integer males;
-    // The number of students in this score range for Math who identified as Female in this state during this year.
-    private Integer females;
     // The number of students in this score range for Math in this state during this year.
     private Integer total;
+    // The number of students in this score range for Math who identified as Female in this state during this year.
+    private Integer females;
     
     
-    /*
-     * @return 
+    /**
+     * The number of students in this score range for Math who identified as Male in this state during this year.
+     * @return Integer
      */
     public Integer getMales() {
         return this.males;
@@ -33,20 +34,22 @@ public class Math {
     
     
     
-    /*
-     * @return 
+    /**
+     * The number of students in this score range for Math in this state during this year.
+     * @return Integer
      */
-    public Integer getFemales() {
-        return this.females;
+    public Integer getTotal() {
+        return this.total;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The number of students in this score range for Math who identified as Female in this state during this year.
+     * @return Integer
      */
-    public Integer getTotal() {
-        return this.total;
+    public Integer getFemales() {
+        return this.females;
     }
     
     
@@ -58,7 +61,7 @@ public class Math {
 	 * @return String
 	 */
 	public String toString() {
-		return "Math[" +males+", "+females+", "+total+"]";
+		return "Math[" +males+", "+total+", "+females+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Math {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Math(JSONObject json_data) {
-        try {// Males
-            this.males = ((Number)json_data.get("Males")).intValue();// Females
-            this.females = ((Number)json_data.get("Females")).intValue();// Total
-            this.total = ((Number)json_data.get("Total")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Males
+            this.males = ((Number)json_data.get("Males")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Math; a field was missing.");
+    		System.err.println("Could not convert the response to a Math; the field males was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Math; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Math; the field males had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Total
+            this.total = ((Number)json_data.get("Total")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Math; the field total was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Math; the field total had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Females
+            this.females = ((Number)json_data.get("Females")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Math; the field females was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Math; the field females had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

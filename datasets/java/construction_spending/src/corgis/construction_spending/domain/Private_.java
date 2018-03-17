@@ -16,174 +16,49 @@ import org.json.simple.JSONObject;
  */
 public class Private_ {
 	
-    // Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer lodging;
-    // Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer educational;
-    // This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer totalConstruction;
-    // Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer transportation;
-    // Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer power;
-    // Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer office;
-    // A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer nonresidential;
-    // Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer amusementAndRecreation;
-    // Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer residential;
-    // Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer publicSafety;
-    // Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer conservationAndDevelopment;
-    // Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer commercial;
-    // Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer waterSupply;
-    // Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer healthCare;
     // This section includes sewage, dry waste, and waste water plants and line/pump stations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
     private Integer sewageAndWasteDisposal;
     // Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
     private Integer communication;
-    // Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer manufacturing;
-    // Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
-    private Integer religious;
     // Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
     private Integer highwayAndStreet;
+    // Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer manufacturing;
+    // Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer office;
+    // Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer waterSupply;
+    // Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer religious;
+    // Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer conservationAndDevelopment;
+    // Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer healthCare;
+    // Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer lodging;
+    // Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer transportation;
+    // This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer totalConstruction;
+    // Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer educational;
+    // Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer power;
+    // Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer commercial;
+    // A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer nonresidential;
+    // Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer publicSafety;
+    // Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer residential;
+    // Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+    private Integer amusementAndRecreation;
     
     
-    /*
-     * @return 
-     */
-    public Integer getLodging() {
-        return this.lodging;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getEducational() {
-        return this.educational;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getTotalConstruction() {
-        return this.totalConstruction;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getTransportation() {
-        return this.transportation;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getPower() {
-        return this.power;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getOffice() {
-        return this.office;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getNonresidential() {
-        return this.nonresidential;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getAmusementAndRecreation() {
-        return this.amusementAndRecreation;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getResidential() {
-        return this.residential;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getPublicSafety() {
-        return this.publicSafety;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getConservationAndDevelopment() {
-        return this.conservationAndDevelopment;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getCommercial() {
-        return this.commercial;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getWaterSupply() {
-        return this.waterSupply;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getHealthCare() {
-        return this.healthCare;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * This section includes sewage, dry waste, and waste water plants and line/pump stations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
      */
     public Integer getSewageAndWasteDisposal() {
         return this.sewageAndWasteDisposal;
@@ -191,8 +66,9 @@ public class Private_ {
     
     
     
-    /*
-     * @return 
+    /**
+     * Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
      */
     public Integer getCommunication() {
         return this.communication;
@@ -200,8 +76,19 @@ public class Private_ {
     
     
     
-    /*
-     * @return 
+    /**
+     * Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getHighwayAndStreet() {
+        return this.highwayAndStreet;
+    }
+    
+    
+    
+    /**
+     * Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
      */
     public Integer getManufacturing() {
         return this.manufacturing;
@@ -209,8 +96,29 @@ public class Private_ {
     
     
     
-    /*
-     * @return 
+    /**
+     * Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getOffice() {
+        return this.office;
+    }
+    
+    
+    
+    /**
+     * Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getWaterSupply() {
+        return this.waterSupply;
+    }
+    
+    
+    
+    /**
+     * Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
      */
     public Integer getReligious() {
         return this.religious;
@@ -218,11 +126,122 @@ public class Private_ {
     
     
     
-    /*
-     * @return 
+    /**
+     * Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
      */
-    public Integer getHighwayAndStreet() {
-        return this.highwayAndStreet;
+    public Integer getConservationAndDevelopment() {
+        return this.conservationAndDevelopment;
+    }
+    
+    
+    
+    /**
+     * Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getHealthCare() {
+        return this.healthCare;
+    }
+    
+    
+    
+    /**
+     * Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getLodging() {
+        return this.lodging;
+    }
+    
+    
+    
+    /**
+     * Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getTransportation() {
+        return this.transportation;
+    }
+    
+    
+    
+    /**
+     * This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getTotalConstruction() {
+        return this.totalConstruction;
+    }
+    
+    
+    
+    /**
+     * Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getEducational() {
+        return this.educational;
+    }
+    
+    
+    
+    /**
+     * Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getPower() {
+        return this.power;
+    }
+    
+    
+    
+    /**
+     * Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getCommercial() {
+        return this.commercial;
+    }
+    
+    
+    
+    /**
+     * A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getNonresidential() {
+        return this.nonresidential;
+    }
+    
+    
+    
+    /**
+     * Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getPublicSafety() {
+        return this.publicSafety;
+    }
+    
+    
+    
+    /**
+     * Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getResidential() {
+        return this.residential;
+    }
+    
+    
+    
+    /**
+     * Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.
+     * @return Integer
+     */
+    public Integer getAmusementAndRecreation() {
+        return this.amusementAndRecreation;
     }
     
     
@@ -234,7 +253,7 @@ public class Private_ {
 	 * @return String
 	 */
 	public String toString() {
-		return "Private[" +lodging+", "+educational+", "+totalConstruction+", "+transportation+", "+power+", "+office+", "+nonresidential+", "+amusementAndRecreation+", "+residential+", "+publicSafety+", "+conservationAndDevelopment+", "+commercial+", "+waterSupply+", "+healthCare+", "+sewageAndWasteDisposal+", "+communication+", "+manufacturing+", "+religious+", "+highwayAndStreet+"]";
+		return "Private[" +sewageAndWasteDisposal+", "+communication+", "+highwayAndStreet+", "+manufacturing+", "+office+", "+waterSupply+", "+religious+", "+conservationAndDevelopment+", "+healthCare+", "+lodging+", "+transportation+", "+totalConstruction+", "+educational+", "+power+", "+commercial+", "+nonresidential+", "+publicSafety+", "+residential+", "+amusementAndRecreation+"]";
 	}
 	
 	/**
@@ -242,32 +261,216 @@ public class Private_ {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Private_(JSONObject json_data) {
-        try {// lodging
-            this.lodging = ((Number)json_data.get("lodging")).intValue();// educational
-            this.educational = ((Number)json_data.get("educational")).intValue();// total construction
-            this.totalConstruction = ((Number)json_data.get("total construction")).intValue();// transportation
-            this.transportation = ((Number)json_data.get("transportation")).intValue();// power
-            this.power = ((Number)json_data.get("power")).intValue();// office
-            this.office = ((Number)json_data.get("office")).intValue();// nonresidential
-            this.nonresidential = ((Number)json_data.get("nonresidential")).intValue();// amusement and recreation
-            this.amusementAndRecreation = ((Number)json_data.get("amusement and recreation")).intValue();// residential
-            this.residential = ((Number)json_data.get("residential")).intValue();// public safety
-            this.publicSafety = ((Number)json_data.get("public safety")).intValue();// conservation and development
-            this.conservationAndDevelopment = ((Number)json_data.get("conservation and development")).intValue();// commercial
-            this.commercial = ((Number)json_data.get("commercial")).intValue();// water supply
-            this.waterSupply = ((Number)json_data.get("water supply")).intValue();// health care
-            this.healthCare = ((Number)json_data.get("health care")).intValue();// sewage and waste disposal
-            this.sewageAndWasteDisposal = ((Number)json_data.get("sewage and waste disposal")).intValue();// communication
-            this.communication = ((Number)json_data.get("communication")).intValue();// manufacturing
-            this.manufacturing = ((Number)json_data.get("manufacturing")).intValue();// religious
-            this.religious = ((Number)json_data.get("religious")).intValue();// highway and street
-            this.highwayAndStreet = ((Number)json_data.get("highway and street")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // sewage and waste disposal
+            this.sewageAndWasteDisposal = ((Number)json_data.get("sewage and waste disposal")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Private; a field was missing.");
+    		System.err.println("Could not convert the response to a Private; the field sewageAndWasteDisposal was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Private; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Private; the field sewageAndWasteDisposal had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // communication
+            this.communication = ((Number)json_data.get("communication")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field communication was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field communication had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // highway and street
+            this.highwayAndStreet = ((Number)json_data.get("highway and street")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field highwayAndStreet was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field highwayAndStreet had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // manufacturing
+            this.manufacturing = ((Number)json_data.get("manufacturing")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field manufacturing was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field manufacturing had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // office
+            this.office = ((Number)json_data.get("office")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field office was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field office had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // water supply
+            this.waterSupply = ((Number)json_data.get("water supply")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field waterSupply was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field waterSupply had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // religious
+            this.religious = ((Number)json_data.get("religious")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field religious was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field religious had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // conservation and development
+            this.conservationAndDevelopment = ((Number)json_data.get("conservation and development")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field conservationAndDevelopment was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field conservationAndDevelopment had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // health care
+            this.healthCare = ((Number)json_data.get("health care")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field healthCare was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field healthCare had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // lodging
+            this.lodging = ((Number)json_data.get("lodging")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field lodging was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field lodging had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // transportation
+            this.transportation = ((Number)json_data.get("transportation")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field transportation was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field transportation had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // total construction
+            this.totalConstruction = ((Number)json_data.get("total construction")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field totalConstruction was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field totalConstruction had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // educational
+            this.educational = ((Number)json_data.get("educational")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field educational was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field educational had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // power
+            this.power = ((Number)json_data.get("power")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field power was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field power had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // commercial
+            this.commercial = ((Number)json_data.get("commercial")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field commercial was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field commercial had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // nonresidential
+            this.nonresidential = ((Number)json_data.get("nonresidential")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field nonresidential was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field nonresidential had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // public safety
+            this.publicSafety = ((Number)json_data.get("public safety")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field publicSafety was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field publicSafety had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // residential
+            this.residential = ((Number)json_data.get("residential")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field residential was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field residential had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // amusement and recreation
+            this.amusementAndRecreation = ((Number)json_data.get("amusement and recreation")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Private; the field amusementAndRecreation was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Private; the field amusementAndRecreation had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

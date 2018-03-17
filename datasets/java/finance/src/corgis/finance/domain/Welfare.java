@@ -16,36 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Welfare {
 	
+    // Total amount spent on welfare (not elsewhere classified).
+    private Integer welfareNecTotalExpenditure;
     // Total amount spent on welfare institutions.
     private Integer welfareInstitutionTotalExpenditure;
     // Total amount spent on welfare vendor payments.
     private Integer welfareVendorPaymentsTotal;
-    // Total amount spent on welfare (not elsewhere classified).
-    private Integer welfareNecTotalExpenditure;
     // Money paid to other governments for welfare not elsewhere classified.
     private Integer welfareNecIntergovernmental;
     
     
-    /*
-     * @return 
-     */
-    public Integer getWelfareInstitutionTotalExpenditure() {
-        return this.welfareInstitutionTotalExpenditure;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getWelfareVendorPaymentsTotal() {
-        return this.welfareVendorPaymentsTotal;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Total amount spent on welfare (not elsewhere classified).
+     * @return Integer
      */
     public Integer getWelfareNecTotalExpenditure() {
         return this.welfareNecTotalExpenditure;
@@ -53,8 +36,29 @@ public class Welfare {
     
     
     
-    /*
-     * @return 
+    /**
+     * Total amount spent on welfare institutions.
+     * @return Integer
+     */
+    public Integer getWelfareInstitutionTotalExpenditure() {
+        return this.welfareInstitutionTotalExpenditure;
+    }
+    
+    
+    
+    /**
+     * Total amount spent on welfare vendor payments.
+     * @return Integer
+     */
+    public Integer getWelfareVendorPaymentsTotal() {
+        return this.welfareVendorPaymentsTotal;
+    }
+    
+    
+    
+    /**
+     * Money paid to other governments for welfare not elsewhere classified.
+     * @return Integer
      */
     public Integer getWelfareNecIntergovernmental() {
         return this.welfareNecIntergovernmental;
@@ -69,7 +73,7 @@ public class Welfare {
 	 * @return String
 	 */
 	public String toString() {
-		return "Welfare[" +welfareInstitutionTotalExpenditure+", "+welfareVendorPaymentsTotal+", "+welfareNecTotalExpenditure+", "+welfareNecIntergovernmental+"]";
+		return "Welfare[" +welfareNecTotalExpenditure+", "+welfareInstitutionTotalExpenditure+", "+welfareVendorPaymentsTotal+", "+welfareNecIntergovernmental+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Welfare {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Welfare(JSONObject json_data) {
-        try {// Welfare Institution Total Expenditure
-            this.welfareInstitutionTotalExpenditure = ((Number)json_data.get("Welfare Institution Total Expenditure")).intValue();// Welfare Vendor Payments Total
-            this.welfareVendorPaymentsTotal = ((Number)json_data.get("Welfare Vendor Payments Total")).intValue();// Welfare NEC Total Expenditure
-            this.welfareNecTotalExpenditure = ((Number)json_data.get("Welfare NEC Total Expenditure")).intValue();// Welfare NEC Intergovernmental
-            this.welfareNecIntergovernmental = ((Number)json_data.get("Welfare NEC Intergovernmental")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Welfare NEC Total Expenditure
+            this.welfareNecTotalExpenditure = ((Number)json_data.get("Welfare NEC Total Expenditure")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Welfare; a field was missing.");
+    		System.err.println("Could not convert the response to a Welfare; the field welfareNecTotalExpenditure was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Welfare; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Welfare; the field welfareNecTotalExpenditure had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Welfare Institution Total Expenditure
+            this.welfareInstitutionTotalExpenditure = ((Number)json_data.get("Welfare Institution Total Expenditure")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Welfare; the field welfareInstitutionTotalExpenditure was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Welfare; the field welfareInstitutionTotalExpenditure had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Welfare Vendor Payments Total
+            this.welfareVendorPaymentsTotal = ((Number)json_data.get("Welfare Vendor Payments Total")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Welfare; the field welfareVendorPaymentsTotal was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Welfare; the field welfareVendorPaymentsTotal had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Welfare NEC Intergovernmental
+            this.welfareNecIntergovernmental = ((Number)json_data.get("Welfare NEC Intergovernmental")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Welfare; the field welfareNecIntergovernmental was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Welfare; the field welfareNecIntergovernmental had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

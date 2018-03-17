@@ -16,29 +16,21 @@ import org.json.simple.JSONObject;
  */
 public class Time {
 	
-    // The name of the month that this report was made.
-    private String monthName;
     // The numeric month that this report was made. January is 1, February is 2, etc.
     private Integer month;
-    // A number representing the index of this report. The first report is 0, the second report is 1, etc.
-    private Integer index;
     // The reporting period that this report made in (e.g., "")
     private String period;
+    // A number representing the index of this report. The first report is 0, the second report is 1, etc.
+    private Integer index;
     // The year that this report was made in.
     private Integer year;
+    // The name of the month that this report was made.
+    private String monthName;
     
     
-    /*
-     * @return 
-     */
-    public String getMonthName() {
-        return this.monthName;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The numeric month that this report was made. January is 1, February is 2, etc.
+     * @return Integer
      */
     public Integer getMonth() {
         return this.month;
@@ -46,17 +38,9 @@ public class Time {
     
     
     
-    /*
-     * @return 
-     */
-    public Integer getIndex() {
-        return this.index;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The reporting period that this report made in (e.g., "")
+     * @return String
      */
     public String getPeriod() {
         return this.period;
@@ -64,11 +48,32 @@ public class Time {
     
     
     
-    /*
-     * @return 
+    /**
+     * A number representing the index of this report. The first report is 0, the second report is 1, etc.
+     * @return Integer
+     */
+    public Integer getIndex() {
+        return this.index;
+    }
+    
+    
+    
+    /**
+     * The year that this report was made in.
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
+    }
+    
+    
+    
+    /**
+     * The name of the month that this report was made.
+     * @return String
+     */
+    public String getMonthName() {
+        return this.monthName;
     }
     
     
@@ -80,7 +85,7 @@ public class Time {
 	 * @return String
 	 */
 	public String toString() {
-		return "Time[" +monthName+", "+month+", "+index+", "+period+", "+year+"]";
+		return "Time[" +month+", "+period+", "+index+", "+year+", "+monthName+"]";
 	}
 	
 	/**
@@ -88,18 +93,62 @@ public class Time {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Time(JSONObject json_data) {
-        try {// month name
-            this.monthName = (String)json_data.get("month name");// month
-            this.month = ((Number)json_data.get("month")).intValue();// index
-            this.index = ((Number)json_data.get("index")).intValue();// period
-            this.period = (String)json_data.get("period");// year
-            this.year = ((Number)json_data.get("year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // month
+            this.month = ((Number)json_data.get("month")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Time; a field was missing.");
+    		System.err.println("Could not convert the response to a Time; the field month was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Time; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Time; the field month had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // period
+            this.period = (String)json_data.get("period");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Time; the field period was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Time; the field period had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // index
+            this.index = ((Number)json_data.get("index")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Time; the field index was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Time; the field index had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // year
+            this.year = ((Number)json_data.get("year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Time; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Time; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // month name
+            this.monthName = (String)json_data.get("month name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Time; the field monthName was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Time; the field monthName had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

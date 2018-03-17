@@ -22,8 +22,9 @@ public class Demographics {
     private Integer age;
     
     
-    /*
-     * @return 
+    /**
+     * A string representing their gender.
+     * @return String
      */
     public String getGender() {
         return this.gender;
@@ -31,8 +32,9 @@ public class Demographics {
     
     
     
-    /*
-     * @return 
+    /**
+     * The current age of the billionaire. Ages that are represented as -1 stand for ages that were not available in the data that was collected.
+     * @return Integer
      */
     public Integer getAge() {
         return this.age;
@@ -55,15 +57,29 @@ public class Demographics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Demographics(JSONObject json_data) {
-        try {// gender
-            this.gender = (String)json_data.get("gender");// age
-            this.age = ((Number)json_data.get("age")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // gender
+            this.gender = (String)json_data.get("gender");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Demographics; a field was missing.");
+    		System.err.println("Could not convert the response to a Demographics; the field gender was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Demographics; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Demographics; the field gender had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // age
+            this.age = ((Number)json_data.get("age")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field age was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Demographics; the field age had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

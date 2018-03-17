@@ -16,24 +16,26 @@ import org.json.simple.JSONObject;
  */
 public class LowAccessOnly {
 	
-    private Double oneTwoAndOnezeroMiles;
     private Double oneAndTwozeroMiles;
+    private Double oneTwoAndOnezeroMiles;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getOneTwoAndOnezeroMiles() {
-        return this.oneTwoAndOnezeroMiles;
+    public Double getOneAndTwozeroMiles() {
+        return this.oneAndTwozeroMiles;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getOneAndTwozeroMiles() {
-        return this.oneAndTwozeroMiles;
+    public Double getOneTwoAndOnezeroMiles() {
+        return this.oneTwoAndOnezeroMiles;
     }
     
     
@@ -45,7 +47,7 @@ public class LowAccessOnly {
 	 * @return String
 	 */
 	public String toString() {
-		return "LowAccessOnly[" +oneTwoAndOnezeroMiles+", "+oneAndTwozeroMiles+"]";
+		return "LowAccessOnly[" +oneAndTwozeroMiles+", "+oneTwoAndOnezeroMiles+"]";
 	}
 	
 	/**
@@ -53,15 +55,29 @@ public class LowAccessOnly {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public LowAccessOnly(JSONObject json_data) {
-        try {// 1/2 and 10 Miles
-            this.oneTwoAndOnezeroMiles = ((Number)json_data.get("1/2 and 10 Miles")).doubleValue();// 1 and 20 Miles
+        //System.out.println(json_data);
+        
+        try {
+            // 1 and 20 Miles
             this.oneAndTwozeroMiles = ((Number)json_data.get("1 and 20 Miles")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a LowAccessOnly; a field was missing.");
+    		System.err.println("Could not convert the response to a LowAccessOnly; the field oneAndTwozeroMiles was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a LowAccessOnly; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a LowAccessOnly; the field oneAndTwozeroMiles had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // 1/2 and 10 Miles
+            this.oneTwoAndOnezeroMiles = ((Number)json_data.get("1/2 and 10 Miles")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a LowAccessOnly; the field oneTwoAndOnezeroMiles was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a LowAccessOnly; the field oneTwoAndOnezeroMiles had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

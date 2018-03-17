@@ -16,24 +16,26 @@ import org.json.simple.JSONObject;
  */
 public class Started {
 	
-    private Boolean isStarted;
     private Integer year;
+    private Boolean isStarted;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Boolean getIsStarted() {
-        return this.isStarted;
+    public Integer getYear() {
+        return this.year;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Boolean
      */
-    public Integer getYear() {
-        return this.year;
+    public Boolean getIsStarted() {
+        return this.isStarted;
     }
     
     
@@ -45,7 +47,7 @@ public class Started {
 	 * @return String
 	 */
 	public String toString() {
-		return "Started[" +isStarted+", "+year+"]";
+		return "Started[" +year+", "+isStarted+"]";
 	}
 	
 	/**
@@ -53,15 +55,29 @@ public class Started {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Started(JSONObject json_data) {
-        try {// is started
-            this.isStarted = (Boolean)json_data.get("is started");// year
+        //System.out.println(json_data);
+        
+        try {
+            // year
             this.year = ((Number)json_data.get("year")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Started; a field was missing.");
+    		System.err.println("Could not convert the response to a Started; the field year was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Started; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Started; the field year had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // is started
+            this.isStarted = (Boolean)json_data.get("is started");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Started; the field isStarted was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Started; the field isStarted had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

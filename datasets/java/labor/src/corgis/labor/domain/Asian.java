@@ -20,8 +20,9 @@ public class Asian {
     private Integer unemploymentRate;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getCounts() {
         return this.counts;
@@ -29,8 +30,9 @@ public class Asian {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getUnemploymentRate() {
         return this.unemploymentRate;
@@ -53,15 +55,29 @@ public class Asian {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Asian(JSONObject json_data) {
-        try {// Counts
-            this.counts = ((Number)json_data.get("Counts")).intValue();// Unemployment Rate
-            this.unemploymentRate = ((Number)json_data.get("Unemployment Rate")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Counts
+            this.counts = ((Number)json_data.get("Counts")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Asian; a field was missing.");
+    		System.err.println("Could not convert the response to a Asian; the field counts was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Asian; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Asian; the field counts had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Unemployment Rate
+            this.unemploymentRate = ((Number)json_data.get("Unemployment Rate")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Asian; the field unemploymentRate was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Asian; the field unemploymentRate had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -16,36 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Location {
 	
-    // The "Gross Domestic Product" of the country where the billionaire has citizenship. This is one of the primary indicators used to gauge the health of a country's economy. It represents the total dollar value of all goods and services produced over a specific time period; you can think of it as the size of the economy.
-    private Double gdp;
-    // The region of the world where this billionaire lives.
-    private String region;
     // The name of the country that this billionaire has citizenship with.
     private String citizenship;
     // the 3-letter country code of the country where this billionaire has citizenship.
     private String countryCode;
+    // The "Gross Domestic Product" of the country where the billionaire has citizenship. This is one of the primary indicators used to gauge the health of a country's economy. It represents the total dollar value of all goods and services produced over a specific time period; you can think of it as the size of the economy.
+    private Double gdp;
+    // The region of the world where this billionaire lives.
+    private String region;
     
     
-    /*
-     * @return 
-     */
-    public Double getGdp() {
-        return this.gdp;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getRegion() {
-        return this.region;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The name of the country that this billionaire has citizenship with.
+     * @return String
      */
     public String getCitizenship() {
         return this.citizenship;
@@ -53,11 +36,32 @@ public class Location {
     
     
     
-    /*
-     * @return 
+    /**
+     * the 3-letter country code of the country where this billionaire has citizenship.
+     * @return String
      */
     public String getCountryCode() {
         return this.countryCode;
+    }
+    
+    
+    
+    /**
+     * The "Gross Domestic Product" of the country where the billionaire has citizenship. This is one of the primary indicators used to gauge the health of a country's economy. It represents the total dollar value of all goods and services produced over a specific time period; you can think of it as the size of the economy.
+     * @return Double
+     */
+    public Double getGdp() {
+        return this.gdp;
+    }
+    
+    
+    
+    /**
+     * The region of the world where this billionaire lives.
+     * @return String
+     */
+    public String getRegion() {
+        return this.region;
     }
     
     
@@ -69,7 +73,7 @@ public class Location {
 	 * @return String
 	 */
 	public String toString() {
-		return "Location[" +gdp+", "+region+", "+citizenship+", "+countryCode+"]";
+		return "Location[" +citizenship+", "+countryCode+", "+gdp+", "+region+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Location {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Location(JSONObject json_data) {
-        try {// gdp
-            this.gdp = ((Number)json_data.get("gdp")).doubleValue();// region
-            this.region = (String)json_data.get("region");// citizenship
-            this.citizenship = (String)json_data.get("citizenship");// country code
-            this.countryCode = (String)json_data.get("country code");
+        //System.out.println(json_data);
+        
+        try {
+            // citizenship
+            this.citizenship = (String)json_data.get("citizenship");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Location; a field was missing.");
+    		System.err.println("Could not convert the response to a Location; the field citizenship was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Location; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Location; the field citizenship had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // country code
+            this.countryCode = (String)json_data.get("country code");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field countryCode was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field countryCode had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // gdp
+            this.gdp = ((Number)json_data.get("gdp")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field gdp was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field gdp had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // region
+            this.region = (String)json_data.get("region");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field region was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field region had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -10,75 +10,41 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.school_scores.domain.A;
+import corgis.school_scores.domain.AMinus;
+import corgis.school_scores.domain.APlus;
 import corgis.school_scores.domain.C;
+import corgis.school_scores.domain.A;
+import corgis.school_scores.domain.DOrLower;
 import corgis.school_scores.domain.B;
 import corgis.school_scores.domain.NoResponse;
-import corgis.school_scores.domain.DOrLower;
-import corgis.school_scores.domain.APlus;
-import corgis.school_scores.domain.AMinus;
 
 /**
  * 
  */
 public class Gpa {
 	
-    private A a;
+    private AMinus aMinus;
+    private APlus aPlus;
     private C c;
+    private A a;
+    private DOrLower dOrLower;
     private B b;
     private NoResponse noResponse;
-    private DOrLower dOrLower;
-    private APlus aPlus;
-    private AMinus aMinus;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return AMinus
      */
-    public A getA() {
-        return this.a;
+    public AMinus getAMinus() {
+        return this.aMinus;
     }
     
     
     
-    /*
-     * @return 
-     */
-    public C getC() {
-        return this.c;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public B getB() {
-        return this.b;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public NoResponse getNoResponse() {
-        return this.noResponse;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public DOrLower getDOrLower() {
-        return this.dOrLower;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return APlus
      */
     public APlus getAPlus() {
         return this.aPlus;
@@ -86,11 +52,52 @@ public class Gpa {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return C
      */
-    public AMinus getAMinus() {
-        return this.aMinus;
+    public C getC() {
+        return this.c;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return A
+     */
+    public A getA() {
+        return this.a;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return DOrLower
+     */
+    public DOrLower getDOrLower() {
+        return this.dOrLower;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return B
+     */
+    public B getB() {
+        return this.b;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return NoResponse
+     */
+    public NoResponse getNoResponse() {
+        return this.noResponse;
     }
     
     
@@ -102,7 +109,7 @@ public class Gpa {
 	 * @return String
 	 */
 	public String toString() {
-		return "Gpa[" +a+", "+c+", "+b+", "+noResponse+", "+dOrLower+", "+aPlus+", "+aMinus+"]";
+		return "Gpa[" +aMinus+", "+aPlus+", "+c+", "+a+", "+dOrLower+", "+b+", "+noResponse+"]";
 	}
 	
 	/**
@@ -110,20 +117,84 @@ public class Gpa {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Gpa(JSONObject json_data) {
-        try {// A
-            this.a = new A((JSONObject)json_data.get("A"));// C
-            this.c = new C((JSONObject)json_data.get("C"));// B
-            this.b = new B((JSONObject)json_data.get("B"));// No response
-            this.noResponse = new NoResponse((JSONObject)json_data.get("No response"));// D or lower
-            this.dOrLower = new DOrLower((JSONObject)json_data.get("D or lower"));// A plus
-            this.aPlus = new APlus((JSONObject)json_data.get("A plus"));// A minus
+        //System.out.println(json_data);
+        
+        try {
+            // A minus
             this.aMinus = new AMinus((JSONObject)json_data.get("A minus"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Gpa; a field was missing.");
+    		System.err.println("Could not convert the response to a Gpa; the field aMinus was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Gpa; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Gpa; the field aMinus had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // A plus
+            this.aPlus = new APlus((JSONObject)json_data.get("A plus"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field aPlus was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field aPlus had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // C
+            this.c = new C((JSONObject)json_data.get("C"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field c was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field c had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // A
+            this.a = new A((JSONObject)json_data.get("A"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field a was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field a had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // D or lower
+            this.dOrLower = new DOrLower((JSONObject)json_data.get("D or lower"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field dOrLower was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field dOrLower had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // B
+            this.b = new B((JSONObject)json_data.get("B"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field b was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field b had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // No response
+            this.noResponse = new NoResponse((JSONObject)json_data.get("No response"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field noResponse was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Gpa; the field noResponse had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

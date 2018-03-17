@@ -16,26 +16,28 @@ import org.json.simple.JSONObject;
  */
 public class Publisher {
 	
-    // The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)
-    private String type;
     // The name of the publisher.
     private String name;
+    // The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)
+    private String type;
     
     
-    /*
-     * @return 
+    /**
+     * The name of the publisher.
+     * @return String
      */
-    public String getType() {
-        return this.type;
+    public String getName() {
+        return this.name;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)
+     * @return String
      */
-    public String getName() {
-        return this.name;
+    public String getType() {
+        return this.type;
     }
     
     
@@ -47,7 +49,7 @@ public class Publisher {
 	 * @return String
 	 */
 	public String toString() {
-		return "Publisher[" +type+", "+name+"]";
+		return "Publisher[" +name+", "+type+"]";
 	}
 	
 	/**
@@ -55,15 +57,29 @@ public class Publisher {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Publisher(JSONObject json_data) {
-        try {// type
-            this.type = (String)json_data.get("type");// name
+        //System.out.println(json_data);
+        
+        try {
+            // name
             this.name = (String)json_data.get("name");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Publisher; a field was missing.");
+    		System.err.println("Could not convert the response to a Publisher; the field name was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Publisher; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Publisher; the field name had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // type
+            this.type = (String)json_data.get("type");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Publisher; the field type was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Publisher; the field type had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

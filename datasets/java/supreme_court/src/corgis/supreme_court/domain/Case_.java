@@ -16,24 +16,26 @@ import org.json.simple.JSONObject;
  */
 public class Case_ {
 	
-    private Boolean unusual;
     private String disposition;
+    private Boolean unusual;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Boolean getUnusual() {
-        return this.unusual;
+    public String getDisposition() {
+        return this.disposition;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Boolean
      */
-    public String getDisposition() {
-        return this.disposition;
+    public Boolean getUnusual() {
+        return this.unusual;
     }
     
     
@@ -45,7 +47,7 @@ public class Case_ {
 	 * @return String
 	 */
 	public String toString() {
-		return "Case[" +unusual+", "+disposition+"]";
+		return "Case[" +disposition+", "+unusual+"]";
 	}
 	
 	/**
@@ -53,15 +55,29 @@ public class Case_ {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Case_(JSONObject json_data) {
-        try {// unusual
-            this.unusual = (Boolean)json_data.get("unusual");// disposition
+        //System.out.println(json_data);
+        
+        try {
+            // disposition
             this.disposition = (String)json_data.get("disposition");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Case; a field was missing.");
+    		System.err.println("Could not convert the response to a Case; the field disposition was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Case; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Case; the field disposition had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // unusual
+            this.unusual = (Boolean)json_data.get("unusual");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Case; the field unusual was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Case; the field unusual had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

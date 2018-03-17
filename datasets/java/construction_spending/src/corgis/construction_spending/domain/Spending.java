@@ -10,8 +10,8 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.construction_spending.domain.Current;
 import corgis.construction_spending.domain.Annual;
+import corgis.construction_spending.domain.Current;
 import corgis.construction_spending.domain.Time;
 
 /**
@@ -19,22 +19,14 @@ import corgis.construction_spending.domain.Time;
  */
 public class Spending {
 	
-    private Current current;
     private Annual annual;
+    private Current current;
     private Time time;
     
     
-    /*
-     * @return 
-     */
-    public Current getCurrent() {
-        return this.current;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Annual
      */
     public Annual getAnnual() {
         return this.annual;
@@ -42,8 +34,19 @@ public class Spending {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Current
+     */
+    public Current getCurrent() {
+        return this.current;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Time
      */
     public Time getTime() {
         return this.time;
@@ -58,7 +61,7 @@ public class Spending {
 	 * @return String
 	 */
 	public String toString() {
-		return "Spending[" +current+", "+annual+", "+time+"]";
+		return "Spending[" +annual+", "+current+", "+time+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Spending {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Spending(JSONObject json_data) {
-        try {// current
-            this.current = new Current((JSONObject)json_data.get("current"));// annual
-            this.annual = new Annual((JSONObject)json_data.get("annual"));// time
-            this.time = new Time((JSONObject)json_data.get("time"));
+        //System.out.println(json_data);
+        
+        try {
+            // annual
+            this.annual = new Annual((JSONObject)json_data.get("annual"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Spending; a field was missing.");
+    		System.err.println("Could not convert the response to a Spending; the field annual was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Spending; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Spending; the field annual had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // current
+            this.current = new Current((JSONObject)json_data.get("current"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Spending; the field current was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Spending; the field current had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // time
+            this.time = new Time((JSONObject)json_data.get("time"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Spending; the field time was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Spending; the field time had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -21,8 +21,9 @@ public class Birth {
     private Integer year;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getLocation() {
         return this.location;
@@ -30,8 +31,9 @@ public class Birth {
     
     
     
-    /*
-     * @return 
+    /**
+     * The year that the artist was born. If the year is unknown, it was replaced with "0".
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -54,15 +56,29 @@ public class Birth {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Birth(JSONObject json_data) {
-        try {// location
-            this.location = (String)json_data.get("location");// year
-            this.year = ((Number)json_data.get("year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // location
+            this.location = (String)json_data.get("location");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Birth; a field was missing.");
+    		System.err.println("Could not convert the response to a Birth; the field location was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Birth; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Birth; the field location had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // year
+            this.year = ((Number)json_data.get("year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Birth; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Birth; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

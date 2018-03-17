@@ -16,6 +16,8 @@ import org.json.simple.JSONObject;
  */
 public class Employment {
 	
+    // Comprises payments made to beneficiaries under basic provisions of unemployment compensation programs and special program payments, such as for extended benefits triggered by economic conditions.
+    private Integer unemploymentCompTotalExpenditure;
     // Total cash and securities related to unemployment compensation.
     private Integer unemploymentCompTotalCashAndSecurities;
     // Total amount spent on administration of unemployment compensation, public employment offices, and related services, and veterans' readjustment allowances.
@@ -26,12 +28,21 @@ public class Employment {
     private Integer employmentSecurityAdministrationIntergovernmental;
     // Total amount spent on cash payments to beneficiaries (including withdrawals of contributions) of government-administered employee-retirement systems, local government contributions to state-administered employee-retirement systems, and noncontributory gratuities paid to former employees; these are classed under General expenditure.
     private Integer employeeRetirementTotalExpenditure;
-    // Comprises payments made to beneficiaries under basic provisions of unemployment compensation programs and special program payments, such as for extended benefits triggered by economic conditions.
-    private Integer unemploymentCompTotalExpenditure;
     
     
-    /*
-     * @return 
+    /**
+     * Comprises payments made to beneficiaries under basic provisions of unemployment compensation programs and special program payments, such as for extended benefits triggered by economic conditions.
+     * @return Integer
+     */
+    public Integer getUnemploymentCompTotalExpenditure() {
+        return this.unemploymentCompTotalExpenditure;
+    }
+    
+    
+    
+    /**
+     * Total cash and securities related to unemployment compensation.
+     * @return Integer
      */
     public Integer getUnemploymentCompTotalCashAndSecurities() {
         return this.unemploymentCompTotalCashAndSecurities;
@@ -39,8 +50,9 @@ public class Employment {
     
     
     
-    /*
-     * @return 
+    /**
+     * Total amount spent on administration of unemployment compensation, public employment offices, and related services, and veterans' readjustment allowances.
+     * @return Integer
      */
     public Integer getEmploymentSecurityAdministrationExpenditureTotal() {
         return this.employmentSecurityAdministrationExpenditureTotal;
@@ -48,8 +60,9 @@ public class Employment {
     
     
     
-    /*
-     * @return 
+    /**
+     * Total cash and securities related to employee retirement.
+     * @return Integer
      */
     public Integer getEmployeeRetirementTotalCashAndSecurities() {
         return this.employeeRetirementTotalCashAndSecurities;
@@ -57,8 +70,9 @@ public class Employment {
     
     
     
-    /*
-     * @return 
+    /**
+     * Money paid to other governments for the administration of unemployment compensation, public employment offices, and related services, and veterans' readjustment allowances.
+     * @return Integer
      */
     public Integer getEmploymentSecurityAdministrationIntergovernmental() {
         return this.employmentSecurityAdministrationIntergovernmental;
@@ -66,20 +80,12 @@ public class Employment {
     
     
     
-    /*
-     * @return 
+    /**
+     * Total amount spent on cash payments to beneficiaries (including withdrawals of contributions) of government-administered employee-retirement systems, local government contributions to state-administered employee-retirement systems, and noncontributory gratuities paid to former employees; these are classed under General expenditure.
+     * @return Integer
      */
     public Integer getEmployeeRetirementTotalExpenditure() {
         return this.employeeRetirementTotalExpenditure;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getUnemploymentCompTotalExpenditure() {
-        return this.unemploymentCompTotalExpenditure;
     }
     
     
@@ -91,7 +97,7 @@ public class Employment {
 	 * @return String
 	 */
 	public String toString() {
-		return "Employment[" +unemploymentCompTotalCashAndSecurities+", "+employmentSecurityAdministrationExpenditureTotal+", "+employeeRetirementTotalCashAndSecurities+", "+employmentSecurityAdministrationIntergovernmental+", "+employeeRetirementTotalExpenditure+", "+unemploymentCompTotalExpenditure+"]";
+		return "Employment[" +unemploymentCompTotalExpenditure+", "+unemploymentCompTotalCashAndSecurities+", "+employmentSecurityAdministrationExpenditureTotal+", "+employeeRetirementTotalCashAndSecurities+", "+employmentSecurityAdministrationIntergovernmental+", "+employeeRetirementTotalExpenditure+"]";
 	}
 	
 	/**
@@ -99,19 +105,73 @@ public class Employment {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Employment(JSONObject json_data) {
-        try {// Unemployment Comp Total Cash and Securities
-            this.unemploymentCompTotalCashAndSecurities = ((Number)json_data.get("Unemployment Comp Total Cash and Securities")).intValue();// Employment Security Administration Expenditure Total
-            this.employmentSecurityAdministrationExpenditureTotal = ((Number)json_data.get("Employment Security Administration Expenditure Total")).intValue();// Employee Retirement Total Cash and Securities
-            this.employeeRetirementTotalCashAndSecurities = ((Number)json_data.get("Employee Retirement Total Cash and Securities")).intValue();// Employment Security Administration Intergovernmental
-            this.employmentSecurityAdministrationIntergovernmental = ((Number)json_data.get("Employment Security Administration Intergovernmental")).intValue();// Employee Retirement Total Expenditure
-            this.employeeRetirementTotalExpenditure = ((Number)json_data.get("Employee Retirement Total Expenditure")).intValue();// Unemployment Comp Total Expenditure
+        //System.out.println(json_data);
+        
+        try {
+            // Unemployment Comp Total Expenditure
             this.unemploymentCompTotalExpenditure = ((Number)json_data.get("Unemployment Comp Total Expenditure")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Employment; a field was missing.");
+    		System.err.println("Could not convert the response to a Employment; the field unemploymentCompTotalExpenditure was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Employment; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Employment; the field unemploymentCompTotalExpenditure had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Unemployment Comp Total Cash and Securities
+            this.unemploymentCompTotalCashAndSecurities = ((Number)json_data.get("Unemployment Comp Total Cash and Securities")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field unemploymentCompTotalCashAndSecurities was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field unemploymentCompTotalCashAndSecurities had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Employment Security Administration Expenditure Total
+            this.employmentSecurityAdministrationExpenditureTotal = ((Number)json_data.get("Employment Security Administration Expenditure Total")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field employmentSecurityAdministrationExpenditureTotal was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field employmentSecurityAdministrationExpenditureTotal had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Employee Retirement Total Cash and Securities
+            this.employeeRetirementTotalCashAndSecurities = ((Number)json_data.get("Employee Retirement Total Cash and Securities")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field employeeRetirementTotalCashAndSecurities was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field employeeRetirementTotalCashAndSecurities had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Employment Security Administration Intergovernmental
+            this.employmentSecurityAdministrationIntergovernmental = ((Number)json_data.get("Employment Security Administration Intergovernmental")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field employmentSecurityAdministrationIntergovernmental was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field employmentSecurityAdministrationIntergovernmental had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Employee Retirement Total Expenditure
+            this.employeeRetirementTotalExpenditure = ((Number)json_data.get("Employee Retirement Total Expenditure")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Employment; the field employeeRetirementTotalExpenditure was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Employment; the field employeeRetirementTotalExpenditure had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -17,13 +17,14 @@ import org.json.simple.JSONObject;
 public class NumberOfPermits {
 	
     private Integer twoUnits;
-    private Integer fiveplusUnits;
-    private Integer threeFourUnits;
     private Integer oneUnit;
+    private Integer threeFourUnits;
+    private Integer fiveplusUnits;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getTwoUnits() {
         return this.twoUnits;
@@ -31,17 +32,19 @@ public class NumberOfPermits {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Integer getFiveplusUnits() {
-        return this.fiveplusUnits;
+    public Integer getOneUnit() {
+        return this.oneUnit;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getThreeFourUnits() {
         return this.threeFourUnits;
@@ -49,11 +52,12 @@ public class NumberOfPermits {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public Integer getOneUnit() {
-        return this.oneUnit;
+    public Integer getFiveplusUnits() {
+        return this.fiveplusUnits;
     }
     
     
@@ -65,7 +69,7 @@ public class NumberOfPermits {
 	 * @return String
 	 */
 	public String toString() {
-		return "NumberOfPermits[" +twoUnits+", "+fiveplusUnits+", "+threeFourUnits+", "+oneUnit+"]";
+		return "NumberOfPermits[" +twoUnits+", "+oneUnit+", "+threeFourUnits+", "+fiveplusUnits+"]";
 	}
 	
 	/**
@@ -73,17 +77,51 @@ public class NumberOfPermits {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public NumberOfPermits(JSONObject json_data) {
-        try {// 2 units
-            this.twoUnits = ((Number)json_data.get("2 units")).intValue();// 5+ units
-            this.fiveplusUnits = ((Number)json_data.get("5+ units")).intValue();// 3-4 units
-            this.threeFourUnits = ((Number)json_data.get("3-4 units")).intValue();// 1 unit
-            this.oneUnit = ((Number)json_data.get("1 unit")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // 2 units
+            this.twoUnits = ((Number)json_data.get("2 units")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a NumberOfPermits; a field was missing.");
+    		System.err.println("Could not convert the response to a NumberOfPermits; the field twoUnits was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a NumberOfPermits; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a NumberOfPermits; the field twoUnits had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // 1 unit
+            this.oneUnit = ((Number)json_data.get("1 unit")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NumberOfPermits; the field oneUnit was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NumberOfPermits; the field oneUnit had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // 3-4 units
+            this.threeFourUnits = ((Number)json_data.get("3-4 units")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NumberOfPermits; the field threeFourUnits was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NumberOfPermits; the field threeFourUnits had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // 5+ units
+            this.fiveplusUnits = ((Number)json_data.get("5+ units")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a NumberOfPermits; the field fiveplusUnits was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a NumberOfPermits; the field fiveplusUnits had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

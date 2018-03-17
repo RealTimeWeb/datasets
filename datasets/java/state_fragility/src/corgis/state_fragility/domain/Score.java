@@ -22,8 +22,9 @@ public class Score {
     private Integer year;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Metrics
      */
     public Metrics getMetrics() {
         return this.metrics;
@@ -31,8 +32,9 @@ public class Score {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getCountry() {
         return this.country;
@@ -40,8 +42,9 @@ public class Score {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -64,16 +67,40 @@ public class Score {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Score(JSONObject json_data) {
-        try {// Metrics
-            this.metrics = new Metrics((JSONObject)json_data.get("Metrics"));// Country
-            this.country = (String)json_data.get("Country");// Year
-            this.year = ((Number)json_data.get("Year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Metrics
+            this.metrics = new Metrics((JSONObject)json_data.get("Metrics"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Score; a field was missing.");
+    		System.err.println("Could not convert the response to a Score; the field metrics was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Score; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Score; the field metrics had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Country
+            this.country = (String)json_data.get("Country");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Score; the field country was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Score; the field country had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Year
+            this.year = ((Number)json_data.get("Year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Score; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Score; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

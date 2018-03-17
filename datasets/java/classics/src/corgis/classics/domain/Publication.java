@@ -16,27 +16,29 @@ import org.json.simple.JSONObject;
  */
 public class Publication {
 	
-    private String monthName;
-    private String full;
-    // The year when the book was published according to Project Gutenberg. Keep in mind that this may not be the original publication date of the work, just that particular edition of the work. Notice that missing values have been coded as "0".
-    private Integer year;
-    // The day of the month when the book was published. Notice that missing values have been coded as "0".
-    private Integer day;
     // The month of the year when the book was published; 1 corresponds to January, 2 to February, etc. Notice that missing values have been coded as "0".
     private Integer month;
+    private String full;
+    // The day of the month when the book was published. Notice that missing values have been coded as "0".
+    private Integer day;
+    // The year when the book was published according to Project Gutenberg. Keep in mind that this may not be the original publication date of the work, just that particular edition of the work. Notice that missing values have been coded as "0".
+    private Integer year;
+    private String monthName;
     
     
-    /*
-     * @return 
+    /**
+     * The month of the year when the book was published; 1 corresponds to January, 2 to February, etc. Notice that missing values have been coded as "0".
+     * @return Integer
      */
-    public String getMonthName() {
-        return this.monthName;
+    public Integer getMonth() {
+        return this.month;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getFull() {
         return this.full;
@@ -44,17 +46,9 @@ public class Publication {
     
     
     
-    /*
-     * @return 
-     */
-    public Integer getYear() {
-        return this.year;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The day of the month when the book was published. Notice that missing values have been coded as "0".
+     * @return Integer
      */
     public Integer getDay() {
         return this.day;
@@ -62,11 +56,22 @@ public class Publication {
     
     
     
-    /*
-     * @return 
+    /**
+     * The year when the book was published according to Project Gutenberg. Keep in mind that this may not be the original publication date of the work, just that particular edition of the work. Notice that missing values have been coded as "0".
+     * @return Integer
      */
-    public Integer getMonth() {
-        return this.month;
+    public Integer getYear() {
+        return this.year;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getMonthName() {
+        return this.monthName;
     }
     
     
@@ -78,7 +83,7 @@ public class Publication {
 	 * @return String
 	 */
 	public String toString() {
-		return "Publication[" +monthName+", "+full+", "+year+", "+day+", "+month+"]";
+		return "Publication[" +month+", "+full+", "+day+", "+year+", "+monthName+"]";
 	}
 	
 	/**
@@ -86,18 +91,62 @@ public class Publication {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Publication(JSONObject json_data) {
-        try {// month name
-            this.monthName = (String)json_data.get("month name");// full
-            this.full = (String)json_data.get("full");// year
-            this.year = ((Number)json_data.get("year")).intValue();// day
-            this.day = ((Number)json_data.get("day")).intValue();// month
+        //System.out.println(json_data);
+        
+        try {
+            // month
             this.month = ((Number)json_data.get("month")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Publication; a field was missing.");
+    		System.err.println("Could not convert the response to a Publication; the field month was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Publication; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Publication; the field month had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // full
+            this.full = (String)json_data.get("full");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Publication; the field full was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Publication; the field full had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // day
+            this.day = ((Number)json_data.get("day")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Publication; the field day was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Publication; the field day had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // year
+            this.year = ((Number)json_data.get("year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Publication; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Publication; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // month name
+            this.monthName = (String)json_data.get("month name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Publication; the field monthName was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Publication; the field monthName had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

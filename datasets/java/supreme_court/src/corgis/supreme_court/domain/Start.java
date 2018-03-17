@@ -17,13 +17,14 @@ import org.json.simple.JSONObject;
 public class Start {
 	
     private Integer month;
-    private String full;
-    private Integer day;
     private Integer year;
+    private Integer day;
+    private String full;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getMonth() {
         return this.month;
@@ -31,17 +32,19 @@ public class Start {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public String getFull() {
-        return this.full;
+    public Integer getYear() {
+        return this.year;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getDay() {
         return this.day;
@@ -49,11 +52,12 @@ public class Start {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Integer getYear() {
-        return this.year;
+    public String getFull() {
+        return this.full;
     }
     
     
@@ -65,7 +69,7 @@ public class Start {
 	 * @return String
 	 */
 	public String toString() {
-		return "Start[" +month+", "+full+", "+day+", "+year+"]";
+		return "Start[" +month+", "+year+", "+day+", "+full+"]";
 	}
 	
 	/**
@@ -73,17 +77,51 @@ public class Start {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Start(JSONObject json_data) {
-        try {// month
-            this.month = ((Number)json_data.get("month")).intValue();// full
-            this.full = (String)json_data.get("full");// day
-            this.day = ((Number)json_data.get("day")).intValue();// year
-            this.year = ((Number)json_data.get("year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // month
+            this.month = ((Number)json_data.get("month")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Start; a field was missing.");
+    		System.err.println("Could not convert the response to a Start; the field month was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Start; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Start; the field month had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // year
+            this.year = ((Number)json_data.get("year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Start; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Start; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // day
+            this.day = ((Number)json_data.get("day")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Start; the field day was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Start; the field day had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // full
+            this.full = (String)json_data.get("full");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Start; the field full was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Start; the field full had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

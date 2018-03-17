@@ -16,25 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class Calculated {
 	
-    // The sum of the Job Creation Rate and the Job Destruction Rate, minus the absolute Net Job Creation Rate.
-    private Double reallocationRate;
     // The sum of the Job Creation Rate minus the Job Destruction Rate.
     private Integer netJobCreation;
+    // The sum of the Job Creation Rate and the Job Destruction Rate, minus the absolute Net Job Creation Rate.
+    private Double reallocationRate;
     // The sum of the Job Creation Rate and the Job Destruction Rate, minus the Net Job Creation Rate.
     private Double netJobCreationRate;
     
     
-    /*
-     * @return 
-     */
-    public Double getReallocationRate() {
-        return this.reallocationRate;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * The sum of the Job Creation Rate minus the Job Destruction Rate.
+     * @return Integer
      */
     public Integer getNetJobCreation() {
         return this.netJobCreation;
@@ -42,8 +34,19 @@ public class Calculated {
     
     
     
-    /*
-     * @return 
+    /**
+     * The sum of the Job Creation Rate and the Job Destruction Rate, minus the absolute Net Job Creation Rate.
+     * @return Double
+     */
+    public Double getReallocationRate() {
+        return this.reallocationRate;
+    }
+    
+    
+    
+    /**
+     * The sum of the Job Creation Rate and the Job Destruction Rate, minus the Net Job Creation Rate.
+     * @return Double
      */
     public Double getNetJobCreationRate() {
         return this.netJobCreationRate;
@@ -58,7 +61,7 @@ public class Calculated {
 	 * @return String
 	 */
 	public String toString() {
-		return "Calculated[" +reallocationRate+", "+netJobCreation+", "+netJobCreationRate+"]";
+		return "Calculated[" +netJobCreation+", "+reallocationRate+", "+netJobCreationRate+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Calculated {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Calculated(JSONObject json_data) {
-        try {// Reallocation Rate
-            this.reallocationRate = ((Number)json_data.get("Reallocation Rate")).doubleValue();// Net Job Creation
-            this.netJobCreation = ((Number)json_data.get("Net Job Creation")).intValue();// Net Job Creation Rate
-            this.netJobCreationRate = ((Number)json_data.get("Net Job Creation Rate")).doubleValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Net Job Creation
+            this.netJobCreation = ((Number)json_data.get("Net Job Creation")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Calculated; a field was missing.");
+    		System.err.println("Could not convert the response to a Calculated; the field netJobCreation was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Calculated; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Calculated; the field netJobCreation had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Reallocation Rate
+            this.reallocationRate = ((Number)json_data.get("Reallocation Rate")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Calculated; the field reallocationRate was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Calculated; the field reallocationRate had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Net Job Creation Rate
+            this.netJobCreationRate = ((Number)json_data.get("Net Job Creation Rate")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Calculated; the field netJobCreationRate was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Calculated; the field netJobCreationRate had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

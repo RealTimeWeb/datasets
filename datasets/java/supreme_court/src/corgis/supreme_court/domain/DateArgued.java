@@ -22,8 +22,9 @@ public class DateArgued {
     private Integer year;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getMonth() {
         return this.month;
@@ -31,8 +32,9 @@ public class DateArgued {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getFull() {
         return this.full;
@@ -40,8 +42,9 @@ public class DateArgued {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getDay() {
         return this.day;
@@ -49,8 +52,9 @@ public class DateArgued {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -73,17 +77,51 @@ public class DateArgued {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public DateArgued(JSONObject json_data) {
-        try {// month
-            this.month = ((Number)json_data.get("month")).intValue();// full
-            this.full = (String)json_data.get("full");// day
-            this.day = ((Number)json_data.get("day")).intValue();// year
-            this.year = ((Number)json_data.get("year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // month
+            this.month = ((Number)json_data.get("month")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a DateArgued; a field was missing.");
+    		System.err.println("Could not convert the response to a DateArgued; the field month was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a DateArgued; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a DateArgued; the field month had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // full
+            this.full = (String)json_data.get("full");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a DateArgued; the field full was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a DateArgued; the field full had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // day
+            this.day = ((Number)json_data.get("day")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a DateArgued; the field day was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a DateArgued; the field day had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // year
+            this.year = ((Number)json_data.get("year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a DateArgued; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a DateArgued; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

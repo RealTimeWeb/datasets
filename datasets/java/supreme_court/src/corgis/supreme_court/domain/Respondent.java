@@ -16,22 +16,24 @@ import org.json.simple.JSONObject;
  */
 public class Respondent {
 	
-    private String state;
-    private Integer id;
     private String entity;
+    private Integer id;
+    private String state;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public String getState() {
-        return this.state;
+    public String getEntity() {
+        return this.entity;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getId() {
         return this.id;
@@ -39,11 +41,12 @@ public class Respondent {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public String getEntity() {
-        return this.entity;
+    public String getState() {
+        return this.state;
     }
     
     
@@ -55,7 +58,7 @@ public class Respondent {
 	 * @return String
 	 */
 	public String toString() {
-		return "Respondent[" +state+", "+id+", "+entity+"]";
+		return "Respondent[" +entity+", "+id+", "+state+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class Respondent {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Respondent(JSONObject json_data) {
-        try {// state
-            this.state = (String)json_data.get("state");// id
-            this.id = ((Number)json_data.get("id")).intValue();// entity
+        //System.out.println(json_data);
+        
+        try {
+            // entity
             this.entity = (String)json_data.get("entity");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Respondent; a field was missing.");
+    		System.err.println("Could not convert the response to a Respondent; the field entity was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Respondent; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Respondent; the field entity had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // id
+            this.id = ((Number)json_data.get("id")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Respondent; the field id was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Respondent; the field id had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // state
+            this.state = (String)json_data.get("state");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Respondent; the field state was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Respondent; the field state had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

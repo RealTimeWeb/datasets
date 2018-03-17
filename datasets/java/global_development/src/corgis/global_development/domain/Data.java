@@ -10,9 +10,9 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.global_development.domain.Infrastructure;
 import corgis.global_development.domain.Health;
 import corgis.global_development.domain.RuralDevelopment;
+import corgis.global_development.domain.Infrastructure;
 import corgis.global_development.domain.UrbanDevelopment;
 
 /**
@@ -20,23 +20,15 @@ import corgis.global_development.domain.UrbanDevelopment;
  */
 public class Data {
 	
-    private Infrastructure infrastructure;
     private Health health;
     private RuralDevelopment ruralDevelopment;
+    private Infrastructure infrastructure;
     private UrbanDevelopment urbanDevelopment;
     
     
-    /*
-     * @return 
-     */
-    public Infrastructure getInfrastructure() {
-        return this.infrastructure;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Health
      */
     public Health getHealth() {
         return this.health;
@@ -44,8 +36,9 @@ public class Data {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return RuralDevelopment
      */
     public RuralDevelopment getRuralDevelopment() {
         return this.ruralDevelopment;
@@ -53,8 +46,19 @@ public class Data {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Infrastructure
+     */
+    public Infrastructure getInfrastructure() {
+        return this.infrastructure;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return UrbanDevelopment
      */
     public UrbanDevelopment getUrbanDevelopment() {
         return this.urbanDevelopment;
@@ -69,7 +73,7 @@ public class Data {
 	 * @return String
 	 */
 	public String toString() {
-		return "Data[" +infrastructure+", "+health+", "+ruralDevelopment+", "+urbanDevelopment+"]";
+		return "Data[" +health+", "+ruralDevelopment+", "+infrastructure+", "+urbanDevelopment+"]";
 	}
 	
 	/**
@@ -77,17 +81,51 @@ public class Data {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Data(JSONObject json_data) {
-        try {// Infrastructure
-            this.infrastructure = new Infrastructure((JSONObject)json_data.get("Infrastructure"));// Health
-            this.health = new Health((JSONObject)json_data.get("Health"));// Rural Development
-            this.ruralDevelopment = new RuralDevelopment((JSONObject)json_data.get("Rural Development"));// Urban Development
-            this.urbanDevelopment = new UrbanDevelopment((JSONObject)json_data.get("Urban Development"));
+        //System.out.println(json_data);
+        
+        try {
+            // Health
+            this.health = new Health((JSONObject)json_data.get("Health"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Data; a field was missing.");
+    		System.err.println("Could not convert the response to a Data; the field health was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Data; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Data; the field health had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Rural Development
+            this.ruralDevelopment = new RuralDevelopment((JSONObject)json_data.get("Rural Development"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field ruralDevelopment was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field ruralDevelopment had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Infrastructure
+            this.infrastructure = new Infrastructure((JSONObject)json_data.get("Infrastructure"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field infrastructure was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field infrastructure had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Urban Development
+            this.urbanDevelopment = new UrbanDevelopment((JSONObject)json_data.get("Urban Development"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Data; the field urbanDevelopment was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Data; the field urbanDevelopment had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

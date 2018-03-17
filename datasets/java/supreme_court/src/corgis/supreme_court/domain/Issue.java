@@ -17,12 +17,13 @@ import org.json.simple.JSONObject;
 public class Issue {
 	
     private String text;
-    private Integer id;
     private String area;
+    private Integer id;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getText() {
         return this.text;
@@ -30,20 +31,22 @@ public class Issue {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public Integer getId() {
-        return this.id;
+    public String getArea() {
+        return this.area;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
-    public String getArea() {
-        return this.area;
+    public Integer getId() {
+        return this.id;
     }
     
     
@@ -55,7 +58,7 @@ public class Issue {
 	 * @return String
 	 */
 	public String toString() {
-		return "Issue[" +text+", "+id+", "+area+"]";
+		return "Issue[" +text+", "+area+", "+id+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class Issue {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Issue(JSONObject json_data) {
-        try {// text
-            this.text = (String)json_data.get("text");// id
-            this.id = ((Number)json_data.get("id")).intValue();// area
-            this.area = (String)json_data.get("area");
+        //System.out.println(json_data);
+        
+        try {
+            // text
+            this.text = (String)json_data.get("text");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Issue; a field was missing.");
+    		System.err.println("Could not convert the response to a Issue; the field text was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Issue; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Issue; the field text had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // area
+            this.area = (String)json_data.get("area");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Issue; the field area was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Issue; the field area had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // id
+            this.id = ((Number)json_data.get("id")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Issue; the field id was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Issue; the field id had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

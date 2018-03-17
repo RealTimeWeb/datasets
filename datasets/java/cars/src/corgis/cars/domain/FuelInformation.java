@@ -16,16 +16,27 @@ import org.json.simple.JSONObject;
  */
 public class FuelInformation {
 	
+    // The miles-per-gallon this car gets on average in cities.
+    private Integer cityMpg;
     // The miles-per-gallon this car gets on average on highways.
     private Integer highwayMpg;
     // Whether this car takes "Gasoline", "Diesel fuel", "Electricity", "Compressed natural gas", or "E85" (a term that refers to high-level ethanol-gasoline blends containing 51%-83% ethanol). If it is unknown, it is left blank.
     private String fuelType;
-    // The miles-per-gallon this car gets on average in cities.
-    private Integer cityMpg;
     
     
-    /*
-     * @return 
+    /**
+     * The miles-per-gallon this car gets on average in cities.
+     * @return Integer
+     */
+    public Integer getCityMpg() {
+        return this.cityMpg;
+    }
+    
+    
+    
+    /**
+     * The miles-per-gallon this car gets on average on highways.
+     * @return Integer
      */
     public Integer getHighwayMpg() {
         return this.highwayMpg;
@@ -33,20 +44,12 @@ public class FuelInformation {
     
     
     
-    /*
-     * @return 
+    /**
+     * Whether this car takes "Gasoline", "Diesel fuel", "Electricity", "Compressed natural gas", or "E85" (a term that refers to high-level ethanol-gasoline blends containing 51%-83% ethanol). If it is unknown, it is left blank.
+     * @return String
      */
     public String getFuelType() {
         return this.fuelType;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getCityMpg() {
-        return this.cityMpg;
     }
     
     
@@ -58,7 +61,7 @@ public class FuelInformation {
 	 * @return String
 	 */
 	public String toString() {
-		return "FuelInformation[" +highwayMpg+", "+fuelType+", "+cityMpg+"]";
+		return "FuelInformation[" +cityMpg+", "+highwayMpg+", "+fuelType+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class FuelInformation {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public FuelInformation(JSONObject json_data) {
-        try {// Highway mpg
-            this.highwayMpg = ((Number)json_data.get("Highway mpg")).intValue();// Fuel Type
-            this.fuelType = (String)json_data.get("Fuel Type");// City mpg
+        //System.out.println(json_data);
+        
+        try {
+            // City mpg
             this.cityMpg = ((Number)json_data.get("City mpg")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a FuelInformation; a field was missing.");
+    		System.err.println("Could not convert the response to a FuelInformation; the field cityMpg was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a FuelInformation; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a FuelInformation; the field cityMpg had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Highway mpg
+            this.highwayMpg = ((Number)json_data.get("Highway mpg")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a FuelInformation; the field highwayMpg was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a FuelInformation; the field highwayMpg had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Fuel Type
+            this.fuelType = (String)json_data.get("Fuel Type");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a FuelInformation; the field fuelType was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a FuelInformation; the field fuelType had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

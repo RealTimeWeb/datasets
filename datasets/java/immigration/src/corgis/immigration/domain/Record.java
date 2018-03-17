@@ -17,24 +17,16 @@ import corgis.immigration.domain.Data;
  */
 public class Record {
 	
+    private Data data;
     // The country that these immigrants came from to USA, or are going to from the USA.
     private String country;
-    private Data data;
     // The year that this immigration data comes from.
     private Integer year;
     
     
-    /*
-     * @return 
-     */
-    public String getCountry() {
-        return this.country;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Data
      */
     public Data getData() {
         return this.data;
@@ -42,8 +34,19 @@ public class Record {
     
     
     
-    /*
-     * @return 
+    /**
+     * The country that these immigrants came from to USA, or are going to from the USA.
+     * @return String
+     */
+    public String getCountry() {
+        return this.country;
+    }
+    
+    
+    
+    /**
+     * The year that this immigration data comes from.
+     * @return Integer
      */
     public Integer getYear() {
         return this.year;
@@ -58,7 +61,7 @@ public class Record {
 	 * @return String
 	 */
 	public String toString() {
-		return "Record[" +country+", "+data+", "+year+"]";
+		return "Record[" +data+", "+country+", "+year+"]";
 	}
 	
 	/**
@@ -66,16 +69,40 @@ public class Record {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Record(JSONObject json_data) {
-        try {// Country
-            this.country = (String)json_data.get("Country");// Data
-            this.data = new Data((JSONObject)json_data.get("Data"));// Year
-            this.year = ((Number)json_data.get("Year")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Data
+            this.data = new Data((JSONObject)json_data.get("Data"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Record; a field was missing.");
+    		System.err.println("Could not convert the response to a Record; the field data was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Record; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Record; the field data had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Country
+            this.country = (String)json_data.get("Country");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Record; the field country was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Record; the field country had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Year
+            this.year = ((Number)json_data.get("Year")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Record; the field year was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Record; the field year had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

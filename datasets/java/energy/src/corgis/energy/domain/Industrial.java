@@ -16,40 +16,23 @@ import org.json.simple.JSONObject;
  */
 public class Industrial {
 	
-    // Other petroleum products average price in the industrial sector in dollars per million BTU.
-    private Integer otherPetroleumProducts;
-    // Kerosene price in the industrial sector in dollars per million BTU.
-    private Integer kerosene;
     // Natural gas price in the industrial sector (including supplemental gaseous fuels) in dollars per million BTU.
     private Integer naturalGas;
-    // Coal price in the industrial sector in dollars per million BTU.
-    private Integer coal;
     // Distillate fuel oil price in the industrial sector in dollars per million BTU.
     private Integer distillateFuelOil;
+    // Other petroleum products average price in the industrial sector in dollars per million BTU.
+    private Integer otherPetroleumProducts;
+    // Coal price in the industrial sector in dollars per million BTU.
+    private Integer coal;
+    // Kerosene price in the industrial sector in dollars per million BTU.
+    private Integer kerosene;
     // LPG price in the industrial sector in dollars per million BTU.
     private Integer liquefiedPetroleumGases;
     
     
-    /*
-     * @return 
-     */
-    public Integer getOtherPetroleumProducts() {
-        return this.otherPetroleumProducts;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getKerosene() {
-        return this.kerosene;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Natural gas price in the industrial sector (including supplemental gaseous fuels) in dollars per million BTU.
+     * @return Integer
      */
     public Integer getNaturalGas() {
         return this.naturalGas;
@@ -57,17 +40,9 @@ public class Industrial {
     
     
     
-    /*
-     * @return 
-     */
-    public Integer getCoal() {
-        return this.coal;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Distillate fuel oil price in the industrial sector in dollars per million BTU.
+     * @return Integer
      */
     public Integer getDistillateFuelOil() {
         return this.distillateFuelOil;
@@ -75,8 +50,39 @@ public class Industrial {
     
     
     
-    /*
-     * @return 
+    /**
+     * Other petroleum products average price in the industrial sector in dollars per million BTU.
+     * @return Integer
+     */
+    public Integer getOtherPetroleumProducts() {
+        return this.otherPetroleumProducts;
+    }
+    
+    
+    
+    /**
+     * Coal price in the industrial sector in dollars per million BTU.
+     * @return Integer
+     */
+    public Integer getCoal() {
+        return this.coal;
+    }
+    
+    
+    
+    /**
+     * Kerosene price in the industrial sector in dollars per million BTU.
+     * @return Integer
+     */
+    public Integer getKerosene() {
+        return this.kerosene;
+    }
+    
+    
+    
+    /**
+     * LPG price in the industrial sector in dollars per million BTU.
+     * @return Integer
      */
     public Integer getLiquefiedPetroleumGases() {
         return this.liquefiedPetroleumGases;
@@ -91,7 +97,7 @@ public class Industrial {
 	 * @return String
 	 */
 	public String toString() {
-		return "Industrial[" +otherPetroleumProducts+", "+kerosene+", "+naturalGas+", "+coal+", "+distillateFuelOil+", "+liquefiedPetroleumGases+"]";
+		return "Industrial[" +naturalGas+", "+distillateFuelOil+", "+otherPetroleumProducts+", "+coal+", "+kerosene+", "+liquefiedPetroleumGases+"]";
 	}
 	
 	/**
@@ -99,19 +105,73 @@ public class Industrial {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Industrial(JSONObject json_data) {
-        try {// Other Petroleum Products
-            this.otherPetroleumProducts = ((Number)json_data.get("Other Petroleum Products")).intValue();// Kerosene
-            this.kerosene = ((Number)json_data.get("Kerosene")).intValue();// Natural Gas
-            this.naturalGas = ((Number)json_data.get("Natural Gas")).intValue();// Coal
-            this.coal = ((Number)json_data.get("Coal")).intValue();// Distillate Fuel Oil
-            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).intValue();// Liquefied Petroleum Gases
-            this.liquefiedPetroleumGases = ((Number)json_data.get("Liquefied Petroleum Gases")).intValue();
+        //System.out.println(json_data);
+        
+        try {
+            // Natural Gas
+            this.naturalGas = ((Number)json_data.get("Natural Gas")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Industrial; a field was missing.");
+    		System.err.println("Could not convert the response to a Industrial; the field naturalGas was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Industrial; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Industrial; the field naturalGas had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Distillate Fuel Oil
+            this.distillateFuelOil = ((Number)json_data.get("Distillate Fuel Oil")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field distillateFuelOil was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field distillateFuelOil had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Other Petroleum Products
+            this.otherPetroleumProducts = ((Number)json_data.get("Other Petroleum Products")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field otherPetroleumProducts was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field otherPetroleumProducts had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Coal
+            this.coal = ((Number)json_data.get("Coal")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field coal was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field coal had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Kerosene
+            this.kerosene = ((Number)json_data.get("Kerosene")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field kerosene was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field kerosene had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Liquefied Petroleum Gases
+            this.liquefiedPetroleumGases = ((Number)json_data.get("Liquefied Petroleum Gases")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field liquefiedPetroleumGases was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Industrial; the field liquefiedPetroleumGases had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

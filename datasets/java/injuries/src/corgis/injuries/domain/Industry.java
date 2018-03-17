@@ -17,13 +17,14 @@ import org.json.simple.JSONObject;
 public class Industry {
 	
     private String major_Group;
-    private String division;
     private Integer id;
     private String label;
+    private String division;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getMajor_Group() {
         return this.major_Group;
@@ -31,17 +32,9 @@ public class Industry {
     
     
     
-    /*
-     * @return 
-     */
-    public String getDivision() {
-        return this.division;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Integer
      */
     public Integer getId() {
         return this.id;
@@ -49,11 +42,22 @@ public class Industry {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getLabel() {
         return this.label;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return String
+     */
+    public String getDivision() {
+        return this.division;
     }
     
     
@@ -65,7 +69,7 @@ public class Industry {
 	 * @return String
 	 */
 	public String toString() {
-		return "Industry[" +major_Group+", "+division+", "+id+", "+label+"]";
+		return "Industry[" +major_Group+", "+id+", "+label+", "+division+"]";
 	}
 	
 	/**
@@ -73,17 +77,51 @@ public class Industry {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Industry(JSONObject json_data) {
-        try {// major_group
-            this.major_Group = (String)json_data.get("major_group");// division
-            this.division = (String)json_data.get("division");// id
-            this.id = ((Number)json_data.get("id")).intValue();// label
-            this.label = (String)json_data.get("label");
+        //System.out.println(json_data);
+        
+        try {
+            // major_group
+            this.major_Group = (String)json_data.get("major_group");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Industry; a field was missing.");
+    		System.err.println("Could not convert the response to a Industry; the field major_Group was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Industry; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Industry; the field major_Group had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // id
+            this.id = ((Number)json_data.get("id")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Industry; the field id was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Industry; the field id had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // label
+            this.label = (String)json_data.get("label");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Industry; the field label was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Industry; the field label had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // division
+            this.division = (String)json_data.get("division");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Industry; the field division was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Industry; the field division had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

@@ -21,8 +21,9 @@ public class StateRecord {
     private Data data;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getState() {
         return this.state;
@@ -30,8 +31,9 @@ public class StateRecord {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Data
      */
     public Data getData() {
         return this.data;
@@ -54,15 +56,29 @@ public class StateRecord {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public StateRecord(JSONObject json_data) {
-        try {// state
-            this.state = (String)json_data.get("state");// data
-            this.data = new Data((JSONObject)json_data.get("data"));
+        //System.out.println(json_data);
+        
+        try {
+            // state
+            this.state = (String)json_data.get("state");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a StateRecord; a field was missing.");
+    		System.err.println("Could not convert the response to a StateRecord; the field state was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a StateRecord; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a StateRecord; the field state had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // data
+            this.data = new Data((JSONObject)json_data.get("data"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a StateRecord; the field data was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a StateRecord; the field data had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

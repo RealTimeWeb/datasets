@@ -17,12 +17,13 @@ import org.json.simple.JSONObject;
 public class Location {
 	
     private String county;
-    private String state;
     private String stateAbbreviation;
+    private String state;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
     public String getCounty() {
         return this.county;
@@ -30,20 +31,22 @@ public class Location {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public String getState() {
-        return this.state;
+    public String getStateAbbreviation() {
+        return this.stateAbbreviation;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return String
      */
-    public String getStateAbbreviation() {
-        return this.stateAbbreviation;
+    public String getState() {
+        return this.state;
     }
     
     
@@ -55,7 +58,7 @@ public class Location {
 	 * @return String
 	 */
 	public String toString() {
-		return "Location[" +county+", "+state+", "+stateAbbreviation+"]";
+		return "Location[" +county+", "+stateAbbreviation+", "+state+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class Location {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Location(JSONObject json_data) {
-        try {// County
-            this.county = (String)json_data.get("County");// State
-            this.state = (String)json_data.get("State");// State Abbreviation
-            this.stateAbbreviation = (String)json_data.get("State Abbreviation");
+        //System.out.println(json_data);
+        
+        try {
+            // County
+            this.county = (String)json_data.get("County");
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Location; a field was missing.");
+    		System.err.println("Could not convert the response to a Location; the field county was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Location; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a Location; the field county had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // State Abbreviation
+            this.stateAbbreviation = (String)json_data.get("State Abbreviation");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field stateAbbreviation was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field stateAbbreviation had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // State
+            this.state = (String)json_data.get("State");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Location; the field state was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Location; the field state had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

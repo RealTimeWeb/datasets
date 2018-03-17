@@ -16,22 +16,24 @@ import org.json.simple.JSONObject;
  */
 public class UnemploymentRate {
 	
-    private Double all;
-    private Double men;
     private Double women;
+    private Double men;
+    private Double all;
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getAll() {
-        return this.all;
+    public Double getWomen() {
+        return this.women;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
     public Double getMen() {
         return this.men;
@@ -39,11 +41,12 @@ public class UnemploymentRate {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Double
      */
-    public Double getWomen() {
-        return this.women;
+    public Double getAll() {
+        return this.all;
     }
     
     
@@ -55,7 +58,7 @@ public class UnemploymentRate {
 	 * @return String
 	 */
 	public String toString() {
-		return "UnemploymentRate[" +all+", "+men+", "+women+"]";
+		return "UnemploymentRate[" +women+", "+men+", "+all+"]";
 	}
 	
 	/**
@@ -63,16 +66,40 @@ public class UnemploymentRate {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public UnemploymentRate(JSONObject json_data) {
-        try {// All
-            this.all = ((Number)json_data.get("All")).doubleValue();// Men
-            this.men = ((Number)json_data.get("Men")).doubleValue();// Women
+        //System.out.println(json_data);
+        
+        try {
+            // Women
             this.women = ((Number)json_data.get("Women")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a UnemploymentRate; a field was missing.");
+    		System.err.println("Could not convert the response to a UnemploymentRate; the field women was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a UnemploymentRate; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a UnemploymentRate; the field women had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Men
+            this.men = ((Number)json_data.get("Men")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a UnemploymentRate; the field men was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a UnemploymentRate; the field men had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // All
+            this.all = ((Number)json_data.get("All")).doubleValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a UnemploymentRate; the field all was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a UnemploymentRate; the field all had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }

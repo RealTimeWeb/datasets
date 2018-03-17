@@ -10,10 +10,10 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.video_games.domain.Features;
 import corgis.video_games.domain.Metrics;
-import corgis.video_games.domain.Length;
 import corgis.video_games.domain.Release;
+import corgis.video_games.domain.Features;
+import corgis.video_games.domain.Length;
 import corgis.video_games.domain.Metadata;
 
 /**
@@ -21,35 +21,18 @@ import corgis.video_games.domain.Metadata;
  */
 public class VideoGame {
 	
+    private Metrics metrics;
+    private Release release;
     private Features features;
     // The full title of this game.
     private String title;
-    private Metrics metrics;
     private Length length;
-    private Release release;
     private Metadata metadata;
     
     
-    /*
-     * @return 
-     */
-    public Features getFeatures() {
-        return this.features;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getTitle() {
-        return this.title;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Metrics
      */
     public Metrics getMetrics() {
         return this.metrics;
@@ -57,17 +40,9 @@ public class VideoGame {
     
     
     
-    /*
-     * @return 
-     */
-    public Length getLength() {
-        return this.length;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * 
+     * @return Release
      */
     public Release getRelease() {
         return this.release;
@@ -75,8 +50,39 @@ public class VideoGame {
     
     
     
-    /*
-     * @return 
+    /**
+     * 
+     * @return Features
+     */
+    public Features getFeatures() {
+        return this.features;
+    }
+    
+    
+    
+    /**
+     * The full title of this game.
+     * @return String
+     */
+    public String getTitle() {
+        return this.title;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Length
+     */
+    public Length getLength() {
+        return this.length;
+    }
+    
+    
+    
+    /**
+     * 
+     * @return Metadata
      */
     public Metadata getMetadata() {
         return this.metadata;
@@ -91,7 +97,7 @@ public class VideoGame {
 	 * @return String
 	 */
 	public String toString() {
-		return "VideoGame[" +features+", "+title+", "+metrics+", "+length+", "+release+", "+metadata+"]";
+		return "VideoGame[" +metrics+", "+release+", "+features+", "+title+", "+length+", "+metadata+"]";
 	}
 	
 	/**
@@ -99,19 +105,73 @@ public class VideoGame {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public VideoGame(JSONObject json_data) {
-        try {// Features
-            this.features = new Features((JSONObject)json_data.get("Features"));// Title
-            this.title = (String)json_data.get("Title");// Metrics
-            this.metrics = new Metrics((JSONObject)json_data.get("Metrics"));// Length
-            this.length = new Length((JSONObject)json_data.get("Length"));// Release
-            this.release = new Release((JSONObject)json_data.get("Release"));// Metadata
-            this.metadata = new Metadata((JSONObject)json_data.get("Metadata"));
+        //System.out.println(json_data);
+        
+        try {
+            // Metrics
+            this.metrics = new Metrics((JSONObject)json_data.get("Metrics"));
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a VideoGame; a field was missing.");
+    		System.err.println("Could not convert the response to a VideoGame; the field metrics was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a VideoGame; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a VideoGame; the field metrics had the wrong structure.");
     		e.printStackTrace();
         }
+        
+        try {
+            // Release
+            this.release = new Release((JSONObject)json_data.get("Release"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field release was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field release had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Features
+            this.features = new Features((JSONObject)json_data.get("Features"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field features was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field features had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Title
+            this.title = (String)json_data.get("Title");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field title was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field title had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Length
+            this.length = new Length((JSONObject)json_data.get("Length"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field length was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field length had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // Metadata
+            this.metadata = new Metadata((JSONObject)json_data.get("Metadata"));
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field metadata was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a VideoGame; the field metadata had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
 	}	
 }
