@@ -30,3 +30,42 @@ interfaces:
     production:
         sql: SELECT data FROM music
         post: json()
+comments:
+    release:
+        name: Unknown value
+        id: The ID of the release (album) on the service 7digital.com
+    song:
+        loudness: General loudness of the track
+        beats_start: Average start time of each beat, measured in beats.
+        hotttnesss: A measure of the song's popularity, when downloaded (in December 2010). Measured on a scale of 0 to 1.
+        tatums_confidence: Confidence value (between 0 and 1) associated with each tatum.
+        tatums_start: Average start time of each tatum, measured in tatums.
+        mode: Estimation of the mode the song.
+        key_confidence: Confidence value (between 0 and 1) of the key estimation.
+        year: Year when this song was released, according to musicbrainz.org.
+        key: Estimation of the key the song is in. Keys can be from 0 to 11. 
+        tempo: Tempo in BPM.
+        mode_confidence: Confidence value (between 0 and 1) of the mode estimation.
+        start_of_fade_out: Start time of the fade out, in seconds, at the end of the song.
+        end_of_fade_in: Time of the end of the fade in, at the beginning of the song.
+        bars_confidence: Confidence value (between 0 and 1) associated with each bar.
+        duration: Duration of the track in seconds.
+        bars_start: Average start time of each bar, measured in bars.
+        artist_mbtags: Unknown field.
+        id: A uniquely identifying number for the song.
+        artist_mbtags_count: Number of tags for the artist on mbtags.
+        title: Name of the song.
+        time_signature_confidence: Confidence of the time signature estimation
+        time_signature: Time signature of the song, i.e. usual number of beats per bar.
+        beats_confidence: Average confidence interval of the beats.
+    artist:
+        familiarity: A measure of 0..1 for how familiar the artist is to listeners.
+        terms: The term most associated with this artist.
+        terms_freq: The frequency of this term.
+        similar: Unknown.
+        latitude: The home location's latitude of this artist.
+        hotttnesss: A measure of the artists's popularity, when downloaded (in December 2010). Measured on a scale of 0 to 1.
+        longitude: The home location's longitude of this artist.
+        name: The name of the artist.
+        id: A unique ID for this artist.
+        location: Unknown.

@@ -2,17 +2,22 @@ import json
 import sys
 from pprint import pprint
 
+try:
+    unicode
+except:
+    unicode = str
+
 DEFINITIONS = set()
 UNFINISHED = []
 
 def deep_print(input, depth=0):
     if isinstance(input, dict):
         for k,v in input.items():
-            print " "*4*depth, k+":"
+            print(" "*4*depth, k+":")
             deep_print(v, depth+1)
     elif isinstance(input, list):
         input = input[0]
-        print " "*4*depth, "[0]:"
+        print(" "*4*depth, "[0]:")
         deep_print(input, depth+1)
 
 def deep_type(data, optional_type=""):

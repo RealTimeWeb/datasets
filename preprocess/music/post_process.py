@@ -62,7 +62,7 @@ for song in music_data:
         song['artist']['familiarity'] = 0
     if song['artist']['similar'] is None:
         song['artist']['similar'] = 0
-    l_types[type(song['artist']['latitude'])] += 1
+    l_types[song['song']['key']] += 1
 pprint(l_types.items())
     
 with open('music.json','w') as new_file:

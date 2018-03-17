@@ -16,7 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class Release {
 	
+    // Unknown value
     private Integer name;
+    // The ID of the release (album) on the service 7digital.com
     private Integer id;
     
     
