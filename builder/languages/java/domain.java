@@ -28,15 +28,16 @@ public class {{ dictionary.name | clean_invalid_characters | camel_case_caps }} 
     {%- endfor %}
     
     {% for field in dictionary.fields %}
-    /*
-     * @return {{ field.description }}
+    /**
+     * {{ field.description or field.comment }}
+     * @return {{field.type | to_java_type(field.key)}}
      */
     public {{field.type | to_java_type(field.key)}} get{{field.key | clean_invalid_characters| camel_case_caps }}() {
         return this.{{field.key | clean_invalid_characters| camel_case }};
     }
     
-    {#/*
-     * @param {{ field.description }}
+    {#/**
+     * @param {{ field.description or field.comment }}
      * @return {{field.type | to_java_type(field.key)}}
      */
     public void set{{field.key | camel_case_caps }}({{field.type | to_java_type(field.key)}} {{field.key | clean_invalid_characters| camel_case }}) {

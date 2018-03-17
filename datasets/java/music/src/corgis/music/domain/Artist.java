@@ -16,66 +16,31 @@ import org.json.simple.JSONObject;
  */
 public class Artist {
 	
-    // The name of the artist.
-    private String name;
+    // A measure of 0..1 for how familiar the artist is to listeners.
+    private Double familiarity;
+    // Unknown.
+    private Integer location;
     // The frequency of this term.
     private Double terms_Freq;
     // Unknown.
     private Double similar;
+    // The name of the artist.
+    private String name;
     // The term most associated with this artist.
     private String terms;
-    // A measure of 0..1 for how familiar the artist is to listeners.
-    private Double familiarity;
     // A unique ID for this artist.
     private String id;
     // The home location's latitude of this artist.
     private Integer latitude;
     // A measure of the artists's popularity, when downloaded (in December 2010). Measured on a scale of 0 to 1.
     private Double hotttnesss;
-    // Unknown.
-    private Integer location;
     // The home location's longitude of this artist.
     private Integer longitude;
     
     
-    /*
-     * @return 
-     */
-    public String getName() {
-        return this.name;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getTerms_Freq() {
-        return this.terms_Freq;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getSimilar() {
-        return this.similar;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public String getTerms() {
-        return this.terms;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * A measure of 0..1 for how familiar the artist is to listeners.
+     * @return Double
      */
     public Double getFamiliarity() {
         return this.familiarity;
@@ -83,35 +48,9 @@ public class Artist {
     
     
     
-    /*
-     * @return 
-     */
-    public String getId() {
-        return this.id;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getLatitude() {
-        return this.latitude;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getHotttnesss() {
-        return this.hotttnesss;
-    }
-    
-    
-    
-    /*
-     * @return 
+    /**
+     * Unknown.
+     * @return Integer
      */
     public Integer getLocation() {
         return this.location;
@@ -119,8 +58,79 @@ public class Artist {
     
     
     
-    /*
-     * @return 
+    /**
+     * The frequency of this term.
+     * @return Double
+     */
+    public Double getTerms_Freq() {
+        return this.terms_Freq;
+    }
+    
+    
+    
+    /**
+     * Unknown.
+     * @return Double
+     */
+    public Double getSimilar() {
+        return this.similar;
+    }
+    
+    
+    
+    /**
+     * The name of the artist.
+     * @return String
+     */
+    public String getName() {
+        return this.name;
+    }
+    
+    
+    
+    /**
+     * The term most associated with this artist.
+     * @return String
+     */
+    public String getTerms() {
+        return this.terms;
+    }
+    
+    
+    
+    /**
+     * A unique ID for this artist.
+     * @return String
+     */
+    public String getId() {
+        return this.id;
+    }
+    
+    
+    
+    /**
+     * The home location's latitude of this artist.
+     * @return Integer
+     */
+    public Integer getLatitude() {
+        return this.latitude;
+    }
+    
+    
+    
+    /**
+     * A measure of the artists's popularity, when downloaded (in December 2010). Measured on a scale of 0 to 1.
+     * @return Double
+     */
+    public Double getHotttnesss() {
+        return this.hotttnesss;
+    }
+    
+    
+    
+    /**
+     * The home location's longitude of this artist.
+     * @return Integer
      */
     public Integer getLongitude() {
         return this.longitude;
@@ -135,7 +145,7 @@ public class Artist {
 	 * @return String
 	 */
 	public String toString() {
-		return "Artist[" +name+", "+terms_Freq+", "+similar+", "+terms+", "+familiarity+", "+id+", "+latitude+", "+hotttnesss+", "+location+", "+longitude+"]";
+		return "Artist[" +familiarity+", "+location+", "+terms_Freq+", "+similar+", "+name+", "+terms+", "+id+", "+latitude+", "+hotttnesss+", "+longitude+"]";
 	}
 	
 	/**
@@ -146,13 +156,24 @@ public class Artist {
         //System.out.println(json_data);
         
         try {
-            // name
-            this.name = (String)json_data.get("name");
+            // familiarity
+            this.familiarity = ((Number)json_data.get("familiarity")).doubleValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Artist; the field name was missing.");
+    		System.err.println("Could not convert the response to a Artist; the field familiarity was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Artist; the field name had the wrong structure.");
+    		System.err.println("Could not convert the response to a Artist; the field familiarity had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // location
+            this.location = ((Number)json_data.get("location")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Artist; the field location was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Artist; the field location had the wrong structure.");
     		e.printStackTrace();
         }
         
@@ -179,6 +200,17 @@ public class Artist {
         }
         
         try {
+            // name
+            this.name = (String)json_data.get("name");
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Artist; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Artist; the field name had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
             // terms
             this.terms = (String)json_data.get("terms");
         } catch (NullPointerException e) {
@@ -186,17 +218,6 @@ public class Artist {
     		e.printStackTrace();
     	} catch (ClassCastException e) {
     		System.err.println("Could not convert the response to a Artist; the field terms had the wrong structure.");
-    		e.printStackTrace();
-        }
-        
-        try {
-            // familiarity
-            this.familiarity = ((Number)json_data.get("familiarity")).doubleValue();
-        } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Artist; the field familiarity was missing.");
-    		e.printStackTrace();
-    	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Artist; the field familiarity had the wrong structure.");
     		e.printStackTrace();
         }
         
@@ -230,17 +251,6 @@ public class Artist {
     		e.printStackTrace();
     	} catch (ClassCastException e) {
     		System.err.println("Could not convert the response to a Artist; the field hotttnesss had the wrong structure.");
-    		e.printStackTrace();
-        }
-        
-        try {
-            // location
-            this.location = ((Number)json_data.get("location")).intValue();
-        } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Artist; the field location was missing.");
-    		e.printStackTrace();
-    	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Artist; the field location had the wrong structure.");
     		e.printStackTrace();
         }
         

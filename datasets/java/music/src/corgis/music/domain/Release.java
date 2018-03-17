@@ -16,26 +16,28 @@ import org.json.simple.JSONObject;
  */
 public class Release {
 	
-    // Unknown value
-    private Integer name;
     // The ID of the release (album) on the service 7digital.com
     private Integer id;
+    // Unknown value
+    private Integer name;
     
     
-    /*
-     * @return 
+    /**
+     * The ID of the release (album) on the service 7digital.com
+     * @return Integer
      */
-    public Integer getName() {
-        return this.name;
+    public Integer getId() {
+        return this.id;
     }
     
     
     
-    /*
-     * @return 
+    /**
+     * Unknown value
+     * @return Integer
      */
-    public Integer getId() {
-        return this.id;
+    public Integer getName() {
+        return this.name;
     }
     
     
@@ -47,7 +49,7 @@ public class Release {
 	 * @return String
 	 */
 	public String toString() {
-		return "Release[" +name+", "+id+"]";
+		return "Release[" +id+", "+name+"]";
 	}
 	
 	/**
@@ -58,17 +60,6 @@ public class Release {
         //System.out.println(json_data);
         
         try {
-            // name
-            this.name = ((Number)json_data.get("name")).intValue();
-        } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a Release; the field name was missing.");
-    		e.printStackTrace();
-    	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a Release; the field name had the wrong structure.");
-    		e.printStackTrace();
-        }
-        
-        try {
             // id
             this.id = ((Number)json_data.get("id")).intValue();
         } catch (NullPointerException e) {
@@ -76,6 +67,17 @@ public class Release {
     		e.printStackTrace();
     	} catch (ClassCastException e) {
     		System.err.println("Could not convert the response to a Release; the field id had the wrong structure.");
+    		e.printStackTrace();
+        }
+        
+        try {
+            // name
+            this.name = ((Number)json_data.get("name")).intValue();
+        } catch (NullPointerException e) {
+    		System.err.println("Could not convert the response to a Release; the field name was missing.");
+    		e.printStackTrace();
+    	} catch (ClassCastException e) {
+    		System.err.println("Could not convert the response to a Release; the field name had the wrong structure.");
     		e.printStackTrace();
         }
         
