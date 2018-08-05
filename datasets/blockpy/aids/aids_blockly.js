@@ -3,13 +3,42 @@
 var aids_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Country", "Country"] ,
-    ["Year", "Year"] 
+    ["Year", "Year"] ,
+    ["Country", "Country"] 
 ];
 
 var aids_INDEX_VALUES = {
     "(None)": [],
     
+    "Year": [
+        
+        ["1990", "1990"] ,
+        ["1991", "1991"] ,
+        ["1992", "1992"] ,
+        ["1993", "1993"] ,
+        ["1994", "1994"] ,
+        ["1995", "1995"] ,
+        ["1996", "1996"] ,
+        ["1997", "1997"] ,
+        ["1998", "1998"] ,
+        ["1999", "1999"] ,
+        ["2000", "2000"] ,
+        ["2001", "2001"] ,
+        ["2002", "2002"] ,
+        ["2003", "2003"] ,
+        ["2004", "2004"] ,
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] ,
+        ["2014", "2014"] ,
+        ["2015", "2015"] 
+    ],
     "Country": [
         
         ["Afghanistan", "Afghanistan"] ,
@@ -111,35 +140,6 @@ var aids_INDEX_VALUES = {
         ["Yemen", "Yemen"] ,
         ["Zambia", "Zambia"] ,
         ["Zimbabwe", "Zimbabwe"] 
-    ],
-    "Year": [
-        
-        ["1990", "1990"] ,
-        ["1991", "1991"] ,
-        ["1992", "1992"] ,
-        ["1993", "1993"] ,
-        ["1994", "1994"] ,
-        ["1995", "1995"] ,
-        ["1996", "1996"] ,
-        ["1997", "1997"] ,
-        ["1998", "1998"] ,
-        ["1999", "1999"] ,
-        ["2000", "2000"] ,
-        ["2001", "2001"] ,
-        ["2002", "2002"] ,
-        ["2003", "2003"] ,
-        ["2004", "2004"] ,
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] ,
-        ["2014", "2014"] ,
-        ["2015", "2015"] 
     ]
 }
 
@@ -233,45 +233,6 @@ PythonToBlocks.KNOWN_MODULES['aids'] = {
             "PROPERTY", 
             {"type": "mutation", "name": "@INDEX"},
             {"type": "mutation", "name": "@INDEX_VALUE"}]
-};
-
-Tifa.MODULES['aids'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_reports': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Data'}, {"type": "Str", "value": 'Country'}, {"type": "Str", "value": 'Year'}], [
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'HIV Prevalence'}, {"type": "Str", "value": 'New HIV Infections'}, {"type": "Str", "value": 'People Living with HIV'}, {"type": "Str", "value": 'AIDS-Related Deaths'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Adults'}, {"type": "Str", "value": 'Young Women'}, {"type": "Str", "value": 'Young Men'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Female Adults'}, {"type": "Str", "value": 'Incidence Rate Among Adults'}, {"type": "Str", "value": 'All Ages'}, {"type": "Str", "value": 'Adults'}, {"type": "Str", "value": 'Male Adults'}, {"type": "Str", "value": 'Children'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Female Adults'}, {"type": "Str", "value": 'Total'}, {"type": "Str", "value": 'Male Adults'}, {"type": "Str", "value": 'Children'}, {"type": "Str", "value": 'Adults'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Female Adults'}, {"type": "Str", "value": 'All Ages'}, {"type": "Str", "value": 'Adults'}, {"type": "Str", "value": 'AIDS Orphans'}, {"type": "Str", "value": 'Male Adults'}, {"type": "Str", "value": 'Children'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])]), 
-				Tifa._STR_TYPE(), 
-				Tifa._NUM_TYPE()]))),
-        
-    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Aids'] = '<category name="Data - Aids" colour="50">'+

@@ -12,6 +12,56 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_billionaires': {
+                "type": "FunctionType", 
+                "name": 'get_billionaires',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'wealth'}, {"type": "LiteralStr", "value": 'demographics'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "NumType"}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'how'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'worth in billions'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'was founder'}, {"type": "LiteralStr", "value": 'from emerging'}, {"type": "LiteralStr", "value": 'inherited'}, {"type": "LiteralStr", "value": 'category'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'was political'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'age'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'founded'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'relationship'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'sector'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'citizenship'}, {"type": "LiteralStr", "value": 'gdp'}, {"type": "LiteralStr", "value": 'country code'}, {"type": "LiteralStr", "value": 'region'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +85,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "billionaires.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "billionaires.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

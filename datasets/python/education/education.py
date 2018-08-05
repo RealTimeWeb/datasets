@@ -35,7 +35,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "education.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "education.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
@@ -103,38 +104,6 @@ class _Auxiliary(object):
 
 
 
-def get_state(state):
-    """
-    Returns information about one state. Enrollment data is for Pre-K through 12th grade.
-    
-    :param state: The state you are interested in.
-    :type state: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT state FROM school").fetchall()]
-    if state.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(state, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if False:
-        # If there was a Test version of this method, it would go here. But alas.
-        pass
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM school WHERE state=? COLLATE NOCASE".format(
-            hardware=_Constants._HARDWARE),
-            (state, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        data = data[0]
-        
-        return _Auxiliary._byteify(data)
-        
-
 def get_all_states():
     """
     Returns all of the data for every state into a list.
@@ -159,15 +128,6 @@ def get_all_states():
 def _test_interfaces():
     from pprint import pprint as _pprint
     from timeit import default_timer as _default_timer
-    # Production test
-    print("Production get_state")
-    start_time = _default_timer()
-    result = get_state("'Virginia'")
-    
-    _pprint(result)
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
     # Production test
     print("Production get_all_states")
     start_time = _default_timer()

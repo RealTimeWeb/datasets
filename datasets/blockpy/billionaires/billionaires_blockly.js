@@ -3,19 +3,13 @@
 var billionaires_INDEXES = [
     ["(None)", "(None)"],
     
-    ["year", "year"] ,
-    ["citizenship", "citizenship"] 
+    ["citizenship", "citizenship"] ,
+    ["year", "year"] 
 ];
 
 var billionaires_INDEX_VALUES = {
     "(None)": [],
     
-    "year": [
-        
-        ["1996", "1996"] ,
-        ["2001", "2001"] ,
-        ["2014", "2014"] 
-    ],
     "citizenship": [
         
         ["Algeria", "Algeria"] ,
@@ -91,6 +85,12 @@ var billionaires_INDEX_VALUES = {
         ["United States", "United States"] ,
         ["Venezuela", "Venezuela"] ,
         ["Vietnam", "Vietnam"] 
+    ],
+    "year": [
+        
+        ["1996", "1996"] ,
+        ["2001", "2001"] ,
+        ["2014", "2014"] 
     ]
 }
 
@@ -184,45 +184,6 @@ PythonToBlocks.KNOWN_MODULES['billionaires'] = {
             "PROPERTY", 
             {"type": "mutation", "name": "@INDEX"},
             {"type": "mutation", "name": "@INDEX_VALUE"}]
-};
-
-Tifa.MODULES['billionaires'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_billionaires': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'year'}, {"type": "Str", "value": 'rank'}, {"type": "Str", "value": 'location'}, {"type": "Str", "value": 'name'}, {"type": "Str", "value": 'company'}, {"type": "Str", "value": 'demographics'}, {"type": "Str", "value": 'wealth'}], [
-				Tifa._NUM_TYPE(), 
-				Tifa._NUM_TYPE(), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'gdp'}, {"type": "Str", "value": 'region'}, {"type": "Str", "value": 'country code'}, {"type": "Str", "value": 'citizenship'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE()]), 
-				Tifa._STR_TYPE(), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'name'}, {"type": "Str", "value": 'sector'}, {"type": "Str", "value": 'relationship'}, {"type": "Str", "value": 'type'}, {"type": "Str", "value": 'founded'}], [
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._NUM_TYPE()]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'gender'}, {"type": "Str", "value": 'age'}], [
-					Tifa._STR_TYPE(), 
-					Tifa._NUM_TYPE()]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'type'}, {"type": "Str", "value": 'worth in billions'}, {"type": "Str", "value": 'how'}], [
-					Tifa._STR_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'was political'}, {"type": "Str", "value": 'was founder'}, {"type": "Str", "value": 'category'}, {"type": "Str", "value": 'inherited'}, {"type": "Str", "value": 'from emerging'}, {"type": "Str", "value": 'industry'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._STR_TYPE(), 
-						Tifa._STR_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._STR_TYPE()])])]))),
-        
-    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Billionaires'] = '<category name="Data - Billionaires" colour="50">'+

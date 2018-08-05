@@ -198,6 +198,28 @@ $(document).ready(function() {
 </script>
 
 
+    <div id='explore-classics-__0__-bibliography-languages' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"en"</code></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-bibliography-languages" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-classics-__0__-bibliography-languages-__0__").click(function() {
+            $( "#explore-classics-__0__-bibliography-languages-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
     <div id='explore-classics-__0__-metadata-formats-types' title='List'>
         
         <table class='table table-condensed table-striped table-bordered' >
@@ -286,33 +308,261 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-classics-__0__-bibliography-languages' title='List'>
-        
+
+
+    <div id='explore-classics-__0__-metrics-difficulty' title='Dictionary (9 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
-            <tr> <td>0</td> <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"en"</code></td></tr>
-            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"coleman liau index"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>10.73</code>
+                    
+                 </td> 
+                 <td>The Coleman Liau Index is a number indicating the understandability of the text. This number is an approximate US Grade Level needed to comprehend the text, calculated using characters instead of syllables, similar to the Automated Readability Index.</td> </tr>
+            
+            <tr> <td><code>"flesch kincaid grade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>7.9</code>
+                    
+                 </td> 
+                 <td>The "Flesch-Kincaid Grade Level Formula" presents a score as a U.S. grade level, making it easier to understand. It uses a similar formula to the Flesch Reading Ease measure.</td> </tr>
+            
+            <tr> <td><code>"automated readability index"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>10.7</code>
+                    
+                 </td> 
+                 <td>The Automated Readability Index is a number indicating the understandability of the text. This number is an approximate US Grade Level needed to comprehend the text, calculated using the characters per word and words per sentences.</td> </tr>
+            
+            <tr> <td><code>"smog index"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>3.1</code>
+                    
+                 </td> 
+                 <td>The SMOG grade is a measure of readability that estimates the years of education needed to understand a piece of writing. SMOG is the acronym derived from "Simple Measure of Gobbledygook". Its formula is based on the number of polysyllables (words with three or more syllables) and the number of sentences.</td> </tr>
+            
+            <tr> <td><code>"difficult words"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>9032</code>
+                    
+                 </td> 
+                 <td>The number of words in the text that are considered "difficult"; that is, they are not on a list of 3000 words that are considered understandable by fourth-grade American students.</td> </tr>
+            
+            <tr> <td><code>"flesch reading ease"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>70.13</code>
+                    
+                 </td> 
+                 <td>The 'Flesch Reading Ease' uses the sentence length (number of words per sentence) and the number of syllables per word in an equation to calculate the reading ease. Texts with a very high Flesch reading Ease score (about 100) are very easy to read, have short sentences and no words of more than two syllables.</td> </tr>
+            
+            <tr> <td><code>"gunning fog"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>9.200000000000001</code>
+                    
+                 </td> 
+                 <td>The Gunning Fog Index measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading. The formula is calculated using the ratio of words to sentences and the percentage of words that are complex (i.e. have three or more syllables).</td> </tr>
+            
+            <tr> <td><code>"dale chall readability score"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>5.7</code>
+                    
+                 </td> 
+                 <td>The Dale Chall Readability Score provides a numeric gauge of the comprehension difficulty that readers come upon when reading a text. It uses a list of 3000 words that groups of fourth-grade American students could reliably understand, considering any word not on that list to be difficult. This number is an approximate US Grade Level needed to comprehend the text.</td> </tr>
+            
+            <tr> <td><code>"linsear write formula"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>13.5</code>
+                    
+                 </td> 
+                 <td>Linsear Write is a readability metric for English text, purportedly developed for the United States Air Force to help them calculate the readability of their technical manuals. It was designed to calculate the United States grade level of a text sample based on sentence length and the number words used that have three or more syllables.</td> </tr>
+            
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
-        $( "#explore-classics-__0__-bibliography-languages" ).dialog({
+        $( "#explore-classics-__0__-metrics-difficulty" ).dialog({
           autoOpen: false,
           width: 600
         });
-        $("#btn-explore-classics-__0__-bibliography-languages-__0__").click(function() {
-            $( "#explore-classics-__0__-bibliography-languages-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-coleman-liau-index").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-coleman-liau-index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-flesch-kincaid-grade").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-flesch-kincaid-grade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-automated-readability-index").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-automated-readability-index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-smog-index").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-smog-index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-difficult-words").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-difficult-words" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-flesch-reading-ease").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-flesch-reading-ease" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-gunning-fog").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-gunning-fog" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-dale-chall-readability-score").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-dale-chall-readability-score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-difficulty-linsear-write-formula").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty-linsear-write-formula" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
     });
     </script>
 
-
+    <div id='explore-classics-__0__' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"bibliography"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"metrics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-metrics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"metadata"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-metadata'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-bibliography").click(function() {
+            $( "#explore-classics-__0__-bibliography" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics").click(function() {
+            $( "#explore-classics-__0__-metrics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metadata").click(function() {
+            $( "#explore-classics-__0__-metadata" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
 
     <div id='explore-classics-__0__-metadata' title='Dictionary (5 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"formats"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-metadata-formats'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"rank"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
+                 <td>The rank of this book in comparison to other books on Gutenberg, measured by number of downloads. A lower rank indicatest that that book is more popular.</td> </tr>
+            
+            <tr> <td><code>"downloads"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>36576</code>
+                    
+                 </td> 
+                 <td>The number of times this book has been downloaded from Project Gutenberg, as of the last update (circa Spring 2016).</td> </tr>
             
             <tr> <td><code>"url"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -325,14 +575,6 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"downloads"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>36576</code>
-                    
-                 </td> 
-                 <td>The number of times this book has been downloaded from Project Gutenberg, as of the last update (circa Spring 2016).</td> </tr>
-            
             <tr> <td><code>"id"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -341,24 +583,14 @@ $(document).ready(function() {
                  </td> 
                  <td>Every book on Project Gutenberg has a unique ID number. You can use this number to check the book on project gutenberg (e.g., book 110 is <a href="http://www.gutenberg.org/ebooks/110">http://www.gutenberg.org/ebooks/110</a>).</td> </tr>
             
-            <tr> <td><code>"rank"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1</code>
-                    
-                 </td> 
-                 <td>The rank of this book in comparison to other books on Gutenberg, measured by number of downloads. A lower rank indicatest that that book is more popular.</td> </tr>
-            
-            <tr> <td><code>"formats"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-metadata-formats'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
         </table>
     </div>
+    
+        
+    
+        
+    
+        
     
         
         <div id='explore-classics-__0__-metadata-url' title='Previewing Values'>
@@ -366,317 +598,82 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2344"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2397"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/12956"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/14021"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/689"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/1937"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/45631"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/14407"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51290"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/6686"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/6688"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/34099"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/6867"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/805"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/5827"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
                     <td><code>"https://www.gutenberg.org/ebooks/34856"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/6626"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/41"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2097"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/33504"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51294"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/1653"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51306"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/30201"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51428"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/1685"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51304"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/28500"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51305"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/51343"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51478"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/1430"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2199"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/9182"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/22400"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/8106"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/271"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/2814"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/11339"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/12116"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51475"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/28289"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/38594"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/35461"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51477"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51308"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51473"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/3021"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/22381"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/3742"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/3743"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/19033"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/470"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51398"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2048"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/876"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51397"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/8419"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51391"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51393"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51392"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/15489"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/11505"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51296"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2488"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/1946"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/575"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/1028"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/12655"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/27424"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/5219"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/18338"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/37134"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/16269"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/1026"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51426"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/7256"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/42474"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -686,22 +683,92 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51317"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/22657"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/15263"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/1128"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/3328"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/9603"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/28696"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/17157"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/2413"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/62"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/1754"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/10657"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/391"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/51421"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/45"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/11030"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/27805"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/19942"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/18269"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/24"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/114"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/201"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -711,127 +778,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2600"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/95"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2833"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/1093"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/3735"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/28522"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/28520"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/16436"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/14244"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/25344"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/731"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/21765"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/10625"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/10623"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/29765"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/51331"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/14328"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/15237"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/14323"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/16966"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/34632"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/17489"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/1200"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/5322"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/730"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/20583"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/2992"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/36020"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -841,27 +798,302 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/3250"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/51273"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/808"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/2680"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/16726"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/161"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/8581"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/16643"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"https://www.gutenberg.org/ebooks/3528"</code></td>
+                    <td><code>"https://www.gutenberg.org/ebooks/59"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/921"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/34206"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/8710"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/41617"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/2226"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/23042"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/13726"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/120"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/51407"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/2048"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/1112"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/15474"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/470"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/1874"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/10002"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/36098"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/12956"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/1129"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/17147"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/51426"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/2446"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/6762"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/2067"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/4276"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/19778"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/144"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/51338"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/1998"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/51409"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/512"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/621"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/3790"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/41085"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/217"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/41873"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/2529"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/35123"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/389"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/12096"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/2407"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/1012"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/42704"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/1661"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/209"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/23218"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/4320"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/580"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/28696"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/754"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/51310"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/657"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/10136"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/885"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/17976"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"https://www.gutenberg.org/ebooks/51361"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -877,18 +1109,30 @@ $(document).ready(function() {
     
         
     
-        
-    
-        
-    
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-classics-__0__-metadata" ).dialog({
           autoOpen: false,
           width: 600
         });
+        
+        $("#btn-explore-classics-__0__-metadata-formats").click(function() {
+            $( "#explore-classics-__0__-metadata-formats" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metadata-rank").click(function() {
+            $( "#explore-classics-__0__-metadata-rank" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metadata-downloads").click(function() {
+            $( "#explore-classics-__0__-metadata-downloads" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         
         $("#btn-explore-classics-__0__-metadata-url").click(function() {
             $( "#explore-classics-__0__-metadata-url" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -905,26 +1149,57 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-classics-__0__-metadata-downloads").click(function() {
-            $( "#explore-classics-__0__-metadata-downloads" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-classics-__0__-metadata-id").click(function() {
             $( "#explore-classics-__0__-metadata-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-classics-__0__-metadata-rank").click(function() {
-            $( "#explore-classics-__0__-metadata-rank" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-classics-__0__-metadata-formats' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"types"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-metadata-formats-types'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>8</code>
+                    
+                 </td> 
+                 <td>Project Gutenberg makes books available in a wide variety of file formats, including raw text files, HTML web pages, audio books, etc. This field indicates the number of ways that this book is available.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-metadata-formats" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-metadata-formats-types").click(function() {
+            $( "#explore-classics-__0__-metadata-formats-types" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-classics-__0__-metadata-formats").click(function() {
-            $( "#explore-classics-__0__-metadata-formats" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-classics-__0__-metadata-formats-total").click(function() {
+            $( "#explore-classics-__0__-metadata-formats-total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -936,14 +1211,6 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"polysyllables"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>4603</code>
-                    
-                 </td> 
-                 <td>The number of words that have 3 or more syllables.</td> </tr>
-            
             <tr> <td><code>"characters"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -952,34 +1219,26 @@ $(document).ready(function() {
                  </td> 
                  <td>Characters are letters and symbols in a text, not the number of people.</td> </tr>
             
+            <tr> <td><code>"average letter per word"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>4.83</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"polysyllables"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>4603</code>
+                    
+                 </td> 
+                 <td>The number of words that have 3 or more syllables.</td> </tr>
+            
             <tr> <td><code>"average sentence length"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
                     <code>18.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"words"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>121533</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"sentences"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>6511</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"syllables"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>170648.1</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -992,10 +1251,26 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"average letter per word"</code></td> 
+            <tr> <td><code>"words"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>121533</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"syllables"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>4.83</code>
+                    <code>170648.1</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sentences"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>6511</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1026,44 +1301,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-classics-__0__-metrics-statistics-polysyllables").click(function() {
-            $( "#explore-classics-__0__-metrics-statistics-polysyllables" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-classics-__0__-metrics-statistics-characters").click(function() {
             $( "#explore-classics-__0__-metrics-statistics-characters" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-statistics-average-sentence-length").click(function() {
-            $( "#explore-classics-__0__-metrics-statistics-average-sentence-length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-statistics-words").click(function() {
-            $( "#explore-classics-__0__-metrics-statistics-words" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-statistics-sentences").click(function() {
-            $( "#explore-classics-__0__-metrics-statistics-sentences" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-statistics-syllables").click(function() {
-            $( "#explore-classics-__0__-metrics-statistics-syllables" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-statistics-average-sentence-per-word").click(function() {
-            $( "#explore-classics-__0__-metrics-statistics-average-sentence-per-word" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1074,33 +1313,69 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-classics-__0__-metrics-statistics-polysyllables").click(function() {
+            $( "#explore-classics-__0__-metrics-statistics-polysyllables" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-statistics-average-sentence-length").click(function() {
+            $( "#explore-classics-__0__-metrics-statistics-average-sentence-length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-statistics-average-sentence-per-word").click(function() {
+            $( "#explore-classics-__0__-metrics-statistics-average-sentence-per-word" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-statistics-words").click(function() {
+            $( "#explore-classics-__0__-metrics-statistics-words" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-statistics-syllables").click(function() {
+            $( "#explore-classics-__0__-metrics-statistics-syllables" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-statistics-sentences").click(function() {
+            $( "#explore-classics-__0__-metrics-statistics-sentences" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
     });
     </script>
 
-    <div id='explore-classics-__0__' title='Dictionary (3 keys)'>
+    <div id='explore-classics-__0__-metrics' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"metrics"</code></td> 
+            <tr> <td><code>"difficulty"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-metrics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-metrics-difficulty'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"bibliography"</code></td> 
+            <tr> <td><code>"sentiments"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-metrics-sentiments'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"metadata"</code></td> 
+            <tr> <td><code>"statistics"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-metadata'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-metrics-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -1116,25 +1391,74 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-classics-__0__" ).dialog({
+        $( "#explore-classics-__0__-metrics" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-classics-__0__-metrics").click(function() {
-            $( "#explore-classics-__0__-metrics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-classics-__0__-metrics-difficulty").click(function() {
+            $( "#explore-classics-__0__-metrics-difficulty" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-classics-__0__-bibliography").click(function() {
-            $( "#explore-classics-__0__-bibliography" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-classics-__0__-metrics-sentiments").click(function() {
+            $( "#explore-classics-__0__-metrics-sentiments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-classics-__0__-metadata").click(function() {
-            $( "#explore-classics-__0__-metadata" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-classics-__0__-metrics-statistics").click(function() {
+            $( "#explore-classics-__0__-metrics-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-metrics-sentiments' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"subjectivity"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.5222391494704692</code>
+                    
+                 </td> 
+                 <td>Sentiment analysis attempts to determine the attitude of a speaker or a writer with respect to some topic or the overall contextual polarity of a document. Subjectivity (as opposed to Objectivity) in particular refers to whether the text is opinionated or attempts to stay factual.</td> </tr>
+            
+            <tr> <td><code>"polarity"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.13671337760500446</code>
+                    
+                 </td> 
+                 <td>Sentiment analysis attempts to determine the attitude of a speaker or a writer with respect to some topic or the overall contextual polarity of a document. Polarity in particular refers to how positive or negative the author is towards the content.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-metrics-sentiments" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-metrics-sentiments-subjectivity").click(function() {
+            $( "#explore-classics-__0__-metrics-sentiments-subjectivity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-metrics-sentiments-polarity").click(function() {
+            $( "#explore-classics-__0__-metrics-sentiments-polarity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1145,6 +1469,14 @@ $(document).ready(function() {
     <div id='explore-classics-__0__-bibliography-author' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"birth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1775</code>
+                    
+                 </td> 
+                 <td>The recorded birth year of the author. If their birth year is unknown, it is replaced with "0".</td> </tr>
             
             <tr> <td><code>"death"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -1165,16 +1497,10 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"birth"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1775</code>
-                    
-                 </td> 
-                 <td>The recorded birth year of the author. If their birth year is unknown, it is replaced with "0".</td> </tr>
-            
         </table>
     </div>
+    
+        
     
         
     
@@ -1214,17 +1540,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Plato"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Anonymous"</code></td>
                     <td>11</td>
                 </tr>
             
                 <tr>
                     <td><code>"Austen, Jane"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Plato"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -1239,12 +1565,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Poe, Edgar Allan"</code></td>
+                    <td><code>"Dostoyevsky, Fyodor"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Dostoyevsky, Fyodor"</code></td>
+                    <td><code>"Poe, Edgar Allan"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -1259,12 +1585,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Carroll, Lewis"</code></td>
+                    <td><code>"Kipling, Rudyard"</code></td>
                     <td>7</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Kipling, Rudyard"</code></td>
+                    <td><code>"Carroll, Lewis"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -1284,11 +1610,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Hardy, Thomas"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Homer"</code></td>
                     <td>6</td>
                 </tr>
@@ -1299,8 +1620,23 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Hardy, Thomas"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Conrad, Joseph"</code></td>
                     <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Goethe, Johann Wolfgang von"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"London, Jack"</code></td>
+                    <td>5</td>
                 </tr>
             
                 <tr>
@@ -1309,7 +1645,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Verne, Jules"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Montgomery, L. M. (Lucy Maud)"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Burroughs, Edgar Rice"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -1324,57 +1670,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"London, Jack"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Goethe, Johann Wolfgang von"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Burroughs, Edgar Rice"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Verne, Jules"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Tolstoy, Leo, graf"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cervantes Saavedra, Miguel de"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eliot, George"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fitzgerald, F. Scott (Francis Scott)"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Darwin, Charles"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Harmon, Jim"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Various"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -1384,37 +1680,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Neville, Kris"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Defoe, Daniel"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rousseau, Jean-Jacques"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Paine, Thomas"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Marlowe, Christopher"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mill, John Stuart"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Stevenson, Robert Louis"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Darwin, Charles"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -1424,7 +1695,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Hugo, Victor"</code></td>
+                    <td><code>"Defoe, Daniel"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paine, Thomas"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -1434,27 +1710,62 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Marlowe, Christopher"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hugo, Victor"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cervantes Saavedra, Miguel de"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rousseau, Jean-Jacques"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eliot, George"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harmon, Jim"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Neville, Kris"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mill, John Stuart"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Rizal, Jose"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Blackwood, Algernon"</code></td>
-                    <td>3</td>
+                    <td><code>"Various"</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Cicero, Marcus Tullius"</code></td>
-                    <td>3</td>
+                    <td><code>"Fitzgerald, F. Scott (Francis Scott)"</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Wharton, Edith"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eliot, T. S. (Thomas Stearns)"</code></td>
+                    <td><code>"Swift, Jonathan"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -1464,57 +1775,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Baudelaire, Charles"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Aristotle"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gaskell, Elizabeth Cleghorn"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wodehouse, P. G. (Pelham Grenville)"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Barrie, J. M. (James Matthew)"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tagore, Rabindranath"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"James, William"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Freud, Sigmund"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Swift, Jonathan"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Shelley, Mary Wollstonecraft"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Carlyle, Thomas"</code></td>
+                    <td><code>"Blackwood, Algernon"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -1524,12 +1785,107 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Joyce, James"</code></td>
+                    <td><code>"Russell, Bertrand"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gaskell, Elizabeth Cleghorn"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Freud, Sigmund"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kant, Immanuel"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baudelaire, Charles"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wharton, Edith"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carlyle, Thomas"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aristotle"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Barrie, J. M. (James Matthew)"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kafka, Franz"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James, William"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hume, David"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
                     <td><code>"Gogol, Nikolai Vasilevich"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aesop"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tagore, Rabindranath"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hesse, Hermann"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wodehouse, P. G. (Pelham Grenville)"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joyce, James"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cicero, Marcus Tullius"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shelley, Mary Wollstonecraft"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Milton, John"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -1544,37 +1900,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Russell, Bertrand"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hesse, Hermann"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Milton, John"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kafka, Franz"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Aesop"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hume, David"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kant, Immanuel"</code></td>
+                    <td><code>"Eliot, T. S. (Thomas Stearns)"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -1584,72 +1910,57 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Potter, Beatrix"</code></td>
+                    <td><code>"Bacon, Francis"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Virgil"</code></td>
+                    <td><code>"Stoker, Bram"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Pangborn, Edgar"</code></td>
+                    <td><code>"Woolf, Virginia"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Mann, Thomas"</code></td>
+                    <td><code>"Richardson, Samuel"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Maugham, W. Somerset (William Somerset)"</code></td>
+                    <td><code>"Hodgson, William Hope"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Malory, Thomas, Sir"</code></td>
+                    <td><code>"Montessori, Maria"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Chaucer, Geoffrey"</code></td>
+                    <td><code>"Wesley, Joseph"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Tocqueville, Alexis de"</code></td>
+                    <td><code>"Locke, John"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Grimm, Wilhelm"</code></td>
+                    <td><code>"Zola, Emile"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Shaara, Michael"</code></td>
+                    <td><code>"Robinson, Frank M."</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Irving, Washington"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vonnegut, Kurt"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Leonardo, da Vinci"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Forster, E. M. (Edward Morgan)"</code></td>
+                    <td><code>"Ruskin, John"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1659,27 +1970,42 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Petronius Arbiter"</code></td>
+                    <td><code>"Vonnegut, Kurt"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Gibbon, Edward"</code></td>
+                    <td><code>"Haggard, H. Rider (Henry Rider)"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Alcott, Louisa May"</code></td>
+                    <td><code>"Collins, Wilkie"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Gilman, Charlotte Perkins"</code></td>
+                    <td><code>"Malory, Thomas, Sir"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Lang, Andrew"</code></td>
+                    <td><code>"Shaara, Michael"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Boldrewood, Rolf"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crane, Stephen"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Voltaire"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1693,14 +2019,18 @@ $(document).ready(function() {
         </div>
         
     
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-classics-__0__-bibliography-author" ).dialog({
           autoOpen: false,
           width: 600
         });
+        
+        $("#btn-explore-classics-__0__-bibliography-author-birth").click(function() {
+            $( "#explore-classics-__0__-bibliography-author-birth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         
         $("#btn-explore-classics-__0__-bibliography-author-death").click(function() {
             $( "#explore-classics-__0__-bibliography-author-death" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -1723,1025 +2053,6 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-classics-__0__-bibliography-author-birth").click(function() {
-            $( "#explore-classics-__0__-bibliography-author-birth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-classics-__0__-metrics' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"difficulty"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-metrics-difficulty'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"statistics"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-metrics-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"sentiments"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-metrics-sentiments'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-classics-__0__-metrics" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-statistics").click(function() {
-            $( "#explore-classics-__0__-metrics-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-sentiments").click(function() {
-            $( "#explore-classics-__0__-metrics-sentiments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-classics-__0__-metadata-formats' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"total"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>8</code>
-                    
-                 </td> 
-                 <td>Project Gutenberg makes books available in a wide variety of file formats, including raw text files, HTML web pages, audio books, etc. This field indicates the number of ways that this book is available.</td> </tr>
-            
-            <tr> <td><code>"types"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-metadata-formats-types'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-classics-__0__-metadata-formats" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-classics-__0__-metadata-formats-total").click(function() {
-            $( "#explore-classics-__0__-metadata-formats-total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metadata-formats-types").click(function() {
-            $( "#explore-classics-__0__-metadata-formats-types" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-classics-__0__-metrics-sentiments' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"polarity"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.136713377605</code>
-                    
-                 </td> 
-                 <td>Sentiment analysis attempts to determine the attitude of a speaker or a writer with respect to some topic or the overall contextual polarity of a document. Polarity in particular refers to how positive or negative the author is towards the content.</td> </tr>
-            
-            <tr> <td><code>"subjectivity"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.52223914947</code>
-                    
-                 </td> 
-                 <td>Sentiment analysis attempts to determine the attitude of a speaker or a writer with respect to some topic or the overall contextual polarity of a document. Subjectivity (as opposed to Objectivity) in particular refers to whether the text is opinionated or attempts to stay factual.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-classics-__0__-metrics-sentiments" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-classics-__0__-metrics-sentiments-polarity").click(function() {
-            $( "#explore-classics-__0__-metrics-sentiments-polarity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-sentiments-subjectivity").click(function() {
-            $( "#explore-classics-__0__-metrics-sentiments-subjectivity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-classics-__0__-bibliography' title='Dictionary (7 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"publication"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-publication'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"title"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Pride and Prejudice"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-title'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"author"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-author'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"languages"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-languages'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"subjects"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-subjects'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"congress classifications"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-congress-classifications'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"type"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Text"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-type'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-        <div id='explore-classics-__0__-bibliography-title' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Poems"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Common Sense"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Republic"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Far from the Madding Crowd"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Iliad"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Hound of the Baskervilles"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Paradise Lost"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hamlet, Prince of Denmark"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Madame Bovary"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Frankenstein; Or, The Modern Prometheus"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Wind in the Willows"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Picture of Dorian Gray"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alice's Adventures in Wonderland"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sense and Sensibility"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Secret Garden"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Orthodoxy"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Art of War"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Heart of Darkness"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Wonderful Wizard of Oz"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Tragical History of Doctor Faustus: From the Q..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Scarlet Letter"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Arabian Nights Entertainments"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pride and Prejudice"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Strange Case of Dr. Jekyll and Mr. Hyde"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Jungle Book"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Return of Sherlock Holmes"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Entire Project Gutenberg Works of Mark Twain"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>'"Everyman," with other interludes, including eight...'</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wuthering Heights"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Crime and Punishment"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lady Audley's Secret"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Notes from the Underground"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Phaedra"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dumbwaiter"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Tragedy of Julius Caesar"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mission Furniture: How to Make It, Part 3"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Citizen Jell"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Awakening, and Selected Short Stories"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"On the Origin of Species By Means of Natural Selec..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chain Reaction"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Three Ghost Stories"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Tenant of Wildfell Hall"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Emile"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Leaves of Grass"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"End as a Hero"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Mill on the Floss"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ivanhoe: A Romance"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Spicy Sound of Success"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Letters to His Son, Complete: On the Fine Art of B..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Palmistry for All"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Rubaiyat of Omar Khayyam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Essays by Ralph Waldo Emerson"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Moral Equivalent"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Film Truth; September, 1920"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"A General History of the Pyrates:: from their firs..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"French Mediaeval Romances from the Lays of Marie d..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"An Essay on Man; Moral Essays and Satires"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Encyclopedia of Needlework"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Real Mother Goose"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"On the Duty of Civil Disobedience"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Moonstone"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kidnapped"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Iliads of Homer: Translated according to the Greek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Capture and Escape: A Narrative of Army and Prison..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hawaiian Folk Tales: A Collection of Native Legends"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Autobiography of Andrew Carnegie"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Iron Heel"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"A Study in Scarlet"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pen Pal"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Beeton's Book of Needlework"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dr. Kometevsky's Day"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wives and Daughters"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"My Life and Work"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Beautiful and Damned"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Complete Plays of Gilbert and Sullivan"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lysistrata"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Memoirs of Jacques Casanova de Seingalt, 1725-..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Public School Life: Boys Masters Parents"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tales of the Jazz Age"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Theory of the Leisure Class"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The American Occupation of the Philippines 1898-1912"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Federalist Papers"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>'"De Bello Gallico" and Other Commentaries'</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Complete Poems of Paul Laurence Dunbar"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Myths & Legends of the Celtic Race"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Of Human Bondage"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The French Revolution: A History"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"History of Tom Jones, a Foundling"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Odyssey: Rendered into English prose for the u..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Jew of Malta"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Through the Looking-Glass"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hunt the Hunter"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Odyssey"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>'"1812" Napoleon I in Russia'</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eve's Diary, Complete"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Love of Monsieur"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bahnwrter Thiel"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"On the Nature of Things"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Anne's House of Dreams"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Portrait of a Lady  Volume 1"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <div id='explore-classics-__0__-bibliography-type' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Text"</code></td>
-                    <td>1004</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dataset"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"StillImage"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-classics-__0__-bibliography" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-classics-__0__-bibliography-publication").click(function() {
-            $( "#explore-classics-__0__-bibliography-publication" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-bibliography-title").click(function() {
-            $( "#explore-classics-__0__-bibliography-title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-classics-__0__-bibliography-title").click(function() {
-            $( "#explore-classics-__0__-bibliography-title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-classics-__0__-bibliography-title" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-classics-__0__-bibliography-author").click(function() {
-            $( "#explore-classics-__0__-bibliography-author" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-bibliography-languages").click(function() {
-            $( "#explore-classics-__0__-bibliography-languages" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-bibliography-subjects").click(function() {
-            $( "#explore-classics-__0__-bibliography-subjects" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-bibliography-congress-classifications").click(function() {
-            $( "#explore-classics-__0__-bibliography-congress-classifications" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-bibliography-type").click(function() {
-            $( "#explore-classics-__0__-bibliography-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-classics-__0__-bibliography-type").click(function() {
-            $( "#explore-classics-__0__-bibliography-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-classics-__0__-bibliography-type" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-    });
-    </script>
-
-    <div id='explore-classics-__0__-metrics-difficulty' title='Dictionary (9 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"flesch reading ease"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>70.13</code>
-                    
-                 </td> 
-                 <td>The 'Flesch Reading Ease' uses the sentence length (number of words per sentence) and the number of syllables per word in an equation to calculate the reading ease. Texts with a very high Flesch reading Ease score (about 100) are very easy to read, have short sentences and no words of more than two syllables.</td> </tr>
-            
-            <tr> <td><code>"automated readability index"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>10.7</code>
-                    
-                 </td> 
-                 <td>The Automated Readability Index is a number indicating the understandability of the text. This number is an approximate US Grade Level needed to comprehend the text, calculated using the characters per word and words per sentences.</td> </tr>
-            
-            <tr> <td><code>"coleman liau index"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>10.73</code>
-                    
-                 </td> 
-                 <td>The Coleman Liau Index is a number indicating the understandability of the text. This number is an approximate US Grade Level needed to comprehend the text, calculated using characters instead of syllables, similar to the Automated Readability Index.</td> </tr>
-            
-            <tr> <td><code>"gunning fog"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>9.2</code>
-                    
-                 </td> 
-                 <td>The Gunning Fog Index measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading. The formula is calculated using the ratio of words to sentences and the percentage of words that are complex (i.e. have three or more syllables).</td> </tr>
-            
-            <tr> <td><code>"linsear write formula"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>13.5</code>
-                    
-                 </td> 
-                 <td>Linsear Write is a readability metric for English text, purportedly developed for the United States Air Force to help them calculate the readability of their technical manuals. It was designed to calculate the United States grade level of a text sample based on sentence length and the number words used that have three or more syllables.</td> </tr>
-            
-            <tr> <td><code>"dale chall readability score"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>5.7</code>
-                    
-                 </td> 
-                 <td>The Dale Chall Readability Score provides a numeric gauge of the comprehension difficulty that readers come upon when reading a text. It uses a list of 3000 words that groups of fourth-grade American students could reliably understand, considering any word not on that list to be difficult. This number is an approximate US Grade Level needed to comprehend the text.</td> </tr>
-            
-            <tr> <td><code>"flesch kincaid grade"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>7.9</code>
-                    
-                 </td> 
-                 <td>The "Flesch-Kincaid Grade Level Formula" presents a score as a U.S. grade level, making it easier to understand. It uses a similar formula to the Flesch Reading Ease measure.</td> </tr>
-            
-            <tr> <td><code>"smog index"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>3.1</code>
-                    
-                 </td> 
-                 <td>The SMOG grade is a measure of readability that estimates the years of education needed to understand a piece of writing. SMOG is the acronym derived from "Simple Measure of Gobbledygook". Its formula is based on the number of polysyllables (words with three or more syllables) and the number of sentences.</td> </tr>
-            
-            <tr> <td><code>"difficult words"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>9032</code>
-                    
-                 </td> 
-                 <td>The number of words in the text that are considered "difficult"; that is, they are not on a list of 3000 words that are considered understandable by fourth-grade American students.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-classics-__0__-metrics-difficulty" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-flesch-reading-ease").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-flesch-reading-ease" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-automated-readability-index").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-automated-readability-index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-coleman-liau-index").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-coleman-liau-index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-gunning-fog").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-gunning-fog" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-linsear-write-formula").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-linsear-write-formula" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-dale-chall-readability-score").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-dale-chall-readability-score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-flesch-kincaid-grade").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-flesch-kincaid-grade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-smog-index").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-smog-index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-classics-__0__-metrics-difficulty-difficult-words").click(function() {
-            $( "#explore-classics-__0__-metrics-difficulty-difficult-words" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
     });
     </script>
 
@@ -2760,6 +2071,14 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1998</code>
+                    
+                 </td> 
+                 <td>The year when the book was published according to Project Gutenberg. Keep in mind that this may not be the original publication date of the work, just that particular edition of the work. Notice that missing values have been coded as "0".</td> </tr>
+            
             <tr> <td><code>"full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
@@ -2770,14 +2089,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td></td> </tr>
-            
-            <tr> <td><code>"year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1998</code>
-                    
-                 </td> 
-                 <td>The year when the book was published according to Project Gutenberg. Keep in mind that this may not be the original publication date of the work, just that particular edition of the work. Notice that missing values have been coded as "0".</td> </tr>
             
             <tr> <td><code>"day"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -2849,12 +2160,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"December"</code></td>
+                    <td><code>"September"</code></td>
                     <td>50</td>
                 </tr>
             
                 <tr>
-                    <td><code>"September"</code></td>
+                    <td><code>"December"</code></td>
                     <td>50</td>
                 </tr>
             
@@ -2869,14 +2180,11 @@ $(document).ready(function() {
         
     
         
+    
+        
         <div id='explore-classics-__0__-bibliography-publication-full' title='Previewing Values'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"March 8, 2016"</code></td>
-                    <td>9</td>
-                </tr>
             
                 <tr>
                     <td><code>"March, 1998"</code></td>
@@ -2884,8 +2192,18 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"March 8, 2016"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
                     <td><code>"February 21, 2016"</code></td>
                     <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March 5, 2016"</code></td>
+                    <td>7</td>
                 </tr>
             
                 <tr>
@@ -2899,12 +2217,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"March 5, 2016"</code></td>
-                    <td>7</td>
+                    <td><code>"March 1, 2016"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"May, 2004"</code></td>
+                    <td>6</td>
                 </tr>
             
                 <tr>
                     <td><code>"March 14, 2016"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"July, 2005"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March 16, 2016"</code></td>
                     <td>6</td>
                 </tr>
             
@@ -2919,26 +2252,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"March 1, 2016"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"May, 2003"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March 16, 2016"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"May, 2004"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
                     <td><code>"February 18, 2016"</code></td>
                     <td>6</td>
                 </tr>
@@ -2949,43 +2262,13 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"July, 2005"</code></td>
+                    <td><code>"May, 2003"</code></td>
                     <td>6</td>
                 </tr>
             
                 <tr>
                     <td><code>"February 28, 2016"</code></td>
                     <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March 6, 2016"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February 27, 2016"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February 26, 2016"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"July, 2004"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February 24, 2016"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March 9, 2016"</code></td>
-                    <td>5</td>
                 </tr>
             
                 <tr>
@@ -2999,7 +2282,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"February 17, 2016"</code></td>
+                    <td><code>"February 27, 2016"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -3009,7 +2292,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"March 9, 2016"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March 6, 2016"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"February 24, 2016"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
                     <td><code>"August 20, 2006"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"February 26, 2016"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -3024,22 +2327,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"April, 2002"</code></td>
-                    <td>4</td>
+                    <td><code>"July, 2004"</code></td>
+                    <td>5</td>
                 </tr>
             
                 <tr>
-                    <td><code>"January 1, 1623"</code></td>
-                    <td>4</td>
+                    <td><code>"February 17, 2016"</code></td>
+                    <td>5</td>
                 </tr>
             
                 <tr>
-                    <td><code>"March 3, 2016"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March, 1997"</code></td>
+                    <td><code>"May, 1996"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -3049,7 +2347,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"January, 2005"</code></td>
+                    <td><code>"July, 1996"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -3059,42 +2357,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"November, 1997"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"July, 2003"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February, 2005"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"October, 2004"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February 11, 2006"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February, 2001"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"April 27, 2006"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March 11, 2016"</code></td>
+                    <td><code>"March 2, 2016"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -3104,17 +2367,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"March 7, 2006"</code></td>
+                    <td><code>"March 3, 2016"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"May, 1996"</code></td>
+                    <td><code>"March 11, 2016"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"July, 1996"</code></td>
+                    <td><code>"October, 2004"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"January 1, 1623"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"February, 2005"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -3124,87 +2397,67 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"April, 2002"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"April 27, 2006"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"January, 2005"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"February, 2001"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
                     <td><code>"April, 1999"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"March 2, 2016"</code></td>
+                    <td><code>"July, 2003"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"June 17, 2008"</code></td>
+                    <td><code>"March 7, 2006"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"November, 1997"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"February 11, 2006"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March, 1997"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"July, 1998"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"September, 2001"</code></td>
+                    <td><code>"May, 1999"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"June, 2002"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"June, 2000"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"April, 2004"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"April, 2005"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March 12, 2016"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February 25, 2006"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January, 1994"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March, 1999"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"June, 1996"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"August 18, 2006"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"June 23, 2008"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February, 1999"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February, 1995"</code></td>
+                    <td><code>"January 9, 2006"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -3214,12 +2467,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"March 11, 2006"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"October, 2000"</code></td>
+                    <td><code>"February 25, 2006"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -3229,7 +2477,122 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"March 4, 2016"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March, 1999"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"April, 1996"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March 2, 2011"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June 17, 2008"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"April 6, 2009"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"September, 2001"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"April, 2004"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"February 23, 2016"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"April, 2005"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"January, 1994"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June 23, 2008"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June, 1996"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March 15, 2016"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June, 2000"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"August 18, 2006"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
                     <td><code>"December, 1999"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"February, 1999"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"October, 2000"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March 11, 2006"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"January 10, 2006"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"January, 1997"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June, 2002"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"January 12, 2006"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -3244,52 +2607,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"January 10, 2006"</code></td>
+                    <td><code>"February, 1995"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"March 15, 2016"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"April 6, 2009"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March 4, 2016"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"May, 1999"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"July, 1998"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"April, 1996"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January 9, 2006"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March 2, 2011"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January, 1997"</code></td>
+                    <td><code>"March 12, 2016"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -3299,42 +2622,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"February 23, 2016"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January 12, 2006"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"September, 2005"</code></td>
+                    <td><code>"January 1, 1870"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"September, 2004"</code></td>
+                    <td><code>"December 10, 2004"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"June, 2005"</code></td>
+                    <td><code>"March 18, 2016"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"June, 2001"</code></td>
+                    <td><code>"January 9, 2004"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"April, 2001"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"June 18, 2004"</code></td>
+                    <td><code>"May, 2001"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -3344,32 +2652,37 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"October, 1997"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"October, 1992"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January, 1995"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January, 1996"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January, 1999"</code></td>
+                    <td><code>"August, 2001"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
                     <td><code>"January, 1998"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June, 1997"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"August, 2000"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"May 2, 2008"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June 18, 2004"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"September, 1997"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -3381,8 +2694,6 @@ $(document).ready(function() {
             
         </table>
         </div>
-        
-    
         
     
         
@@ -3411,6 +2722,12 @@ $(document).ready(function() {
         });    
         
         
+        $("#btn-explore-classics-__0__-bibliography-publication-year").click(function() {
+            $( "#explore-classics-__0__-bibliography-publication-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-classics-__0__-bibliography-publication-full").click(function() {
             $( "#explore-classics-__0__-bibliography-publication-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -3426,12 +2743,6 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-classics-__0__-bibliography-publication-year").click(function() {
-            $( "#explore-classics-__0__-bibliography-publication-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-classics-__0__-bibliography-publication-day").click(function() {
             $( "#explore-classics-__0__-bibliography-publication-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -3440,6 +2751,695 @@ $(document).ready(function() {
         
         $("#btn-explore-classics-__0__-bibliography-publication-month").click(function() {
             $( "#explore-classics-__0__-bibliography-publication-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-bibliography' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"languages"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-languages'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"author"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-author'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"publication"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-publication'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"title"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Pride and Prejudice"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-title'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"subjects"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-subjects'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Text"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-type'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"congress classifications"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-classics-__0__-bibliography-congress-classifications'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+        <div id='explore-classics-__0__-bibliography-title' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Poems"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hamlet, Prince of Denmark"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orthodoxy"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Art of War"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Hound of the Baskervilles"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Strange Case of Dr. Jekyll and Mr. Hyde"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Heart of Darkness"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Arabian Nights Entertainments"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Secret Garden"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alice's Adventures in Wonderland"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Common Sense"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Wonderful Wizard of Oz"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Jungle Book"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Frankenstein; Or, The Modern Prometheus"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Tragical History of Doctor Faustus: From the Q..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Picture of Dorian Gray"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Scarlet Letter"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madame Bovary"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Wind in the Willows"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Far from the Madding Crowd"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Iliad"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Return of Sherlock Holmes"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Republic"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paradise Lost"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sense and Sensibility"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pride and Prejudice"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"An Old Babylonian Version of the Gilgamesh Epic"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dr. Kometevsky's Day"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Merchant of Venice"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"A Little Princess: Being the whole story of Sara C..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Confessions of Jean Jacques Rousseau — Complete"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"What Men Live By, and Other Tales"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Princess and the Goblin"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Scarecrow of Oz"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Swenson, Dispatcher"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"How To Write Special Feature Articles: A Handbook ..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"End as a Hero"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Island of Doctor Moreau"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"License to Steal"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Viking Tales"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anabasis"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Last of the Mohicans; A narrative of 1757"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"My Bondage and My Freedom"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Tenniel Illustrations for Carroll's Alice in W..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Story of the Three Little Pigs"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"An Occurrence at Owl Creek Bridge"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Das Unheimliche"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Innocents Abroad"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Autobiography of Andrew Carnegie"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Big Trip Up Yonder"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beowulf: An Anglo-Saxon Epic Poem"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Call of the Wild"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mysticism and Logic and Other Essays"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Siddhartha"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Gentlemen's Book of Etiquette and Manual of Po..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Four Weird Tales"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plutarch's Lives, Volume I"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Forbidden Fruit: Luscious and exciting story and M..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Secret Agent: A Simple Tale"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Works of Edgar Allan Poe — Volume 5"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pen Pal"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Les Fleurs du Mal"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Against the Grain"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Life and Adventures of Robinson Crusoe"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Beggar's Opera; to Which is Prefixed the Music..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Faust"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mansfield Park"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2 B R 0 2 B"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Consolation of Philosophy"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Elementary Forms of the Religious Life"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Tribes and Castes of the Central Provinces of ..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1811 Dictionary of the Vulgar Tongue"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"My Own Story"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Theory of the Leisure Class"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Night Land"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Imitation of Christ"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Democracy in America — Volume 1"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Oxford Book of American Essays"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"How to Analyze People on Sight: Through the Scienc..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Cool War"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The King in Yellow"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Irish Fairy Tales"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wives and Daughters"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Household Stories by the Brothers Grimm"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Crystal Crypt"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"An Inquiry into the Nature and Causes of the Wealt..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Red House Mystery"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"An Essay on Man; Moral Essays and Satires"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Pickwick Papers"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Turn of the Screw"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hunger"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simple Sabotage Field Manual"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bridge Crossing"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Historia de Venezuela, Tomo I"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Mentor: The Incas, vol. 6, num. 3, Serial No. ..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Mysterious Island"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Mantle, and Other Stories"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cicero's Tusculan Disputations: Also, Treatises On..."</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"History of Tom Jones, a Foundling"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"McTeague: A Story of San Francisco"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+        <div id='explore-classics-__0__-bibliography-type' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Text"</code></td>
+                    <td>1004</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"StillImage"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dataset"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-bibliography" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-bibliography-languages").click(function() {
+            $( "#explore-classics-__0__-bibliography-languages" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-bibliography-author").click(function() {
+            $( "#explore-classics-__0__-bibliography-author" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-bibliography-publication").click(function() {
+            $( "#explore-classics-__0__-bibliography-publication" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-bibliography-title").click(function() {
+            $( "#explore-classics-__0__-bibliography-title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-bibliography-title").click(function() {
+            $( "#explore-classics-__0__-bibliography-title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-classics-__0__-bibliography-title" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-classics-__0__-bibliography-subjects").click(function() {
+            $( "#explore-classics-__0__-bibliography-subjects" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-classics-__0__-bibliography-type").click(function() {
+            $( "#explore-classics-__0__-bibliography-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-bibliography-type").click(function() {
+            $( "#explore-classics-__0__-bibliography-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-classics-__0__-bibliography-type" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-classics-__0__-bibliography-congress-classifications").click(function() {
+            $( "#explore-classics-__0__-bibliography-congress-classifications" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

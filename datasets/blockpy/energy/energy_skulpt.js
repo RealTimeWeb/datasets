@@ -37,6 +37,134 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_reports': {
+                    "type": "FunctionType", 
+                    "name": 'get_reports',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Consumption'}, {"type": "LiteralStr", "value": 'Production'}, {"type": "LiteralStr", "value": 'Expenditure'}, {"type": "LiteralStr", "value": 'Price'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Refinery'}, {"type": "LiteralStr", "value": 'Commercial'}, {"type": "LiteralStr", "value": 'Transportation'}, {"type": "LiteralStr", "value": 'Industrial'}, {"type": "LiteralStr", "value": 'Residential'}, {"type": "LiteralStr", "value": 'Electric Power'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Geothermal'}, {"type": "LiteralStr", "value": 'Wind'}, {"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Hydropower'}, {"type": "LiteralStr", "value": 'Solar'}, {"type": "LiteralStr", "value": 'Wood'}, {"type": "LiteralStr", "value": 'Kerosene'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Geothermal'}, {"type": "LiteralStr", "value": 'Wind'}, {"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Hydropower'}, {"type": "LiteralStr", "value": 'Solar'}, {"type": "LiteralStr", "value": 'Other Petroleum Products'}, {"type": "LiteralStr", "value": 'Wood'}, {"type": "LiteralStr", "value": 'Kerosene'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Geothermal'}, {"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}, {"type": "LiteralStr", "value": 'Kerosene'}, {"type": "LiteralStr", "value": 'Wood'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}, {"type": "LiteralStr", "value": 'Wood'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}], "values": [
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Residential'}, {"type": "LiteralStr", "value": 'Commercial'}, {"type": "LiteralStr", "value": 'Transportation'}, {"type": "LiteralStr", "value": 'Electric Power'}, {"type": "LiteralStr", "value": 'Industrial'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}, {"type": "LiteralStr", "value": 'Kerosene'}, {"type": "LiteralStr", "value": 'Wood'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}, {"type": "LiteralStr", "value": 'Kerosene'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Other Petroleum Products'}, {"type": "LiteralStr", "value": 'Kerosene'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Commercial'}, {"type": "LiteralStr", "value": 'Transportation'}, {"type": "LiteralStr", "value": 'Electric Power'}, {"type": "LiteralStr", "value": 'Industrial'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}, {"type": "LiteralStr", "value": 'Kerosene'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Coal'}, {"type": "LiteralStr", "value": 'Distillate Fuel Oil'}, {"type": "LiteralStr", "value": 'Natural Gas'}, {"type": "LiteralStr", "value": 'Other Petroleum Products'}, {"type": "LiteralStr", "value": 'Kerosene'}, {"type": "LiteralStr", "value": 'Liquefied Petroleum Gases'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "NumType"}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

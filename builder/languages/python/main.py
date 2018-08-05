@@ -12,6 +12,27 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        {% for tifa_definition in tifa_definitions %}
+            '{{ tifa_definition[0] | snake_case }}': {
+                "type": "FunctionType", 
+                "name": '{{ tifa_definition[0] | snake_case }}',
+                "returns": {{ tifa_definition[1] }},
+            }
+        {% endfor %}
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +56,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "{{ metadata.name|snake_case }}.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "{{ metadata.name|snake_case }}.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

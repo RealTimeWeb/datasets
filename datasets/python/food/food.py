@@ -12,6 +12,82 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_reports': {
+                "type": "FunctionType", 
+                "name": 'get_reports',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Description'}, {"type": "LiteralStr", "value": 'Nutrient Data Bank Number'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Category'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Beta Carotene'}, {"type": "LiteralStr", "value": 'Selenium'}, {"type": "LiteralStr", "value": 'Lutein and Zeaxanthin'}, {"type": "LiteralStr", "value": 'Water'}, {"type": "LiteralStr", "value": 'Major Minerals'}, {"type": "LiteralStr", "value": 'Household Weights'}, {"type": "LiteralStr", "value": 'Refuse Percentage'}, {"type": "LiteralStr", "value": 'Riboflavin'}, {"type": "LiteralStr", "value": 'Cholesterol'}, {"type": "LiteralStr", "value": 'Protein'}, {"type": "LiteralStr", "value": 'Lycopene'}, {"type": "LiteralStr", "value": 'Alpha Carotene'}, {"type": "LiteralStr", "value": 'Thiamin'}, {"type": "LiteralStr", "value": 'Fiber'}, {"type": "LiteralStr", "value": 'Ash'}, {"type": "LiteralStr", "value": 'Retinol'}, {"type": "LiteralStr", "value": 'Manganese'}, {"type": "LiteralStr", "value": 'Vitamins'}, {"type": "LiteralStr", "value": 'Kilocalories'}, {"type": "LiteralStr", "value": 'Pantothenic Acid'}, {"type": "LiteralStr", "value": 'Fat'}, {"type": "LiteralStr", "value": 'Choline'}, {"type": "LiteralStr", "value": 'Niacin'}, {"type": "LiteralStr", "value": 'Beta Cryptoxanthin'}, {"type": "LiteralStr", "value": 'Sugar Total'}, {"type": "LiteralStr", "value": 'Carbohydrate'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Phosphorus'}, {"type": "LiteralStr", "value": 'Copper'}, {"type": "LiteralStr", "value": 'Calcium'}, {"type": "LiteralStr", "value": 'Magnesium'}, {"type": "LiteralStr", "value": 'Iron'}, {"type": "LiteralStr", "value": 'Sodium'}, {"type": "LiteralStr", "value": 'Zinc'}, {"type": "LiteralStr", "value": 'Potassium'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2nd Household Weight'}, {"type": "LiteralStr", "value": '2nd Household Weight Description'}, {"type": "LiteralStr", "value": '1st Household Weight Description'}, {"type": "LiteralStr", "value": '1st Household Weight'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Vitamin A - RAE'}, {"type": "LiteralStr", "value": 'Vitamin A - IU'}, {"type": "LiteralStr", "value": 'Vitamin B6'}, {"type": "LiteralStr", "value": 'Vitamin E'}, {"type": "LiteralStr", "value": 'Vitamin C'}, {"type": "LiteralStr", "value": 'Vitamin B12'}, {"type": "LiteralStr", "value": 'Vitamin K'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Monosaturated Fat'}, {"type": "LiteralStr", "value": 'Polysaturated Fat'}, {"type": "LiteralStr", "value": 'Total Lipid'}, {"type": "LiteralStr", "value": 'Saturated Fat'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "StrType"}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +111,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "food.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "food.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

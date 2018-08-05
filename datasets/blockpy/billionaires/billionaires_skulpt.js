@@ -37,6 +37,57 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_billionaires': {
+                    "type": "FunctionType", 
+                    "name": 'get_billionaires',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'demographics'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'wealth'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'age'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'gdp'}, {"type": "LiteralStr", "value": 'citizenship'}, {"type": "LiteralStr", "value": 'country code'}, {"type": "LiteralStr", "value": 'region'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'worth in billions'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'how'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'was political'}, {"type": "LiteralStr", "value": 'from emerging'}, {"type": "LiteralStr", "value": 'category'}, {"type": "LiteralStr", "value": 'inherited'}, {"type": "LiteralStr", "value": 'was founder'}, {"type": "LiteralStr", "value": 'industry'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'founded'}, {"type": "LiteralStr", "value": 'sector'}, {"type": "LiteralStr", "value": 'relationship'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "NumType"}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

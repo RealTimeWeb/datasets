@@ -12,6 +12,108 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_results': {
+                "type": "FunctionType", 
+                "name": 'get_results',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Time'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Month Name'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Civilian Noninstitutional Population'}, {"type": "LiteralStr", "value": 'Unemployed'}, {"type": "LiteralStr", "value": 'Civilian Labor Force'}, {"type": "LiteralStr", "value": 'Not In Labor Force'}, {"type": "LiteralStr", "value": 'Employed'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Employment-Population Ratio'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Employment-Population Ratio'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}]}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +137,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "labor.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "labor.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

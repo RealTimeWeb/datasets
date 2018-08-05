@@ -37,6 +37,54 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_artwork': {
+                    "type": "FunctionType", 
+                    "name": 'get_artwork',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'artist'}, {"type": "LiteralStr", "value": 'dimensions'}, {"type": "LiteralStr", "value": 'metadata'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'medium'}, {"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'thumbnail'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'gender'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'role'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'height'}, {"type": "LiteralStr", "value": 'depth'}, {"type": "LiteralStr", "value": 'width'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'creation decade'}, {"type": "LiteralStr", "value": 'acquisition date'}, {"type": "LiteralStr", "value": 'creation year'}, {"type": "LiteralStr", "value": 'credit'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

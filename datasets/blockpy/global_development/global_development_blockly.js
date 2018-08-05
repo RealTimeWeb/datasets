@@ -356,48 +356,6 @@ PythonToBlocks.KNOWN_MODULES['global_development'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-Tifa.MODULES['global_development'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_reports': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Country'}, {"type": "Str", "value": 'Data'}], [
-				Tifa._NUM_TYPE(), 
-				Tifa._STR_TYPE(), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Infrastructure'}, {"type": "Str", "value": 'Health'}, {"type": "Str", "value": 'Rural Development'}, {"type": "Str", "value": 'Urban Development'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Telephone Lines'}, {"type": "Str", "value": 'Mobile Cellular Subscriptions'}, {"type": "Str", "value": 'Telephone Lines per 100 People'}, {"type": "Str", "value": 'Mobile Cellular Subscriptions per 100 People'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Death Rate'}, {"type": "Str", "value": 'Life Expectancy at Birth, Total'}, {"type": "Str", "value": 'Fertility Rate'}, {"type": "Str", "value": 'Population Growth'}, {"type": "Str", "value": 'Birth Rate'}, {"type": "Str", "value": 'Life Expectancy at Birth, Male'}, {"type": "Str", "value": 'Life Expectancy at Birth, Female'}, {"type": "Str", "value": 'Total Population'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Agricultural Land Percent'}, {"type": "Str", "value": 'Arable Land Percent'}, {"type": "Str", "value": 'Rural Population Growth'}, {"type": "Str", "value": 'Rural Population'}, {"type": "Str", "value": 'Arable Land'}, {"type": "Str", "value": 'Agricultural Land'}, {"type": "Str", "value": 'Land Area'}, {"type": "Str", "value": 'Surface Area'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Population Density'}, {"type": "Str", "value": 'Urban Population Percent Growth'}, {"type": "Str", "value": 'Urban Population Percent'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])])]))),
-        
-    }
-};
-
 BlockPyEditor.CATEGORY_MAP['Data - Global Development'] = '<category name="Data - Global Development" colour="50">'+
                     '<block type="global_development_get"><mutation index="(None)" index_value=""></mutation></block>'+
                 '</category>';

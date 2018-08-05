@@ -3,27 +3,13 @@
 var school_scores_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Year", "Year"] ,
-    ["Name", "Name"] 
+    ["Name", "Name"] ,
+    ["Year", "Year"] 
 ];
 
 var school_scores_INDEX_VALUES = {
     "(None)": [],
     
-    "Year": [
-        
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] ,
-        ["2014", "2014"] ,
-        ["2015", "2015"] 
-    ],
     "Name": [
         
         ["Alabama", "Alabama"] ,
@@ -79,6 +65,20 @@ var school_scores_INDEX_VALUES = {
         ["West Virginia", "West Virginia"] ,
         ["Wisconsin", "Wisconsin"] ,
         ["Wyoming", "Wyoming"] 
+    ],
+    "Year": [
+        
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] ,
+        ["2014", "2014"] ,
+        ["2015", "2015"] 
     ]
 }
 
@@ -249,163 +249,6 @@ PythonToBlocks.KNOWN_MODULES['school_scores'] = {
             "PROPERTY", 
             {"type": "mutation", "name": "@INDEX"},
             {"type": "mutation", "name": "@INDEX_VALUE"}]
-};
-
-Tifa.MODULES['school_scores'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_all': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'GPA'}, {"type": "Str", "value": 'Score Ranges'}, {"type": "Str", "value": 'State'}, {"type": "Str", "value": 'Family Income'}, {"type": "Str", "value": 'Gender'}, {"type": "Str", "value": 'Academic Subjects'}, {"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Total'}], [
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'C'}, {"type": "Str", "value": 'No response'}, {"type": "Str", "value": 'B'}, {"type": "Str", "value": 'D or lower'}, {"type": "Str", "value": 'A'}, {"type": "Str", "value": 'A minus'}, {"type": "Str", "value": 'A plus'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Between 500 to 600'}, {"type": "Str", "value": 'Between 300 to 400'}, {"type": "Str", "value": 'Between 400 to 500'}, {"type": "Str", "value": 'Between 200 to 300'}, {"type": "Str", "value": 'Between 600 to 700'}, {"type": "Str", "value": 'Between 700 to 800'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}], [
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()]), 
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()])]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}], [
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()]), 
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()])]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}], [
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()]), 
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()])]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}], [
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()]), 
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()])]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}], [
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()]), 
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()])]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}], [
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()]), 
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Females'}, {"type": "Str", "value": 'Males'}, {"type": "Str", "value": 'Total'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()])])]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Name'}, {"type": "Str", "value": 'Code'}], [
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE()]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Between 80-100k'}, {"type": "Str", "value": 'Between 40-60k'}, {"type": "Str", "value": 'Between 20-40k'}, {"type": "Str", "value": 'Less than 20k'}, {"type": "Str", "value": 'Between 60-80k'}, {"type": "Str", "value": 'More than 100k'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Male'}, {"type": "Str", "value": 'Female'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Test-takers'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Social Sciences/History'}, {"type": "Str", "value": 'Natural Sciences'}, {"type": "Str", "value": 'Arts/Music'}, {"type": "Str", "value": 'Foreign Languages'}, {"type": "Str", "value": 'Mathematics'}, {"type": "Str", "value": 'English'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Average Years'}, {"type": "Str", "value": 'Average GPA'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Average Years'}, {"type": "Str", "value": 'Average GPA'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Average Years'}, {"type": "Str", "value": 'Average GPA'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Average Years'}, {"type": "Str", "value": 'Average GPA'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Average Years'}, {"type": "Str", "value": 'Average GPA'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Average Years'}, {"type": "Str", "value": 'Average GPA'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])]), 
-				Tifa._NUM_TYPE(), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Math'}, {"type": "Str", "value": 'Verbal'}, {"type": "Str", "value": 'Test-takers'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE()])]))),
-        
-    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - School Scores'] = '<category name="Data - School Scores" colour="50">'+

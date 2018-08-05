@@ -37,6 +37,58 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_all_crimes': {
+                    "type": "FunctionType", 
+                    "name": 'get_all_crimes',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Rates'}, {"type": "LiteralStr", "value": 'Totals'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Property'}, {"type": "LiteralStr", "value": 'Violent'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Motor'}, {"type": "LiteralStr", "value": 'Burglary'}, {"type": "LiteralStr", "value": 'Larceny'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Assault'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Murder'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Property'}, {"type": "LiteralStr", "value": 'Violent'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Motor'}, {"type": "LiteralStr", "value": 'Burglary'}, {"type": "LiteralStr", "value": 'Larceny'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Assault'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Murder'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}]}]}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

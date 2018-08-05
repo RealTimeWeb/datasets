@@ -12,6 +12,61 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_reports': {
+                "type": "FunctionType", 
+                "name": 'get_reports',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Time'}, {"type": "LiteralStr", "value": 'Statistics'}, {"type": "LiteralStr", "value": 'Airport'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Label'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Month Name'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Carriers'}, {"type": "LiteralStr", "value": 'Flights'}, {"type": "LiteralStr", "value": 'Minutes Delayed'}, {"type": "LiteralStr", "value": '# of Delays'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Names'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "ListType", "subtype": 
+							{"type": "StrType"}}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Diverted'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'On Time'}, {"type": "LiteralStr", "value": 'Cancelled'}, {"type": "LiteralStr", "value": 'Delayed'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Carrier'}, {"type": "LiteralStr", "value": 'Security'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Late Aircraft'}, {"type": "LiteralStr", "value": 'Weather'}, {"type": "LiteralStr", "value": 'National Aviation System'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Carrier'}, {"type": "LiteralStr", "value": 'Weather'}, {"type": "LiteralStr", "value": 'Security'}, {"type": "LiteralStr", "value": 'National Aviation System'}, {"type": "LiteralStr", "value": 'Late Aircraft'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Code'}, {"type": "LiteralStr", "value": 'Name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +90,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "airlines.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "airlines.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
@@ -105,7 +161,7 @@ class _Auxiliary(object):
 
 def get_reports(test=False):
     """
-    Returns a list of airline reports in the database.
+    Returns a list of airports reports in the database.
     
     """
     if _Constants._TEST or test:

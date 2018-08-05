@@ -12,6 +12,50 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_earthquakes': {
+                "type": "FunctionType", 
+                "name": 'get_earthquakes',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'time'}, {"type": "LiteralStr", "value": 'impact'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'epoch'}, {"type": "LiteralStr", "value": 'hour'}, {"type": "LiteralStr", "value": 'minute'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'second'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'gap'}, {"type": "LiteralStr", "value": 'magnitude'}, {"type": "LiteralStr", "value": 'significance'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'distance'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'depth'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +79,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "earthquakes.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "earthquakes.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

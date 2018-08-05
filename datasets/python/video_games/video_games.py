@@ -12,6 +12,76 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_games': {
+                "type": "FunctionType", 
+                "name": 'get_games',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Metadata'}, {"type": "LiteralStr", "value": 'Length'}, {"type": "LiteralStr", "value": 'Features'}, {"type": "LiteralStr", "value": 'Metrics'}, {"type": "LiteralStr", "value": 'Title'}, {"type": "LiteralStr", "value": 'Release'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Genres'}, {"type": "LiteralStr", "value": 'Publishers'}, {"type": "LiteralStr", "value": 'Sequel?'}, {"type": "LiteralStr", "value": 'Licensed?'}], "values": [
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}, 
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All PlayStyles'}, {"type": "LiteralStr", "value": 'Main + Extras'}, {"type": "LiteralStr", "value": 'Main Story'}, {"type": "LiteralStr", "value": 'Completionists'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Polled'}, {"type": "LiteralStr", "value": 'Leisure'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Polled'}, {"type": "LiteralStr", "value": 'Leisure'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Polled'}, {"type": "LiteralStr", "value": 'Leisure'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Polled'}, {"type": "LiteralStr", "value": 'Leisure'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Handheld?'}, {"type": "LiteralStr", "value": 'Multiplatform?'}, {"type": "LiteralStr", "value": 'Max Players'}, {"type": "LiteralStr", "value": 'Online?'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Used Price'}, {"type": "LiteralStr", "value": 'Review Score'}, {"type": "LiteralStr", "value": 'Sales'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Re-release?'}, {"type": "LiteralStr", "value": 'Console'}, {"type": "LiteralStr", "value": 'Rating'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +105,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "video_games.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "video_games.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

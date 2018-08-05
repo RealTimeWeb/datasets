@@ -37,6 +37,62 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_reports': {
+                    "type": "FunctionType", 
+                    "name": 'get_reports',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Statistics'}, {"type": "LiteralStr", "value": 'Time'}, {"type": "LiteralStr", "value": 'Airport'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Flights'}, {"type": "LiteralStr", "value": '# of Delays'}, {"type": "LiteralStr", "value": 'Carriers'}, {"type": "LiteralStr", "value": 'Minutes Delayed'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'On Time'}, {"type": "LiteralStr", "value": 'Diverted'}, {"type": "LiteralStr", "value": 'Cancelled'}, {"type": "LiteralStr", "value": 'Delayed'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Security'}, {"type": "LiteralStr", "value": 'National Aviation System'}, {"type": "LiteralStr", "value": 'Carrier'}, {"type": "LiteralStr", "value": 'Weather'}, {"type": "LiteralStr", "value": 'Late Aircraft'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Names'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "ListType", "subtype": 
+							{"type": "StrType"}}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Weather'}, {"type": "LiteralStr", "value": 'Security'}, {"type": "LiteralStr", "value": 'National Aviation System'}, {"type": "LiteralStr", "value": 'Carrier'}, {"type": "LiteralStr", "value": 'Late Aircraft'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Month Name'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Label'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Code'}, {"type": "LiteralStr", "value": 'Name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

@@ -12,6 +12,80 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_books': {
+                "type": "FunctionType", 
+                "name": 'get_books',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'bibliography'}, {"type": "LiteralStr", "value": 'metrics'}, {"type": "LiteralStr", "value": 'metadata'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'languages'}, {"type": "LiteralStr", "value": 'author'}, {"type": "LiteralStr", "value": 'publication'}, {"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'subjects'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'congress classifications'}], "values": [
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}, 
+					{"type": "StrType"}, 
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'difficulty'}, {"type": "LiteralStr", "value": 'sentiments'}, {"type": "LiteralStr", "value": 'statistics'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'coleman liau index'}, {"type": "LiteralStr", "value": 'flesch kincaid grade'}, {"type": "LiteralStr", "value": 'automated readability index'}, {"type": "LiteralStr", "value": 'smog index'}, {"type": "LiteralStr", "value": 'difficult words'}, {"type": "LiteralStr", "value": 'flesch reading ease'}, {"type": "LiteralStr", "value": 'gunning fog'}, {"type": "LiteralStr", "value": 'dale chall readability score'}, {"type": "LiteralStr", "value": 'linsear write formula'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'subjectivity'}, {"type": "LiteralStr", "value": 'polarity'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'characters'}, {"type": "LiteralStr", "value": 'average letter per word'}, {"type": "LiteralStr", "value": 'polysyllables'}, {"type": "LiteralStr", "value": 'average sentence length'}, {"type": "LiteralStr", "value": 'average sentence per word'}, {"type": "LiteralStr", "value": 'words'}, {"type": "LiteralStr", "value": 'syllables'}, {"type": "LiteralStr", "value": 'sentences'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'formats'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'downloads'}, {"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'id'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'types'}, {"type": "LiteralStr", "value": 'total'}], "values": [
+						{"type": "ListType", "subtype": 
+							{"type": "StrType"}}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +109,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "classics.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "classics.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

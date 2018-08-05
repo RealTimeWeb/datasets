@@ -248,13 +248,30 @@ def build_metafiles(model):
     return {
             'python/' + snake_case(name) + '/' + snake_case(name) + '.html' : env.get_template('main.html').render(standalone=False, **model),
             'python/' + snake_case(name) + '/index.html' : env.get_template('main.html').render(standalone=True, **model),
+            'python/' + snake_case(name) + '/setup.py' : env.get_template('setup.py').render(**model),
             'python/' + snake_case(name) + '/' + snake_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
             }
     
 def build_main(model):
     name = model['metadata']['name']
+    
+    tifa_definitions = []
+    locals = model["locals"]
+    from languages.tifa import TifaDefinition
+    for interface, local in zip(model['interfaces'], locals):
+        name = snake_case(local["name"])
+        file = local["file"]
+        type = local["type"]
+        with open(file, "r") as local_file:
+            if type == "json":
+                data_list = json.load(local_file)
+                tifa_definitions.append(
+                    (interface['name'], TifaDefinition(data_list).result)
+                )
+    
+    
     return {'python/' + snake_case(name) + '/' + snake_case(name) + '.py' :
-                env.get_template('main.py').render(**model)}
+                env.get_template('main.py').render(tifa_definitions=tifa_definitions, **model)}
                 
 def build_database(model):
     name = snake_case(model['metadata']['name'])

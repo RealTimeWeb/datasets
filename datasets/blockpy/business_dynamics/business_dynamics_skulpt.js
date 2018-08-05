@@ -37,6 +37,61 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_businesses': {
+                    "type": "FunctionType", 
+                    "name": 'get_businesses',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Firm Exits'}, {"type": "LiteralStr", "value": 'Job Destruction'}, {"type": "LiteralStr", "value": 'Job Creation'}, {"type": "LiteralStr", "value": 'Calculated'}, {"type": "LiteralStr", "value": 'Establishments'}, {"type": "LiteralStr", "value": 'Number of Firms'}, {"type": "LiteralStr", "value": 'DHS Denominator'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Establishment Exit'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Job Destruction'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Continuers'}, {"type": "LiteralStr", "value": 'Rate'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Deaths'}, {"type": "LiteralStr", "value": 'Rate/Deaths'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Births'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Rate/Births'}, {"type": "LiteralStr", "value": 'Continuers'}, {"type": "LiteralStr", "value": 'Rate'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Net Job Creation Rate'}, {"type": "LiteralStr", "value": 'Reallocation Rate'}, {"type": "LiteralStr", "value": 'Net Job Creation'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Exited'}, {"type": "LiteralStr", "value": 'Physical Locations'}, {"type": "LiteralStr", "value": 'Exited Rate'}, {"type": "LiteralStr", "value": 'Entered'}, {"type": "LiteralStr", "value": 'Entered Rate'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "StrType"}, 
+				{"type": "NumType"}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

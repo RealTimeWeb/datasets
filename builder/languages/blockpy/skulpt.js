@@ -35,8 +35,30 @@ var $builtinmodule = function(name)
             return _IMPORTED_COMPLETE_DATASETS[{{ library_name | tojson }}];
         }
     });
-    
     {% endfor %}
+    
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            {% for tifa_definition in tifa_definitions %}
+                '{{ tifa_definition[0] | snake_case }}': {
+                    "type": "FunctionType", 
+                    "name": '{{ tifa_definition[0] | snake_case }}',
+                    "returns": {{ tifa_definition[1] }},
+                }
+            {% endfor %}
+            }
+        });
+    });
 
     return mod;
 }

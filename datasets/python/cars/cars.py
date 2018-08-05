@@ -12,6 +12,52 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_cars': {
+                "type": "FunctionType", 
+                "name": 'get_cars',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Identification'}, {"type": "LiteralStr", "value": 'Engine Information'}, {"type": "LiteralStr", "value": 'Fuel Information'}, {"type": "LiteralStr", "value": 'Dimensions'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Make'}, {"type": "LiteralStr", "value": 'ID'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Model Year'}, {"type": "LiteralStr", "value": 'Classification'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Forward Gears'}, {"type": "LiteralStr", "value": 'Engine Statistics'}, {"type": "LiteralStr", "value": 'Hybrid'}, {"type": "LiteralStr", "value": 'Driveline'}, {"type": "LiteralStr", "value": 'Engine Type'}, {"type": "LiteralStr", "value": 'Transmission'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Horsepower'}, {"type": "LiteralStr", "value": 'Torque'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'City mpg'}, {"type": "LiteralStr", "value": 'Highway mpg'}, {"type": "LiteralStr", "value": 'Fuel Type'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Width'}, {"type": "LiteralStr", "value": 'Height'}, {"type": "LiteralStr", "value": 'Length'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +81,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "cars.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "cars.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

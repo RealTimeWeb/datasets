@@ -3,28 +3,13 @@
 var construction_spending_INDEXES = [
     ["(None)", "(None)"],
     
-    ["month", "month"] ,
-    ["year", "year"] 
+    ["year", "year"] ,
+    ["month", "month"] 
 ];
 
 var construction_spending_INDEX_VALUES = {
     "(None)": [],
     
-    "month": [
-        
-        ["1", "1"] ,
-        ["10", "10"] ,
-        ["11", "11"] ,
-        ["12", "12"] ,
-        ["2", "2"] ,
-        ["3", "3"] ,
-        ["4", "4"] ,
-        ["5", "5"] ,
-        ["6", "6"] ,
-        ["7", "7"] ,
-        ["8", "8"] ,
-        ["9", "9"] 
-    ],
     "year": [
         
         ["2002", "2002"] ,
@@ -42,6 +27,21 @@ var construction_spending_INDEX_VALUES = {
         ["2014", "2014"] ,
         ["2015", "2015"] ,
         ["2016", "2016"] 
+    ],
+    "month": [
+        
+        ["1", "1"] ,
+        ["10", "10"] ,
+        ["11", "11"] ,
+        ["12", "12"] ,
+        ["2", "2"] ,
+        ["3", "3"] ,
+        ["4", "4"] ,
+        ["5", "5"] ,
+        ["6", "6"] ,
+        ["7", "7"] ,
+        ["8", "8"] ,
+        ["9", "9"] 
     ]
 }
 
@@ -232,146 +232,6 @@ PythonToBlocks.KNOWN_MODULES['construction_spending'] = {
             "PROPERTY", 
             {"type": "mutation", "name": "@INDEX"},
             {"type": "mutation", "name": "@INDEX_VALUE"}]
-};
-
-Tifa.MODULES['construction_spending'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_spending': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'annual'}, {"type": "Str", "value": 'current'}, {"type": "Str", "value": 'time'}], [
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'private'}, {"type": "Str", "value": 'public'}, {"type": "Str", "value": 'combined'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'nonresidential'}, {"type": "Str", "value": 'religious'}, {"type": "Str", "value": 'lodging'}, {"type": "Str", "value": 'educational'}, {"type": "Str", "value": 'office'}, {"type": "Str", "value": 'transportation'}, {"type": "Str", "value": 'water supply'}, {"type": "Str", "value": 'amusement and recreation'}, {"type": "Str", "value": 'public safety'}, {"type": "Str", "value": 'total construction'}, {"type": "Str", "value": 'conservation and development'}, {"type": "Str", "value": 'health care'}, {"type": "Str", "value": 'residential'}, {"type": "Str", "value": 'highway and street'}, {"type": "Str", "value": 'commercial'}, {"type": "Str", "value": 'communication'}, {"type": "Str", "value": 'manufacturing'}, {"type": "Str", "value": 'sewage and waste disposal'}, {"type": "Str", "value": 'power'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'nonresidential'}, {"type": "Str", "value": 'religious'}, {"type": "Str", "value": 'lodging'}, {"type": "Str", "value": 'educational'}, {"type": "Str", "value": 'office'}, {"type": "Str", "value": 'transportation'}, {"type": "Str", "value": 'water supply'}, {"type": "Str", "value": 'amusement and recreation'}, {"type": "Str", "value": 'public safety'}, {"type": "Str", "value": 'total construction'}, {"type": "Str", "value": 'conservation and development'}, {"type": "Str", "value": 'health care'}, {"type": "Str", "value": 'residential'}, {"type": "Str", "value": 'highway and street'}, {"type": "Str", "value": 'commercial'}, {"type": "Str", "value": 'communication'}, {"type": "Str", "value": 'manufacturing'}, {"type": "Str", "value": 'sewage and waste disposal'}, {"type": "Str", "value": 'power'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'nonresidential'}, {"type": "Str", "value": 'religious'}, {"type": "Str", "value": 'lodging'}, {"type": "Str", "value": 'educational'}, {"type": "Str", "value": 'office'}, {"type": "Str", "value": 'transportation'}, {"type": "Str", "value": 'water supply'}, {"type": "Str", "value": 'amusement and recreation'}, {"type": "Str", "value": 'public safety'}, {"type": "Str", "value": 'total construction'}, {"type": "Str", "value": 'conservation and development'}, {"type": "Str", "value": 'health care'}, {"type": "Str", "value": 'residential'}, {"type": "Str", "value": 'highway and street'}, {"type": "Str", "value": 'commercial'}, {"type": "Str", "value": 'communication'}, {"type": "Str", "value": 'manufacturing'}, {"type": "Str", "value": 'sewage and waste disposal'}, {"type": "Str", "value": 'power'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'private'}, {"type": "Str", "value": 'public'}, {"type": "Str", "value": 'combined'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'nonresidential'}, {"type": "Str", "value": 'religious'}, {"type": "Str", "value": 'lodging'}, {"type": "Str", "value": 'educational'}, {"type": "Str", "value": 'office'}, {"type": "Str", "value": 'transportation'}, {"type": "Str", "value": 'water supply'}, {"type": "Str", "value": 'amusement and recreation'}, {"type": "Str", "value": 'public safety'}, {"type": "Str", "value": 'total construction'}, {"type": "Str", "value": 'conservation and development'}, {"type": "Str", "value": 'health care'}, {"type": "Str", "value": 'residential'}, {"type": "Str", "value": 'highway and street'}, {"type": "Str", "value": 'commercial'}, {"type": "Str", "value": 'communication'}, {"type": "Str", "value": 'manufacturing'}, {"type": "Str", "value": 'sewage and waste disposal'}, {"type": "Str", "value": 'power'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'nonresidential'}, {"type": "Str", "value": 'religious'}, {"type": "Str", "value": 'lodging'}, {"type": "Str", "value": 'educational'}, {"type": "Str", "value": 'office'}, {"type": "Str", "value": 'transportation'}, {"type": "Str", "value": 'water supply'}, {"type": "Str", "value": 'amusement and recreation'}, {"type": "Str", "value": 'public safety'}, {"type": "Str", "value": 'total construction'}, {"type": "Str", "value": 'conservation and development'}, {"type": "Str", "value": 'health care'}, {"type": "Str", "value": 'residential'}, {"type": "Str", "value": 'highway and street'}, {"type": "Str", "value": 'commercial'}, {"type": "Str", "value": 'communication'}, {"type": "Str", "value": 'manufacturing'}, {"type": "Str", "value": 'sewage and waste disposal'}, {"type": "Str", "value": 'power'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'nonresidential'}, {"type": "Str", "value": 'religious'}, {"type": "Str", "value": 'lodging'}, {"type": "Str", "value": 'educational'}, {"type": "Str", "value": 'office'}, {"type": "Str", "value": 'transportation'}, {"type": "Str", "value": 'water supply'}, {"type": "Str", "value": 'amusement and recreation'}, {"type": "Str", "value": 'public safety'}, {"type": "Str", "value": 'total construction'}, {"type": "Str", "value": 'conservation and development'}, {"type": "Str", "value": 'health care'}, {"type": "Str", "value": 'residential'}, {"type": "Str", "value": 'highway and street'}, {"type": "Str", "value": 'commercial'}, {"type": "Str", "value": 'communication'}, {"type": "Str", "value": 'manufacturing'}, {"type": "Str", "value": 'sewage and waste disposal'}, {"type": "Str", "value": 'power'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'month'}, {"type": "Str", "value": 'index'}, {"type": "Str", "value": 'period'}, {"type": "Str", "value": 'month name'}, {"type": "Str", "value": 'year'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._NUM_TYPE()])]))),
-        
-    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Construction Spending'] = '<category name="Data - Construction Spending" colour="50">'+
