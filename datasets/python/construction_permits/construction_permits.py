@@ -30,22 +30,22 @@ def _tifa_definitions():
                 "name": 'get_records',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Period'}, {"type": "LiteralStr", "value": 'Valuations'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Number of Permits'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'month name'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2 units'}, {"type": "LiteralStr", "value": '5+ units'}, {"type": "LiteralStr", "value": '3-4 units'}, {"type": "LiteralStr", "value": '1 unit'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Valuations'}, {"type": "LiteralStr", "value": 'Number of Permits'}, {"type": "LiteralStr", "value": 'Period'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2 units'}, {"type": "LiteralStr", "value": '1 unit'}, {"type": "LiteralStr", "value": '3-4 units'}, {"type": "LiteralStr", "value": '5+ units'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2 units'}, {"type": "LiteralStr", "value": '5+ units'}, {"type": "LiteralStr", "value": '3-4 units'}, {"type": "LiteralStr", "value": '1 unit'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2 units'}, {"type": "LiteralStr", "value": '1 unit'}, {"type": "LiteralStr", "value": '3-4 units'}, {"type": "LiteralStr", "value": '5+ units'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'month'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
 					{"type": "NumType"}]}]}},
             }
         

@@ -30,30 +30,30 @@ def _tifa_definitions():
                 "name": 'get_cars',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Dimensions'}, {"type": "LiteralStr", "value": 'Engine Information'}, {"type": "LiteralStr", "value": 'Identification'}, {"type": "LiteralStr", "value": 'Fuel Information'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Width'}, {"type": "LiteralStr", "value": 'Length'}, {"type": "LiteralStr", "value": 'Height'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Dimensions'}, {"type": "LiteralStr", "value": 'Fuel Information'}, {"type": "LiteralStr", "value": 'Engine Information'}, {"type": "LiteralStr", "value": 'Identification'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Height'}, {"type": "LiteralStr", "value": 'Width'}, {"type": "LiteralStr", "value": 'Length'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Engine Statistics'}, {"type": "LiteralStr", "value": 'Engine Type'}, {"type": "LiteralStr", "value": 'Number of Forward Gears'}, {"type": "LiteralStr", "value": 'Transmission'}, {"type": "LiteralStr", "value": 'Driveline'}, {"type": "LiteralStr", "value": 'Hybrid'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Highway mpg'}, {"type": "LiteralStr", "value": 'City mpg'}, {"type": "LiteralStr", "value": 'Fuel Type'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Forward Gears'}, {"type": "LiteralStr", "value": 'Transmission'}, {"type": "LiteralStr", "value": 'Driveline'}, {"type": "LiteralStr", "value": 'Engine Type'}, {"type": "LiteralStr", "value": 'Engine Statistics'}, {"type": "LiteralStr", "value": 'Hybrid'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Horsepower'}, {"type": "LiteralStr", "value": 'Torque'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'ID'}, {"type": "LiteralStr", "value": 'Classification'}, {"type": "LiteralStr", "value": 'Model Year'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Make'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Make'}, {"type": "LiteralStr", "value": 'Model Year'}, {"type": "LiteralStr", "value": 'ID'}, {"type": "LiteralStr", "value": 'Classification'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'City mpg'}, {"type": "LiteralStr", "value": 'Fuel Type'}, {"type": "LiteralStr", "value": 'Highway mpg'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}]}},
+					{"type": "StrType"}]}]}},
             }
         
         }

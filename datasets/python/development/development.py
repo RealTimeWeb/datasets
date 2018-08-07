@@ -30,11 +30,9 @@ def _tifa_definitions():
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Country'}], "values": [
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rural Development'}, {"type": "LiteralStr", "value": 'Infrastructure'}, {"type": "LiteralStr", "value": 'Urban Development'}, {"type": "LiteralStr", "value": 'Health'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Arable Land Percent'}, {"type": "LiteralStr", "value": 'Arable Land'}, {"type": "LiteralStr", "value": 'Agricultural Land'}, {"type": "LiteralStr", "value": 'Surface Area'}, {"type": "LiteralStr", "value": 'Land Area'}, {"type": "LiteralStr", "value": 'Rural Population Growth'}, {"type": "LiteralStr", "value": 'Rural Population'}, {"type": "LiteralStr", "value": 'Agricultural Land Percent'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Agricultural Land Percent'}, {"type": "LiteralStr", "value": 'Land Area'}, {"type": "LiteralStr", "value": 'Rural Population Growth'}, {"type": "LiteralStr", "value": 'Rural Population'}, {"type": "LiteralStr", "value": 'Surface Area'}, {"type": "LiteralStr", "value": 'Arable Land Percent'}, {"type": "LiteralStr", "value": 'Agricultural Land'}, {"type": "LiteralStr", "value": 'Arable Land'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -43,16 +41,16 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions'}, {"type": "LiteralStr", "value": 'Telephone Lines per 100 People'}, {"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions per 100 People'}, {"type": "LiteralStr", "value": 'Telephone Lines'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions per 100 People'}, {"type": "LiteralStr", "value": 'Telephone Lines per 100 People'}, {"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions'}, {"type": "LiteralStr", "value": 'Telephone Lines'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Population Density'}, {"type": "LiteralStr", "value": 'Urban Population Percent Growth'}, {"type": "LiteralStr", "value": 'Urban Population Percent'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Urban Population Percent'}, {"type": "LiteralStr", "value": 'Urban Population Percent Growth'}, {"type": "LiteralStr", "value": 'Population Density'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Life Expectancy at Birth, Female'}, {"type": "LiteralStr", "value": 'Population Growth'}, {"type": "LiteralStr", "value": 'Total Population'}, {"type": "LiteralStr", "value": 'Birth Rate'}, {"type": "LiteralStr", "value": 'Fertility Rate'}, {"type": "LiteralStr", "value": 'Death Rate'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Male'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Total'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Life Expectancy at Birth, Total'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Male'}, {"type": "LiteralStr", "value": 'Death Rate'}, {"type": "LiteralStr", "value": 'Fertility Rate'}, {"type": "LiteralStr", "value": 'Total Population'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Female'}, {"type": "LiteralStr", "value": 'Population Growth'}, {"type": "LiteralStr", "value": 'Birth Rate'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -60,7 +58,9 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}]}},
+						{"type": "NumType"}]}]}, 
+				{"type": "NumType"}, 
+				{"type": "StrType"}]}},
             }
         
         }

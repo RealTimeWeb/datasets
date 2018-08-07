@@ -286,98 +286,17 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-county_demographics-__0__-Population' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"2014 Population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>55395</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Population Percent Change"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>1.5</code>
-                    
-                 </td> 
-                 <td>April 1, 2010 to July 1, 2014</td> </tr>
-            
-            <tr> <td><code>"2010 Population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>54571</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Population per Square Mile"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>91.8</code>
-                    
-                 </td> 
-                 <td>2010</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_demographics-__0__-Population" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_demographics-__0__-Population-2014-Population").click(function() {
-            $( "#explore-county_demographics-__0__-Population-2014-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Population-Population-Percent-Change").click(function() {
-            $( "#explore-county_demographics-__0__-Population-Population-Percent-Change" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Population-2010-Population").click(function() {
-            $( "#explore-county_demographics-__0__-Population-2010-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Population-Population-per-Square-Mile").click(function() {
-            $( "#explore-county_demographics-__0__-Population-Population-per-Square-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
     <div id='explore-county_demographics-__0__-Income' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Median Houseold Income"</code></td> 
+            <tr> <td><code>"Per Capita Income"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>53682</code>
+                    <code>24571</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>2013 dollars</td> </tr>
             
             <tr> <td><code>"Persons Below Poverty Level"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -387,13 +306,13 @@ $(document).ready(function() {
                  </td> 
                  <td>percent</td> </tr>
             
-            <tr> <td><code>"Per Capita Income"</code></td> 
+            <tr> <td><code>"Median Houseold Income"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>24571</code>
+                    <code>53682</code>
                     
                  </td> 
-                 <td>2013 dollars</td> </tr>
+                 <td></td> </tr>
             
         </table>
     </div>
@@ -411,8 +330,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-county_demographics-__0__-Income-Median-Houseold-Income").click(function() {
-            $( "#explore-county_demographics-__0__-Income-Median-Houseold-Income" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Income-Per-Capita-Income").click(function() {
+            $( "#explore-county_demographics-__0__-Income-Per-Capita-Income" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -423,8 +342,234 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Income-Per-Capita-Income").click(function() {
-            $( "#explore-county_demographics-__0__-Income-Per-Capita-Income" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Income-Median-Houseold-Income").click(function() {
+            $( "#explore-county_demographics-__0__-Income-Median-Houseold-Income" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-county_demographics-__0__-Sales' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Retail Sales"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>5981</code>
+                    
+                 </td> 
+                 <td>$100,000 of dollars</td> </tr>
+            
+            <tr> <td><code>"Retail Sales per Capita"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>12003</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Merchant Wholesaler Sales"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>$100,000 of dollars</td> </tr>
+            
+            <tr> <td><code>"Accommodation and Food Services Sales"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>881</code>
+                    
+                 </td> 
+                 <td>$100,000 of dollars</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_demographics-__0__-Sales" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_demographics-__0__-Sales-Retail-Sales").click(function() {
+            $( "#explore-county_demographics-__0__-Sales-Retail-Sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Sales-Retail-Sales-per-Capita").click(function() {
+            $( "#explore-county_demographics-__0__-Sales-Retail-Sales-per-Capita" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Sales-Merchant-Wholesaler-Sales").click(function() {
+            $( "#explore-county_demographics-__0__-Sales-Merchant-Wholesaler-Sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Sales-Accommodation-and-Food-Services-Sales").click(function() {
+            $( "#explore-county_demographics-__0__-Sales-Accommodation-and-Food-Services-Sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-county_demographics-__0__-Ethnicities' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Two or More Races"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>1.8</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Black Alone"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>18.7</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Native Hawaiian and Other Pacific Islander Alone"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.1</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Asian Alone"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>1.1</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hispanic or Latino"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>2.7</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"White Alone, not Hispanic or Latino"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>75.6</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"White Alone"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>77.9</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"American Indian and Alaska Native Alone"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.5</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_demographics-__0__-Ethnicities" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_demographics-__0__-Ethnicities-Two-or-More-Races").click(function() {
+            $( "#explore-county_demographics-__0__-Ethnicities-Two-or-More-Races" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Ethnicities-Black-Alone").click(function() {
+            $( "#explore-county_demographics-__0__-Ethnicities-Black-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Ethnicities-Native-Hawaiian-and-Other-Pacific-Islander-Alone").click(function() {
+            $( "#explore-county_demographics-__0__-Ethnicities-Native-Hawaiian-and-Other-Pacific-Islander-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Ethnicities-Asian-Alone").click(function() {
+            $( "#explore-county_demographics-__0__-Ethnicities-Asian-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Ethnicities-Hispanic-or-Latino").click(function() {
+            $( "#explore-county_demographics-__0__-Ethnicities-Hispanic-or-Latino" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Ethnicities-White-Alone,-not-Hispanic-or-Latino").click(function() {
+            $( "#explore-county_demographics-__0__-Ethnicities-White-Alone,-not-Hispanic-or-Latino" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Ethnicities-White-Alone").click(function() {
+            $( "#explore-county_demographics-__0__-Ethnicities-White-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Ethnicities-American-Indian-and-Alaska-Native-Alone").click(function() {
+            $( "#explore-county_demographics-__0__-Ethnicities-American-Indian-and-Alaska-Native-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -435,22 +580,6 @@ $(document).ready(function() {
     <div id='explore-county_demographics-__0__-Housing' title='Dictionary (6 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Median Value of Owner-Occupied Units"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>136200</code>
-                    
-                 </td> 
-                 <td>2009-2013</td> </tr>
-            
-            <tr> <td><code>"Homeownership Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>76.8</code>
-                    
-                 </td> 
-                 <td>2009-2013</td> </tr>
             
             <tr> <td><code>"Units in Multi-Unit Structures"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -468,6 +597,22 @@ $(document).ready(function() {
                  </td> 
                  <td>2009-2013</td> </tr>
             
+            <tr> <td><code>"Housing Units"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>22751</code>
+                    
+                 </td> 
+                 <td>2014</td> </tr>
+            
+            <tr> <td><code>"Homeownership Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>76.8</code>
+                    
+                 </td> 
+                 <td>2009-2013</td> </tr>
+            
             <tr> <td><code>"Households"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -476,13 +621,13 @@ $(document).ready(function() {
                  </td> 
                  <td>2009-2013</td> </tr>
             
-            <tr> <td><code>"Housing Units"</code></td> 
+            <tr> <td><code>"Median Value of Owner-Occupied Units"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>22751</code>
+                    <code>136200</code>
                     
                  </td> 
-                 <td>2014</td> </tr>
+                 <td>2009-2013</td> </tr>
             
         </table>
     </div>
@@ -506,18 +651,6 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-county_demographics-__0__-Housing-Median-Value-of-Owner-Occupied-Units").click(function() {
-            $( "#explore-county_demographics-__0__-Housing-Median-Value-of-Owner-Occupied-Units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Housing-Homeownership-Rate").click(function() {
-            $( "#explore-county_demographics-__0__-Housing-Homeownership-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-county_demographics-__0__-Housing-Units-in-Multi-Unit-Structures").click(function() {
             $( "#explore-county_demographics-__0__-Housing-Units-in-Multi-Unit-Structures" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -530,14 +663,75 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-county_demographics-__0__-Housing-Housing-Units").click(function() {
+            $( "#explore-county_demographics-__0__-Housing-Housing-Units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Housing-Homeownership-Rate").click(function() {
+            $( "#explore-county_demographics-__0__-Housing-Homeownership-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-county_demographics-__0__-Housing-Households").click(function() {
             $( "#explore-county_demographics-__0__-Housing-Households" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Housing-Housing-Units").click(function() {
-            $( "#explore-county_demographics-__0__-Housing-Housing-Units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Housing-Median-Value-of-Owner-Occupied-Units").click(function() {
+            $( "#explore-county_demographics-__0__-Housing-Median-Value-of-Owner-Occupied-Units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-county_demographics-__0__-Education' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Bachelor's Degree or Higher"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>20.9</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"High School or Higher"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>85.6</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_demographics-__0__-Education" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_demographics-__0__-Education-Bachelor_s-Degree-or-Higher").click(function() {
+            $( "#explore-county_demographics-__0__-Education-Bachelor_s-Degree-or-Higher" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Education-High-School-or-Higher").click(function() {
+            $( "#explore-county_demographics-__0__-Education-High-School-or-Higher" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -548,14 +742,6 @@ $(document).ready(function() {
     <div id='explore-county_demographics-__0__-Age' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Percent Under 18 Years"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>25.2</code>
-                    
-                 </td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"Percent 65 and Older"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -569,6 +755,14 @@ $(document).ready(function() {
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
                     <code>6.0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent Under 18 Years"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>25.2</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -589,12 +783,6 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-county_demographics-__0__-Age-Percent-Under-18-Years").click(function() {
-            $( "#explore-county_demographics-__0__-Age-Percent-Under-18-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-county_demographics-__0__-Age-Percent-65-and-Older").click(function() {
             $( "#explore-county_demographics-__0__-Age-Percent-65-and-Older" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -607,309 +795,8 @@ $(document).ready(function() {
         });
         
         
-    });
-    </script>
-
-    <div id='explore-county_demographics-__0__-Employment' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Private Non-farm Employment"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>10120</code>
-                    
-                 </td> 
-                 <td>2013</td> </tr>
-            
-            <tr> <td><code>"Nonemployer Establishments"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>2947</code>
-                    
-                 </td> 
-                 <td>2013</td> </tr>
-            
-            <tr> <td><code>"Firms"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Employment-Firms'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td>2007</td> </tr>
-            
-            <tr> <td><code>"Private Non-farm Establishments"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>817</code>
-                    
-                 </td> 
-                 <td>2013</td> </tr>
-            
-            <tr> <td><code>"Private Non-farm Employment Percent Change"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>2.1</code>
-                    
-                 </td> 
-                 <td>2012-2013</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_demographics-__0__-Employment" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Private-Non-farm-Employment").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Private-Non-farm-Employment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Nonemployer-Establishments").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Nonemployer-Establishments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Firms").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Firms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Private-Non-farm-Establishments").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Private-Non-farm-Establishments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Private-Non-farm-Employment-Percent-Change").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Private-Non-farm-Employment-Percent-Change" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-county_demographics-__0__-Employment-Firms' title='Dictionary (7 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"American Indian-Owned"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Hispanic-Owned"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.7</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Total"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>4067</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Women-Owned"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>31.7</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Black-Owned"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>15.2</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Asian-Owned"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>1.3</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Native Hawaiian and Other Pacific Islander-Owned"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_demographics-__0__-Employment-Firms" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Firms-American-Indian-Owned").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Firms-American-Indian-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Firms-Hispanic-Owned").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Firms-Hispanic-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Firms-Total").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Firms-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Firms-Women-Owned").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Firms-Women-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Firms-Black-Owned").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Firms-Black-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Firms-Asian-Owned").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Firms-Asian-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment-Firms-Native-Hawaiian-and-Other-Pacific-Islander-Owned").click(function() {
-            $( "#explore-county_demographics-__0__-Employment-Firms-Native-Hawaiian-and-Other-Pacific-Islander-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-county_demographics-__0__-Sales' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Merchant Wholesaler Sales"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>$100,000 of dollars</td> </tr>
-            
-            <tr> <td><code>"Retail Sales"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>5981</code>
-                    
-                 </td> 
-                 <td>$100,000 of dollars</td> </tr>
-            
-            <tr> <td><code>"Accommodation and Food Services Sales"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>881</code>
-                    
-                 </td> 
-                 <td>$100,000 of dollars</td> </tr>
-            
-            <tr> <td><code>"Retail Sales per Capita"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>12003</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_demographics-__0__-Sales" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_demographics-__0__-Sales-Merchant-Wholesaler-Sales").click(function() {
-            $( "#explore-county_demographics-__0__-Sales-Merchant-Wholesaler-Sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Sales-Retail-Sales").click(function() {
-            $( "#explore-county_demographics-__0__-Sales-Retail-Sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Sales-Accommodation-and-Food-Services-Sales").click(function() {
-            $( "#explore-county_demographics-__0__-Sales-Accommodation-and-Food-Services-Sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Sales-Retail-Sales-per-Capita").click(function() {
-            $( "#explore-county_demographics-__0__-Sales-Retail-Sales-per-Capita" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Age-Percent-Under-18-Years").click(function() {
+            $( "#explore-county_demographics-__0__-Age-Percent-Under-18-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -921,21 +808,13 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Population"</code></td> 
+            <tr> <td><code>"Miscellaneous"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Population'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Miscellaneous'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
-            
-            <tr> <td><code>"Age"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Age'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td>percent, 2014</td> </tr>
             
             <tr> <td><code>"Income"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -944,14 +823,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>2009-2013</td> </tr>
-            
-            <tr> <td><code>"Employment"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Employment'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"State"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -968,6 +839,30 @@ $(document).ready(function() {
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
                     <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Housing'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Education"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Education'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td>percent, 2009-2013</td> </tr>
+            
+            <tr> <td><code>"Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Population'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employment"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Employment'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -991,21 +886,13 @@ $(document).ready(function() {
                  </td> 
                  <td>2007</td> </tr>
             
-            <tr> <td><code>"Miscellaneous"</code></td> 
+            <tr> <td><code>"Age"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Miscellaneous'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Age'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Education"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Education'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td>percent, 2009-2013</td> </tr>
+                 <td>percent, 2014</td> </tr>
             
             <tr> <td><code>"Ethnicities"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -1017,10 +904,6 @@ $(document).ready(function() {
             
         </table>
     </div>
-    
-        
-    
-        
     
         
     
@@ -1207,12 +1090,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"AK"</code></td>
+                    <td><code>"UT"</code></td>
                     <td>29</td>
                 </tr>
             
                 <tr>
-                    <td><code>"UT"</code></td>
+                    <td><code>"AK"</code></td>
                     <td>29</td>
                 </tr>
             
@@ -1294,6 +1177,12 @@ $(document).ready(function() {
         
     
         
+    
+        
+    
+        
+    
+        
         <div id='explore-county_demographics-__0__-County' title='Previewing Values'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Value</th> <th>Count</th></tr>
@@ -1314,12 +1203,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Lincoln County"</code></td>
+                    <td><code>"Jackson County"</code></td>
                     <td>23</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Jackson County"</code></td>
+                    <td><code>"Lincoln County"</code></td>
                     <td>23</td>
                 </tr>
             
@@ -1364,18 +1253,23 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Warren County"</code></td>
+                    <td><code>"Greene County"</code></td>
                     <td>14</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Greene County"</code></td>
+                    <td><code>"Warren County"</code></td>
                     <td>14</td>
                 </tr>
             
                 <tr>
                     <td><code>"Carroll County"</code></td>
                     <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Johnson County"</code></td>
+                    <td>12</td>
                 </tr>
             
                 <tr>
@@ -1389,7 +1283,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Adams County"</code></td>
+                    <td><code>"Clark County"</code></td>
                     <td>12</td>
                 </tr>
             
@@ -1399,7 +1293,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Johnson County"</code></td>
+                    <td><code>"Douglas County"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adams County"</code></td>
                     <td>12</td>
                 </tr>
             
@@ -1409,13 +1308,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Douglas County"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Clark County"</code></td>
-                    <td>12</td>
+                    <td><code>"Fayette County"</code></td>
+                    <td>11</td>
                 </tr>
             
                 <tr>
@@ -1424,12 +1318,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Fayette County"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Crawford County"</code></td>
+                    <td><code>"Morgan County"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -1444,8 +1333,13 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Morgan County"</code></td>
+                    <td><code>"Crawford County"</code></td>
                     <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Perry County"</code></td>
+                    <td>10</td>
                 </tr>
             
                 <tr>
@@ -1454,12 +1348,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Henry County"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Perry County"</code></td>
+                    <td><code>"Hancock County"</code></td>
                     <td>10</td>
                 </tr>
             
@@ -1474,17 +1363,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Hancock County"</code></td>
+                    <td><code>"Henry County"</code></td>
                     <td>10</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Brown County"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Benton County"</code></td>
+                    <td><code>"Clinton County"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -1499,22 +1383,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Shelby County"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Putnam County"</code></td>
                     <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Clinton County"</code></td>
+                    <td><code>"Benton County"</code></td>
                     <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Fulton County"</code></td>
+                    <td><code>"Brown County"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shelby County"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mercer County"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Columbia County"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -1524,37 +1418,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Jasper County"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Butler County"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Harrison County"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Cumberland County"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Orange County"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Boone County"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mercer County"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -1564,7 +1428,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Columbia County"</code></td>
+                    <td><code>"Harrison County"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jasper County"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orange County"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Butler County"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fulton County"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Boone County"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -1579,6 +1468,11 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Taylor County"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Pulaski County"</code></td>
                     <td>7</td>
                 </tr>
@@ -1589,37 +1483,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Taylor County"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DeKalb County"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Macon County"</code></td>
                     <td>6</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Garfield County"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hardin County"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Custer County"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jones County"</code></td>
+                    <td><code>"Martin County"</code></td>
                     <td>6</td>
                 </tr>
             
@@ -1629,22 +1498,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Garfield County"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jones County"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Mason County"</code></td>
                     <td>6</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Sullivan County"</code></td>
+                    <td><code>"Custer County"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DeKalb County"</code></td>
                     <td>6</td>
                 </tr>
             
                 <tr>
                     <td><code>"Richland County"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Martin County"</code></td>
                     <td>6</td>
                 </tr>
             
@@ -1659,6 +1538,26 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Hardin County"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sullivan County"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carter County"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"White County"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Saline County"</code></td>
                     <td>5</td>
                 </tr>
@@ -1669,47 +1568,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Lyon County"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Carter County"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pierce County"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mitchell County"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Essex County"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Livingston County"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Campbell County"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Clarke County"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Decatur County"</code></td>
+                    <td><code>"Henderson County"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -1724,12 +1583,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Lafayette County"</code></td>
+                    <td><code>"Lyon County"</code></td>
                     <td>5</td>
                 </tr>
             
                 <tr>
-                    <td><code>"White County"</code></td>
+                    <td><code>"Lafayette County"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -1739,7 +1598,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Henderson County"</code></td>
+                    <td><code>"Essex County"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Livingston County"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pierce County"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clarke County"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mitchell County"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -1754,32 +1633,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Decatur County"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Campbell County"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Caldwell County"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Richmond County"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Smith County"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"St. Clair County"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Adair County"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Allen County"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -1789,12 +1653,37 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Grundy County"</code></td>
+                    <td><code>"Lamar County"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Linn County"</code></td>
+                    <td><code>"Wilson County"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carbon County"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lancaster County"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adair County"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iron County"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Liberty County"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -1814,8 +1703,6 @@ $(document).ready(function() {
     
         
     
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-county_demographics-__0__" ).dialog({
@@ -1823,26 +1710,14 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-county_demographics-__0__-Population").click(function() {
-            $( "#explore-county_demographics-__0__-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Age").click(function() {
-            $( "#explore-county_demographics-__0__-Age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Miscellaneous").click(function() {
+            $( "#explore-county_demographics-__0__-Miscellaneous" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
         $("#btn-explore-county_demographics-__0__-Income").click(function() {
             $( "#explore-county_demographics-__0__-Income" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Employment").click(function() {
-            $( "#explore-county_demographics-__0__-Employment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1868,6 +1743,24 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-county_demographics-__0__-Education").click(function() {
+            $( "#explore-county_demographics-__0__-Education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Population").click(function() {
+            $( "#explore-county_demographics-__0__-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Employment").click(function() {
+            $( "#explore-county_demographics-__0__-Employment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-county_demographics-__0__-County").click(function() {
             $( "#explore-county_demographics-__0__-County" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -1889,14 +1782,8 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Miscellaneous").click(function() {
-            $( "#explore-county_demographics-__0__-Miscellaneous" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Education").click(function() {
-            $( "#explore-county_demographics-__0__-Education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Age").click(function() {
+            $( "#explore-county_demographics-__0__-Age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1910,70 +1797,62 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-county_demographics-__0__-Ethnicities' title='Dictionary (8 keys)'>
+    <div id='explore-county_demographics-__0__-Employment-Firms' title='Dictionary (7 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Black Alone"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>18.7</code>
+                    <code>4067</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"White Alone, not Hispanic or Latino"</code></td> 
+            <tr> <td><code>"Black-Owned"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>75.6</code>
+                    <code>15.2</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"American Indian and Alaska Native Alone"</code></td> 
+            <tr> <td><code>"Native Hawaiian and Other Pacific Islander-Owned"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0.5</code>
+                    <code>0.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Two or More Races"</code></td> 
+            <tr> <td><code>"Asian-Owned"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>1.8</code>
+                    <code>1.3</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"White Alone"</code></td> 
+            <tr> <td><code>"Women-Owned"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>77.9</code>
+                    <code>31.7</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Hispanic or Latino"</code></td> 
+            <tr> <td><code>"Hispanic-Owned"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>2.7</code>
+                    <code>0.7</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Native Hawaiian and Other Pacific Islander Alone"</code></td> 
+            <tr> <td><code>"American Indian-Owned"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0.1</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Asian Alone"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>1.1</code>
+                    <code>0.0</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1995,59 +1874,132 @@ $(document).ready(function() {
     
         
     
-        
-    
     <script>
     $(document).ready(function() {
-        $( "#explore-county_demographics-__0__-Ethnicities" ).dialog({
+        $( "#explore-county_demographics-__0__-Employment-Firms" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-county_demographics-__0__-Ethnicities-Black-Alone").click(function() {
-            $( "#explore-county_demographics-__0__-Ethnicities-Black-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Firms-Total").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Firms-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Ethnicities-White-Alone,-not-Hispanic-or-Latino").click(function() {
-            $( "#explore-county_demographics-__0__-Ethnicities-White-Alone,-not-Hispanic-or-Latino" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Firms-Black-Owned").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Firms-Black-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Ethnicities-American-Indian-and-Alaska-Native-Alone").click(function() {
-            $( "#explore-county_demographics-__0__-Ethnicities-American-Indian-and-Alaska-Native-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Firms-Native-Hawaiian-and-Other-Pacific-Islander-Owned").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Firms-Native-Hawaiian-and-Other-Pacific-Islander-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Ethnicities-Two-or-More-Races").click(function() {
-            $( "#explore-county_demographics-__0__-Ethnicities-Two-or-More-Races" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Firms-Asian-Owned").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Firms-Asian-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Ethnicities-White-Alone").click(function() {
-            $( "#explore-county_demographics-__0__-Ethnicities-White-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Firms-Women-Owned").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Firms-Women-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Ethnicities-Hispanic-or-Latino").click(function() {
-            $( "#explore-county_demographics-__0__-Ethnicities-Hispanic-or-Latino" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Firms-Hispanic-Owned").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Firms-Hispanic-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Ethnicities-Native-Hawaiian-and-Other-Pacific-Islander-Alone").click(function() {
-            $( "#explore-county_demographics-__0__-Ethnicities-Native-Hawaiian-and-Other-Pacific-Islander-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Firms-American-Indian-Owned").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Firms-American-Indian-Owned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Ethnicities-Asian-Alone").click(function() {
-            $( "#explore-county_demographics-__0__-Ethnicities-Asian-Alone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-county_demographics-__0__-Population' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"2014 Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>55395</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Population Percent Change"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>1.5</code>
+                    
+                 </td> 
+                 <td>April 1, 2010 to July 1, 2014</td> </tr>
+            
+            <tr> <td><code>"2010 Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>54571</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Population per Square Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>91.8</code>
+                    
+                 </td> 
+                 <td>2010</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_demographics-__0__-Population" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_demographics-__0__-Population-2014-Population").click(function() {
+            $( "#explore-county_demographics-__0__-Population-2014-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Population-Population-Percent-Change").click(function() {
+            $( "#explore-county_demographics-__0__-Population-Population-Percent-Change" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Population-2010-Population").click(function() {
+            $( "#explore-county_demographics-__0__-Population-2010-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Population-Population-per-Square-Mile").click(function() {
+            $( "#explore-county_demographics-__0__-Population-Population-per-Square-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2059,21 +2011,13 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Manufacturers Shipments"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>$100,000 of dollars, 2007</td> </tr>
-            
-            <tr> <td><code>"Mean Travel Time to Work"</code></td> 
+            <tr> <td><code>"Living in Same House +1 Years"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>26.2</code>
+                    <code>85.0</code>
                     
                  </td> 
-                 <td>minutes, workers aged 16+, 2009-2013</td> </tr>
+                 <td>percent, 2009-2013</td> </tr>
             
             <tr> <td><code>"Foreign Born"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -2083,6 +2027,22 @@ $(document).ready(function() {
                  </td> 
                  <td>percent 2009-2013</td> </tr>
             
+            <tr> <td><code>"Manufacturers Shipments"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>$100,000 of dollars, 2007</td> </tr>
+            
+            <tr> <td><code>"Percent Female"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>51.4</code>
+                    
+                 </td> 
+                 <td>2014</td> </tr>
+            
             <tr> <td><code>"Land Area"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
@@ -2090,14 +2050,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>Square Miles, 2010</td> </tr>
-            
-            <tr> <td><code>"Living in Same House +1 Years"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>85.0</code>
-                    
-                 </td> 
-                 <td>percent, 2009-2013</td> </tr>
             
             <tr> <td><code>"Building Permits"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -2115,6 +2067,14 @@ $(document).ready(function() {
                  </td> 
                  <td>age 5+, percent, 2009-2013</td> </tr>
             
+            <tr> <td><code>"Mean Travel Time to Work"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>26.2</code>
+                    
+                 </td> 
+                 <td>minutes, workers aged 16+, 2009-2013</td> </tr>
+            
             <tr> <td><code>"Veterans"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -2122,14 +2082,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>2009-2013</td> </tr>
-            
-            <tr> <td><code>"Percent Female"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>51.4</code>
-                    
-                 </td> 
-                 <td>2014</td> </tr>
             
         </table>
     </div>
@@ -2159,14 +2111,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-county_demographics-__0__-Miscellaneous-Manufacturers-Shipments").click(function() {
-            $( "#explore-county_demographics-__0__-Miscellaneous-Manufacturers-Shipments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_demographics-__0__-Miscellaneous-Mean-Travel-Time-to-Work").click(function() {
-            $( "#explore-county_demographics-__0__-Miscellaneous-Mean-Travel-Time-to-Work" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Miscellaneous-Living-in-Same-House-_1-Years").click(function() {
+            $( "#explore-county_demographics-__0__-Miscellaneous-Living-in-Same-House-_1-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2177,14 +2123,20 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Miscellaneous-Land-Area").click(function() {
-            $( "#explore-county_demographics-__0__-Miscellaneous-Land-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Miscellaneous-Manufacturers-Shipments").click(function() {
+            $( "#explore-county_demographics-__0__-Miscellaneous-Manufacturers-Shipments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Miscellaneous-Living-in-Same-House-_1-Years").click(function() {
-            $( "#explore-county_demographics-__0__-Miscellaneous-Living-in-Same-House-_1-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Miscellaneous-Percent-Female").click(function() {
+            $( "#explore-county_demographics-__0__-Miscellaneous-Percent-Female" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Miscellaneous-Land-Area").click(function() {
+            $( "#explore-county_demographics-__0__-Miscellaneous-Land-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2201,14 +2153,14 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Miscellaneous-Veterans").click(function() {
-            $( "#explore-county_demographics-__0__-Miscellaneous-Veterans" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Miscellaneous-Mean-Travel-Time-to-Work").click(function() {
+            $( "#explore-county_demographics-__0__-Miscellaneous-Mean-Travel-Time-to-Work" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Miscellaneous-Percent-Female").click(function() {
-            $( "#explore-county_demographics-__0__-Miscellaneous-Percent-Female" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Miscellaneous-Veterans").click(function() {
+            $( "#explore-county_demographics-__0__-Miscellaneous-Veterans" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2216,25 +2168,49 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-county_demographics-__0__-Education' title='Dictionary (2 keys)'>
+    <div id='explore-county_demographics-__0__-Employment' title='Dictionary (5 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Bachelor's Degree or Higher"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Private Non-farm Employment"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>20.9</code>
+                    <code>10120</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>2013</td> </tr>
             
-            <tr> <td><code>"High School or Higher"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Nonemployer Establishments"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>85.6</code>
+                    <code>2947</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>2013</td> </tr>
+            
+            <tr> <td><code>"Private Non-farm Establishments"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>817</code>
+                    
+                 </td> 
+                 <td>2013</td> </tr>
+            
+            <tr> <td><code>"Private Non-farm Employment Percent Change"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>2.1</code>
+                    
+                 </td> 
+                 <td>2012-2013</td> </tr>
+            
+            <tr> <td><code>"Firms"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_demographics-__0__-Employment-Firms'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td>2007</td> </tr>
             
         </table>
     </div>
@@ -2243,21 +2219,45 @@ $(document).ready(function() {
     
         
     
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
-        $( "#explore-county_demographics-__0__-Education" ).dialog({
+        $( "#explore-county_demographics-__0__-Employment" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-county_demographics-__0__-Education-Bachelor_s-Degree-or-Higher").click(function() {
-            $( "#explore-county_demographics-__0__-Education-Bachelor_s-Degree-or-Higher" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Private-Non-farm-Employment").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Private-Non-farm-Employment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_demographics-__0__-Education-High-School-or-Higher").click(function() {
-            $( "#explore-county_demographics-__0__-Education-High-School-or-Higher" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_demographics-__0__-Employment-Nonemployer-Establishments").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Nonemployer-Establishments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Employment-Private-Non-farm-Establishments").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Private-Non-farm-Establishments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Employment-Private-Non-farm-Employment-Percent-Change").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Private-Non-farm-Employment-Percent-Change" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_demographics-__0__-Employment-Firms").click(function() {
+            $( "#explore-county_demographics-__0__-Employment-Firms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

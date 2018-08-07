@@ -30,21 +30,21 @@ def _tifa_definitions():
                 "name": 'get_dams',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Dimensions'}, {"type": "LiteralStr", "value": 'Identity'}, {"type": "LiteralStr", "value": 'Location'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Crest Length'}, {"type": "LiteralStr", "value": 'Crest Elevation'}, {"type": "LiteralStr", "value": 'Structural Height'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Watercourse'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Project'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Identity'}, {"type": "LiteralStr", "value": 'Dimensions'}, {"type": "LiteralStr", "value": 'Location'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Watercourse'}, {"type": "LiteralStr", "value": 'Project'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Organization'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Latitude'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'State'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Crest Elevation'}, {"type": "LiteralStr", "value": 'Crest Length'}, {"type": "LiteralStr", "value": 'Structural Height'}], "values": [
 					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Latitude'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'County'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
+					{"type": "NumType"}, 
 					{"type": "StrType"}]}]}},
             }
         

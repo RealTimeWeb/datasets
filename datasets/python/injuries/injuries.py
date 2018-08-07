@@ -30,24 +30,24 @@ def _tifa_definitions():
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'business'}, {"type": "LiteralStr", "value": 'address'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'address'}, {"type": "LiteralStr", "value": 'business'}], "values": [
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'days away/restricted/transfer'}, {"type": "LiteralStr", "value": 'days away'}, {"type": "LiteralStr", "value": 'total case rate'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'label'}, {"type": "LiteralStr", "value": 'major_group'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'division'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'label'}, {"type": "LiteralStr", "value": 'major_group'}, {"type": "LiteralStr", "value": 'division'}, {"type": "LiteralStr", "value": 'id'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}]}, 
 				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'second name'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'street'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'street'}, {"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'second name'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
 					{"type": "StrType"}]}]}},
             }
         

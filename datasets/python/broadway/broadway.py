@@ -30,22 +30,22 @@ def _tifa_definitions():
                 "name": 'get_shows',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Show'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Statistics'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Type'}, {"type": "LiteralStr", "value": 'Theatre'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Day'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Month'}], "values": [
-					{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Statistics'}, {"type": "LiteralStr", "value": 'Show'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Day'}, {"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Month'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
+					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Attendance'}, {"type": "LiteralStr", "value": 'Performances'}, {"type": "LiteralStr", "value": 'Capacity'}, {"type": "LiteralStr", "value": 'Gross Potential'}, {"type": "LiteralStr", "value": 'Gross'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Gross Potential'}, {"type": "LiteralStr", "value": 'Capacity'}, {"type": "LiteralStr", "value": 'Gross'}, {"type": "LiteralStr", "value": 'Performances'}, {"type": "LiteralStr", "value": 'Attendance'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
-					{"type": "NumType"}]}]}},
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Type'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Theatre'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
             }
         
         }
