@@ -30,34 +30,34 @@ def _tifa_definitions():
                 "name": 'get_all_crimes',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Department'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Department'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Rates'}, {"type": "LiteralStr", "value": 'Totals'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Property'}, {"type": "LiteralStr", "value": 'Violent'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Larceny'}, {"type": "LiteralStr", "value": 'Motor'}, {"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Burglary'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Murder'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Assault'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Property'}, {"type": "LiteralStr", "value": 'Violent'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Larceny'}, {"type": "LiteralStr", "value": 'Motor'}, {"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Burglary'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Murder'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Assault'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}]}]}, 
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Totals'}, {"type": "LiteralStr", "value": 'Rates'}, {"type": "LiteralStr", "value": 'Population'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Violent'}, {"type": "LiteralStr", "value": 'Property'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'Assault'}, {"type": "LiteralStr", "value": 'Murder'}], "values": [
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Burglary'}, {"type": "LiteralStr", "value": 'Larceny'}, {"type": "LiteralStr", "value": 'Motor'}], "values": [
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Violent'}, {"type": "LiteralStr", "value": 'Property'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'Assault'}, {"type": "LiteralStr", "value": 'Murder'}], "values": [
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Burglary'}, {"type": "LiteralStr", "value": 'Larceny'}, {"type": "LiteralStr", "value": 'Motor'}], "values": [
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}, 
-							{"type": "NumType"}]}]}, 
-					{"type": "NumType"}]}, 
 				{"type": "NumType"}, 
 				{"type": "StrType"}]}},
             }
@@ -95,8 +95,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

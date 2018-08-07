@@ -30,15 +30,8 @@ def _tifa_definitions():
                 "name": 'get_skyscrapers',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'material'}, {"type": "LiteralStr", "value": 'purposes'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'status'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'height'}, {"type": "LiteralStr", "value": 'number of purposes'}, {"type": "LiteralStr", "value": 'floors above'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'hospital'}, {"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'observation'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'hotel'}, {"type": "LiteralStr", "value": 'exhibition'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'abandoned'}, {"type": "LiteralStr", "value": 'casino'}, {"type": "LiteralStr", "value": 'retail'}, {"type": "LiteralStr", "value": 'library'}, {"type": "LiteralStr", "value": 'industrial'}, {"type": "LiteralStr", "value": 'bridge'}, {"type": "LiteralStr", "value": 'air traffic control tower'}, {"type": "LiteralStr", "value": 'museum'}, {"type": "LiteralStr", "value": 'multiple'}, {"type": "LiteralStr", "value": 'government'}, {"type": "LiteralStr", "value": 'serviced apartments'}, {"type": "LiteralStr", "value": 'telecommunications'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'belltower'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'education'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'purposes'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'status'}, {"type": "LiteralStr", "value": 'material'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'statistics'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'belltower'}, {"type": "LiteralStr", "value": 'casino'}, {"type": "LiteralStr", "value": 'multiple'}, {"type": "LiteralStr", "value": 'serviced apartments'}, {"type": "LiteralStr", "value": 'abandoned'}, {"type": "LiteralStr", "value": 'industrial'}, {"type": "LiteralStr", "value": 'library'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'hospital'}, {"type": "LiteralStr", "value": 'government'}, {"type": "LiteralStr", "value": 'observation'}, {"type": "LiteralStr", "value": 'bridge'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'telecommunications'}, {"type": "LiteralStr", "value": 'museum'}, {"type": "LiteralStr", "value": 'education'}, {"type": "LiteralStr", "value": 'exhibition'}, {"type": "LiteralStr", "value": 'hotel'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'retail'}, {"type": "LiteralStr", "value": 'air traffic control tower'}, {"type": "LiteralStr", "value": 'office'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
@@ -62,22 +55,29 @@ def _tifa_definitions():
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'city_id'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'country'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'country id'}, {"type": "LiteralStr", "value": 'city'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'country id'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'country'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'city_id'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'current'}, {"type": "LiteralStr", "value": 'completed'}, {"type": "LiteralStr", "value": 'started'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'is completed'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'current'}, {"type": "LiteralStr", "value": 'started'}, {"type": "LiteralStr", "value": 'completed'}], "values": [
+					{"type": "StrType"}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'is started'}], "values": [
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}]}},
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'is completed'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "StrType"}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'number of purposes'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'floors above'}, {"type": "LiteralStr", "value": 'height'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
             }
         
         }
@@ -113,8 +113,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

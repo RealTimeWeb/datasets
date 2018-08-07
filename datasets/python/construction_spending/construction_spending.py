@@ -30,9 +30,9 @@ def _tifa_definitions():
                 "name": 'get_spending',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'annual'}, {"type": "LiteralStr", "value": 'time'}, {"type": "LiteralStr", "value": 'current'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'public'}, {"type": "LiteralStr", "value": 'private'}, {"type": "LiteralStr", "value": 'combined'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'nonresidential'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'transportation'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'current'}, {"type": "LiteralStr", "value": 'annual'}, {"type": "LiteralStr", "value": 'time'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'combined'}, {"type": "LiteralStr", "value": 'public'}, {"type": "LiteralStr", "value": 'private'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'transportation'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'nonresidential'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -52,7 +52,7 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'nonresidential'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'transportation'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'transportation'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'nonresidential'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -72,7 +72,7 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'nonresidential'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'transportation'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'transportation'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'nonresidential'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -92,14 +92,8 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'period'}, {"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'index'}, {"type": "LiteralStr", "value": 'month'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'public'}, {"type": "LiteralStr", "value": 'private'}, {"type": "LiteralStr", "value": 'combined'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'nonresidential'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'transportation'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'combined'}, {"type": "LiteralStr", "value": 'public'}, {"type": "LiteralStr", "value": 'private'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'transportation'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'nonresidential'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -119,7 +113,7 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'nonresidential'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'transportation'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'transportation'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'nonresidential'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -139,7 +133,7 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'nonresidential'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'transportation'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'water supply'}, {"type": "LiteralStr", "value": 'sewage and waste disposal'}, {"type": "LiteralStr", "value": 'communication'}, {"type": "LiteralStr", "value": 'total construction'}, {"type": "LiteralStr", "value": 'public safety'}, {"type": "LiteralStr", "value": 'manufacturing'}, {"type": "LiteralStr", "value": 'highway and street'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'amusement and recreation'}, {"type": "LiteralStr", "value": 'educational'}, {"type": "LiteralStr", "value": 'power'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'health care'}, {"type": "LiteralStr", "value": 'transportation'}, {"type": "LiteralStr", "value": 'lodging'}, {"type": "LiteralStr", "value": 'conservation and development'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'nonresidential'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -158,7 +152,13 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}]}},
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'period'}, {"type": "LiteralStr", "value": 'index'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'month name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}]}},
             }
         
         }
@@ -194,8 +194,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

@@ -30,26 +30,26 @@ def _tifa_definitions():
                 "name": 'get_weather',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Station'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Week of'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Full'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'City'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Code'}, {"type": "LiteralStr", "value": 'Location'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Station'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Date'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Code'}, {"type": "LiteralStr", "value": 'City'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Wind'}, {"type": "LiteralStr", "value": 'Precipitation'}, {"type": "LiteralStr", "value": 'Temperature'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Speed'}, {"type": "LiteralStr", "value": 'Direction'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Temperature'}, {"type": "LiteralStr", "value": 'Wind'}, {"type": "LiteralStr", "value": 'Precipitation'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Min Temp'}, {"type": "LiteralStr", "value": 'Avg Temp'}, {"type": "LiteralStr", "value": 'Max Temp'}], "values": [
+						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Direction'}, {"type": "LiteralStr", "value": 'Speed'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Week of'}], "values": [
+					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Max Temp'}, {"type": "LiteralStr", "value": 'Avg Temp'}, {"type": "LiteralStr", "value": 'Min Temp'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}]}},
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
             }
         
         }
@@ -85,8 +85,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

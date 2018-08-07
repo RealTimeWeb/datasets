@@ -65,8 +65,10 @@ elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 {% if locals -%}
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 {% endif %}
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

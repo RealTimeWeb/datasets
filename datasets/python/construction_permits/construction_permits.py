@@ -30,23 +30,23 @@ def _tifa_definitions():
                 "name": 'get_records',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Valuations'}, {"type": "LiteralStr", "value": 'Number of Permits'}, {"type": "LiteralStr", "value": 'Period'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Valuations'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Number of Permits'}, {"type": "LiteralStr", "value": 'Period'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 unit'}, {"type": "LiteralStr", "value": '5+ units'}, {"type": "LiteralStr", "value": '2 units'}, {"type": "LiteralStr", "value": '3-4 units'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2 units'}, {"type": "LiteralStr", "value": '1 unit'}, {"type": "LiteralStr", "value": '3-4 units'}, {"type": "LiteralStr", "value": '5+ units'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 unit'}, {"type": "LiteralStr", "value": '5+ units'}, {"type": "LiteralStr", "value": '2 units'}, {"type": "LiteralStr", "value": '3-4 units'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2 units'}, {"type": "LiteralStr", "value": '1 unit'}, {"type": "LiteralStr", "value": '3-4 units'}, {"type": "LiteralStr", "value": '5+ units'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'full'}], "values": [
 					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'month'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}]}},
+					{"type": "StrType"}]}]}},
             }
         
         }
@@ -82,8 +82,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

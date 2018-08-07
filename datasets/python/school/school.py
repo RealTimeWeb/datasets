@@ -31,8 +31,40 @@ def _tifa_definitions():
                 "returns": 
 		{"type": "ListType", "subtype": 
 			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'state'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'score'}, {"type": "LiteralStr", "value": 'enrollment'}, {"type": "LiteralStr", "value": 'attendance'}, {"type": "LiteralStr", "value": 'funding'}, {"type": "LiteralStr", "value": 'location'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'science'}, {"type": "LiteralStr", "value": 'math'}, {"type": "LiteralStr", "value": 'writing'}, {"type": "LiteralStr", "value": 'reading'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'attendance'}, {"type": "LiteralStr", "value": 'enrollment'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'score'}, {"type": "LiteralStr", "value": 'funding'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'average student rate'}, {"type": "LiteralStr", "value": 'average minutes'}, {"type": "LiteralStr", "value": 'average teacher rate'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'staff'}, {"type": "LiteralStr", "value": 'teachers'}, {"type": "LiteralStr", "value": 'students'}, {"type": "LiteralStr", "value": 'schools'}, {"type": "LiteralStr", "value": 'student teacher ratio'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'race'}, {"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'all'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'asian'}, {"type": "LiteralStr", "value": 'native american'}, {"type": "LiteralStr", "value": 'biracial'}, {"type": "LiteralStr", "value": 'hispanic'}, {"type": "LiteralStr", "value": 'black'}, {"type": "LiteralStr", "value": 'white'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'individualized education program'}, {"type": "LiteralStr", "value": 'free lunch eligible'}, {"type": "LiteralStr", "value": 'lep/ell students'}, {"type": "LiteralStr", "value": 'ungraded students'}, {"type": "LiteralStr", "value": 'reduced-price lunch eligible'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "StrType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "ListType", "subtype": 
+								{"type": "NumType"}}, 
+							{"type": "NumType"}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'male'}, {"type": "LiteralStr", "value": 'female'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'longitude'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'math'}, {"type": "LiteralStr", "value": 'writing'}, {"type": "LiteralStr", "value": 'science'}, {"type": "LiteralStr", "value": 'reading'}], "values": [
 						{"type": "ListType", "subtype": 
 							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'scale score'}, {"type": "LiteralStr", "value": 'grade'}], "values": [
 								{"type": "NumType"}, 
@@ -49,39 +81,7 @@ def _tifa_definitions():
 							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'scale score'}, {"type": "LiteralStr", "value": 'grade'}], "values": [
 								{"type": "NumType"}, 
 								{"type": "NumType"}]}}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'teachers'}, {"type": "LiteralStr", "value": 'student teacher ratio'}, {"type": "LiteralStr", "value": 'schools'}, {"type": "LiteralStr", "value": 'students'}, {"type": "LiteralStr", "value": 'staff'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'all'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'race'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'lep/ell students'}, {"type": "LiteralStr", "value": 'free lunch eligible'}, {"type": "LiteralStr", "value": 'ungraded students'}, {"type": "LiteralStr", "value": 'individualized education program'}, {"type": "LiteralStr", "value": 'reduced-price lunch eligible'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "StrType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}, 
-							{"type": "NumType"}, 
-							{"type": "ListType", "subtype": 
-								{"type": "NumType"}}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'white'}, {"type": "LiteralStr", "value": 'biracial'}, {"type": "LiteralStr", "value": 'native american'}, {"type": "LiteralStr", "value": 'black'}, {"type": "LiteralStr", "value": 'hispanic'}, {"type": "LiteralStr", "value": 'asian'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'male'}, {"type": "LiteralStr", "value": 'female'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}]}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'average minutes'}, {"type": "LiteralStr", "value": 'average student rate'}, {"type": "LiteralStr", "value": 'average teacher rate'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'expenditures'}, {"type": "LiteralStr", "value": 'revenue'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'longitude'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'revenue'}, {"type": "LiteralStr", "value": 'expenditures'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}, 
 				{"type": "StrType"}]}},
@@ -120,8 +120,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

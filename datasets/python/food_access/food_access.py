@@ -30,48 +30,48 @@ def _tifa_definitions():
                 "name": 'get_records',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Low Access Numbers'}, {"type": "LiteralStr", "value": 'Low Access Percents'}, {"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Vehicle Access'}, {"type": "LiteralStr", "value": 'Housing Data'}, {"type": "LiteralStr", "value": 'County'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'People'}, {"type": "LiteralStr", "value": 'Low Income People'}, {"type": "LiteralStr", "value": 'Seniors'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Vehicle Access'}, {"type": "LiteralStr", "value": 'Low Access Percents'}, {"type": "LiteralStr", "value": 'Housing Data'}, {"type": "LiteralStr", "value": 'Low Access Numbers'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'Population'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Low Income and Low Access'}, {"type": "LiteralStr", "value": 'Low Access Only'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 and 20 Miles'}, {"type": "LiteralStr", "value": '1/2 and 10 Miles'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 and 10 Miles'}, {"type": "LiteralStr", "value": '1 and 20 Miles'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 and 20 Miles'}, {"type": "LiteralStr", "value": '1/2 and 10 Miles'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 and 10 Miles'}, {"type": "LiteralStr", "value": '1 and 20 Miles'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}, 
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rural Housing Percentage'}, {"type": "LiteralStr", "value": 'Urban Housing Percentage'}, {"type": "LiteralStr", "value": 'Total Housing Units'}, {"type": "LiteralStr", "value": 'Residing in Group Quarters'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rural Housing Percentage'}, {"type": "LiteralStr", "value": 'Residing in Group Quarters'}, {"type": "LiteralStr", "value": 'Urban Housing Percentage'}, {"type": "LiteralStr", "value": 'Total Housing Units'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "StrType"}]}},
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'People'}, {"type": "LiteralStr", "value": 'Low Income People'}, {"type": "LiteralStr", "value": 'Seniors'}, {"type": "LiteralStr", "value": 'Children'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "StrType"}, 
+				{"type": "StrType"}, 
+				{"type": "NumType"}]}},
             }
         
         }
@@ -107,8 +107,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

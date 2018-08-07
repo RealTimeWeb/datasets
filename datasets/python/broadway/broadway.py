@@ -30,22 +30,22 @@ def _tifa_definitions():
                 "name": 'get_shows',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Statistics'}, {"type": "LiteralStr", "value": 'Show'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Day'}, {"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Month'}], "values": [
-					{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Show'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Statistics'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Theatre'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Type'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Gross Potential'}, {"type": "LiteralStr", "value": 'Capacity'}, {"type": "LiteralStr", "value": 'Gross'}, {"type": "LiteralStr", "value": 'Performances'}, {"type": "LiteralStr", "value": 'Attendance'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Day'}], "values": [
+					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Type'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Theatre'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Attendance'}, {"type": "LiteralStr", "value": 'Gross Potential'}, {"type": "LiteralStr", "value": 'Performances'}, {"type": "LiteralStr", "value": 'Gross'}, {"type": "LiteralStr", "value": 'Capacity'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
             }
         
         }
@@ -81,8 +81,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

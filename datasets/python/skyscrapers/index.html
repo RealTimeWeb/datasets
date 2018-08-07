@@ -286,25 +286,58 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-skyscrapers-__0__-statistics' title='Dictionary (4 keys)'>
+    <div id='explore-skyscrapers-__0__-status-completed' title='Dictionary (2 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"rank"</code></td> 
+            <tr> <td><code>"year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>1</code>
+                    <code>0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"height"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"is completed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
                  <td>
-                    <code>1609.3599853516</code>
+                    <code>False</code>
                     
                  </td> 
                  <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__-status-completed" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status-completed-year").click(function() {
+            $( "#explore-skyscrapers-__0__-status-completed-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-status-completed-is-completed").click(function() {
+            $( "#explore-skyscrapers-__0__-status-completed-is-completed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-skyscrapers-__0__-statistics' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
             <tr> <td><code>"number of purposes"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -314,10 +347,26 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
+            <tr> <td><code>"rank"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
             <tr> <td><code>"floors above"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
                     <code>528</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"height"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>1609.3599853516</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -340,20 +389,14 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-skyscrapers-__0__-statistics-rank").click(function() {
-            $( "#explore-skyscrapers-__0__-statistics-rank" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-statistics-height").click(function() {
-            $( "#explore-skyscrapers-__0__-statistics-height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-skyscrapers-__0__-statistics-number-of-purposes").click(function() {
             $( "#explore-skyscrapers-__0__-statistics-number-of-purposes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-statistics-rank").click(function() {
+            $( "#explore-skyscrapers-__0__-statistics-rank" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -364,711 +407,8 @@ $(document).ready(function() {
         });
         
         
-    });
-    </script>
-
-    <div id='explore-skyscrapers-__0__' title='Dictionary (7 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"name"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"The Illinois"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-name'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"statistics"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"material"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"steel"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-material'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"purposes"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-purposes'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"id"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>12</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"location"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"status"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-status'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-        <div id='explore-skyscrapers-__0__-name' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Bank of America Plaza"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wells Fargo Center"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Carlyle"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bank of America Building"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Park Tower"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AT&T Building"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Metropolitan Tower"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wells Fargo Tower"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chase Tower"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Museum Tower"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bank of America Center"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wells Fargo Plaza"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"One World Trade Center"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Renaissance Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mellon Bank Center"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Element"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tribune Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fisher Building"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Park Place Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mercantile Building"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Merchandise Mart"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Aon Center"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"JPMorgan Chase Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"60 Wall Street"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Capitol Square"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2 World Trade Center"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Spire"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Franklin Towers"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"First National Bank Building"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hilton Garden Inn"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fifth Third Center"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"National City Center"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Millennium Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"National City Bank Building"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bank of America Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"U.S. Bank Center"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Trump International Hotel & Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Equitable Building"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Ritz-Carlton Residences"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"City Hall"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hearst Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Citigroup Center"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Time-Life Building"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Century"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Trump Palace"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Atlantic"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Pinnacle"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The St. James"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Mark"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"McGraw-Hill Building"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"City Place"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"RBC Plaza"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AT&T Center"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Residences at the Ritz Carlton, Westchester - ..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PNC Tower"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"HL23"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Ardea"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Admiral at the Lake"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Worcester Plaza"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The BreakWater"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eighteen Eighty Eight Building"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mystic Pointe Tower 500"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Benson Tower"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mirabella"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"136 E South Temple"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Murano at Portofino"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fifteen Twenty-One Second Avenue"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Georgia Power Company Headquarters"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"120 Riverside Boulevard at Trump Place"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ParkShore Plaza"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Martin"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"1312-1314 Chestnut Street"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mercy Medical Center Inpatient Tower"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"400 North LaSalle"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Anaha"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pacific Building"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Celanese Building"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Midtown Plaza"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Roybal Federal Building"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Downtown Club"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"1136-1140 South Wabash Avenue"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rush University Medical Center Hospital Tower"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Henry Hudson Hotel"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"930 Poydras Residential Tower"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"theWit Hotel"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lefcourt National Building"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"107-115 East Wells Street"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Moana Pacific East Tower"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"888 7th Avenue"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"La Perla Ocean Residences"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"525 Hawthorne"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Barclay Tower"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Latitude on the River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jackson Tower"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"FlatironCity"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Avenue"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Diego Marriott Marquis & Marina Tower 1"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Trump World Tower"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nashua Street Residences"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
-        
-    
-        
-    
-        
-        <div id='explore-skyscrapers-__0__-material' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"concrete"</code></td>
-                    <td>1366</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"steel"</code></td>
-                    <td>875</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"composite"</code></td>
-                    <td>123</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"steel/concrete"</code></td>
-                    <td>33</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"concrete/steel"</code></td>
-                    <td>22</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"masonry"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"precast"</code></td>
-                    <td>3</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-skyscrapers-__0__" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-skyscrapers-__0__-name").click(function() {
-            $( "#explore-skyscrapers-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-skyscrapers-__0__-name").click(function() {
-            $( "#explore-skyscrapers-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-skyscrapers-__0__-name" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-skyscrapers-__0__-statistics").click(function() {
-            $( "#explore-skyscrapers-__0__-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-material").click(function() {
-            $( "#explore-skyscrapers-__0__-material" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-skyscrapers-__0__-material").click(function() {
-            $( "#explore-skyscrapers-__0__-material" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-skyscrapers-__0__-material" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-id").click(function() {
-            $( "#explore-skyscrapers-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-location").click(function() {
-            $( "#explore-skyscrapers-__0__-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-status").click(function() {
-            $( "#explore-skyscrapers-__0__-status" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-skyscrapers-__0__-statistics-height").click(function() {
+            $( "#explore-skyscrapers-__0__-statistics-height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1079,33 +419,6 @@ $(document).ready(function() {
     <div id='explore-skyscrapers-__0__-location' title='Dictionary (6 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"city_id"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1539</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"latitude"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"country"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"US"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-location-country'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"longitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -1134,27 +447,35 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
+            <tr> <td><code>"country"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"US"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-location-country'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"latitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"city_id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1539</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
         </table>
     </div>
-    
-        
-    
-        
-    
-        
-        <div id='explore-skyscrapers-__0__-location-country' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"US"</code></td>
-                    <td>2431</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
     
         
     
@@ -1226,12 +547,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Boston"</code></td>
+                    <td><code>"Philadelphia"</code></td>
                     <td>38</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Philadelphia"</code></td>
+                    <td><code>"Boston"</code></td>
                     <td>38</td>
                 </tr>
             
@@ -1271,22 +592,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Cleveland"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Baltimore"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Milwaukee"</code></td>
                     <td>17</td>
                 </tr>
             
                 <tr>
                     <td><code>"Phoenix"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cleveland"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore"</code></td>
                     <td>17</td>
                 </tr>
             
@@ -1311,7 +632,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Nashville"</code></td>
+                    <td><code>"Charlotte"</code></td>
                     <td>13</td>
                 </tr>
             
@@ -1321,12 +642,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Cincinnati"</code></td>
+                    <td><code>"Nashville"</code></td>
                     <td>13</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Charlotte"</code></td>
+                    <td><code>"Cincinnati"</code></td>
                     <td>13</td>
                 </tr>
             
@@ -1371,7 +692,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Fort Lauderdale"</code></td>
+                    <td><code>"Tampa"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -1381,13 +702,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Tampa"</code></td>
+                    <td><code>"Fort Lauderdale"</code></td>
                     <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Evanston"</code></td>
-                    <td>6</td>
                 </tr>
             
                 <tr>
@@ -1396,8 +712,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Louisville"</code></td>
-                    <td>5</td>
+                    <td><code>"Evanston"</code></td>
+                    <td>6</td>
                 </tr>
             
                 <tr>
@@ -1411,12 +727,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Aventura"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Antonio"</code></td>
+                    <td><code>"Louisville"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -1426,7 +737,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Gary"</code></td>
+                    <td><code>"San Antonio"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aventura"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacksonville"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -1441,16 +762,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Jacksonville"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"St. Petersburg (FL)"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
                     <td><code>"White Plains"</code></td>
                     <td>4</td>
                 </tr>
@@ -1461,7 +772,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Newark"</code></td>
+                    <td><code>"St. Petersburg (FL)"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gary"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hallandale Beach"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -1471,27 +792,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Long Beach"</code></td>
+                    <td><code>"Newark"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Covington"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"St. Paul"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Oakland"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hallandale Beach"</code></td>
+                    <td><code>"Dayton"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -1506,11 +812,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"West Palm Beach"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Norfolk"</code></td>
                     <td>3</td>
                 </tr>
@@ -1521,12 +822,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Oakland"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Covington"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Birmingham (AL)"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Dayton"</code></td>
+                    <td><code>"West Palm Beach"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Paul"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Long Beach"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -1536,22 +857,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Des Moines"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Akron"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Midland"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Springfield (MA)"</code></td>
+                    <td><code>"Bartlesville"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1561,37 +867,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Peoria"</code></td>
+                    <td><code>"Worcester"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Bartlesville"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pearl City (Oahu)"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Galveston"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fort Worth"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Syracuse"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wilmington"</code></td>
+                    <td><code>"Akron"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1601,42 +882,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"South Padre Island"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Rochelle"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toledo"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Worcester"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
                     <td><code>"El Paso"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Haven"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Miami Beach"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Clayton"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1646,22 +892,97 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Ventnor City"</code></td>
+                    <td><code>"Wilmington"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Rochelle"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Galveston"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Miami Beach"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pearl City (Oahu)"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Padre Island"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fort Worth"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toledo"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Midland"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Peoria"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clayton"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Springfield (MA)"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Des Moines"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Haven"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Syracuse"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Silver Spring"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Providence"</code></td>
+                    <td><code>"Joliet"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Hoboken"</code></td>
+                    <td><code>"Fargo"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Marco Island"</code></td>
+                    <td><code>"Charleston"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1675,39 +996,31 @@ $(document).ready(function() {
         </div>
         
     
+        
+        <div id='explore-skyscrapers-__0__-location-country' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"US"</code></td>
+                    <td>2431</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-skyscrapers-__0__-location" ).dialog({
           autoOpen: false,
           width: 600
         });
-        
-        $("#btn-explore-skyscrapers-__0__-location-city_id").click(function() {
-            $( "#explore-skyscrapers-__0__-location-city_id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-location-latitude").click(function() {
-            $( "#explore-skyscrapers-__0__-location-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-location-country").click(function() {
-            $( "#explore-skyscrapers-__0__-location-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-skyscrapers-__0__-location-country").click(function() {
-            $( "#explore-skyscrapers-__0__-location-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-skyscrapers-__0__-location-country" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
         
         $("#btn-explore-skyscrapers-__0__-location-longitude").click(function() {
             $( "#explore-skyscrapers-__0__-location-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -1734,6 +1047,33 @@ $(document).ready(function() {
           autoOpen: false,
           width: 600
         });    
+        
+        
+        $("#btn-explore-skyscrapers-__0__-location-country").click(function() {
+            $( "#explore-skyscrapers-__0__-location-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-location-country").click(function() {
+            $( "#explore-skyscrapers-__0__-location-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-skyscrapers-__0__-location-country" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-skyscrapers-__0__-location-latitude").click(function() {
+            $( "#explore-skyscrapers-__0__-location-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-location-city_id").click(function() {
+            $( "#explore-skyscrapers-__0__-location-city_id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
         
         
     });
@@ -1788,22 +1128,190 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-skyscrapers-__0__-status-completed' title='Dictionary (2 keys)'>
+    <div id='explore-skyscrapers-__0__-purposes' title='Dictionary (23 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"belltower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
                  <td>
-                    <code>0</code>
+                    <code>False</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"is completed"</code></td> 
+            <tr> <td><code>"casino"</code></td> 
                  <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
                  <td>
                     <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"multiple"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"serviced apartments"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"abandoned"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"industrial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"library"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"residential"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>True</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hospital"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"government"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>True</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"observation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"bridge"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"commercial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"telecommunications"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"museum"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"education"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"exhibition"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hotel"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>True</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"religious"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"air traffic control tower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"office"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>True</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1815,21 +1323,898 @@ $(document).ready(function() {
     
         
     
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
-        $( "#explore-skyscrapers-__0__-status-completed" ).dialog({
+        $( "#explore-skyscrapers-__0__-purposes" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-skyscrapers-__0__-status-completed-year").click(function() {
-            $( "#explore-skyscrapers-__0__-status-completed-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-skyscrapers-__0__-purposes-belltower").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-belltower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-skyscrapers-__0__-status-completed-is-completed").click(function() {
-            $( "#explore-skyscrapers-__0__-status-completed-is-completed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-skyscrapers-__0__-purposes-casino").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-casino" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-multiple").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-multiple" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-serviced-apartments").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-serviced-apartments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-abandoned").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-abandoned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-industrial").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-library").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-library" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-residential").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-residential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-other").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-other" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-hospital").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-hospital" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-government").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-government" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-observation").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-observation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-bridge").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-bridge" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-commercial").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-telecommunications").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-telecommunications" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-museum").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-museum" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-education").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-exhibition").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-exhibition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-hotel").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-hotel" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-religious").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-religious" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-retail").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-retail" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-air-traffic-control-tower").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-air-traffic-control-tower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-office").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-office" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-skyscrapers-__0__' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"purposes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-purposes'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"The Illinois"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"location"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"status"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-status'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"material"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"steel"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-material'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>12</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+        <div id='explore-skyscrapers-__0__-name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Bank of America Plaza"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wells Fargo Center"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Carlyle"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Park Tower"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bank of America Building"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Museum Tower"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AT&T Building"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wells Fargo Plaza"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chase Tower"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"One World Trade Center"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bank of America Center"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Metropolitan Tower"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wells Fargo Tower"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PNC Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Park Place Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Century"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"60 Wall Street"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Equitable Building"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fifth Third Center"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Millennium Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Trump Palace"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AT&T Center"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"JPMorgan Chase Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The St. James"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spire"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aon Center"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"City Hall"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Atlantic"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Renaissance Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Citigroup Center"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"McGraw-Hill Building"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Pinnacle"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Trump International Hotel & Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"National City Bank Building"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fisher Building"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Ritz-Carlton Residences"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tribune Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Merchandise Mart"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"City Place"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"First National Bank Building"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Time-Life Building"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Residences at the Ritz Carlton, Westchester - ..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Mark"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mercantile Building"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hearst Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"U.S. Bank Center"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hilton Garden Inn"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bank of America Tower"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Franklin Towers"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"National City Center"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RBC Plaza"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2 World Trade Center"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Capitol Square"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mellon Bank Center"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Element"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"100 Pine Center"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Victoria Building"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Doubletree Guest Suites"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Flora Lofts"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Park Lafayette South Tower"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Palms 1"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michigan Avenue Tower II"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Willis Tower"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carl B. Stokes Federal Courthouse"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Opera Tower"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Borden Building"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"525 Hawthorne"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Regent"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michigan Central Station"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"201 North Columbus"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kemper Building"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Borgata Hotel & Casino"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"One Rincon Hill North Tower"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"WTC Marriott"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1700 East 56th Street"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Breakers at Edgewater Beach"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacob K. Javits Federal Building"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Three Embarcadero Center"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1325 J Street"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"252 East 57th Street"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"City Hall Plaza"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Le Meridian Hotel"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Coast Tower II"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"420 5th Avenue"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Commerce Tower"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Malibu East"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"107-115 East Wells Street"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1290 Avenue of the Americas"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"500 North Lake Shore Drive"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"833 North Clark"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SLS Lux Brickell"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"33 Park Avenue Tower 1"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"City Point Tower III"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Liberty Plaza"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Anthem"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Newsweek Building"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Society Hill Towers II"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crown Building"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"80 Broad Street"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+        <div id='explore-skyscrapers-__0__-material' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"concrete"</code></td>
+                    <td>1366</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"steel"</code></td>
+                    <td>875</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"composite"</code></td>
+                    <td>123</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"steel/concrete"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"concrete/steel"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"masonry"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"precast"</code></td>
+                    <td>3</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-name").click(function() {
+            $( "#explore-skyscrapers-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-name").click(function() {
+            $( "#explore-skyscrapers-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-skyscrapers-__0__-name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-skyscrapers-__0__-location").click(function() {
+            $( "#explore-skyscrapers-__0__-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-status").click(function() {
+            $( "#explore-skyscrapers-__0__-status" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-material").click(function() {
+            $( "#explore-skyscrapers-__0__-material" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-material").click(function() {
+            $( "#explore-skyscrapers-__0__-material" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-skyscrapers-__0__-material" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-skyscrapers-__0__-id").click(function() {
+            $( "#explore-skyscrapers-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-skyscrapers-__0__-statistics").click(function() {
+            $( "#explore-skyscrapers-__0__-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1852,18 +2237,18 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"completed"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-status-completed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
             <tr> <td><code>"started"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
                     <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-status-started'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"completed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-skyscrapers-__0__-status-completed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -1952,399 +2337,14 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-skyscrapers-__0__-status-completed").click(function() {
-            $( "#explore-skyscrapers-__0__-status-completed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-skyscrapers-__0__-status-started").click(function() {
             $( "#explore-skyscrapers-__0__-status-started" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-    });
-    </script>
-
-    <div id='explore-skyscrapers-__0__-purposes' title='Dictionary (23 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"hospital"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"other"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"observation"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"office"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>True</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"hotel"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>True</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"exhibition"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"residential"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>True</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"abandoned"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"casino"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"retail"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"library"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"industrial"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"bridge"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"air traffic control tower"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"museum"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"multiple"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"government"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>True</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"serviced apartments"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"telecommunications"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"religious"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"belltower"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"commercial"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"education"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-skyscrapers-__0__-purposes" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-hospital").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-hospital" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-other").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-other" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-observation").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-observation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-office").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-office" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-hotel").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-hotel" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-exhibition").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-exhibition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-residential").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-residential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-abandoned").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-abandoned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-casino").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-casino" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-retail").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-retail" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-library").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-library" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-industrial").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-bridge").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-bridge" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-air-traffic-control-tower").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-air-traffic-control-tower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-museum").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-museum" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-multiple").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-multiple" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-government").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-government" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-serviced-apartments").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-serviced-apartments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-telecommunications").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-telecommunications" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-religious").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-religious" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-belltower").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-belltower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-commercial").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-skyscrapers-__0__-purposes-education").click(function() {
-            $( "#explore-skyscrapers-__0__-purposes-education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-skyscrapers-__0__-status-completed").click(function() {
+            $( "#explore-skyscrapers-__0__-status-completed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

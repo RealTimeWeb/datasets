@@ -30,13 +30,13 @@ def _tifa_definitions():
                 "name": 'get_all_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'increase'}, {"type": "LiteralStr", "value": 'population'}, {"type": "LiteralStr", "value": 'disease'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'number'}, {"type": "LiteralStr", "value": 'loc'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'increase'}, {"type": "LiteralStr", "value": 'population'}, {"type": "LiteralStr", "value": 'loc'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'disease'}, {"type": "LiteralStr", "value": 'number'}], "values": [
 				{"type": "NumType"}, 
 				{"type": "NumType"}, 
 				{"type": "StrType"}, 
 				{"type": "NumType"}, 
-				{"type": "NumType"}, 
-				{"type": "StrType"}]}},
+				{"type": "StrType"}, 
+				{"type": "NumType"}]}},
             }
         
         }
@@ -72,8 +72,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

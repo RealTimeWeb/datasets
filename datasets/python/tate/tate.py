@@ -30,29 +30,29 @@ def _tifa_definitions():
                 "name": 'get_artwork',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'dimensions'}, {"type": "LiteralStr", "value": 'artist'}, {"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'metadata'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'width'}, {"type": "LiteralStr", "value": 'height'}, {"type": "LiteralStr", "value": 'depth'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'role'}, {"type": "LiteralStr", "value": 'gender'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'birth'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'year'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'year'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'medium'}, {"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'thumbnail'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'metadata'}, {"type": "LiteralStr", "value": 'artist'}, {"type": "LiteralStr", "value": 'dimensions'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'medium'}, {"type": "LiteralStr", "value": 'thumbnail'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'creation year'}, {"type": "LiteralStr", "value": 'credit'}, {"type": "LiteralStr", "value": 'creation decade'}, {"type": "LiteralStr", "value": 'acquisition date'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'acquisition date'}, {"type": "LiteralStr", "value": 'credit'}, {"type": "LiteralStr", "value": 'creation year'}, {"type": "LiteralStr", "value": 'creation decade'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'role'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'gender'}, {"type": "LiteralStr", "value": 'death'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'depth'}, {"type": "LiteralStr", "value": 'width'}, {"type": "LiteralStr", "value": 'height'}], "values": [
+					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}]}},
             }
@@ -90,8 +90,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

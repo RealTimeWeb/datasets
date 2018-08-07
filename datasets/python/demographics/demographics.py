@@ -30,8 +30,47 @@ def _tifa_definitions():
                 "name": 'get_all_states',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Miscellaneous'}, {"type": "LiteralStr", "value": 'Income'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Housing'}, {"type": "LiteralStr", "value": 'Education'}, {"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Employment'}, {"type": "LiteralStr", "value": 'Sales'}, {"type": "LiteralStr", "value": 'Age'}, {"type": "LiteralStr", "value": 'Ethnicities'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Living in Same House +1 Years'}, {"type": "LiteralStr", "value": 'Foreign Born'}, {"type": "LiteralStr", "value": 'Manufacturers Shipments'}, {"type": "LiteralStr", "value": 'Percent Female'}, {"type": "LiteralStr", "value": 'Land Area'}, {"type": "LiteralStr", "value": 'Building Permits'}, {"type": "LiteralStr", "value": 'Language Other than English at Home'}, {"type": "LiteralStr", "value": 'Mean Travel Time to Work'}, {"type": "LiteralStr", "value": 'Veterans'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Housing'}, {"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Ethnicities'}, {"type": "LiteralStr", "value": 'Sales'}, {"type": "LiteralStr", "value": 'Employment'}, {"type": "LiteralStr", "value": 'Miscellaneous'}, {"type": "LiteralStr", "value": 'Income'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Education'}, {"type": "LiteralStr", "value": 'Age'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Units in Multi-Unit Structures'}, {"type": "LiteralStr", "value": 'Households'}, {"type": "LiteralStr", "value": 'Median Value of Owner-Occupied Units'}, {"type": "LiteralStr", "value": 'Housing Units'}, {"type": "LiteralStr", "value": 'Persons per Household'}, {"type": "LiteralStr", "value": 'Homeownership Rate'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2010 Population'}, {"type": "LiteralStr", "value": 'Population per Square Mile'}, {"type": "LiteralStr", "value": '2014 Population'}, {"type": "LiteralStr", "value": 'Population Percent Change'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Native Hawaiian and Other Pacific Islander Alone'}, {"type": "LiteralStr", "value": 'American Indian and Alaska Native Alone'}, {"type": "LiteralStr", "value": 'Two or More Races'}, {"type": "LiteralStr", "value": 'Hispanic or Latino'}, {"type": "LiteralStr", "value": 'White Alone, not Hispanic or Latino'}, {"type": "LiteralStr", "value": 'Asian Alone'}, {"type": "LiteralStr", "value": 'Black Alone'}, {"type": "LiteralStr", "value": 'White Alone'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Merchant Wholesaler Sales'}, {"type": "LiteralStr", "value": 'Retail Sales per Capita'}, {"type": "LiteralStr", "value": 'Accommodation and Food Services Sales'}, {"type": "LiteralStr", "value": 'Retail Sales'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Private Non-farm Employment Percent Change'}, {"type": "LiteralStr", "value": 'Nonemployer Establishments'}, {"type": "LiteralStr", "value": 'Private Non-farm Employment'}, {"type": "LiteralStr", "value": 'Firms'}, {"type": "LiteralStr", "value": 'Private Non-farm Establishments'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'American Indian-Owned'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Native Hawaiian and Other Pacific Islander-Owned'}, {"type": "LiteralStr", "value": 'Black-Owned'}, {"type": "LiteralStr", "value": 'Asian-Owned'}, {"type": "LiteralStr", "value": 'Women-Owned'}, {"type": "LiteralStr", "value": 'Hispanic-Owned'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Foreign Born'}, {"type": "LiteralStr", "value": 'Land Area'}, {"type": "LiteralStr", "value": 'Veterans'}, {"type": "LiteralStr", "value": 'Living in Same House +1 Years'}, {"type": "LiteralStr", "value": 'Building Permits'}, {"type": "LiteralStr", "value": 'Manufacturers Shipments'}, {"type": "LiteralStr", "value": 'Language Other than English at Home'}, {"type": "LiteralStr", "value": 'Mean Travel Time to Work'}, {"type": "LiteralStr", "value": 'Percent Female'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
@@ -41,54 +80,15 @@ def _tifa_definitions():
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Per Capita Income'}, {"type": "LiteralStr", "value": 'Persons Below Poverty Level'}, {"type": "LiteralStr", "value": 'Median Houseold Income'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Persons Below Poverty Level'}, {"type": "LiteralStr", "value": 'Per Capita Income'}, {"type": "LiteralStr", "value": 'Median Houseold Income'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Units in Multi-Unit Structures'}, {"type": "LiteralStr", "value": 'Persons per Household'}, {"type": "LiteralStr", "value": 'Housing Units'}, {"type": "LiteralStr", "value": 'Homeownership Rate'}, {"type": "LiteralStr", "value": 'Households'}, {"type": "LiteralStr", "value": 'Median Value of Owner-Occupied Units'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": "Bachelor's Degree or Higher"}, {"type": "LiteralStr", "value": 'High School or Higher'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2014 Population'}, {"type": "LiteralStr", "value": 'Population Percent Change'}, {"type": "LiteralStr", "value": '2010 Population'}, {"type": "LiteralStr", "value": 'Population per Square Mile'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Private Non-farm Employment'}, {"type": "LiteralStr", "value": 'Nonemployer Establishments'}, {"type": "LiteralStr", "value": 'Private Non-farm Establishments'}, {"type": "LiteralStr", "value": 'Private Non-farm Employment Percent Change'}, {"type": "LiteralStr", "value": 'Firms'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Black-Owned'}, {"type": "LiteralStr", "value": 'Native Hawaiian and Other Pacific Islander-Owned'}, {"type": "LiteralStr", "value": 'Asian-Owned'}, {"type": "LiteralStr", "value": 'Women-Owned'}, {"type": "LiteralStr", "value": 'Hispanic-Owned'}, {"type": "LiteralStr", "value": 'American Indian-Owned'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Retail Sales'}, {"type": "LiteralStr", "value": 'Retail Sales per Capita'}, {"type": "LiteralStr", "value": 'Merchant Wholesaler Sales'}, {"type": "LiteralStr", "value": 'Accommodation and Food Services Sales'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent 65 and Older'}, {"type": "LiteralStr", "value": 'Percent Under 5 Years'}, {"type": "LiteralStr", "value": 'Percent Under 18 Years'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Two or More Races'}, {"type": "LiteralStr", "value": 'Black Alone'}, {"type": "LiteralStr", "value": 'Native Hawaiian and Other Pacific Islander Alone'}, {"type": "LiteralStr", "value": 'Asian Alone'}, {"type": "LiteralStr", "value": 'Hispanic or Latino'}, {"type": "LiteralStr", "value": 'White Alone, not Hispanic or Latino'}, {"type": "LiteralStr", "value": 'White Alone'}, {"type": "LiteralStr", "value": 'American Indian and Alaska Native Alone'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}]}},
@@ -127,8 +127,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

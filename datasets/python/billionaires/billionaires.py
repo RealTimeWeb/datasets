@@ -30,34 +30,34 @@ def _tifa_definitions():
                 "name": 'get_billionaires',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'demographics'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'wealth'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'region'}, {"type": "LiteralStr", "value": 'citizenship'}, {"type": "LiteralStr", "value": 'gdp'}, {"type": "LiteralStr", "value": 'country code'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'demographics'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'wealth'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'rank'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'age'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'sector'}, {"type": "LiteralStr", "value": 'founded'}, {"type": "LiteralStr", "value": 'relationship'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'citizenship'}, {"type": "LiteralStr", "value": 'region'}, {"type": "LiteralStr", "value": 'country code'}, {"type": "LiteralStr", "value": 'gdp'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'gender'}, {"type": "LiteralStr", "value": 'age'}], "values": [
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'how'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'worth in billions'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'category'}, {"type": "LiteralStr", "value": 'from emerging'}, {"type": "LiteralStr", "value": 'was political'}, {"type": "LiteralStr", "value": 'was founder'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'inherited'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'relationship'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'sector'}, {"type": "LiteralStr", "value": 'founded'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "NumType"}]}, 
 				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'how'}, {"type": "LiteralStr", "value": 'worth in billions'}, {"type": "LiteralStr", "value": 'type'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'category'}, {"type": "LiteralStr", "value": 'was founder'}, {"type": "LiteralStr", "value": 'was political'}, {"type": "LiteralStr", "value": 'inherited'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'from emerging'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}]}},
+				{"type": "StrType"}, 
+				{"type": "NumType"}]}},
             }
         
         }
@@ -93,8 +93,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

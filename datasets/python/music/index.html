@@ -286,14 +286,98 @@ $(document).ready(function() {
 
 
 
+    <div id='explore-music-__0__' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"song"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-music-__0__-song'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"release"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-music-__0__-release'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"artist"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-music-__0__-artist'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-music-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-music-__0__-song").click(function() {
+            $( "#explore-music-__0__-song" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-release").click(function() {
+            $( "#explore-music-__0__-release" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-artist").click(function() {
+            $( "#explore-music-__0__-artist" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
     <div id='explore-music-__0__-artist' title='Dictionary (10 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"similar"</code></td> 
+            <tr> <td><code>"familiarity"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0.0</code>
+                    <code>0.581793766</code>
+                    
+                 </td> 
+                 <td>A measure of 0..1 for how familiar the artist is to listeners.</td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"ARD7TVE1187B99BFB1"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-artist-id'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>A unique ID for this artist.</td> </tr>
+            
+            <tr> <td><code>"location"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
                     
                  </td> 
                  <td>Unknown.</td> </tr>
@@ -309,21 +393,13 @@ $(document).ready(function() {
                  </td> 
                  <td>The name of the artist.</td> </tr>
             
-            <tr> <td><code>"familiarity"</code></td> 
+            <tr> <td><code>"terms_freq"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0.581793766</code>
+                    <code>1.0</code>
                     
                  </td> 
-                 <td>A measure of 0..1 for how familiar the artist is to listeners.</td> </tr>
-            
-            <tr> <td><code>"hotttnesss"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.401997543</code>
-                    
-                 </td> 
-                 <td>A measure of the artists's popularity, when downloaded (in December 2010). Measured on a scale of 0 to 1.</td> </tr>
+                 <td>The frequency of this term.</td> </tr>
             
             <tr> <td><code>"latitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -332,6 +408,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>The home location's latitude of this artist.</td> </tr>
+            
+            <tr> <td><code>"similar"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
+                 <td>Unknown.</td> </tr>
             
             <tr> <td><code>"terms"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -344,14 +428,6 @@ $(document).ready(function() {
                  </td> 
                  <td>The term most associated with this artist.</td> </tr>
             
-            <tr> <td><code>"terms_freq"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>1.0</code>
-                    
-                 </td> 
-                 <td>The frequency of this term.</td> </tr>
-            
             <tr> <td><code>"longitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -360,27 +436,533 @@ $(document).ready(function() {
                  </td> 
                  <td>The home location's longitude of this artist.</td> </tr>
             
-            <tr> <td><code>"location"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"hotttnesss"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0</code>
+                    <code>0.401997543</code>
                     
                  </td> 
-                 <td>Unknown.</td> </tr>
-            
-            <tr> <td><code>"id"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"ARD7TVE1187B99BFB1"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-music-__0__-artist-id'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>A unique ID for this artist.</td> </tr>
+                 <td>A measure of the artists's popularity, when downloaded (in December 2010). Measured on a scale of 0 to 1.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+        <div id='explore-music-__0__-artist-id' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"AROIHOI122988FEB8E"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AREWQSE1187B9AEC6C"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARX9YIP1187B98A656"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR12F2S1187FB56EEF"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR9W3X91187FB3994C"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARIRD6J1187FB5A98C"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARJIE2Y1187B994AB7"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVN9FZ1187FB393F1"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR6PJ8R1187FB5AD70"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR78ZID1187B9B31ED"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARH6W4X1187B99274F"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARODBRG1187FB3FD99"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ART3O5Z1187B9AB043"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE8GLF1187FB52532"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXPPEY1187FB51DF4"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARDVZTE1187FB5A0A1"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARI648V1187B9B5379"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARCCRTI11F4C845308"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AROF4LP1187FB41C51"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARYDFJA1241B9CBFF2"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARN03F71187FB4E3F4"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARJ9DSA1187B990E00"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR7KA5V1187FB44E6B"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR8BMEQ1187B9B4214"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR03BDP1187FB5B324"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR051KA1187B98B2FF"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARL3VGT1187FB40E8E"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARDY3451187B9A0226"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVUN5F1187FB4CCC7"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR0O3AV1187FB4D030"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARAIABB1187B9AC6E2"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSQDUN1187B98D7D7"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRXPRY1187B9A8B34"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR65K7A1187FB4DAA4"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARPDVPJ1187B9ADBE9"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRH63Y1187FB47783"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARZBYDY1187FB46DD7"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARBEOHF1187B9B044D"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AREJ5K11187B993F5F"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR0X3JJ1187FB3A9A7"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD7U0O1187FB5531A"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD3LXU1187B9ABFC5"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARO0R521187B98A2D1"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARCII0J1187FB3A1B4"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVEJ9M1187FB4DC44"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARBB58Y1187B9B621B"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARY1P2B1187B9B78F5"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARNLO5S1187B9B80CC"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARMPRI31187FB4F7D9"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR6CLFP1187B9ACB94"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARGBGC71187FB3DD0B"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVML4B1187FB52324"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AREPD8D1187FB3F5BC"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD3ICK1187B9A56C9"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARYF20K1187B9B76BD"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARUSOMY1187FB4D3B4"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARU9KWP1187B98B2A7"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR7GOK91187FB455F5"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR107SB1187B9A79F9"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR243ZT1187B9A98D2"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARDQO721187FB3C6D9"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARUUXNF1187B98FB36"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKFYS91187B98E58F"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARAZCWP129462A97F1"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXOTQH1187FB57084"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARN7OQ21187FB5A6B3"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE08BN1187B98FCA3"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR1OBRC1187FB59AD4"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSPQ0H1187B999944"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKU3Z61187FB51DCA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXJSHW1187B9A2A52"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR9OLFX1187B9A5762"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR4B3RX1187B9A868A"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARJRQL51187FB541AB"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSW5F51187FB4CFC9"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARHINI31187B995C1D"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE0OLY1187B9AD19F"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRJNTE1187FB44E12"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD7TVE1187B99BFB1"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARCZ20M1187FB49687"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFCOGY1187FB454B4"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARB054P1187B9AD32E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKSZW81187B9B695D"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARI4S0E1187B9B06C0"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR3752L1187FB4B67E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARN8NCB1187FB49652"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARWI6LR1187FB46E9F"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARWSMC91187B9AD369"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFONSP11F50C4D175"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARC8CQZ1187B98DECA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR9YV621187B99373E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR1N6N61187FB4E25E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRJ3UC1187FB579D7"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR7C6G11187B9B4C1E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXPE571187FB4AFD0"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARMB95F1187B9B5B93"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFCUN31187B9AD578"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARTH9041187FB43E1F"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARLR9U31187B9A71AD"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARCF06I1187B995398"</code></td>
+                    <td>7</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
     
         
     
@@ -395,16 +977,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Aerosmith"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Phil Collins"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Sugar Minott"</code></td>
                     <td>12</td>
                 </tr>
@@ -415,8 +987,13 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Mikey Dread"</code></td>
-                    <td>11</td>
+                    <td><code>"Phil Collins"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aerosmith"</code></td>
+                    <td>12</td>
                 </tr>
             
                 <tr>
@@ -425,12 +1002,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Snow Patrol"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Radiohead"</code></td>
+                    <td><code>"Mikey Dread"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -445,52 +1017,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Jacques Douai"</code></td>
-                    <td>10</td>
+                    <td><code>"Snow Patrol"</code></td>
+                    <td>11</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Michael Jackson"</code></td>
-                    <td>10</td>
+                    <td><code>"Radiohead"</code></td>
+                    <td>11</td>
                 </tr>
             
                 <tr>
                     <td><code>"White Heart"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Selena"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Shakira"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Del McCoury Band"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pumpkin Buzzard"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ayo"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Stevie Ray Vaughan And Double Trouble"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"RUN-DMC"</code></td>
                     <td>10</td>
                 </tr>
             
@@ -500,62 +1037,52 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Shakira"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pumpkin Buzzard"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacques Douai"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ayo"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RUN-DMC"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Selena"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michael Jackson"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Del McCoury Band"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Stevie Ray Vaughan And Double Trouble"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Van Halen"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Los Fabulosos Cadillacs"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DJ Nasty"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"R. Carlos Nakai"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Skeeter Davis"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Les Ogres De Barback"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"George Lopez"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Marx Brothers"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Daniel Johnston"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cali"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hank Locklin"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Madonna"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -565,17 +1092,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Leroy Hutson"</code></td>
+                    <td><code>"Les Ogres De Barback"</code></td>
                     <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Seal"</code></td>
+                    <td><code>"The Marx Brothers"</code></td>
                     <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Jimmy Riley"</code></td>
+                    <td><code>"Hank Locklin"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DJ Nasty"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -585,7 +1117,57 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Seal"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madonna"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jimmy Riley"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"George Lopez"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Daniel Johnston"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Leroy Hutson"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
                     <td><code>"2 Minutos"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Skeeter Davis"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cali"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"R. Carlos Nakai"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Los Fabulosos Cadillacs"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -595,22 +1177,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Furry Lewis"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Casiotone For The Painfully Alone"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chris Brown"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Otis Spann"</code></td>
+                    <td><code>"Rickie Lee Jones"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -620,37 +1187,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Vangelis"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nestor Torres"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BA(c)zu"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Real Kids"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Rolling Stones"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tony Joe White"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eminem"</code></td>
+                    <td><code>"Marco Beltrami"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -660,62 +1197,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Der Plan"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Agnostic Front"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sex Pistols"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bon Jovi"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Helen Love"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"David Arkenstone"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alexandre Desplat"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lionel Rogg"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Santana"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Charlie Peacock"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Winans"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"EPMD"</code></td>
+                    <td><code>"BA(c)zu"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -725,37 +1212,57 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Marco Beltrami"</code></td>
+                    <td><code>"Casiotone For The Painfully Alone"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Eric Burdon"</code></td>
+                    <td><code>"Santana"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Rihanna"</code></td>
+                    <td><code>"Furry Lewis"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Rickie Lee Jones"</code></td>
+                    <td><code>"The Winans"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Alice In Chains"</code></td>
+                    <td><code>"Alexandre Desplat"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Juan Carlos Baglietto"</code></td>
+                    <td><code>"Tony Joe White"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Anti-Flag"</code></td>
+                    <td><code>"Charlie Peacock"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Otis Spann"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chris Brown"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eminem"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Der Plan"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -765,57 +1272,87 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Kraftwerk"</code></td>
+                    <td><code>"Agnostic Front"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eric Burdon"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lionel Rogg"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Juan Carlos Baglietto"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alice In Chains"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vangelis"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"EPMD"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"David Arkenstone"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sex Pistols"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nestor Torres"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Rolling Stones"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Real Kids"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rihanna"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bon Jovi"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anti-Flag"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lizzy Borden"</code></td>
                     <td>7</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Richard Galliano"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Carl Smith"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BeyoncA(c)"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Singing Melody"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dropkick Murphys"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"John Mayall & The Bluesbreakers"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Solomon"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jeff And Sheri Easter"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Foo Fighters"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Steve Vai"</code></td>
+                    <td><code>"Jesse Malin"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -825,7 +1362,47 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"John Brown"</code></td>
+                    <td><code>"Johnny Osbourne"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thrice"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Claire Hamill"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeff And Sheri Easter"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jim Reeves"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Singing Melody"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richard Galliano"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Funeral For A Friend"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Atreyu"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -835,57 +1412,62 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Los AutA(c)nticos Decadentes"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Solomon"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jennifer Lopez"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Hammond"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orbital"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kings Of Leon"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bryan Ferry"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beenie Man"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BeyoncA(c)"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muse"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lyrics Born"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Tyrone Taylor"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rise Against"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Information Society"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wilks"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lizzy Borden"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mighty Diamonds"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Slipknot"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mariah Carey"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"The Impressions"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AndrA(c) Verchuren"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bad Religion"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -1051,7 +1633,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"soundtrack"</code></td>
+                    <td><code>"tech house"</code></td>
+                    <td>65</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"easy listening"</code></td>
                     <td>65</td>
                 </tr>
             
@@ -1061,12 +1648,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"tech house"</code></td>
-                    <td>65</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"easy listening"</code></td>
+                    <td><code>"soundtrack"</code></td>
                     <td>65</td>
                 </tr>
             
@@ -1146,6 +1728,11 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"grunge"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
                     <td><code>"brill building pop"</code></td>
                     <td>48</td>
                 </tr>
@@ -1161,18 +1748,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"grunge"</code></td>
-                    <td>48</td>
-                </tr>
-            
-                <tr>
                     <td><code>"black metal"</code></td>
                     <td>48</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"texas blues"</code></td>
-                    <td>47</td>
                 </tr>
             
                 <tr>
@@ -1181,8 +1758,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"chicago soul"</code></td>
-                    <td>46</td>
+                    <td><code>"texas blues"</code></td>
+                    <td>47</td>
                 </tr>
             
                 <tr>
@@ -1191,7 +1768,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"british pop"</code></td>
+                    <td><code>"chicago soul"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"los angeles"</code></td>
                     <td>45</td>
                 </tr>
             
@@ -1201,7 +1783,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"los angeles"</code></td>
+                    <td><code>"british pop"</code></td>
                     <td>45</td>
                 </tr>
             
@@ -1216,12 +1798,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"country"</code></td>
-                    <td>42</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"tejano"</code></td>
+                    <td><code>"indie rock"</code></td>
                     <td>42</td>
                 </tr>
             
@@ -1231,7 +1808,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"indie rock"</code></td>
+                    <td><code>"tejano"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"country"</code></td>
                     <td>42</td>
                 </tr>
             
@@ -1246,12 +1828,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"instrumental pop"</code></td>
+                    <td><code>"chamber jazz"</code></td>
                     <td>41</td>
                 </tr>
             
                 <tr>
-                    <td><code>"chamber jazz"</code></td>
+                    <td><code>"instrumental pop"</code></td>
                     <td>41</td>
                 </tr>
             
@@ -1281,17 +1863,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"future jazz"</code></td>
-                    <td>37</td>
-                </tr>
-            
-                <tr>
                     <td><code>"pop folk"</code></td>
                     <td>37</td>
                 </tr>
             
                 <tr>
                     <td><code>"glam rock"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"future jazz"</code></td>
                     <td>37</td>
                 </tr>
             
@@ -1331,7 +1913,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"free jazz"</code></td>
+                    <td><code>"doo-wop"</code></td>
                     <td>34</td>
                 </tr>
             
@@ -1341,8 +1923,13 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"doo-wop"</code></td>
+                    <td><code>"free jazz"</code></td>
                     <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"heartland rock"</code></td>
+                    <td>33</td>
                 </tr>
             
                 <tr>
@@ -1356,17 +1943,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"heartland rock"</code></td>
-                    <td>33</td>
-                </tr>
-            
-                <tr>
                     <td><code>"chicago blues"</code></td>
-                    <td>31</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"soul jazz"</code></td>
                     <td>31</td>
                 </tr>
             
@@ -1376,13 +1953,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"rap"</code></td>
-                    <td>30</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"lullaby"</code></td>
-                    <td>30</td>
+                    <td><code>"soul jazz"</code></td>
+                    <td>31</td>
                 </tr>
             
                 <tr>
@@ -1396,13 +1968,18 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"reggaeton"</code></td>
+                    <td><code>"rap"</code></td>
                     <td>30</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ghetto tech"</code></td>
-                    <td>29</td>
+                    <td><code>"lullaby"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"reggaeton"</code></td>
+                    <td>30</td>
                 </tr>
             
                 <tr>
@@ -1410,6 +1987,11 @@ $(document).ready(function() {
                     <td>29</td>
                 </tr>
             
+                <tr>
+                    <td><code>"tango"</code></td>
+                    <td>29</td>
+                </tr>
+            
             
                 <tr>
                     <td>...</td>
@@ -1422,523 +2004,6 @@ $(document).ready(function() {
     
         
     
-        
-    
-        
-    
-        
-        <div id='explore-music-__0__-artist-id' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"AROIHOI122988FEB8E"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AREWQSE1187B9AEC6C"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARIRD6J1187FB5A98C"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARX9YIP1187B98A656"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR9W3X91187FB3994C"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR12F2S1187FB56EEF"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARVN9FZ1187FB393F1"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARJIE2Y1187B994AB7"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARH6W4X1187B99274F"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARODBRG1187FB3FD99"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR6PJ8R1187FB5AD70"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ART3O5Z1187B9AB043"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR78ZID1187B9B31ED"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARN03F71187FB4E3F4"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR051KA1187B98B2FF"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARXPPEY1187FB51DF4"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR03BDP1187FB5B324"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARCCRTI11F4C845308"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARI648V1187B9B5379"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR8BMEQ1187B9B4214"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARDVZTE1187FB5A0A1"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARE8GLF1187FB52532"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARL3VGT1187FB40E8E"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AROF4LP1187FB41C51"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARJ9DSA1187B990E00"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARYDFJA1241B9CBFF2"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR7KA5V1187FB44E6B"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARBEOHF1187B9B044D"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARAIABB1187B9AC6E2"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARSQDUN1187B98D7D7"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARVEJ9M1187FB4DC44"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARVUN5F1187FB4CCC7"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARRH63Y1187FB47783"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARGBGC71187FB3DD0B"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR0O3AV1187FB4D030"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARO0R521187B98A2D1"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARCII0J1187FB3A1B4"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR0X3JJ1187FB3A9A7"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AREPD8D1187FB3F5BC"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR65K7A1187FB4DAA4"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARPDVPJ1187B9ADBE9"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARD3ICK1187B9A56C9"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR6CLFP1187B9ACB94"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AREJ5K11187B993F5F"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARY1P2B1187B9B78F5"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARBB58Y1187B9B621B"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARD3LXU1187B9ABFC5"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARYF20K1187B9B76BD"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARNLO5S1187B9B80CC"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARVML4B1187FB52324"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARMPRI31187FB4F7D9"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARRXPRY1187B9A8B34"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARZBYDY1187FB46DD7"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARD7U0O1187FB5531A"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARDY3451187B9A0226"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARLR9U31187B9A71AD"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARUUXNF1187B98FB36"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARSW5F51187FB4CFC9"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARE08BN1187B98FCA3"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARRJNTE1187FB44E12"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARN7OQ21187FB5A6B3"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARWSMC91187B9AD369"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARTH9041187FB43E1F"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARI4S0E1187B9B06C0"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR9YV621187B99373E"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARN8NCB1187FB49652"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARXOTQH1187FB57084"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARB054P1187B9AD32E"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR1OBRC1187FB59AD4"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR4B3RX1187B9A868A"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARFONSP11F50C4D175"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR3752L1187FB4B67E"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR7GOK91187FB455F5"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR9OLFX1187B9A5762"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARC8CQZ1187B98DECA"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARFCUN31187B9AD578"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARJRQL51187FB541AB"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARD7TVE1187B99BFB1"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARXPE571187FB4AFD0"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARKFYS91187B98E58F"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARDQO721187FB3C6D9"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARUSOMY1187FB4D3B4"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARRJ3UC1187FB579D7"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR243ZT1187B9A98D2"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARSPQ0H1187B999944"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARKU3Z61187FB51DCA"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR1N6N61187FB4E25E"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARFCOGY1187FB454B4"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR107SB1187B9A79F9"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARU9KWP1187B98B2A7"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARE0OLY1187B9AD19F"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARXJSHW1187B9A2A52"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARHINI31187B995C1D"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARAZCWP129462A97F1"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARWI6LR1187FB46E9F"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR7C6G11187B9B4C1E"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARMB95F1187B9B5B93"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARKSZW81187B9B695D"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ARCZ20M1187FB49687"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"AR46CAD1187FB4D84B"</code></td>
-                    <td>7</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
         
     
     <script>
@@ -1948,74 +2013,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-music-__0__-artist-similar").click(function() {
-            $( "#explore-music-__0__-artist-similar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-artist-name").click(function() {
-            $( "#explore-music-__0__-artist-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-music-__0__-artist-name").click(function() {
-            $( "#explore-music-__0__-artist-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-music-__0__-artist-name" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
         $("#btn-explore-music-__0__-artist-familiarity").click(function() {
             $( "#explore-music-__0__-artist-familiarity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-artist-hotttnesss").click(function() {
-            $( "#explore-music-__0__-artist-hotttnesss" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-artist-latitude").click(function() {
-            $( "#explore-music-__0__-artist-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-artist-terms").click(function() {
-            $( "#explore-music-__0__-artist-terms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-music-__0__-artist-terms").click(function() {
-            $( "#explore-music-__0__-artist-terms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-music-__0__-artist-terms" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-music-__0__-artist-terms_freq").click(function() {
-            $( "#explore-music-__0__-artist-terms_freq" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-artist-longitude").click(function() {
-            $( "#explore-music-__0__-artist-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-artist-location").click(function() {
-            $( "#explore-music-__0__-artist-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2035,51 +2034,68 @@ $(document).ready(function() {
         });    
         
         
-    });
-    </script>
-
-    <div id='explore-music-__0__-release' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"name"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Unknown value</td> </tr>
-            
-            <tr> <td><code>"id"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>300848</code>
-                    
-                 </td> 
-                 <td>The ID of the release (album) on the service 7digital.com</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-music-__0__-release" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-music-__0__-release-name").click(function() {
-            $( "#explore-music-__0__-release-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-artist-location").click(function() {
+            $( "#explore-music-__0__-artist-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-music-__0__-release-id").click(function() {
-            $( "#explore-music-__0__-release-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-artist-name").click(function() {
+            $( "#explore-music-__0__-artist-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-name").click(function() {
+            $( "#explore-music-__0__-artist-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-music-__0__-artist-name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-music-__0__-artist-terms_freq").click(function() {
+            $( "#explore-music-__0__-artist-terms_freq" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-artist-latitude").click(function() {
+            $( "#explore-music-__0__-artist-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-artist-similar").click(function() {
+            $( "#explore-music-__0__-artist-similar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-artist-terms").click(function() {
+            $( "#explore-music-__0__-artist-terms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-terms").click(function() {
+            $( "#explore-music-__0__-artist-terms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-music-__0__-artist-terms" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-music-__0__-artist-longitude").click(function() {
+            $( "#explore-music-__0__-artist-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-artist-hotttnesss").click(function() {
+            $( "#explore-music-__0__-artist-hotttnesss" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2091,29 +2107,85 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"tatums_start"</code></td> 
+            <tr> <td><code>"key"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0.28519</code>
+                    <code>1.0</code>
                     
                  </td> 
-                 <td>Average start time of each tatum, measured in tatums.</td> </tr>
+                 <td>Estimation of the key the song is in. Keys can be from 0 to 11.</td> </tr>
             
-            <tr> <td><code>"year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Year when this song was released, according to musicbrainz.org.</td> </tr>
-            
-            <tr> <td><code>"key_confidence"</code></td> 
+            <tr> <td><code>"beats_start"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0.736</code>
+                    <code>0.58521</code>
                     
                  </td> 
-                 <td>Confidence value (between 0 and 1) of the key estimation.</td> </tr>
+                 <td>Average start time of each beat, measured in beats.</td> </tr>
+            
+            <tr> <td><code>"bars_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.643</code>
+                    
+                 </td> 
+                 <td>Confidence value (between 0 and 1) associated with each bar.</td> </tr>
+            
+            <tr> <td><code>"beats_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.834</code>
+                    
+                 </td> 
+                 <td>Average confidence interval of the beats.</td> </tr>
+            
+            <tr> <td><code>"time_signature"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>4.0</code>
+                    
+                 </td> 
+                 <td>Time signature of the song, i.e. usual number of beats per bar.</td> </tr>
+            
+            <tr> <td><code>"start_of_fade_out"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>218.932</code>
+                    
+                 </td> 
+                 <td>Start time of the fade out, in seconds, at the end of the song.</td> </tr>
+            
+            <tr> <td><code>"bars_start"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.58521</code>
+                    
+                 </td> 
+                 <td>Average start time of each bar, measured in bars.</td> </tr>
+            
+            <tr> <td><code>"mode_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.636</code>
+                    
+                 </td> 
+                 <td>Confidence value (between 0 and 1) of the mode estimation.</td> </tr>
+            
+            <tr> <td><code>"artist_mbtags"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
+                 <td>Unknown field.</td> </tr>
+            
+            <tr> <td><code>"end_of_fade_in"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.247</code>
+                    
+                 </td> 
+                 <td>Time of the end of the fade in, at the beginning of the song.</td> </tr>
             
             <tr> <td><code>"tempo"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -2123,13 +2195,21 @@ $(document).ready(function() {
                  </td> 
                  <td>Tempo in BPM.</td> </tr>
             
-            <tr> <td><code>"key"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"mode"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>1.0</code>
+                    <code>0</code>
                     
                  </td> 
-                 <td>Estimation of the key the song is in. Keys can be from 0 to 11.</td> </tr>
+                 <td>Estimation of the mode the song.</td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Year when this song was released, according to musicbrainz.org.</td> </tr>
             
             <tr> <td><code>"duration"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -2139,13 +2219,13 @@ $(document).ready(function() {
                  </td> 
                  <td>Duration of the track in seconds.</td> </tr>
             
-            <tr> <td><code>"mode_confidence"</code></td> 
+            <tr> <td><code>"loudness"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0.636</code>
+                    <code>-11.197</code>
                     
                  </td> 
-                 <td>Confidence value (between 0 and 1) of the mode estimation.</td> </tr>
+                 <td>General loudness of the track</td> </tr>
             
             <tr> <td><code>"title"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -2171,102 +2251,6 @@ $(document).ready(function() {
                  </td> 
                  <td>Confidence of the time signature estimation</td> </tr>
             
-            <tr> <td><code>"artist_mbtags"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td>Unknown field.</td> </tr>
-            
-            <tr> <td><code>"beats_start"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.58521</code>
-                    
-                 </td> 
-                 <td>Average start time of each beat, measured in beats.</td> </tr>
-            
-            <tr> <td><code>"end_of_fade_in"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.247</code>
-                    
-                 </td> 
-                 <td>Time of the end of the fade in, at the beginning of the song.</td> </tr>
-            
-            <tr> <td><code>"hotttnesss"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.60211999</code>
-                    
-                 </td> 
-                 <td>A measure of the song's popularity, when downloaded (in December 2010). Measured on a scale of 0 to 1.</td> </tr>
-            
-            <tr> <td><code>"bars_confidence"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.643</code>
-                    
-                 </td> 
-                 <td>Confidence value (between 0 and 1) associated with each bar.</td> </tr>
-            
-            <tr> <td><code>"loudness"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>-11.197</code>
-                    
-                 </td> 
-                 <td>General loudness of the track</td> </tr>
-            
-            <tr> <td><code>"artist_mbtags_count"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td>Number of tags for the artist on mbtags.</td> </tr>
-            
-            <tr> <td><code>"time_signature"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>4.0</code>
-                    
-                 </td> 
-                 <td>Time signature of the song, i.e. usual number of beats per bar.</td> </tr>
-            
-            <tr> <td><code>"start_of_fade_out"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>218.932</code>
-                    
-                 </td> 
-                 <td>Start time of the fade out, in seconds, at the end of the song.</td> </tr>
-            
-            <tr> <td><code>"beats_confidence"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.834</code>
-                    
-                 </td> 
-                 <td>Average confidence interval of the beats.</td> </tr>
-            
-            <tr> <td><code>"bars_start"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.58521</code>
-                    
-                 </td> 
-                 <td>Average start time of each bar, measured in bars.</td> </tr>
-            
-            <tr> <td><code>"mode"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Estimation of the mode the song.</td> </tr>
-            
             <tr> <td><code>"id"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
@@ -2278,16 +2262,40 @@ $(document).ready(function() {
                  </td> 
                  <td>A uniquely identifying number for the song.</td> </tr>
             
+            <tr> <td><code>"artist_mbtags_count"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
+                 <td>Number of tags for the artist on mbtags.</td> </tr>
+            
+            <tr> <td><code>"hotttnesss"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.60211999</code>
+                    
+                 </td> 
+                 <td>A measure of the song's popularity, when downloaded (in December 2010). Measured on a scale of 0 to 1.</td> </tr>
+            
+            <tr> <td><code>"tatums_start"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.28519</code>
+                    
+                 </td> 
+                 <td>Average start time of each tatum, measured in tatums.</td> </tr>
+            
+            <tr> <td><code>"key_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.736</code>
+                    
+                 </td> 
+                 <td>Confidence value (between 0 and 1) of the key estimation.</td> </tr>
+            
         </table>
     </div>
-    
-        
-    
-        
-    
-        
-    
-        
     
         
     
@@ -2331,432 +2339,327 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"SOIPXAK12A8C133A08"</code></td>
+                    <td><code>"SOWEZSI12A81C21CE6"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOAPDWC12AC468BB3B"</code></td>
+                    <td><code>"SOLKNII12AB01823D9"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOANBYB12A58A7F0C5"</code></td>
+                    <td><code>"SOVIKHZ12A58A787E1"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOBCGNG12A81C23752"</code></td>
+                    <td><code>"SOUGLCH12A8C140306"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOFUUNS12AB018A286"</code></td>
+                    <td><code>"SOINYEU12A6D4F834F"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOKZCJC12AF72A8C79"</code></td>
+                    <td><code>"SOTVEKK12A8C1392E1"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOGYDSV12A8C142A33"</code></td>
+                    <td><code>"SOWFICG12AB0181787"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOJHUQN12A6D4F8EDE"</code></td>
+                    <td><code>"SOLZTXD12AB0189AEB"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOZLEZA12A58A7EE61"</code></td>
+                    <td><code>"SOSCKDQ12A81C22BA4"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOSTXYN12A6D4F67D4"</code></td>
+                    <td><code>"SOIAMPB12AB018AB06"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOQXAGF12A58A7BB46"</code></td>
+                    <td><code>"SOKGPRX12A8C138268"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SONYUSG12AB018AA7C"</code></td>
+                    <td><code>"SOGHJED12A8C137F42"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOJSIAL12AF72A275E"</code></td>
+                    <td><code>"SOYFMKG12A58A80C70"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOZVWSE12A6D4F7ADA"</code></td>
+                    <td><code>"SOZZFUI12A8C133D6D"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOLMDFX12A6D227250"</code></td>
+                    <td><code>"SOLSXXH12A8C143166"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOZAXOL12AB017E467"</code></td>
+                    <td><code>"SOCRDNK12AB018A09D"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOJHUPK12A6D4F69DC"</code></td>
+                    <td><code>"SOAEWDR12A8C13D286"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOEEWVH12A58A78C98"</code></td>
+                    <td><code>"SOMIFOI12A6D4F6A76"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOFCHBZ12A8C142084"</code></td>
+                    <td><code>"SOBSEGK12A58A7BEBF"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOUBNYW12A8C1460C3"</code></td>
+                    <td><code>"SOKJVBZ12A8C13C27E"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOSESNX12A58A77DE9"</code></td>
+                    <td><code>"SOFCEWK12A6D4F9A19"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOUWMIW12AB0184748"</code></td>
+                    <td><code>"SOXRDDV12A8C1380DD"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOIMAKW12AB01887BF"</code></td>
+                    <td><code>"SOKCIOZ12A8C13F625"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOVDYER12A6D4F7E1B"</code></td>
+                    <td><code>"SORKRKK12A8C13C12F"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SODPYXE12A58A7AF97"</code></td>
+                    <td><code>"SOANMBZ12AAF3B5204"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOXDFKG12A8C1342B8"</code></td>
+                    <td><code>"SOCVDYI12AC4687DDB"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOBLYNT12A8C137046"</code></td>
+                    <td><code>"SOOVHAY12A8C143418"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SORGUQZ12AB0184B31"</code></td>
+                    <td><code>"SOWDLGO12AB0182434"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOSLEEL12A8C130C5D"</code></td>
+                    <td><code>"SOONJAI12A8C135254"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOGCGDZ12AB01844CC"</code></td>
+                    <td><code>"SOWUAYB12A6D4FA1D4"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOKCNFA12AF72A0ED3"</code></td>
+                    <td><code>"SOKERIO12AB018A550"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOLDIUL12A58A7BB1A"</code></td>
+                    <td><code>"SONEFMV12AC3DF6DB7"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOERLWC12AB0187445"</code></td>
+                    <td><code>"SOPGSVK12A8C13CD10"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SONLPSN12A8AE4711C"</code></td>
+                    <td><code>"SOWKKCU12A8C13EDEA"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOQMFYZ12A6D4F9C4A"</code></td>
+                    <td><code>"SOWDFME12AB018547F"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOCJPYJ12AB0188BCC"</code></td>
+                    <td><code>"SOZTXFU12A8C13F5C0"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOFQRCP12A8C13675B"</code></td>
+                    <td><code>"SOLKHLK12A8AE47A23"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOIDEZW12A6D4F9655"</code></td>
+                    <td><code>"SOFUBAO12A8C139CAB"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SODTNTM12A6D4F98CB"</code></td>
+                    <td><code>"SOUHWTC12AAF3B419A"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOHQKEZ12AC46875E9"</code></td>
+                    <td><code>"SOLETWK12AF72A1079"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOATQEU12AB017BD60"</code></td>
+                    <td><code>"SOLCNJN12A6D4F7740"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOBYXQS12A8C13FAF6"</code></td>
+                    <td><code>"SOCXDDP12A8C141B23"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOCHXHX12A8C143E1A"</code></td>
+                    <td><code>"SOJRTDB12CF582662D"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOEXXVM12AB018697B"</code></td>
+                    <td><code>"SOPAOCV12A6D4FB022"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOZRMNB12AB017F016"</code></td>
+                    <td><code>"SOGSBKB12AC9097E0F"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOBWEEH12A58A7D3EC"</code></td>
+                    <td><code>"SOHYWLZ12A6D4FBB22"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOXFMSW12AB0186F4F"</code></td>
+                    <td><code>"SOPTYJX12A6701CDC6"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOQTFZH12AB0188264"</code></td>
+                    <td><code>"SOPXNHL12A58A79B0F"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOESSPX12AB01807A0"</code></td>
+                    <td><code>"SOTCKKY12AB018A141"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOTARLM12AB0189263"</code></td>
+                    <td><code>"SOEQKKP12AC3DFA097"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOHVFEH12A8159E996"</code></td>
+                    <td><code>"SONGBCL12A8C1410C2"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOMRJYH12A8C13165E"</code></td>
+                    <td><code>"SOMTQWW12A8C13F17C"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOMMBWK12A8C13CCE9"</code></td>
+                    <td><code>"SOBEXVO12AB0180C53"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SONCTXN12A8C134A81"</code></td>
+                    <td><code>"SOUBKZQ12AB0188926"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOXZUND12A8C1333AA"</code></td>
+                    <td><code>"SOPBAMQ12A8C13A815"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOLTODW12AF72A9E5E"</code></td>
+                    <td><code>"SOSJSMZ12AB0187EB3"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SORATLR12AAF3B3E19"</code></td>
+                    <td><code>"SOBUWPY12A8C1446C0"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOBXHFD12A8C13B1B9"</code></td>
+                    <td><code>"SOUOQFE12A8C13C240"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOGMBVZ12A8C139077"</code></td>
+                    <td><code>"SOHWWOM12AB0186627"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOZICZX12A8C136A61"</code></td>
+                    <td><code>"SOQLJZN12A8C141701"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOJEJNX12A8AE49441"</code></td>
+                    <td><code>"SORDHXI12A8C13CAF4"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOOKZLP12A8C13F561"</code></td>
+                    <td><code>"SOFXNQP12AB0184F1A"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOIOBNP12A58A7B61B"</code></td>
+                    <td><code>"SOKFQSX12AB0188CEE"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOQOPEK12A8C140F49"</code></td>
+                    <td><code>"SOSBGOF12A6D4FB506"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOTEMIJ12AB01851E4"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SORJLDF12A58A7C7F0"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOYWFOK12AB0187CC0"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOIZDTU12AB01840C5"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOZWVZN12A6D4FB762"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SONMGHJ12A8C137426"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOVUFWU12A3F1ECA3C"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOHLATT12AC3DF4D4B"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOSMRWG12A58A7EA03"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOKJUOW12AB0181545"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOOXMZO12A58A7D62F"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOESUUA12A58A7BA05"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOOAISV12A8C143ACA"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SONMZRR12AC4688C8C"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOROWVN12A8C142E90"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOJXMRA12A58A7A875"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOSXOTX12A8C13790F"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOCEAHC12AB0186B7A"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOOINOI12A6D4FC8D0"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOHDDHR12AB0183552"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOHYKZG12A6D4FAF0A"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SOAXVMJ12A8C1352E7"</code></td>
+                    <td><code>"SOASRYN12A8C139FA4"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -2766,67 +2669,172 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"SOHVJJW12A81C2104F"</code></td>
+                    <td><code>"SORSJPQ12A8C13875A"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOYKSBN12AB017EF6B"</code></td>
+                    <td><code>"SOCWMGG12A8C1332B2"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOMAGRE12A6D4F8C60"</code></td>
+                    <td><code>"SONCOOV12A58A79316"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOLKFAE12AC468D495"</code></td>
+                    <td><code>"SONCSNW12A6D4F62D7"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOEOYBN12A6D4F9E2C"</code></td>
+                    <td><code>"SOOSHFN12A8C14371B"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOMTOKI12A8C13AE40"</code></td>
+                    <td><code>"SOTXHWZ12A8C13265A"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOVSWSL12A58A7856D"</code></td>
+                    <td><code>"SOTQWQL12A58A78E4F"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOCMKXW12AB0187C9C"</code></td>
+                    <td><code>"SOASGOU12A6D4FBAED"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOULTFJ12AB018BE7B"</code></td>
+                    <td><code>"SOXLVKX12A6310E1C9"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOIEPKN12AB0187BB4"</code></td>
+                    <td><code>"SOINZJI12A8C1337A1"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOWKEFC12A6D4FB2BE"</code></td>
+                    <td><code>"SOJEOUG12AB018A5D5"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SOXNPFT12AB01859DA"</code></td>
+                    <td><code>"SODJAZO12A81C2074D"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SODGOXT12A8C1418DE"</code></td>
+                    <td><code>"SOGPSMM12A8C13FDBA"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOUPIRU12A6D4FA1E1"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOWZOIY12AB0181FD3"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOPHADT12A8C14245D"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SODKCCT12A67ADA321"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOEWLTH12A6D4F8E29"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SORBTDC12A6D4F4F6B"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOMMPRY12A8C131C5C"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOIASMV12AB0182DC0"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOUYBZV12AC468E677"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOBREKP12AB017DD9B"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOCCRRM12AB018E15B"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOBZIBE12A58A7FF40"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOGGZNB12A8C142178"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOQVDWT12AC468A52B"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOULCSR12A58A7AAB7"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SODRBBP12A8C1385AF"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOLWVEA12A8C143C45"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOGLOTH12AB0185AC8"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOXXODX12A8C13F040"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOLSYJA12AB018810D"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOYLJVH12AB0183749"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -2840,6 +2848,14 @@ $(document).ready(function() {
         </div>
         
     
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-music-__0__-song" ).dialog({
@@ -2847,20 +2863,62 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-music-__0__-song-tatums_start").click(function() {
-            $( "#explore-music-__0__-song-tatums_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-song-key").click(function() {
+            $( "#explore-music-__0__-song-key" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-music-__0__-song-year").click(function() {
-            $( "#explore-music-__0__-song-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-song-beats_start").click(function() {
+            $( "#explore-music-__0__-song-beats_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-music-__0__-song-key_confidence").click(function() {
-            $( "#explore-music-__0__-song-key_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-song-bars_confidence").click(function() {
+            $( "#explore-music-__0__-song-bars_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-beats_confidence").click(function() {
+            $( "#explore-music-__0__-song-beats_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-time_signature").click(function() {
+            $( "#explore-music-__0__-song-time_signature" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-start_of_fade_out").click(function() {
+            $( "#explore-music-__0__-song-start_of_fade_out" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-bars_start").click(function() {
+            $( "#explore-music-__0__-song-bars_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-mode_confidence").click(function() {
+            $( "#explore-music-__0__-song-mode_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-artist_mbtags").click(function() {
+            $( "#explore-music-__0__-song-artist_mbtags" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-end_of_fade_in").click(function() {
+            $( "#explore-music-__0__-song-end_of_fade_in" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2871,8 +2929,14 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-music-__0__-song-key").click(function() {
-            $( "#explore-music-__0__-song-key" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-song-mode").click(function() {
+            $( "#explore-music-__0__-song-mode" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-year").click(function() {
+            $( "#explore-music-__0__-song-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2883,8 +2947,8 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-music-__0__-song-mode_confidence").click(function() {
-            $( "#explore-music-__0__-song-mode_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-song-loudness").click(function() {
+            $( "#explore-music-__0__-song-loudness" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2907,78 +2971,6 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-music-__0__-song-artist_mbtags").click(function() {
-            $( "#explore-music-__0__-song-artist_mbtags" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-beats_start").click(function() {
-            $( "#explore-music-__0__-song-beats_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-end_of_fade_in").click(function() {
-            $( "#explore-music-__0__-song-end_of_fade_in" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-hotttnesss").click(function() {
-            $( "#explore-music-__0__-song-hotttnesss" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-bars_confidence").click(function() {
-            $( "#explore-music-__0__-song-bars_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-loudness").click(function() {
-            $( "#explore-music-__0__-song-loudness" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-artist_mbtags_count").click(function() {
-            $( "#explore-music-__0__-song-artist_mbtags_count" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-time_signature").click(function() {
-            $( "#explore-music-__0__-song-time_signature" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-start_of_fade_out").click(function() {
-            $( "#explore-music-__0__-song-start_of_fade_out" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-beats_confidence").click(function() {
-            $( "#explore-music-__0__-song-beats_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-bars_start").click(function() {
-            $( "#explore-music-__0__-song-bars_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-song-mode").click(function() {
-            $( "#explore-music-__0__-song-mode" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-music-__0__-song-id").click(function() {
             $( "#explore-music-__0__-song-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -2994,36 +2986,52 @@ $(document).ready(function() {
         });    
         
         
+        $("#btn-explore-music-__0__-song-artist_mbtags_count").click(function() {
+            $( "#explore-music-__0__-song-artist_mbtags_count" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-hotttnesss").click(function() {
+            $( "#explore-music-__0__-song-hotttnesss" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-tatums_start").click(function() {
+            $( "#explore-music-__0__-song-tatums_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-key_confidence").click(function() {
+            $( "#explore-music-__0__-song-key_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
     });
     </script>
 
-    <div id='explore-music-__0__' title='Dictionary (3 keys)'>
+    <div id='explore-music-__0__-release' title='Dictionary (2 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"song"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-music-__0__-song'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>300848</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>The ID of the release (album) on the service 7digital.com</td> </tr>
             
-            <tr> <td><code>"artist"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-music-__0__-artist'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>0</code>
                     
                  </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"release"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-music-__0__-release'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
+                 <td>Unknown value</td> </tr>
             
         </table>
     </div>
@@ -3032,29 +3040,21 @@ $(document).ready(function() {
     
         
     
-        
-    
     <script>
     $(document).ready(function() {
-        $( "#explore-music-__0__" ).dialog({
+        $( "#explore-music-__0__-release" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-music-__0__-song").click(function() {
-            $( "#explore-music-__0__-song" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-release-id").click(function() {
+            $( "#explore-music-__0__-release-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-music-__0__-artist").click(function() {
-            $( "#explore-music-__0__-artist" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-music-__0__-release").click(function() {
-            $( "#explore-music-__0__-release" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-music-__0__-release-name").click(function() {
+            $( "#explore-music-__0__-release-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

@@ -30,39 +30,39 @@ def _tifa_definitions():
                 "name": 'get_attacks',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'attacker'}, {"type": "LiteralStr", "value": 'campaign'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'target'}, {"type": "LiteralStr", "value": 'groups'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '# wounded'}, {"type": "LiteralStr", "value": '# killed'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'groups'}, {"type": "LiteralStr", "value": 'campaign'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'attacker'}, {"type": "LiteralStr", "value": 'target'}, {"type": "LiteralStr", "value": 'statistics'}], "values": [
+				{"type": "ListType", "subtype": 
+					{"type": "StrType"}}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'sides'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'demographics'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'age'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'religion'}, {"type": "LiteralStr", "value": 'gender'}, {"type": "LiteralStr", "value": 'marital'}, {"type": "LiteralStr", "value": 'occupation'}, {"type": "LiteralStr", "value": 'education'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'demographics'}, {"type": "LiteralStr", "value": 'age'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'birth'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'marital'}, {"type": "LiteralStr", "value": 'religion'}, {"type": "LiteralStr", "value": 'education'}, {"type": "LiteralStr", "value": 'occupation'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
 						{"type": "StrType"}, 
 						{"type": "StrType"}, 
 						{"type": "StrType"}, 
 						{"type": "StrType"}, 
 						{"type": "StrType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'year'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'sides'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "ListType", "subtype": 
-						{"type": "StrType"}}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
 					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'assassination?'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'country'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'weapon'}], "values": [
 					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'weapon'}, {"type": "LiteralStr", "value": 'country'}, {"type": "LiteralStr", "value": 'assassination?'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "ListType", "subtype": 
-					{"type": "StrType"}}]}},
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '# killed'}, {"type": "LiteralStr", "value": '# wounded'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
             }
         
         }
@@ -98,8 +98,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 
