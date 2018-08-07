@@ -30,22 +30,22 @@ def _tifa_definitions():
                 "name": 'get_dams',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Identity'}, {"type": "LiteralStr", "value": 'Dimensions'}, {"type": "LiteralStr", "value": 'Location'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Watercourse'}, {"type": "LiteralStr", "value": 'Project'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Identity'}, {"type": "LiteralStr", "value": 'Dimensions'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'Latitude'}], "values": [
 					{"type": "StrType"}, 
+					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Organization'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "StrType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Crest Elevation'}, {"type": "LiteralStr", "value": 'Crest Length'}, {"type": "LiteralStr", "value": 'Structural Height'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Latitude'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'County'}], "values": [
-					{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Project'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Watercourse'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Organization'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
 					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Structural Height'}, {"type": "LiteralStr", "value": 'Crest Length'}, {"type": "LiteralStr", "value": 'Crest Elevation'}], "values": [
 					{"type": "NumType"}, 
-					{"type": "StrType"}]}]}},
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
             }
         
         }
@@ -81,8 +81,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

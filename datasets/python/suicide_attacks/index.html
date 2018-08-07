@@ -332,71 +332,14 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-suicide_attacks-__0__-statistics' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"# wounded"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>28</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"# killed"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>115</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-suicide_attacks-__0__-statistics" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-statistics-_-wounded").click(function() {
-            $( "#explore-suicide_attacks-__0__-statistics-_-wounded" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-statistics-_-killed").click(function() {
-            $( "#explore-suicide_attacks-__0__-statistics-_-killed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
     <div id='explore-suicide_attacks-__0__' title='Dictionary (6 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"statistics"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"groups"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"attacker"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-groups'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -417,6 +360,14 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
+            <tr> <td><code>"attacker"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
             <tr> <td><code>"target"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
@@ -425,10 +376,10 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"groups"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+            <tr> <td><code>"statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-groups'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -455,14 +406,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-suicide_attacks-__0__-statistics").click(function() {
-            $( "#explore-suicide_attacks-__0__-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-suicide_attacks-__0__-groups").click(function() {
+            $( "#explore-suicide_attacks-__0__-groups" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -479,545 +424,20 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-suicide_attacks-__0__-attacker").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-suicide_attacks-__0__-target").click(function() {
             $( "#explore-suicide_attacks-__0__-target" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-suicide_attacks-__0__-groups").click(function() {
-            $( "#explore-suicide_attacks-__0__-groups" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-suicide_attacks-__0__-attacker-demographics' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"religion"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Secular"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-religion'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"gender"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Male"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-gender'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"marital"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Unknown"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-marital'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"occupation"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Unskilled"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-occupation'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"education"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Primary"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-education'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-        <div id='explore-suicide_attacks-__0__-attacker-demographics-religion' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Unknown"</code></td>
-                    <td>4293</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Muslim (NA)"</code></td>
-                    <td>121</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hindu"</code></td>
-                    <td>89</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Muslim (Sunni)"</code></td>
-                    <td>86</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Secular"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Muslim (Shia)"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Muslim (Other)"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Christian"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-suicide_attacks-__0__-attacker-demographics-gender' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Male"</code></td>
-                    <td>2256</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unknown"</code></td>
-                    <td>2185</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Female"</code></td>
-                    <td>175</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-suicide_attacks-__0__-attacker-demographics-marital' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Unknown"</code></td>
-                    <td>4522</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Married"</code></td>
-                    <td>50</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unmarried"</code></td>
-                    <td>44</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-suicide_attacks-__0__-attacker-demographics-occupation' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Unknown"</code></td>
-                    <td>4482</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Professional"</code></td>
-                    <td>56</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Skilled"</code></td>
-                    <td>37</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unskilled"</code></td>
-                    <td>24</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unemployed"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Student"</code></td>
-                    <td>8</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-suicide_attacks-__0__-attacker-demographics-education' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Unknown"</code></td>
-                    <td>4499</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Post-secondary"</code></td>
-                    <td>75</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Secondary"</code></td>
-                    <td>33</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Primary"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"None"</code></td>
-                    <td>3</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-suicide_attacks-__0__-attacker-demographics" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-religion").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-religion" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-religion").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-religion" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-suicide_attacks-__0__-attacker-demographics-religion" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-gender").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-gender").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-suicide_attacks-__0__-attacker-demographics-gender" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-marital").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-marital" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-marital").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-marital" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-suicide_attacks-__0__-attacker-demographics-marital" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-occupation").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-occupation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-occupation").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-occupation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-suicide_attacks-__0__-attacker-demographics-occupation" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-education").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-education").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics-education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-suicide_attacks-__0__-attacker-demographics-education" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-    });
-    </script>
-
-    <div id='explore-suicide_attacks-__0__-campaign' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"name"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Hezbollah vs. Israel"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-campaign-name'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"sides"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-campaign-sides'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-        <div id='explore-suicide_attacks-__0__-campaign-name' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Iraqi Rebels vs. U.S. & Allies"</code></td>
-                    <td>1366</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Afghan Rebels vs. U.S. & Allies"</code></td>
-                    <td>1057</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraqi Rebels vs. Iraqi Government & Allies"</code></td>
-                    <td>575</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pakistani Rebels vs. Pakistan & U.S. Allies"</code></td>
-                    <td>481</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rebels vs. Syria & Allies"</code></td>
-                    <td>192</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Palestinian Resistance vs. Israel"</code></td>
-                    <td>173</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"LTTE vs. Sri Lanka & India"</code></td>
-                    <td>116</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rebels vs. Nigeria & Allies"</code></td>
-                    <td>107</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Somali Rebels vs. Ethiopia & Allies"</code></td>
-                    <td>93</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rebels vs. Yemen"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chechen Separatists vs. Russia"</code></td>
-                    <td>86</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Al Qaeda vs. U.S. & Allies"</code></td>
-                    <td>45</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Isolated Attacks"</code></td>
-                    <td>38</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hezbollah vs. Israel"</code></td>
-                    <td>38</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Libyan Rebels"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Al-Qaida in Islamic North Africa"</code></td>
-                    <td>27</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rebels vs. Government of Mali & Allies"</code></td>
-                    <td>21</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PKK vs. Turkey"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Egyptian Rebels"</code></td>
-                    <td>15</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kashmiri Rebels vs. India"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Indonesian Rebels vs. Indonesian Government & Allies"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Xinjiang Rebels vs. Chinese Government"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jundullah vs. Iran"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hezbollah vs. U.S. & France"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Uzbek Rebels vs. U.S."</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rebels vs. Saudi Arabia"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Russian Separatists vs. Ukraine"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BKI vs. India"</code></td>
-                    <td>2</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-suicide_attacks-__0__-campaign" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-campaign-name").click(function() {
-            $( "#explore-suicide_attacks-__0__-campaign-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-campaign-name").click(function() {
-            $( "#explore-suicide_attacks-__0__-campaign-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-suicide_attacks-__0__-campaign-name" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-campaign-sides").click(function() {
-            $( "#explore-suicide_attacks-__0__-campaign-sides" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-suicide_attacks-__0__-statistics").click(function() {
+            $( "#explore-suicide_attacks-__0__-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1028,6 +448,14 @@ $(document).ready(function() {
     <div id='explore-suicide_attacks-__0__-attacker-birth' title='Dictionary (2 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1967</code>
+                    
+                 </td> 
+                 <td></td> </tr>
             
             <tr> <td><code>"location"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -1040,16 +468,10 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1967</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
         </table>
     </div>
+    
+        
     
         
         <div id='explore-suicide_attacks-__0__-attacker-birth-location' title='Previewing Values'>
@@ -1112,12 +534,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Tunisia"</code></td>
+                    <td><code>"Morocco"</code></td>
                     <td>14</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Morocco"</code></td>
+                    <td><code>"Tunisia"</code></td>
                     <td>14</td>
                 </tr>
             
@@ -1132,12 +554,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Yemen"</code></td>
+                    <td><code>"Somalia"</code></td>
                     <td>11</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Somalia"</code></td>
+                    <td><code>"Yemen"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -1177,6 +599,21 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Sudan"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United States"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"India"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Australia"</code></td>
                     <td>3</td>
                 </tr>
@@ -1187,37 +624,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"India"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"United States"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sudan"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tajikistan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iran"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nigeria"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Turkmenistan"</code></td>
+                    <td><code>"Finland"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1227,12 +634,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Finland"</code></td>
+                    <td><code>"Iran"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Uzbekistan"</code></td>
+                    <td><code>"Turkmenistan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nigeria"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1242,7 +654,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Uganda"</code></td>
+                    <td><code>"Tajikistan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uzbekistan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Brazil"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bangladesh"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Netherlands"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1257,32 +689,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Azerbaijan"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Qatar"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bangladesh"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kenya"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mauritania"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jamaica"</code></td>
+                    <td><code>"Belgium"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1292,22 +699,37 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Azerbaijan"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mauritania"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Qatar"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jamaica"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kenya"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Bolivia"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Brazil"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Netherlands"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Belgium"</code></td>
+                    <td><code>"Uganda"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1316,14 +738,18 @@ $(document).ready(function() {
         </div>
         
     
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-suicide_attacks-__0__-attacker-birth" ).dialog({
           autoOpen: false,
           width: 600
         });
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-birth-year").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-birth-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         
         $("#btn-explore-suicide_attacks-__0__-attacker-birth-location").click(function() {
             $( "#explore-suicide_attacks-__0__-attacker-birth-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -1340,12 +766,6 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-suicide_attacks-__0__-attacker-birth-year").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-birth-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
     });
     </script>
 
@@ -1353,10 +773,10 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"year"</code></td> 
+            <tr> <td><code>"month"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>1982</code>
+                    <code>11</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1369,10 +789,10 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"month"</code></td> 
+            <tr> <td><code>"year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>11</code>
+                    <code>1982</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1393,8 +813,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-suicide_attacks-__0__-date-year").click(function() {
-            $( "#explore-suicide_attacks-__0__-date-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-suicide_attacks-__0__-date-month").click(function() {
+            $( "#explore-suicide_attacks-__0__-date-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1405,614 +825,8 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-suicide_attacks-__0__-date-month").click(function() {
-            $( "#explore-suicide_attacks-__0__-date-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-suicide_attacks-__0__-attacker' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"name"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Ahmad Qasiraka Haider"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-name'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"demographics"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"birth"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-birth'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"age"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>15</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-        <div id='explore-suicide_attacks-__0__-attacker-name' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Unknown"</code></td>
-                    <td>3491</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"unknown"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdullah"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rahmatollah"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ahmad"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdul Rahman"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ahmadullah"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Khalid"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdollah"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Zabihullah"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hafiz"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohammad Omar"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"N/Aaka N/A"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohammad Nasim"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Saifullah"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hamza"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abu Muhammad al-Muhajir"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdul Wali"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdul Jabar"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdurrahman"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abu Mujahid al-Jazrawi"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohammad"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdorrahman"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fatima"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohammad Yaqub"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Samiullah"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Amanollah"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rahmatullah"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdol Ghafar"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Turki al-Ash'ari"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdorrahim"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mullah Ahmad"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdul Karim"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdol Hamid"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Samiollah"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Naeemullah"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Saifollah"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Muhammadullah"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Haroon"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abu Osama al-Faransi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rafik Muhammad 'Ali Abd al-Rahman Hamad"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Adil Taii"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bassem Jamal Darwish al-Takrouriaka Bassam al-Taqaduri"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abu Sumayyah al-Britani"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdul Ghani"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unknownaka Abdul Rahman Al-Kurdi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unknownaka Abu Jihad al-Ansari"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Khattab al-Iraqiaka Khattab al-Iraqi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Louai al-Aghwani"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Magomed Shakhidov"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Azizorrahman"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Raheemullah"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gokhan Elaltuntas"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ahmed Omar Saeed Al-Mashjariaka Abu-Dijana Al-Hadrami"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mollah Shah Mohammad"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mujahid Abdul Fattah Al-Ja'bari"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Farhan Jama Husayn Weheliye"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Yusuf Audaaka Jalibib"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wahab al Saadi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Waliollah"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Asadollah Khosti"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abd al-Kareem Issa Khalil Tahayinahaka Abdel Karim..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kariyev"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Khaled Nabil Khamis Sawalha"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unknownaka Abu Talha al-Ansari"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohammad Musa"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Brahim Cuhader"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abu Aisha"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hasan Qasiraka Amel"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"'Amer Ismael Sa'dat al-Jimzawiaka Abu Mus'ib al-Za..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nael Azmi Abu-Halil"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Faruq A-Alik"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abdullah Saleh al-Sadiriaka Abu Suhaib al-Jazrawi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hafiz Juma Khan"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jake Bilardiaka Abu Abdullah al Australi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohammad Abbas"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mullah Asim Abdul Rahman"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hafiz Raza Muhammad"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unknownaka Osama al-Turki"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abu Sarmad al-Jazrawi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abu al-Qassim al-Filistini"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unknownaka Abu Hamza al-Ansari"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Justin Jude Nevil"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nandagopal Suresh"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Shahid"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Yussef al-Sagir"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Qari Mohammad Ali"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jamal Abdel Gahni Rashed Naser"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iyad Naim Subhi Radad"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohammad Mubashir Hussain"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Muhammad Syraif"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Muhammad Naeem"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Niamatullah"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nabil al-Ar'ir"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohhamed Zoel"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Majid al-Harbi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hafez Mohammad"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mohammad Yousef"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Abu Al-Walid al-Ansari"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Muhammad Yassin Daoud al-Jamasi"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-suicide_attacks-__0__-attacker" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-name").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-name").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-suicide_attacks-__0__-attacker-name" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-demographics").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-demographics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-birth").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-birth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-suicide_attacks-__0__-attacker-age").click(function() {
-            $( "#explore-suicide_attacks-__0__-attacker-age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-suicide_attacks-__0__-date-year").click(function() {
+            $( "#explore-suicide_attacks-__0__-date-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2023,6 +837,14 @@ $(document).ready(function() {
     <div id='explore-suicide_attacks-__0__-target' title='Dictionary (6 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"assassination?"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td></td> </tr>
             
             <tr> <td><code>"name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -2041,6 +863,17 @@ $(document).ready(function() {
                     <code>"Lebanon, TyreLiban-Sud"</code>
                     
                     <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-target-location'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"country"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Lebanon"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-target-country'><br>
                     <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
                     
                  </td> 
@@ -2068,27 +901,10 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"country"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Lebanon"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-target-country'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"assassination?"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
         </table>
     </div>
+    
+        
     
         
         <div id='explore-suicide_attacks-__0__-target-name' title='Previewing Values'>
@@ -2151,12 +967,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Market"</code></td>
+                    <td><code>"Iraqi Shia pilgrims"</code></td>
                     <td>27</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi Shia pilgrims"</code></td>
+                    <td><code>"Market"</code></td>
                     <td>27</td>
                 </tr>
             
@@ -2171,12 +987,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi Army patrol"</code></td>
+                    <td><code>"Syrian Arab Army (SAA) checkpoint"</code></td>
                     <td>24</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Syrian Arab Army (SAA) checkpoint"</code></td>
+                    <td><code>"Iraqi Army patrol"</code></td>
                     <td>24</td>
                 </tr>
             
@@ -2221,12 +1037,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Afghan National Army (ANA) patrol"</code></td>
+                    <td><code>"Iraqi Army base"</code></td>
                     <td>16</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi Army base"</code></td>
+                    <td><code>"Afghan National Army (ANA) patrol"</code></td>
                     <td>16</td>
                 </tr>
             
@@ -2246,17 +1062,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Pakistani Police Station"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"NATO-ISAF troops"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"US military checkpoint"</code></td>
+                    <td><code>"Market frequented by Iraqi Shia civilians"</code></td>
                     <td>13</td>
                 </tr>
             
@@ -2266,23 +1072,28 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"NATO-ISAF patrol"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Market frequented by Iraqi Shia civilians"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Shia mosque"</code></td>
                     <td>13</td>
                 </tr>
             
                 <tr>
-                    <td><code>"South Lebanon Army (SLA) checkpoint"</code></td>
-                    <td>12</td>
+                    <td><code>"Pakistani Police Station"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NATO-ISAF patrol"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"US military checkpoint"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NATO-ISAF troops"</code></td>
+                    <td>13</td>
                 </tr>
             
                 <tr>
@@ -2291,12 +1102,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Unknown"</code></td>
+                    <td><code>"Iraqi Army recruitment center"</code></td>
                     <td>12</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi Army recruitment center"</code></td>
+                    <td><code>"South Lebanon Army (SLA) checkpoint"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
                     <td>12</td>
                 </tr>
             
@@ -2311,27 +1127,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Pakistani Police station"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Israeli Defense Forces (IDF) military convoy"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gas station"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cafe"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraqi Shia civilians"</code></td>
                     <td>10</td>
                 </tr>
             
@@ -2341,22 +1137,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Gas station"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistani Police station"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraqi Shia civilians"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cafe"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Afghan National Army (ANA) checkpoint"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Afghan National Police (ANP) headquarters"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Afghan National Army (ANA) base"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bus Station"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -2366,8 +1167,18 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Marketplace"</code></td>
-                    <td>8</td>
+                    <td><code>"Afghan National Police (ANP) headquarters"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bus Station"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Afghan National Army (ANA) base"</code></td>
+                    <td>9</td>
                 </tr>
             
                 <tr>
@@ -2386,12 +1197,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Restaurant"</code></td>
+                    <td><code>"Marketplace"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Public Bus transporting Israeli civilians"</code></td>
+                    <td><code>"Restaurant"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -2406,22 +1217,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"US Embassy"</code></td>
-                    <td>7</td>
+                    <td><code>"Public Bus transporting Israeli civilians"</code></td>
+                    <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi National Guard checkpoint"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraqi Police Academy"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"NATO-ISAF (German) military convoy"</code></td>
+                    <td><code>"Pakistani Police van"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -2431,7 +1232,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi polling station"</code></td>
+                    <td><code>"Joint US and Iraqi Army checkpoint"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -2441,38 +1242,33 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Joint US and Iraqi Army checkpoint"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pakistani Police van"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Patriotic Union of Kurdistan (PUK) offices"</code></td>
                     <td>7</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Pakistani Frontier Corps (FC) checkpoint"</code></td>
-                    <td>6</td>
+                    <td><code>"US Embassy"</code></td>
+                    <td>7</td>
                 </tr>
             
                 <tr>
-                    <td><code>"US military base"</code></td>
-                    <td>6</td>
+                    <td><code>"NATO-ISAF (German) military convoy"</code></td>
+                    <td>7</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Commercial area"</code></td>
-                    <td>6</td>
+                    <td><code>"Iraqi National Guard checkpoint"</code></td>
+                    <td>7</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Joint NATO-ISAF (US) and Afghan National Army (ANA..."</code></td>
-                    <td>6</td>
+                    <td><code>"Iraqi polling station"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraqi Police Academy"</code></td>
+                    <td>7</td>
                 </tr>
             
                 <tr>
@@ -2486,32 +1282,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Joint Iraqi Army and Popular Mobilization Forces (..."</code></td>
-                    <td>5</td>
+                    <td><code>"Commercial area"</code></td>
+                    <td>6</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Joint NATO-ISAF and Afghan National Army (ANA) patrol"</code></td>
-                    <td>5</td>
+                    <td><code>"US military base"</code></td>
+                    <td>6</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi civilians in market"</code></td>
-                    <td>5</td>
+                    <td><code>"Pakistani Frontier Corps (FC) checkpoint"</code></td>
+                    <td>6</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Kurdistan Democratic Party (KDP) offices"</code></td>
-                    <td>5</td>
+                    <td><code>"Joint NATO-ISAF (US) and Afghan National Army (ANA..."</code></td>
+                    <td>6</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Cafe frequented by Iraqi Shia"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Joint US and Iraqi Army patrol"</code></td>
+                    <td><code>"Malian Army checkpoint"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -2521,7 +1312,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"NATO-ISAF (Canadian) troops"</code></td>
+                    <td><code>"Iraqi Shia procession"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joint US and Iraqi Army patrol"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -2531,12 +1327,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Hospital"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lebanese Army checkpoint"</code></td>
+                    <td><code>"NATO-ISAF base"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -2546,22 +1337,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Policemen attending funeral"</code></td>
+                    <td><code>"Hospital"</code></td>
                     <td>5</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi Police Headquarters"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Residential area"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Malian Army checkpoint"</code></td>
+                    <td><code>"Joint NATO-ISAF and Afghan National Army (ANA) patrol"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -2571,27 +1352,62 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"NATO-ISAF base"</code></td>
+                    <td><code>"Residential area"</code></td>
                     <td>5</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraqi Shia procession"</code></td>
+                    <td><code>"Iraqi civilians in market"</code></td>
                     <td>5</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Israeli Shoppers"</code></td>
+                    <td><code>"Iraqi Police Headquarters"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cafe frequented by Iraqi Shia"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NATO-ISAF (Canadian) troops"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kurdistan Democratic Party (KDP) offices"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lebanese Army checkpoint"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joint Iraqi Army and Popular Mobilization Forces (..."</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Policemen attending funeral"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"US Consulate"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Mosque"</code></td>
+                    <td><code>"NATO-ISAF Headquarters"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Bus transporting Iraqi Shia civilians"</code></td>
+                    <td><code>"Iraqi Military Base"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -2666,12 +1482,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, TikritSalah ad Din Province"</code></td>
+                    <td><code>"Iraq, SamarraSalah ad Din Province"</code></td>
                     <td>55</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, SamarraSalah ad Din Province"</code></td>
+                    <td><code>"Iraq, TikritSalah ad Din Province"</code></td>
                     <td>55</td>
                 </tr>
             
@@ -2696,22 +1512,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Afghanistan, JalalabadNangarhar Province"</code></td>
-                    <td>32</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Israel, Jerusalem (West)Yerushalayim Province (Jer..."</code></td>
                     <td>32</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Sri Lanka, ColomboWestern Province"</code></td>
-                    <td>31</td>
+                    <td><code>"Afghanistan, JalalabadNangarhar Province"</code></td>
+                    <td>32</td>
                 </tr>
             
                 <tr>
                     <td><code>"Iraq, HillahBabil Province"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sri Lanka, ColomboWestern Province"</code></td>
                     <td>31</td>
                 </tr>
             
@@ -2771,11 +1587,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Pakistan, RawalpindiPunjab Province"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Iraq, MahmudiyahBaghdad Province"</code></td>
                     <td>19</td>
                 </tr>
@@ -2786,8 +1597,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, MiqdadiyahDiyala Province"</code></td>
-                    <td>18</td>
+                    <td><code>"Pakistan, RawalpindiPunjab Province"</code></td>
+                    <td>19</td>
                 </tr>
             
                 <tr>
@@ -2797,6 +1608,11 @@ $(document).ready(function() {
             
                 <tr>
                     <td><code>"Iraq, KarbalaKarbala Province"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraq, MiqdadiyahDiyala Province"</code></td>
                     <td>18</td>
                 </tr>
             
@@ -2811,27 +1627,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Yemen, Aden'Adan"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraq, BasrahAl Basrah Province"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Pakistan, MingaoraNorth-West Frontier Province (NWFP)"</code></td>
                     <td>16</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, Balad RuzDiyala Province"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Syria, KobaniHalab (Aleppo)"</code></td>
+                    <td><code>"Yemen, Aden'Adan"</code></td>
                     <td>16</td>
                 </tr>
             
@@ -2841,7 +1642,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Iraq, Balad RuzDiyala Province"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Afghanistan, Tarin KotOruzgan Province"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraq, BasrahAl Basrah Province"</code></td>
                     <td>16</td>
                 </tr>
             
@@ -2851,8 +1662,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Afghanistan, HeratHerat Province"</code></td>
-                    <td>15</td>
+                    <td><code>"Syria, KobaniHalab (Aleppo)"</code></td>
+                    <td>16</td>
                 </tr>
             
                 <tr>
@@ -2871,12 +1682,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, BaladSalah ad Din Province"</code></td>
+                    <td><code>"Iraq, JalalwaDiyala Province"</code></td>
                     <td>15</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, JalalwaDiyala Province"</code></td>
+                    <td><code>"Afghanistan, HeratHerat Province"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraq, BaladSalah ad Din Province"</code></td>
                     <td>15</td>
                 </tr>
             
@@ -2886,17 +1702,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Nigeria, PotiskumYobe"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Iraq, HitAl Anbar Province"</code></td>
                     <td>13</td>
                 </tr>
             
                 <tr>
+                    <td><code>"Nigeria, PotiskumYobe"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sri Lanka, TrincomaleeEastern Province"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Afghanistan, GardezPaktia Province"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraq, IskandariyahBabil Province"</code></td>
                     <td>12</td>
                 </tr>
             
@@ -2911,16 +1737,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Sri Lanka, TrincomaleeEastern Province"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraq, IskandariyahBabil Province"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Pakistan, Dera Ismail KhanNorth-West Frontier Prov..."</code></td>
                     <td>12</td>
                 </tr>
@@ -2931,17 +1747,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, YusufiyahBaghdad Province"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Morocco, CasablancaCasablanca"</code></td>
                     <td>11</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Afghanistan, DelaramNimruz Province"</code></td>
+                    <td><code>"Iraq, YusufiyahBaghdad Province"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -2951,37 +1762,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Pakistan, KohatNorth-West Frontier Province (NWFP)"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pakistan, HanguNorth-West Frontier Province (NWFP)"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Turkey, IstanbulIstanbul Province"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraq, HadithahAl Anbar Province"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Libya, BenghaziBanghazi"</code></td>
-                    <td>10</td>
+                    <td><code>"Afghanistan, DelaramNimruz Province"</code></td>
+                    <td>11</td>
                 </tr>
             
                 <tr>
                     <td><code>"Israel, NatanyaHaMerkaz Province (Central)"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraq, SinjarNinawa Province"</code></td>
                     <td>10</td>
                 </tr>
             
@@ -2991,8 +1777,33 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Pakistan, CharsaddaNorth-West Frontier Province (NWFP)"</code></td>
-                    <td>9</td>
+                    <td><code>"Pakistan, HanguNorth-West Frontier Province (NWFP)"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistan, KohatNorth-West Frontier Province (NWFP)"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Libya, BenghaziBanghazi"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Turkey, IstanbulIstanbul Province"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraq, SinjarNinawa Province"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraq, HadithahAl Anbar Province"</code></td>
+                    <td>10</td>
                 </tr>
             
                 <tr>
@@ -3006,17 +1817,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Afghanistan, SharanPaktika Province"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sri Lanka, BatticaloaEastern Province"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pakistan, Miram ShahFederally Administered Tribal ..."</code></td>
+                    <td><code>"Afghanistan, Shah JoyZabol Province"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -3026,13 +1827,23 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Afghanistan, Shah JoyZabol Province"</code></td>
+                    <td><code>"Sri Lanka, BatticaloaEastern Province"</code></td>
                     <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Russia, MoscowMoskva"</code></td>
-                    <td>8</td>
+                    <td><code>"Afghanistan, SharanPaktika Province"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistan, CharsaddaNorth-West Frontier Province (NWFP)"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistan, Miram ShahFederally Administered Tribal ..."</code></td>
+                    <td>9</td>
                 </tr>
             
                 <tr>
@@ -3041,27 +1852,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, MusayyibBabil Province"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Afghanistan, Mazar-e SharifBalkh Province"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Afghanistan, Bala BolukFarah Province"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraq, HuwayjahAt Ta'mim (Kirkuk) Province"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iraq, Khan BaghdadiAl Anbar Province"</code></td>
+                    <td><code>"Iraq, DuluiyahSalah ad Din Province"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -3076,12 +1867,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Afghanistan, Bala BolukFarah Province"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraq, HuwayjahAt Ta'mim (Kirkuk) Province"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Russia, MoscowMoskva"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Afghanistan, Towr KhamNangarhar Province"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, QaimAl Anbar Province"</code></td>
+                    <td><code>"Iraq, MusayyibBabil Province"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -3091,12 +1897,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq, DuluiyahSalah ad Din Province"</code></td>
+                    <td><code>"Iraq, Khan BaghdadiAl Anbar Province"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Saudi Arabia, RiyadhAr Riyad Province"</code></td>
+                    <td><code>"Iraq, QaimAl Anbar Province"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Afghanistan, Mazar-e SharifBalkh Province"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Palestinian Territory, Occupied, Kefar Darom (S)Gaza"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -3106,7 +1922,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Afghanistan, BagramParvan Province"</code></td>
+                    <td><code>"Afghanistan, Sangin DistrictHelmand Province"</code></td>
                     <td>7</td>
                 </tr>
             
@@ -3115,6 +1931,251 @@ $(document).ready(function() {
                     <td>...</td>
                     <td>...</td>
                 </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-suicide_attacks-__0__-target-country' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Iraq"</code></td>
+                    <td>1938</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Afghanistan"</code></td>
+                    <td>1058</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistan"</code></td>
+                    <td>487</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Syria"</code></td>
+                    <td>172</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sri Lanka"</code></td>
+                    <td>115</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Israel"</code></td>
+                    <td>113</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nigeria"</code></td>
+                    <td>103</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Somalia"</code></td>
+                    <td>91</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yemen"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Russia"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lebanon"</code></td>
+                    <td>66</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Palestinian Territory, Occupied"</code></td>
+                    <td>59</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Libya"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Turkey"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Algeria"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Egypt"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mali"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"India"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"China"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Saudi Arabia"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Morocco"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Indonesia"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iran"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uzbekistan"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chad"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United Kingdom"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United States"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bangladesh"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ukraine"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jordan"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kuwait"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Finland"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tajikistan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Niger"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kenya"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tunisia"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Argentina"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kazakhstan"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spain"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sweden"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bolivia"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bulgaria"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Djibouti"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mauritania"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Qatar"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tanzania"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uganda"</code></td>
+                    <td>1</td>
+                </tr>
+            
             
         </table>
         </div>
@@ -3216,12 +2277,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Turban bomb"</code></td>
+                    <td><code>"Animal bomb"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Animal bomb"</code></td>
+                    <td><code>"Turban bomb"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -3240,259 +2301,18 @@ $(document).ready(function() {
         </div>
         
     
-        
-        <div id='explore-suicide_attacks-__0__-target-country' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Iraq"</code></td>
-                    <td>1938</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Afghanistan"</code></td>
-                    <td>1058</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pakistan"</code></td>
-                    <td>487</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Syria"</code></td>
-                    <td>172</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sri Lanka"</code></td>
-                    <td>115</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Israel"</code></td>
-                    <td>113</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nigeria"</code></td>
-                    <td>103</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Somalia"</code></td>
-                    <td>91</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Yemen"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Russia"</code></td>
-                    <td>86</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lebanon"</code></td>
-                    <td>66</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Palestinian Territory, Occupied"</code></td>
-                    <td>59</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Turkey"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Libya"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Algeria"</code></td>
-                    <td>24</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Egypt"</code></td>
-                    <td>21</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mali"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"India"</code></td>
-                    <td>15</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"China"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Saudi Arabia"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Morocco"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Indonesia"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iran"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Uzbekistan"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"United States"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chad"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"United Kingdom"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kuwait"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jordan"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bangladesh"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ukraine"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tajikistan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Niger"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Finland"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tunisia"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kenya"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Uganda"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bulgaria"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Qatar"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kazakhstan"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Argentina"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mauritania"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tanzania"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sweden"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Djibouti"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bolivia"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Spain"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-suicide_attacks-__0__-target" ).dialog({
           autoOpen: false,
           width: 600
         });
+        
+        $("#btn-explore-suicide_attacks-__0__-target-assassination_").click(function() {
+            $( "#explore-suicide_attacks-__0__-target-assassination_" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         
         $("#btn-explore-suicide_attacks-__0__-target-name").click(function() {
             $( "#explore-suicide_attacks-__0__-target-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -3519,6 +2339,21 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         $( "#explore-suicide_attacks-__0__-target-location" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-target-country").click(function() {
+            $( "#explore-suicide_attacks-__0__-target-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-target-country").click(function() {
+            $( "#explore-suicide_attacks-__0__-target-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-suicide_attacks-__0__-target-country" ).dialog({
           autoOpen: false,
           width: 600
         });    
@@ -3554,23 +2389,1188 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-suicide_attacks-__0__-target-country").click(function() {
-            $( "#explore-suicide_attacks-__0__-target-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-suicide_attacks-__0__-attacker-demographics' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"marital"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Unknown"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-marital'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"religion"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Secular"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-religion'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"education"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Primary"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-education'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"occupation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Unskilled"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-occupation'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gender"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Male"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics-gender'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+        <div id='explore-suicide_attacks-__0__-attacker-demographics-marital' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>4522</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Married"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unmarried"</code></td>
+                    <td>44</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-suicide_attacks-__0__-attacker-demographics-religion' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>4293</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muslim (NA)"</code></td>
+                    <td>121</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hindu"</code></td>
+                    <td>89</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muslim (Sunni)"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Secular"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muslim (Shia)"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muslim (Other)"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Christian"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-suicide_attacks-__0__-attacker-demographics-education' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>4499</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Post-secondary"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Secondary"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Primary"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"None"</code></td>
+                    <td>3</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-suicide_attacks-__0__-attacker-demographics-occupation' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>4482</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Professional"</code></td>
+                    <td>56</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Skilled"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unskilled"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unemployed"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Student"</code></td>
+                    <td>8</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-suicide_attacks-__0__-attacker-demographics-gender' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Male"</code></td>
+                    <td>2256</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>2185</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Female"</code></td>
+                    <td>175</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-suicide_attacks-__0__-attacker-demographics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-marital").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-marital" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-suicide_attacks-__0__-target-country").click(function() {
-            $( "#explore-suicide_attacks-__0__-target-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-marital").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-marital" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
-        $( "#explore-suicide_attacks-__0__-target-country" ).dialog({
+        $( "#explore-suicide_attacks-__0__-attacker-demographics-marital" ).dialog({
           autoOpen: false,
           width: 600
         });    
         
         
-        $("#btn-explore-suicide_attacks-__0__-target-assassination_").click(function() {
-            $( "#explore-suicide_attacks-__0__-target-assassination_" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-religion").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-religion" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-religion").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-religion" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-suicide_attacks-__0__-attacker-demographics-religion" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-education").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-education").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-suicide_attacks-__0__-attacker-demographics-education" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-occupation").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-occupation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-occupation").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-occupation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-suicide_attacks-__0__-attacker-demographics-occupation" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-gender").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics-gender").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics-gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-suicide_attacks-__0__-attacker-demographics-gender" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+    });
+    </script>
+
+    <div id='explore-suicide_attacks-__0__-statistics' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"# killed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>115</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"# wounded"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>28</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-suicide_attacks-__0__-statistics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-statistics-_-killed").click(function() {
+            $( "#explore-suicide_attacks-__0__-statistics-_-killed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-statistics-_-wounded").click(function() {
+            $( "#explore-suicide_attacks-__0__-statistics-_-wounded" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-suicide_attacks-__0__-attacker' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"demographics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-demographics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"age"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>15</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Ahmad Qasiraka Haider"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"birth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-attacker-birth'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+        <div id='explore-suicide_attacks-__0__-attacker-name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>3491</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"unknown"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdullah"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rahmatollah"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdollah"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ahmad"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Khalid"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ahmadullah"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdul Rahman"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mohammad Nasim"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mohammad Omar"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hamza"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Saifullah"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hafiz"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Zabihullah"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"N/Aaka N/A"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdol Ghafar"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mohammad"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muhammadullah"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Samiollah"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu Muhammad al-Muhajir"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mullah Ahmad"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdol Hamid"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Haroon"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mohammad Yaqub"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdorrahman"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdurrahman"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdul Jabar"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdul Karim"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Naeemullah"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdul Wali"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu Mujahid al-Jazrawi"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Saifollah"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdorrahim"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Amanollah"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Turki al-Ash'ari"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fatima"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Samiullah"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rahmatullah"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu Usama al-Australiaka Abu Usama al-Muhajir"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sarhane ben Abdelmajid Fakhetaka The Tunisian"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muhammad Mashhur Muhammad al-Hashaykah"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nandagopal Suresh"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dulat Iskakov"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Faizollah"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Asmudin"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hasib Hussain"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Misnoaka Wisnu"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknownaka Abu Nusayris"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Asadollah Khosti"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bahaa Eddine al-Sayed"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu-Hafs al-Najdiaka Abu al-Munzer al-Ansari al-Iraqi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Asmatollah"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Khan Mohammad"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu Mosaab al-Libi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mesut Cabuk"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mailvaganam Arulchelvan"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdur Rafi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu Mu'awiyya al Dimishqi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mullah Bilal"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nasrullah"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Saeed al Ghamdi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wajdi Sayegh"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Muhammad Hashim"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hajjaj Hatim"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Feroz"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mahmoud Jamil Hussein Faraj"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kumarasamy Anantha"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Djabrail Sergeyevaka Sergey Dimitriev"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknownaka Abu Fatime Tunisian"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sabih Kamel Assadaka Sabih Abu Saud"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mohammed Irfan"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknownaka Abu Mansoor al-Jazrawi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mullah Abdol Khaleq"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Asmar Latin Saniaka Jibril"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mohammad Mubashir Hussain"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Raid Abd al-Hamid Abd al-Rizaq Muskaka Raed Mesk"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marzuk Midhat Abd al-Latif Ghawarda"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Askhan Shuyusupovaka Avazkhan Shayusupov"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu Ali-Jazrawi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Omar Maha"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu Jaber al-Ansari"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mulla Abdurahman"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ecevit Sanli"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Omar Zayadehaka Umar Muhammad Ziyadi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ijaz Ahmad"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hekmatollah Ghiyas"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ali Ahmadaka Ali Muhammad"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mollah Shah Mohammad"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu al-Bara al-Turki"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ashraf Salah Ahmad al-Asmar"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ahmad Diab"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mr. Zaker"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknownaka Abu Harun al-Maghrebi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abakar Aitperovaka Abu Sumaii"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abdallah 'Atweh"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ahmad Khalil"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Khadishat Mangeriyeva"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abu Lujaini al-Muhajir"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Isma'il Bashir al-M'asawabi"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-suicide_attacks-__0__-attacker" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-demographics").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-demographics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-age").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-name").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-name").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-suicide_attacks-__0__-attacker-name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-attacker-birth").click(function() {
+            $( "#explore-suicide_attacks-__0__-attacker-birth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-suicide_attacks-__0__-campaign' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Hezbollah vs. Israel"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-campaign-name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sides"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-suicide_attacks-__0__-campaign-sides'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+        <div id='explore-suicide_attacks-__0__-campaign-name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Iraqi Rebels vs. U.S. & Allies"</code></td>
+                    <td>1366</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Afghan Rebels vs. U.S. & Allies"</code></td>
+                    <td>1057</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraqi Rebels vs. Iraqi Government & Allies"</code></td>
+                    <td>575</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistani Rebels vs. Pakistan & U.S. Allies"</code></td>
+                    <td>481</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rebels vs. Syria & Allies"</code></td>
+                    <td>192</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Palestinian Resistance vs. Israel"</code></td>
+                    <td>173</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LTTE vs. Sri Lanka & India"</code></td>
+                    <td>116</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rebels vs. Nigeria & Allies"</code></td>
+                    <td>107</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Somali Rebels vs. Ethiopia & Allies"</code></td>
+                    <td>93</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rebels vs. Yemen"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chechen Separatists vs. Russia"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Al Qaeda vs. U.S. & Allies"</code></td>
+                    <td>45</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hezbollah vs. Israel"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Isolated Attacks"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Libyan Rebels"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Al-Qaida in Islamic North Africa"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rebels vs. Government of Mali & Allies"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PKK vs. Turkey"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Egyptian Rebels"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kashmiri Rebels vs. India"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Indonesian Rebels vs. Indonesian Government & Allies"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hezbollah vs. U.S. & France"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jundullah vs. Iran"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uzbek Rebels vs. U.S."</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Xinjiang Rebels vs. Chinese Government"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Russian Separatists vs. Ukraine"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rebels vs. Saudi Arabia"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BKI vs. India"</code></td>
+                    <td>2</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-suicide_attacks-__0__-campaign" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-campaign-name").click(function() {
+            $( "#explore-suicide_attacks-__0__-campaign-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-suicide_attacks-__0__-campaign-name").click(function() {
+            $( "#explore-suicide_attacks-__0__-campaign-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-suicide_attacks-__0__-campaign-name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-suicide_attacks-__0__-campaign-sides").click(function() {
+            $( "#explore-suicide_attacks-__0__-campaign-sides" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

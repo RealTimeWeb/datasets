@@ -31,72 +31,72 @@ def _tifa_definitions():
                 "returns": 
 		{"type": "ListType", "subtype": 
 			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Vote Data'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'State Abbreviation'}, {"type": "LiteralStr", "value": 'County'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'State Abbreviation'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'No Preference'}, {"type": "LiteralStr", "value": 'Ben Carson'}, {"type": "LiteralStr", "value": 'Hillary Clinton'}, {"type": "LiteralStr", "value": 'Rick Santorum'}, {"type": "LiteralStr", "value": 'Chris Christie'}, {"type": "LiteralStr", "value": 'Carly Fiorina'}, {"type": "LiteralStr", "value": 'Donald Trump'}, {"type": "LiteralStr", "value": 'Ted Cruz'}, {"type": "LiteralStr", "value": 'John Kasich'}, {"type": "LiteralStr", "value": 'Uncommitted'}, {"type": "LiteralStr", "value": 'Rand Paul'}, {"type": "LiteralStr", "value": 'Marco Rubio'}, {"type": "LiteralStr", "value": 'Mike Huckabee'}, {"type": "LiteralStr", "value": "Martin O'Malley"}, {"type": "LiteralStr", "value": 'Bernie Sanders'}, {"type": "LiteralStr", "value": 'Jeb Bush'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Hillary Clinton'}, {"type": "LiteralStr", "value": 'Carly Fiorina'}, {"type": "LiteralStr", "value": 'Rand Paul'}, {"type": "LiteralStr", "value": 'John Kasich'}, {"type": "LiteralStr", "value": 'No Preference'}, {"type": "LiteralStr", "value": 'Jeb Bush'}, {"type": "LiteralStr", "value": 'Mike Huckabee'}, {"type": "LiteralStr", "value": 'Ted Cruz'}, {"type": "LiteralStr", "value": 'Chris Christie'}, {"type": "LiteralStr", "value": "Martin O'Malley"}, {"type": "LiteralStr", "value": 'Bernie Sanders'}, {"type": "LiteralStr", "value": 'Marco Rubio'}, {"type": "LiteralStr", "value": 'Rick Santorum'}, {"type": "LiteralStr", "value": 'Uncommitted'}, {"type": "LiteralStr", "value": 'Donald Trump'}, {"type": "LiteralStr", "value": 'Ben Carson'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}]}]}},
@@ -135,8 +135,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

@@ -30,30 +30,30 @@ def _tifa_definitions():
                 "name": 'get_buildings',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'data'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'congressional district'}, {"type": "LiteralStr", "value": 'address'}, {"type": "LiteralStr", "value": 'region id'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'line 1'}, {"type": "LiteralStr", "value": 'line 2'}, {"type": "LiteralStr", "value": 'county'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'state'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}]}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'owned or leased'}, {"type": "LiteralStr", "value": 'history'}, {"type": "LiteralStr", "value": 'parking spaces'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'disabilities'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'status'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'status'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "StrType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'disabilities'}, {"type": "LiteralStr", "value": 'status'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'parking spaces'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'history'}, {"type": "LiteralStr", "value": 'owned or leased'}], "values": [
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'ansi usable'}, {"type": "LiteralStr", "value": 'ADA Accessible'}], "values": [
 						{"type": "StrType"}, 
 						{"type": "StrType"}]}, 
 					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'status'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'region id'}, {"type": "LiteralStr", "value": 'congressional district'}, {"type": "LiteralStr", "value": 'address'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'line 1'}, {"type": "LiteralStr", "value": 'line 2'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'state'}, {"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'county'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}]}]}]}},
             }
         
         }
@@ -89,8 +89,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

@@ -30,29 +30,29 @@ def _tifa_definitions():
                 "name": 'get_transaction',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Slave'}, {"type": "LiteralStr", "value": 'Transaction'}, {"type": "LiteralStr", "value": 'Seller'}, {"type": "LiteralStr", "value": 'Buyer'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Skin Color'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Gender'}, {"type": "LiteralStr", "value": 'Age'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Child Slaves'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Sale Details'}, {"type": "LiteralStr", "value": 'Number of Adult Slaves'}, {"type": "LiteralStr", "value": 'Number of Total Slaves Purchased'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Price'}, {"type": "LiteralStr", "value": 'Payment Method'}, {"type": "LiteralStr", "value": 'Predicted Interest Rate'}, {"type": "LiteralStr", "value": 'Discount Rate'}, {"type": "LiteralStr", "value": 'Prices Listed'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}, {"type": "LiteralStr", "value": 'State of Origin'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Seller'}, {"type": "LiteralStr", "value": 'Slave'}, {"type": "LiteralStr", "value": 'Transaction'}, {"type": "LiteralStr", "value": 'Buyer'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State of Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}, {"type": "LiteralStr", "value": 'State of Origin'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Skin Color'}, {"type": "LiteralStr", "value": 'Gender'}, {"type": "LiteralStr", "value": 'Age'}, {"type": "LiteralStr", "value": 'Name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Adult Slaves'}, {"type": "LiteralStr", "value": 'Sale Details'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Number of Total Slaves Purchased'}, {"type": "LiteralStr", "value": 'Number of Child Slaves'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Payment Method'}, {"type": "LiteralStr", "value": 'Predicted Interest Rate'}, {"type": "LiteralStr", "value": 'Price'}, {"type": "LiteralStr", "value": 'Prices Listed'}, {"type": "LiteralStr", "value": 'Discount Rate'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State of Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
@@ -92,8 +92,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

@@ -286,139 +286,17 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-county_crime-__0__-Data-Totals' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Violent"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Totals-Violent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Property"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Totals-Property'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_crime-__0__-Data-Totals" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_crime-__0__-Data-Totals-Violent").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Violent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Totals-Property").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Property" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-county_crime-__0__-Data-Rates-Property' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>897.3</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
-            
-            <tr> <td><code>"Burglary"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>234.1</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
-            
-            <tr> <td><code>"Larceny"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>572.2</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.</td> </tr>
-            
-            <tr> <td><code>"Motor"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>91.0</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_crime-__0__-Data-Rates-Property" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Property-All").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Property-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Property-Burglary").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Property-Burglary" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Property-Larceny").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Property-Larceny" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Property-Motor").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Property-Motor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
     <div id='explore-county_crime-__0__' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
             
             <tr> <td><code>"State"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -430,14 +308,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>The long name of the state that this report was made for.</td> </tr>
-            
-            <tr> <td><code>"Data"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"Year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -460,6 +330,8 @@ $(document).ready(function() {
             
         </table>
     </div>
+    
+        
     
         
         <div id='explore-county_crime-__0__-State' title='Previewing Values'>
@@ -724,8 +596,6 @@ $(document).ready(function() {
         
     
         
-    
-        
         <div id='explore-county_crime-__0__-Department' title='Previewing Values'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Value</th> <th>Count</th></tr>
@@ -771,12 +641,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Watertown Police Dept"</code></td>
+                    <td><code>"Columbus Police Dept"</code></td>
                     <td>140</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Columbus Police Dept"</code></td>
+                    <td><code>"Watertown Police Dept"</code></td>
                     <td>140</td>
                 </tr>
             
@@ -811,7 +681,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Wilmington Police Dept"</code></td>
+                    <td><code>"Lexington Police Dept"</code></td>
                     <td>116</td>
                 </tr>
             
@@ -821,7 +691,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Lexington Police Dept"</code></td>
+                    <td><code>"Union City Police Dept"</code></td>
                     <td>116</td>
                 </tr>
             
@@ -831,17 +701,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Union City Police Dept"</code></td>
+                    <td><code>"Wilmington Police Dept"</code></td>
                     <td>116</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Orange County Sheriff Department"</code></td>
+                    <td><code>"Bristol Police Dept"</code></td>
                     <td>115</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Bristol Police Dept"</code></td>
+                    <td><code>"Orange County Sheriff Department"</code></td>
                     <td>115</td>
                 </tr>
             
@@ -851,12 +721,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Rochester Police Dept"</code></td>
+                    <td><code>"Milford Police Dept"</code></td>
                     <td>113</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Milford Police Dept"</code></td>
+                    <td><code>"Rochester Police Dept"</code></td>
                     <td>113</td>
                 </tr>
             
@@ -871,22 +741,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Troy Police Dept"</code></td>
-                    <td>109</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Ashland Police Dept"</code></td>
                     <td>109</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Manchester Police Dept"</code></td>
-                    <td>108</td>
+                    <td><code>"Troy Police Dept"</code></td>
+                    <td>109</td>
                 </tr>
             
                 <tr>
                     <td><code>"Monroe County Sheriff Department"</code></td>
+                    <td>108</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Manchester Police Dept"</code></td>
                     <td>108</td>
                 </tr>
             
@@ -916,17 +786,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Marion Police Dept"</code></td>
+                    <td>99</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Lincoln Police Dept"</code></td>
                     <td>99</td>
                 </tr>
             
                 <tr>
                     <td><code>"Plainfield Police Dept"</code></td>
-                    <td>99</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Marion Police Dept"</code></td>
                     <td>99</td>
                 </tr>
             
@@ -951,71 +821,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Montgomery County Sheriff Department"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jackson Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Newark Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Roseville Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fayetteville Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Aurora Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fremont Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Orange Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Smyrna Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Columbia Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Albany Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Long Beach Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Clayton Police Dept"</code></td>
-                    <td>87</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Greenwood Police Dept"</code></td>
                     <td>87</td>
                 </tr>
@@ -1026,7 +831,87 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Lafayette Police Dept"</code></td>
+                    <td><code>"Albany Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clayton Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Newark Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Smyrna Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Roseville Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Columbia Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orange Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fayetteville Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fremont Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aurora Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Long Beach Police Dept"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery County Sheriff Department"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fairfield Police Dept"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sanford Police Dept"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Webster Police Dept"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mount Pleasant Police Dept"</code></td>
                     <td>86</td>
                 </tr>
             
@@ -1041,17 +926,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Mount Pleasant Police Dept"</code></td>
-                    <td>86</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Webster Police Dept"</code></td>
-                    <td>86</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sanford Police Dept"</code></td>
+                    <td><code>"Lafayette Police Dept"</code></td>
                     <td>86</td>
                 </tr>
             
@@ -1061,32 +936,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Fairfield Police Dept"</code></td>
-                    <td>86</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Glendale Police Dept"</code></td>
                     <td>86</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Gainesville Police Dept"</code></td>
-                    <td>85</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Walker County Sheriff Department"</code></td>
-                    <td>85</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Harrison County Sheriff Department"</code></td>
-                    <td>85</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Columbia County Sheriff Department"</code></td>
                     <td>85</td>
                 </tr>
             
@@ -1096,13 +951,18 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Wood County Sheriff Department"</code></td>
-                    <td>84</td>
+                    <td><code>"Gainesville Police Dept"</code></td>
+                    <td>85</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Marion County Sheriff Office"</code></td>
-                    <td>84</td>
+                    <td><code>"Columbia County Sheriff Department"</code></td>
+                    <td>85</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison County Sheriff Department"</code></td>
+                    <td>85</td>
                 </tr>
             
                 <tr>
@@ -1112,6 +972,16 @@ $(document).ready(function() {
             
                 <tr>
                     <td><code>"Richmond Police Dept"</code></td>
+                    <td>84</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marion County Sheriff Office"</code></td>
+                    <td>84</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wood County Sheriff Department"</code></td>
                     <td>84</td>
                 </tr>
             
@@ -1141,11 +1011,6 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Garden City Police Dept"</code></td>
-                    <td>80</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Clark County Sheriff Department"</code></td>
                     <td>80</td>
                 </tr>
@@ -1156,8 +1021,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Franklin County Sheriff Department"</code></td>
-                    <td>79</td>
+                    <td><code>"Garden City Police Dept"</code></td>
+                    <td>80</td>
                 </tr>
             
                 <tr>
@@ -1166,8 +1031,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Greenfield Police Dept"</code></td>
-                    <td>78</td>
+                    <td><code>"Franklin County Sheriff Department"</code></td>
+                    <td>79</td>
                 </tr>
             
                 <tr>
@@ -1176,12 +1041,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Fayette County Sheriff Department"</code></td>
-                    <td>77</td>
+                    <td><code>"Greenfield Police Dept"</code></td>
+                    <td>78</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Douglas County Sheriff Office"</code></td>
+                    <td><code>"Winchester Police Dept"</code></td>
                     <td>77</td>
                 </tr>
             
@@ -1191,7 +1056,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Winchester Police Dept"</code></td>
+                    <td><code>"Fayette County Sheriff Department"</code></td>
+                    <td>77</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Douglas County Sheriff Office"</code></td>
                     <td>77</td>
                 </tr>
             
@@ -1216,17 +1086,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Bloomington Police Dept"</code></td>
-                    <td>74</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Freeport Police Dept"</code></td>
                     <td>74</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Decatur Police Dept"</code></td>
+                    <td><code>"Bloomington Police Dept"</code></td>
+                    <td>74</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Clair County Sheriff Department"</code></td>
                     <td>73</td>
                 </tr>
             
@@ -1247,6 +1117,12 @@ $(document).ready(function() {
           width: 600
         });
         
+        $("#btn-explore-county_crime-__0__-Data").click(function() {
+            $( "#explore-county_crime-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-county_crime-__0__-State").click(function() {
             $( "#explore-county_crime-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -1260,12 +1136,6 @@ $(document).ready(function() {
           autoOpen: false,
           width: 600
         });    
-        
-        
-        $("#btn-explore-county_crime-__0__-Data").click(function() {
-            $( "#explore-county_crime-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
         
         
         $("#btn-explore-county_crime-__0__-Year").click(function() {
@@ -1296,13 +1166,13 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Totals"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Totals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>7690</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>The number of people living in this state at the time the report was created.</td> </tr>
             
             <tr> <td><code>"Rates"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -1312,13 +1182,13 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"Totals"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <code>7690</code>
+                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Totals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
-                 <td>The number of people living in this state at the time the report was created.</td> </tr>
+                 <td></td> </tr>
             
         </table>
     </div>
@@ -1336,8 +1206,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-county_crime-__0__-Data-Totals").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_crime-__0__-Data-Population").click(function() {
+            $( "#explore-county_crime-__0__-Data-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1348,235 +1218,8 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-county_crime-__0__-Data-Population").click(function() {
-            $( "#explore-county_crime-__0__-Data-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-county_crime-__0__-Data-Totals-Property' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>69</code>
-                    
-                 </td> 
-                 <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
-            
-            <tr> <td><code>"Burglary"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>18</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
-            
-            <tr> <td><code>"Larceny"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>44</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of burglaries, or theft of personal property.</td> </tr>
-            
-            <tr> <td><code>"Motor"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>7.0</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_crime-__0__-Data-Totals-Property" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_crime-__0__-Data-Totals-Property-All").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Property-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Totals-Property-Burglary").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Property-Burglary" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Totals-Property-Larceny").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Property-Larceny" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Totals-Property-Motor").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Property-Motor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-county_crime-__0__-Data-Rates' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Violent"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Rates-Violent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Property"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Rates-Property'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_crime-__0__-Data-Rates" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Violent").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Violent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Property").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Property" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-county_crime-__0__-Data-Rates-Violent' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>234.1</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td> </tr>
-            
-            <tr> <td><code>"Rape"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>13.0</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
-            
-            <tr> <td><code>"Robbery"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>26.0</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td> </tr>
-            
-            <tr> <td><code>"Assault"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>182.1</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td> </tr>
-            
-            <tr> <td><code>"Murder"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>13.0</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-county_crime-__0__-Data-Rates-Violent" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-All").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Violent-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-Rape").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Violent-Rape" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-Robbery").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Violent-Robbery" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-Assault").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Violent-Assault" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-Murder").click(function() {
-            $( "#explore-county_crime-__0__-Data-Rates-Violent-Murder" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_crime-__0__-Data-Totals").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1588,14 +1231,6 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>18</code>
-                    
-                 </td> 
-                 <td>This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td> </tr>
-            
             <tr> <td><code>"Rape"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -1603,6 +1238,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
+            
+            <tr> <td><code>"Murder"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
             
             <tr> <td><code>"Robbery"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -1612,6 +1255,14 @@ $(document).ready(function() {
                  </td> 
                  <td>This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td> </tr>
             
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>18</code>
+                    
+                 </td> 
+                 <td>This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td> </tr>
+            
             <tr> <td><code>"Assault"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -1619,14 +1270,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td> </tr>
-            
-            <tr> <td><code>"Murder"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
             
         </table>
     </div>
@@ -1648,14 +1291,14 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-county_crime-__0__-Data-Totals-Violent-All").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Violent-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_crime-__0__-Data-Totals-Violent-Rape").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Violent-Rape" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_crime-__0__-Data-Totals-Violent-Rape").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Violent-Rape" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-county_crime-__0__-Data-Totals-Violent-Murder").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Violent-Murder" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1666,14 +1309,371 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-county_crime-__0__-Data-Totals-Violent-All").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Violent-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-county_crime-__0__-Data-Totals-Violent-Assault").click(function() {
             $( "#explore-county_crime-__0__-Data-Totals-Violent-Assault" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-county_crime-__0__-Data-Totals-Violent-Murder").click(function() {
-            $( "#explore-county_crime-__0__-Data-Totals-Violent-Murder" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-county_crime-__0__-Data-Rates' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Property"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Rates-Property'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Violent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Rates-Violent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_crime-__0__-Data-Rates" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Property").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Property" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Violent").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Violent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-county_crime-__0__-Data-Rates-Property' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Larceny"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>572.2</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.</td> </tr>
+            
+            <tr> <td><code>"Motor"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>91.0</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
+            
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>897.3</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
+            
+            <tr> <td><code>"Burglary"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>234.1</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_crime-__0__-Data-Rates-Property" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Property-Larceny").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Property-Larceny" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Property-Motor").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Property-Motor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Property-All").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Property-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Property-Burglary").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Property-Burglary" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-county_crime-__0__-Data-Totals' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Property"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Totals-Property'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Violent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-county_crime-__0__-Data-Totals-Violent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_crime-__0__-Data-Totals" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_crime-__0__-Data-Totals-Property").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Property" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Totals-Violent").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Violent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-county_crime-__0__-Data-Rates-Violent' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Rape"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>13.0</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
+            
+            <tr> <td><code>"Murder"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>13.0</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
+            
+            <tr> <td><code>"Robbery"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>26.0</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td> </tr>
+            
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>234.1</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td> </tr>
+            
+            <tr> <td><code>"Assault"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>182.1</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_crime-__0__-Data-Rates-Violent" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-Rape").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Violent-Rape" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-Murder").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Violent-Murder" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-Robbery").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Violent-Robbery" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-All").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Violent-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Rates-Violent-Assault").click(function() {
+            $( "#explore-county_crime-__0__-Data-Rates-Violent-Assault" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-county_crime-__0__-Data-Totals-Property' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Larceny"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>44</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of burglaries, or theft of personal property.</td> </tr>
+            
+            <tr> <td><code>"Motor"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>7.0</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
+            
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>69</code>
+                    
+                 </td> 
+                 <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
+            
+            <tr> <td><code>"Burglary"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>18</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-county_crime-__0__-Data-Totals-Property" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-county_crime-__0__-Data-Totals-Property-Larceny").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Property-Larceny" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Totals-Property-Motor").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Property-Motor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Totals-Property-All").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Property-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-county_crime-__0__-Data-Totals-Property-Burglary").click(function() {
+            $( "#explore-county_crime-__0__-Data-Totals-Property-Burglary" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

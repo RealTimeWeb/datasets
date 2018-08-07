@@ -195,28 +195,6 @@ $(document).ready(function() {
 </script>
 
 
-    <div id='explore-airlines' title='List'>
-        
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
-            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-airlines-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
-            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-airlines" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        $("#btn-explore-airlines-__0__").click(function() {
-            $( "#explore-airlines-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
-            $('.ui-dialog :button').blur();
-        });
-    });
-    </script>
-
     <div id='explore-airlines-__0__-Statistics-Carriers-Names' title='List'>
         
         <table class='table table-condensed table-striped table-bordered' >
@@ -239,576 +217,33 @@ $(document).ready(function() {
     });
     </script>
 
-
-
-    <div id='explore-airlines-__0__-Airport' title='Dictionary (2 keys)'>
+    <div id='explore-airlines' title='List'>
+        
         <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Name"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Atlanta, GA: Hartsfield-Jackson Atlanta International"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Airport-Name'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The full name of this airport.</td> </tr>
-            
-            <tr> <td><code>"Code"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"ATL"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Airport-Code'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The 3 letter code for this airport, assigned by IATA. For more information, consult this <a href='https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code'>List of Airport Codes</a>.</td> </tr>
-            
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-airlines-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
         </table>
     </div>
-    
-        
-        <div id='explore-airlines-__0__-Airport-Name' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Portland, OR: Portland International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Detroit, MI: Detroit Metro Wayne County"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Washington, DC: Washington Dulles International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Atlanta, GA: Hartsfield-Jackson Atlanta International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New York, NY: John F. Kennedy International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Washington, DC: Ronald Reagan Washington National"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fort Lauderdale, FL: Fort Lauderdale-Hollywood Int..."</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New York, NY: LaGuardia"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chicago, IL: Chicago Midway International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Salt Lake City, UT: Salt Lake City International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dallas/Fort Worth, TX: Dallas/Fort Worth International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Orlando, FL: Orlando International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Las Vegas, NV: McCarran International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Newark, NJ: Newark Liberty International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Baltimore, MD: Baltimore/Washington International ..."</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Miami, FL: Miami International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chicago, IL: Chicago O'Hare International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Charlotte, NC: Charlotte Douglas International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Denver, CO: Denver International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Minneapolis, MN: Minneapolis-St Paul International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Houston, TX: George Bush Intercontinental/Houston"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Los Angeles, CA: Los Angeles International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Boston, MA: Logan International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Seattle, WA: Seattle/Tacoma International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tampa, FL: Tampa International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Philadelphia, PA: Philadelphia International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Phoenix, AZ: Phoenix Sky Harbor International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Diego, CA: San Diego International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Francisco, CA: San Francisco International"</code></td>
-                    <td>152</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-airlines-__0__-Airport-Code' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"LAS"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PHX"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PHL"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DFW"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DCA"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ORD"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"LGA"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MIA"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MCO"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"LAX"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BOS"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ATL"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MSP"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"IAH"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SFO"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SAN"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"IAD"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"EWR"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SEA"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DEN"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BWI"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PDX"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"TPA"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"DTW"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"JFK"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MDW"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"FLL"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CLT"</code></td>
-                    <td>152</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SLC"</code></td>
-                    <td>152</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
     <script>
     $(document).ready(function() {
-        $( "#explore-airlines-__0__-Airport" ).dialog({
+        $( "#explore-airlines" ).dialog({
           autoOpen: false,
           width: 600
         });
-        
-        $("#btn-explore-airlines-__0__-Airport-Name").click(function() {
-            $( "#explore-airlines-__0__-Airport-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__").click(function() {
+            $( "#explore-airlines-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
             $('.ui-dialog :button').blur();
         });
-        
-        $("#btn-explore-airlines-__0__-Airport-Name").click(function() {
-            $( "#explore-airlines-__0__-Airport-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-airlines-__0__-Airport-Name" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-airlines-__0__-Airport-Code").click(function() {
-            $( "#explore-airlines-__0__-Airport-Code" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-airlines-__0__-Airport-Code").click(function() {
-            $( "#explore-airlines-__0__-Airport-Code" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-airlines-__0__-Airport-Code" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
     });
     </script>
 
-    <div id='explore-airlines-__0__-Statistics' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"# of Delays"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics-_-of-Delays'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Carriers"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics-Carriers'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Flights"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics-Flights'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Minutes Delayed"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics-Minutes-Delayed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-airlines-__0__-Statistics" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays").click(function() {
-            $( "#explore-airlines-__0__-Statistics-_-of-Delays" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-Carriers").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Carriers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-Flights").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Flights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
 
-    <div id='explore-airlines-__0__-Statistics-_-of-Delays' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Carrier"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1009</code>
-                    
-                 </td> 
-                 <td>The number of delays and cancellations due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.) in this month.</td> </tr>
-            
-            <tr> <td><code>"National Aviation System"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>3217</code>
-                    
-                 </td> 
-                 <td>The number of delays and cancellations attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control in this month.</td> </tr>
-            
-            <tr> <td><code>"Late Aircraft"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1275</code>
-                    
-                 </td> 
-                 <td>The number of delays and cancellations caused by a previous flight with the same aircraft arriving late, causing the present flight to depart late in this month.</td> </tr>
-            
-            <tr> <td><code>"Security"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>17</code>
-                    
-                 </td> 
-                 <td>Number of delays or cancellations caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas in this month.</td> </tr>
-            
-            <tr> <td><code>"Weather"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>328</code>
-                    
-                 </td> 
-                 <td>Number of delays or cancellations caused by significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane in this month.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-airlines-__0__-Statistics-_-of-Delays" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-Carrier").click(function() {
-            $( "#explore-airlines-__0__-Statistics-_-of-Delays-Carrier" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-National-Aviation-System").click(function() {
-            $( "#explore-airlines-__0__-Statistics-_-of-Delays-National-Aviation-System" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-Late-Aircraft").click(function() {
-            $( "#explore-airlines-__0__-Statistics-_-of-Delays-Late-Aircraft" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-Security").click(function() {
-            $( "#explore-airlines-__0__-Statistics-_-of-Delays-Security" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-Weather").click(function() {
-            $( "#explore-airlines-__0__-Statistics-_-of-Delays-Weather" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
 
     <div id='explore-airlines-__0__-Statistics-Minutes-Delayed' title='Dictionary (6 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Carrier"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>61606</code>
-                    
-                 </td> 
-                 <td>The number of minutes delayed due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.) in this month.</td> </tr>
             
             <tr> <td><code>"Total"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -818,6 +253,22 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
+            <tr> <td><code>"Weather"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>19474</code>
+                    
+                 </td> 
+                 <td>Number of of minutes delayed caused by significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane in this month.</td> </tr>
+            
+            <tr> <td><code>"Carrier"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>61606</code>
+                    
+                 </td> 
+                 <td>The number of minutes delayed due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.) in this month.</td> </tr>
+            
             <tr> <td><code>"Late Aircraft"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -825,14 +276,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>The number of minutes delayed caused by a previous flight with the same aircraft arriving late, causing the present flight to depart late in this month.</td> </tr>
-            
-            <tr> <td><code>"National Aviation System"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>118831</code>
-                    
-                 </td> 
-                 <td>The number of minutes delayed attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control in this month.</td> </tr>
             
             <tr> <td><code>"Security"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -842,13 +285,13 @@ $(document).ready(function() {
                  </td> 
                  <td>Number of minutes delayed caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas in this month.</td> </tr>
             
-            <tr> <td><code>"Weather"</code></td> 
+            <tr> <td><code>"National Aviation System"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>19474</code>
+                    <code>118831</code>
                     
                  </td> 
-                 <td>Number of of minutes delayed caused by significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane in this month.</td> </tr>
+                 <td>The number of minutes delayed attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control in this month.</td> </tr>
             
         </table>
     </div>
@@ -872,32 +315,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-Carrier").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-Carrier" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-Total").click(function() {
             $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-Late-Aircraft").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-Late-Aircraft" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-National-Aviation-System").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-National-Aviation-System" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-Security").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-Security" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -908,50 +327,76 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-Carrier").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-Carrier" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-Late-Aircraft").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-Late-Aircraft" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-Security").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-Security" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed-National-Aviation-System").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed-National-Aviation-System" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
     });
     </script>
 
-    <div id='explore-airlines-__0__-Time' title='Dictionary (4 keys)'>
+    <div id='explore-airlines-__0__-Statistics-Flights' title='Dictionary (5 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Year"</code></td> 
+            <tr> <td><code>"Cancelled"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>2003</code>
+                    <code>216</code>
                     
                  </td> 
-                 <td>The reported year as a 4-digit number.</td> </tr>
+                 <td>The number of flights that were cancelled in this month.</td> </tr>
             
-            <tr> <td><code>"Label"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"2003/06"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Time-Label'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The "year/month" reported as a string, to make it easier to sort by time periods.</td> </tr>
-            
-            <tr> <td><code>"Month"</code></td> 
+            <tr> <td><code>"Delayed"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>6</code>
+                    <code>5843</code>
                     
                  </td> 
-                 <td>The reported month as a number. 0 is January, 1 is February, etc.</td> </tr>
+                 <td>The number of flights that were delayed in this month.</td> </tr>
             
-            <tr> <td><code>"Month Name"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>"June"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Time-Month-Name'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    <code>30060</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>The total number of flights in this month.</td> </tr>
+            
+            <tr> <td><code>"Diverted"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>27</code>
+                    
+                 </td> 
+                 <td>The number of flights that were diverted in this month.</td> </tr>
+            
+            <tr> <td><code>"On Time"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>23974</code>
+                    
+                 </td> 
+                 <td>The number of flights that were on time in this month.</td> </tr>
             
         </table>
     </div>
@@ -959,639 +404,48 @@ $(document).ready(function() {
         
     
         
-        <div id='explore-airlines-__0__-Time-Label' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"2010/03"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2009/02"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2009/06"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/05"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2008/03"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2005/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2015/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2009/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2013/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2009/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2008/02"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/05"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011/02"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2013/07"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2015/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2003/08"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/08"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2006/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2015/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2009/07"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2015/08"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/06"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/02"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/11"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2006/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2008/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011/07"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2006/05"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2003/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2008/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/08"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/11"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/03"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2003/11"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/02"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2008/06"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2008/11"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/05"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2005/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2003/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2008/05"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011/08"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2013/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/07"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2006/03"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2006/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011/06"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/03"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2006/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/06"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/07"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2013/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/02"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2009/05"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2008/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2015/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2005/08"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2007/06"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2005/10"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2005/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2015/02"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011/12"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011/11"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/01"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012/02"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/08"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2013/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2006/06"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2015/11"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2005/06"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2006/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2013/05"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2005/05"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2009/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2005/07"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2015/03"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/04"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2004/11"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2014/09"</code></td>
-                    <td>29</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
-        
     
         
     
         
-        <div id='explore-airlines-__0__-Time-Month-Name' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"July"</code></td>
-                    <td>377</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"June"</code></td>
-                    <td>377</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"November"</code></td>
-                    <td>377</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"September"</code></td>
-                    <td>377</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"August"</code></td>
-                    <td>377</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"October"</code></td>
-                    <td>377</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January"</code></td>
-                    <td>377</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"December"</code></td>
-                    <td>377</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"May"</code></td>
-                    <td>348</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March"</code></td>
-                    <td>348</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"April"</code></td>
-                    <td>348</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Febuary"</code></td>
-                    <td>348</td>
-                </tr>
-            
-            
-        </table>
-        </div>
+    
         
     
     <script>
     $(document).ready(function() {
-        $( "#explore-airlines-__0__-Time" ).dialog({
+        $( "#explore-airlines-__0__-Statistics-Flights" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-airlines-__0__-Time-Year").click(function() {
-            $( "#explore-airlines-__0__-Time-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics-Flights-Cancelled").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Flights-Cancelled" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-airlines-__0__-Time-Label").click(function() {
-            $( "#explore-airlines-__0__-Time-Label" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-airlines-__0__-Time-Label").click(function() {
-            $( "#explore-airlines-__0__-Time-Label" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-airlines-__0__-Time-Label" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-airlines-__0__-Time-Month").click(function() {
-            $( "#explore-airlines-__0__-Time-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics-Flights-Delayed").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Flights-Delayed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-airlines-__0__-Time-Month-Name").click(function() {
-            $( "#explore-airlines-__0__-Time-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics-Flights-Total").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Flights-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-airlines-__0__-Time-Month-Name").click(function() {
-            $( "#explore-airlines-__0__-Time-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        
+        $("#btn-explore-airlines-__0__-Statistics-Flights-Diverted").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Flights-Diverted" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
-        $( "#explore-airlines-__0__-Time-Month-Name" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
+        
+        
+        $("#btn-explore-airlines-__0__-Statistics-Flights-On-Time").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Flights-On-Time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
         
         
     });
@@ -1601,10 +455,10 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Statistics"</code></td> 
+            <tr> <td><code>"Time"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Time'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -1617,10 +471,10 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Time"</code></td> 
+            <tr> <td><code>"Statistics"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Time'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -1641,8 +495,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-airlines-__0__-Statistics").click(function() {
-            $( "#explore-airlines-__0__-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Time").click(function() {
+            $( "#explore-airlines-__0__-Time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1653,10 +507,470 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-airlines-__0__-Time").click(function() {
-            $( "#explore-airlines-__0__-Time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics").click(function() {
+            $( "#explore-airlines-__0__-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        
+    });
+    </script>
+
+    <div id='explore-airlines-__0__-Statistics' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Minutes Delayed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics-Minutes-Delayed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Flights"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics-Flights'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"# of Delays"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics-_-of-Delays'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Carriers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Statistics-Carriers'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airlines-__0__-Statistics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-airlines-__0__-Statistics-Minutes-Delayed").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Minutes-Delayed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-airlines-__0__-Statistics-Flights").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Flights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays").click(function() {
+            $( "#explore-airlines-__0__-Statistics-_-of-Delays" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-airlines-__0__-Statistics-Carriers").click(function() {
+            $( "#explore-airlines-__0__-Statistics-Carriers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-airlines-__0__-Airport' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Code"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"ATL"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Airport-Code'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The 3 letter code for this airport, assigned by IATA. For more information, consult this <a href='https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code'>List of Airport Codes</a>.</td> </tr>
+            
+            <tr> <td><code>"Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Atlanta, GA: Hartsfield-Jackson Atlanta International"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Airport-Name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The full name of this airport.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+        <div id='explore-airlines-__0__-Airport-Code' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"DEN"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PHX"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BOS"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PDX"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ORD"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DCA"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"JFK"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BWI"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MSP"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"FLL"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IAD"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MCO"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IAH"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LAS"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ATL"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SEA"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SFO"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"EWR"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LGA"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DTW"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TPA"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LAX"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CLT"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SLC"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MDW"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SAN"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DFW"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MIA"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PHL"</code></td>
+                    <td>152</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-airlines-__0__-Airport-Name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Atlanta, GA: Hartsfield-Jackson Atlanta International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Francisco, CA: San Francisco International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore, MD: Baltimore/Washington International ..."</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Seattle, WA: Seattle/Tacoma International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tampa, FL: Tampa International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Portland, OR: Portland International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charlotte, NC: Charlotte Douglas International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dallas/Fort Worth, TX: Dallas/Fort Worth International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fort Lauderdale, FL: Fort Lauderdale-Hollywood Int..."</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orlando, FL: Orlando International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chicago, IL: Chicago Midway International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minneapolis, MN: Minneapolis-St Paul International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York, NY: John F. Kennedy International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Las Vegas, NV: McCarran International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chicago, IL: Chicago O'Hare International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Boston, MA: Logan International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Detroit, MI: Detroit Metro Wayne County"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington, DC: Ronald Reagan Washington National"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Denver, CO: Denver International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Houston, TX: George Bush Intercontinental/Houston"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Phoenix, AZ: Phoenix Sky Harbor International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Philadelphia, PA: Philadelphia International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Miami, FL: Miami International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Los Angeles, CA: Los Angeles International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Newark, NJ: Newark Liberty International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Diego, CA: San Diego International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington, DC: Washington Dulles International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York, NY: LaGuardia"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Salt Lake City, UT: Salt Lake City International"</code></td>
+                    <td>152</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airlines-__0__-Airport" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-airlines-__0__-Airport-Code").click(function() {
+            $( "#explore-airlines-__0__-Airport-Code" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airlines-__0__-Airport-Code").click(function() {
+            $( "#explore-airlines-__0__-Airport-Code" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-airlines-__0__-Airport-Code" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-airlines-__0__-Airport-Name").click(function() {
+            $( "#explore-airlines-__0__-Airport-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airlines-__0__-Airport-Name").click(function() {
+            $( "#explore-airlines-__0__-Airport-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-airlines-__0__-Airport-Name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
         
         
     });
@@ -1711,49 +1025,49 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-airlines-__0__-Statistics-Flights' title='Dictionary (5 keys)'>
+    <div id='explore-airlines-__0__-Statistics-_-of-Delays' title='Dictionary (5 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Total"</code></td> 
+            <tr> <td><code>"Carrier"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>30060</code>
+                    <code>1009</code>
                     
                  </td> 
-                 <td>The total number of flights in this month.</td> </tr>
+                 <td>The number of delays and cancellations due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.) in this month.</td> </tr>
             
-            <tr> <td><code>"Delayed"</code></td> 
+            <tr> <td><code>"Late Aircraft"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>5843</code>
+                    <code>1275</code>
                     
                  </td> 
-                 <td>The number of flights that were delayed in this month.</td> </tr>
+                 <td>The number of delays and cancellations caused by a previous flight with the same aircraft arriving late, causing the present flight to depart late in this month.</td> </tr>
             
-            <tr> <td><code>"On Time"</code></td> 
+            <tr> <td><code>"Security"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>23974</code>
+                    <code>17</code>
                     
                  </td> 
-                 <td>The number of flights that were on time in this month.</td> </tr>
+                 <td>Number of delays or cancellations caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas in this month.</td> </tr>
             
-            <tr> <td><code>"Cancelled"</code></td> 
+            <tr> <td><code>"Weather"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>216</code>
+                    <code>328</code>
                     
                  </td> 
-                 <td>The number of flights that were cancelled in this month.</td> </tr>
+                 <td>Number of delays or cancellations caused by significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane in this month.</td> </tr>
             
-            <tr> <td><code>"Diverted"</code></td> 
+            <tr> <td><code>"National Aviation System"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>27</code>
+                    <code>3217</code>
                     
                  </td> 
-                 <td>The number of flights that were diverted in this month.</td> </tr>
+                 <td>The number of delays and cancellations attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control in this month.</td> </tr>
             
         </table>
     </div>
@@ -1770,39 +1084,725 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-airlines-__0__-Statistics-Flights" ).dialog({
+        $( "#explore-airlines-__0__-Statistics-_-of-Delays" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-airlines-__0__-Statistics-Flights-Total").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Flights-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-Carrier").click(function() {
+            $( "#explore-airlines-__0__-Statistics-_-of-Delays-Carrier" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-airlines-__0__-Statistics-Flights-Delayed").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Flights-Delayed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-Late-Aircraft").click(function() {
+            $( "#explore-airlines-__0__-Statistics-_-of-Delays-Late-Aircraft" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-airlines-__0__-Statistics-Flights-On-Time").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Flights-On-Time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-Security").click(function() {
+            $( "#explore-airlines-__0__-Statistics-_-of-Delays-Security" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-airlines-__0__-Statistics-Flights-Cancelled").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Flights-Cancelled" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-Weather").click(function() {
+            $( "#explore-airlines-__0__-Statistics-_-of-Delays-Weather" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-airlines-__0__-Statistics-Flights-Diverted").click(function() {
-            $( "#explore-airlines-__0__-Statistics-Flights-Diverted" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-airlines-__0__-Statistics-_-of-Delays-National-Aviation-System").click(function() {
+            $( "#explore-airlines-__0__-Statistics-_-of-Delays-National-Aviation-System" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        
+    });
+    </script>
+
+    <div id='explore-airlines-__0__-Time' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Label"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"2003/06"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Time-Label'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The "year/month" reported as a string, to make it easier to sort by time periods.</td> </tr>
+            
+            <tr> <td><code>"Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>6</code>
+                    
+                 </td> 
+                 <td>The reported month as a number. 0 is January, 1 is February, etc.</td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>2003</code>
+                    
+                 </td> 
+                 <td>The reported year as a 4-digit number.</td> </tr>
+            
+            <tr> <td><code>"Month Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"June"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-airlines-__0__-Time-Month-Name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+        <div id='explore-airlines-__0__-Time-Label' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"2012/02"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2007/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/07"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/03"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/05"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2009/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2014/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2014/05"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/09"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2014/07"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2004/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2008/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2004/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2004/02"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2014/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2006/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2008/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2014/03"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010/05"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2003/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2008/09"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010/03"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2006/05"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2006/12"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010/02"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010/07"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2005/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2013/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2007/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2014/09"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2013/07"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2008/02"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2013/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2004/03"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2009/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2003/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/07"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/09"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2014/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2005/05"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2004/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/02"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012/05"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2005/12"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2004/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2003/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2005/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2003/12"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2013/12"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2007/03"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2004/07"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2009/03"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2007/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2007/12"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2009/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2005/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2007/02"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2007/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2006/03"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011/05"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2013/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2009/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2008/12"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/12"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2008/11"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2005/03"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2014/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/02"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2006/04"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2013/02"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2006/07"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012/09"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2005/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2007/09"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2003/09"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2009/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2006/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2006/08"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016/01"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010/10"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2009/05"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2004/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2015/06"</code></td>
+                    <td>29</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+        <div id='explore-airlines-__0__-Time-Month-Name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"September"</code></td>
+                    <td>377</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"January"</code></td>
+                    <td>377</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June"</code></td>
+                    <td>377</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"December"</code></td>
+                    <td>377</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"October"</code></td>
+                    <td>377</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"November"</code></td>
+                    <td>377</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"August"</code></td>
+                    <td>377</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"July"</code></td>
+                    <td>377</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"May"</code></td>
+                    <td>348</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March"</code></td>
+                    <td>348</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"April"</code></td>
+                    <td>348</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Febuary"</code></td>
+                    <td>348</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airlines-__0__-Time" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-airlines-__0__-Time-Label").click(function() {
+            $( "#explore-airlines-__0__-Time-Label" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airlines-__0__-Time-Label").click(function() {
+            $( "#explore-airlines-__0__-Time-Label" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-airlines-__0__-Time-Label" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-airlines-__0__-Time-Month").click(function() {
+            $( "#explore-airlines-__0__-Time-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-airlines-__0__-Time-Year").click(function() {
+            $( "#explore-airlines-__0__-Time-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-airlines-__0__-Time-Month-Name").click(function() {
+            $( "#explore-airlines-__0__-Time-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airlines-__0__-Time-Month-Name").click(function() {
+            $( "#explore-airlines-__0__-Time-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-airlines-__0__-Time-Month-Name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
         
         
     });

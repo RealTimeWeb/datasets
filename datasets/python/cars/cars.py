@@ -30,29 +30,29 @@ def _tifa_definitions():
                 "name": 'get_cars',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Dimensions'}, {"type": "LiteralStr", "value": 'Fuel Information'}, {"type": "LiteralStr", "value": 'Engine Information'}, {"type": "LiteralStr", "value": 'Identification'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Height'}, {"type": "LiteralStr", "value": 'Width'}, {"type": "LiteralStr", "value": 'Length'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Engine Information'}, {"type": "LiteralStr", "value": 'Fuel Information'}, {"type": "LiteralStr", "value": 'Dimensions'}, {"type": "LiteralStr", "value": 'Identification'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Forward Gears'}, {"type": "LiteralStr", "value": 'Engine Type'}, {"type": "LiteralStr", "value": 'Engine Statistics'}, {"type": "LiteralStr", "value": 'Hybrid'}, {"type": "LiteralStr", "value": 'Driveline'}, {"type": "LiteralStr", "value": 'Transmission'}], "values": [
 					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Torque'}, {"type": "LiteralStr", "value": 'Horsepower'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
 					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Highway mpg'}, {"type": "LiteralStr", "value": 'City mpg'}, {"type": "LiteralStr", "value": 'Fuel Type'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Forward Gears'}, {"type": "LiteralStr", "value": 'Transmission'}, {"type": "LiteralStr", "value": 'Driveline'}, {"type": "LiteralStr", "value": 'Engine Type'}, {"type": "LiteralStr", "value": 'Engine Statistics'}, {"type": "LiteralStr", "value": 'Hybrid'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Width'}, {"type": "LiteralStr", "value": 'Length'}, {"type": "LiteralStr", "value": 'Height'}], "values": [
 					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Horsepower'}, {"type": "LiteralStr", "value": 'Torque'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'ID'}, {"type": "LiteralStr", "value": 'Classification'}, {"type": "LiteralStr", "value": 'Model Year'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Make'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Classification'}, {"type": "LiteralStr", "value": 'Model Year'}, {"type": "LiteralStr", "value": 'ID'}, {"type": "LiteralStr", "value": 'Make'}], "values": [
 					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
 					{"type": "StrType"}]}]}},
             }
         
@@ -89,8 +89,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

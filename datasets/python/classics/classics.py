@@ -30,57 +30,57 @@ def _tifa_definitions():
                 "name": 'get_books',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'bibliography'}, {"type": "LiteralStr", "value": 'metadata'}, {"type": "LiteralStr", "value": 'metrics'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'publication'}, {"type": "LiteralStr", "value": 'author'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'congress classifications'}, {"type": "LiteralStr", "value": 'subjects'}, {"type": "LiteralStr", "value": 'languages'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'year'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'birth'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'bibliography'}, {"type": "LiteralStr", "value": 'metrics'}, {"type": "LiteralStr", "value": 'metadata'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'languages'}, {"type": "LiteralStr", "value": 'congress classifications'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'publication'}, {"type": "LiteralStr", "value": 'author'}, {"type": "LiteralStr", "value": 'subjects'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "ListType", "subtype": 
 						{"type": "StrType"}}, 
 					{"type": "ListType", "subtype": 
 						{"type": "StrType"}}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'death'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
 					{"type": "ListType", "subtype": 
 						{"type": "StrType"}}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'formats'}, {"type": "LiteralStr", "value": 'downloads'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'id'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sentiments'}, {"type": "LiteralStr", "value": 'difficulty'}, {"type": "LiteralStr", "value": 'statistics'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'subjectivity'}, {"type": "LiteralStr", "value": 'polarity'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'gunning fog'}, {"type": "LiteralStr", "value": 'automated readability index'}, {"type": "LiteralStr", "value": 'coleman liau index'}, {"type": "LiteralStr", "value": 'flesch kincaid grade'}, {"type": "LiteralStr", "value": 'smog index'}, {"type": "LiteralStr", "value": 'linsear write formula'}, {"type": "LiteralStr", "value": 'flesch reading ease'}, {"type": "LiteralStr", "value": 'dale chall readability score'}, {"type": "LiteralStr", "value": 'difficult words'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sentences'}, {"type": "LiteralStr", "value": 'average sentence per word'}, {"type": "LiteralStr", "value": 'characters'}, {"type": "LiteralStr", "value": 'syllables'}, {"type": "LiteralStr", "value": 'words'}, {"type": "LiteralStr", "value": 'average letter per word'}, {"type": "LiteralStr", "value": 'average sentence length'}, {"type": "LiteralStr", "value": 'polysyllables'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'downloads'}, {"type": "LiteralStr", "value": 'formats'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'types'}, {"type": "LiteralStr", "value": 'total'}], "values": [
 						{"type": "ListType", "subtype": 
 							{"type": "StrType"}}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'difficulty'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'sentiments'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'flesch kincaid grade'}, {"type": "LiteralStr", "value": 'gunning fog'}, {"type": "LiteralStr", "value": 'flesch reading ease'}, {"type": "LiteralStr", "value": 'automated readability index'}, {"type": "LiteralStr", "value": 'linsear write formula'}, {"type": "LiteralStr", "value": 'difficult words'}, {"type": "LiteralStr", "value": 'dale chall readability score'}, {"type": "LiteralStr", "value": 'coleman liau index'}, {"type": "LiteralStr", "value": 'smog index'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'polysyllables'}, {"type": "LiteralStr", "value": 'average sentence length'}, {"type": "LiteralStr", "value": 'words'}, {"type": "LiteralStr", "value": 'sentences'}, {"type": "LiteralStr", "value": 'average letter per word'}, {"type": "LiteralStr", "value": 'average sentence per word'}, {"type": "LiteralStr", "value": 'syllables'}, {"type": "LiteralStr", "value": 'characters'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'polarity'}, {"type": "LiteralStr", "value": 'subjectivity'}], "values": [
-						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}]}},
             }
         
@@ -117,8 +117,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

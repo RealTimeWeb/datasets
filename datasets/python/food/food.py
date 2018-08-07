@@ -30,14 +30,25 @@ def _tifa_definitions():
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Nutrient Data Bank Number'}, {"type": "LiteralStr", "value": 'Category'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Description'}], "values": [
-				{"type": "NumType"}, 
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Cholesterol'}, {"type": "LiteralStr", "value": 'Lycopene'}, {"type": "LiteralStr", "value": 'Major Minerals'}, {"type": "LiteralStr", "value": 'Fat'}, {"type": "LiteralStr", "value": 'Carbohydrate'}, {"type": "LiteralStr", "value": 'Fiber'}, {"type": "LiteralStr", "value": 'Kilocalories'}, {"type": "LiteralStr", "value": 'Household Weights'}, {"type": "LiteralStr", "value": 'Lutein and Zeaxanthin'}, {"type": "LiteralStr", "value": 'Water'}, {"type": "LiteralStr", "value": 'Beta Carotene'}, {"type": "LiteralStr", "value": 'Manganese'}, {"type": "LiteralStr", "value": 'Ash'}, {"type": "LiteralStr", "value": 'Beta Cryptoxanthin'}, {"type": "LiteralStr", "value": 'Riboflavin'}, {"type": "LiteralStr", "value": 'Niacin'}, {"type": "LiteralStr", "value": 'Protein'}, {"type": "LiteralStr", "value": 'Thiamin'}, {"type": "LiteralStr", "value": 'Pantothenic Acid'}, {"type": "LiteralStr", "value": 'Refuse Percentage'}, {"type": "LiteralStr", "value": 'Alpha Carotene'}, {"type": "LiteralStr", "value": 'Sugar Total'}, {"type": "LiteralStr", "value": 'Vitamins'}, {"type": "LiteralStr", "value": 'Choline'}, {"type": "LiteralStr", "value": 'Selenium'}, {"type": "LiteralStr", "value": 'Retinol'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Category'}, {"type": "LiteralStr", "value": 'Nutrient Data Bank Number'}, {"type": "LiteralStr", "value": 'Description'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Beta Carotene'}, {"type": "LiteralStr", "value": 'Sugar Total'}, {"type": "LiteralStr", "value": 'Thiamin'}, {"type": "LiteralStr", "value": 'Pantothenic Acid'}, {"type": "LiteralStr", "value": 'Water'}, {"type": "LiteralStr", "value": 'Lutein and Zeaxanthin'}, {"type": "LiteralStr", "value": 'Riboflavin'}, {"type": "LiteralStr", "value": 'Refuse Percentage'}, {"type": "LiteralStr", "value": 'Cholesterol'}, {"type": "LiteralStr", "value": 'Fiber'}, {"type": "LiteralStr", "value": 'Niacin'}, {"type": "LiteralStr", "value": 'Choline'}, {"type": "LiteralStr", "value": 'Kilocalories'}, {"type": "LiteralStr", "value": 'Protein'}, {"type": "LiteralStr", "value": 'Manganese'}, {"type": "LiteralStr", "value": 'Alpha Carotene'}, {"type": "LiteralStr", "value": 'Vitamins'}, {"type": "LiteralStr", "value": 'Ash'}, {"type": "LiteralStr", "value": 'Fat'}, {"type": "LiteralStr", "value": 'Carbohydrate'}, {"type": "LiteralStr", "value": 'Selenium'}, {"type": "LiteralStr", "value": 'Beta Cryptoxanthin'}, {"type": "LiteralStr", "value": 'Retinol'}, {"type": "LiteralStr", "value": 'Household Weights'}, {"type": "LiteralStr", "value": 'Major Minerals'}, {"type": "LiteralStr", "value": 'Lycopene'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Copper'}, {"type": "LiteralStr", "value": 'Magnesium'}, {"type": "LiteralStr", "value": 'Sodium'}, {"type": "LiteralStr", "value": 'Zinc'}, {"type": "LiteralStr", "value": 'Potassium'}, {"type": "LiteralStr", "value": 'Iron'}, {"type": "LiteralStr", "value": 'Calcium'}, {"type": "LiteralStr", "value": 'Phosphorus'}], "values": [
-						{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Vitamin A - RAE'}, {"type": "LiteralStr", "value": 'Vitamin C'}, {"type": "LiteralStr", "value": 'Vitamin B6'}, {"type": "LiteralStr", "value": 'Vitamin K'}, {"type": "LiteralStr", "value": 'Vitamin E'}, {"type": "LiteralStr", "value": 'Vitamin B12'}, {"type": "LiteralStr", "value": 'Vitamin A - IU'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -45,7 +56,8 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Monosaturated Fat'}, {"type": "LiteralStr", "value": 'Total Lipid'}, {"type": "LiteralStr", "value": 'Polysaturated Fat'}, {"type": "LiteralStr", "value": 'Saturated Fat'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total Lipid'}, {"type": "LiteralStr", "value": 'Saturated Fat'}, {"type": "LiteralStr", "value": 'Polysaturated Fat'}, {"type": "LiteralStr", "value": 'Monosaturated Fat'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -53,26 +65,14 @@ def _tifa_definitions():
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1st Household Weight Description'}, {"type": "LiteralStr", "value": '2nd Household Weight'}, {"type": "LiteralStr", "value": '1st Household Weight'}, {"type": "LiteralStr", "value": '2nd Household Weight Description'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '2nd Household Weight'}, {"type": "LiteralStr", "value": '1st Household Weight Description'}, {"type": "LiteralStr", "value": '1st Household Weight'}, {"type": "LiteralStr", "value": '2nd Household Weight Description'}], "values": [
+						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}, 
-						{"type": "NumType"}, 
 						{"type": "StrType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Vitamin B6'}, {"type": "LiteralStr", "value": 'Vitamin K'}, {"type": "LiteralStr", "value": 'Vitamin C'}, {"type": "LiteralStr", "value": 'Vitamin A - IU'}, {"type": "LiteralStr", "value": 'Vitamin E'}, {"type": "LiteralStr", "value": 'Vitamin B12'}, {"type": "LiteralStr", "value": 'Vitamin A - RAE'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Phosphorus'}, {"type": "LiteralStr", "value": 'Zinc'}, {"type": "LiteralStr", "value": 'Copper'}, {"type": "LiteralStr", "value": 'Iron'}, {"type": "LiteralStr", "value": 'Sodium'}, {"type": "LiteralStr", "value": 'Potassium'}, {"type": "LiteralStr", "value": 'Magnesium'}, {"type": "LiteralStr", "value": 'Calcium'}], "values": [
+						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
@@ -80,9 +80,9 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
+				{"type": "StrType"}, 
+				{"type": "NumType"}, 
 				{"type": "StrType"}]}},
             }
         
@@ -119,8 +119,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

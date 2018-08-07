@@ -30,8 +30,8 @@ def _tifa_definitions():
                 "name": 'get_songs',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'song'}, {"type": "LiteralStr", "value": 'artist'}, {"type": "LiteralStr", "value": 'release'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'tatums_start'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'key_confidence'}, {"type": "LiteralStr", "value": 'tempo'}, {"type": "LiteralStr", "value": 'key'}, {"type": "LiteralStr", "value": 'duration'}, {"type": "LiteralStr", "value": 'mode_confidence'}, {"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'tatums_confidence'}, {"type": "LiteralStr", "value": 'time_signature_confidence'}, {"type": "LiteralStr", "value": 'artist_mbtags'}, {"type": "LiteralStr", "value": 'beats_start'}, {"type": "LiteralStr", "value": 'end_of_fade_in'}, {"type": "LiteralStr", "value": 'hotttnesss'}, {"type": "LiteralStr", "value": 'bars_confidence'}, {"type": "LiteralStr", "value": 'loudness'}, {"type": "LiteralStr", "value": 'artist_mbtags_count'}, {"type": "LiteralStr", "value": 'time_signature'}, {"type": "LiteralStr", "value": 'start_of_fade_out'}, {"type": "LiteralStr", "value": 'beats_confidence'}, {"type": "LiteralStr", "value": 'bars_start'}, {"type": "LiteralStr", "value": 'mode'}, {"type": "LiteralStr", "value": 'id'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'song'}, {"type": "LiteralStr", "value": 'release'}, {"type": "LiteralStr", "value": 'artist'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'key'}, {"type": "LiteralStr", "value": 'beats_start'}, {"type": "LiteralStr", "value": 'bars_confidence'}, {"type": "LiteralStr", "value": 'beats_confidence'}, {"type": "LiteralStr", "value": 'time_signature'}, {"type": "LiteralStr", "value": 'start_of_fade_out'}, {"type": "LiteralStr", "value": 'bars_start'}, {"type": "LiteralStr", "value": 'mode_confidence'}, {"type": "LiteralStr", "value": 'artist_mbtags'}, {"type": "LiteralStr", "value": 'end_of_fade_in'}, {"type": "LiteralStr", "value": 'tempo'}, {"type": "LiteralStr", "value": 'mode'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'duration'}, {"type": "LiteralStr", "value": 'loudness'}, {"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'tatums_confidence'}, {"type": "LiteralStr", "value": 'time_signature_confidence'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'artist_mbtags_count'}, {"type": "LiteralStr", "value": 'hotttnesss'}, {"type": "LiteralStr", "value": 'tatums_start'}, {"type": "LiteralStr", "value": 'key_confidence'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
@@ -47,17 +47,6 @@ def _tifa_definitions():
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'similar'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'familiarity'}, {"type": "LiteralStr", "value": 'hotttnesss'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'terms'}, {"type": "LiteralStr", "value": 'terms_freq'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
@@ -65,8 +54,19 @@ def _tifa_definitions():
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'id'}], "values": [
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'familiarity'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'terms_freq'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'similar'}, {"type": "LiteralStr", "value": 'terms'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'hotttnesss'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}]}},
             }
@@ -104,8 +104,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

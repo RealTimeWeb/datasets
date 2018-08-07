@@ -30,36 +30,36 @@ def _tifa_definitions():
                 "name": 'get_awardees',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'awarded'}, {"type": "LiteralStr", "value": 'military record'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'metadata'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'metadata'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'awarded'}, {"type": "LiteralStr", "value": 'military record'}], "values": [
 				{"type": "StrType"}, 
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'General Order number'}, {"type": "LiteralStr", "value": 'issued'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'accredited to'}, {"type": "LiteralStr", "value": 'citation'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'longitude'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'organization'}, {"type": "LiteralStr", "value": 'division'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'entered service at'}, {"type": "LiteralStr", "value": 'rank'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'link'}], "values": [
 					{"type": "StrType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location name'}, {"type": "LiteralStr", "value": 'date'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'year'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'link'}], "values": [
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'accredited to'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'General Order number'}, {"type": "LiteralStr", "value": 'citation'}, {"type": "LiteralStr", "value": 'issued'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'organization'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'division'}, {"type": "LiteralStr", "value": 'entered service at'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
 					{"type": "StrType"}]}]}},
             }
         
@@ -96,8 +96,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

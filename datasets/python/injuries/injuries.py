@@ -30,23 +30,23 @@ def _tifa_definitions():
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'address'}, {"type": "LiteralStr", "value": 'business'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'business'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'address'}], "values": [
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'label'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'division'}, {"type": "LiteralStr", "value": 'major_group'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'second name'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'days away/restricted/transfer'}, {"type": "LiteralStr", "value": 'days away'}, {"type": "LiteralStr", "value": 'total case rate'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'label'}, {"type": "LiteralStr", "value": 'major_group'}, {"type": "LiteralStr", "value": 'division'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'street'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'state'}, {"type": "LiteralStr", "value": 'street'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'second name'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}]}},
             }
@@ -84,8 +84,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

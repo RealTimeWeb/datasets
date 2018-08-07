@@ -30,23 +30,23 @@ def _tifa_definitions():
                 "name": 'get_books',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'genre'}, {"type": "LiteralStr", "value": 'daily average'}, {"type": "LiteralStr", "value": 'sold by'}, {"type": "LiteralStr", "value": 'publisher'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'total reviews'}, {"type": "LiteralStr", "value": 'sale price'}, {"type": "LiteralStr", "value": 'sales rank'}, {"type": "LiteralStr", "value": 'average rating'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sold by'}, {"type": "LiteralStr", "value": 'genre'}, {"type": "LiteralStr", "value": 'publisher'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'daily average'}], "values": [
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'units sold'}, {"type": "LiteralStr", "value": 'gross sales'}, {"type": "LiteralStr", "value": 'amazon revenue'}, {"type": "LiteralStr", "value": 'author revenue'}, {"type": "LiteralStr", "value": 'publisher revenue'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
 				{"type": "StrType"}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'name'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sale price'}, {"type": "LiteralStr", "value": 'average rating'}, {"type": "LiteralStr", "value": 'total reviews'}, {"type": "LiteralStr", "value": 'sales rank'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'author revenue'}, {"type": "LiteralStr", "value": 'amazon revenue'}, {"type": "LiteralStr", "value": 'units sold'}, {"type": "LiteralStr", "value": 'publisher revenue'}, {"type": "LiteralStr", "value": 'gross sales'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
             }
         
         }
@@ -82,8 +82,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

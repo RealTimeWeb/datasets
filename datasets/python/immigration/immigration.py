@@ -30,26 +30,26 @@ def _tifa_definitions():
                 "name": 'get_records',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Country'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Naturalizations (Birth)'}, {"type": "LiteralStr", "value": 'Nonimmigrant Admissions'}, {"type": "LiteralStr", "value": 'Legal permanant residences'}, {"type": "LiteralStr", "value": 'Refugees'}, {"type": "LiteralStr", "value": 'Enforcement'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Nonimmigrant Admissions'}, {"type": "LiteralStr", "value": 'Enforcement'}, {"type": "LiteralStr", "value": 'Naturalizations (Birth)'}, {"type": "LiteralStr", "value": 'Refugees'}, {"type": "LiteralStr", "value": 'Legal permanant residences'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Birth'}, {"type": "LiteralStr", "value": 'Last Residence'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Apprehended'}, {"type": "LiteralStr", "value": 'Non-criminal'}, {"type": "LiteralStr", "value": 'Inadmissable'}, {"type": "LiteralStr", "value": 'Criminal'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
 					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Last Residence'}, {"type": "LiteralStr", "value": 'Birth'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Last Residence'}, {"type": "LiteralStr", "value": 'Birth'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Affirmative'}, {"type": "LiteralStr", "value": 'Defensive Asylum'}, {"type": "LiteralStr", "value": 'Arrived'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Defensive Asylum'}, {"type": "LiteralStr", "value": 'Affirmative'}, {"type": "LiteralStr", "value": 'Arrived'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Inadmissable'}, {"type": "LiteralStr", "value": 'Apprehended'}, {"type": "LiteralStr", "value": 'Criminal'}, {"type": "LiteralStr", "value": 'Non-criminal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Birth'}, {"type": "LiteralStr", "value": 'Last Residence'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}, 
-				{"type": "NumType"}, 
-				{"type": "StrType"}]}},
+				{"type": "NumType"}]}},
             }
         
         }
@@ -85,8 +85,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

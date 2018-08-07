@@ -30,109 +30,109 @@ def _tifa_definitions():
                 "name": 'get_cases',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'voting'}, {"type": "LiteralStr", "value": 'issue'}, {"type": "LiteralStr", "value": '3 judge dc?'}, {"type": "LiteralStr", "value": 'decision'}, {"type": "LiteralStr", "value": 'lower court'}, {"type": "LiteralStr", "value": 'docket'}, {"type": "LiteralStr", "value": 'source'}, {"type": "LiteralStr", "value": 'citation'}, {"type": "LiteralStr", "value": 'origin'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'arguments'}, {"type": "LiteralStr", "value": 'laws'}, {"type": "LiteralStr", "value": 'natural court'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'majority writer'}, {"type": "LiteralStr", "value": 'minority'}, {"type": "LiteralStr", "value": 'majority assigner'}, {"type": "LiteralStr", "value": 'majority'}, {"type": "LiteralStr", "value": 'split on second'}, {"type": "LiteralStr", "value": 'unclear'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'long name'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'long name'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'area'}, {"type": "LiteralStr", "value": 'text'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '3 judge dc?'}, {"type": "LiteralStr", "value": 'source'}, {"type": "LiteralStr", "value": 'voting'}, {"type": "LiteralStr", "value": 'arguments'}, {"type": "LiteralStr", "value": 'lower court'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'laws'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'issue'}, {"type": "LiteralStr", "value": 'natural court'}, {"type": "LiteralStr", "value": 'docket'}, {"type": "LiteralStr", "value": 'origin'}, {"type": "LiteralStr", "value": 'citation'}, {"type": "LiteralStr", "value": 'decision'}], "values": [
 				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'direction'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'precedent altered?'}, {"type": "LiteralStr", "value": 'case'}, {"type": "LiteralStr", "value": 'jurisdiction'}, {"type": "LiteralStr", "value": 'dissent agrees'}, {"type": "LiteralStr", "value": 'authority 1'}, {"type": "LiteralStr", "value": 'unconstitutional'}, {"type": "LiteralStr", "value": 'winning party'}, {"type": "LiteralStr", "value": 'term'}, {"type": "LiteralStr", "value": 'admin action'}, {"type": "LiteralStr", "value": 'authority 2'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'unusual'}, {"type": "LiteralStr", "value": 'disposition'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "StrType"}]}, 
-					{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'state'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'agency'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'majority writer'}, {"type": "LiteralStr", "value": 'majority'}, {"type": "LiteralStr", "value": 'minority'}, {"type": "LiteralStr", "value": 'unclear'}, {"type": "LiteralStr", "value": 'split on second'}, {"type": "LiteralStr", "value": 'majority assigner'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'long name'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "StrType"}]}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'direction'}, {"type": "LiteralStr", "value": 'reasons'}, {"type": "LiteralStr", "value": 'disposition'}, {"type": "LiteralStr", "value": 'disagreement?'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'state'}], "values": [
-					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'us'}, {"type": "LiteralStr", "value": 'sct'}, {"type": "LiteralStr", "value": 'lexis'}, {"type": "LiteralStr", "value": 'led'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'state'}], "values": [
-					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'petitioner'}, {"type": "LiteralStr", "value": 'date reargued'}, {"type": "LiteralStr", "value": 'respondent'}, {"type": "LiteralStr", "value": 'date argued'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'long name'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'petitioner'}, {"type": "LiteralStr", "value": 'respondent'}, {"type": "LiteralStr", "value": 'date argued'}, {"type": "LiteralStr", "value": 'date reargued'}], "values": [
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'entity'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'state'}], "values": [
 						{"type": "StrType"}, 
 						{"type": "NumType"}, 
 						{"type": "StrType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'entity'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'state'}], "values": [
 						{"type": "StrType"}, 
 						{"type": "NumType"}, 
 						{"type": "StrType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
-						{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'disposition'}, {"type": "LiteralStr", "value": 'reasons'}, {"type": "LiteralStr", "value": 'disagreement?'}, {"type": "LiteralStr", "value": 'direction'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'case'}, {"type": "LiteralStr", "value": 'case issues'}, {"type": "LiteralStr", "value": 'vote'}, {"type": "LiteralStr", "value": 'docket'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'id'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'end'}, {"type": "LiteralStr", "value": 'period'}, {"type": "LiteralStr", "value": 'chief'}, {"type": "LiteralStr", "value": 'start'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'text'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'area'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'period'}, {"type": "LiteralStr", "value": 'chief'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'start'}, {"type": "LiteralStr", "value": 'end'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}]}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'led'}, {"type": "LiteralStr", "value": 'us'}, {"type": "LiteralStr", "value": 'sct'}, {"type": "LiteralStr", "value": 'lexis'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'jurisdiction'}, {"type": "LiteralStr", "value": 'authority 1'}, {"type": "LiteralStr", "value": 'term'}, {"type": "LiteralStr", "value": 'authority 2'}, {"type": "LiteralStr", "value": 'case'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'unconstitutional'}, {"type": "LiteralStr", "value": 'precedent altered?'}, {"type": "LiteralStr", "value": 'dissent agrees'}, {"type": "LiteralStr", "value": 'winning party'}, {"type": "LiteralStr", "value": 'direction'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'admin action'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'unusual'}, {"type": "LiteralStr", "value": 'disposition'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'agency'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+						{"type": "NumType"}, 
 						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'case issues'}, {"type": "LiteralStr", "value": 'docket'}, {"type": "LiteralStr", "value": 'case'}, {"type": "LiteralStr", "value": 'vote'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+						{"type": "StrType"}]}]}]}},
             }
         
         }
@@ -168,8 +168,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

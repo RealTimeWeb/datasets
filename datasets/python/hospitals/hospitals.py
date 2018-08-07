@@ -30,30 +30,30 @@ def _tifa_definitions():
                 "name": 'get_hospitals',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Information'}, {"type": "LiteralStr", "value": 'Provider ID'}, {"type": "LiteralStr", "value": 'Outpatient Volume'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Address'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Latitude'}, {"type": "LiteralStr", "value": 'ZIP Code'}, {"type": "LiteralStr", "value": 'City'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'County'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Outpatient Volume'}, {"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Provider ID'}, {"type": "LiteralStr", "value": 'Information'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Skin'}, {"type": "LiteralStr", "value": 'Cardiovascular'}, {"type": "LiteralStr", "value": 'Musculoskeletal'}, {"type": "LiteralStr", "value": 'Nervous System'}, {"type": "LiteralStr", "value": 'Genitourinary'}, {"type": "LiteralStr", "value": 'Gastrointestinal'}, {"type": "LiteralStr", "value": 'Eye'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'Address'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'ZIP Code'}, {"type": "LiteralStr", "value": 'Latitude'}, {"type": "LiteralStr", "value": 'City'}, {"type": "LiteralStr", "value": 'State'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
+					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Type'}, {"type": "LiteralStr", "value": 'Emergency Services'}, {"type": "LiteralStr", "value": 'Ownership'}, {"type": "LiteralStr", "value": 'Phone Number'}, {"type": "LiteralStr", "value": 'Name'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Gastrointestinal'}, {"type": "LiteralStr", "value": 'Cardiovascular'}, {"type": "LiteralStr", "value": 'Nervous System'}, {"type": "LiteralStr", "value": 'Eye'}, {"type": "LiteralStr", "value": 'Genitourinary'}, {"type": "LiteralStr", "value": 'Musculoskeletal'}, {"type": "LiteralStr", "value": 'Skin'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}]}},
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Ownership'}, {"type": "LiteralStr", "value": 'Phone Number'}, {"type": "LiteralStr", "value": 'Emergency Services'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Type'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
             }
         
         }
@@ -89,8 +89,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 
