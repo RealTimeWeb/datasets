@@ -286,6 +286,55 @@ $(document).ready(function() {
 
 
 
+    <div id='explore-crime-__0__-Data-Totals' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Violent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Totals-Violent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Property"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Totals-Property'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-crime-__0__-Data-Totals" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-crime-__0__-Data-Totals-Violent").click(function() {
+            $( "#explore-crime-__0__-Data-Totals-Violent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-crime-__0__-Data-Totals-Property").click(function() {
+            $( "#explore-crime-__0__-Data-Totals-Property" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
     <div id='explore-crime-__0__' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
@@ -330,22 +379,7 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"Hawaii"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Delaware"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arkansas"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Hampshire"</code></td>
+                    <td><code>"New Jersey"</code></td>
                     <td>53</td>
                 </tr>
             
@@ -360,32 +394,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Maryland"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Massachusetts"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rhode Island"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alaska"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Carolina"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Jersey"</code></td>
+                    <td><code>"Connecticut"</code></td>
                     <td>53</td>
                 </tr>
             
@@ -395,82 +404,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Washington"</code></td>
+                    <td><code>"Delaware"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Ohio"</code></td>
+                    <td><code>"Idaho"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Nevada"</code></td>
+                    <td><code>"Florida"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Alabama"</code></td>
+                    <td><code>"Massachusetts"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"South Carolina"</code></td>
+                    <td><code>"California"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Texas"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Connecticut"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Montana"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kansas"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"District of Columbia"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Oklahoma"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nebraska"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Virginia"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Missouri"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Dakota"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pennsylvania"</code></td>
+                    <td><code>"Utah"</code></td>
                     <td>53</td>
                 </tr>
             
@@ -480,7 +439,37 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Alabama"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maryland"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rhode Island"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tennessee"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Kentucky"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virginia"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Virginia"</code></td>
                     <td>53</td>
                 </tr>
             
@@ -495,37 +484,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Illinois"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Florida"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Georgia"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Idaho"</code></td>
+                    <td><code>"Ohio"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iowa"</code></td>
+                    <td><code>"Hawaii"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Utah"</code></td>
+                    <td><code>"North Carolina"</code></td>
                     <td>53</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Minnesota"</code></td>
+                    <td><code>"Kansas"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nebraska"</code></td>
                     <td>53</td>
                 </tr>
             
@@ -535,42 +519,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"South Carolina"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Texas"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maine"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montana"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Dakota"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
                     <td><code>"South Dakota"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tennessee"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Oregon"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"West Virginia"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arizona"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mississippi"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"California"</code></td>
-                    <td>53</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wisconsin"</code></td>
                     <td>53</td>
                 </tr>
             
@@ -580,7 +554,82 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Maine"</code></td>
+                    <td><code>"Illinois"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pennsylvania"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Missouri"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wisconsin"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arizona"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Hampshire"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minnesota"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nevada"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mississippi"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"District of Columbia"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oregon"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oklahoma"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arkansas"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iowa"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alaska"</code></td>
                     <td>53</td>
                 </tr>
             
@@ -631,6 +680,136 @@ $(document).ready(function() {
     });
     </script>
 
+    <div id='explore-crime-__0__-Data-Totals-Property' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>33823</code>
+                    
+                 </td> 
+                 <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
+            
+            <tr> <td><code>"Motor"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>2853</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
+            
+            <tr> <td><code>"Larceny"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>19344</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of burglaries, or theft of personal property.</td> </tr>
+            
+            <tr> <td><code>"Burglary"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>11626</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-crime-__0__-Data-Totals-Property" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-crime-__0__-Data-Totals-Property-All").click(function() {
+            $( "#explore-crime-__0__-Data-Totals-Property-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-crime-__0__-Data-Totals-Property-Motor").click(function() {
+            $( "#explore-crime-__0__-Data-Totals-Property-Motor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-crime-__0__-Data-Totals-Property-Larceny").click(function() {
+            $( "#explore-crime-__0__-Data-Totals-Property-Larceny" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-crime-__0__-Data-Totals-Property-Burglary").click(function() {
+            $( "#explore-crime-__0__-Data-Totals-Property-Burglary" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-crime-__0__-Data-Rates' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Violent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Rates-Violent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Property"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Rates-Property'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-crime-__0__-Data-Rates" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-crime-__0__-Data-Rates-Violent").click(function() {
+            $( "#explore-crime-__0__-Data-Rates-Violent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-crime-__0__-Data-Rates-Property").click(function() {
+            $( "#explore-crime-__0__-Data-Rates-Property" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
     <div id='explore-crime-__0__-Data-Totals-Violent' title='Dictionary (5 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
@@ -643,22 +822,6 @@ $(document).ready(function() {
                  </td> 
                  <td>This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td> </tr>
             
-            <tr> <td><code>"Rape"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>281</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
-            
-            <tr> <td><code>"Murder"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>406</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
-            
             <tr> <td><code>"Robbery"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -667,6 +830,14 @@ $(document).ready(function() {
                  </td> 
                  <td>This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td> </tr>
             
+            <tr> <td><code>"Rape"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>281</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
+            
             <tr> <td><code>"Assault"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -674,6 +845,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td> </tr>
+            
+            <tr> <td><code>"Murder"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>406</code>
+                    
+                 </td> 
+                 <td>This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
             
         </table>
     </div>
@@ -701,26 +880,26 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-crime-__0__-Data-Totals-Violent-Rape").click(function() {
-            $( "#explore-crime-__0__-Data-Totals-Violent-Rape" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-crime-__0__-Data-Totals-Violent-Murder").click(function() {
-            $( "#explore-crime-__0__-Data-Totals-Violent-Murder" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-crime-__0__-Data-Totals-Violent-Robbery").click(function() {
             $( "#explore-crime-__0__-Data-Totals-Violent-Robbery" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
+        $("#btn-explore-crime-__0__-Data-Totals-Violent-Rape").click(function() {
+            $( "#explore-crime-__0__-Data-Totals-Violent-Rape" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-crime-__0__-Data-Totals-Violent-Assault").click(function() {
             $( "#explore-crime-__0__-Data-Totals-Violent-Assault" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-crime-__0__-Data-Totals-Violent-Murder").click(function() {
+            $( "#explore-crime-__0__-Data-Totals-Violent-Murder" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -740,22 +919,6 @@ $(document).ready(function() {
                  </td> 
                  <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td> </tr>
             
-            <tr> <td><code>"Rape"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>8.6</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
-            
-            <tr> <td><code>"Murder"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>12.4</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
-            
             <tr> <td><code>"Robbery"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
@@ -764,6 +927,14 @@ $(document).ready(function() {
                  </td> 
                  <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td> </tr>
             
+            <tr> <td><code>"Rape"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>8.6</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
+            
             <tr> <td><code>"Assault"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
@@ -771,6 +942,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td> </tr>
+            
+            <tr> <td><code>"Murder"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>12.4</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
             
         </table>
     </div>
@@ -798,20 +977,14 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-crime-__0__-Data-Rates-Violent-Rape").click(function() {
-            $( "#explore-crime-__0__-Data-Rates-Violent-Rape" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-crime-__0__-Data-Rates-Violent-Murder").click(function() {
-            $( "#explore-crime-__0__-Data-Rates-Violent-Murder" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-crime-__0__-Data-Rates-Violent-Robbery").click(function() {
             $( "#explore-crime-__0__-Data-Rates-Violent-Robbery" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-crime-__0__-Data-Rates-Violent-Rape").click(function() {
+            $( "#explore-crime-__0__-Data-Rates-Violent-Rape" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -822,148 +995,8 @@ $(document).ready(function() {
         });
         
         
-    });
-    </script>
-
-    <div id='explore-crime-__0__-Data-Totals-Property' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>33823</code>
-                    
-                 </td> 
-                 <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
-            
-            <tr> <td><code>"Larceny"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>19344</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of burglaries, or theft of personal property.</td> </tr>
-            
-            <tr> <td><code>"Burglary"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>11626</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
-            
-            <tr> <td><code>"Motor"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>2853</code>
-                    
-                 </td> 
-                 <td>This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-crime-__0__-Data-Totals-Property" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-crime-__0__-Data-Totals-Property-All").click(function() {
-            $( "#explore-crime-__0__-Data-Totals-Property-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-crime-__0__-Data-Totals-Property-Larceny").click(function() {
-            $( "#explore-crime-__0__-Data-Totals-Property-Larceny" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-crime-__0__-Data-Totals-Property-Burglary").click(function() {
-            $( "#explore-crime-__0__-Data-Totals-Property-Burglary" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-crime-__0__-Data-Totals-Property-Motor").click(function() {
-            $( "#explore-crime-__0__-Data-Totals-Property-Motor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-crime-__0__-Data' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Rates"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Rates'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>3266740</code>
-                    
-                 </td> 
-                 <td>The number of people living in this state at the time the report was created.</td> </tr>
-            
-            <tr> <td><code>"Totals"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Totals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-crime-__0__-Data" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-crime-__0__-Data-Rates").click(function() {
-            $( "#explore-crime-__0__-Data-Rates" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-crime-__0__-Data-Population").click(function() {
-            $( "#explore-crime-__0__-Data-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-crime-__0__-Data-Totals").click(function() {
-            $( "#explore-crime-__0__-Data-Totals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-crime-__0__-Data-Rates-Violent-Murder").click(function() {
+            $( "#explore-crime-__0__-Data-Rates-Violent-Murder" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -983,6 +1016,14 @@ $(document).ready(function() {
                  </td> 
                  <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
             
+            <tr> <td><code>"Motor"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>87.3</code>
+                    
+                 </td> 
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
+            
             <tr> <td><code>"Larceny"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
@@ -998,14 +1039,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
-            
-            <tr> <td><code>"Motor"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>87.3</code>
-                    
-                 </td> 
-                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
             
         </table>
     </div>
@@ -1031,6 +1064,12 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-crime-__0__-Data-Rates-Property-Motor").click(function() {
+            $( "#explore-crime-__0__-Data-Rates-Property-Motor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-crime-__0__-Data-Rates-Property-Larceny").click(function() {
             $( "#explore-crime-__0__-Data-Rates-Property-Larceny" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -1043,31 +1082,33 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-crime-__0__-Data-Rates-Property-Motor").click(function() {
-            $( "#explore-crime-__0__-Data-Rates-Property-Motor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
     });
     </script>
 
-    <div id='explore-crime-__0__-Data-Rates' title='Dictionary (2 keys)'>
+    <div id='explore-crime-__0__-Data' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Property"</code></td> 
+            <tr> <td><code>"Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>3266740</code>
+                    
+                 </td> 
+                 <td>The number of people living in this state at the time the report was created.</td> </tr>
+            
+            <tr> <td><code>"Totals"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Rates-Property'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Totals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Violent"</code></td> 
+            <tr> <td><code>"Rates"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Rates-Violent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Rates'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -1079,70 +1120,29 @@ $(document).ready(function() {
     
         
     
-    <script>
-    $(document).ready(function() {
-        $( "#explore-crime-__0__-Data-Rates" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-crime-__0__-Data-Rates-Property").click(function() {
-            $( "#explore-crime-__0__-Data-Rates-Property" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-crime-__0__-Data-Rates-Violent").click(function() {
-            $( "#explore-crime-__0__-Data-Rates-Violent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-crime-__0__-Data-Totals' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Property"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Totals-Property'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Violent"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-crime-__0__-Data-Totals-Violent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
         
     
     <script>
     $(document).ready(function() {
-        $( "#explore-crime-__0__-Data-Totals" ).dialog({
+        $( "#explore-crime-__0__-Data" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-crime-__0__-Data-Totals-Property").click(function() {
-            $( "#explore-crime-__0__-Data-Totals-Property" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-crime-__0__-Data-Population").click(function() {
+            $( "#explore-crime-__0__-Data-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-crime-__0__-Data-Totals-Violent").click(function() {
-            $( "#explore-crime-__0__-Data-Totals-Violent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-crime-__0__-Data-Totals").click(function() {
+            $( "#explore-crime-__0__-Data-Totals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-crime-__0__-Data-Rates").click(function() {
+            $( "#explore-crime-__0__-Data-Rates" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

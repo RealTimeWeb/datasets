@@ -22,7 +22,8 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         {% for tifa_definition in tifa_definitions %}
             '{{ tifa_definition[0] | snake_case }}': {
                 "type": "FunctionType", 

@@ -22,46 +22,47 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_reports': {
                 "type": "FunctionType", 
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Time'}, {"type": "LiteralStr", "value": 'Statistics'}, {"type": "LiteralStr", "value": 'Airport'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Label'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Month Name'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Time'}, {"type": "LiteralStr", "value": 'Airport'}, {"type": "LiteralStr", "value": 'Statistics'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Month Name'}, {"type": "LiteralStr", "value": 'Label'}], "values": [
+					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "NumType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Carriers'}, {"type": "LiteralStr", "value": 'Flights'}, {"type": "LiteralStr", "value": 'Minutes Delayed'}, {"type": "LiteralStr", "value": '# of Delays'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Names'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "ListType", "subtype": 
-							{"type": "StrType"}}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Diverted'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'On Time'}, {"type": "LiteralStr", "value": 'Cancelled'}, {"type": "LiteralStr", "value": 'Delayed'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Carrier'}, {"type": "LiteralStr", "value": 'Security'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Late Aircraft'}, {"type": "LiteralStr", "value": 'Weather'}, {"type": "LiteralStr", "value": 'National Aviation System'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Carrier'}, {"type": "LiteralStr", "value": 'Weather'}, {"type": "LiteralStr", "value": 'Security'}, {"type": "LiteralStr", "value": 'National Aviation System'}, {"type": "LiteralStr", "value": 'Late Aircraft'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Code'}, {"type": "LiteralStr", "value": 'Name'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Code'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Flights'}, {"type": "LiteralStr", "value": '# of Delays'}, {"type": "LiteralStr", "value": 'Carriers'}, {"type": "LiteralStr", "value": 'Minutes Delayed'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Diverted'}, {"type": "LiteralStr", "value": 'Delayed'}, {"type": "LiteralStr", "value": 'On Time'}, {"type": "LiteralStr", "value": 'Cancelled'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Late Aircraft'}, {"type": "LiteralStr", "value": 'National Aviation System'}, {"type": "LiteralStr", "value": 'Carrier'}, {"type": "LiteralStr", "value": 'Weather'}, {"type": "LiteralStr", "value": 'Security'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Names'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
+						{"type": "ListType", "subtype": 
+							{"type": "StrType"}}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Security'}, {"type": "LiteralStr", "value": 'Late Aircraft'}, {"type": "LiteralStr", "value": 'National Aviation System'}, {"type": "LiteralStr", "value": 'Carrier'}, {"type": "LiteralStr", "value": 'Weather'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}]}},
             }
         
         }

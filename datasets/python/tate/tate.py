@@ -22,15 +22,31 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_artwork': {
                 "type": "FunctionType", 
                 "name": 'get_artwork',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'dimensions'}, {"type": "LiteralStr", "value": 'metadata'}, {"type": "LiteralStr", "value": 'artist'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'thumbnail'}, {"type": "LiteralStr", "value": 'medium'}, {"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'title'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'metadata'}, {"type": "LiteralStr", "value": 'artist'}, {"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'dimensions'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'creation decade'}, {"type": "LiteralStr", "value": 'credit'}, {"type": "LiteralStr", "value": 'creation year'}, {"type": "LiteralStr", "value": 'acquisition date'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'gender'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'role'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}]}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'thumbnail'}, {"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'medium'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
@@ -38,22 +54,7 @@ def _tifa_definitions():
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'width'}, {"type": "LiteralStr", "value": 'height'}, {"type": "LiteralStr", "value": 'depth'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'creation decade'}, {"type": "LiteralStr", "value": 'credit'}, {"type": "LiteralStr", "value": 'acquisition date'}, {"type": "LiteralStr", "value": 'creation year'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'role'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'location'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "StrType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'location'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "StrType"}]}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+					{"type": "NumType"}]}]}},
             }
         
         }

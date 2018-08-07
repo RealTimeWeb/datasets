@@ -222,25 +222,679 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-earthquakes-__0__-location' title='Dictionary (6 keys)'>
+    <div id='explore-earthquakes-__0__-time' title='Dictionary (8 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"distance"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>0.1034</code>
+                    <code>2016</code>
                     
                  </td> 
-                 <td>The rough distance that this earthquake occurred away from the reporting station, measured in degrees between. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake. In general, this number is between 0.4-7.1.</td> </tr>
+                 <td></td> </tr>
             
-            <tr> <td><code>"longitude"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>-121.619</code>
+                    <code>27</code>
                     
                  </td> 
-                 <td>Decimal degrees longitude (east and west on the globe). Negative values for western latitudes. Ranges from -180 to 180.</td> </tr>
+                 <td></td> </tr>
+            
+            <tr> <td><code>"second"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>43</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>7</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"epoch"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1469593183550</code>
+                    
+                 </td> 
+                 <td>A number that represents the time that this earthquake occurred. Epoch's are the number of seconds since a particular date (January 1st, 1970), and are a convenient way to store date/times.</td> </tr>
+            
+            <tr> <td><code>"full"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"2016-07-27 00:19:43"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-earthquakes-__0__-time-full'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hour"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"minute"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>19</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <div id='explore-earthquakes-__0__-time-full' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"2016-08-13 15:44:04"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-03 12:29:01"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-15 06:12:29"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-21 23:17:16"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-27 20:34:48"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-28 19:31:39"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-13 00:08:25"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-03 07:11:55"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-19 16:37:16"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-10 07:42:17"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-22 15:22:45"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-31 17:01:20"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-13 02:25:54"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-24 00:59:03"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-14 11:46:32"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-25 01:44:43"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-02 15:21:03"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-05 18:01:36"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-16 16:08:47"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-16 11:44:52"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-01 19:57:24"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-24 22:47:39"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-01 14:57:37"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-22 02:42:29"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-11 02:26:24"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-03 07:57:17"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-23 06:23:05"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-03 13:04:15"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-01 10:13:57"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-01 21:45:29"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-25 03:12:21"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-14 08:08:01"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-21 16:33:35"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-08 07:49:27"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-10 11:11:43"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-09 23:13:28"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-20 17:57:47"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-05 03:29:03"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-11 03:23:23"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-08 13:14:44"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-13 15:30:49"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-30 14:50:51"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-10 20:29:10"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-03 23:10:12"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-07 01:50:24"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-06 09:20:25"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-25 14:45:45"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-08 01:21:54"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-05 03:44:36"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-27 21:41:30"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-17 02:35:23"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-09 03:23:16"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-29 16:09:50"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-05 00:54:30"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-10 12:34:53"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-29 13:35:18"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-08 11:16:43"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-04 01:34:45"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-24 16:10:28"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-24 07:45:58"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-09 00:58:06"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-17 08:12:09"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-09 10:06:55"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-21 00:35:09"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-04 03:33:59"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-12 22:19:09"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-20 18:01:35"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-15 20:59:39"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-21 01:47:09"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-13 11:41:37"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-05 02:04:50"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-10 15:10:12"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-10 19:38:52"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-10 15:21:24"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-20 07:16:53"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-14 10:28:58"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-24 14:39:24"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-31 04:17:44"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-05 11:02:30"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-02 04:00:34"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-19 19:34:02"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-13 20:19:41"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-31 05:55:58"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-22 22:52:50"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-01 01:11:56"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-19 16:06:27"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-30 00:36:51"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-25 02:28:14"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-22 23:02:28"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-06 19:14:09"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-08 04:57:43"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-06 10:58:00"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-19 12:21:07"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-18 21:56:12"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-04 07:27:12"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-25 11:10:49"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-29 15:47:12"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-08 06:42:11"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-08-20 13:25:12"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2016-07-28 20:35:49"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-earthquakes-__0__-time" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-earthquakes-__0__-time-year").click(function() {
+            $( "#explore-earthquakes-__0__-time-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-time-day").click(function() {
+            $( "#explore-earthquakes-__0__-time-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-time-second").click(function() {
+            $( "#explore-earthquakes-__0__-time-second" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-time-month").click(function() {
+            $( "#explore-earthquakes-__0__-time-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-time-epoch").click(function() {
+            $( "#explore-earthquakes-__0__-time-epoch" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-time-full").click(function() {
+            $( "#explore-earthquakes-__0__-time-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-time-full").click(function() {
+            $( "#explore-earthquakes-__0__-time-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-earthquakes-__0__-time-full" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-earthquakes-__0__-time-hour").click(function() {
+            $( "#explore-earthquakes-__0__-time-hour" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-time-minute").click(function() {
+            $( "#explore-earthquakes-__0__-time-minute" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-earthquakes-__0__-location' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
             <tr> <td><code>"latitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -249,6 +903,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>Decimal degrees latitude (up and down on the globe). Negative values for southern latitudes. Ranges from -90 to 90.</td> </tr>
+            
+            <tr> <td><code>"distance"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.1034</code>
+                    
+                 </td> 
+                 <td>The rough distance that this earthquake occurred away from the reporting station, measured in degrees between. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake. In general, this number is between 0.4-7.1.</td> </tr>
             
             <tr> <td><code>"name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -260,6 +922,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>A best guess for the name of the state (or country, in some cases) that this earthquake was reported in.</td> </tr>
+            
+            <tr> <td><code>"longitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>-121.619</code>
+                    
+                 </td> 
+                 <td>Decimal degrees longitude (east and west on the globe). Negative values for western latitudes. Ranges from -180 to 180.</td> </tr>
             
             <tr> <td><code>"full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -282,8 +952,6 @@ $(document).ready(function() {
             
         </table>
     </div>
-    
-        
     
         
     
@@ -440,12 +1108,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"South of the Fiji Islands"</code></td>
+                    <td><code>"Fiji"</code></td>
                     <td>17</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Fiji"</code></td>
+                    <td><code>"South of the Fiji Islands"</code></td>
                     <td>17</td>
                 </tr>
             
@@ -455,17 +1123,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Italy"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Peru"</code></td>
                     <td>14</td>
                 </tr>
             
                 <tr>
                     <td><code>"China"</code></td>
-                    <td>14</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Italy"</code></td>
                     <td>14</td>
                 </tr>
             
@@ -490,13 +1158,18 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Afghanistan"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Solomon Islands"</code></td>
                     <td>10</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Afghanistan"</code></td>
-                    <td>10</td>
+                    <td><code>"Vanuatu"</code></td>
+                    <td>9</td>
                 </tr>
             
                 <tr>
@@ -506,11 +1179,6 @@ $(document).ready(function() {
             
                 <tr>
                     <td><code>"Kyrgyzstan"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vanuatu"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -550,57 +1218,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Arkansas"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Panama"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Southern East Pacific Rise"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Northern California"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
                     <td><code>"New Jersey"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Australia"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Portugal"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fiji region"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arizona"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Southern Mid-Atlantic Ridge"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bolivia"</code></td>
+                    <td><code>"Arkansas"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -615,7 +1238,72 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Bolivia"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Portugal"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Southern Mid-Atlantic Ridge"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Southern East Pacific Rise"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Panama"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Northern California"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arizona"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fiji region"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Australia"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Japan region"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North of Ascension Island"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"India"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Pacific-Antarctic Ridge"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Northern Mid-Atlantic Ridge"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -625,12 +1313,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Japan region"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Western Xizang"</code></td>
+                    <td><code>"El Salvador"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -650,32 +1333,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Venezuela"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Colombia"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"North of Ascension Island"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"India"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Northern Mid-Atlantic Ridge"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"El Salvador"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Venezuela"</code></td>
+                    <td><code>"Western Xizang"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -685,52 +1353,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"East of the Kuril Islands"</code></td>
+                    <td><code>"Palau"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Ohio"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Poland"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cyprus"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Uzbekistan"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North of Svalbard"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Syria"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ascension Island region"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South of Panama"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New York"</code></td>
+                    <td><code>"Azores-Cape St. Vincent Ridge"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -740,7 +1368,62 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Kiribati region"</code></td>
+                    <td><code>"Cyprus"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North of Svalbard"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ukraine"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virgin Islands region"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistan"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ascension Island region"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Timor"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Texas"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Carolina"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uzbekistan"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South of Panama"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Central East Pacific Rise"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -750,47 +1433,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"New Hampshire"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kiribati region"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Central Mid-Atlantic Ridge"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"West Virginia"</code></td>
+                    <td><code>"Vanuatu region"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anguilla"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
                     <td><code>"Chagos Archipelago region"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South of Africa"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Georgia"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Northwest of Australia"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Western Indian-Antarctic Ridge"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Azerbaijan"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ukraine"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -802,6 +1470,8 @@ $(document).ready(function() {
             
         </table>
         </div>
+        
+    
         
     
         
@@ -850,12 +1520,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"6km WNW of The Geysers, California"</code></td>
+                    <td><code>"14km ESE of Anza, CA"</code></td>
                     <td>38</td>
                 </tr>
             
                 <tr>
-                    <td><code>"14km ESE of Anza, CA"</code></td>
+                    <td><code>"6km WNW of The Geysers, California"</code></td>
                     <td>38</td>
                 </tr>
             
@@ -900,12 +1570,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"30km SE of Janesville, California"</code></td>
+                    <td><code>"7km E of Mammoth Lakes, California"</code></td>
                     <td>26</td>
                 </tr>
             
                 <tr>
-                    <td><code>"7km E of Mammoth Lakes, California"</code></td>
+                    <td><code>"30km SE of Janesville, California"</code></td>
                     <td>26</td>
                 </tr>
             
@@ -920,12 +1590,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"7km W of Cobb, California"</code></td>
+                    <td><code>"13km WSW of Niland, CA"</code></td>
                     <td>24</td>
                 </tr>
             
                 <tr>
-                    <td><code>"13km WSW of Niland, CA"</code></td>
+                    <td><code>"7km W of Cobb, California"</code></td>
                     <td>24</td>
                 </tr>
             
@@ -965,6 +1635,11 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"29km SSW of Hawthorne, Nevada"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
                     <td><code>"South of the Fiji Islands"</code></td>
                     <td>17</td>
                 </tr>
@@ -975,17 +1650,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"29km SSW of Hawthorne, Nevada"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"19km SE of Mammoth Lakes, California"</code></td>
+                    <td><code>"25km NE of Thermal, CA"</code></td>
                     <td>16</td>
                 </tr>
             
                 <tr>
-                    <td><code>"25km NE of Thermal, CA"</code></td>
+                    <td><code>"20km ESE of Anza, CA"</code></td>
                     <td>16</td>
                 </tr>
             
@@ -1000,7 +1670,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"20km ESE of Anza, CA"</code></td>
+                    <td><code>"19km SE of Mammoth Lakes, California"</code></td>
                     <td>16</td>
                 </tr>
             
@@ -1010,12 +1680,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"5km NW of The Geysers, California"</code></td>
+                    <td><code>"21km NE of Soledad, California"</code></td>
                     <td>14</td>
                 </tr>
             
                 <tr>
-                    <td><code>"21km NE of Soledad, California"</code></td>
+                    <td><code>"5km NW of The Geysers, California"</code></td>
                     <td>14</td>
                 </tr>
             
@@ -1025,12 +1695,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"5km W of Cobb, California"</code></td>
+                    <td><code>"7km NE of San Simeon, California"</code></td>
                     <td>14</td>
                 </tr>
             
                 <tr>
-                    <td><code>"7km NE of San Simeon, California"</code></td>
+                    <td><code>"5km W of Cobb, California"</code></td>
                     <td>14</td>
                 </tr>
             
@@ -1040,17 +1710,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"68km ESE of Lakeview, Oregon"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"5km WSW of Volcano, Hawaii"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
                     <td><code>"6km WNW of Cobb, California"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"68km ESE of Lakeview, Oregon"</code></td>
                     <td>13</td>
                 </tr>
             
@@ -1060,18 +1725,8 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"40km ESE of Goldfield, Nevada"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"12km WNW of Calipatria, CA"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"13km SE of Mammoth Lakes, California"</code></td>
-                    <td>12</td>
+                    <td><code>"5km WSW of Volcano, Hawaii"</code></td>
+                    <td>13</td>
                 </tr>
             
                 <tr>
@@ -1085,23 +1740,18 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"23km SW of Coalinga, California"</code></td>
-                    <td>11</td>
+                    <td><code>"12km WNW of Calipatria, CA"</code></td>
+                    <td>12</td>
                 </tr>
             
                 <tr>
-                    <td><code>"26km E of Honaunau-Napoopoo, Hawaii"</code></td>
-                    <td>11</td>
+                    <td><code>"40km ESE of Goldfield, Nevada"</code></td>
+                    <td>12</td>
                 </tr>
             
                 <tr>
-                    <td><code>"17km ESE of Julian, CA"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"7km WNW of Cobb, California"</code></td>
-                    <td>11</td>
+                    <td><code>"13km SE of Mammoth Lakes, California"</code></td>
+                    <td>12</td>
                 </tr>
             
                 <tr>
@@ -1115,12 +1765,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"14km N of Ocotillo Wells, CA"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"26km ENE of Thermal, CA"</code></td>
+                    <td><code>"17km ESE of Julian, CA"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -1130,13 +1775,28 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"21km NNE of Upper Lake, California"</code></td>
-                    <td>10</td>
+                    <td><code>"26km ENE of Thermal, CA"</code></td>
+                    <td>11</td>
                 </tr>
             
                 <tr>
-                    <td><code>"17km S of Whitehall, Montana"</code></td>
-                    <td>10</td>
+                    <td><code>"26km E of Honaunau-Napoopoo, Hawaii"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"7km WNW of Cobb, California"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"14km N of Ocotillo Wells, CA"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"23km SW of Coalinga, California"</code></td>
+                    <td>11</td>
                 </tr>
             
                 <tr>
@@ -1150,37 +1810,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"14km SE of Mammoth Lakes, California"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"4km WNW of Cobb, California"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"19km ESE of Anza, CA"</code></td>
+                    <td><code>"17km S of Whitehall, Montana"</code></td>
                     <td>10</td>
                 </tr>
             
                 <tr>
                     <td><code>"24km SW of Coalinga, California"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"24km ESE of Julian, CA"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"24km ESE of Honaunau-Napoopoo, Hawaii"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"3km W of Borrego Springs, CA"</code></td>
                     <td>10</td>
                 </tr>
             
@@ -1195,12 +1830,52 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"4km NW of The Geysers, California"</code></td>
-                    <td>9</td>
+                    <td><code>"21km NNE of Upper Lake, California"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3km W of Borrego Springs, CA"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"24km ESE of Julian, CA"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4km WNW of Cobb, California"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"14km SE of Mammoth Lakes, California"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"19km ESE of Anza, CA"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"24km ESE of Honaunau-Napoopoo, Hawaii"</code></td>
+                    <td>10</td>
                 </tr>
             
                 <tr>
                     <td><code>"22km SSE of Mammoth Lakes, California"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"21km ESE of Anza, CA"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2km NNW of The Geysers, California"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -1210,17 +1885,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"38km ESE of Goldfield, Nevada"</code></td>
+                    <td><code>"16km NNE of Thousand Palms, CA"</code></td>
                     <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Southwest Indian Ridge"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"29km SE of Mount Hood Village, Oregon"</code></td>
+                    <td><code>"3km W of Cobb, California"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -1235,27 +1905,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"29km SE of Mount Hood Village, Oregon"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
                     <td><code>"41km ESE of Goldfield, Nevada"</code></td>
                     <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"16km NNE of Thousand Palms, CA"</code></td>
+                    <td><code>"Southwest Indian Ridge"</code></td>
                     <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2km NNW of The Geysers, California"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"3km W of Cobb, California"</code></td>
-                    <td>9</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"21km ESE of Anza, CA"</code></td>
+                    <td><code>"38km ESE of Goldfield, Nevada"</code></td>
                     <td>9</td>
                 </tr>
             
@@ -1265,12 +1930,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"18km NE of Olancha, CA"</code></td>
-                    <td>8</td>
+                    <td><code>"4km NW of The Geysers, California"</code></td>
+                    <td>9</td>
                 </tr>
             
                 <tr>
-                    <td><code>"26km NE of Hollister, California"</code></td>
+                    <td><code>"26km NE of Thermal, CA"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -1280,17 +1945,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"13km NNE of Old Faithful Geyser, Wyoming"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"10km SSW of Borrego Springs, CA"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"26km NE of Thermal, CA"</code></td>
+                    <td><code>"26km NE of Hollister, California"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -1300,12 +1955,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"18km ESE of Anza, CA"</code></td>
+                    <td><code>"1km NNE of The Geysers, California"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"4km ESE of The Geysers, California"</code></td>
+                    <td><code>"18km NE of Olancha, CA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"22km SSW of La Quinta, CA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"10km NE of Cabazon, CA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"18km ESE of Anza, CA"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -1328,20 +1998,14 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-earthquakes-__0__-location-distance").click(function() {
-            $( "#explore-earthquakes-__0__-location-distance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-location-longitude").click(function() {
-            $( "#explore-earthquakes-__0__-location-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-earthquakes-__0__-location-latitude").click(function() {
             $( "#explore-earthquakes-__0__-location-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-location-distance").click(function() {
+            $( "#explore-earthquakes-__0__-location-distance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1359,6 +2023,12 @@ $(document).ready(function() {
           autoOpen: false,
           width: 600
         });    
+        
+        
+        $("#btn-explore-earthquakes-__0__-location-longitude").click(function() {
+            $( "#explore-earthquakes-__0__-location-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
         
         
         $("#btn-explore-earthquakes-__0__-location-full").click(function() {
@@ -1385,9 +2055,82 @@ $(document).ready(function() {
     });
     </script>
 
+    <div id='explore-earthquakes-__0__-impact' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"significance"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>31</code>
+                    
+                 </td> 
+                 <td>A number describing how significant the event is. Larger numbers indicate a more significant event. This value is determined on a number of factors, including magnitude, maximum MMI, felt reports, and estimated impact. Ranges from 0 to 1000.</td> </tr>
+            
+            <tr> <td><code>"gap"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>122.0</code>
+                    
+                 </td> 
+                 <td>In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake. Specifically, this means the largest azimuthal gap between azimuthally adjacent stations (in degrees). Earthquake locations in which the azimuthal gap exceeds 180 degrees typically have large location and depth uncertainties. Ranges from 0 to 180.</td> </tr>
+            
+            <tr> <td><code>"magnitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>1.43</code>
+                    
+                 </td> 
+                 <td>Earthquake magnitude is a measure of the size of an earthquake at its source. It is a logarithmic measure. At the same distance from the earthquake, the amplitude of the seismic waves from which the magnitude is determined are approximately 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. The total amount of energy released by the earthquake usually goes up by a larger factor; for many commonly used magnitude types, the total energy of an average earthquake goes up by a factor of approximately 32 for each unit increase in magnitude. Typically ranges from -1 (very tiny) to 10 (incredibly powerful).</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-earthquakes-__0__-impact" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-earthquakes-__0__-impact-significance").click(function() {
+            $( "#explore-earthquakes-__0__-impact-significance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-impact-gap").click(function() {
+            $( "#explore-earthquakes-__0__-impact-gap" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-earthquakes-__0__-impact-magnitude").click(function() {
+            $( "#explore-earthquakes-__0__-impact-magnitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
     <div id='explore-earthquakes-__0__' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"impact"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-earthquakes-__0__-impact'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
             
             <tr> <td><code>"id"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -1408,14 +2151,6 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"impact"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-earthquakes-__0__-impact'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
             <tr> <td><code>"location"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
@@ -1428,447 +2163,74 @@ $(document).ready(function() {
     </div>
     
         
+    
+        
         <div id='explore-earthquakes-__0__-id' title='Previewing Values'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"mb80163934"</code></td>
+                    <td><code>"ak13854258"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13846968"</code></td>
+                    <td><code>"ci37446007"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"pr16232001"</code></td>
+                    <td><code>"nn00556452"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"us10006gas"</code></td>
+                    <td><code>"ci37446967"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ci37445463"</code></td>
+                    <td><code>"hv61378761"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"nn00555413"</code></td>
+                    <td><code>"us10006fkc"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ci37446487"</code></td>
+                    <td><code>"pr16238009"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"nc72684641"</code></td>
+                    <td><code>"nn00555048"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13846765"</code></td>
+                    <td><code>"nc72679081"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ci37664312"</code></td>
+                    <td><code>"nn00554387"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13835340"</code></td>
+                    <td><code>"ci37438767"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13847019"</code></td>
+                    <td><code>"ci37671432"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"us10006crw"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13835176"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00556013"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"pr16232003"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"us1000690p"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37670280"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00555844"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37439975"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72682081"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"us100068sh"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00556713"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37640960"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"pr16210002"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37665152"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"uu60009515"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37667896"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ld60122426"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"uw61192226"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00554622"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13836561"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37640616"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13823358"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13829119"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13832435"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"mb80166639"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72680051"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00557271"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"uu60158062"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"us10006dwf"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72672490"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13841935"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00555058"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13824604"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"uw61172832"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13822786"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37641480"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37435223"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72673375"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72681596"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13839783"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"uu60009505"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00554721"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72676016"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37445239"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37449319"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37448567"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"us10006f0t"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"pr16223000"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"uw61179902"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13841863"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13866711"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13829102"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"uw61190671"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13832182"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13814513"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13818864"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37449463"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72677276"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72676916"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"us10006dri"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00555546"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nc72667456"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37434775"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37444855"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37381413"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37449279"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"us10006dbj"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00554524"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13840086"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"uw61180937"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"nn00557539"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37446959"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"hv61378656"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"pr16216007"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ci37441527"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"ak13824065"</code></td>
+                    <td><code>"uu60157772"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1878,57 +2240,432 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"nc72669711"</code></td>
+                    <td><code>"ak13859197"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ci37664440"</code></td>
+                    <td><code>"ak13843785"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"nn00556957"</code></td>
+                    <td><code>"uw61193936"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13840973"</code></td>
+                    <td><code>"nc72683911"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"nn00554698"</code></td>
+                    <td><code>"nc72680716"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13878639"</code></td>
+                    <td><code>"us10006acy"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13810729"</code></td>
+                    <td><code>"nn00554087"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13831356"</code></td>
+                    <td><code>"nn00555432"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"nn00555376"</code></td>
+                    <td><code>"ak13831406"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13823341"</code></td>
+                    <td><code>"uu60009515"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"ak13859171"</code></td>
+                    <td><code>"nc72685206"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37437847"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"uw61182192"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00556913"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13851597"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00556944"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pr16212000"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00554868"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37665560"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00554641"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13839980"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13820923"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72668486"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pr16218001"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37143716"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13842401"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72671660"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00555969"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00556389"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"mb80164034"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00556775"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37441327"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13842269"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"us100068w2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37646688"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72685251"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13833965"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37666504"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13834119"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pr16231013"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc71015432"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pr16220000"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pr16229003"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37434799"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"us10006ctr"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hv61363761"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37447999"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37446183"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"us10006g0b"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37437647"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"us10006e88"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"us10006fc2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13875645"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72671550"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72670246"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72679226"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72670130"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37640648"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72680661"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"us10006fjt"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37449087"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13841698"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13825091"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00555236"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13841810"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13874179"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37667192"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nc72678606"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00554982"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37670992"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13870054"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13829635"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37438695"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00554635"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13855259"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37640864"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13831385"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"uw61192206"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pr16224006"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"nn00557371"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13871443"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37449327"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hv61382081"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ci37437895"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"us100069ts"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ak13832779"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1946,14 +2683,18 @@ $(document).ready(function() {
     
         
     
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-earthquakes-__0__" ).dialog({
           autoOpen: false,
           width: 600
         });
+        
+        $("#btn-explore-earthquakes-__0__-impact").click(function() {
+            $( "#explore-earthquakes-__0__-impact" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         
         $("#btn-explore-earthquakes-__0__-id").click(function() {
             $( "#explore-earthquakes-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -1976,749 +2717,8 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-earthquakes-__0__-impact").click(function() {
-            $( "#explore-earthquakes-__0__-impact" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-earthquakes-__0__-location").click(function() {
             $( "#explore-earthquakes-__0__-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-earthquakes-__0__-time' title='Dictionary (8 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>2016</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"month"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>7</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"epoch"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1469593183550</code>
-                    
-                 </td> 
-                 <td>A number that represents the time that this earthquake occurred. Epoch's are the number of seconds since a particular date (January 1st, 1970), and are a convenient way to store date/times.</td> </tr>
-            
-            <tr> <td><code>"hour"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"minute"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>19</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"full"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"2016-07-27 00:19:43"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-earthquakes-__0__-time-full'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"day"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>27</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"second"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>43</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <div id='explore-earthquakes-__0__-time-full' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"2016-08-14 11:46:32"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-01 10:13:57"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-23 06:23:05"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-01 21:45:29"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-03 07:57:17"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-19 16:37:16"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-05 18:01:36"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-15 06:12:29"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-01 14:57:37"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-13 02:25:54"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 16:08:47"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-11 02:26:24"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-13 00:08:25"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-21 23:17:16"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-03 07:11:55"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-03 12:29:01"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-01 19:57:24"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-25 01:44:43"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-31 17:01:20"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-13 15:44:04"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-02 15:21:03"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 11:44:52"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-10 07:42:17"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-27 20:34:48"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-22 02:42:29"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-22 15:22:45"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-28 19:31:39"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-24 00:59:03"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-24 22:47:39"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-03 13:04:15"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 16:59:38"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-31 23:55:38"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-06 08:43:20"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-06 04:48:56"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-13 12:31:20"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-05 19:08:10"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-19 14:21:13"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-04 10:09:37"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 22:55:02"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-30 03:24:11"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-23 06:30:21"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-27 13:58:11"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-28 11:51:04"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-20 05:13:18"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-17 17:39:23"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-13 22:54:12"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-03 15:34:28"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-14 12:33:03"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-09 23:16:37"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-05 15:42:14"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-13 08:33:12"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-27 02:38:29"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 17:15:45"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-05 15:05:11"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-21 19:13:11"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-23 05:40:48"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-04 13:01:44"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-19 04:19:14"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-20 23:18:09"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-23 11:31:11"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-09 07:53:36"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 17:47:42"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-25 15:21:33"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-21 11:24:34"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-05 14:36:03"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-13 19:30:06"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-30 15:45:32"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-23 03:18:42"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-28 14:41:07"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 16:29:34"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-30 05:26:13"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 19:06:14"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-15 18:42:07"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-27 12:17:34"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-04 05:55:51"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-06 10:39:18"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-29 12:06:56"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-01 08:35:56"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 07:12:25"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-12 00:13:26"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-09 03:54:17"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-25 22:54:57"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-14 08:48:30"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-18 11:25:16"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-08 01:16:49"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-05 20:59:35"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-20 17:26:00"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-10 05:18:04"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-29 23:45:22"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-21 02:55:22"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-11 14:35:41"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-11 07:17:00"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-07-31 21:13:19"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-23 03:54:19"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-22 01:59:08"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-16 11:11:58"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-09 00:30:29"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-06 21:34:30"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-05 01:30:59"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2016-08-21 10:50:02"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-earthquakes-__0__-time" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-earthquakes-__0__-time-year").click(function() {
-            $( "#explore-earthquakes-__0__-time-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-time-month").click(function() {
-            $( "#explore-earthquakes-__0__-time-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-time-epoch").click(function() {
-            $( "#explore-earthquakes-__0__-time-epoch" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-time-hour").click(function() {
-            $( "#explore-earthquakes-__0__-time-hour" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-time-minute").click(function() {
-            $( "#explore-earthquakes-__0__-time-minute" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-time-full").click(function() {
-            $( "#explore-earthquakes-__0__-time-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-earthquakes-__0__-time-full").click(function() {
-            $( "#explore-earthquakes-__0__-time-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-earthquakes-__0__-time-full" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-earthquakes-__0__-time-day").click(function() {
-            $( "#explore-earthquakes-__0__-time-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-time-second").click(function() {
-            $( "#explore-earthquakes-__0__-time-second" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-earthquakes-__0__-impact' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"gap"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>122.0</code>
-                    
-                 </td> 
-                 <td>In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake. Specifically, this means the largest azimuthal gap between azimuthally adjacent stations (in degrees). Earthquake locations in which the azimuthal gap exceeds 180 degrees typically have large location and depth uncertainties. Ranges from 0 to 180.</td> </tr>
-            
-            <tr> <td><code>"magnitude"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>1.43</code>
-                    
-                 </td> 
-                 <td>Earthquake magnitude is a measure of the size of an earthquake at its source. It is a logarithmic measure. At the same distance from the earthquake, the amplitude of the seismic waves from which the magnitude is determined are approximately 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. The total amount of energy released by the earthquake usually goes up by a larger factor; for many commonly used magnitude types, the total energy of an average earthquake goes up by a factor of approximately 32 for each unit increase in magnitude. Typically ranges from -1 (very tiny) to 10 (incredibly powerful).</td> </tr>
-            
-            <tr> <td><code>"significance"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>31</code>
-                    
-                 </td> 
-                 <td>A number describing how significant the event is. Larger numbers indicate a more significant event. This value is determined on a number of factors, including magnitude, maximum MMI, felt reports, and estimated impact. Ranges from 0 to 1000.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-earthquakes-__0__-impact" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-earthquakes-__0__-impact-gap").click(function() {
-            $( "#explore-earthquakes-__0__-impact-gap" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-impact-magnitude").click(function() {
-            $( "#explore-earthquakes-__0__-impact-magnitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-earthquakes-__0__-impact-significance").click(function() {
-            $( "#explore-earthquakes-__0__-impact-significance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

@@ -22,18 +22,19 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_all_reports': {
                 "type": "FunctionType", 
                 "name": 'get_all_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'disease'}, {"type": "LiteralStr", "value": 'increase'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'loc'}, {"type": "LiteralStr", "value": 'number'}, {"type": "LiteralStr", "value": 'population'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'loc'}, {"type": "LiteralStr", "value": 'disease'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'population'}, {"type": "LiteralStr", "value": 'number'}, {"type": "LiteralStr", "value": 'increase'}], "values": [
+				{"type": "StrType"}, 
 				{"type": "StrType"}, 
 				{"type": "NumType"}, 
 				{"type": "NumType"}, 
-				{"type": "StrType"}, 
 				{"type": "NumType"}, 
 				{"type": "NumType"}]}},
             }

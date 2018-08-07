@@ -22,29 +22,16 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_hospitals': {
                 "type": "FunctionType", 
                 "name": 'get_hospitals',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Information'}, {"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Outpatient Volume'}, {"type": "LiteralStr", "value": 'Provider ID'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Phone Number'}, {"type": "LiteralStr", "value": 'Emergency Services'}, {"type": "LiteralStr", "value": 'Ownership'}, {"type": "LiteralStr", "value": 'Type'}, {"type": "LiteralStr", "value": 'Name'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Address'}, {"type": "LiteralStr", "value": 'ZIP Code'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'Latitude'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'City'}, {"type": "LiteralStr", "value": 'State'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Eye'}, {"type": "LiteralStr", "value": 'Skin'}, {"type": "LiteralStr", "value": 'Genitourinary'}, {"type": "LiteralStr", "value": 'Cardiovascular'}, {"type": "LiteralStr", "value": 'Musculoskeletal'}, {"type": "LiteralStr", "value": 'Gastrointestinal'}, {"type": "LiteralStr", "value": 'Nervous System'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Outpatient Volume'}, {"type": "LiteralStr", "value": 'Provider ID'}, {"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Information'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Musculoskeletal'}, {"type": "LiteralStr", "value": 'Nervous System'}, {"type": "LiteralStr", "value": 'Cardiovascular'}, {"type": "LiteralStr", "value": 'Skin'}, {"type": "LiteralStr", "value": 'Gastrointestinal'}, {"type": "LiteralStr", "value": 'Eye'}, {"type": "LiteralStr", "value": 'Genitourinary'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
@@ -52,7 +39,21 @@ def _tifa_definitions():
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "StrType"}]}},
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'City'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'Latitude'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'Address'}, {"type": "LiteralStr", "value": 'ZIP Code'}, {"type": "LiteralStr", "value": 'State'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Phone Number'}, {"type": "LiteralStr", "value": 'Emergency Services'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Type'}, {"type": "LiteralStr", "value": 'Ownership'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
             }
         
         }

@@ -22,51 +22,52 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_records': {
                 "type": "FunctionType", 
                 "name": 'get_records',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'Low Access Numbers'}, {"type": "LiteralStr", "value": 'Low Access Percents'}, {"type": "LiteralStr", "value": 'Vehicle Access'}, {"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Housing Data'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Seniors'}, {"type": "LiteralStr", "value": 'People'}, {"type": "LiteralStr", "value": 'Low Income People'}, {"type": "LiteralStr", "value": 'Children'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Low Income and Low Access'}, {"type": "LiteralStr", "value": 'Low Access Only'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 and 10 Miles'}, {"type": "LiteralStr", "value": '1 and 20 Miles'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 and 10 Miles'}, {"type": "LiteralStr", "value": '1 and 20 Miles'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Housing Data'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'Low Access Numbers'}, {"type": "LiteralStr", "value": 'Low Access Percents'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Vehicle Access'}], "values": [
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rural Housing Percentage'}, {"type": "LiteralStr", "value": 'Residing in Group Quarters'}, {"type": "LiteralStr", "value": 'Total Housing Units'}, {"type": "LiteralStr", "value": 'Urban Housing Percentage'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "NumType"}, 
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Urban Housing Percentage'}, {"type": "LiteralStr", "value": 'Residing in Group Quarters'}, {"type": "LiteralStr", "value": 'Total Housing Units'}, {"type": "LiteralStr", "value": 'Rural Housing Percentage'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Low Income People'}, {"type": "LiteralStr", "value": 'Seniors'}, {"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'People'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Low Access Only'}, {"type": "LiteralStr", "value": 'Low Income and Low Access'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 and 20 Miles'}, {"type": "LiteralStr", "value": '1/2 and 10 Miles'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1 and 20 Miles'}, {"type": "LiteralStr", "value": '1/2 and 10 Miles'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 Mile'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 

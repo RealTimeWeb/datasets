@@ -22,16 +22,21 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_earthquakes': {
                 "type": "FunctionType", 
                 "name": 'get_earthquakes',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'time'}, {"type": "LiteralStr", "value": 'impact'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'impact'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'time'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'significance'}, {"type": "LiteralStr", "value": 'gap'}, {"type": "LiteralStr", "value": 'magnitude'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'epoch'}, {"type": "LiteralStr", "value": 'hour'}, {"type": "LiteralStr", "value": 'minute'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'second'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'second'}, {"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'epoch'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'hour'}, {"type": "LiteralStr", "value": 'minute'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
@@ -40,15 +45,11 @@ def _tifa_definitions():
 					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'gap'}, {"type": "LiteralStr", "value": 'magnitude'}, {"type": "LiteralStr", "value": 'significance'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'distance'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'depth'}], "values": [
-					{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'distance'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'depth'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
+					{"type": "NumType"}, 
 					{"type": "StrType"}, 
 					{"type": "NumType"}]}]}},
             }
