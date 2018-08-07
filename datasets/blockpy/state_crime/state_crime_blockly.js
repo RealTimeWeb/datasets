@@ -214,46 +214,6 @@ PythonToBlocks.KNOWN_MODULES['state_crime'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-Tifa.MODULES['state_crime'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_all_crimes': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'State'}, {"type": "Str", "value": 'Data'}, {"type": "Str", "value": 'Year'}], [
-				Tifa._STR_TYPE(), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Population'}, {"type": "Str", "value": 'Totals'}, {"type": "Str", "value": 'Rates'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Property'}, {"type": "Str", "value": 'Violent'}], [
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Motor'}, {"type": "Str", "value": 'All'}, {"type": "Str", "value": 'Larceny'}, {"type": "Str", "value": 'Burglary'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()]), 
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Rape'}, {"type": "Str", "value": 'Murder'}, {"type": "Str", "value": 'Robbery'}, {"type": "Str", "value": 'All'}, {"type": "Str", "value": 'Assault'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()])]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Property'}, {"type": "Str", "value": 'Violent'}], [
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Motor'}, {"type": "Str", "value": 'All'}, {"type": "Str", "value": 'Larceny'}, {"type": "Str", "value": 'Burglary'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()]), 
-						Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Rape'}, {"type": "Str", "value": 'Murder'}, {"type": "Str", "value": 'Robbery'}, {"type": "Str", "value": 'All'}, {"type": "Str", "value": 'Assault'}], [
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE(), 
-							Tifa._NUM_TYPE()])])]), 
-				Tifa._NUM_TYPE()]))),
-        
-    }
-};
-
 BlockPyEditor.CATEGORY_MAP['Data - State Crime'] = '<category name="Data - State Crime" colour="50">'+
                     '<block type="state_crime_get"><mutation index="(None)" index_value=""></mutation></block>'+
                 '</category>';

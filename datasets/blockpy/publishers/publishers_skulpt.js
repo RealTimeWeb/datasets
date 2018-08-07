@@ -37,6 +37,46 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_books': {
+                    "type": "FunctionType", 
+                    "name": 'get_books',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sold by'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'genre'}, {"type": "LiteralStr", "value": 'publisher'}, {"type": "LiteralStr", "value": 'daily average'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sales rank'}, {"type": "LiteralStr", "value": 'average rating'}, {"type": "LiteralStr", "value": 'sale price'}, {"type": "LiteralStr", "value": 'total reviews'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'author revenue'}, {"type": "LiteralStr", "value": 'units sold'}, {"type": "LiteralStr", "value": 'gross sales'}, {"type": "LiteralStr", "value": 'publisher revenue'}, {"type": "LiteralStr", "value": 'amazon revenue'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

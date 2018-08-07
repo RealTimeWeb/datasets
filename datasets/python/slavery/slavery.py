@@ -12,6 +12,55 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_transaction': {
+                "type": "FunctionType", 
+                "name": 'get_transaction',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Seller'}, {"type": "LiteralStr", "value": 'Slave'}, {"type": "LiteralStr", "value": 'Transaction'}, {"type": "LiteralStr", "value": 'Buyer'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State of Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Skin Color'}, {"type": "LiteralStr", "value": 'Age'}, {"type": "LiteralStr", "value": 'Gender'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Total Slaves Purchased'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Sale Details'}, {"type": "LiteralStr", "value": 'Number of Adult Slaves'}, {"type": "LiteralStr", "value": 'Number of Child Slaves'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Predicted Interest Rate'}, {"type": "LiteralStr", "value": 'Discount Rate'}, {"type": "LiteralStr", "value": 'Payment Method'}, {"type": "LiteralStr", "value": 'Price'}, {"type": "LiteralStr", "value": 'Prices Listed'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State of Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +84,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "slavery.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "slavery.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

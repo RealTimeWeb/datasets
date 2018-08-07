@@ -369,37 +369,6 @@ PythonToBlocks.KNOWN_MODULES['immigration'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-Tifa.MODULES['immigration'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_records': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Country'}, {"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Data'}], [
-				Tifa._STR_TYPE(), 
-				Tifa._NUM_TYPE(), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Nonimmigrant Admissions'}, {"type": "Str", "value": 'Naturalizations (Birth)'}, {"type": "Str", "value": 'Enforcement'}, {"type": "Str", "value": 'Refugees'}, {"type": "Str", "value": 'Legal permanant residences'}], [
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Birth'}, {"type": "Str", "value": 'Last Residence'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._NUM_TYPE(), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Criminal'}, {"type": "Str", "value": 'Apprehended'}, {"type": "Str", "value": 'Inadmissable'}, {"type": "Str", "value": 'Non-criminal'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Arrived'}, {"type": "Str", "value": 'Affirmative'}, {"type": "Str", "value": 'Defensive Asylum'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Birth'}, {"type": "Str", "value": 'Last Residence'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])])]))),
-        
-    }
-};
-
 BlockPyEditor.CATEGORY_MAP['Data - Immigration'] = '<category name="Data - Immigration" colour="50">'+
                     '<block type="immigration_get"><mutation index="(None)" index_value=""></mutation></block>'+
                 '</category>';

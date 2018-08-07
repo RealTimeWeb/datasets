@@ -12,6 +12,60 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_businesses': {
+                "type": "FunctionType", 
+                "name": 'get_businesses',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'State'}], "values": [
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Firm Exits'}, {"type": "LiteralStr", "value": 'Establishments'}, {"type": "LiteralStr", "value": 'Job Destruction'}, {"type": "LiteralStr", "value": 'Calculated'}, {"type": "LiteralStr", "value": 'DHS Denominator'}, {"type": "LiteralStr", "value": 'Job Creation'}, {"type": "LiteralStr", "value": 'Number of Firms'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Establishment Exit'}, {"type": "LiteralStr", "value": 'Job Destruction'}, {"type": "LiteralStr", "value": 'Count'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Exited Rate'}, {"type": "LiteralStr", "value": 'Physical Locations'}, {"type": "LiteralStr", "value": 'Exited'}, {"type": "LiteralStr", "value": 'Entered'}, {"type": "LiteralStr", "value": 'Entered Rate'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rate'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Deaths'}, {"type": "LiteralStr", "value": 'Rate/Deaths'}, {"type": "LiteralStr", "value": 'Continuers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Net Job Creation'}, {"type": "LiteralStr", "value": 'Reallocation Rate'}, {"type": "LiteralStr", "value": 'Net Job Creation Rate'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rate'}, {"type": "LiteralStr", "value": 'Continuers'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Births'}, {"type": "LiteralStr", "value": 'Rate/Births'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}]}, 
+				{"type": "StrType"}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +89,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "business_dynamics.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "business_dynamics.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

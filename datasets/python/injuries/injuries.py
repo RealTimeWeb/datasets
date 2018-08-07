@@ -12,6 +12,47 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_reports': {
+                "type": "FunctionType", 
+                "name": 'get_reports',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'address'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'business'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'state'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'street'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'days away/restricted/transfer'}, {"type": "LiteralStr", "value": 'days away'}, {"type": "LiteralStr", "value": 'total case rate'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'division'}, {"type": "LiteralStr", "value": 'label'}, {"type": "LiteralStr", "value": 'major_group'}, {"type": "LiteralStr", "value": 'id'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'second name'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +76,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "injuries.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "injuries.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

@@ -37,6 +37,49 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_records': {
+                    "type": "FunctionType", 
+                    "name": 'get_records',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Refugees'}, {"type": "LiteralStr", "value": 'Enforcement'}, {"type": "LiteralStr", "value": 'Legal permanant residences'}, {"type": "LiteralStr", "value": 'Nonimmigrant Admissions'}, {"type": "LiteralStr", "value": 'Naturalizations (Birth)'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Affirmative'}, {"type": "LiteralStr", "value": 'Arrived'}, {"type": "LiteralStr", "value": 'Defensive Asylum'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Apprehended'}, {"type": "LiteralStr", "value": 'Inadmissable'}, {"type": "LiteralStr", "value": 'Criminal'}, {"type": "LiteralStr", "value": 'Non-criminal'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Last Residence'}, {"type": "LiteralStr", "value": 'Birth'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Last Residence'}, {"type": "LiteralStr", "value": 'Birth'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}]}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

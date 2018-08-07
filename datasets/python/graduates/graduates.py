@@ -12,6 +12,91 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_majors': {
+                "type": "FunctionType", 
+                "name": 'get_majors',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Salaries'}, {"type": "LiteralStr", "value": 'Demographics'}, {"type": "LiteralStr", "value": 'Employment'}, {"type": "LiteralStr", "value": 'Education'}], "values": [
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Lowest'}, {"type": "LiteralStr", "value": 'Quantity'}, {"type": "LiteralStr", "value": 'Standard Deviation'}, {"type": "LiteralStr", "value": 'Mean'}, {"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Highest'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Ethnicity'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Gender'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Asians'}, {"type": "LiteralStr", "value": 'Whites'}, {"type": "LiteralStr", "value": 'Minorities'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Status'}, {"type": "LiteralStr", "value": 'Reason for Not Working'}, {"type": "LiteralStr", "value": 'Reason Working Outside Field'}, {"type": "LiteralStr", "value": 'Work Activity'}, {"type": "LiteralStr", "value": 'Employer Type'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Not in Labor Force'}, {"type": "LiteralStr", "value": 'Unemployed'}, {"type": "LiteralStr", "value": 'Employed'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Student'}, {"type": "LiteralStr", "value": 'Layoff'}, {"type": "LiteralStr", "value": 'No need/want'}, {"type": "LiteralStr", "value": 'No Job Available'}, {"type": "LiteralStr", "value": 'Family'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Family-related'}, {"type": "LiteralStr", "value": 'Career Change'}, {"type": "LiteralStr", "value": 'Working Conditions'}, {"type": "LiteralStr", "value": 'Pay/Promotion'}, {"type": "LiteralStr", "value": 'Job Location'}, {"type": "LiteralStr", "value": 'No Job Available'}, {"type": "LiteralStr", "value": 'Other'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Accounting/Finance/Contracts'}, {"type": "LiteralStr", "value": 'Development'}, {"type": "LiteralStr", "value": 'Managing/Supervising People/Projects'}, {"type": "LiteralStr", "value": 'Design'}, {"type": "LiteralStr", "value": 'Applied Research'}, {"type": "LiteralStr", "value": 'Human Resources'}, {"type": "LiteralStr", "value": 'Computer Applications'}, {"type": "LiteralStr", "value": 'Qualitity/Productivity Management'}, {"type": "LiteralStr", "value": 'Professional Service'}, {"type": "LiteralStr", "value": 'Basic Research'}, {"type": "LiteralStr", "value": 'Teaching'}, {"type": "LiteralStr", "value": 'Productions/Operations/Maintenance'}, {"type": "LiteralStr", "value": 'Other'}, {"type": "LiteralStr", "value": 'Sales, Purchasing, Marketing'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Educational Institution'}, {"type": "LiteralStr", "value": 'Business/Industry'}, {"type": "LiteralStr", "value": 'Government'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Degrees'}, {"type": "LiteralStr", "value": 'Major'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Bachelors'}, {"type": "LiteralStr", "value": 'Masters'}, {"type": "LiteralStr", "value": 'Professionals'}, {"type": "LiteralStr", "value": 'Doctorates'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +120,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "graduates.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "graduates.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

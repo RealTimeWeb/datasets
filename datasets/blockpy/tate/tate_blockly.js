@@ -156,42 +156,6 @@ PythonToBlocks.KNOWN_MODULES['tate'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-Tifa.MODULES['tate'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_artwork': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'artist'}, {"type": "Str", "value": 'metadata'}, {"type": "Str", "value": 'data'}, {"type": "Str", "value": 'dimensions'}], [
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'gender'}, {"type": "Str", "value": 'role'}, {"type": "Str", "value": 'name'}, {"type": "Str", "value": 'birth'}, {"type": "Str", "value": 'death'}], [
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'year'}, {"type": "Str", "value": 'location'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._STR_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'year'}, {"type": "Str", "value": 'location'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._STR_TYPE()])]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'creation decade'}, {"type": "Str", "value": 'credit'}, {"type": "Str", "value": 'acquisition date'}, {"type": "Str", "value": 'creation year'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE()]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'title'}, {"type": "Str", "value": 'thumbnail'}, {"type": "Str", "value": 'url'}, {"type": "Str", "value": 'medium'}], [
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE()]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'depth'}, {"type": "Str", "value": 'height'}, {"type": "Str", "value": 'width'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE()])]))),
-        
-    }
-};
-
 BlockPyEditor.CATEGORY_MAP['Data - Tate'] = '<category name="Data - Tate" colour="50">'+
                     '<block type="tate_get"><mutation index="(None)" index_value=""></mutation></block>'+
                 '</category>';

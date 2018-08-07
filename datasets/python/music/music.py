@@ -12,6 +12,67 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_songs': {
+                "type": "FunctionType", 
+                "name": 'get_songs',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'artist'}, {"type": "LiteralStr", "value": 'song'}, {"type": "LiteralStr", "value": 'release'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'hotttnesss'}, {"type": "LiteralStr", "value": 'familiarity'}, {"type": "LiteralStr", "value": 'terms_freq'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'terms'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'similar'}, {"type": "LiteralStr", "value": 'id'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'hotttnesss'}, {"type": "LiteralStr", "value": 'artist_mbtags_count'}, {"type": "LiteralStr", "value": 'loudness'}, {"type": "LiteralStr", "value": 'key_confidence'}, {"type": "LiteralStr", "value": 'beats_start'}, {"type": "LiteralStr", "value": 'bars_start'}, {"type": "LiteralStr", "value": 'duration'}, {"type": "LiteralStr", "value": 'mode_confidence'}, {"type": "LiteralStr", "value": 'key'}, {"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'tatums_confidence'}, {"type": "LiteralStr", "value": 'tatums_start'}, {"type": "LiteralStr", "value": 'start_of_fade_out'}, {"type": "LiteralStr", "value": 'mode'}, {"type": "LiteralStr", "value": 'beats_confidence'}, {"type": "LiteralStr", "value": 'bars_confidence'}, {"type": "LiteralStr", "value": 'artist_mbtags'}, {"type": "LiteralStr", "value": 'end_of_fade_in'}, {"type": "LiteralStr", "value": 'tempo'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'time_signature'}, {"type": "LiteralStr", "value": 'time_signature_confidence'}, {"type": "LiteralStr", "value": 'id'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'id'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +96,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "music.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "music.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

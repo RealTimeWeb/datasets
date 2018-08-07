@@ -3,43 +3,14 @@
 var broadway_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Year", "Year"] ,
     ["Type", "Type"] ,
-    ["Theatre", "Theatre"] 
+    ["Theatre", "Theatre"] ,
+    ["Year", "Year"] 
 ];
 
 var broadway_INDEX_VALUES = {
     "(None)": [],
     
-    "Year": [
-        
-        ["1991", "1991"] ,
-        ["1992", "1992"] ,
-        ["1993", "1993"] ,
-        ["1994", "1994"] ,
-        ["1995", "1995"] ,
-        ["1996", "1996"] ,
-        ["1997", "1997"] ,
-        ["1998", "1998"] ,
-        ["1999", "1999"] ,
-        ["2000", "2000"] ,
-        ["2001", "2001"] ,
-        ["2002", "2002"] ,
-        ["2003", "2003"] ,
-        ["2004", "2004"] ,
-        ["2005", "2005"] ,
-        ["2006", "2006"] ,
-        ["2007", "2007"] ,
-        ["2008", "2008"] ,
-        ["2009", "2009"] ,
-        ["2010", "2010"] ,
-        ["2011", "2011"] ,
-        ["2012", "2012"] ,
-        ["2013", "2013"] ,
-        ["2014", "2014"] ,
-        ["2015", "2015"] ,
-        ["2016", "2016"] 
-    ],
     "Type": [
         
         ["Musical", "Musical"] ,
@@ -104,6 +75,35 @@ var broadway_INDEX_VALUES = {
         ["Vivian Beaumont", "Vivian Beaumont"] ,
         ["Walter Kerr", "Walter Kerr"] ,
         ["Winter Garden", "Winter Garden"] 
+    ],
+    "Year": [
+        
+        ["1991", "1991"] ,
+        ["1992", "1992"] ,
+        ["1993", "1993"] ,
+        ["1994", "1994"] ,
+        ["1995", "1995"] ,
+        ["1996", "1996"] ,
+        ["1997", "1997"] ,
+        ["1998", "1998"] ,
+        ["1999", "1999"] ,
+        ["2000", "2000"] ,
+        ["2001", "2001"] ,
+        ["2002", "2002"] ,
+        ["2003", "2003"] ,
+        ["2004", "2004"] ,
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] ,
+        ["2014", "2014"] ,
+        ["2015", "2015"] ,
+        ["2016", "2016"] 
     ]
 }
 
@@ -187,33 +187,6 @@ PythonToBlocks.KNOWN_MODULES['broadway'] = {
             "PROPERTY", 
             {"type": "mutation", "name": "@INDEX"},
             {"type": "mutation", "name": "@INDEX_VALUE"}]
-};
-
-Tifa.MODULES['broadway'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_shows': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Statistics'}, {"type": "Str", "value": 'Show'}, {"type": "Str", "value": 'Date'}], [
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Capacity'}, {"type": "Str", "value": 'Performances'}, {"type": "Str", "value": 'Attendance'}, {"type": "Str", "value": 'Gross Potential'}, {"type": "Str", "value": 'Gross'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE()]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Name'}, {"type": "Str", "value": 'Type'}, {"type": "Str", "value": 'Theatre'}], [
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._STR_TYPE()]), 
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Year'}, {"type": "Str", "value": 'Month'}, {"type": "Str", "value": 'Full'}, {"type": "Str", "value": 'Day'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._NUM_TYPE(), 
-					Tifa._STR_TYPE(), 
-					Tifa._NUM_TYPE()])]))),
-        
-    }
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Broadway'] = '<category name="Data - Broadway" colour="50">'+

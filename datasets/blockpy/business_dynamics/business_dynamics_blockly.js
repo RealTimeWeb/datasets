@@ -201,49 +201,6 @@ PythonToBlocks.KNOWN_MODULES['business_dynamics'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-Tifa.MODULES['business_dynamics'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        
-        'get_businesses': Tifa.defineSupplier(
-		Tifa._LIST_OF_TYPE(
-			Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Data'}, {"type": "Str", "value": 'State'}, {"type": "Str", "value": 'Year'}], [
-				Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Number of Firms'}, {"type": "Str", "value": 'Calculated'}, {"type": "Str", "value": 'Job Destruction'}, {"type": "Str", "value": 'Job Creation'}, {"type": "Str", "value": 'Establishments'}, {"type": "Str", "value": 'DHS Denominator'}, {"type": "Str", "value": 'Firm Exits'}], [
-					Tifa._NUM_TYPE(), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Reallocation Rate'}, {"type": "Str", "value": 'Net Job Creation'}, {"type": "Str", "value": 'Net Job Creation Rate'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Rate/Deaths'}, {"type": "Str", "value": 'Rate'}, {"type": "Str", "value": 'Count'}, {"type": "Str", "value": 'Continuers'}, {"type": "Str", "value": 'Deaths'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Count'}, {"type": "Str", "value": 'Rate/Births'}, {"type": "Str", "value": 'Continuers'}, {"type": "Str", "value": 'Rate'}, {"type": "Str", "value": 'Births'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Exited'}, {"type": "Str", "value": 'Entered Rate'}, {"type": "Str", "value": 'Physical Locations'}, {"type": "Str", "value": 'Exited Rate'}, {"type": "Str", "value": 'Entered'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()]), 
-					Tifa._NUM_TYPE(), 
-					Tifa._DICT_LITERAL_TYPE([{"type": "Str", "value": 'Establishment Exit'}, {"type": "Str", "value": 'Count'}, {"type": "Str", "value": 'Job Destruction'}], [
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE(), 
-						Tifa._NUM_TYPE()])]), 
-				Tifa._STR_TYPE(), 
-				Tifa._NUM_TYPE()]))),
-        
-    }
-};
-
 BlockPyEditor.CATEGORY_MAP['Data - Business Dynamics'] = '<category name="Data - Business Dynamics" colour="50">'+
                     '<block type="business_dynamics_get"><mutation index="(None)" index_value=""></mutation></block>'+
                 '</category>';

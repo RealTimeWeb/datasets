@@ -222,57 +222,89 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-energy-__0__-Consumption' title='Dictionary (6 keys)'>
+    <div id='explore-energy-__0__-Consumption-Commercial' title='Dictionary (10 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Industrial"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Industrial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>2110.0</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>Distillate fuel oil consumed by the commercial sector in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Transportation"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Transportation'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>450.0</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>LPG consumed by the commercial sector in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Residential"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Solar"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Residential'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>0.0</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>Photovoltaic and solar thermal energy consumed by the commercial sector (except portion included in SOHCB) in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Commercial"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Commercial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>2644.0</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>Coal consumed by the commercial sector in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Refinery"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Wind"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Refinery'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>0.0</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>Wind energy consumed by the commercial sector in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Electric Power"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Hydropower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Electric-Power'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>0.0</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>Hydropower consumed by the commercial sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Geothermal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
+                 <td>Geothermal energy consumed by the commercial sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Kerosene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>33.0</code>
+                    
+                 </td> 
+                 <td>Kerosene consumed by the commercial sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Wood"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>35.0</code>
+                    
+                 </td> 
+                 <td>Wood consumed by the commercial sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>10482.0</code>
+                    
+                 </td> 
+                 <td>Natural gas consumed by (delivered to) the commercial sector (including supplemental gaseous fuels) in billion BTU.</td> </tr>
             
         </table>
     </div>
@@ -289,45 +321,77 @@ $(document).ready(function() {
     
         
     
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
-        $( "#explore-energy-__0__-Consumption" ).dialog({
+        $( "#explore-energy-__0__-Consumption-Commercial" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-energy-__0__-Consumption-Industrial").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Transportation").click(function() {
-            $( "#explore-energy-__0__-Consumption-Transportation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Residential").click(function() {
-            $( "#explore-energy-__0__-Consumption-Residential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Solar").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Solar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Commercial").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Coal").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Refinery").click(function() {
-            $( "#explore-energy-__0__-Consumption-Refinery" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Wind").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Electric-Power").click(function() {
-            $( "#explore-energy-__0__-Consumption-Electric-Power" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Hydropower").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Hydropower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Geothermal").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Geothermal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Kerosene").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Wood").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Commercial-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -339,6 +403,14 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>5768.0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil consumed by the industrial sector in billion BTU.</td> </tr>
+            
             <tr> <td><code>"Other Petroleum Products"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
@@ -347,53 +419,13 @@ $(document).ready(function() {
                  </td> 
                  <td>Other petroleum products consumed by the industrial sector in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Kerosene"</code></td> 
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>167.0</code>
+                    <code>515.0</code>
                     
                  </td> 
-                 <td>Kerosene consumed by the industrial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>34662.0</code>
-                    
-                 </td> 
-                 <td>Natural gas consumed by (delivered to) the industrial sector (including supplemental gaseous fuels) in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Hydropower"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>2.0</code>
-                    
-                 </td> 
-                 <td>Hydropower consumed by the industrial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>70489.0</code>
-                    
-                 </td> 
-                 <td>Coal consumed by the industrial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Geothermal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td>Geothermal energy consumed by the industrial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Wood"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>344.0</code>
-                    
-                 </td> 
-                 <td>Wood and waste consumed in the industrial sector, total, in billion BTU.</td> </tr>
+                 <td>LPG consumed by the industrial sector in billion BTU.</td> </tr>
             
             <tr> <td><code>"Solar"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -403,13 +435,13 @@ $(document).ready(function() {
                  </td> 
                  <td>Photovoltaic and solar thermal energy consumed by the industrial sector (except portion included in SOHCB) in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+            <tr> <td><code>"Coal"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>5768.0</code>
+                    <code>70489.0</code>
                     
                  </td> 
-                 <td>Distillate fuel oil consumed by the industrial sector in billion BTU.</td> </tr>
+                 <td>Coal consumed by the industrial sector in billion BTU.</td> </tr>
             
             <tr> <td><code>"Wind"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -419,13 +451,45 @@ $(document).ready(function() {
                  </td> 
                  <td>Wind energy consumed by the industrial sector in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+            <tr> <td><code>"Hydropower"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>515.0</code>
+                    <code>2.0</code>
                     
                  </td> 
-                 <td>LPG consumed by the industrial sector in billion BTU.</td> </tr>
+                 <td>Hydropower consumed by the industrial sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Geothermal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
+                 <td>Geothermal energy consumed by the industrial sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Kerosene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>167.0</code>
+                    
+                 </td> 
+                 <td>Kerosene consumed by the industrial sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Wood"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>344.0</code>
+                    
+                 </td> 
+                 <td>Wood and waste consumed in the industrial sector, total, in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>34662.0</code>
+                    
+                 </td> 
+                 <td>Natural gas consumed by (delivered to) the industrial sector (including supplemental gaseous fuels) in billion BTU.</td> </tr>
             
         </table>
     </div>
@@ -459,62 +523,14 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Other-Petroleum-Products").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Other-Petroleum-Products" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Kerosene").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Hydropower").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Hydropower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Coal").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Geothermal").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Geothermal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Wood").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Solar").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Solar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-energy-__0__-Consumption-Industrial-Distillate-Fuel-Oil").click(function() {
             $( "#explore-energy-__0__-Consumption-Industrial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Industrial-Wind").click(function() {
-            $( "#explore-energy-__0__-Consumption-Industrial-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Other-Petroleum-Products").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Other-Petroleum-Products" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -525,1280 +541,50 @@ $(document).ready(function() {
         });
         
         
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Expenditure' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Commercial"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Commercial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Industrial"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Industrial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Transportation"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Transportation'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Residential"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Residential'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Electric Power"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Electric-Power'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Expenditure" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Expenditure-Commercial").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Solar").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Solar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Expenditure-Industrial").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Coal").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Expenditure-Transportation").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Transportation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Wind").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Expenditure-Residential").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Residential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Hydropower").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Hydropower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Expenditure-Electric-Power").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Electric-Power" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Geothermal").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Geothermal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Price' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Commercial"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price-Commercial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Industrial"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price-Industrial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Transportation"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price-Transportation'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Electric Power"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price-Electric-Power'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Price" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Price-Commercial").click(function() {
-            $( "#explore-energy-__0__-Price-Commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Kerosene").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Price-Industrial").click(function() {
-            $( "#explore-energy-__0__-Price-Industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Wood").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Price-Transportation").click(function() {
-            $( "#explore-energy-__0__-Price-Transportation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Electric-Power").click(function() {
-            $( "#explore-energy-__0__-Price-Electric-Power" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__' title='Dictionary (6 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Consumption"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Price"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"State"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Utah"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-State'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The state that this report was made for.</td> </tr>
-            
-            <tr> <td><code>"Production"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Production'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Expenditure"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1960</code>
-                    
-                 </td> 
-                 <td>The year that this report was made.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-        <div id='explore-energy-__0__-State' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Maine"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nevada"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"District of Columbia"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tennessee"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Carolina"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Washington"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Jersey"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Idaho"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Colorado"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Dakota"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rhode Island"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alabama"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wisconsin"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Missouri"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nebraska"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hawaii"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kentucky"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alaska"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Florida"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pennsylvania"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Dakota"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Delaware"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vermont"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"California"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Carolina"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"West Virginia"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Massachusetts"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Hampshire"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Montana"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Connecticut"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Oregon"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Virginia"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Utah"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kansas"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Michigan"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New York"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iowa"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arizona"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Texas"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Louisiana"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Maryland"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Indiana"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ohio"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Mexico"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arkansas"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Georgia"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Illinois"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Minnesota"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wyoming"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Oklahoma"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mississippi"</code></td>
-                    <td>55</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Consumption").click(function() {
-            $( "#explore-energy-__0__-Consumption" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price").click(function() {
-            $( "#explore-energy-__0__-Price" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-State").click(function() {
-            $( "#explore-energy-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-energy-__0__-State").click(function() {
-            $( "#explore-energy-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-energy-__0__-State" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-energy-__0__-Production").click(function() {
-            $( "#explore-energy-__0__-Production" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure").click(function() {
-            $( "#explore-energy-__0__-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Year").click(function() {
-            $( "#explore-energy-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Price-Commercial' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal price in the commercial sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Kerosene"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Kerosene price in the commercial sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas price in the commercial sector (including supplemental gaseous fuels) in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil price in the commercial sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>LPG price in the commercial sector in dollars per million BTU.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Price-Commercial" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Price-Commercial-Coal").click(function() {
-            $( "#explore-energy-__0__-Price-Commercial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Commercial-Kerosene").click(function() {
-            $( "#explore-energy-__0__-Price-Commercial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Commercial-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Price-Commercial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Commercial-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Price-Commercial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Commercial-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Price-Commercial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Expenditure-Transportation' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal expenditures in the transportation sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil expenditures in the transportation sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas expenditures in the transportation sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>LPG expenditures in the transportation sector in million dollars.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Expenditure-Transportation" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Expenditure-Transportation-Coal").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Transportation-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Transportation-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Transportation-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Transportation-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Transportation-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Transportation-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Transportation-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Price-Electric-Power' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal price in the electric power sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil price in the electric power sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas price in the electric power sector (including supplemental gaseous fuels) in dollars per million BTU.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Price-Electric-Power" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Price-Electric-Power-Coal").click(function() {
-            $( "#explore-energy-__0__-Price-Electric-Power-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Electric-Power-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Price-Electric-Power-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Electric-Power-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Price-Electric-Power-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Expenditure-Industrial' title='Dictionary (6 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Other Petroleum Products"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Other petroleum products total expenditures in the industrial sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Kerosene"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Kerosene expenditures in the industrial sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas expenditures in the industrial sector (including supplemental gaseous fuels) in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal expenditures in the industrial sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil expenditures in the industrial sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>LPG expenditures in the industrial sector in million dollars.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Expenditure-Industrial" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Expenditure-Industrial-Other-Petroleum-Products").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Industrial-Other-Petroleum-Products" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Industrial-Kerosene").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Industrial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Industrial-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Industrial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Industrial-Coal").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Industrial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Industrial-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Industrial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Industrial-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Industrial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Expenditure-Electric-Power' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal expenditures in the electric power sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil expenditures in the electric power sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas expenditures in the electric power sector (including supplemental gaseous fuels) in million dollars.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Expenditure-Electric-Power" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Expenditure-Electric-Power-Coal").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Electric-Power-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Electric-Power-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Electric-Power-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Electric-Power-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Electric-Power-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Price-Industrial' title='Dictionary (6 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Other Petroleum Products"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Other petroleum products average price in the industrial sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Kerosene"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Kerosene price in the industrial sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas price in the industrial sector (including supplemental gaseous fuels) in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal price in the industrial sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil price in the industrial sector in dollars per million BTU.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>LPG price in the industrial sector in dollars per million BTU.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Price-Industrial" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Price-Industrial-Other-Petroleum-Products").click(function() {
-            $( "#explore-energy-__0__-Price-Industrial-Other-Petroleum-Products" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Industrial-Kerosene").click(function() {
-            $( "#explore-energy-__0__-Price-Industrial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Industrial-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Price-Industrial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Industrial-Coal").click(function() {
-            $( "#explore-energy-__0__-Price-Industrial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Industrial-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Price-Industrial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Price-Industrial-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Price-Industrial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Consumption-Refinery' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal consumed as refinery fuel in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil consumed as refinery fuel in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas consumed as refinery fuel (including supplemental gaseous fuels) in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>LPG consumed as refinery fuel in billion BTU.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Consumption-Refinery" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Consumption-Refinery-Coal").click(function() {
-            $( "#explore-energy-__0__-Consumption-Refinery-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Refinery-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Consumption-Refinery-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Refinery-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Consumption-Refinery-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Refinery-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Consumption-Refinery-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Expenditure-Commercial' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal expenditures in the industrial sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Kerosene"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Kerosene expenditures in the industrial sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas expenditures in the industrial sector (including supplemental gaseous fuels) in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil expenditures in the industrial sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>LPG expenditures in the industrial sector in million dollars.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Expenditure-Commercial" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Expenditure-Commercial-Coal").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Commercial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Commercial-Kerosene").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Commercial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Commercial-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Commercial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Commercial-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Commercial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Commercial-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Commercial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Industrial-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1839,9 +625,1505 @@ $(document).ready(function() {
     });
     </script>
 
+    <div id='explore-energy-__0__-Price' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Industrial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price-Industrial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Electric Power"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price-Electric-Power'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Transportation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price-Transportation'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Commercial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price-Commercial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Price" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Price-Industrial").click(function() {
+            $( "#explore-energy-__0__-Price-Industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Electric-Power").click(function() {
+            $( "#explore-energy-__0__-Price-Electric-Power" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Transportation").click(function() {
+            $( "#explore-energy-__0__-Price-Transportation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Commercial").click(function() {
+            $( "#explore-energy-__0__-Price-Commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Expenditure-Electric-Power' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil expenditures in the electric power sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas expenditures in the electric power sector (including supplemental gaseous fuels) in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal expenditures in the electric power sector in million dollars.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Expenditure-Electric-Power" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Expenditure-Electric-Power-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Electric-Power-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Electric-Power-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Electric-Power-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Electric-Power-Coal").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Electric-Power-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Expenditure-Industrial' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil expenditures in the industrial sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas expenditures in the industrial sector (including supplemental gaseous fuels) in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>LPG expenditures in the industrial sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Other Petroleum Products"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Other petroleum products total expenditures in the industrial sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal expenditures in the industrial sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Kerosene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Kerosene expenditures in the industrial sector in million dollars.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Expenditure-Industrial" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Expenditure-Industrial-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Industrial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Industrial-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Industrial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Industrial-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Industrial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Industrial-Other-Petroleum-Products").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Industrial-Other-Petroleum-Products" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Industrial-Coal").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Industrial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Industrial-Kerosene").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Industrial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Expenditure' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Residential"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Residential'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Industrial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Industrial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Electric Power"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Electric-Power'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Transportation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Transportation'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Commercial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure-Commercial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Expenditure" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Expenditure-Residential").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Residential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Industrial").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Electric-Power").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Electric-Power" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Transportation").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Transportation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Commercial").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Price-Electric-Power' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil price in the electric power sector in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas price in the electric power sector (including supplemental gaseous fuels) in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal price in the electric power sector in dollars per million BTU.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Price-Electric-Power" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Price-Electric-Power-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Price-Electric-Power-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Electric-Power-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Price-Electric-Power-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Electric-Power-Coal").click(function() {
+            $( "#explore-energy-__0__-Price-Electric-Power-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Price-Industrial' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil price in the industrial sector in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas price in the industrial sector (including supplemental gaseous fuels) in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>LPG price in the industrial sector in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Other Petroleum Products"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Other petroleum products average price in the industrial sector in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal price in the industrial sector in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Kerosene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Kerosene price in the industrial sector in dollars per million BTU.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Price-Industrial" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Price-Industrial-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Price-Industrial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Industrial-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Price-Industrial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Industrial-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Price-Industrial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Industrial-Other-Petroleum-Products").click(function() {
+            $( "#explore-energy-__0__-Price-Industrial-Other-Petroleum-Products" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Industrial-Coal").click(function() {
+            $( "#explore-energy-__0__-Price-Industrial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Industrial-Kerosene").click(function() {
+            $( "#explore-energy-__0__-Price-Industrial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Expenditure-Transportation' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil expenditures in the transportation sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas expenditures in the transportation sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>LPG expenditures in the transportation sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal expenditures in the transportation sector in million dollars.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Expenditure-Transportation" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Expenditure-Transportation-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Transportation-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Transportation-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Transportation-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Transportation-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Transportation-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Transportation-Coal").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Transportation-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Consumption-Refinery' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil consumed as refinery fuel in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas consumed as refinery fuel (including supplemental gaseous fuels) in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>LPG consumed as refinery fuel in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal consumed as refinery fuel in billion BTU.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Consumption-Refinery" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Consumption-Refinery-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Consumption-Refinery-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Refinery-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Consumption-Refinery-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Refinery-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Consumption-Refinery-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Refinery-Coal").click(function() {
+            $( "#explore-energy-__0__-Consumption-Refinery-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Price-Commercial' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil price in the commercial sector in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas price in the commercial sector (including supplemental gaseous fuels) in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Kerosene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Kerosene price in the commercial sector in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>LPG price in the commercial sector in dollars per million BTU.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal price in the commercial sector in dollars per million BTU.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Price-Commercial" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Price-Commercial-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Price-Commercial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Commercial-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Price-Commercial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Commercial-Kerosene").click(function() {
+            $( "#explore-energy-__0__-Price-Commercial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Commercial-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Price-Commercial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price-Commercial-Coal").click(function() {
+            $( "#explore-energy-__0__-Price-Commercial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Consumption' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Residential"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Residential'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Electric Power"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Electric-Power'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Transportation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Transportation'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Refinery"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Refinery'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Industrial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Industrial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Commercial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption-Commercial'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Consumption" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Consumption-Residential").click(function() {
+            $( "#explore-energy-__0__-Consumption-Residential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Electric-Power").click(function() {
+            $( "#explore-energy-__0__-Consumption-Electric-Power" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Transportation").click(function() {
+            $( "#explore-energy-__0__-Consumption-Transportation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Refinery").click(function() {
+            $( "#explore-energy-__0__-Consumption-Refinery" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Industrial").click(function() {
+            $( "#explore-energy-__0__-Consumption-Industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Commercial").click(function() {
+            $( "#explore-energy-__0__-Consumption-Commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Expenditure-Residential' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil expenditures in the residential sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas expenditures in the residential sector (including supplemental gaseous fuels) in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>LPG expenditures in the residential sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal expenditures in the residential sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Kerosene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Kerosene expenditures in the residential sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Wood"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Wood expenditures in the residential sector in million dollars.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Expenditure-Residential" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Expenditure-Residential-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Residential-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Residential-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Residential-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Residential-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Residential-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Residential-Coal").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Residential-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Residential-Kerosene").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Residential-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Residential-Wood").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Residential-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Production"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Production'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Price"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Price'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Consumption"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Consumption'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1960</code>
+                    
+                 </td> 
+                 <td>The year that this report was made.</td> </tr>
+            
+            <tr> <td><code>"Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-Expenditure'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Utah"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-energy-__0__-State'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The state that this report was made for.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <div id='explore-energy-__0__-State' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Hawaii"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Delaware"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arkansas"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Hampshire"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colorado"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maryland"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Massachusetts"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rhode Island"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alaska"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Carolina"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Jersey"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vermont"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ohio"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nevada"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alabama"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Carolina"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Texas"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Connecticut"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montana"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kansas"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wyoming"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oklahoma"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nebraska"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virginia"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Missouri"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Dakota"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pennsylvania"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Indiana"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kentucky"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"District of Columbia"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Mexico"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Illinois"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Florida"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Georgia"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Idaho"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iowa"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Utah"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minnesota"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michigan"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Dakota"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tennessee"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oregon"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Virginia"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arizona"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mississippi"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"California"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wisconsin"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louisiana"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maine"</code></td>
+                    <td>55</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Production").click(function() {
+            $( "#explore-energy-__0__-Production" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Price").click(function() {
+            $( "#explore-energy-__0__-Price" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption").click(function() {
+            $( "#explore-energy-__0__-Consumption" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Year").click(function() {
+            $( "#explore-energy-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure").click(function() {
+            $( "#explore-energy-__0__-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-State").click(function() {
+            $( "#explore-energy-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-energy-__0__-State").click(function() {
+            $( "#explore-energy-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-energy-__0__-State" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Consumption-Electric-Power' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>67.0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil consumed by the electrical power sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>3806.0</code>
+                    
+                 </td> 
+                 <td>Natural gas consumed by the electric power sector (including supplemental gaseous fuels) in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Wood"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
+                 <td>Wood and waste consumed by the electric power sector in billion BTU.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>12840.0</code>
+                    
+                 </td> 
+                 <td>Coal consumed by the electric power sector in billion BTU.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Consumption-Electric-Power" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Consumption-Electric-Power-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Consumption-Electric-Power-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Electric-Power-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Consumption-Electric-Power-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Electric-Power-Wood").click(function() {
+            $( "#explore-energy-__0__-Consumption-Electric-Power-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Consumption-Electric-Power-Coal").click(function() {
+            $( "#explore-energy-__0__-Consumption-Electric-Power-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
     <div id='explore-energy-__0__-Consumption-Residential' title='Dictionary (7 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>580.0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil consumed by the residential sector in billion BTU.</td> </tr>
             
             <tr> <td><code>"Natural Gas"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -1851,13 +2133,13 @@ $(document).ready(function() {
                  </td> 
                  <td>Natural gas consumed by (delivered to) the residential sector (including supplemental gaseous fuels) in billion BTU.</td> </tr>
             
-            <tr> <td><code>"Kerosene"</code></td> 
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>5.0</code>
+                    <code>673.0</code>
                     
                  </td> 
-                 <td>Kerosene consumed by the residential sector in billion BTU.</td> </tr>
+                 <td>LPG consumed by the residential sector in billion BTU.</td> </tr>
             
             <tr> <td><code>"Coal"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -1875,6 +2157,14 @@ $(document).ready(function() {
                  </td> 
                  <td>Geothermal energy consumed by the residential sector in billion BTU.</td> </tr>
             
+            <tr> <td><code>"Kerosene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>5.0</code>
+                    
+                 </td> 
+                 <td>Kerosene consumed by the residential sector in billion BTU.</td> </tr>
+            
             <tr> <td><code>"Wood"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
@@ -1882,22 +2172,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>Wood consumed by the residential sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>580.0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil consumed by the residential sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>673.0</code>
-                    
-                 </td> 
-                 <td>LPG consumed by the residential sector in billion BTU.</td> </tr>
             
         </table>
     </div>
@@ -1923,14 +2197,20 @@ $(document).ready(function() {
           width: 600
         });
         
+        $("#btn-explore-energy-__0__-Consumption-Residential-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Consumption-Residential-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-energy-__0__-Consumption-Residential-Natural-Gas").click(function() {
             $( "#explore-energy-__0__-Consumption-Residential-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Residential-Kerosene").click(function() {
-            $( "#explore-energy-__0__-Consumption-Residential-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Consumption-Residential-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Consumption-Residential-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1947,20 +2227,111 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-energy-__0__-Consumption-Residential-Kerosene").click(function() {
+            $( "#explore-energy-__0__-Consumption-Residential-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-energy-__0__-Consumption-Residential-Wood").click(function() {
             $( "#explore-energy-__0__-Consumption-Residential-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Residential-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Consumption-Residential-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-energy-__0__-Expenditure-Commercial' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Distillate fuel oil expenditures in the industrial sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Natural Gas"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Natural gas expenditures in the industrial sector (including supplemental gaseous fuels) in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Kerosene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Kerosene expenditures in the industrial sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>LPG expenditures in the industrial sector in million dollars.</td> </tr>
+            
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal expenditures in the industrial sector in million dollars.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-energy-__0__-Expenditure-Commercial" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-energy-__0__-Expenditure-Commercial-Distillate-Fuel-Oil").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Commercial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-energy-__0__-Consumption-Residential-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Consumption-Residential-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Expenditure-Commercial-Natural-Gas").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Commercial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Commercial-Kerosene").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Commercial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Commercial-Liquefied-Petroleum-Gases").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Commercial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-energy-__0__-Expenditure-Commercial-Coal").click(function() {
+            $( "#explore-energy-__0__-Expenditure-Commercial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1971,14 +2342,6 @@ $(document).ready(function() {
     <div id='explore-energy-__0__-Consumption-Transportation' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>1188.0</code>
-                    
-                 </td> 
-                 <td>Coal consumed by the transportation sector in billion BTU.</td> </tr>
             
             <tr> <td><code>"Distillate Fuel Oil"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -2004,6 +2367,14 @@ $(document).ready(function() {
                  </td> 
                  <td>LPG consumed by the transportation sector in billion BTU.</td> </tr>
             
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>1188.0</code>
+                    
+                 </td> 
+                 <td>Coal consumed by the transportation sector in billion BTU.</td> </tr>
+            
         </table>
     </div>
     
@@ -2021,12 +2392,6 @@ $(document).ready(function() {
           autoOpen: false,
           width: 600
         });
-        
-        $("#btn-explore-energy-__0__-Consumption-Transportation-Coal").click(function() {
-            $( "#explore-energy-__0__-Consumption-Transportation-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
         
         $("#btn-explore-energy-__0__-Consumption-Transportation-Distillate-Fuel-Oil").click(function() {
             $( "#explore-energy-__0__-Consumption-Transportation-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -2046,20 +2411,18 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-energy-__0__-Consumption-Transportation-Coal").click(function() {
+            $( "#explore-energy-__0__-Consumption-Transportation-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
     });
     </script>
 
     <div id='explore-energy-__0__-Price-Transportation' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal price in the transportation sector in dollars per million BTU.</td> </tr>
             
             <tr> <td><code>"Distillate Fuel Oil"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -2085,6 +2448,14 @@ $(document).ready(function() {
                  </td> 
                  <td>LPG price in the transportation sector in dollars per million BTU.</td> </tr>
             
+            <tr> <td><code>"Coal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td>Coal price in the transportation sector in dollars per million BTU.</td> </tr>
+            
         </table>
     </div>
     
@@ -2102,12 +2473,6 @@ $(document).ready(function() {
           autoOpen: false,
           width: 600
         });
-        
-        $("#btn-explore-energy-__0__-Price-Transportation-Coal").click(function() {
-            $( "#explore-energy-__0__-Price-Transportation-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
         
         $("#btn-explore-energy-__0__-Price-Transportation-Distillate-Fuel-Oil").click(function() {
             $( "#explore-energy-__0__-Price-Transportation-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -2127,373 +2492,8 @@ $(document).ready(function() {
         });
         
         
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Consumption-Commercial' title='Dictionary (10 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>10482.0</code>
-                    
-                 </td> 
-                 <td>Natural gas consumed by (delivered to) the commercial sector (including supplemental gaseous fuels) in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Kerosene"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>33.0</code>
-                    
-                 </td> 
-                 <td>Kerosene consumed by the commercial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Hydropower"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td>Hydropower consumed by the commercial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>2644.0</code>
-                    
-                 </td> 
-                 <td>Coal consumed by the commercial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Geothermal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td>Geothermal energy consumed by the commercial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Wood"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>35.0</code>
-                    
-                 </td> 
-                 <td>Wood consumed by the commercial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Solar"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td>Photovoltaic and solar thermal energy consumed by the commercial sector (except portion included in SOHCB) in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>2110.0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil consumed by the commercial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Wind"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td>Wind energy consumed by the commercial sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>450.0</code>
-                    
-                 </td> 
-                 <td>LPG consumed by the commercial sector in billion BTU.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Consumption-Commercial" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Kerosene").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Hydropower").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Hydropower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Coal").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Geothermal").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Geothermal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Wood").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Solar").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Solar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Wind").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Commercial-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Consumption-Commercial-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Consumption-Electric-Power' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>12840.0</code>
-                    
-                 </td> 
-                 <td>Coal consumed by the electric power sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>67.0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil consumed by the electrical power sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Wood"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td>Wood and waste consumed by the electric power sector in billion BTU.</td> </tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>3806.0</code>
-                    
-                 </td> 
-                 <td>Natural gas consumed by the electric power sector (including supplemental gaseous fuels) in billion BTU.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Consumption-Electric-Power" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Consumption-Electric-Power-Coal").click(function() {
-            $( "#explore-energy-__0__-Consumption-Electric-Power-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Electric-Power-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Consumption-Electric-Power-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Electric-Power-Wood").click(function() {
-            $( "#explore-energy-__0__-Consumption-Electric-Power-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Consumption-Electric-Power-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Consumption-Electric-Power-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-energy-__0__-Expenditure-Residential' title='Dictionary (6 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Natural Gas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Natural gas expenditures in the residential sector (including supplemental gaseous fuels) in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Kerosene"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Kerosene expenditures in the residential sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Coal"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Coal expenditures in the residential sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Wood"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Wood expenditures in the residential sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Distillate Fuel Oil"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>Distillate fuel oil expenditures in the residential sector in million dollars.</td> </tr>
-            
-            <tr> <td><code>"Liquefied Petroleum Gases"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td>LPG expenditures in the residential sector in million dollars.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-energy-__0__-Expenditure-Residential" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-energy-__0__-Expenditure-Residential-Natural-Gas").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Residential-Natural-Gas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Residential-Kerosene").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Residential-Kerosene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Residential-Coal").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Residential-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Residential-Wood").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Residential-Wood" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Residential-Distillate-Fuel-Oil").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Residential-Distillate-Fuel-Oil" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-energy-__0__-Expenditure-Residential-Liquefied-Petroleum-Gases").click(function() {
-            $( "#explore-energy-__0__-Expenditure-Residential-Liquefied-Petroleum-Gases" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-energy-__0__-Price-Transportation-Coal").click(function() {
+            $( "#explore-energy-__0__-Price-Transportation-Coal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

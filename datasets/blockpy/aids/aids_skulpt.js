@@ -37,6 +37,57 @@ var $builtinmodule = function(name)
     });
     
     
+    mod._tifa_definitions = new Sk.builtin.func(function() {
+        return Sk.ffi.remapToPy({"type": "ModuleType",
+            "fields": {
+                'get': {
+                    "type": "FunctionType",
+                    "name": 'get',
+                    "returns": {
+                        "type": "ListType", 
+                        "empty": false, 
+                        "subtype": {"type": "NumType"}
+                    }
+                },
+            
+                'get_reports': {
+                    "type": "FunctionType", 
+                    "name": 'get_reports',
+                    "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Country'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'HIV Prevalence'}, {"type": "LiteralStr", "value": 'People Living with HIV'}, {"type": "LiteralStr", "value": 'AIDS-Related Deaths'}, {"type": "LiteralStr", "value": 'New HIV Infections'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'Young Men'}, {"type": "LiteralStr", "value": 'Young Women'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Male Adults'}, {"type": "LiteralStr", "value": 'Children'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'AIDS Orphans'}, {"type": "LiteralStr", "value": 'Male Adults'}, {"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'All Ages'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'Male Adults'}, {"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'Incidence Rate Among Adults'}, {"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'All Ages'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "NumType"}, 
+				{"type": "StrType"}]}},
+                }
+            
+            }
+        });
+    });
 
     return mod;
 }

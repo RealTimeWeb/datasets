@@ -12,6 +12,76 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_skyscrapers': {
+                "type": "FunctionType", 
+                "name": 'get_skyscrapers',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'material'}, {"type": "LiteralStr", "value": 'purposes'}, {"type": "LiteralStr", "value": 'status'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'observation'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'telecommunications'}, {"type": "LiteralStr", "value": 'library'}, {"type": "LiteralStr", "value": 'hotel'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'industrial'}, {"type": "LiteralStr", "value": 'education'}, {"type": "LiteralStr", "value": 'hospital'}, {"type": "LiteralStr", "value": 'belltower'}, {"type": "LiteralStr", "value": 'casino'}, {"type": "LiteralStr", "value": 'exhibition'}, {"type": "LiteralStr", "value": 'abandoned'}, {"type": "LiteralStr", "value": 'retail'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'multiple'}, {"type": "LiteralStr", "value": 'museum'}, {"type": "LiteralStr", "value": 'bridge'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'air traffic control tower'}, {"type": "LiteralStr", "value": 'government'}, {"type": "LiteralStr", "value": 'serviced apartments'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'completed'}, {"type": "LiteralStr", "value": 'started'}, {"type": "LiteralStr", "value": 'current'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'is completed'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'is started'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}]}, 
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'number of purposes'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'floors above'}, {"type": "LiteralStr", "value": 'height'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'country id'}, {"type": "LiteralStr", "value": 'country'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'city_id'}, {"type": "LiteralStr", "value": 'longitude'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +105,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "skyscrapers.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "skyscrapers.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

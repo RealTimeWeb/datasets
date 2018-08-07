@@ -286,6 +286,712 @@ $(document).ready(function() {
 
 
 
+    <div id='explore-cancer-__0__-Data' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Crude CI Lower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>184.8</code>
+                    
+                 </td> 
+                 <td>A number representing the lower bound for the Crude Rate. It is unlikely that the actual rate is lower than this number.</td> </tr>
+            
+            <tr> <td><code>"Event Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Mortality"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Data-Event-Type'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The type of event reported here - whether the participants lived or died.</td> </tr>
+            
+            <tr> <td><code>"Crude Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>190.4</code>
+                    
+                 </td> 
+                 <td>The estimated number of people with cancer adjusted by the population. This adjustment makes it easy to compare cancer rates between different locations and over time.</td> </tr>
+            
+            <tr> <td><code>"Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>2293259</code>
+                    
+                 </td> 
+                 <td>The number of people present in this report.</td> </tr>
+            
+            <tr> <td><code>"Crude CI Upper"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>196.1</code>
+                    
+                 </td> 
+                 <td>A number representing the upper bound for the Crude Rate. It is unlikely that the actual rate is higher than this number.</td> </tr>
+            
+            <tr> <td><code>"Count"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>4366</code>
+                    
+                 </td> 
+                 <td>The number of incidences of cancer in this particular group.</td> </tr>
+            
+            <tr> <td><code>"Race"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"All Races"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Data-Race'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The races reported in this particular report.</td> </tr>
+            
+            <tr> <td><code>"Sex"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Female"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Data-Sex'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The gender of people in this particular report.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+        <div id='explore-cancer-__0__-Data-Event-Type' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Incidence"</code></td>
+                    <td>11388</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mortality"</code></td>
+                    <td>10752</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <div id='explore-cancer-__0__-Data-Race' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"White"</code></td>
+                    <td>5535</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"All Races"</code></td>
+                    <td>5535</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hispanic"</code></td>
+                    <td>5535</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Black"</code></td>
+                    <td>5535</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-cancer-__0__-Data-Sex' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Male"</code></td>
+                    <td>7380</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Male and Female"</code></td>
+                    <td>7380</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Female"</code></td>
+                    <td>7380</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cancer-__0__-Data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Crude-CI-Lower").click(function() {
+            $( "#explore-cancer-__0__-Data-Crude-CI-Lower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cancer-__0__-Data-Event-Type").click(function() {
+            $( "#explore-cancer-__0__-Data-Event-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Event-Type").click(function() {
+            $( "#explore-cancer-__0__-Data-Event-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-cancer-__0__-Data-Event-Type" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-cancer-__0__-Data-Crude-Rate").click(function() {
+            $( "#explore-cancer-__0__-Data-Crude-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cancer-__0__-Data-Population").click(function() {
+            $( "#explore-cancer-__0__-Data-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cancer-__0__-Data-Crude-CI-Upper").click(function() {
+            $( "#explore-cancer-__0__-Data-Crude-CI-Upper" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cancer-__0__-Data-Count").click(function() {
+            $( "#explore-cancer-__0__-Data-Count" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cancer-__0__-Data-Race").click(function() {
+            $( "#explore-cancer-__0__-Data-Race" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Race").click(function() {
+            $( "#explore-cancer-__0__-Data-Race" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-cancer-__0__-Data-Race" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-cancer-__0__-Data-Sex").click(function() {
+            $( "#explore-cancer-__0__-Data-Sex" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Sex").click(function() {
+            $( "#explore-cancer-__0__-Data-Sex" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-cancer-__0__-Data-Sex" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+    });
+    </script>
+
+    <div id='explore-cancer-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>1999</code>
+                    
+                 </td> 
+                 <td>The 4-digit year that this report was created for.</td> </tr>
+            
+            <tr> <td><code>"Area"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Alabama"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Area'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The area of the country (typically the name of the state) for this report.</td> </tr>
+            
+            <tr> <td><code>"Data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Age"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Age'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+        <div id='explore-cancer-__0__-Area' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Hawaii"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Delaware"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Hampshire"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kansas"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colorado"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pennsylvania"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rhode Island"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alaska"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Middle Atlantic"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Northeast"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Indiana"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vermont"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ohio"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Carolina"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Texas"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Connecticut"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montana"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wyoming"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West North Central"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pacific"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oklahoma"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nebraska"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Missouri"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Jersey"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New England"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Massachusetts"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kentucky"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Mexico"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Virginia"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Illinois"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Florida"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Georgia"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Idaho"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iowa"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Utah"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minnesota"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wisconsin"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michigan"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Carolina"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oregon"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arizona"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East North Central"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Midwest"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"California"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louisiana"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maine"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maryland"</code></td>
+                    <td>324</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West"</code></td>
+                    <td>324</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alabama"</code></td>
+                    <td>324</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Dakota"</code></td>
+                    <td>324</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mountain"</code></td>
+                    <td>312</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"District of Columbia"</code></td>
+                    <td>312</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Dakota"</code></td>
+                    <td>312</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West South Central"</code></td>
+                    <td>312</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arkansas"</code></td>
+                    <td>300</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nevada"</code></td>
+                    <td>300</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virginia"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Atlantic"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mississippi"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East South Central"</code></td>
+                    <td>276</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tennessee"</code></td>
+                    <td>276</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South"</code></td>
+                    <td>276</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Jose-Monterey"</code></td>
+                    <td>168</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Los Angeles"</code></td>
+                    <td>168</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Seattle-Puget Sound"</code></td>
+                    <td>168</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Francisco-Oakland"</code></td>
+                    <td>168</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Detroit"</code></td>
+                    <td>168</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Atlanta"</code></td>
+                    <td>168</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United States (comparable to ICD-O-2)"</code></td>
+                    <td>168</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cancer-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cancer-__0__-Year").click(function() {
+            $( "#explore-cancer-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cancer-__0__-Area").click(function() {
+            $( "#explore-cancer-__0__-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Area").click(function() {
+            $( "#explore-cancer-__0__-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-cancer-__0__-Area" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-cancer-__0__-Data").click(function() {
+            $( "#explore-cancer-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cancer-__0__-Age").click(function() {
+            $( "#explore-cancer-__0__-Age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
     <div id='explore-cancer-__0__-Age' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
@@ -344,712 +1050,6 @@ $(document).ready(function() {
         
         $("#btn-explore-cancer-__0__-Age-Age-Adjusted-CI-Upper").click(function() {
             $( "#explore-cancer-__0__-Age-Age-Adjusted-CI-Upper" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-cancer-__0__' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Age"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Age'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1999</code>
-                    
-                 </td> 
-                 <td>The 4-digit year that this report was created for.</td> </tr>
-            
-            <tr> <td><code>"Data"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Area"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Alabama"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Area'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The area of the country (typically the name of the state) for this report.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-        <div id='explore-cancer-__0__-Area' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Rhode Island"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New England"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pacific"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Texas"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"West North Central"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Maine"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Washington"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Missouri"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Jersey"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Colorado"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New York"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wisconsin"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kentucky"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nebraska"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Middle Atlantic"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hawaii"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alaska"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Florida"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"West Virginia"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pennsylvania"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Delaware"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vermont"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"East North Central"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"California"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Carolina"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Massachusetts"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Hampshire"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Montana"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Connecticut"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Oregon"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Utah"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kansas"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Michigan"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Midwest"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Iowa"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arizona"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Idaho"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Louisiana"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Indiana"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ohio"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Mexico"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Georgia"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Carolina"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Illinois"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Minnesota"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wyoming"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Oklahoma"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Northeast"</code></td>
-                    <td>336</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Alabama"</code></td>
-                    <td>324</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Dakota"</code></td>
-                    <td>324</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Maryland"</code></td>
-                    <td>324</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"West"</code></td>
-                    <td>324</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"District of Columbia"</code></td>
-                    <td>312</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Dakota"</code></td>
-                    <td>312</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"West South Central"</code></td>
-                    <td>312</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mountain"</code></td>
-                    <td>312</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nevada"</code></td>
-                    <td>300</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arkansas"</code></td>
-                    <td>300</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Atlantic"</code></td>
-                    <td>288</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Virginia"</code></td>
-                    <td>288</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mississippi"</code></td>
-                    <td>288</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tennessee"</code></td>
-                    <td>276</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South"</code></td>
-                    <td>276</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"East South Central"</code></td>
-                    <td>276</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Seattle-Puget Sound"</code></td>
-                    <td>168</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Detroit"</code></td>
-                    <td>168</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Atlanta"</code></td>
-                    <td>168</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"United States (comparable to ICD-O-2)"</code></td>
-                    <td>168</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Los Angeles"</code></td>
-                    <td>168</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Francisco-Oakland"</code></td>
-                    <td>168</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Jose-Monterey"</code></td>
-                    <td>168</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-cancer-__0__" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-cancer-__0__-Age").click(function() {
-            $( "#explore-cancer-__0__-Age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cancer-__0__-Year").click(function() {
-            $( "#explore-cancer-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cancer-__0__-Data").click(function() {
-            $( "#explore-cancer-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cancer-__0__-Area").click(function() {
-            $( "#explore-cancer-__0__-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-cancer-__0__-Area").click(function() {
-            $( "#explore-cancer-__0__-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-cancer-__0__-Area" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-    });
-    </script>
-
-    <div id='explore-cancer-__0__-Data' title='Dictionary (8 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Count"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>4366</code>
-                    
-                 </td> 
-                 <td>The number of incidences of cancer in this particular group.</td> </tr>
-            
-            <tr> <td><code>"Crude Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>190.4</code>
-                    
-                 </td> 
-                 <td>The estimated number of people with cancer adjusted by the population. This adjustment makes it easy to compare cancer rates between different locations and over time.</td> </tr>
-            
-            <tr> <td><code>"Crude CI Upper"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>196.1</code>
-                    
-                 </td> 
-                 <td>A number representing the upper bound for the Crude Rate. It is unlikely that the actual rate is higher than this number.</td> </tr>
-            
-            <tr> <td><code>"Crude CI Lower"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>184.8</code>
-                    
-                 </td> 
-                 <td>A number representing the lower bound for the Crude Rate. It is unlikely that the actual rate is lower than this number.</td> </tr>
-            
-            <tr> <td><code>"Sex"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Female"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Data-Sex'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The gender of people in this particular report.</td> </tr>
-            
-            <tr> <td><code>"Race"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"All Races"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Data-Race'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The races reported in this particular report.</td> </tr>
-            
-            <tr> <td><code>"Event Type"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Mortality"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-cancer-__0__-Data-Event-Type'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The type of event reported here - whether the participants lived or died.</td> </tr>
-            
-            <tr> <td><code>"Population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>2293259</code>
-                    
-                 </td> 
-                 <td>The number of people present in this report.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-        <div id='explore-cancer-__0__-Data-Sex' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Male and Female"</code></td>
-                    <td>7380</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Female"</code></td>
-                    <td>7380</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Male"</code></td>
-                    <td>7380</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-cancer-__0__-Data-Race' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"All Races"</code></td>
-                    <td>5535</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Black"</code></td>
-                    <td>5535</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"White"</code></td>
-                    <td>5535</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hispanic"</code></td>
-                    <td>5535</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-cancer-__0__-Data-Event-Type' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Incidence"</code></td>
-                    <td>11388</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mortality"</code></td>
-                    <td>10752</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-cancer-__0__-Data" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-cancer-__0__-Data-Count").click(function() {
-            $( "#explore-cancer-__0__-Data-Count" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cancer-__0__-Data-Crude-Rate").click(function() {
-            $( "#explore-cancer-__0__-Data-Crude-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cancer-__0__-Data-Crude-CI-Upper").click(function() {
-            $( "#explore-cancer-__0__-Data-Crude-CI-Upper" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cancer-__0__-Data-Crude-CI-Lower").click(function() {
-            $( "#explore-cancer-__0__-Data-Crude-CI-Lower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cancer-__0__-Data-Sex").click(function() {
-            $( "#explore-cancer-__0__-Data-Sex" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-cancer-__0__-Data-Sex").click(function() {
-            $( "#explore-cancer-__0__-Data-Sex" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-cancer-__0__-Data-Sex" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-cancer-__0__-Data-Race").click(function() {
-            $( "#explore-cancer-__0__-Data-Race" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-cancer-__0__-Data-Race").click(function() {
-            $( "#explore-cancer-__0__-Data-Race" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-cancer-__0__-Data-Race" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-cancer-__0__-Data-Event-Type").click(function() {
-            $( "#explore-cancer-__0__-Data-Event-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-cancer-__0__-Data-Event-Type").click(function() {
-            $( "#explore-cancer-__0__-Data-Event-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-cancer-__0__-Data-Event-Type" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-cancer-__0__-Data-Population").click(function() {
-            $( "#explore-cancer-__0__-Data-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

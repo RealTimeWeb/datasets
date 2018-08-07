@@ -12,6 +12,70 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                },
+        
+            'get_records': {
+                "type": "FunctionType", 
+                "name": 'get_records',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'Low Access Numbers'}, {"type": "LiteralStr", "value": 'Low Access Percents'}, {"type": "LiteralStr", "value": 'Vehicle Access'}, {"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Housing Data'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Seniors'}, {"type": "LiteralStr", "value": 'People'}, {"type": "LiteralStr", "value": 'Low Income People'}, {"type": "LiteralStr", "value": 'Children'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Low Income and Low Access'}, {"type": "LiteralStr", "value": 'Low Access Only'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 and 10 Miles'}, {"type": "LiteralStr", "value": '1 and 20 Miles'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '1/2 and 10 Miles'}, {"type": "LiteralStr", "value": '1 and 20 Miles'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": '20 Miles'}, {"type": "LiteralStr", "value": '10 Miles'}, {"type": "LiteralStr", "value": '1 Mile'}, {"type": "LiteralStr", "value": '1/2 Mile'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "NumType"}, 
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Urban Housing Percentage'}, {"type": "LiteralStr", "value": 'Residing in Group Quarters'}, {"type": "LiteralStr", "value": 'Total Housing Units'}, {"type": "LiteralStr", "value": 'Rural Housing Percentage'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -35,7 +99,8 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "food_access.db"
+_Constants._DATABASE_NAME = _os.path.join(_os.path.dirname(__file__),
+                                          "food_access.db")
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

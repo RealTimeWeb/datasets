@@ -91,16 +91,6 @@ PythonToBlocks.KNOWN_MODULES['{{ library_name }}'] = {
             {"type": "mutation", "name": "@INDEX_VALUE"}]
 };
 
-Tifa.MODULES['{{ library_name }}'] = {
-    'name': "Module",
-    'fields': {
-        'get': Tifa.defineSupplier({"name": "List", "empty": false, "subtype": Tifa._NUM_TYPE()}),
-        {% for tifa_definition in tifa_definitions %}
-        '{{ tifa_definition[0] | snake_case }}': {{ tifa_definition[1] }},
-        {% endfor %}
-    }
-};
-
 BlockPyEditor.CATEGORY_MAP['Data - {{ metadata.name }}'] = '<category name="Data - {{ metadata.name }}" colour="50">'+
                     '<block type="{{ library_name }}_get"><mutation index="(None)" index_value=""></mutation></block>'+
                 '</category>';

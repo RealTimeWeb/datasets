@@ -286,33 +286,22 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-labor-__0__-Time' title='Dictionary (3 keys)'>
+    <div id='explore-labor-__0__-Data-Unemployed-Asian' title='Dictionary (2 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Month Name"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+            <tr> <td><code>"Counts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>"January"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Time-Month-Name'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    <code>0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Month"</code></td> 
+            <tr> <td><code>"Unemployment Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>1</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>1972</code>
+                    <code>0</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -321,73 +310,111 @@ $(document).ready(function() {
     </div>
     
         
-        <div id='explore-labor-__0__-Time-Month-Name' title='Previewing Values'>
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Unemployed-Asian" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Unemployed-Asian-Counts").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Asian-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Unemployed-Asian-Unemployment-Rate").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Asian-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Unemployed-Black-or-African-American' title='Dictionary (2 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-                <tr>
-                    <td><code>"November"</code></td>
-                    <td>44</td>
-                </tr>
+            <tr> <td><code>"Counts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
             
-                <tr>
-                    <td><code>"July"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"December"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"September"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"June"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"January"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"May"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"April"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"August"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"March"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"October"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"February"</code></td>
-                    <td>44</td>
-                </tr>
-            
+            <tr> <td><code>"Unemployment Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
             
         </table>
-        </div>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Counts").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Civilian-Labor-Force' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"White"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-White'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Asian"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-Asian'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Black or African American"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
         
     
         
@@ -396,34 +423,90 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Time" ).dialog({
+        $( "#explore-labor-__0__-Data-Civilian-Labor-Force" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Time-Month-Name").click(function() {
-            $( "#explore-labor-__0__-Time-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-labor-__0__-Time-Month-Name").click(function() {
-            $( "#explore-labor-__0__-Time-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Asian").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
-        $( "#explore-labor-__0__-Time-Month-Name" ).dialog({
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Unemployed' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"White"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-White'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Asian"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-Asian'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Black or African American"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Unemployed" ).dialog({
           autoOpen: false,
           width: 600
-        });    
+        });
         
-        
-        $("#btn-explore-labor-__0__-Time-Month").click(function() {
-            $( "#explore-labor-__0__-Time-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Unemployed-White").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Time-Year").click(function() {
-            $( "#explore-labor-__0__-Time-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Unemployed-Asian").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -496,250 +579,6 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>58.1</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Men"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>76.2</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Women"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>50.9</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-All").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-Men").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-Women").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Employed-White-Counts' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>71169.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Men"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>41418.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Women"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>24403.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Employed-White-Counts" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Employed-White-Counts-All").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-White-Counts-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Employed-White-Counts-Men").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-White-Counts-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Employed-White-Counts-Women").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-White-Counts-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Employed-Black-or-African-American' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Counts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Employment-Population Ratio"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Employment-Population-Ratio'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Employed-Black-or-African-American" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Employment-Population-Ratio").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Employment-Population-Ratio" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>75608.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Men"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>43514.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Women"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>25728.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-All").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-Men").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-Women").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
     <div id='explore-labor-__0__-Data-Civilian-Labor-Force-Asian' title='Dictionary (2 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
@@ -782,6 +621,104 @@ $(document).ready(function() {
         
         $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Asian-Counts").click(function() {
             $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Asian-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Participation Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Counts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Employed-Asian' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Counts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Unemployment Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Employed-Asian" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Employed-Asian-Counts").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Asian-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Employed-Asian-Unemployment-Rate").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Asian-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -854,261 +791,9 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>11.6</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Men"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>9.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Women"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>9.8</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-All").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-Men").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-Women").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Employed-Black-or-African-American-Counts' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>7367.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Men"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>3802.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Women"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>3156.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-All").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-Men").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-Women").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"All"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>59.7</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Men"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>81.7</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Women"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>42.7</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-All").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-Men").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-Women").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Unemployed-White' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Counts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-White-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Unemployment Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-White-Unemployment-Rate'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Unemployed-White" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-White-Counts").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-White-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-White-Unemployment-Rate").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-White-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
     <div id='explore-labor-__0__' title='Dictionary (2 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Data"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td>If the data is not a rate, then it is presented as the number in thousands</td> </tr>
             
             <tr> <td><code>"Time"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -1117,6 +802,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td></td> </tr>
+            
+            <tr> <td><code>"Data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td>If the data is not a rate, then it is presented as the number in thousands</td> </tr>
             
         </table>
     </div>
@@ -1132,14 +825,242 @@ $(document).ready(function() {
           width: 600
         });
         
+        $("#btn-explore-labor-__0__-Time").click(function() {
+            $( "#explore-labor-__0__-Time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-labor-__0__-Data").click(function() {
             $( "#explore-labor-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Time").click(function() {
-            $( "#explore-labor-__0__-Time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Not-In-Labor-Force' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"White"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Asian"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Black or African American"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>5998.0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Not-In-Labor-Force" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Not-In-Labor-Force-White").click(function() {
+            $( "#explore-labor-__0__-Data-Not-In-Labor-Force-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Not-In-Labor-Force-Asian").click(function() {
+            $( "#explore-labor-__0__-Data-Not-In-Labor-Force-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Not-In-Labor-Force-Black-or-African-American").click(function() {
+            $( "#explore-labor-__0__-Data-Not-In-Labor-Force-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Employed' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"White"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-White'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Asian"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-Asian'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Black or African American"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-Black-or-African-American'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Employed" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Employed-White").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Employed-Asian").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-White' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Participation Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Counts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Employed-Black-or-African-American' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Counts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employment-Population Ratio"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Employment-Population-Ratio'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Employed-Black-or-African-American" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Employment-Population-Ratio").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Employment-Population-Ratio" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1212,46 +1133,30 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data' title='Dictionary (5 keys)'>
+    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Civilian Noninstitutional Population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>8334.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Not In Labor Force"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Men"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Not-In-Labor-Force'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>4180.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Unemployed"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Women"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Civilian Labor Force"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Employed"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>3498.0</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1265,43 +1170,76 @@ $(document).ready(function() {
     
         
     
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-All").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-Men").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-Women").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Unemployed-White' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Counts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-White-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Unemployment Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-White-Unemployment-Rate'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
         
     
         
     
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Data" ).dialog({
+        $( "#explore-labor-__0__-Data-Unemployed-White" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Unemployed-White-Counts").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-White-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Not-In-Labor-Force").click(function() {
-            $( "#explore-labor-__0__-Data-Not-In-Labor-Force" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Employed").click(function() {
-            $( "#explore-labor-__0__-Data-Employed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Unemployed-White-Unemployment-Rate").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-White-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1374,22 +1312,30 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American' title='Dictionary (2 keys)'>
+    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Participation Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>59.7</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Counts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Men"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>81.7</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Women"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>42.7</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1401,21 +1347,29 @@ $(document).ready(function() {
     
         
     
+        
+    
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American" ).dialog({
+        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-All").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-Men").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-Women").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1488,193 +1442,30 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Unemployed-Asian' title='Dictionary (2 keys)'>
+    <div id='explore-labor-__0__-Data-Employed-Black-or-African-American-Counts' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Counts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Unemployment Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Unemployed-Asian" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-Asian-Counts").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Asian-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-Asian-Unemployment-Rate").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Asian-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Civilian-Labor-Force' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"White"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-White'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Black or African American"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Asian"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-Asian'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Civilian-Labor-Force" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Asian").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Unemployed-Black-or-African-American' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Counts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Unemployment Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Counts").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Civilian-Noninstitutional-Population' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"White"</code></td> 
+            <tr> <td><code>"All"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>126749.0</code>
+                    <code>7367.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Black or African American"</code></td> 
+            <tr> <td><code>"Men"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>14332.0</code>
+                    <code>3802.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Asian"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"Women"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0</code>
+                    <code>3156.0</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1690,25 +1481,25 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population" ).dialog({
+        $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population-White").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-All").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population-Black-or-African-American").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-Men").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population-Asian").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-Women").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American-Counts-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1716,30 +1507,30 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Not-In-Labor-Force' title='Dictionary (3 keys)'>
+    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"White"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Black or African American"</code></td> 
+            <tr> <td><code>"All"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>5998.0</code>
+                    <code>75608.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Asian"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"Men"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0</code>
+                    <code>43514.0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Women"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>25728.0</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1755,25 +1546,25 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Not-In-Labor-Force" ).dialog({
+        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Data-Not-In-Labor-Force-White").click(function() {
-            $( "#explore-labor-__0__-Data-Not-In-Labor-Force-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-All").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Not-In-Labor-Force-Black-or-African-American").click(function() {
-            $( "#explore-labor-__0__-Data-Not-In-Labor-Force-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-Men").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Not-In-Labor-Force-Asian").click(function() {
-            $( "#explore-labor-__0__-Data-Not-In-Labor-Force-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-Women").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1781,30 +1572,33 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Employed' title='Dictionary (3 keys)'>
+    <div id='explore-labor-__0__-Time' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"White"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-White'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>1972</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Black or African American"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-Black-or-African-American'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>1</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Asian"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Month Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed-Asian'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>"January"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Time-Month-Name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
                     
                  </td> 
                  <td></td> </tr>
@@ -1817,30 +1611,107 @@ $(document).ready(function() {
         
     
         
+        <div id='explore-labor-__0__-Time-Month-Name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"August"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"July"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"November"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"June"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"March"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"September"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"December"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"May"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"February"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"April"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"October"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"January"</code></td>
+                    <td>44</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
     
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Employed" ).dialog({
+        $( "#explore-labor-__0__-Time" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Data-Employed-White").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Time-Year").click(function() {
+            $( "#explore-labor-__0__-Time-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Employed-Black-or-African-American").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Time-Month").click(function() {
+            $( "#explore-labor-__0__-Time-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Employed-Asian").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Time-Month-Name").click(function() {
+            $( "#explore-labor-__0__-Time-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-labor-__0__-Time-Month-Name").click(function() {
+            $( "#explore-labor-__0__-Time-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-labor-__0__-Time-Month-Name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
         
         
     });
@@ -1895,63 +1766,14 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-White' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Participation Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Counts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Participation-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-White-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts' title='Dictionary (3 keys)'>
+    <div id='explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
             <tr> <td><code>"All"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>8334.0</code>
+                    <code>11.6</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1959,7 +1781,7 @@ $(document).ready(function() {
             <tr> <td><code>"Men"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>4180.0</code>
+                    <code>9.0</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1967,7 +1789,7 @@ $(document).ready(function() {
             <tr> <td><code>"Women"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>3498.0</code>
+                    <code>9.8</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -1983,25 +1805,25 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts" ).dialog({
+        $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-All").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-All").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-Men").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-Men").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-Women").click(function() {
-            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Counts-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-Women").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American-Unemployment-Rate-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2009,30 +1831,95 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Unemployed' title='Dictionary (3 keys)'>
+    <div id='explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"White"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-White'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>58.1</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Black or African American"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Men"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>76.2</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Women"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>50.9</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-All").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-Men").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-Women").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force-Black-or-African-American-Participation-Rate-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data-Civilian-Noninstitutional-Population' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"White"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>126749.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Asian"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed-Asian'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Black or African American"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>14332.0</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -2048,25 +1935,25 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Unemployed" ).dialog({
+        $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Data-Unemployed-White").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population-White").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population-White" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Unemployed-Black-or-African-American").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population-Asian").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Unemployed-Asian").click(function() {
-            $( "#explore-labor-__0__-Data-Unemployed-Asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population-Black-or-African-American").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population-Black-or-African-American" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2074,22 +1961,30 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-labor-__0__-Data-Employed-Asian' title='Dictionary (2 keys)'>
+    <div id='explore-labor-__0__-Data-Employed-White-Counts' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Counts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"All"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0</code>
+                    <code>71169.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Unemployment Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"Men"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>0</code>
+                    <code>41418.0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Women"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>24403.0</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -2101,21 +1996,126 @@ $(document).ready(function() {
     
         
     
+        
+    
     <script>
     $(document).ready(function() {
-        $( "#explore-labor-__0__-Data-Employed-Asian" ).dialog({
+        $( "#explore-labor-__0__-Data-Employed-White-Counts" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-labor-__0__-Data-Employed-Asian-Counts").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Asian-Counts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Employed-White-Counts-All").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-White-Counts-All" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-labor-__0__-Data-Employed-Asian-Unemployment-Rate").click(function() {
-            $( "#explore-labor-__0__-Data-Employed-Asian-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-labor-__0__-Data-Employed-White-Counts-Men").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-White-Counts-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Employed-White-Counts-Women").click(function() {
+            $( "#explore-labor-__0__-Data-Employed-White-Counts-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-labor-__0__-Data' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Civilian Noninstitutional Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Unemployed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Unemployed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Civilian Labor Force"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Civilian-Labor-Force'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Not In Labor Force"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Not-In-Labor-Force'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-labor-__0__-Data-Employed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-labor-__0__-Data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Noninstitutional-Population").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Noninstitutional-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Unemployed").click(function() {
+            $( "#explore-labor-__0__-Data-Unemployed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Civilian-Labor-Force").click(function() {
+            $( "#explore-labor-__0__-Data-Civilian-Labor-Force" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Not-In-Labor-Force").click(function() {
+            $( "#explore-labor-__0__-Data-Not-In-Labor-Force" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-labor-__0__-Data-Employed").click(function() {
+            $( "#explore-labor-__0__-Data-Employed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

@@ -18,6 +18,7 @@ from auxiliary import (camel_case_caps, camel_case,
                        to_dict, copy_file, lod_to_dol,
                        shortest_unique_strings, first_items,
                        convert_example_value, wrap_quotes)
+from languages.tifa import TifaDefinition
 import sqlite3
 import re
 from jinja2 import Environment, FileSystemLoader
@@ -149,58 +150,9 @@ def build_metafiles(model, key_names, indexes, full_key_descriptions, tifa_defin
     return {
             root+'index.html' : env.get_template('blockpy_main.html').render(key_names=key_names, indexes=indexes, full_key_descriptions=full_key_descriptions, standalone=True, **model),
             root+name+'.html' : env.get_template('blockpy_main.html').render(key_names=key_names, indexes=indexes, full_key_descriptions=full_key_descriptions, standalone=False, **model),
-            root + name + '_skulpt.js' : env.get_template('skulpt.js').render(key_names=key_names, indexes=indexes, **model),
-            root + name + '_blockly.js' : env.get_template('blockly.js').render(key_names=key_names, indexes=indexes,  tifa_definitions=tifa_definitions, **model)
+            root + name + '_skulpt.js' : env.get_template('skulpt.js').render(key_names=key_names, indexes=indexes, tifa_definitions=tifa_definitions, **model),
+            root + name + '_blockly.js' : env.get_template('blockly.js').render(key_names=key_names, indexes=indexes,   **model)
             }
-            
-class TifaDefinition(object):
-    def __init__(self, data):
-        self.result = "Tifa.defineSupplier("
-        self.indent = 1
-        self.result += self.walk(data)
-        self.result += ")"
-    def walk(self, chunk):
-        self.indent += 1
-        start = "\n" + "\t"*self.indent
-        if isinstance(chunk, dict):
-            start+= self.walk_dict(chunk)
-        elif isinstance(chunk, list):
-            start+= self.walk_list(chunk)
-        else:
-            start+= self.walk_atomic(chunk)
-        self.indent -= 1
-        return start
-    def convert_literal(self, a_literal):
-        if isinstance(a_literal, (float, int)):
-            return '{{"type": "Num", "value": {!r}}}'.format(a_literal)
-        elif isinstance(a_literal, (str, unicode)):
-            return '{{"type": "Str", "value": {!r}}}'.format(a_literal)
-        elif isinstance(a_literal, bool):
-            return '{{"type": "Bool", "value": {!r}}}'.format(a_literal)
-    
-    def walk_dict(self, a_dict):
-        complete = 'Tifa._DICT_LITERAL_TYPE('
-        items = list(a_dict.items())
-        literals = ', '.join([self.convert_literal(l) for l, value in items])
-        values = ', '.join([self.walk(value) for key, value in items])
-        complete += '[{literals}], '.format(literals=literals)
-        complete += '[{values}]'.format(values=values)
-        complete += ')'
-        return complete
-    
-    def walk_list(self, a_list):
-        complete = 'Tifa._LIST_OF_TYPE('
-        complete += self.walk(a_list[0])
-        complete += ')'
-        return complete
-    
-    def walk_atomic(self, an_atomic):
-        if isinstance(an_atomic, (float, int)):
-            return 'Tifa._NUM_TYPE()'
-        elif isinstance(an_atomic, (str, unicode)):
-            return 'Tifa._STR_TYPE()'
-        elif isinstance(an_atomic, bool):
-            return 'Tifa._BOOL_TYPE()'
 
 class JsonLeafNodes(object):    
     def __init__(self, name, data):
