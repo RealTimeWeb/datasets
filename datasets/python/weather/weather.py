@@ -22,32 +22,33 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_weather': {
                 "type": "FunctionType", 
                 "name": 'get_weather',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Station'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Code'}, {"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'City'}, {"type": "LiteralStr", "value": 'State'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Station'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Date'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'City'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Code'}, {"type": "LiteralStr", "value": 'Location'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Week of'}], "values": [
-					{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Temperature'}, {"type": "LiteralStr", "value": 'Wind'}, {"type": "LiteralStr", "value": 'Precipitation'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Min Temp'}, {"type": "LiteralStr", "value": 'Avg Temp'}, {"type": "LiteralStr", "value": 'Max Temp'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Direction'}, {"type": "LiteralStr", "value": 'Speed'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Week of'}, {"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Wind'}, {"type": "LiteralStr", "value": 'Temperature'}, {"type": "LiteralStr", "value": 'Precipitation'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Speed'}, {"type": "LiteralStr", "value": 'Direction'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Max Temp'}, {"type": "LiteralStr", "value": 'Min Temp'}, {"type": "LiteralStr", "value": 'Avg Temp'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
 					{"type": "NumType"}]}]}},
             }
         

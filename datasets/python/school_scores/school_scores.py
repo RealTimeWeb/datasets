@@ -22,159 +22,160 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_all': {
                 "type": "FunctionType", 
                 "name": 'get_all',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Family Income'}, {"type": "LiteralStr", "value": 'GPA'}, {"type": "LiteralStr", "value": 'Gender'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Score Ranges'}, {"type": "LiteralStr", "value": 'Academic Subjects'}, {"type": "LiteralStr", "value": 'State'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Between 60-80k'}, {"type": "LiteralStr", "value": 'Less than 20k'}, {"type": "LiteralStr", "value": 'Between 80-100k'}, {"type": "LiteralStr", "value": 'Between 40-60k'}, {"type": "LiteralStr", "value": 'Between 20-40k'}, {"type": "LiteralStr", "value": 'More than 100k'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'D or lower'}, {"type": "LiteralStr", "value": 'B'}, {"type": "LiteralStr", "value": 'A plus'}, {"type": "LiteralStr", "value": 'A minus'}, {"type": "LiteralStr", "value": 'C'}, {"type": "LiteralStr", "value": 'A'}, {"type": "LiteralStr", "value": 'No response'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Female'}, {"type": "LiteralStr", "value": 'Male'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'GPA'}, {"type": "LiteralStr", "value": 'Score Ranges'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Gender'}, {"type": "LiteralStr", "value": 'Family Income'}, {"type": "LiteralStr", "value": 'Academic Subjects'}], "values": [
 				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Between 200 to 300'}, {"type": "LiteralStr", "value": 'Between 600 to 700'}, {"type": "LiteralStr", "value": 'Between 300 to 400'}, {"type": "LiteralStr", "value": 'Between 500 to 600'}, {"type": "LiteralStr", "value": 'Between 700 to 800'}, {"type": "LiteralStr", "value": 'Between 400 to 500'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Code'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'D or lower'}, {"type": "LiteralStr", "value": 'A'}, {"type": "LiteralStr", "value": 'A minus'}, {"type": "LiteralStr", "value": 'C'}, {"type": "LiteralStr", "value": 'B'}, {"type": "LiteralStr", "value": 'A plus'}, {"type": "LiteralStr", "value": 'No response'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Between 700 to 800'}, {"type": "LiteralStr", "value": 'Between 200 to 300'}, {"type": "LiteralStr", "value": 'Between 400 to 500'}, {"type": "LiteralStr", "value": 'Between 600 to 700'}, {"type": "LiteralStr", "value": 'Between 300 to 400'}, {"type": "LiteralStr", "value": 'Between 500 to 600'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Verbal'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Males'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Males'}, {"type": "LiteralStr", "value": 'Females'}, {"type": "LiteralStr", "value": 'Total'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Mathematics'}, {"type": "LiteralStr", "value": 'Foreign Languages'}, {"type": "LiteralStr", "value": 'Social Sciences/History'}, {"type": "LiteralStr", "value": 'Arts/Music'}, {"type": "LiteralStr", "value": 'Natural Sciences'}, {"type": "LiteralStr", "value": 'English'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average GPA'}, {"type": "LiteralStr", "value": 'Average Years'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Female'}, {"type": "LiteralStr", "value": 'Male'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average GPA'}, {"type": "LiteralStr", "value": 'Average Years'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average GPA'}, {"type": "LiteralStr", "value": 'Average Years'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average GPA'}, {"type": "LiteralStr", "value": 'Average Years'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average GPA'}, {"type": "LiteralStr", "value": 'Average Years'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average GPA'}, {"type": "LiteralStr", "value": 'Average Years'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Code'}, {"type": "LiteralStr", "value": 'Name'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'More than 100k'}, {"type": "LiteralStr", "value": 'Between 80-100k'}, {"type": "LiteralStr", "value": 'Less than 20k'}, {"type": "LiteralStr", "value": 'Between 60-80k'}, {"type": "LiteralStr", "value": 'Between 20-40k'}, {"type": "LiteralStr", "value": 'Between 40-60k'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Verbal'}, {"type": "LiteralStr", "value": 'Math'}, {"type": "LiteralStr", "value": 'Test-takers'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Natural Sciences'}, {"type": "LiteralStr", "value": 'English'}, {"type": "LiteralStr", "value": 'Foreign Languages'}, {"type": "LiteralStr", "value": 'Arts/Music'}, {"type": "LiteralStr", "value": 'Mathematics'}, {"type": "LiteralStr", "value": 'Social Sciences/History'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average Years'}, {"type": "LiteralStr", "value": 'Average GPA'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average Years'}, {"type": "LiteralStr", "value": 'Average GPA'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average Years'}, {"type": "LiteralStr", "value": 'Average GPA'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average Years'}, {"type": "LiteralStr", "value": 'Average GPA'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average Years'}, {"type": "LiteralStr", "value": 'Average GPA'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Average Years'}, {"type": "LiteralStr", "value": 'Average GPA'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}]}},
             }
         
         }

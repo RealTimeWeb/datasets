@@ -282,63 +282,14 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-cars-__0__-Engine-Information-Engine-Statistics' title='Dictionary (2 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Horsepower"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>250</code>
-                    
-                 </td> 
-                 <td>A measure of the engine's power. A unit of power equal to 550 foot-pounds per second (745.7 watts).</td> </tr>
-            
-            <tr> <td><code>"Torque"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>236</code>
-                    
-                 </td> 
-                 <td>The torque of the engine, measured in lb/ft. When an engine is said to make "200 lb-ft of torque", it means that 200 pounds of force on a 1-foot lever is needed to stop its motion.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-cars-__0__-Engine-Information-Engine-Statistics" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics-Horsepower").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics-Horsepower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics-Torque").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics-Torque" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
     <div id='explore-cars-__0__' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Identification"</code></td> 
+            <tr> <td><code>"Dimensions"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-cars-__0__-Identification'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-cars-__0__-Dimensions'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -351,18 +302,18 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Fuel Information"</code></td> 
+            <tr> <td><code>"Identification"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-cars-__0__-Fuel-Information'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-cars-__0__-Identification'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Dimensions"</code></td> 
+            <tr> <td><code>"Fuel Information"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-cars-__0__-Dimensions'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <a class='dialog-opener' id='btn-explore-cars-__0__-Fuel-Information'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -385,8 +336,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-cars-__0__-Identification").click(function() {
-            $( "#explore-cars-__0__-Identification" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Dimensions").click(function() {
+            $( "#explore-cars-__0__-Dimensions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -397,769 +348,16 @@ $(document).ready(function() {
         });
         
         
+        $("#btn-explore-cars-__0__-Identification").click(function() {
+            $( "#explore-cars-__0__-Identification" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-cars-__0__-Fuel-Information").click(function() {
             $( "#explore-cars-__0__-Fuel-Information" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
-        
-        
-        $("#btn-explore-cars-__0__-Dimensions").click(function() {
-            $( "#explore-cars-__0__-Dimensions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-cars-__0__-Engine-Information' title='Dictionary (6 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Number of Forward Gears"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>6</code>
-                    
-                 </td> 
-                 <td>The number of forward gears. If no information is available, it is coded as 0.</td> </tr>
-            
-            <tr> <td><code>"Engine Statistics"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Engine-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Hybrid"</code></td> 
-                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td>
-                    <code>False</code>
-                    
-                 </td> 
-                 <td>Whether this is a hybrid engine or not - that is, if it uses both an internal combustion engine and an electric motor.</td> </tr>
-            
-            <tr> <td><code>"Driveline"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"All-wheel drive"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Driveline'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>A string representing whether this is "Rear-wheel drive", "Front-wheel drive", or "All-wheel drive".</td> </tr>
-            
-            <tr> <td><code>"Engine Type"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Audi 3.2L 6 cylinder 250hp 236ft-lbs"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Engine-Type'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>How many cylinders are in this engine. Most cars are either a 6-cylinder or an 8-cylinder.</td> </tr>
-            
-            <tr> <td><code>"Transmission"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"6 Speed Automatic Select Shift"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Transmission'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>The full name of this type of transmission, based on its Classification and number of forward gears.</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-        <div id='explore-cars-__0__-Engine-Information-Driveline' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Rear-wheel drive"</code></td>
-                    <td>1751</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Front-wheel drive"</code></td>
-                    <td>1569</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Four-wheel drive"</code></td>
-                    <td>920</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"All-wheel drive"</code></td>
-                    <td>836</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-cars-__0__-Engine-Information-Engine-Type' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 6.2L 8 Cylinder 430 hp 424 ft-lbs"</code></td>
-                    <td>96</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 5.4L 8 cylinder 310 hp 365 ft-lbs FFV"</code></td>
-                    <td>78</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nissan 4.0L 6 Cylinder 261 hp 281 ft-lbs"</code></td>
-                    <td>70</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dodge 5.7L 8 Cylinder 390 hp 407 ft-lbs"</code></td>
-                    <td>62</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nissan 5.6L 8 Cylinder 317 hp 385 ft-lbs"</code></td>
-                    <td>58</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BMW 3.0L 6 cylinder 300 hp 300 ft-lbs Turbo"</code></td>
-                    <td>56</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BMW 3.0L 6 cylinder 230hp 200 ft-lbs"</code></td>
-                    <td>55</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 5.3L 8 Cylinder 315 hp 335 ft-lbs FFV"</code></td>
-                    <td>54</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cadillac 6.2L 8 Cylinder 403 hp 417 ft-lbs FFV"</code></td>
-                    <td>54</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Honda 1.8L 4 Cylinder 140hp 128 ft-lbs"</code></td>
-                    <td>52</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Volkswagen 2.5L 5 Cylinder 170 hp 177 ft-lbs"</code></td>
-                    <td>51</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 5.0L 8 Cylinder 360 hp 380 ft-lbs FFV"</code></td>
-                    <td>50</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 2.9L 4 Cylinder 185 hp 190 ft-lbs"</code></td>
-                    <td>48</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nissan 5.6L 8 Cylinder 317 hp 385 ft-lbs FFV"</code></td>
-                    <td>48</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 5.7L 8 Cylinder 381 hp 401 ft-lbs"</code></td>
-                    <td>44</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 3.7L 5 Cylinder 242 hp 242 ft-lbs"</code></td>
-                    <td>42</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 4.8L 8 Cylinder 302 hp 305 ft-lbs FFV"</code></td>
-                    <td>41</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dodge 4.7L 8 Cylinder 310 hp 330 ft-lbs FFV"</code></td>
-                    <td>41</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 4.8L 8 Cylinder 302 hp 305 ft-lbs FFV"</code></td>
-                    <td>40</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Subaru 2.5L 4 cylinder 170 hp 170 ft-lbs"</code></td>
-                    <td>39</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cadillac 3.0L 6 Cylinder 270 hp 223 ft-lbs"</code></td>
-                    <td>37</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 3.5L 6 Cylinder 365 hp 420 ft-lbs"</code></td>
-                    <td>36</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Saab 2.0L 4 Cylinder 210 hp 221 ft-lbs Turbo"</code></td>
-                    <td>35</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Volvo 2.5L 5 Cylinder 227 hp 236 ft-lbs Turbo"</code></td>
-                    <td>35</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 2.9L 4 Cylinder 185 hp 190 ft-lbs"</code></td>
-                    <td>35</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Volvo 3.2 L 6 cylinder 240 hp 236 ft-lbs"</code></td>
-                    <td>35</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 5.4L 8 cylinder 255 hp 350 ft-lbs FFV"</code></td>
-                    <td>35</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 5.3L 8 Cylinder 320 hp 335 ft-lbs FFV"</code></td>
-                    <td>33</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Volkswagen 2.0L 4 Cylinder 200 hp 207 ft-lbs Turbo"</code></td>
-                    <td>33</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jeep 3.7L 6 Cylinder 210 hp 235 ft-lbs"</code></td>
-                    <td>31</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 3.5L 6 Cylinder 266hp 245 ft-lbs."</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nissan 4.0L 6 Cylinder 266 hp 288 ft-lbs"</code></td>
-                    <td>29</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 3.7L 5 Cylinder 242 hp 242 ft-lbs"</code></td>
-                    <td>28</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nissan 3.7L 6 Cylinder 332 hp 270 ft-lbs"</code></td>
-                    <td>28</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 3.6L 6 Cylinder 288 hp 270 ft-lbs."</code></td>
-                    <td>28</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 5.3L 8 Cylinder 315 hp 335 ft-lbs FFV"</code></td>
-                    <td>27</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cadillac 3.6L 6 Cylinder 304 hp 273 ft-lbs"</code></td>
-                    <td>27</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 6.2L 8 Cylinder 403 hp 417 ft-lbs FFV"</code></td>
-                    <td>27</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 4.6L 8 Cylinder 310 hp 327 ft-lbs"</code></td>
-                    <td>27</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Honda 2.4L 4 cylinder 190 hp 162 ft-lbs"</code></td>
-                    <td>26</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jeep 2.4L 4 Cylinder 172 hp 165 ft-lbs"</code></td>
-                    <td>25</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 5.3L 8 Cylinder 300 hp 320 ft-lbs"</code></td>
-                    <td>25</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 2.4L 4 Cylinder 182 hp 172 ft-lbs"</code></td>
-                    <td>25</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 4.0L 6 Cylinder 236 hp 266 ft-lbs"</code></td>
-                    <td>25</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jeep 3.8L 6 Cylinder 202 hp 237 ft-lbs"</code></td>
-                    <td>25</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 5.3L 8 Cylinder 320 hp 335 ft-lbs FFV"</code></td>
-                    <td>24</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"BMW 4.4L 8 cylinder 400 hp 450 ft-lbs Turbo"</code></td>
-                    <td>24</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 4.6L 8 cylinder 292 hp 320 ft-lbs"</code></td>
-                    <td>23</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 5.3L 8 Cylinder 315 hp 338 ft-lbs FFV"</code></td>
-                    <td>23</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dodge 3.7L 6 Cylinder 210 hp 235 ft-lbs"</code></td>
-                    <td>23</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 4.0L 6 Cylinder 207 hp 238 ft-lbs"</code></td>
-                    <td>22</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mini 1.6L 4 Cylinder 181 hp 177 ft-lbs Turbo"</code></td>
-                    <td>22</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Audi 2.0L 4 cylinder 211 hp 258 ft-lbs Turbo"</code></td>
-                    <td>22</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 2.5L 4 cylinder 171hp 171 ft-lbs"</code></td>
-                    <td>21</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 3.5L 6 Cylinder 263 hp 249 ft-lbs"</code></td>
-                    <td>21</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jeep 3.6L 6 Cylinder 290 hp 260 ft-lbs FFV"</code></td>
-                    <td>21</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 3.7L 6 Cylinder 302 hp 278 ft-lbs FFV"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 4.6L 8 cylinder 248 hp 294 ft-lbs"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Buick 3.6L 6 Cylinder 288 hp 270 ft-lbs"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kia 2.0L 4 Cylinder 156 hp 144 ft-lbs"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 3.5L 6 Cylinder 270 hp 248 ft-lbs."</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mazda 2.5L 4 Cylinder 167 hp 168 ft-lbs"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 6.2L 8 Cylinder 426 hp 420 ft-lbs"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 3.7L 6 Cylinder 305 hp 280 ft-lbs"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Honda 3.5L 6 Cylinder 250 hp 253 ft-lbs"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 5.7L 8 Cylinder 381 hp 401 ft-lbs FFV"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Aston Martin 5.9L 12 Cylinder 470 hp 443 ft-lbs"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 2.0L 4 Cylinder 140 hp 136 ft-lbs"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 1.5L 4 Cylinder 106 hp 103 ft-lbs"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 4.6L 8 cylinder 225 hp 286 ft-lbs FFV"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mercedes-Benz 3.5L 6 Cylinders 268 hp 258 ft-lbs"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 3.5L 6 Cylinder 262 hp 248 ft-lbs"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 2.7L 4 Cylinder 159 hp 180 ft-lbs"</code></td>
-                    <td>19</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 6.0L 8 Cylinder 332 hp 367 ft-lbs Hybrid"</code></td>
-                    <td>18</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 3.6L 6 Cylinder 281 hp 266 ft-lbs"</code></td>
-                    <td>18</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mini 1.6L 4 Cylinder 121 hp 114 ft-lbs"</code></td>
-                    <td>18</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mazda 3.7L 6 Cylinder 273 hp 270 ft-lbs"</code></td>
-                    <td>18</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nissan 1.8L 4 Cylinder 122 hp 127 ft-lbs"</code></td>
-                    <td>18</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 2.4L 4 Cylinder 182 hp 172 ft-lbs"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jeep 5.7L 8 Cylinder 360 hp 390 ft-lbs"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mazda 2.5L 4 Cylinder 170hp 167 ft-lbs"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 5.3L 8 Cylinder 310 hp 334 ft-lbs FFV"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mazda 2.0L 4 Cylinder 167 hp 140 ft-lbs"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Land Rover 5.0L 8 Cylinder 375 hp 375 ft-lbs"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jaguar 5.0L 8 Cylinder 385 hp 380 ft-lbs"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hyundai 2.0L 4 cylinder 138 hp 136 ft-lbs"</code></td>
-                    <td>17</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 2.3L 4 Cylinder 143 hp 154 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 6.2L 8 Cylinder 403 hp 417 ft-lbs FFV"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Infiniti 3.5L 6 cylinder 297 hp 253 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Toyota 1.8L 4 Cylinder 132 hp 128 ft-lbs."</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 6.8L 10 cylinder 305 hp 420 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Honda 3.5L 6 Cylinder 271 hp 254 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ford 5.0L 8 Cylinder 412 hp 390 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Infiniti 3.7L 6 cylinder 330 hp 270 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mercedes-Benz 5.5L 8 Cylinder 382 hp 391 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chevrolet 6.0L 8 Cylinder 332 hp 367 ft-lbs Hybrid"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hyundai 3.5L 6 Cylinder 276 hp 248 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lexus 2.5L 6 Cylinder 204 hp 185 ft-lbs"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dodge 3.6L 6 Cylinder 283 hp 260 ft-lbs FFV"</code></td>
-                    <td>16</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"GMC 5.3L 8 Cylinder 300 hp 320 ft-lbs"</code></td>
-                    <td>15</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
-        
-    
-        
-        <div id='explore-cars-__0__-Engine-Information-Transmission' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"6 Speed Automatic Select Shift"</code></td>
-                    <td>1313</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"6 Speed Automatic"</code></td>
-                    <td>767</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"6 Speed Manual"</code></td>
-                    <td>734</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"4 Speed Automatic"</code></td>
-                    <td>671</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"5 Speed Automatic"</code></td>
-                    <td>654</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"5 Speed Manual"</code></td>
-                    <td>393</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"5 Speed Automatic Select Shift"</code></td>
-                    <td>216</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"7 Speed Automatic Select Shift"</code></td>
-                    <td>111</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"8 Speed Automatic Select Shift"</code></td>
-                    <td>91</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"4 Speed Automatic Select Shift"</code></td>
-                    <td>85</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"7 Speed Automatic"</code></td>
-                    <td>41</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-cars-__0__-Engine-Information" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Number-of-Forward-Gears").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Number-of-Forward-Gears" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Hybrid").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Hybrid" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Driveline").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Driveline" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Driveline").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Driveline" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-cars-__0__-Engine-Information-Driveline" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Engine-Type").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Engine-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Engine-Type").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Engine-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-cars-__0__-Engine-Information-Engine-Type" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Transmission").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Transmission" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-cars-__0__-Engine-Information-Transmission").click(function() {
-            $( "#explore-cars-__0__-Engine-Information-Transmission" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-cars-__0__-Engine-Information-Transmission" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
         
         
     });
@@ -1180,25 +378,6 @@ $(document).ready(function() {
                  </td> 
                  <td>The maker for this car.</td> </tr>
             
-            <tr> <td><code>"ID"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"2009 Audi A3 3.2"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-cars-__0__-Identification-ID'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td>A unique ID for this particular car, using the year, make, model, and transmission type.</td> </tr>
-            
-            <tr> <td><code>"Year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>2009</code>
-                    
-                 </td> 
-                 <td>The year that this car was released.</td> </tr>
-            
             <tr> <td><code>"Model Year"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
@@ -1210,6 +389,17 @@ $(document).ready(function() {
                  </td> 
                  <td>The specific name/year for this car.</td> </tr>
             
+            <tr> <td><code>"ID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"2009 Audi A3 3.2"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-cars-__0__-Identification-ID'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>A unique ID for this particular car, using the year, make, model, and transmission type.</td> </tr>
+            
             <tr> <td><code>"Classification"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
@@ -1220,6 +410,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>Whether this is a "Manual transmission" or an "Automatic transmission". If it is unknown, it is left blank.</td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>2009</code>
+                    
+                 </td> 
+                 <td>The year that this car was released.</td> </tr>
             
         </table>
     </div>
@@ -1260,12 +458,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Honda"</code></td>
+                    <td><code>"Cadillac"</code></td>
                     <td>200</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Cadillac"</code></td>
+                    <td><code>"Honda"</code></td>
                     <td>200</td>
                 </tr>
             
@@ -1430,12 +628,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"AMG"</code></td>
+                    <td><code>"Rolls-Royce"</code></td>
                     <td>10</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Rolls-Royce"</code></td>
+                    <td><code>"AMG"</code></td>
                     <td>10</td>
                 </tr>
             
@@ -1470,523 +668,6 @@ $(document).ready(function() {
         
     
         
-        <div id='explore-cars-__0__-Identification-ID' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"2010 Chevrolet Silverado 1500 Extended Cab Long Bo..."</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Chevrolet Silverado 1500 Extended Cab Long Bo..."</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Dodge Ram Dakota Bighorn/Lonestar Extended Ca..."</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Dodge Ram Dakota Bighorn/Lonestar Extended Ca..."</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Chevrolet Silverado 1500 Extended Cab Work Tr..."</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Chevrolet Silverado 1500 Extended Cab Work Tr..."</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Chevrolet Silverado 1500 Crew Cab Work Truck ..."</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Mercedes-Benz R350 BlueTEC 4Matic"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 XL 6.5-ft. Bed"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Chevrolet Corvette Grand Sport Convertible 1LT AT"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Chevrolet Colorado Extended Cab Work Truck AT"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Dodge Ram Dakota Bighorn/Lonestar Crew Cab 30..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford Expedition XL"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Chevrolet Silverado 1500 Long Box Work Truck ..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 XL SuperCab 8-ft. Bed V8 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Nissan Titan King Cab PRO-4X FFV"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Dodge Ram 1500 SLT Regular Cab 4x2"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Cadillac CTS Sport Sedan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 GMC Canyon SLE 2WD"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Maybach 57 Zeppelin"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford F-150 XL SuperCrew 6.5-ft. Bed"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Mazda MX-5 Miata Grand Touring - Power Retrac..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 Lariat SuperCrew 5.5-ft. Bed 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Hyundai Veracruz Limited AWD"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford F-150 XL 6.5-ft. Bed 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Volkswagen Jetta SEL AT"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford Ranger XL SuperCab"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 FX4 SuperCab 6.5-ft. Bed 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 BMW 750Li xDrive Sedan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford Ranger XL"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford F-150 XL 8-ft. Bed"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford F-150 XL SuperCrew 5.5-ft. Bed 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 BMW 535i xDrive Sedan AT"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Nissan 370Z Touring Coupe"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Nissan Armada SL FFV"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Dodge Ram Dakota Bighorn/Lonestar Crew Cab 30..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 BMW ActiveHybrid 750i Sedan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Chevrolet Silverado 1500 Crew Cab Work Truck ..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Chevrolet Equinox 2LT AWD"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 BMW 550i Sedan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Toyota Matrix  AT"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Chevrolet Silverado 1500 Extended Cab  Long B..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 King-Ranch SuperCrew 5.5-ft. Bed"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 GMC Sierra 1500 Extended Cab WT 2WD 4.8L"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Dodge Nitro Heat 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 Lariat SuperCrew 5.5-ft. Bed V6 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 XL SuperCab 6.5-ft. Bed"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Mazda MX-5 Miata Touring - Power Retractable ..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford Mustang GT Premium"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 GMC Terrain SLE-2 AWD"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 BMW 528i xDrive Sedan AT"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2009 Audi A3 2.0 T Quattro"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Toyota Tundra Double Cab 4.6L 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford F-150 XL SuperCab 6.5-ft. Bed FFV 4X4"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Toyota Tundra Double Cab 4.6L"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Mazda MX-5 Miata Touring - Power Retractable ..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 King-Ranch SuperCrew 5.5-ft. Bed  V6"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 GMC Terrain SLE-2 3.0L"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 XL 6.5-ft. Bed  V8"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Mitsubishi Eclipse Spyder SE"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Cadillac CTS Sport Sedan 3.6L Performance"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Dodge Ram 1500 Outdoorsman Crew Cab 390 hp 4x4"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Toyota Camry XLE V6"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 BMW 328i Sports Wagon"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Mercedes-Benz GL350 BlueTEC 4Matic"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Saab 9-3 2.0T Sport Sedan AT"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Rolls-Royce Phantom Sedan EWB"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Toyota Sequoia Platinum FFV"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Chevrolet Corvette Grand Sport Convertible 2LT AT"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Jeep Patriot Latitude X 70th Anniversary 4x2"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 BMW X5 xDrive48i SUV"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Acura TSX"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Chevrolet Colorado LT1"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Rolls-Royce Phantom Coupe"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Suzuki SX4 Sport LE"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Dodge Durango Citadel"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford F-150 XLT 8-ft. Bed 4X4"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 Platinum SuperCrew 5.5-ft. Bed  6.2L"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Dodge Ram Dakota Laramie Crew Cab 4x4"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Dodge Durango Crew AWD"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 XL SuperCrew 5.5-ft. Bed"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Chevrolet Camaro Coupe 1LS AT"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Chevrolet Silverado 1500 Extended Cab  Long B..."</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Hyundai Elantra Touring GLS"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Toyota RAV4 V6 4WD"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Land Rover LR4"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Aston Martin DBS Volante"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Volkswagen Jetta TDI Clean Diesel"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Grand Cherokee SRT8 4x4"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 MINI John Cooper Works Clubman"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Cadillac CTS Coupe"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Mercedes-Benz C350 Sport"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 BMW 528i xDrive Sedan"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford F-150 FX4 SuperCrew 6.5-ft. Bed 4X4"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Lexus GS 350 Sedan"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 BMW 128i Coupe AT"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford Mustang GT Premium Convertible AT"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Nissan Titan Crew Cab SV Long Bed 4x4"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Volkswagen Beetle 2.5L AT"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Jeep Wrangler Sport S AT"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
-        
-    
-        
-    
-        
         <div id='explore-cars-__0__-Identification-Model-Year' title='Previewing Values'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Value</th> <th>Count</th></tr>
@@ -2007,12 +688,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2010 GMC Sierra 1500"</code></td>
+                    <td><code>"2011 GMC Sierra 1500"</code></td>
                     <td>62</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2011 GMC Sierra 1500"</code></td>
+                    <td><code>"2010 GMC Sierra 1500"</code></td>
                     <td>62</td>
                 </tr>
             
@@ -2037,12 +718,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2011 GMC Canyon"</code></td>
+                    <td><code>"2010 GMC Canyon"</code></td>
                     <td>39</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2010 GMC Canyon"</code></td>
+                    <td><code>"2011 GMC Canyon"</code></td>
                     <td>39</td>
                 </tr>
             
@@ -2062,17 +743,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Toyota Tundra"</code></td>
-                    <td>28</td>
-                </tr>
-            
-                <tr>
                     <td><code>"2010 Nissan Titan"</code></td>
                     <td>28</td>
                 </tr>
             
                 <tr>
                     <td><code>"2011 Nissan Frontier"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Toyota Tundra"</code></td>
                     <td>28</td>
                 </tr>
             
@@ -2097,17 +778,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2010 Ford Ranger"</code></td>
-                    <td>20</td>
-                </tr>
-            
-                <tr>
                     <td><code>"2010 Ford Expedition"</code></td>
                     <td>20</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Jeep Grand Cherokee"</code></td>
+                    <td><code>"2010 Ford Ranger"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Toyota Tacoma"</code></td>
                     <td>20</td>
                 </tr>
             
@@ -2117,7 +798,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Toyota Tacoma"</code></td>
+                    <td><code>"2011 Jeep Grand Cherokee"</code></td>
                     <td>20</td>
                 </tr>
             
@@ -2152,32 +833,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2012 GMC Savana"</code></td>
-                    <td>15</td>
-                </tr>
-            
-                <tr>
                     <td><code>"2010 Jeep Wrangler"</code></td>
                     <td>15</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2012 Chevrolet Equinox"</code></td>
-                    <td>14</td>
+                    <td><code>"2012 GMC Savana"</code></td>
+                    <td>15</td>
                 </tr>
             
                 <tr>
                     <td><code>"2012 Nissan Titan"</code></td>
-                    <td>14</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Volvo XC60"</code></td>
-                    <td>14</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 GMC Terrain"</code></td>
                     <td>14</td>
                 </tr>
             
@@ -2187,7 +853,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"2012 Chevrolet Equinox"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
                     <td><code>"2010 Honda Civic Sedan"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 GMC Terrain"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Volvo XC60"</code></td>
                     <td>14</td>
                 </tr>
             
@@ -2202,22 +883,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Honda Civic Sedan"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Cadillac CTS Sport Sedan"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
                     <td><code>"2012 Buick Lacrosse"</code></td>
                     <td>13</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2010 BMW 5 Series Sedan"</code></td>
+                    <td><code>"2011 Honda Civic Sedan"</code></td>
                     <td>13</td>
                 </tr>
             
@@ -2232,7 +903,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2010 Toyota RAV4"</code></td>
+                    <td><code>"2010 BMW 5 Series Sedan"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Cadillac CTS Sport Sedan"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Volkswagen Jetta"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Toyota RAV4"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Volvo XC90"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Nissan Armada"</code></td>
                     <td>12</td>
                 </tr>
             
@@ -2252,17 +948,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Toyota RAV4"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Nissan Armada"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Volvo C30"</code></td>
+                    <td><code>"2010 Toyota RAV4"</code></td>
                     <td>12</td>
                 </tr>
             
@@ -2272,17 +958,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Volkswagen Jetta"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Volvo XC90"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Dodge Durango"</code></td>
+                    <td><code>"2012 Volvo C30"</code></td>
                     <td>12</td>
                 </tr>
             
@@ -2297,6 +973,11 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"2012 Dodge Durango"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
                     <td><code>"2010 Hyundai Genesis Coupe"</code></td>
                     <td>12</td>
                 </tr>
@@ -2307,22 +988,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2012 Ford Escape"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Volvo XC70"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Chevrolet Camaro Coupe"</code></td>
-                    <td>11</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Chevrolet Express"</code></td>
+                    <td><code>"2012 Kia Sorento"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -2332,7 +998,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2010 Ford Explorer"</code></td>
+                    <td><code>"2012 Volvo XC70"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -2342,22 +1008,142 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"2011 Chevrolet Camaro Coupe"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Ford Explorer"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Chevrolet Express"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
                     <td><code>"2011 Kia Sorento"</code></td>
                     <td>11</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2012 Kia Sorento"</code></td>
+                    <td><code>"2012 Ford Escape"</code></td>
                     <td>11</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Mercedes-Benz C-Class"</code></td>
+                    <td><code>"2010 Chrysler 300"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Dodge Durango"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Toyota Sequoia"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Ford Edge"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Cadillac CTS Sport Sedan"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Suzuki Grand Vitara"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford Flex"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Jeep Patriot"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford Escape"</code></td>
                     <td>10</td>
                 </tr>
             
                 <tr>
                     <td><code>"2010 Dodge Nitro"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Cadillac CTS Sport Wagon"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Buick Regal"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Ford Fusion"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 GMC Acadia"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Toyota Camry"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Hyundai Tucson"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Mercedes-Benz C-Class"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford Fusion"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Chevrolet Camaro Coupe"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Mazda MX-5 Miata"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Toyota Camry"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Cadillac CTS Sport Wagon"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 GMC Acadia"</code></td>
                     <td>10</td>
                 </tr>
             
@@ -2372,72 +1158,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2010 Mazda MX-5 Miata"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Dodge Durango"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 GMC Acadia"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Honda Accord Sedan"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Buick Regal"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Jeep Patriot"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Cadillac CTS Sport Wagon"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Ford Fusion"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2010 Suzuki Grand Vitara"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 GMC Yukon XL"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
                     <td><code>"2010 Chevrolet Camaro Coupe"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford Flex"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2012 Ford Edge"</code></td>
-                    <td>10</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"2011 Ford Fusion"</code></td>
                     <td>10</td>
                 </tr>
             
@@ -2447,48 +1168,523 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"2010 Toyota Camry"</code></td>
+                    <td><code>"2010 Honda Accord Sedan"</code></td>
                     <td>10</td>
                 </tr>
             
+            
                 <tr>
-                    <td><code>"2010 Chrysler 300"</code></td>
-                    <td>10</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-cars-__0__-Identification-ID' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"2011 Chevrolet Silverado 1500 Extended Cab Work Tr..."</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Ford Escape"</code></td>
-                    <td>10</td>
+                    <td><code>"2011 Dodge Ram Dakota Bighorn/Lonestar Extended Ca..."</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2012 Chevrolet Camaro Coupe"</code></td>
-                    <td>10</td>
+                    <td><code>"2011 Chevrolet Silverado 1500 Extended Cab Long Bo..."</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2012 Hyundai Tucson"</code></td>
-                    <td>10</td>
+                    <td><code>"2010 Dodge Ram Dakota Bighorn/Lonestar Extended Ca..."</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2011 Toyota Sequoia"</code></td>
-                    <td>10</td>
+                    <td><code>"2010 Chevrolet Silverado 1500 Extended Cab Long Bo..."</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2012 Cadillac CTS Sport Sedan"</code></td>
-                    <td>10</td>
+                    <td><code>"2010 Chevrolet Silverado 1500 Extended Cab Work Tr..."</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2010 Cadillac CTS Sport Wagon"</code></td>
-                    <td>10</td>
+                    <td><code>"2010 Mercedes-Benz R350 BlueTEC 4Matic"</code></td>
+                    <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"2011 GMC Acadia"</code></td>
-                    <td>10</td>
+                    <td><code>"2011 Chevrolet Silverado 1500 Crew Cab Work Truck ..."</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 XL SuperCab 8-ft. Bed V8 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Mazda MX-5 Miata Grand Touring - Power Retrac..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 King-Ranch SuperCrew 5.5-ft. Bed"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Ford F-150 XL 8-ft. Bed"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford Expedition XL"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Dodge Ram Dakota Bighorn/Lonestar Crew Cab 30..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Chevrolet Silverado 1500 Extended Cab  Long B..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Cadillac CTS Sport Sedan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Toyota Tundra Double Cab 4.6L 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 Lariat SuperCrew 5.5-ft. Bed V6 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Dodge Nitro Heat 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Maybach 57 Zeppelin"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Dodge Ram 1500 SLT Regular Cab 4x2"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 XL 6.5-ft. Bed"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 FX4 SuperCab 6.5-ft. Bed 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Ford F-150 XL SuperCrew 5.5-ft. Bed 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Ford F-150 XL SuperCab 6.5-ft. Bed FFV 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 GMC Terrain SLE-2 AWD"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Volkswagen Jetta SEL AT"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 BMW 550i Sedan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Mazda MX-5 Miata Touring - Power Retractable ..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Chevrolet Silverado 1500 Crew Cab Work Truck ..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 Lariat SuperCrew 5.5-ft. Bed 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 BMW 750Li xDrive Sedan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Chevrolet Silverado 1500 Long Box Work Truck ..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Nissan Armada SL FFV"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Toyota Matrix  AT"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Ford F-150 XL SuperCrew 6.5-ft. Bed"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Toyota Tundra Double Cab 4.6L"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford Ranger XL"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Chevrolet Colorado Extended Cab Work Truck AT"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 GMC Sierra 1500 Extended Cab WT 2WD 4.8L"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 King-Ranch SuperCrew 5.5-ft. Bed  V6"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Ford F-150 XL 6.5-ft. Bed 4X4"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford Ranger XL SuperCab"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2009 Audi A3 2.0 T Quattro"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 XL SuperCab 6.5-ft. Bed"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Dodge Ram Dakota Bighorn/Lonestar Crew Cab 30..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 GMC Terrain SLE-2 3.0L"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Nissan 370Z Touring Coupe"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Nissan Titan King Cab PRO-4X FFV"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Mazda MX-5 Miata Touring - Power Retractable ..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Ford Mustang GT Premium"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 BMW 528i xDrive Sedan AT"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 GMC Canyon SLE 2WD"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 BMW ActiveHybrid 750i Sedan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 BMW 535i xDrive Sedan AT"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 XL 6.5-ft. Bed  V8"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Hyundai Veracruz Limited AWD"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Chevrolet Corvette Grand Sport Convertible 1LT AT"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Chevrolet Equinox 2LT AWD"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Volkswagen Jetta SE"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Ford Fusion S"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Jaguar XJ"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Toyota Yaris 3-Door Liftback L"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Dodge Durango Crew"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Land Rover LR4"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 BMW X3 xDrive30i SUV AT"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Aston Martin DB9 Volante"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Subaru Impreza Hatchback Outback Sport AT"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 GMC Sierra 1500 Extended Cab Long Box SLE 2WD"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Cadillac CTS Coupe Performance MT"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 GMC Canyon Extended Cab WT 4WD 3.7L"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Jeep Liberty Limited"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Lincoln Town Car Signature L"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Jeep Liberty Limited 4x4"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Dodge Ram 1500 SLT Regular Cab 8'' box 390 hp 4x2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Suzuki Equator Sport Extended Cab"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Chevrolet Traverse 2LT"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Audi A3 2.0 T"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Chevrolet Camaro Coupe 1SS AT"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 Lariat SuperCrew 5.5-ft. Bed"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Kia Soul"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 MINI Cooper Coupe AT"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Hyundai Santa Fe Limited 3.5 AWD"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Mazda Mazda3 4-Door s Sport AT"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 GMC Sierra 1500 Crew Cab Short Box WT 2WD"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Dodge Ram 1500 ST Regular Cab 390 hp 4x2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Toyota Tacoma Double Cab"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Mazda Mazda3 5-Door i Touring"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Kia Forte LX AT"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Toyota Highlander"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 XL 8-ft. Bed 4X4"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Dodge Charger SE"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Scion tC 6.0"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Chrysler 300 Limited"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Volvo XC60 3.2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 GMC Sierra 1500 Crew Cab Short Box SL 2WD"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Subaru Forester 2.5X Limited"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2010 Dodge Ram 1500 SLT Quad Cab 4x2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2012 Nissan Armada Platinum 4x4"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2011 Ford F-150 XL SuperCrew 6.5-ft. Bed"</code></td>
+                    <td>1</td>
                 </tr>
             
             
@@ -2521,6 +1717,8 @@ $(document).ready(function() {
         </div>
         
     
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-cars-__0__-Identification" ).dialog({
@@ -2543,27 +1741,6 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-cars-__0__-Identification-ID").click(function() {
-            $( "#explore-cars-__0__-Identification-ID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-cars-__0__-Identification-ID").click(function() {
-            $( "#explore-cars-__0__-Identification-ID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-cars-__0__-Identification-ID" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
-        
-        
-        $("#btn-explore-cars-__0__-Identification-Year").click(function() {
-            $( "#explore-cars-__0__-Identification-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-cars-__0__-Identification-Model-Year").click(function() {
             $( "#explore-cars-__0__-Identification-Model-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -2574,6 +1751,21 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         $( "#explore-cars-__0__-Identification-Model-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-cars-__0__-Identification-ID").click(function() {
+            $( "#explore-cars-__0__-Identification-ID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Identification-ID").click(function() {
+            $( "#explore-cars-__0__-Identification-ID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-cars-__0__-Identification-ID" ).dialog({
           autoOpen: false,
           width: 600
         });    
@@ -2594,6 +1786,126 @@ $(document).ready(function() {
         });    
         
         
+        $("#btn-explore-cars-__0__-Identification-Year").click(function() {
+            $( "#explore-cars-__0__-Identification-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-cars-__0__-Dimensions' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Width"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>202</code>
+                    
+                 </td> 
+                 <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td> </tr>
+            
+            <tr> <td><code>"Length"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>143</code>
+                    
+                 </td> 
+                 <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td> </tr>
+            
+            <tr> <td><code>"Height"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>140</code>
+                    
+                 </td> 
+                 <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars-__0__-Dimensions" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cars-__0__-Dimensions-Width").click(function() {
+            $( "#explore-cars-__0__-Dimensions-Width" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cars-__0__-Dimensions-Length").click(function() {
+            $( "#explore-cars-__0__-Dimensions-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cars-__0__-Dimensions-Height").click(function() {
+            $( "#explore-cars-__0__-Dimensions-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-cars-__0__-Engine-Information-Engine-Statistics' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Horsepower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>250</code>
+                    
+                 </td> 
+                 <td>A measure of the engine's power. A unit of power equal to 550 foot-pounds per second (745.7 watts).</td> </tr>
+            
+            <tr> <td><code>"Torque"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>236</code>
+                    
+                 </td> 
+                 <td>The torque of the engine, measured in lb/ft. When an engine is said to make "200 lb-ft of torque", it means that 200 pounds of force on a 1-foot lever is needed to stop its motion.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars-__0__-Engine-Information-Engine-Statistics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics-Horsepower").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics-Horsepower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics-Torque").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics-Torque" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
     });
     </script>
 
@@ -2609,14 +1921,6 @@ $(document).ready(function() {
                  </td> 
                  <td>The miles-per-gallon this car gets on average in cities.</td> </tr>
             
-            <tr> <td><code>"Highway mpg"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>25</code>
-                    
-                 </td> 
-                 <td>The miles-per-gallon this car gets on average on highways.</td> </tr>
-            
             <tr> <td><code>"Fuel Type"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
@@ -2628,10 +1932,16 @@ $(document).ready(function() {
                  </td> 
                  <td>Whether this car takes "Gasoline", "Diesel fuel", "Electricity", "Compressed natural gas", or "E85" (a term that refers to high-level ethanol-gasoline blends containing 51%-83% ethanol). If it is unknown, it is left blank.</td> </tr>
             
+            <tr> <td><code>"Highway mpg"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>25</code>
+                    
+                 </td> 
+                 <td>The miles-per-gallon this car gets on average on highways.</td> </tr>
+            
         </table>
     </div>
-    
-        
     
         
     
@@ -2665,6 +1975,8 @@ $(document).ready(function() {
         </div>
         
     
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-cars-__0__-Fuel-Information" ).dialog({
@@ -2674,12 +1986,6 @@ $(document).ready(function() {
         
         $("#btn-explore-cars-__0__-Fuel-Information-City-mpg").click(function() {
             $( "#explore-cars-__0__-Fuel-Information-City-mpg" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-cars-__0__-Fuel-Information-Highway-mpg").click(function() {
-            $( "#explore-cars-__0__-Fuel-Information-Highway-mpg" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2699,36 +2005,75 @@ $(document).ready(function() {
         });    
         
         
+        $("#btn-explore-cars-__0__-Fuel-Information-Highway-mpg").click(function() {
+            $( "#explore-cars-__0__-Fuel-Information-Highway-mpg" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
     });
     </script>
 
-    <div id='explore-cars-__0__-Dimensions' title='Dictionary (3 keys)'>
+    <div id='explore-cars-__0__-Engine-Information' title='Dictionary (6 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Width"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"Engine Statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <code>202</code>
+                    <a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Engine-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
-                 <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td> </tr>
+                 <td></td> </tr>
             
-            <tr> <td><code>"Height"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+            <tr> <td><code>"Engine Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <code>140</code>
+                    <code>"Audi 3.2L 6 cylinder 250hp 236ft-lbs"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Engine-Type'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
                     
                  </td> 
-                 <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td> </tr>
+                 <td>How many cylinders are in this engine. Most cars are either a 6-cylinder or an 8-cylinder.</td> </tr>
             
-            <tr> <td><code>"Length"</code></td> 
+            <tr> <td><code>"Number of Forward Gears"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
-                    <code>143</code>
+                    <code>6</code>
                     
                  </td> 
-                 <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td> </tr>
+                 <td>The number of forward gears. If no information is available, it is coded as 0.</td> </tr>
+            
+            <tr> <td><code>"Transmission"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"6 Speed Automatic Select Shift"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Transmission'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The full name of this type of transmission, based on its Classification and number of forward gears.</td> </tr>
+            
+            <tr> <td><code>"Driveline"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"All-wheel drive"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Driveline'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>A string representing whether this is "Rear-wheel drive", "Front-wheel drive", or "All-wheel drive".</td> </tr>
+            
+            <tr> <td><code>"Hybrid"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
+                 <td>Whether this is a hybrid engine or not - that is, if it uses both an internal combustion engine and an electric motor.</td> </tr>
             
         </table>
     </div>
@@ -2736,30 +2081,685 @@ $(document).ready(function() {
         
     
         
+        <div id='explore-cars-__0__-Engine-Information-Engine-Type' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 6.2L 8 Cylinder 430 hp 424 ft-lbs"</code></td>
+                    <td>96</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 5.4L 8 cylinder 310 hp 365 ft-lbs FFV"</code></td>
+                    <td>78</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nissan 4.0L 6 Cylinder 261 hp 281 ft-lbs"</code></td>
+                    <td>70</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dodge 5.7L 8 Cylinder 390 hp 407 ft-lbs"</code></td>
+                    <td>62</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nissan 5.6L 8 Cylinder 317 hp 385 ft-lbs"</code></td>
+                    <td>58</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BMW 3.0L 6 cylinder 300 hp 300 ft-lbs Turbo"</code></td>
+                    <td>56</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BMW 3.0L 6 cylinder 230hp 200 ft-lbs"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 5.3L 8 Cylinder 315 hp 335 ft-lbs FFV"</code></td>
+                    <td>54</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cadillac 6.2L 8 Cylinder 403 hp 417 ft-lbs FFV"</code></td>
+                    <td>54</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Honda 1.8L 4 Cylinder 140hp 128 ft-lbs"</code></td>
+                    <td>52</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Volkswagen 2.5L 5 Cylinder 170 hp 177 ft-lbs"</code></td>
+                    <td>51</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 5.0L 8 Cylinder 360 hp 380 ft-lbs FFV"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 2.9L 4 Cylinder 185 hp 190 ft-lbs"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nissan 5.6L 8 Cylinder 317 hp 385 ft-lbs FFV"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 5.7L 8 Cylinder 381 hp 401 ft-lbs"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 3.7L 5 Cylinder 242 hp 242 ft-lbs"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 4.8L 8 Cylinder 302 hp 305 ft-lbs FFV"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dodge 4.7L 8 Cylinder 310 hp 330 ft-lbs FFV"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 4.8L 8 Cylinder 302 hp 305 ft-lbs FFV"</code></td>
+                    <td>40</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Subaru 2.5L 4 cylinder 170 hp 170 ft-lbs"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cadillac 3.0L 6 Cylinder 270 hp 223 ft-lbs"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 3.5L 6 Cylinder 365 hp 420 ft-lbs"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Volvo 2.5L 5 Cylinder 227 hp 236 ft-lbs Turbo"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Saab 2.0L 4 Cylinder 210 hp 221 ft-lbs Turbo"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 2.9L 4 Cylinder 185 hp 190 ft-lbs"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Volvo 3.2 L 6 cylinder 240 hp 236 ft-lbs"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 5.4L 8 cylinder 255 hp 350 ft-lbs FFV"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 5.3L 8 Cylinder 320 hp 335 ft-lbs FFV"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Volkswagen 2.0L 4 Cylinder 200 hp 207 ft-lbs Turbo"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeep 3.7L 6 Cylinder 210 hp 235 ft-lbs"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 3.5L 6 Cylinder 266hp 245 ft-lbs."</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nissan 4.0L 6 Cylinder 266 hp 288 ft-lbs"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 3.7L 5 Cylinder 242 hp 242 ft-lbs"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nissan 3.7L 6 Cylinder 332 hp 270 ft-lbs"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 3.6L 6 Cylinder 288 hp 270 ft-lbs."</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 5.3L 8 Cylinder 315 hp 335 ft-lbs FFV"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 4.6L 8 Cylinder 310 hp 327 ft-lbs"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cadillac 3.6L 6 Cylinder 304 hp 273 ft-lbs"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 6.2L 8 Cylinder 403 hp 417 ft-lbs FFV"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Honda 2.4L 4 cylinder 190 hp 162 ft-lbs"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 5.3L 8 Cylinder 300 hp 320 ft-lbs"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeep 3.8L 6 Cylinder 202 hp 237 ft-lbs"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 4.0L 6 Cylinder 236 hp 266 ft-lbs"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 2.4L 4 Cylinder 182 hp 172 ft-lbs"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeep 2.4L 4 Cylinder 172 hp 165 ft-lbs"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BMW 4.4L 8 cylinder 400 hp 450 ft-lbs Turbo"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 5.3L 8 Cylinder 320 hp 335 ft-lbs FFV"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 5.3L 8 Cylinder 315 hp 338 ft-lbs FFV"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dodge 3.7L 6 Cylinder 210 hp 235 ft-lbs"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 4.6L 8 cylinder 292 hp 320 ft-lbs"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Audi 2.0L 4 cylinder 211 hp 258 ft-lbs Turbo"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mini 1.6L 4 Cylinder 181 hp 177 ft-lbs Turbo"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 4.0L 6 Cylinder 207 hp 238 ft-lbs"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeep 3.6L 6 Cylinder 290 hp 260 ft-lbs FFV"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 2.5L 4 cylinder 171hp 171 ft-lbs"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 3.5L 6 Cylinder 263 hp 249 ft-lbs"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mazda 2.5L 4 Cylinder 167 hp 168 ft-lbs"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 3.7L 6 Cylinder 302 hp 278 ft-lbs FFV"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 4.6L 8 cylinder 248 hp 294 ft-lbs"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 3.5L 6 Cylinder 270 hp 248 ft-lbs."</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Buick 3.6L 6 Cylinder 288 hp 270 ft-lbs"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 6.2L 8 Cylinder 426 hp 420 ft-lbs"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 3.7L 6 Cylinder 305 hp 280 ft-lbs"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kia 2.0L 4 Cylinder 156 hp 144 ft-lbs"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 5.7L 8 Cylinder 381 hp 401 ft-lbs FFV"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Honda 3.5L 6 Cylinder 250 hp 253 ft-lbs"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 3.5L 6 Cylinder 262 hp 248 ft-lbs"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 2.7L 4 Cylinder 159 hp 180 ft-lbs"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mercedes-Benz 3.5L 6 Cylinders 268 hp 258 ft-lbs"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 2.0L 4 Cylinder 140 hp 136 ft-lbs"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 1.5L 4 Cylinder 106 hp 103 ft-lbs"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aston Martin 5.9L 12 Cylinder 470 hp 443 ft-lbs"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 4.6L 8 cylinder 225 hp 286 ft-lbs FFV"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mini 1.6L 4 Cylinder 121 hp 114 ft-lbs"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 6.0L 8 Cylinder 332 hp 367 ft-lbs Hybrid"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mazda 3.7L 6 Cylinder 273 hp 270 ft-lbs"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nissan 1.8L 4 Cylinder 122 hp 127 ft-lbs"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 3.6L 6 Cylinder 281 hp 266 ft-lbs"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Land Rover 5.0L 8 Cylinder 375 hp 375 ft-lbs"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hyundai 2.0L 4 cylinder 138 hp 136 ft-lbs"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mazda 2.5L 4 Cylinder 170hp 167 ft-lbs"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GMC 5.3L 8 Cylinder 310 hp 334 ft-lbs FFV"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jaguar 5.0L 8 Cylinder 385 hp 380 ft-lbs"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeep 5.7L 8 Cylinder 360 hp 390 ft-lbs"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mazda 2.0L 4 Cylinder 167 hp 140 ft-lbs"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 2.4L 4 Cylinder 182 hp 172 ft-lbs"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lexus 2.5L 6 Cylinder 204 hp 185 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 6.8L 10 cylinder 305 hp 420 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 6.0L 8 Cylinder 332 hp 367 ft-lbs Hybrid"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Honda 3.5L 6 Cylinder 271 hp 254 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Infiniti 3.5L 6 cylinder 297 hp 253 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 2.3L 4 Cylinder 143 hp 154 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toyota 1.8L 4 Cylinder 132 hp 128 ft-lbs."</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mercedes-Benz 5.5L 8 Cylinder 382 hp 391 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford 5.0L 8 Cylinder 412 hp 390 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Infiniti 3.7L 6 cylinder 330 hp 270 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chevrolet 6.2L 8 Cylinder 403 hp 417 ft-lbs FFV"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hyundai 3.5L 6 Cylinder 276 hp 248 ft-lbs"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dodge 3.6L 6 Cylinder 283 hp 260 ft-lbs FFV"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jaguar 5.0L 8 Cylinder 510 hp 461 ft-lbs S-Charged"</code></td>
+                    <td>15</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+        <div id='explore-cars-__0__-Engine-Information-Transmission' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"6 Speed Automatic Select Shift"</code></td>
+                    <td>1313</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"6 Speed Automatic"</code></td>
+                    <td>767</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"6 Speed Manual"</code></td>
+                    <td>734</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4 Speed Automatic"</code></td>
+                    <td>671</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5 Speed Automatic"</code></td>
+                    <td>654</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5 Speed Manual"</code></td>
+                    <td>393</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5 Speed Automatic Select Shift"</code></td>
+                    <td>216</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"7 Speed Automatic Select Shift"</code></td>
+                    <td>111</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"8 Speed Automatic Select Shift"</code></td>
+                    <td>91</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4 Speed Automatic Select Shift"</code></td>
+                    <td>85</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"7 Speed Automatic"</code></td>
+                    <td>41</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-cars-__0__-Engine-Information-Driveline' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Rear-wheel drive"</code></td>
+                    <td>1751</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Front-wheel drive"</code></td>
+                    <td>1569</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Four-wheel drive"</code></td>
+                    <td>920</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"All-wheel drive"</code></td>
+                    <td>836</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
     
         
     
     <script>
     $(document).ready(function() {
-        $( "#explore-cars-__0__-Dimensions" ).dialog({
+        $( "#explore-cars-__0__-Engine-Information" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-cars-__0__-Dimensions-Width").click(function() {
-            $( "#explore-cars-__0__-Dimensions-Width" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-cars-__0__-Dimensions-Height").click(function() {
-            $( "#explore-cars-__0__-Dimensions-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Type").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Type").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-cars-__0__-Engine-Information-Engine-Type" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Number-of-Forward-Gears").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Number-of-Forward-Gears" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-cars-__0__-Dimensions-Length").click(function() {
-            $( "#explore-cars-__0__-Dimensions-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Transmission").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Transmission" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Transmission").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Transmission" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-cars-__0__-Engine-Information-Transmission" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Driveline").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Driveline" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Driveline").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Driveline" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-cars-__0__-Engine-Information-Driveline" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Hybrid").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Hybrid" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

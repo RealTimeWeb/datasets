@@ -22,7 +22,8 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_shows': {
                 "type": "FunctionType", 
@@ -30,16 +31,16 @@ def _tifa_definitions():
                 "returns": 
 		{"type": "ListType", "subtype": 
 			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Show'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Statistics'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Theatre'}, {"type": "LiteralStr", "value": 'Type'}, {"type": "LiteralStr", "value": 'Name'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Type'}, {"type": "LiteralStr", "value": 'Theatre'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Day'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Day'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Full'}, {"type": "LiteralStr", "value": 'Month'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Gross Potential'}, {"type": "LiteralStr", "value": 'Capacity'}, {"type": "LiteralStr", "value": 'Gross'}, {"type": "LiteralStr", "value": 'Performances'}, {"type": "LiteralStr", "value": 'Attendance'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Attendance'}, {"type": "LiteralStr", "value": 'Performances'}, {"type": "LiteralStr", "value": 'Capacity'}, {"type": "LiteralStr", "value": 'Gross Potential'}, {"type": "LiteralStr", "value": 'Gross'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 

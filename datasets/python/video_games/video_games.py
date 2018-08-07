@@ -22,47 +22,41 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_games': {
                 "type": "FunctionType", 
                 "name": 'get_games',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Metadata'}, {"type": "LiteralStr", "value": 'Length'}, {"type": "LiteralStr", "value": 'Features'}, {"type": "LiteralStr", "value": 'Metrics'}, {"type": "LiteralStr", "value": 'Title'}, {"type": "LiteralStr", "value": 'Release'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Genres'}, {"type": "LiteralStr", "value": 'Publishers'}, {"type": "LiteralStr", "value": 'Sequel?'}, {"type": "LiteralStr", "value": 'Licensed?'}], "values": [
-					{"type": "ListType", "subtype": 
-						{"type": "StrType"}}, 
-					{"type": "ListType", "subtype": 
-						{"type": "StrType"}}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All PlayStyles'}, {"type": "LiteralStr", "value": 'Main + Extras'}, {"type": "LiteralStr", "value": 'Main Story'}, {"type": "LiteralStr", "value": 'Completionists'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Polled'}, {"type": "LiteralStr", "value": 'Leisure'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Length'}, {"type": "LiteralStr", "value": 'Features'}, {"type": "LiteralStr", "value": 'Metrics'}, {"type": "LiteralStr", "value": 'Metadata'}, {"type": "LiteralStr", "value": 'Release'}, {"type": "LiteralStr", "value": 'Title'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Main Story'}, {"type": "LiteralStr", "value": 'Main + Extras'}, {"type": "LiteralStr", "value": 'All PlayStyles'}, {"type": "LiteralStr", "value": 'Completionists'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Leisure'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Polled'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Polled'}, {"type": "LiteralStr", "value": 'Leisure'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Leisure'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Polled'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Polled'}, {"type": "LiteralStr", "value": 'Leisure'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Leisure'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Polled'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Polled'}, {"type": "LiteralStr", "value": 'Leisure'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Leisure'}, {"type": "LiteralStr", "value": 'Rushed'}, {"type": "LiteralStr", "value": 'Average'}, {"type": "LiteralStr", "value": 'Median'}, {"type": "LiteralStr", "value": 'Polled'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Handheld?'}, {"type": "LiteralStr", "value": 'Multiplatform?'}, {"type": "LiteralStr", "value": 'Max Players'}, {"type": "LiteralStr", "value": 'Online?'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Online?'}, {"type": "LiteralStr", "value": 'Multiplatform?'}, {"type": "LiteralStr", "value": 'Handheld?'}, {"type": "LiteralStr", "value": 'Max Players'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
@@ -71,12 +65,19 @@ def _tifa_definitions():
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Re-release?'}, {"type": "LiteralStr", "value": 'Console'}, {"type": "LiteralStr", "value": 'Rating'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Licensed?'}, {"type": "LiteralStr", "value": 'Genres'}, {"type": "LiteralStr", "value": 'Publishers'}, {"type": "LiteralStr", "value": 'Sequel?'}], "values": [
 					{"type": "NumType"}, 
-					{"type": "NumType"}, 
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}, 
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Console'}, {"type": "LiteralStr", "value": 'Rating'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Re-release?'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "StrType"}]}},
             }
         
         }

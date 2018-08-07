@@ -22,30 +22,31 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_scores': {
                 "type": "FunctionType", 
                 "name": 'get_scores',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Metrics'}], "values": [
-				{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Metrics'}], "values": [
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State Fragility Index'}, {"type": "LiteralStr", "value": 'Legitimacy'}, {"type": "LiteralStr", "value": 'Effectiveness'}], "values": [
-					{"type": "NumType"}, 
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Legitimacy'}, {"type": "LiteralStr", "value": 'Effectiveness'}, {"type": "LiteralStr", "value": 'State Fragility Index'}], "values": [
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Security Legitimacy'}, {"type": "LiteralStr", "value": 'Social Legitimacy'}, {"type": "LiteralStr", "value": 'Political Legitimacy'}, {"type": "LiteralStr", "value": 'Legitimacy Score'}, {"type": "LiteralStr", "value": 'Economic Legitimacy'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Social Effectiveness'}, {"type": "LiteralStr", "value": 'Political Effectiveness'}, {"type": "LiteralStr", "value": 'Economic Effectiveness'}, {"type": "LiteralStr", "value": 'Security Effectiveness'}, {"type": "LiteralStr", "value": 'Effectiveness Score'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Political Effectiveness'}, {"type": "LiteralStr", "value": 'Effectiveness Score'}, {"type": "LiteralStr", "value": 'Social Effectiveness'}, {"type": "LiteralStr", "value": 'Economic Effectiveness'}, {"type": "LiteralStr", "value": 'Security Effectiveness'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}]}},
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}]}]}},
             }
         
         }

@@ -22,29 +22,30 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_reports': {
                 "type": "FunctionType", 
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Area'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Age'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Age'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Area'}], "values": [
 				{"type": "NumType"}, 
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Crude CI Lower'}, {"type": "LiteralStr", "value": 'Event Type'}, {"type": "LiteralStr", "value": 'Crude Rate'}, {"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Crude CI Upper'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Race'}, {"type": "LiteralStr", "value": 'Sex'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Age Adjusted CI Lower'}, {"type": "LiteralStr", "value": 'Age Adjusted Rate'}, {"type": "LiteralStr", "value": 'Age Adjusted CI Upper'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Race'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Sex'}, {"type": "LiteralStr", "value": 'Crude CI Lower'}, {"type": "LiteralStr", "value": 'Event Type'}, {"type": "LiteralStr", "value": 'Crude Rate'}, {"type": "LiteralStr", "value": 'Crude CI Upper'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
+					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Age Adjusted Rate'}, {"type": "LiteralStr", "value": 'Age Adjusted CI Lower'}, {"type": "LiteralStr", "value": 'Age Adjusted CI Upper'}], "values": [
 					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}]}},
+					{"type": "NumType"}]}, 
+				{"type": "StrType"}]}},
             }
         
         }

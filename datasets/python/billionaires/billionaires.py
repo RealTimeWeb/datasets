@@ -22,40 +22,41 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_billionaires': {
                 "type": "FunctionType", 
                 "name": 'get_billionaires',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'wealth'}, {"type": "LiteralStr", "value": 'demographics'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'wealth'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'demographics'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+				{"type": "NumType"}, 
 				{"type": "StrType"}, 
 				{"type": "NumType"}, 
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'how'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'worth in billions'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'was founder'}, {"type": "LiteralStr", "value": 'from emerging'}, {"type": "LiteralStr", "value": 'inherited'}, {"type": "LiteralStr", "value": 'category'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'was political'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'worth in billions'}, {"type": "LiteralStr", "value": 'how'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'category'}, {"type": "LiteralStr", "value": 'was political'}, {"type": "LiteralStr", "value": 'from emerging'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'inherited'}, {"type": "LiteralStr", "value": 'was founder'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'founded'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'sector'}, {"type": "LiteralStr", "value": 'relationship'}, {"type": "LiteralStr", "value": 'name'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'age'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'founded'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'relationship'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'sector'}], "values": [
-					{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'region'}, {"type": "LiteralStr", "value": 'country code'}, {"type": "LiteralStr", "value": 'gdp'}, {"type": "LiteralStr", "value": 'citizenship'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'citizenship'}, {"type": "LiteralStr", "value": 'gdp'}, {"type": "LiteralStr", "value": 'country code'}, {"type": "LiteralStr", "value": 'region'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}, 
 					{"type": "StrType"}]}]}},
             }
         

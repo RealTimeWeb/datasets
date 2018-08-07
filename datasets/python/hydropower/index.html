@@ -290,6 +290,14 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
+            <tr> <td><code>"Latitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>42.4155</code>
+                    
+                 </td> 
+                 <td>Missing values for the Latitude were imputed with a mean value of 36.278079019861529</td> </tr>
+            
             <tr> <td><code>"Longitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
@@ -297,17 +305,6 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>Missing values for the Longitude were imputed with a mean value of -97.501892792978808</td> </tr>
-            
-            <tr> <td><code>"State"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Oregon"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Location-State'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"County"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -320,17 +317,537 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Latitude"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <code>42.4155</code>
+                    <code>"Oregon"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Location-State'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
                     
                  </td> 
-                 <td>Missing values for the Latitude were imputed with a mean value of 36.278079019861529</td> </tr>
+                 <td></td> </tr>
             
         </table>
     </div>
     
+        
+    
+        
+    
+        
+        <div id='explore-hydropower-__0__-Location-County' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Pitkin"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Larimer"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maricopa"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Scotts Bluff"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fremont"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Klamath"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kittitas"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grant"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Valley"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shasta"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Park"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natrona"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Santa Barbara"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lake"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gunnison"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wasatch"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grand"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Summit"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Malheur"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Delta"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Weber"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Canyon"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sacramento"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Imperial, CA; Yuma, AZ"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sierra"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carbon"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colusa"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lewis and Clark"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Duchesne"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Merced"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Trinity"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Glacier"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crook"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Teton"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yakima"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Frontier"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Contra Costa"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uintah"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rooks"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beaverhead"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Norton"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Butte"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eagle"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eddy"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ada"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montezuma"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montrose"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kiowa"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Churchill"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Goshen"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baker"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Big Horn"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tehama"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sweetwater"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Blaine"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Deschutes"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yellowstone"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cache"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Placer"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bonneville"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Teton, Lewis and Clark"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Morgan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pennington"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ventura"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emery"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"La Plata"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Umatilla"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"El Dorado"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Coconino"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Okanogan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yolo"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Phillips"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caddo"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yuma, Ariz and Imperial, Calif"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pueblo"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Stutsman"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Modoc"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nez Perce"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clark (NV), Mohave (AZ)"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baker, Union"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lander"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Duschene"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Calaveras"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dona Ana, NM; El Paso, Tx"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SanJuan, Rio Arriba"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cherry"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Boise/Elmore"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Loup"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"County Hill"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gem"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hot Springs"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madera"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sherman"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Storey, Washoe"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Power"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pershing"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hitchcock"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
         
     
         
@@ -404,22 +921,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Nevada"</code></td>
-                    <td>7</td>
-                </tr>
-            
-                <tr>
                     <td><code>"South Dakota"</code></td>
                     <td>7</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Arizona and California"</code></td>
-                    <td>3</td>
+                    <td><code>"Nevada"</code></td>
+                    <td>7</td>
                 </tr>
             
                 <tr>
                     <td><code>"Texas"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Dakota"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -429,7 +946,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"North Dakota"</code></td>
+                    <td><code>"Arizona and California"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -453,523 +970,6 @@ $(document).ready(function() {
         </div>
         
     
-        
-        <div id='explore-hydropower-__0__-Location-County' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"Pitkin"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Larimer"</code></td>
-                    <td>13</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unknown"</code></td>
-                    <td>12</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Maricopa"</code></td>
-                    <td>8</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Scotts Bluff"</code></td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grant"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Klamath"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fremont"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kittitas"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Natrona"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jackson"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Summit"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Park"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wasatch"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Delta"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Shasta"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gunnison"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grand"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Valley"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lake"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Malheur"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Santa Barbara"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Carbon"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lewis and Clark"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Duchesne"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Teton"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sacramento"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Merced"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Canyon"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Yakima"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Glacier"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Trinity"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Weber"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Imperial, CA; Yuma, AZ"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Colusa"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Crook"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sierra"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eddy"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Placer"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Umatilla"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Coconino"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Baker"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Washington"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sweetwater"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Norton"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Uintah"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"La Plata"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Deschutes"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eagle"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Big Horn"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Phillips"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tehama"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Frontier"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ada"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Contra Costa"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Teton, Lewis and Clark"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Yolo"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bonneville"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Blaine"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kiowa"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Goshen"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Montezuma"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pennington"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Montrose"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ventura"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cache"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Beaverhead"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Yellowstone"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Churchill"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rooks"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Emery"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Okanogan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Caddo"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"El Dorado"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Butte"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Morgan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Stark"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"County Hill"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"La Paz, AZ; Riverside, CA"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Minidoka & Cassia"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Duschene"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Calaveras"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Clevelandand Oklahoma"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nez Perce"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sante Fe"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Perkins"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pershing"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Imperial"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Power"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Elmore"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SanJuan, Rio Arriba"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Daws"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sherman"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Boise/Elmore"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wasco"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hayes"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eagle & Pitkin"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Murray"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Garfield"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chase"</code></td>
-                    <td>1</td>
-                </tr>
-            
-            
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            
-        </table>
-        </div>
-        
-    
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-hydropower-__0__-Location" ).dialog({
@@ -977,25 +977,16 @@ $(document).ready(function() {
           width: 600
         });
         
+        $("#btn-explore-hydropower-__0__-Location-Latitude").click(function() {
+            $( "#explore-hydropower-__0__-Location-Latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-hydropower-__0__-Location-Longitude").click(function() {
             $( "#explore-hydropower-__0__-Location-Longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
-        
-        
-        $("#btn-explore-hydropower-__0__-Location-State").click(function() {
-            $( "#explore-hydropower-__0__-Location-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-hydropower-__0__-Location-State").click(function() {
-            $( "#explore-hydropower-__0__-Location-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        $( "#explore-hydropower-__0__-Location-State" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
         
         
         $("#btn-explore-hydropower-__0__-Location-County").click(function() {
@@ -1013,39 +1004,48 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-hydropower-__0__-Location-Latitude").click(function() {
-            $( "#explore-hydropower-__0__-Location-Latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-hydropower-__0__-Location-State").click(function() {
+            $( "#explore-hydropower-__0__-Location-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-hydropower-__0__-Location-State").click(function() {
+            $( "#explore-hydropower-__0__-Location-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-hydropower-__0__-Location-State" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
         
         
     });
     </script>
 
-    <div id='explore-hydropower-__0__-Dimensions' title='Dictionary (3 keys)'>
+    <div id='explore-hydropower-__0__' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Crest Elevation"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Dimensions"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <code>1520.0</code>
+                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Dimensions'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
-                 <td>In feet, missing values were imputed with a mean value of 4141.10</td> </tr>
+                 <td></td> </tr>
             
-            <tr> <td><code>"Structural Height"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Identity"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <code>86.0</code>
+                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Identity'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
-                 <td>In feet, missing values were imputed with a mean value of 132.17</td> </tr>
+                 <td></td> </tr>
             
-            <tr> <td><code>"Crest Length"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"Location"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
-                    <code>3800.0</code>
+                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -1061,25 +1061,25 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-hydropower-__0__-Dimensions" ).dialog({
+        $( "#explore-hydropower-__0__" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-hydropower-__0__-Dimensions-Crest-Elevation").click(function() {
-            $( "#explore-hydropower-__0__-Dimensions-Crest-Elevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-hydropower-__0__-Dimensions").click(function() {
+            $( "#explore-hydropower-__0__-Dimensions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-hydropower-__0__-Dimensions-Structural-Height").click(function() {
-            $( "#explore-hydropower-__0__-Dimensions-Structural-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-hydropower-__0__-Identity").click(function() {
+            $( "#explore-hydropower-__0__-Identity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-hydropower-__0__-Dimensions-Crest-Length").click(function() {
-            $( "#explore-hydropower-__0__-Dimensions-Crest-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-hydropower-__0__-Location").click(function() {
+            $( "#explore-hydropower-__0__-Location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1090,14 +1090,6 @@ $(document).ready(function() {
     <div id='explore-hydropower-__0__-Identity' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Project"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Identity-Project'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"Watercourse"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -1121,10 +1113,16 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
+            <tr> <td><code>"Project"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Identity-Project'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
         </table>
     </div>
-    
-        
     
         
         <div id='explore-hydropower-__0__-Identity-Watercourse' title='Previewing Values'>
@@ -1152,37 +1150,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Salt River"</code></td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Rio Grande"</code></td>
                     <td>5</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Milk River"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lost River"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Snake River"</code></td>
-                    <td>4</td>
+                    <td><code>"Salt River"</code></td>
+                    <td>5</td>
                 </tr>
             
                 <tr>
                     <td><code>"Unknown"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Willow Creek"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -1192,22 +1170,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Lost River"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Willow Creek"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Snake River"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Milk River"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pecos River"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Wind River"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cunningham Creek"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Shoshone River"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Yakima River"</code></td>
                     <td>3</td>
                 </tr>
             
@@ -1217,62 +1205,87 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Shoshone River"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cunningham Creek"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yakima River"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Stony Creek"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Pecos River"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Little Hell Creek"</code></td>
+                    <td><code>"Heart River"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Boise River"</code></td>
+                    <td><code>"Interstate Canal"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"James River"</code></td>
+                    <td><code>"Sacramento River"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Clear Creek"</code></td>
+                    <td><code>"Bighorn River"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Keene Creek"</code></td>
+                    <td><code>"Strawberry River"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Gunnison River"</code></td>
+                    <td><code>"Red Willow Creek"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Fryingpan River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Luis Creek"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dry Creek"</code></td>
+                    <td><code>"Solomon River"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
                     <td><code>"Little Truckee R."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beaverhead River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Mary River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Green River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carson River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spring Creek"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1287,32 +1300,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Sacramento River"</code></td>
+                    <td><code>"Gunnison River"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Red Willow Creek"</code></td>
+                    <td><code>"James River"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Beaverhead River"</code></td>
+                    <td><code>"Clear Creek"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Green River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Powder River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Uncompahgre River"</code></td>
+                    <td><code>"Fryingpan River"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1322,57 +1325,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Spring Creek"</code></td>
+                    <td><code>"Dry Creek"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Belle Fourch River"</code></td>
+                    <td><code>"Powder River"</code></td>
                     <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Deschutes River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"St. Mary River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Carson River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Heart River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rock Creek"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Strawberry River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Solomon River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Interstate Canal"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bighorn River"</code></td>
+                    <td><code>"San Luis Creek"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -1387,22 +1350,42 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"OS Little Sandy Creek"</code></td>
-                    <td>1</td>
+                    <td><code>"Rock Creek"</code></td>
+                    <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Kachess River"</code></td>
-                    <td>1</td>
+                    <td><code>"Boise River"</code></td>
+                    <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Carter Creek"</code></td>
-                    <td>1</td>
+                    <td><code>"Deschutes River"</code></td>
+                    <td>2</td>
                 </tr>
             
                 <tr>
-                    <td><code>"South Fork, Owl Creek"</code></td>
+                    <td><code>"Keene Creek"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Belle Fourch River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uncompahgre River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Little Hell Creek"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Burnt River"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1412,112 +1395,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Humboldt River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lower Crab Creek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grass Valley Creek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Camp Creek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Columbia River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
                     <td><code>"White Rock Creek"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Tub springs Creek"</code></td>
+                    <td><code>"Rock creek"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"North Fork of Sun River"</code></td>
+                    <td><code>"Smoky Hill River"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Frio River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Price River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Juan River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Midway Creek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Owyhee River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Loup"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Joaquin River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Blacks Fork River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Fork, Red River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Florida River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Fork of the Boise River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Little Stony Creek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jenny Creek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grand River"</code></td>
+                    <td><code>"Agua Fria"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1527,37 +1420,87 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Offstream storage"</code></td>
+                    <td><code>"Iron Creek"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"SF of Snake River"</code></td>
+                    <td><code>"Rio chama"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Ventura River"</code></td>
+                    <td><code>"Cuyama River"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"North Fork Payette River"</code></td>
+                    <td><code>"Lake Creek"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Medicine Creek"</code></td>
+                    <td><code>"Lake Alice Feeder Canal"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Stanislaus River"</code></td>
+                    <td><code>"Kachess River"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"offstream storage"</code></td>
+                    <td><code>"Yellowstone River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Fork of the Boise River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colorado River Storage"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Taylor River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crooked River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Funks Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Boadhead Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marias River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Little Truckee River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Umatilla River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Frenchman River"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1567,67 +1510,122 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"North Fork of the Malheur River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Deadwood River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sawyer Creek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Santa Ynex River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Emigrant Creek"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"McKay Creek"</code></td>
+                    <td><code>"Washita River"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Grassy Creek"</code></td>
+                    <td><code>"Garland Canal"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"West Otter Creek"</code></td>
+                    <td><code>"WE of Glen Anne Canyon"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Little Bear Water"</code></td>
+                    <td><code>"Ventura River"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"North Fork Sun River"</code></td>
+                    <td><code>"Dolores"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Offstream Storage - Lindsey Creek"</code></td>
+                    <td><code>"Little Wood River"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Provo River"</code></td>
+                    <td><code>"Missouri River"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Seely Creek"</code></td>
+                    <td><code>"offstream storage"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Coyote Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lost Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Canyon Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lake Fork of the Arkansas"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rio Nambe"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carter Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ogden River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tieton river"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pine River (Los Pinos)"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bully Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Truckee River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Frenchman"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Humboldt"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grand River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Halfmoon Creek"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -1652,442 +1650,32 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Ridgway Dam"</code></td>
+                    <td><code>"Conconully Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Enders Dam"</code></td>
+                    <td><code>"Marble Bluff Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Cheney Dam"</code></td>
+                    <td><code>"Granite Reef Diversion Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"McKay Dam"</code></td>
+                    <td><code>"Anita Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"South Cunningham Creek Diversion Dam"</code></td>
+                    <td><code>"Horsetooth Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Huntington North Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dry Spotted Tail Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"O`Sullivan Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Wasco Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ruedi Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Northside Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Minidoka Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Altus Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vandalia Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cold Springs Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pueblo Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Flaming Gorge Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Moon Lake Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Corbett Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"James Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sumner Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Morrow Point Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Satanka Dike Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vallecito Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Keswick Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Clark Canyon Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sanford Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Elephant Butte Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Norman Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mountain Park Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chapman Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Salmon Lake Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arthur V Watkins Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Virginia Smith Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Los Banos Creek Detention Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kent Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Upper Stillwater Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Funks Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mormon Island Auxilliary Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Como Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Willwood Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fresno Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mormon Flat Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mann Creek Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Keechelus Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Trinity Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Blue Mesa Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lake Tahoe Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Spring Creek Debris Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Twitchell Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ivanhoe Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Glen Elder Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Olympus Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Upper Slaven Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unity Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Heart Butte Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Pilot Butte Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dressler Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Red Bluff Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dille Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hubbard Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Island Park Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"American Falls Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lahontan Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lauro Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Carson River Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hoover Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Robles Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"McPhee Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dodson Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Glendo Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lake Sherburne Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Buckhorn Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Gerber Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"B F Sisk Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Glen Canyon Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dixon Canyon Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"North Fork Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Deer Creek Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"El Vado Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Soldiers Meadow Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"McGee Creek Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Parker Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mt Elbert Forebay Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mason Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tub Springs Creek Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mormon Creek Diversion Dam"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Avalon Dam"</code></td>
+                    <td><code>"North Dam"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -2097,17 +1685,132 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Sawyer Diversion Dam"</code></td>
+                    <td><code>"Belle Fourche Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Gibson Dam"</code></td>
+                    <td><code>"Upper Slaven Diversion Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Pineview Dam"</code></td>
+                    <td><code>"Soldier Canyon Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Halfmoon Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Seminoe Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Huntington North Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lake Sherburne Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Fork Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ruedi Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Horse Creek Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Robles Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"McKay Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cedar Bluff Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dunlap Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pole Hill Afterbay Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pathfinder Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ridgway Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mormon Creek Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Twitchell Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Keswick Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Little Hell Creek Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anchor Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clear Lake Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sanford Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Black Canyon Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Howard Prairie Dam"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -2122,27 +1825,322 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Trenton Dam"</code></td>
+                    <td><code>"Fryingpan Diversion Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Guernsey Dam"</code></td>
+                    <td><code>"Culbertson Diversion Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Broadhead Diversion Dam"</code></td>
+                    <td><code>"Bully Creek Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Tiber Dam"</code></td>
+                    <td><code>"Keene Creek Dam"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Webster Dam"</code></td>
+                    <td><code>"Norman Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shasta Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pinto Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Soldier Creek Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ortega Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Waddell Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Palo Verde Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caballo Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Whalen Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Agate Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Echo Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"American Falls Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Middle Cunningham Creek Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Horse Mesa Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vallecito Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Trinity Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wind River Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Glen Anne Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lost River Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fort Cobb Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Buckhorn Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Angostura Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eden Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cheney Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Platoro Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crane Prairie Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emigrant Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paradise Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dry Spotted Tail Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Cunningham Creek Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wanship Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lower Yellowstone Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shadow Mountain Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lost Creek Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Meeks Cabin Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chapman Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Canyon Ferry Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Garnet Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"O`Sullivan Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Willow Creek Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arbuckle Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bull Lake Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Deer Flat Lower Embankment"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Navajo Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pactola Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lake Alice No 1 Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hunter Creek Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vandalia Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Miller Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Olympus Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pathfinder Dike Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Steinaker Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cambridge Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Granby Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Terminal Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Franchi Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Malone Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Almena Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Twin Lakes Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nelson Dam"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -2156,18 +2154,14 @@ $(document).ready(function() {
         </div>
         
     
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-hydropower-__0__-Identity" ).dialog({
           autoOpen: false,
           width: 600
         });
-        
-        $("#btn-explore-hydropower-__0__-Identity-Project").click(function() {
-            $( "#explore-hydropower-__0__-Identity-Project" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
         
         $("#btn-explore-hydropower-__0__-Identity-Watercourse").click(function() {
             $( "#explore-hydropower-__0__-Identity-Watercourse" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -2199,36 +2193,42 @@ $(document).ready(function() {
         });    
         
         
+        $("#btn-explore-hydropower-__0__-Identity-Project").click(function() {
+            $( "#explore-hydropower-__0__-Identity-Project" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
     });
     </script>
 
-    <div id='explore-hydropower-__0__' title='Dictionary (3 keys)'>
+    <div id='explore-hydropower-__0__-Dimensions' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Identity"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Crest Length"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Identity'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>3800.0</code>
                     
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Location"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Crest Elevation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>1520.0</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>In feet, missing values were imputed with a mean value of 4141.10</td> </tr>
             
-            <tr> <td><code>"Dimensions"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+            <tr> <td><code>"Structural Height"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <a class='dialog-opener' id='btn-explore-hydropower-__0__-Dimensions'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    <code>86.0</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>In feet, missing values were imputed with a mean value of 132.17</td> </tr>
             
         </table>
     </div>
@@ -2241,25 +2241,25 @@ $(document).ready(function() {
     
     <script>
     $(document).ready(function() {
-        $( "#explore-hydropower-__0__" ).dialog({
+        $( "#explore-hydropower-__0__-Dimensions" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-hydropower-__0__-Identity").click(function() {
-            $( "#explore-hydropower-__0__-Identity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-hydropower-__0__-Dimensions-Crest-Length").click(function() {
+            $( "#explore-hydropower-__0__-Dimensions-Crest-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-hydropower-__0__-Location").click(function() {
-            $( "#explore-hydropower-__0__-Location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-hydropower-__0__-Dimensions-Crest-Elevation").click(function() {
+            $( "#explore-hydropower-__0__-Dimensions-Crest-Elevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-hydropower-__0__-Dimensions").click(function() {
-            $( "#explore-hydropower-__0__-Dimensions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-hydropower-__0__-Dimensions-Structural-Height").click(function() {
+            $( "#explore-hydropower-__0__-Dimensions-Structural-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -2311,12 +2311,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Boise"</code></td>
+                    <td><code>"North Platte"</code></td>
                     <td>11</td>
                 </tr>
             
                 <tr>
-                    <td><code>"North Platte"</code></td>
+                    <td><code>"Boise"</code></td>
                     <td>11</td>
                 </tr>
             
@@ -2326,12 +2326,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Salt River"</code></td>
+                    <td><code>"Milk River"</code></td>
                     <td>8</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Milk River"</code></td>
+                    <td><code>"Salt River"</code></td>
                     <td>8</td>
                 </tr>
             
@@ -2346,12 +2346,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Weber Basin"</code></td>
+                    <td><code>"Colorado River Storage"</code></td>
                     <td>6</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Colorado River Storage"</code></td>
+                    <td><code>"Weber Basin"</code></td>
                     <td>6</td>
                 </tr>
             
@@ -2366,7 +2366,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"PSMBP-Frenchman-Cambridge"</code></td>
+                    <td><code>"Shoshone"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minidoka"</code></td>
                     <td>5</td>
                 </tr>
             
@@ -2376,13 +2381,18 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Shoshone"</code></td>
+                    <td><code>"PSMBP-Frenchman-Cambridge"</code></td>
                     <td>5</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Minidoka"</code></td>
-                    <td>5</td>
+                    <td><code>"Middle Rio Grande"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Newlands"</code></td>
+                    <td>4</td>
                 </tr>
             
                 <tr>
@@ -2396,12 +2406,7 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Newlands"</code></td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Central Valley"</code></td>
+                    <td><code>"Washoe"</code></td>
                     <td>4</td>
                 </tr>
             
@@ -2411,13 +2416,23 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Washoe"</code></td>
+                    <td><code>"Central Valley"</code></td>
                     <td>4</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Middle Rio Grande"</code></td>
-                    <td>4</td>
+                    <td><code>"Rio Grande"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CUP - Bonneville Unit"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vale"</code></td>
+                    <td>3</td>
                 </tr>
             
                 <tr>
@@ -2436,177 +2451,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Vale"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Rio Grande"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CUP - Bonneville Unit"</code></td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
                     <td><code>"PSMBP-North Loup"</code></td>
                     <td>3</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Humboldt"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Colorado-Big thompson"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lewiston Orchards"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Central Arizona"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Moon Lake"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Belle Fourche"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Yellowtail Unit, Pick-Sloan Missouri River Basin P..."</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Okanogan"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"East Bench Unit, Pick-Sloan Missouri Basin Program"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CVP-Folsom Sly Park"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP - Frenchman"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ventura River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Emery County"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CVP-Sacramento Canals"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CVP-Friant"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
                     <td><code>"Huntley"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Uncompahgre"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP - Riverton Unit"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Provo River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP-Glendo Unit"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Eden"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Carlsbad"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mirage Flats"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mountain Park"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Parker-Davis"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Crooked River"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP-Webster"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lyman"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Juan-Chama"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fruitgrowers"</code></td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Unknown"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -2616,7 +2466,62 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"PSMBP - Riverton Unit"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crooked River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fruitgrowers"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PSMBP-Webster"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mirage Flats"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Kendrick"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lyman"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mountain Park"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yellowtail Unit, Pick-Sloan Missouri River Basin P..."</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Parker-Davis"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ventura River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Moon Lake"</code></td>
                     <td>2</td>
                 </tr>
             
@@ -2626,42 +2531,107 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Mancos"</code></td>
+                    <td><code>"Unknown"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Juan-Chama"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PSMBP - Frenchman"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uncompahgre"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Bench Unit, Pick-Sloan Missouri Basin Program"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lewiston Orchards"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CVP-Folsom Sly Park"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Belle Fourche"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emery County"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Central Arizona"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colorado-Big thompson"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CVP-Friant"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CVP-Sacramento Canals"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Humboldt"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PSMBP-Glendo Unit"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carlsbad"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eden"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Okanogan"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Provo River"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washita basin"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Paonia"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hyrum"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Owl Creek"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Little Wood River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP-Almena"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hungry Horse"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Palo Verde Diversion"</code></td>
+                    <td><code>"PSMBP-Rapid Valley Unit"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -2671,117 +2641,17 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Baker"</code></td>
+                    <td><code>"Silt"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"French-Cambridge (PSMBP)"</code></td>
+                    <td><code>"Palisades"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Helena Valley Unit, Pick-Sloan Missouri Basin Program"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Boysen Unit, Pick-Sloan Missouri River Basin Program"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Owyhee"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arbuckle"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP - Almena"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Smith Fork"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"CUP-Jensen Unit"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Norman"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lower Yellowstone"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Tualatin"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bostwick Park"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Brantley"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP-Cedar Bluff"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP-Ainsworth"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PSMBP-Kirwin"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lower Marias"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Ogden River"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Newton"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Central Valey"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"San Angelo"</code></td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Florida"</code></td>
+                    <td><code>"Paonia"</code></td>
                     <td>1</td>
                 </tr>
             
@@ -2791,12 +2661,142 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"CVP-Auburn-Folsom"</code></td>
+                    <td><code>"Dallas Creek"</code></td>
                     <td>1</td>
                 </tr>
             
                 <tr>
-                    <td><code>"W. C. Austin"</code></td>
+                    <td><code>"Little Wood River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PSMBP-Shadehill"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arbuckle"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PSMBP-Heart Butte"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lower Marias"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mancos"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Canyon Ferry Unit, Pick-Sloan Missouri Basin Program"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CUP-Vernal Unit"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"McGee Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Newton"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Owl Creek"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wichita"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Angelo"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bitter Root"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rapid Valley"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Collbran"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CVP-Delta"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yuma"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PSMBP-Kirwin"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hungry Horse"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CUP-Jensen Unit"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Canadian River"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PSMBP-Jamestown"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Luis Valley"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PSMBP-James Diversion Dam"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Central Valey"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pine River"</code></td>
                     <td>1</td>
                 </tr>
             

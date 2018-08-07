@@ -22,15 +22,27 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_transaction': {
                 "type": "FunctionType", 
                 "name": 'get_transaction',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Seller'}, {"type": "LiteralStr", "value": 'Slave'}, {"type": "LiteralStr", "value": 'Transaction'}, {"type": "LiteralStr", "value": 'Buyer'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State of Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Transaction'}, {"type": "LiteralStr", "value": 'Buyer'}, {"type": "LiteralStr", "value": 'Slave'}, {"type": "LiteralStr", "value": 'Seller'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Sale Details'}, {"type": "LiteralStr", "value": 'Number of Total Slaves Purchased'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Number of Adult Slaves'}, {"type": "LiteralStr", "value": 'Number of Child Slaves'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Predicted Interest Rate'}, {"type": "LiteralStr", "value": 'Discount Rate'}, {"type": "LiteralStr", "value": 'Payment Method'}, {"type": "LiteralStr", "value": 'Prices Listed'}, {"type": "LiteralStr", "value": 'Price'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Full Name'}, {"type": "LiteralStr", "value": 'State of Origin'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
@@ -40,18 +52,7 @@ def _tifa_definitions():
 					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Total Slaves Purchased'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Sale Details'}, {"type": "LiteralStr", "value": 'Number of Adult Slaves'}, {"type": "LiteralStr", "value": 'Number of Child Slaves'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Predicted Interest Rate'}, {"type": "LiteralStr", "value": 'Discount Rate'}, {"type": "LiteralStr", "value": 'Payment Method'}, {"type": "LiteralStr", "value": 'Price'}, {"type": "LiteralStr", "value": 'Prices Listed'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State of Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Full Name'}, {"type": "LiteralStr", "value": 'State of Origin'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 

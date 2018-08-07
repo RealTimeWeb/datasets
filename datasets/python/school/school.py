@@ -22,68 +22,69 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_all_states': {
                 "type": "FunctionType", 
                 "name": 'get_all_states',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'state'}, {"type": "LiteralStr", "value": 'data'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'enrollment'}, {"type": "LiteralStr", "value": 'funding'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'attendance'}, {"type": "LiteralStr", "value": 'score'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'student teacher ratio'}, {"type": "LiteralStr", "value": 'staff'}, {"type": "LiteralStr", "value": 'schools'}, {"type": "LiteralStr", "value": 'teachers'}, {"type": "LiteralStr", "value": 'students'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'attendance'}, {"type": "LiteralStr", "value": 'funding'}, {"type": "LiteralStr", "value": 'score'}, {"type": "LiteralStr", "value": 'enrollment'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'average teacher rate'}, {"type": "LiteralStr", "value": 'average student rate'}, {"type": "LiteralStr", "value": 'average minutes'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'expenditures'}, {"type": "LiteralStr", "value": 'revenue'}], "values": [
 						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'math'}, {"type": "LiteralStr", "value": 'reading'}, {"type": "LiteralStr", "value": 'science'}, {"type": "LiteralStr", "value": 'writing'}], "values": [
+						{"type": "ListType", "subtype": 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'scale score'}, {"type": "LiteralStr", "value": 'grade'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}}, 
+						{"type": "ListType", "subtype": 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'scale score'}, {"type": "LiteralStr", "value": 'grade'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}}, 
+						{"type": "ListType", "subtype": 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'scale score'}, {"type": "LiteralStr", "value": 'grade'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}}, 
+						{"type": "ListType", "subtype": 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'scale score'}, {"type": "LiteralStr", "value": 'grade'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'schools'}, {"type": "LiteralStr", "value": 'students'}, {"type": "LiteralStr", "value": 'student teacher ratio'}, {"type": "LiteralStr", "value": 'teachers'}, {"type": "LiteralStr", "value": 'staff'}], "values": [
 						{"type": "NumType"}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'race'}, {"type": "LiteralStr", "value": 'all'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'gender'}], "values": [
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'black'}, {"type": "LiteralStr", "value": 'asian'}, {"type": "LiteralStr", "value": 'white'}, {"type": "LiteralStr", "value": 'hispanic'}, {"type": "LiteralStr", "value": 'native american'}, {"type": "LiteralStr", "value": 'biracial'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'all'}, {"type": "LiteralStr", "value": 'race'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'gender'}, {"type": "LiteralStr", "value": 'other'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'hispanic'}, {"type": "LiteralStr", "value": 'black'}, {"type": "LiteralStr", "value": 'native american'}, {"type": "LiteralStr", "value": 'white'}, {"type": "LiteralStr", "value": 'asian'}, {"type": "LiteralStr", "value": 'biracial'}], "values": [
 								{"type": "NumType"}, 
 								{"type": "NumType"}, 
 								{"type": "NumType"}, 
 								{"type": "NumType"}, 
 								{"type": "NumType"}, 
 								{"type": "NumType"}]}, 
-							{"type": "NumType"}, 
 							{"type": "ListType", "subtype": 
 								{"type": "NumType"}}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'free lunch eligible'}, {"type": "LiteralStr", "value": 'lep/ell students'}, {"type": "LiteralStr", "value": 'reduced-price lunch eligible'}, {"type": "LiteralStr", "value": 'individualized education program'}, {"type": "LiteralStr", "value": 'ungraded students'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "StrType"}]}, 
 							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'male'}, {"type": "LiteralStr", "value": 'female'}], "values": [
 								{"type": "NumType"}, 
-								{"type": "NumType"}]}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'expenditures'}, {"type": "LiteralStr", "value": 'revenue'}], "values": [
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'individualized education program'}, {"type": "LiteralStr", "value": 'reduced-price lunch eligible'}, {"type": "LiteralStr", "value": 'lep/ell students'}, {"type": "LiteralStr", "value": 'ungraded students'}, {"type": "LiteralStr", "value": 'free lunch eligible'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "StrType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'longitude'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'latitude'}], "values": [
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'average minutes'}, {"type": "LiteralStr", "value": 'average teacher rate'}, {"type": "LiteralStr", "value": 'average student rate'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'writing'}, {"type": "LiteralStr", "value": 'science'}, {"type": "LiteralStr", "value": 'reading'}, {"type": "LiteralStr", "value": 'math'}], "values": [
-						{"type": "ListType", "subtype": 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'grade'}, {"type": "LiteralStr", "value": 'scale score'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}}, 
-						{"type": "ListType", "subtype": 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'grade'}, {"type": "LiteralStr", "value": 'scale score'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}}, 
-						{"type": "ListType", "subtype": 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'grade'}, {"type": "LiteralStr", "value": 'scale score'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}}, 
-						{"type": "ListType", "subtype": 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'grade'}, {"type": "LiteralStr", "value": 'scale score'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}}]}]}]}},
+						{"type": "NumType"}]}]}, 
+				{"type": "StrType"}]}},
             }
         
         }

@@ -22,16 +22,16 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_skyscrapers': {
                 "type": "FunctionType", 
                 "name": 'get_skyscrapers',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'material'}, {"type": "LiteralStr", "value": 'purposes'}, {"type": "LiteralStr", "value": 'status'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'location'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'observation'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'telecommunications'}, {"type": "LiteralStr", "value": 'library'}, {"type": "LiteralStr", "value": 'hotel'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'industrial'}, {"type": "LiteralStr", "value": 'education'}, {"type": "LiteralStr", "value": 'hospital'}, {"type": "LiteralStr", "value": 'belltower'}, {"type": "LiteralStr", "value": 'casino'}, {"type": "LiteralStr", "value": 'exhibition'}, {"type": "LiteralStr", "value": 'abandoned'}, {"type": "LiteralStr", "value": 'retail'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'multiple'}, {"type": "LiteralStr", "value": 'museum'}, {"type": "LiteralStr", "value": 'bridge'}, {"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'air traffic control tower'}, {"type": "LiteralStr", "value": 'government'}, {"type": "LiteralStr", "value": 'serviced apartments'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'purposes'}, {"type": "LiteralStr", "value": 'status'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'material'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'location'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'office'}, {"type": "LiteralStr", "value": 'retail'}, {"type": "LiteralStr", "value": 'bridge'}, {"type": "LiteralStr", "value": 'abandoned'}, {"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'casino'}, {"type": "LiteralStr", "value": 'serviced apartments'}, {"type": "LiteralStr", "value": 'hospital'}, {"type": "LiteralStr", "value": 'government'}, {"type": "LiteralStr", "value": 'religious'}, {"type": "LiteralStr", "value": 'hotel'}, {"type": "LiteralStr", "value": 'industrial'}, {"type": "LiteralStr", "value": 'observation'}, {"type": "LiteralStr", "value": 'air traffic control tower'}, {"type": "LiteralStr", "value": 'exhibition'}, {"type": "LiteralStr", "value": 'residential'}, {"type": "LiteralStr", "value": 'education'}, {"type": "LiteralStr", "value": 'belltower'}, {"type": "LiteralStr", "value": 'commercial'}, {"type": "LiteralStr", "value": 'museum'}, {"type": "LiteralStr", "value": 'library'}, {"type": "LiteralStr", "value": 'multiple'}, {"type": "LiteralStr", "value": 'telecommunications'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
@@ -55,26 +55,27 @@ def _tifa_definitions():
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'completed'}, {"type": "LiteralStr", "value": 'started'}, {"type": "LiteralStr", "value": 'current'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'is completed'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'started'}, {"type": "LiteralStr", "value": 'completed'}, {"type": "LiteralStr", "value": 'current'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'is started'}, {"type": "LiteralStr", "value": 'year'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'is started'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'is completed'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
 					{"type": "StrType"}]}, 
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'number of purposes'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'floors above'}, {"type": "LiteralStr", "value": 'height'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'height'}, {"type": "LiteralStr", "value": 'number of purposes'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'floors above'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
+				{"type": "StrType"}, 
 				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'country id'}, {"type": "LiteralStr", "value": 'country'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'city_id'}, {"type": "LiteralStr", "value": 'longitude'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'country'}, {"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'country id'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'city_id'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}, 
 					{"type": "NumType"}, 
+					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}]}},
             }

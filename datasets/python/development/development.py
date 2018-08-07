@@ -22,36 +22,37 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_reports': {
                 "type": "FunctionType", 
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
-				{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
 				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Urban Development'}, {"type": "LiteralStr", "value": 'Health'}, {"type": "LiteralStr", "value": 'Infrastructure'}, {"type": "LiteralStr", "value": 'Rural Development'}], "values": [
+				{"type": "NumType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rural Development'}, {"type": "LiteralStr", "value": 'Infrastructure'}, {"type": "LiteralStr", "value": 'Urban Development'}, {"type": "LiteralStr", "value": 'Health'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Arable Land Percent'}, {"type": "LiteralStr", "value": 'Arable Land'}, {"type": "LiteralStr", "value": 'Agricultural Land'}, {"type": "LiteralStr", "value": 'Surface Area'}, {"type": "LiteralStr", "value": 'Land Area'}, {"type": "LiteralStr", "value": 'Rural Population Growth'}, {"type": "LiteralStr", "value": 'Rural Population'}, {"type": "LiteralStr", "value": 'Agricultural Land Percent'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions'}, {"type": "LiteralStr", "value": 'Telephone Lines per 100 People'}, {"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions per 100 People'}, {"type": "LiteralStr", "value": 'Telephone Lines'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Population Density'}, {"type": "LiteralStr", "value": 'Urban Population Percent Growth'}, {"type": "LiteralStr", "value": 'Urban Population Percent'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Birth Rate'}, {"type": "LiteralStr", "value": 'Population Growth'}, {"type": "LiteralStr", "value": 'Death Rate'}, {"type": "LiteralStr", "value": 'Total Population'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Male'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Total'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Female'}, {"type": "LiteralStr", "value": 'Fertility Rate'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions per 100 People'}, {"type": "LiteralStr", "value": 'Telephone Lines'}, {"type": "LiteralStr", "value": 'Telephone Lines per 100 People'}, {"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Arable Land'}, {"type": "LiteralStr", "value": 'Agricultural Land Percent'}, {"type": "LiteralStr", "value": 'Agricultural Land'}, {"type": "LiteralStr", "value": 'Rural Population'}, {"type": "LiteralStr", "value": 'Surface Area'}, {"type": "LiteralStr", "value": 'Land Area'}, {"type": "LiteralStr", "value": 'Rural Population Growth'}, {"type": "LiteralStr", "value": 'Arable Land Percent'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Life Expectancy at Birth, Female'}, {"type": "LiteralStr", "value": 'Population Growth'}, {"type": "LiteralStr", "value": 'Total Population'}, {"type": "LiteralStr", "value": 'Birth Rate'}, {"type": "LiteralStr", "value": 'Fertility Rate'}, {"type": "LiteralStr", "value": 'Death Rate'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Male'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Total'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 

@@ -22,31 +22,32 @@ def _tifa_definitions():
                     "type": "ListType", 
                     "empty": False, 
                     "subtype": {"type": "NumType"}
-                },
+                }
+            },
         
             'get_reports': {
                 "type": "FunctionType", 
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'address'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'business'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'state'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'street'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'industry'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'business'}, {"type": "LiteralStr", "value": 'address'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'days away/restricted/transfer'}, {"type": "LiteralStr", "value": 'days away'}, {"type": "LiteralStr", "value": 'total case rate'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'label'}, {"type": "LiteralStr", "value": 'major_group'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'division'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}]}, 
 				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'days away/restricted/transfer'}, {"type": "LiteralStr", "value": 'days away'}, {"type": "LiteralStr", "value": 'total case rate'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'division'}, {"type": "LiteralStr", "value": 'label'}, {"type": "LiteralStr", "value": 'major_group'}, {"type": "LiteralStr", "value": 'id'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'second name'}, {"type": "LiteralStr", "value": 'name'}], "values": [
 					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'street'}, {"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
 					{"type": "StrType"}]}]}},
             }
         
