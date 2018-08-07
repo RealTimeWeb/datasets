@@ -30,29 +30,29 @@ def _tifa_definitions():
                 "name": 'get_transaction',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Transaction'}, {"type": "LiteralStr", "value": 'Buyer'}, {"type": "LiteralStr", "value": 'Slave'}, {"type": "LiteralStr", "value": 'Seller'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Sale Details'}, {"type": "LiteralStr", "value": 'Number of Total Slaves Purchased'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Number of Adult Slaves'}, {"type": "LiteralStr", "value": 'Number of Child Slaves'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Predicted Interest Rate'}, {"type": "LiteralStr", "value": 'Discount Rate'}, {"type": "LiteralStr", "value": 'Payment Method'}, {"type": "LiteralStr", "value": 'Prices Listed'}, {"type": "LiteralStr", "value": 'Price'}], "values": [
-						{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Slave'}, {"type": "LiteralStr", "value": 'Transaction'}, {"type": "LiteralStr", "value": 'Seller'}, {"type": "LiteralStr", "value": 'Buyer'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Skin Color'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Gender'}, {"type": "LiteralStr", "value": 'Age'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Child Slaves'}, {"type": "LiteralStr", "value": 'Date'}, {"type": "LiteralStr", "value": 'Sale Details'}, {"type": "LiteralStr", "value": 'Number of Adult Slaves'}, {"type": "LiteralStr", "value": 'Number of Total Slaves Purchased'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Price'}, {"type": "LiteralStr", "value": 'Payment Method'}, {"type": "LiteralStr", "value": 'Predicted Interest Rate'}, {"type": "LiteralStr", "value": 'Discount Rate'}, {"type": "LiteralStr", "value": 'Prices Listed'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
 						{"type": "NumType"}, 
+						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Full Name'}, {"type": "LiteralStr", "value": 'State of Origin'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}, {"type": "LiteralStr", "value": 'State of Origin'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Skin Color'}, {"type": "LiteralStr", "value": 'Age'}, {"type": "LiteralStr", "value": 'Gender'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Full Name'}, {"type": "LiteralStr", "value": 'State of Origin'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'County of Origin'}, {"type": "LiteralStr", "value": 'Origin'}, {"type": "LiteralStr", "value": 'Full Name'}, {"type": "LiteralStr", "value": 'State of Origin'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 

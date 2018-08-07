@@ -30,76 +30,76 @@ def _tifa_definitions():
                 "name": 'get_results',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Vote Data'}, {"type": "LiteralStr", "value": 'Location'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Ben Carson'}, {"type": "LiteralStr", "value": 'Ted Cruz'}, {"type": "LiteralStr", "value": 'Bernie Sanders'}, {"type": "LiteralStr", "value": 'Donald Trump'}, {"type": "LiteralStr", "value": 'Jeb Bush'}, {"type": "LiteralStr", "value": 'Marco Rubio'}, {"type": "LiteralStr", "value": 'John Kasich'}, {"type": "LiteralStr", "value": 'Hillary Clinton'}, {"type": "LiteralStr", "value": 'No Preference'}, {"type": "LiteralStr", "value": 'Uncommitted'}, {"type": "LiteralStr", "value": 'Rand Paul'}, {"type": "LiteralStr", "value": "Martin O'Malley"}, {"type": "LiteralStr", "value": 'Rick Santorum'}, {"type": "LiteralStr", "value": 'Mike Huckabee'}, {"type": "LiteralStr", "value": 'Chris Christie'}, {"type": "LiteralStr", "value": 'Carly Fiorina'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State Abbreviation'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'State'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Vote Data'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'State Abbreviation'}, {"type": "LiteralStr", "value": 'County'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'No Preference'}, {"type": "LiteralStr", "value": 'Ben Carson'}, {"type": "LiteralStr", "value": 'Hillary Clinton'}, {"type": "LiteralStr", "value": 'Rick Santorum'}, {"type": "LiteralStr", "value": 'Chris Christie'}, {"type": "LiteralStr", "value": 'Carly Fiorina'}, {"type": "LiteralStr", "value": 'Donald Trump'}, {"type": "LiteralStr", "value": 'Ted Cruz'}, {"type": "LiteralStr", "value": 'John Kasich'}, {"type": "LiteralStr", "value": 'Uncommitted'}, {"type": "LiteralStr", "value": 'Rand Paul'}, {"type": "LiteralStr", "value": 'Marco Rubio'}, {"type": "LiteralStr", "value": 'Mike Huckabee'}, {"type": "LiteralStr", "value": "Martin O'Malley"}, {"type": "LiteralStr", "value": 'Bernie Sanders'}, {"type": "LiteralStr", "value": 'Jeb Bush'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Percent of Votes'}, {"type": "LiteralStr", "value": 'Party'}, {"type": "LiteralStr", "value": 'Number of Votes'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}]}]}},
             }
         
         }

@@ -222,13 +222,18 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"loc"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+            <tr> <td><code>"increase"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>"ALABAMA"</code>
+                    <code>334.98999999999995</code>
                     
-                    <a class='dialog-opener' id='btn-explore-health-__0__-loc'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>2640000</code>
                     
                  </td> 
                  <td></td> </tr>
@@ -252,14 +257,6 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>2640000</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
             <tr> <td><code>"number"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td>
@@ -268,16 +265,72 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"increase"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+            <tr> <td><code>"loc"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td>
-                    <code>334.98999999999995</code>
+                    <code>"ALABAMA"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-health-__0__-loc'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
                     
                  </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+        <div id='explore-health-__0__-disease' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"MEASLES"</code></td>
+                    <td>3333</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PERTUSSIS"</code></td>
+                    <td>2716</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HEPATITIS A"</code></td>
+                    <td>2327</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"POLIO"</code></td>
+                    <td>1860</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MUMPS"</code></td>
+                    <td>1576</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RUBELLA"</code></td>
+                    <td>1374</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SMALLPOX"</code></td>
+                    <td>1079</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
     
         
         <div id='explore-health-__0__-loc' title='Previewing Values'>
@@ -310,12 +363,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"MISSOURI"</code></td>
+                    <td><code>"MASSACHUSETTS"</code></td>
                     <td>302</td>
                 </tr>
             
                 <tr>
-                    <td><code>"MASSACHUSETTS"</code></td>
+                    <td><code>"MISSOURI"</code></td>
                     <td>302</td>
                 </tr>
             
@@ -380,12 +433,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"INDIANA"</code></td>
+                    <td><code>"MINNESOTA"</code></td>
                     <td>290</td>
                 </tr>
             
                 <tr>
-                    <td><code>"MINNESOTA"</code></td>
+                    <td><code>"INDIANA"</code></td>
                     <td>290</td>
                 </tr>
             
@@ -395,22 +448,22 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"GEORGIA"</code></td>
-                    <td>288</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"IOWA"</code></td>
-                    <td>288</td>
-                </tr>
-            
-                <tr>
                     <td><code>"WISCONSIN"</code></td>
                     <td>288</td>
                 </tr>
             
                 <tr>
                     <td><code>"ARKANSAS"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GEORGIA"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IOWA"</code></td>
                     <td>288</td>
                 </tr>
             
@@ -490,12 +543,12 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"NEW MEXICO"</code></td>
+                    <td><code>"WYOMING"</code></td>
                     <td>262</td>
                 </tr>
             
                 <tr>
-                    <td><code>"WYOMING"</code></td>
+                    <td><code>"NEW MEXICO"</code></td>
                     <td>262</td>
                 </tr>
             
@@ -544,59 +597,6 @@ $(document).ready(function() {
         </div>
         
     
-        
-        <div id='explore-health-__0__-disease' title='Previewing Values'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Value</th> <th>Count</th></tr>
-            
-                <tr>
-                    <td><code>"MEASLES"</code></td>
-                    <td>3333</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"PERTUSSIS"</code></td>
-                    <td>2716</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"HEPATITIS A"</code></td>
-                    <td>2327</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"POLIO"</code></td>
-                    <td>1860</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"MUMPS"</code></td>
-                    <td>1576</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"RUBELLA"</code></td>
-                    <td>1374</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"SMALLPOX"</code></td>
-                    <td>1079</td>
-                </tr>
-            
-            
-        </table>
-        </div>
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-health-__0__" ).dialog({
@@ -604,19 +604,16 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-health-__0__-loc").click(function() {
-            $( "#explore-health-__0__-loc" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-health-__0__-increase").click(function() {
+            $( "#explore-health-__0__-increase" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-health-__0__-loc").click(function() {
-            $( "#explore-health-__0__-loc" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        
+        $("#btn-explore-health-__0__-population").click(function() {
+            $( "#explore-health-__0__-population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
-        $( "#explore-health-__0__-loc" ).dialog({
-          autoOpen: false,
-          width: 600
-        });    
         
         
         $("#btn-explore-health-__0__-disease").click(function() {
@@ -640,22 +637,25 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-health-__0__-population").click(function() {
-            $( "#explore-health-__0__-population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-health-__0__-number").click(function() {
             $( "#explore-health-__0__-number" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
-        $("#btn-explore-health-__0__-increase").click(function() {
-            $( "#explore-health-__0__-increase" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-health-__0__-loc").click(function() {
+            $( "#explore-health-__0__-loc" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-health-__0__-loc").click(function() {
+            $( "#explore-health-__0__-loc" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-health-__0__-loc" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
         
         
     });

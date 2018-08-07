@@ -30,26 +30,26 @@ def _tifa_definitions():
                 "name": 'get_records',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Enforcement'}, {"type": "LiteralStr", "value": 'Nonimmigrant Admissions'}, {"type": "LiteralStr", "value": 'Naturalizations (Birth)'}, {"type": "LiteralStr", "value": 'Legal permanant residences'}, {"type": "LiteralStr", "value": 'Refugees'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Criminal'}, {"type": "LiteralStr", "value": 'Non-criminal'}, {"type": "LiteralStr", "value": 'Apprehended'}, {"type": "LiteralStr", "value": 'Inadmissable'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Last Residence'}, {"type": "LiteralStr", "value": 'Birth'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Country'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Naturalizations (Birth)'}, {"type": "LiteralStr", "value": 'Nonimmigrant Admissions'}, {"type": "LiteralStr", "value": 'Legal permanant residences'}, {"type": "LiteralStr", "value": 'Refugees'}, {"type": "LiteralStr", "value": 'Enforcement'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Last Residence'}, {"type": "LiteralStr", "value": 'Birth'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Defensive Asylum'}, {"type": "LiteralStr", "value": 'Arrived'}, {"type": "LiteralStr", "value": 'Affirmative'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Last Residence'}, {"type": "LiteralStr", "value": 'Birth'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Affirmative'}, {"type": "LiteralStr", "value": 'Defensive Asylum'}, {"type": "LiteralStr", "value": 'Arrived'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}]}},
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Inadmissable'}, {"type": "LiteralStr", "value": 'Apprehended'}, {"type": "LiteralStr", "value": 'Criminal'}, {"type": "LiteralStr", "value": 'Non-criminal'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "NumType"}, 
+				{"type": "StrType"}]}},
             }
         
         }

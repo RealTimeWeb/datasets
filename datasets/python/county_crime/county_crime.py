@@ -30,35 +30,35 @@ def _tifa_definitions():
                 "name": 'get_all_crimes',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Department'}, {"type": "LiteralStr", "value": 'State'}], "values": [
-				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Totals'}, {"type": "LiteralStr", "value": 'Rates'}], "values": [
-					{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Department'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Totals'}, {"type": "LiteralStr", "value": 'Rates'}, {"type": "LiteralStr", "value": 'Population'}], "values": [
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Violent'}, {"type": "LiteralStr", "value": 'Property'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Assault'}, {"type": "LiteralStr", "value": 'Murder'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'Assault'}, {"type": "LiteralStr", "value": 'Murder'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Motor'}, {"type": "LiteralStr", "value": 'Larceny'}, {"type": "LiteralStr", "value": 'Burglary'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Burglary'}, {"type": "LiteralStr", "value": 'Larceny'}, {"type": "LiteralStr", "value": 'Motor'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}]}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Violent'}, {"type": "LiteralStr", "value": 'Property'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Assault'}, {"type": "LiteralStr", "value": 'Murder'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Rape'}, {"type": "LiteralStr", "value": 'Robbery'}, {"type": "LiteralStr", "value": 'Assault'}, {"type": "LiteralStr", "value": 'Murder'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Motor'}, {"type": "LiteralStr", "value": 'Larceny'}, {"type": "LiteralStr", "value": 'Burglary'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'All'}, {"type": "LiteralStr", "value": 'Burglary'}, {"type": "LiteralStr", "value": 'Larceny'}, {"type": "LiteralStr", "value": 'Motor'}], "values": [
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
 							{"type": "NumType"}, 
-							{"type": "NumType"}]}]}]}, 
-				{"type": "StrType"}, 
+							{"type": "NumType"}]}]}, 
+					{"type": "NumType"}]}, 
+				{"type": "NumType"}, 
 				{"type": "StrType"}]}},
             }
         

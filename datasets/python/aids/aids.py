@@ -30,34 +30,34 @@ def _tifa_definitions():
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Country'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Country'}], "values": [
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'People Living with HIV'}, {"type": "LiteralStr", "value": 'AIDS-Related Deaths'}, {"type": "LiteralStr", "value": 'HIV Prevalence'}, {"type": "LiteralStr", "value": 'New HIV Infections'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'Male Adults'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Total'}, {"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'Male Adults'}, {"type": "LiteralStr", "value": 'Adults'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'All Ages'}, {"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'Male Adults'}, {"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'AIDS Orphans'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'Male Adults'}, {"type": "LiteralStr", "value": 'All Ages'}, {"type": "LiteralStr", "value": 'AIDS Orphans'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Young Women'}, {"type": "LiteralStr", "value": 'Young Men'}, {"type": "LiteralStr", "value": 'Adults'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'Young Women'}, {"type": "LiteralStr", "value": 'Young Men'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'All Ages'}, {"type": "LiteralStr", "value": 'Male Adults'}, {"type": "LiteralStr", "value": 'Incidence Rate Among Adults'}, {"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'Adults'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Children'}, {"type": "LiteralStr", "value": 'Adults'}, {"type": "LiteralStr", "value": 'Female Adults'}, {"type": "LiteralStr", "value": 'Male Adults'}, {"type": "LiteralStr", "value": 'Incidence Rate Among Adults'}, {"type": "LiteralStr", "value": 'All Ages'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}]}},
+						{"type": "NumType"}]}]}, 
+				{"type": "NumType"}, 
+				{"type": "StrType"}]}},
             }
         
         }
