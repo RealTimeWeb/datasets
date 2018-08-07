@@ -30,19 +30,19 @@ def _tifa_definitions():
                 "name": 'get_dams',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Identity'}, {"type": "LiteralStr", "value": 'Dimensions'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'County'}, {"type": "LiteralStr", "value": 'Latitude'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Identity'}, {"type": "LiteralStr", "value": 'Location'}, {"type": "LiteralStr", "value": 'Dimensions'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Project'}, {"type": "LiteralStr", "value": 'Watercourse'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Project'}, {"type": "LiteralStr", "value": 'Name'}, {"type": "LiteralStr", "value": 'Watercourse'}], "values": [
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Organization'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
 						{"type": "StrType"}, 
 						{"type": "NumType"}]}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Latitude'}, {"type": "LiteralStr", "value": 'Longitude'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'County'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Structural Height'}, {"type": "LiteralStr", "value": 'Crest Length'}, {"type": "LiteralStr", "value": 'Crest Elevation'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Structural Height'}, {"type": "LiteralStr", "value": 'Crest Elevation'}, {"type": "LiteralStr", "value": 'Crest Length'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}]}},

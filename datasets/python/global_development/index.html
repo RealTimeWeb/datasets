@@ -286,17 +286,90 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-development-__0__-Data-Health' title='Dictionary (8 keys)'>
+    <div id='explore-development-__0__-Data-Infrastructure' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Life Expectancy at Birth, Total"</code></td> 
+            <tr> <td><code>"Mobile Cellular Subscriptions per 100 People"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>74.8663414634146</code>
+                    <code>0.0</code>
                     
                  </td> 
-                 <td>Years</td> </tr>
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Mobile Cellular Subscriptions"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Telephone Lines per 100 People"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>39.5623509247736</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Telephone Lines"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>9595000.0</code>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-development-__0__-Data-Infrastructure" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People").click(function() {
+            $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions").click(function() {
+            $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Infrastructure-Telephone-Lines-per-100-People").click(function() {
+            $( "#explore-development-__0__-Data-Infrastructure-Telephone-Lines-per-100-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Infrastructure-Telephone-Lines").click(function() {
+            $( "#explore-development-__0__-Data-Infrastructure-Telephone-Lines" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-development-__0__-Data-Health' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
             <tr> <td><code>"Fertility Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -314,13 +387,13 @@ $(document).ready(function() {
                  </td> 
                  <td>Annual Percent</td> </tr>
             
-            <tr> <td><code>"Life Expectancy at Birth, Male"</code></td> 
+            <tr> <td><code>"Birth Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>71.32</code>
+                    <code>15.4</code>
                     
                  </td> 
-                 <td>Years</td> </tr>
+                 <td>Crude, per 1000 People</td> </tr>
             
             <tr> <td><code>"Total Population"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -330,18 +403,18 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Birth Rate"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>15.4</code>
-                    
-                 </td> 
-                 <td>Crude, per 1000 People</td> </tr>
-            
             <tr> <td><code>"Life Expectancy at Birth, Female"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
                     <code>78.59</code>
+                    
+                 </td> 
+                 <td>Years</td> </tr>
+            
+            <tr> <td><code>"Life Expectancy at Birth, Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>74.8663414634146</code>
                     
                  </td> 
                  <td>Years</td> </tr>
@@ -353,6 +426,14 @@ $(document).ready(function() {
                     
                  </td> 
                  <td>Crude, per 100 People</td> </tr>
+            
+            <tr> <td><code>"Life Expectancy at Birth, Male"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>71.32</code>
+                    
+                 </td> 
+                 <td>Years</td> </tr>
             
         </table>
     </div>
@@ -380,12 +461,6 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Total").click(function() {
-            $( "#explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-development-__0__-Data-Health-Fertility-Rate").click(function() {
             $( "#explore-development-__0__-Data-Health-Fertility-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -398,8 +473,8 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Male").click(function() {
-            $( "#explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Male" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Health-Birth-Rate").click(function() {
+            $( "#explore-development-__0__-Data-Health-Birth-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -410,20 +485,171 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-development-__0__-Data-Health-Birth-Rate").click(function() {
-            $( "#explore-development-__0__-Data-Health-Birth-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Female").click(function() {
             $( "#explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Female" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
         
+        $("#btn-explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Total").click(function() {
+            $( "#explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
         $("#btn-explore-development-__0__-Data-Health-Death-Rate").click(function() {
             $( "#explore-development-__0__-Data-Health-Death-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Male").click(function() {
+            $( "#explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Male" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-development-__0__-Data-Rural-Development' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Surface Area"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>9984670.0</code>
+                    
+                 </td> 
+                 <td>Square kilometers</td> </tr>
+            
+            <tr> <td><code>"Rural Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>5918004</code>
+                    
+                 </td> 
+                 <td>Value of rural population</td> </tr>
+            
+            <tr> <td><code>"Rural Population Growth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>0.833711883207287</code>
+                    
+                 </td> 
+                 <td>Annual Percent</td> </tr>
+            
+            <tr> <td><code>"Agricultural Land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>669030.0</code>
+                    
+                 </td> 
+                 <td>Square kilometers</td> </tr>
+            
+            <tr> <td><code>"Land Area"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>9093510.0</code>
+                    
+                 </td> 
+                 <td>Square kilometers</td> </tr>
+            
+            <tr> <td><code>"Agricultural Land Percent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>7.35722509789949</code>
+                    
+                 </td> 
+                 <td>Percent of land area</td> </tr>
+            
+            <tr> <td><code>"Arable Land Percent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>4.8797439052687</code>
+                    
+                 </td> 
+                 <td>Percent of land area</td> </tr>
+            
+            <tr> <td><code>"Arable Land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>1.82782057091074</code>
+                    
+                 </td> 
+                 <td>Hectacres per person</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-development-__0__-Data-Rural-Development" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-development-__0__-Data-Rural-Development-Surface-Area").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Surface-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Rural-Development-Rural-Population").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Rural-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Rural-Development-Rural-Population-Growth").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Rural-Population-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Rural-Development-Agricultural-Land").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Agricultural-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Rural-Development-Land-Area").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Land-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Rural-Development-Agricultural-Land-Percent").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Agricultural-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Rural-Development-Arable-Land-Percent").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Arable-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Data-Rural-Development-Arable-Land").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Arable-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -443,14 +669,6 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Infrastructure"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td>
-                    <a class='dialog-opener' id='btn-explore-development-__0__-Data-Infrastructure'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
             <tr> <td><code>"Rural Development"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
@@ -463,6 +681,14 @@ $(document).ready(function() {
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td>
                     <a class='dialog-opener' id='btn-explore-development-__0__-Data-Urban-Development'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Infrastructure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-development-__0__-Data-Infrastructure'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
                     
                  </td> 
                  <td></td> </tr>
@@ -491,12 +717,6 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-development-__0__-Data-Infrastructure").click(function() {
-            $( "#explore-development-__0__-Data-Infrastructure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
         $("#btn-explore-development-__0__-Data-Rural-Development").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -509,228 +729,8 @@ $(document).ready(function() {
         });
         
         
-    });
-    </script>
-
-    <div id='explore-development-__0__-Data-Infrastructure' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Telephone Lines"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>9595000.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Mobile Cellular Subscriptions"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Mobile Cellular Subscriptions per 100 People"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.0</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Telephone Lines per 100 People"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>39.5623509247736</code>
-                    
-                 </td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-development-__0__-Data-Infrastructure" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-development-__0__-Data-Infrastructure-Telephone-Lines").click(function() {
-            $( "#explore-development-__0__-Data-Infrastructure-Telephone-Lines" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions").click(function() {
-            $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People").click(function() {
-            $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Infrastructure-Telephone-Lines-per-100-People").click(function() {
-            $( "#explore-development-__0__-Data-Infrastructure-Telephone-Lines-per-100-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-    });
-    </script>
-
-    <div id='explore-development-__0__-Data-Rural-Development' title='Dictionary (8 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Agricultural Land Percent"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>7.35722509789949</code>
-                    
-                 </td> 
-                 <td>Percent of land area</td> </tr>
-            
-            <tr> <td><code>"Arable Land"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>1.82782057091074</code>
-                    
-                 </td> 
-                 <td>Hectacres per person</td> </tr>
-            
-            <tr> <td><code>"Rural Population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td>
-                    <code>5918004</code>
-                    
-                 </td> 
-                 <td>Value of rural population</td> </tr>
-            
-            <tr> <td><code>"Agricultural Land"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>669030.0</code>
-                    
-                 </td> 
-                 <td>Square kilometers</td> </tr>
-            
-            <tr> <td><code>"Rural Population Growth"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>0.833711883207287</code>
-                    
-                 </td> 
-                 <td>Annual Percent</td> </tr>
-            
-            <tr> <td><code>"Surface Area"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>9984670.0</code>
-                    
-                 </td> 
-                 <td>Square kilometers</td> </tr>
-            
-            <tr> <td><code>"Arable Land Percent"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>4.8797439052687</code>
-                    
-                 </td> 
-                 <td>Percent of land area</td> </tr>
-            
-            <tr> <td><code>"Land Area"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td>
-                    <code>9093510.0</code>
-                    
-                 </td> 
-                 <td>Square kilometers</td> </tr>
-            
-        </table>
-    </div>
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    <script>
-    $(document).ready(function() {
-        $( "#explore-development-__0__-Data-Rural-Development" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-development-__0__-Data-Rural-Development-Agricultural-Land-Percent").click(function() {
-            $( "#explore-development-__0__-Data-Rural-Development-Agricultural-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Rural-Development-Arable-Land").click(function() {
-            $( "#explore-development-__0__-Data-Rural-Development-Arable-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Rural-Development-Rural-Population").click(function() {
-            $( "#explore-development-__0__-Data-Rural-Development-Rural-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Rural-Development-Agricultural-Land").click(function() {
-            $( "#explore-development-__0__-Data-Rural-Development-Agricultural-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Rural-Development-Rural-Population-Growth").click(function() {
-            $( "#explore-development-__0__-Data-Rural-Development-Rural-Population-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Rural-Development-Surface-Area").click(function() {
-            $( "#explore-development-__0__-Data-Rural-Development-Surface-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Rural-Development-Arable-Land-Percent").click(function() {
-            $( "#explore-development-__0__-Data-Rural-Development-Arable-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Data-Rural-Development-Land-Area").click(function() {
-            $( "#explore-development-__0__-Data-Rural-Development-Land-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Infrastructure").click(function() {
+            $( "#explore-development-__0__-Data-Infrastructure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -741,17 +741,6 @@ $(document).ready(function() {
     <div id='explore-development-__0__' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Country"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td>
-                    <code>"Canada"</code>
-                    
-                    <a class='dialog-opener' id='btn-explore-development-__0__-Country'><br>
-                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
-                    
-                 </td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"Data"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -769,8 +758,23 @@ $(document).ready(function() {
                  </td> 
                  <td></td> </tr>
             
+            <tr> <td><code>"Country"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"Canada"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-development-__0__-Country'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
         </table>
     </div>
+    
+        
+    
+        
     
         
         <div id='explore-development-__0__-Country' title='Previewing Values'>
@@ -778,252 +782,37 @@ $(document).ready(function() {
             <tr> <th>Value</th> <th>Count</th></tr>
             
                 <tr>
-                    <td><code>"Liberia"</code></td>
+                    <td><code>"Honduras"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Mali"</code></td>
+                    <td><code>"Ghana"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Uruguay"</code></td>
+                    <td><code>"Mauritania"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Caribbean small states"</code></td>
+                    <td><code>"Peru"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iceland"</code></td>
+                    <td><code>"Fiji"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Guinea"</code></td>
+                    <td><code>"Chile"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Netherlands"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"New Caledonia"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Finland"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Afghanistan"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"South Asia"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lower middle income"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Mongolia"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lesotho"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"St. Lucia"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Upper middle income"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Benin"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"World"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Chad"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vietnam"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Nicaragua"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Namibia"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Comoros"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sub-Saharan Africa (all income levels)"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Middle East & North Africa (developing only)"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Canada"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Korea, Rep."</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Bulgaria"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Burundi"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Dominican Republic"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Thailand"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Central African Republic"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Fragile and conflict affected situations"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Egypt, Arab Rep."</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"East Asia & Pacific (all income levels)"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Singapore"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Paraguay"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Cote d'Ivoire"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Small states"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"El Salvador"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Myanmar"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Jordan"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Puerto Rico"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Australia"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"St. Vincent and the Grenadines"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kenya"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Brunei Darussalam"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"OECD members"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Grenada"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Guatemala"</code></td>
+                    <td><code>"Barbados"</code></td>
                     <td>34</td>
                 </tr>
             
@@ -1033,152 +822,27 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Kiribati"</code></td>
+                    <td><code>"Somalia"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"China"</code></td>
+                    <td><code>"Sri Lanka"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Brazil"</code></td>
+                    <td><code>"Tanzania"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Malta"</code></td>
+                    <td><code>"High income"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Bangladesh"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Arab World"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Vanuatu"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Senegal"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Austria"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Zambia"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Guinea-Bissau"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Middle income"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Burkina Faso"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Kuwait"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Virgin Islands (U.S.)"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Djibouti"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Low income"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Madagascar"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sudan"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Algeria"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"United Kingdom"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Sub-Saharan Africa (developing only)"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"French Polynesia"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Congo, Rep."</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Antigua and Barbuda"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Hungary"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Denmark"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Other small states"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Aruba"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Lao PDR"</code></td>
+                    <td><code>"Japan"</code></td>
                     <td>34</td>
                 </tr>
             
@@ -1188,22 +852,267 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Mozambique"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United Kingdom"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cambodia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Suriname"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Caledonia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colombia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Comoros"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Greece"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Norway"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Congo, Rep."</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nepal"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arab World"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Denmark"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fragile and conflict affected situations"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Congo, Dem. Rep."</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Italy"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Algeria"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Israel"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Papua New Guinea"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bahamas, The"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paraguay"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Zambia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Equatorial Guinea"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pacific island small states"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Djibouti"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Zimbabwe"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sub-Saharan Africa (all income levels)"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistan"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virgin Islands (U.S.)"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mexico"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spain"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tonga"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"OECD members"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chad"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hungary"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kiribati"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Finland"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Low & middle income"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tunisia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Belize"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Namibia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guatemala"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Burundi"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lao PDR"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Syrian Arab Republic"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dominican Republic"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Upper middle income"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Niger"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Iraq"</code></td>
+                    <td><code>"Gambia, The"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Morocco"</code></td>
+                    <td><code>"Malawi"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Sao Tome and Principe"</code></td>
+                    <td><code>"Australia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cuba"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Senegal"</code></td>
                     <td>34</td>
                 </tr>
             
@@ -1213,27 +1122,97 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
+                    <td><code>"Yemen, Rep."</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guinea"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bangladesh"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Liberia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Togo"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Brazil"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mauritius"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Poland"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Myanmar"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vanuatu"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Canada"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"India"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Antigua and Barbuda"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sudan"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cameroon"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
                     <td><code>"Qatar"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Nigeria"</code></td>
+                    <td><code>"Malta"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Bahrain"</code></td>
+                    <td><code>"Jamaica"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Portugal"</code></td>
-                    <td>34</td>
-                </tr>
-            
-                <tr>
-                    <td><code>"Least developed countries: UN classification"</code></td>
+                    <td><code>"Uruguay"</code></td>
                     <td>34</td>
                 </tr>
             
@@ -1248,32 +1227,57 @@ $(document).ready(function() {
                 </tr>
             
                 <tr>
-                    <td><code>"Ecuador"</code></td>
+                    <td><code>"Mongolia"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"European Union"</code></td>
+                    <td><code>"Thailand"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Rwanda"</code></td>
+                    <td><code>"North America"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Chile"</code></td>
+                    <td><code>"El Salvador"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Indonesia"</code></td>
+                    <td><code>"Austria"</code></td>
                     <td>34</td>
                 </tr>
             
                 <tr>
-                    <td><code>"Saudi Arabia"</code></td>
+                    <td><code>"Morocco"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Low income"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Lucia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Vincent and the Grenadines"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Haiti"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Central Europe and the Baltics"</code></td>
                     <td>34</td>
                 </tr>
             
@@ -1287,16 +1291,24 @@ $(document).ready(function() {
         </div>
         
     
-        
-    
-        
-    
     <script>
     $(document).ready(function() {
         $( "#explore-development-__0__" ).dialog({
           autoOpen: false,
           width: 600
         });
+        
+        $("#btn-explore-development-__0__-Data").click(function() {
+            $( "#explore-development-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-development-__0__-Year").click(function() {
+            $( "#explore-development-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         
         $("#btn-explore-development-__0__-Country").click(function() {
             $( "#explore-development-__0__-Country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
@@ -1313,18 +1325,6 @@ $(document).ready(function() {
         });    
         
         
-        $("#btn-explore-development-__0__-Data").click(function() {
-            $( "#explore-development-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
-        $("#btn-explore-development-__0__-Year").click(function() {
-            $( "#explore-development-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        
     });
     </script>
 
@@ -1332,13 +1332,13 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Population Density"</code></td> 
+            <tr> <td><code>"Urban Population Percent Growth"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>2.66970619705702</code>
+                    <code>1.05057823382459</code>
                     
                  </td> 
-                 <td>People per square kilometer of land area</td> </tr>
+                 <td></td> </tr>
             
             <tr> <td><code>"Urban Population Percent"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -1348,13 +1348,13 @@ $(document).ready(function() {
                  </td> 
                  <td>Percent of total population</td> </tr>
             
-            <tr> <td><code>"Urban Population Percent Growth"</code></td> 
+            <tr> <td><code>"Population Density"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td>
-                    <code>1.05057823382459</code>
+                    <code>2.66970619705702</code>
                     
                  </td> 
-                 <td></td> </tr>
+                 <td>People per square kilometer of land area</td> </tr>
             
         </table>
     </div>
@@ -1372,8 +1372,8 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-development-__0__-Data-Urban-Development-Population-Density").click(function() {
-            $( "#explore-development-__0__-Data-Urban-Development-Population-Density" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Urban-Development-Urban-Population-Percent-Growth").click(function() {
+            $( "#explore-development-__0__-Data-Urban-Development-Urban-Population-Percent-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -1384,8 +1384,8 @@ $(document).ready(function() {
         });
         
         
-        $("#btn-explore-development-__0__-Data-Urban-Development-Urban-Population-Percent-Growth").click(function() {
-            $( "#explore-development-__0__-Data-Urban-Development-Urban-Population-Percent-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Urban-Development-Population-Density").click(function() {
+            $( "#explore-development-__0__-Data-Urban-Development-Population-Density" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

@@ -30,11 +30,9 @@ def _tifa_definitions():
                 "name": 'get_businesses',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'State'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Job Creation'}, {"type": "LiteralStr", "value": 'Firm Exits'}, {"type": "LiteralStr", "value": 'Number of Firms'}, {"type": "LiteralStr", "value": 'Establishments'}, {"type": "LiteralStr", "value": 'DHS Denominator'}, {"type": "LiteralStr", "value": 'Job Destruction'}, {"type": "LiteralStr", "value": 'Calculated'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Continuers'}, {"type": "LiteralStr", "value": 'Rate/Births'}, {"type": "LiteralStr", "value": 'Births'}, {"type": "LiteralStr", "value": 'Rate'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'State'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Calculated'}, {"type": "LiteralStr", "value": 'Firm Exits'}, {"type": "LiteralStr", "value": 'Job Creation'}, {"type": "LiteralStr", "value": 'Number of Firms'}, {"type": "LiteralStr", "value": 'Establishments'}, {"type": "LiteralStr", "value": 'Job Destruction'}, {"type": "LiteralStr", "value": 'DHS Denominator'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Reallocation Rate'}, {"type": "LiteralStr", "value": 'Net Job Creation Rate'}, {"type": "LiteralStr", "value": 'Net Job Creation'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
@@ -42,26 +40,28 @@ def _tifa_definitions():
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Exited'}, {"type": "LiteralStr", "value": 'Entered'}, {"type": "LiteralStr", "value": 'Exited Rate'}, {"type": "LiteralStr", "value": 'Physical Locations'}, {"type": "LiteralStr", "value": 'Entered Rate'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rate'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Continuers'}, {"type": "LiteralStr", "value": 'Rate/Births'}, {"type": "LiteralStr", "value": 'Births'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
 					{"type": "NumType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Continuers'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Rate/Deaths'}, {"type": "LiteralStr", "value": 'Deaths'}, {"type": "LiteralStr", "value": 'Rate'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Exited Rate'}, {"type": "LiteralStr", "value": 'Entered Rate'}, {"type": "LiteralStr", "value": 'Entered'}, {"type": "LiteralStr", "value": 'Physical Locations'}, {"type": "LiteralStr", "value": 'Exited'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Reallocation Rate'}, {"type": "LiteralStr", "value": 'Net Job Creation'}, {"type": "LiteralStr", "value": 'Net Job Creation Rate'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Rate'}, {"type": "LiteralStr", "value": 'Rate/Deaths'}, {"type": "LiteralStr", "value": 'Continuers'}, {"type": "LiteralStr", "value": 'Deaths'}, {"type": "LiteralStr", "value": 'Count'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "StrType"}, 
-				{"type": "NumType"}]}},
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}]}, 
+				{"type": "NumType"}, 
+				{"type": "StrType"}]}},
             }
         
         }

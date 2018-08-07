@@ -30,23 +30,23 @@ def _tifa_definitions():
                 "name": 'get_books',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sold by'}, {"type": "LiteralStr", "value": 'genre'}, {"type": "LiteralStr", "value": 'publisher'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'daily average'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "StrType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'publisher'}, {"type": "LiteralStr", "value": 'statistics'}, {"type": "LiteralStr", "value": 'sold by'}, {"type": "LiteralStr", "value": 'daily average'}, {"type": "LiteralStr", "value": 'genre'}], "values": [
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'name'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sale price'}, {"type": "LiteralStr", "value": 'average rating'}, {"type": "LiteralStr", "value": 'total reviews'}, {"type": "LiteralStr", "value": 'sales rank'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sale price'}, {"type": "LiteralStr", "value": 'sales rank'}, {"type": "LiteralStr", "value": 'total reviews'}, {"type": "LiteralStr", "value": 'average rating'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'author revenue'}, {"type": "LiteralStr", "value": 'amazon revenue'}, {"type": "LiteralStr", "value": 'units sold'}, {"type": "LiteralStr", "value": 'publisher revenue'}, {"type": "LiteralStr", "value": 'gross sales'}], "values": [
+				{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'amazon revenue'}, {"type": "LiteralStr", "value": 'units sold'}, {"type": "LiteralStr", "value": 'author revenue'}, {"type": "LiteralStr", "value": 'gross sales'}, {"type": "LiteralStr", "value": 'publisher revenue'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
-					{"type": "NumType"}]}]}},
+					{"type": "NumType"}]}, 
+				{"type": "StrType"}]}},
             }
         
         }

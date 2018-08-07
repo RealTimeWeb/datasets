@@ -30,30 +30,30 @@ def _tifa_definitions():
                 "name": 'get_buildings',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'location'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'disabilities'}, {"type": "LiteralStr", "value": 'status'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'parking spaces'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'history'}, {"type": "LiteralStr", "value": 'owned or leased'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'ansi usable'}, {"type": "LiteralStr", "value": 'ADA Accessible'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'data'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'address'}, {"type": "LiteralStr", "value": 'congressional district'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'region id'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'line 2'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'state'}, {"type": "LiteralStr", "value": 'county'}, {"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'line 1'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
+						{"type": "StrType"}, 
 						{"type": "StrType"}, 
 						{"type": "StrType"}]}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'history'}, {"type": "LiteralStr", "value": 'disabilities'}, {"type": "LiteralStr", "value": 'owned or leased'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'status'}, {"type": "LiteralStr", "value": 'parking spaces'}, {"type": "LiteralStr", "value": 'date'}], "values": [
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'status'}], "values": [
 						{"type": "StrType"}, 
 						{"type": "StrType"}]}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'region id'}, {"type": "LiteralStr", "value": 'congressional district'}, {"type": "LiteralStr", "value": 'address'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'ADA Accessible'}, {"type": "LiteralStr", "value": 'ansi usable'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "StrType"}]}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'line 1'}, {"type": "LiteralStr", "value": 'line 2'}, {"type": "LiteralStr", "value": 'city'}, {"type": "LiteralStr", "value": 'state'}, {"type": "LiteralStr", "value": 'zip'}, {"type": "LiteralStr", "value": 'county'}], "values": [
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}, 
-						{"type": "StrType"}]}]}]}},
+					{"type": "NumType"}, 
+					{"type": "StrType"}]}]}},
             }
         
         }

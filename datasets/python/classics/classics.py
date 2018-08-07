@@ -30,57 +30,57 @@ def _tifa_definitions():
                 "name": 'get_books',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'bibliography'}, {"type": "LiteralStr", "value": 'metrics'}, {"type": "LiteralStr", "value": 'metadata'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'languages'}, {"type": "LiteralStr", "value": 'congress classifications'}, {"type": "LiteralStr", "value": 'type'}, {"type": "LiteralStr", "value": 'publication'}, {"type": "LiteralStr", "value": 'author'}, {"type": "LiteralStr", "value": 'subjects'}], "values": [
-					{"type": "StrType"}, 
-					{"type": "ListType", "subtype": 
-						{"type": "StrType"}}, 
-					{"type": "ListType", "subtype": 
-						{"type": "StrType"}}, 
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'bibliography'}, {"type": "LiteralStr", "value": 'metadata'}, {"type": "LiteralStr", "value": 'metrics'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'publication'}, {"type": "LiteralStr", "value": 'title'}, {"type": "LiteralStr", "value": 'author'}, {"type": "LiteralStr", "value": 'subjects'}, {"type": "LiteralStr", "value": 'languages'}, {"type": "LiteralStr", "value": 'congress classifications'}, {"type": "LiteralStr", "value": 'type'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month name'}, {"type": "LiteralStr", "value": 'month'}], "values": [
+						{"type": "StrType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "StrType"}, 
-						{"type": "NumType"}, 
-						{"type": "StrType"}]}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'death'}], "values": [
 						{"type": "StrType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
 					{"type": "ListType", "subtype": 
-						{"type": "StrType"}}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sentiments'}, {"type": "LiteralStr", "value": 'difficulty'}, {"type": "LiteralStr", "value": 'statistics'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'subjectivity'}, {"type": "LiteralStr", "value": 'polarity'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'gunning fog'}, {"type": "LiteralStr", "value": 'automated readability index'}, {"type": "LiteralStr", "value": 'coleman liau index'}, {"type": "LiteralStr", "value": 'flesch kincaid grade'}, {"type": "LiteralStr", "value": 'smog index'}, {"type": "LiteralStr", "value": 'linsear write formula'}, {"type": "LiteralStr", "value": 'flesch reading ease'}, {"type": "LiteralStr", "value": 'dale chall readability score'}, {"type": "LiteralStr", "value": 'difficult words'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'sentences'}, {"type": "LiteralStr", "value": 'average sentence per word'}, {"type": "LiteralStr", "value": 'characters'}, {"type": "LiteralStr", "value": 'syllables'}, {"type": "LiteralStr", "value": 'words'}, {"type": "LiteralStr", "value": 'average letter per word'}, {"type": "LiteralStr", "value": 'average sentence length'}, {"type": "LiteralStr", "value": 'polysyllables'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'id'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'downloads'}, {"type": "LiteralStr", "value": 'formats'}], "values": [
+						{"type": "StrType"}}, 
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}, 
+					{"type": "ListType", "subtype": 
+						{"type": "StrType"}}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'url'}, {"type": "LiteralStr", "value": 'formats'}, {"type": "LiteralStr", "value": 'downloads'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'id'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
 					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'types'}, {"type": "LiteralStr", "value": 'total'}], "values": [
 						{"type": "ListType", "subtype": 
 							{"type": "StrType"}}, 
+						{"type": "NumType"}]}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'difficulty'}, {"type": "LiteralStr", "value": 'sentiments'}, {"type": "LiteralStr", "value": 'statistics'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'smog index'}, {"type": "LiteralStr", "value": 'difficult words'}, {"type": "LiteralStr", "value": 'flesch kincaid grade'}, {"type": "LiteralStr", "value": 'coleman liau index'}, {"type": "LiteralStr", "value": 'linsear write formula'}, {"type": "LiteralStr", "value": 'flesch reading ease'}, {"type": "LiteralStr", "value": 'automated readability index'}, {"type": "LiteralStr", "value": 'dale chall readability score'}, {"type": "LiteralStr", "value": 'gunning fog'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'subjectivity'}, {"type": "LiteralStr", "value": 'polarity'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'average sentence length'}, {"type": "LiteralStr", "value": 'characters'}, {"type": "LiteralStr", "value": 'polysyllables'}, {"type": "LiteralStr", "value": 'average letter per word'}, {"type": "LiteralStr", "value": 'sentences'}, {"type": "LiteralStr", "value": 'syllables'}, {"type": "LiteralStr", "value": 'words'}, {"type": "LiteralStr", "value": 'average sentence per word'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}]}},
             }
         

@@ -259,7 +259,6 @@ def build_main(model):
     locals = model["locals"]
     from languages.tifa import TifaDefinition
     for interface, local in zip(model['interfaces'], locals):
-        name = snake_case(local["name"])
         file = local["file"]
         type = local["type"]
         with open(file, "r") as local_file:
@@ -268,7 +267,6 @@ def build_main(model):
                 tifa_definitions.append(
                     (interface['name'], TifaDefinition(data_list).result)
                 )
-    
     
     return {'python/' + snake_case(name) + '/' + snake_case(name) + '.py' :
                 env.get_template('main.py').render(tifa_definitions=tifa_definitions, **model)}

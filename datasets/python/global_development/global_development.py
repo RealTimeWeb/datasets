@@ -12,6 +12,60 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                }
+            },
+        
+            'get_reports': {
+                "type": "FunctionType", 
+                "name": 'get_reports',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Country'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Health'}, {"type": "LiteralStr", "value": 'Rural Development'}, {"type": "LiteralStr", "value": 'Urban Development'}, {"type": "LiteralStr", "value": 'Infrastructure'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Fertility Rate'}, {"type": "LiteralStr", "value": 'Population Growth'}, {"type": "LiteralStr", "value": 'Birth Rate'}, {"type": "LiteralStr", "value": 'Total Population'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Female'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Total'}, {"type": "LiteralStr", "value": 'Death Rate'}, {"type": "LiteralStr", "value": 'Life Expectancy at Birth, Male'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Surface Area'}, {"type": "LiteralStr", "value": 'Rural Population'}, {"type": "LiteralStr", "value": 'Rural Population Growth'}, {"type": "LiteralStr", "value": 'Agricultural Land'}, {"type": "LiteralStr", "value": 'Land Area'}, {"type": "LiteralStr", "value": 'Agricultural Land Percent'}, {"type": "LiteralStr", "value": 'Arable Land Percent'}, {"type": "LiteralStr", "value": 'Arable Land'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Urban Population Percent Growth'}, {"type": "LiteralStr", "value": 'Urban Population Percent'}, {"type": "LiteralStr", "value": 'Population Density'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions per 100 People'}, {"type": "LiteralStr", "value": 'Mobile Cellular Subscriptions'}, {"type": "LiteralStr", "value": 'Telephone Lines per 100 People'}, {"type": "LiteralStr", "value": 'Telephone Lines'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "NumType"}, 
+				{"type": "StrType"}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -42,8 +96,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

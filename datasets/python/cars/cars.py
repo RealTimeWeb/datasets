@@ -30,30 +30,30 @@ def _tifa_definitions():
                 "name": 'get_cars',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Engine Information'}, {"type": "LiteralStr", "value": 'Fuel Information'}, {"type": "LiteralStr", "value": 'Dimensions'}, {"type": "LiteralStr", "value": 'Identification'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Number of Forward Gears'}, {"type": "LiteralStr", "value": 'Engine Type'}, {"type": "LiteralStr", "value": 'Engine Statistics'}, {"type": "LiteralStr", "value": 'Hybrid'}, {"type": "LiteralStr", "value": 'Driveline'}, {"type": "LiteralStr", "value": 'Transmission'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Identification'}, {"type": "LiteralStr", "value": 'Fuel Information'}, {"type": "LiteralStr", "value": 'Engine Information'}, {"type": "LiteralStr", "value": 'Dimensions'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Model Year'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Make'}, {"type": "LiteralStr", "value": 'Classification'}, {"type": "LiteralStr", "value": 'ID'}], "values": [
+					{"type": "StrType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Torque'}, {"type": "LiteralStr", "value": 'Horsepower'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "StrType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Fuel Type'}, {"type": "LiteralStr", "value": 'City mpg'}, {"type": "LiteralStr", "value": 'Highway mpg'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Engine Type'}, {"type": "LiteralStr", "value": 'Engine Statistics'}, {"type": "LiteralStr", "value": 'Hybrid'}, {"type": "LiteralStr", "value": 'Driveline'}, {"type": "LiteralStr", "value": 'Transmission'}, {"type": "LiteralStr", "value": 'Number of Forward Gears'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Horsepower'}, {"type": "LiteralStr", "value": 'Torque'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Highway mpg'}, {"type": "LiteralStr", "value": 'City mpg'}, {"type": "LiteralStr", "value": 'Fuel Type'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Width'}, {"type": "LiteralStr", "value": 'Length'}, {"type": "LiteralStr", "value": 'Height'}], "values": [
-					{"type": "NumType"}, 
-					{"type": "NumType"}, 
+					{"type": "StrType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Classification'}, {"type": "LiteralStr", "value": 'Model Year'}, {"type": "LiteralStr", "value": 'ID'}, {"type": "LiteralStr", "value": 'Make'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Height'}, {"type": "LiteralStr", "value": 'Width'}, {"type": "LiteralStr", "value": 'Length'}], "values": [
 					{"type": "NumType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}, 
-					{"type": "StrType"}]}]}},
+					{"type": "NumType"}, 
+					{"type": "NumType"}]}]}},
             }
         
         }

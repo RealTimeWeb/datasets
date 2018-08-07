@@ -12,6 +12,84 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
+def _tifa_definitions():
+    return {"type": "ModuleType",
+        "fields": {
+            'get': {
+                "type": "FunctionType",
+                "name": 'get',
+                "returns": {
+                    "type": "ListType", 
+                    "empty": False, 
+                    "subtype": {"type": "NumType"}
+                }
+            },
+        
+            'get_all_states': {
+                "type": "FunctionType", 
+                "name": 'get_all_states',
+                "returns": 
+		{"type": "ListType", "subtype": 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'data'}, {"type": "LiteralStr", "value": 'state'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'score'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'attendance'}, {"type": "LiteralStr", "value": 'funding'}, {"type": "LiteralStr", "value": 'enrollment'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'reading'}, {"type": "LiteralStr", "value": 'science'}, {"type": "LiteralStr", "value": 'math'}, {"type": "LiteralStr", "value": 'writing'}], "values": [
+						{"type": "ListType", "subtype": 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'grade'}, {"type": "LiteralStr", "value": 'scale score'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}}, 
+						{"type": "ListType", "subtype": 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'grade'}, {"type": "LiteralStr", "value": 'scale score'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}}, 
+						{"type": "ListType", "subtype": 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'grade'}, {"type": "LiteralStr", "value": 'scale score'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}}, 
+						{"type": "ListType", "subtype": 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'grade'}, {"type": "LiteralStr", "value": 'scale score'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'latitude'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'average teacher rate'}, {"type": "LiteralStr", "value": 'average minutes'}, {"type": "LiteralStr", "value": 'average student rate'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'revenue'}, {"type": "LiteralStr", "value": 'expenditures'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'teachers'}, {"type": "LiteralStr", "value": 'staff'}, {"type": "LiteralStr", "value": 'students'}, {"type": "LiteralStr", "value": 'student teacher ratio'}, {"type": "LiteralStr", "value": 'schools'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'all'}, {"type": "LiteralStr", "value": 'other'}, {"type": "LiteralStr", "value": 'gender'}, {"type": "LiteralStr", "value": 'race'}], "values": [
+							{"type": "ListType", "subtype": 
+								{"type": "NumType"}}, 
+							{"type": "NumType"}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'lep/ell students'}, {"type": "LiteralStr", "value": 'reduced-price lunch eligible'}, {"type": "LiteralStr", "value": 'ungraded students'}, {"type": "LiteralStr", "value": 'free lunch eligible'}, {"type": "LiteralStr", "value": 'individualized education program'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "StrType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'female'}, {"type": "LiteralStr", "value": 'male'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'hispanic'}, {"type": "LiteralStr", "value": 'asian'}, {"type": "LiteralStr", "value": 'native american'}, {"type": "LiteralStr", "value": 'black'}, {"type": "LiteralStr", "value": 'white'}, {"type": "LiteralStr", "value": 'biracial'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}]}, 
+				{"type": "StrType"}]}},
+            }
+        
+        }
+    }
+
 class _Constants(object):
     '''
     Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
@@ -42,8 +120,10 @@ if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
     raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
-    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
-    _sys.stderr.flush()
+    # Previously, this generated an error - but that's not important, really.
+    #_sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    #_sys.stderr.flush()
+    pass
 
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 

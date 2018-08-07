@@ -30,86 +30,86 @@ def _tifa_definitions():
                 "name": 'get_results',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Time'}, {"type": "LiteralStr", "value": 'Data'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Time'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Employed'}, {"type": "LiteralStr", "value": 'Civilian Labor Force'}, {"type": "LiteralStr", "value": 'Civilian Noninstitutional Population'}, {"type": "LiteralStr", "value": 'Not In Labor Force'}, {"type": "LiteralStr", "value": 'Unemployed'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Employment-Population Ratio'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Employment-Population Ratio'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'White'}, {"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}], "values": [
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
+							{"type": "NumType"}, 
+							{"type": "NumType"}]}, 
+						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}, 
+							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
+								{"type": "NumType"}, 
+								{"type": "NumType"}, 
+								{"type": "NumType"}]}]}]}]}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Month'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Month Name'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Not In Labor Force'}, {"type": "LiteralStr", "value": 'Employed'}, {"type": "LiteralStr", "value": 'Unemployed'}, {"type": "LiteralStr", "value": 'Civilian Noninstitutional Population'}, {"type": "LiteralStr", "value": 'Civilian Labor Force'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}, {"type": "LiteralStr", "value": 'White'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}, {"type": "LiteralStr", "value": 'White'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
-							{"type": "NumType"}, 
-							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Employment-Population Ratio'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Employment-Population Ratio'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}, {"type": "LiteralStr", "value": 'White'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
-							{"type": "NumType"}, 
-							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Counts'}, {"type": "LiteralStr", "value": 'Unemployment Rate'}], "values": [
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}]}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}, {"type": "LiteralStr", "value": 'White'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}]}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Asian'}, {"type": "LiteralStr", "value": 'Black or African American'}, {"type": "LiteralStr", "value": 'White'}], "values": [
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
-							{"type": "NumType"}, 
-							{"type": "NumType"}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}]}, 
-						{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Participation Rate'}, {"type": "LiteralStr", "value": 'Counts'}], "values": [
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}, 
-							{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Men'}, {"type": "LiteralStr", "value": 'Women'}, {"type": "LiteralStr", "value": 'All'}], "values": [
-								{"type": "NumType"}, 
-								{"type": "NumType"}, 
-								{"type": "NumType"}]}]}]}]}]}},
+					{"type": "StrType"}]}]}},
             }
         
         }

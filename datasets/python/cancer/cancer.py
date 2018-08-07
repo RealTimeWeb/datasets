@@ -30,22 +30,22 @@ def _tifa_definitions():
                 "name": 'get_reports',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Age'}, {"type": "LiteralStr", "value": 'Year'}, {"type": "LiteralStr", "value": 'Area'}], "values": [
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Crude Rate'}, {"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Sex'}, {"type": "LiteralStr", "value": 'Race'}, {"type": "LiteralStr", "value": 'Crude CI Upper'}, {"type": "LiteralStr", "value": 'Crude CI Lower'}, {"type": "LiteralStr", "value": 'Event Type'}], "values": [
-					{"type": "NumType"}, 
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Data'}, {"type": "LiteralStr", "value": 'Age'}, {"type": "LiteralStr", "value": 'Area'}, {"type": "LiteralStr", "value": 'Year'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Population'}, {"type": "LiteralStr", "value": 'Count'}, {"type": "LiteralStr", "value": 'Race'}, {"type": "LiteralStr", "value": 'Crude Rate'}, {"type": "LiteralStr", "value": 'Sex'}, {"type": "LiteralStr", "value": 'Crude CI Lower'}, {"type": "LiteralStr", "value": 'Event Type'}, {"type": "LiteralStr", "value": 'Crude CI Upper'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "StrType"}, 
+					{"type": "NumType"}, 
 					{"type": "StrType"}, 
 					{"type": "NumType"}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Age Adjusted CI Lower'}, {"type": "LiteralStr", "value": 'Age Adjusted Rate'}, {"type": "LiteralStr", "value": 'Age Adjusted CI Upper'}], "values": [
+					{"type": "StrType"}, 
+					{"type": "NumType"}]}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'Age Adjusted CI Upper'}, {"type": "LiteralStr", "value": 'Age Adjusted Rate'}, {"type": "LiteralStr", "value": 'Age Adjusted CI Lower'}], "values": [
 					{"type": "NumType"}, 
 					{"type": "NumType"}, 
 					{"type": "NumType"}]}, 
-				{"type": "NumType"}, 
-				{"type": "StrType"}]}},
+				{"type": "StrType"}, 
+				{"type": "NumType"}]}},
             }
         
         }

@@ -30,32 +30,32 @@ def _tifa_definitions():
                 "name": 'get_awardees',
                 "returns": 
 		{"type": "ListType", "subtype": 
-			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'metadata'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'awarded'}, {"type": "LiteralStr", "value": 'military record'}], "values": [
-				{"type": "StrType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'link'}], "values": [
+			{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'awarded'}, {"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'birth'}, {"type": "LiteralStr", "value": 'death'}, {"type": "LiteralStr", "value": 'metadata'}, {"type": "LiteralStr", "value": 'military record'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'General Order number'}, {"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'issued'}, {"type": "LiteralStr", "value": 'accredited to'}, {"type": "LiteralStr", "value": 'citation'}], "values": [
+					{"type": "NumType"}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'name'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'latitude'}], "values": [
+						{"type": "StrType"}, 
+						{"type": "NumType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'full'}, {"type": "LiteralStr", "value": 'month'}], "values": [
+						{"type": "NumType"}, 
+						{"type": "NumType"}, 
+						{"type": "StrType"}, 
+						{"type": "NumType"}]}, 
+					{"type": "StrType"}, 
+					{"type": "StrType"}, 
 					{"type": "StrType"}]}, 
+				{"type": "StrType"}, 
 				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location name'}, {"type": "LiteralStr", "value": 'date'}], "values": [
 					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'year'}], "values": [
+					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'month'}], "values": [
 						{"type": "NumType"}, 
 						{"type": "NumType"}, 
 						{"type": "NumType"}]}]}, 
 				{"type": "NumType"}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'location'}, {"type": "LiteralStr", "value": 'accredited to'}, {"type": "LiteralStr", "value": 'date'}, {"type": "LiteralStr", "value": 'General Order number'}, {"type": "LiteralStr", "value": 'citation'}, {"type": "LiteralStr", "value": 'issued'}], "values": [
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'latitude'}, {"type": "LiteralStr", "value": 'longitude'}, {"type": "LiteralStr", "value": 'name'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "StrType"}]}, 
-					{"type": "StrType"}, 
-					{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'month'}, {"type": "LiteralStr", "value": 'day'}, {"type": "LiteralStr", "value": 'year'}, {"type": "LiteralStr", "value": 'full'}], "values": [
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "NumType"}, 
-						{"type": "StrType"}]}, 
-					{"type": "NumType"}, 
-					{"type": "StrType"}, 
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'link'}], "values": [
 					{"type": "StrType"}]}, 
-				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'organization'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'division'}, {"type": "LiteralStr", "value": 'entered service at'}], "values": [
+				{"type": "DictType", "literals": [{"type": "LiteralStr", "value": 'entered service at'}, {"type": "LiteralStr", "value": 'organization'}, {"type": "LiteralStr", "value": 'company'}, {"type": "LiteralStr", "value": 'rank'}, {"type": "LiteralStr", "value": 'division'}], "values": [
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
 					{"type": "StrType"}, 
