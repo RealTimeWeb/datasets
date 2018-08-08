@@ -180,6 +180,7 @@ def _tifa_definitions():
         
         }
     }
+}
 
 class _Constants(object):
     '''
